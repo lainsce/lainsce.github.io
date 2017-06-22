@@ -27,6 +27,11 @@ nav a {
     color: #f1f1f1;
 }
 
+nav a:hover {
+    text-decoration: none;
+    font-family: 'Open Sans', 'Helvetica', 'Arial', 'Sans-Serif';
+}
+
 nav ul {
     display: inline-block;
     list-style: none;
@@ -60,7 +65,9 @@ a {
 }
 
 a:hover {
-  text-decoration: underline;
+    text-decoration: none;
+    font-family: 'Open Sans', 'Helvetica', 'Arial', 'Sans-Serif';
+    color: #66DDFF;
 }
 
 h1 {
