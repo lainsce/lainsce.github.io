@@ -1,6 +1,6 @@
 body {
-  margin: 60px auto;
-  width: 70%;
+  margin: 0 0 0 0;
+  width: 100%;
 }
 
 nav {
@@ -11,6 +11,7 @@ nav {
   padding: 50px;
   overflow: hidden;
   list-style: none;
+  display: inline-block;
   background-color: #334565;
   color: #f1f1f1;
 }
@@ -44,6 +45,7 @@ a:hover {
 h1 {
   font-size: 2.8em;
   font-family: 'Raleway', 'Helvetica', 'Arial', 'Sans-Serif';
+  padding: inherit;
 }
 
 p {
@@ -51,6 +53,12 @@ p {
   font-size: 1em;
   line-height: 1.2em;
   color: #333;
+  width: 70%;
+  padding: inherit;
+}
+
+div {
+  padding: 20px;
 }
 
 div ul {
