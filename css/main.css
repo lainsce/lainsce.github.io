@@ -24,7 +24,8 @@ nav {
 }
 
 nav a {
-    color: #f1f1f1;
+  color: #F1F1F1;
+  vertical-align: text-bottom;
 }
 
 nav a:hover {
@@ -48,35 +49,30 @@ nav ul li {
     margin: 0 8px;
 }
 
-nav a {
-  color: #F1F1F1;
-  vertical-align: text-bottom;
-}
-
 nav img {
     height: 20px;
     vertical-align: middle;
 }
 
-a {
+div a {
   font-family: 'Open Sans', 'Helvetica', 'Arial', 'Sans-Serif';
   text-decoration: none;
   color: #0099FF;
 }
 
-a:hover {
+div a:hover {
     text-decoration: none;
     font-family: 'Open Sans', 'Helvetica', 'Arial', 'Sans-Serif';
     color: #66DDFF;
 }
 
-h1 {
+div h1 {
   font-size: 2.8em;
   font-family: 'Raleway', 'Helvetica', 'Arial', 'Sans-Serif';
   font-weight: 300;
 }
 
-p {
+div p {
   font-family: 'Open Sans', 'Helvetica', 'Arial', 'Sans-Serif';
   font-size: 1em;
   line-height: 1.2em;
@@ -146,6 +142,14 @@ footer ul li {
 
 footer ul a {
     color: #f1f1f1;
+    display: block;
+    height: 100%;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
+    width: 100%;
+}
+
+footer ul a:hover {
+    color: #e0e0e0;
     display: block;
     height: 100%;
     text-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
