@@ -1,8 +1,10 @@
-body {
+html body {
   margin: 0 0 0 0;
   width: 100%;
   max-width: 100%;
+  min-height: 100%;
   overflow-x: hidden;
+  position: relative;
 }
 
 nav {
@@ -97,6 +99,7 @@ footer {
     padding: 16px 0;
     text-align: center;
     width: 100%;
+    position: relative;
 }
 
 footer ul {
