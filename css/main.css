@@ -8,9 +8,9 @@ html body {
 }
 
 nav {
-    background-color: #d55;
-    background-image: -webkit-linear-gradient(left, #dd5555, #ff7777);
-    background-image: linear-gradient(to right, #dd5555, #ff7777);
+    background-color: #d52b2b;
+    background-image: -webkit-linear-gradient(left, #d52b2b, #ab2222);
+    background-image: linear-gradient(to right, #d52b2b, #ab2222);
     box-shadow:
         0 1px 3px rgba(0, 0, 0, 0.12),
         0 1px 2px rgba(0, 0, 0, 0.24);
