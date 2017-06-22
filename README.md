@@ -5,12 +5,12 @@ I'm a developer of many apps on ![elementary OS](https://elementary.io).
 
 My apps are as follows:
 
-![Notejot](https://lainsce.github.io/notejot)
+![icon](icons/notejot.png)![Notejot](https://lainsce.github.io/notejot)
 - Stupidly simple sticky notes applet.
 
-![Quilter](https://lainsce.github.io/quilter)
+![icon](icons/quilter.png)![Quilter](https://lainsce.github.io/quilter)
 - Focus on your writing.
 
-![Coin](https://lainsce.github.io/coin)
+![icon](icons/coin.png)![Coin](https://lainsce.github.io/coin)
 - Track the virtual currencies in real world currency value.
 
