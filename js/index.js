@@ -1,6 +1,6 @@
 $(function () {
     // How old am I?
-    $("#age").text (yearsSince ("1993/6/6"));
+    $("#age").text (yearsSince ("1993/06/06"));
 });
 
 function yearsSince (epoch) {
