@@ -300,9 +300,6 @@ nav {
     background-color: #43748e;
     background-image: #43748e;
     background-image: #43748e;
-    box-shadow:
-        0 1px 3px rgba(0, 0, 0, 0.12),
-        0 1px 2px rgba(0, 0, 0, 0.24);
     color: #fff;
     font-weight: 600;
     height: 56px;
@@ -615,8 +612,10 @@ footer ul .yellow:hover {
  **********/
 
  .hero {
-     background-image: url(../images/code-hero.png);
      background-color: #43748e;
+     box-shadow:
+         0 1px 3px rgba(0, 0, 0, 0.12),
+         0 1px 2px rgba(0, 0, 0, 0.24);
      color: #F1F1F1;
      background-size: contain;
      background-position-x: 80%;
