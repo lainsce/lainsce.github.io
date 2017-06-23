@@ -175,6 +175,10 @@ main div ul li {
     word-wrap: break-word;
 }
 
+main div ul li a {
+    color: burlywood;
+}
+
 .grid {
     margin: 0 auto;
     max-width: 1000px;
