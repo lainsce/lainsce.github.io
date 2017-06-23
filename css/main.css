@@ -182,7 +182,7 @@ main div ul li {
 }
 
 .grid > * {
-    margin: 18px;
+    margin: 16px;
 }
 
 @media only screen and (max-width: 640px) {
