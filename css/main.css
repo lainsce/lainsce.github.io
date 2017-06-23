@@ -222,6 +222,15 @@ main div .avatar {
         width: calc(50% - 48px);
     }
 
+    .grid .whole {
+        display: inline-block;
+        vertical-align: top;
+        margin: 5px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        width: 100%;
+    }
+
     .grid .half:only-child {
         width: 50%;
     }
