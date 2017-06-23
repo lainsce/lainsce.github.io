@@ -422,7 +422,7 @@ footer ul li {
 }
 
 footer ul a {
-    color: #f8f8f8;
+    color: #f1f1f1;
     display: block;
     height: 100%;
     text-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
@@ -430,7 +430,8 @@ footer ul a {
 }
 
 footer ul a:hover {
-    color: #f1f1f1;
+    color: #f8f8f8;
+    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.15);
 }
 
 footer a {
