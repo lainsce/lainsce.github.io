@@ -16,7 +16,7 @@
    id="svg2"
    version="1.1"
    inkscape:version="0.91 r13725"
-   sodipodi:docname="coin.svg"
+   sodipodi:docname="notejot.svg"
    inkscape:export-filename="/home/lains/Pictures/coin.png"
    inkscape:export-xdpi="90"
    inkscape:export-ydpi="90">
@@ -179,7 +179,7 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="9.9098714"
-     inkscape:cx="34.779244"
+     inkscape:cx="19.794186"
      inkscape:cy="18.878625"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
@@ -219,14 +219,14 @@
      id="layer1"
      transform="translate(-341.6478,-641.58173)">
     <path
-       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 365.64585,645.59797 a 19.985266,19.985266 0 0 0 -19.98572,19.98572 19.985266,19.985266 0 0 0 19.98572,19.98571 19.985266,19.985266 0 0 0 19.98571,-19.98571 19.985266,19.985266 0 0 0 -19.98571,-19.98572 z m 0,3.18252 a 16.803188,16.803188 0 0 1 16.80319,16.8032 16.803188,16.803188 0 0 1 -16.80319,16.80318 16.803188,16.803188 0 0 1 -16.80319,-16.80318 16.803188,16.803188 0 0 1 16.80319,-16.8032 z"
-       id="path4168"
+       style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.06109953;stroke-opacity:1"
+       d="m 345.65952,645.61231 0,39.95225 27.19336,0 12.77344,-12.16213 0,-27.79012 -39.9668,0 z m 3.93945,4.71349 23.00781,0 0,3.82472 -23.00781,0 0,-3.82472 z m 0,5.86073 19.07227,0 0,3.82472 -19.07227,0 0,-3.82472 z"
+       id="rect4167"
        inkscape:connector-curvature="0" />
     <path
-       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 365.64585,651.50533 a 14.078342,14.078347 0 0 0 -14.07835,14.07835 14.078342,14.078347 0 0 0 14.07835,14.07835 14.078342,14.078347 0 0 0 14.07835,-14.07835 14.078342,14.078347 0 0 0 -14.07835,-14.07835 z m -1.75808,5.33267 3.51959,0 0,17.51541 -3.51959,0 0,-17.51541 z"
-       id="path4173"
+       style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.65682817px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 377.48369,685.63675 8.45094,-7.73081 0,7.73081 z"
+       id="path4188"
        inkscape:connector-curvature="0" />
   </g>
 </svg>

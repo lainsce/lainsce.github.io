@@ -16,7 +16,7 @@
    id="svg2"
    version="1.1"
    inkscape:version="0.91 r13725"
-   sodipodi:docname="coin.svg"
+   sodipodi:docname="quilter.svg"
    inkscape:export-filename="/home/lains/Pictures/coin.png"
    inkscape:export-xdpi="90"
    inkscape:export-ydpi="90">
@@ -179,7 +179,7 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="9.9098714"
-     inkscape:cx="34.779244"
+     inkscape:cx="35.687429"
      inkscape:cy="18.878625"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
@@ -219,14 +219,9 @@
      id="layer1"
      transform="translate(-341.6478,-641.58173)">
     <path
-       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 365.64585,645.59797 a 19.985266,19.985266 0 0 0 -19.98572,19.98572 19.985266,19.985266 0 0 0 19.98572,19.98571 19.985266,19.985266 0 0 0 19.98571,-19.98571 19.985266,19.985266 0 0 0 -19.98571,-19.98572 z m 0,3.18252 a 16.803188,16.803188 0 0 1 16.80319,16.8032 16.803188,16.803188 0 0 1 -16.80319,16.80318 16.803188,16.803188 0 0 1 -16.80319,-16.80318 16.803188,16.803188 0 0 1 16.80319,-16.8032 z"
-       id="path4168"
-       inkscape:connector-curvature="0" />
-    <path
-       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 365.64585,651.50533 a 14.078342,14.078347 0 0 0 -14.07835,14.07835 14.078342,14.078347 0 0 0 14.07835,14.07835 14.078342,14.078347 0 0 0 14.07835,-14.07835 14.078342,14.078347 0 0 0 -14.07835,-14.07835 z m -1.75808,5.33267 3.51959,0 0,17.51541 -3.51959,0 0,-17.51541 z"
-       id="path4173"
-       inkscape:connector-curvature="0" />
+       style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-opacity:1"
+       d="M 8.9355469 3.9902344 L 8.9355469 44 L 38.955078 44 L 38.955078 3.9902344 L 8.9355469 3.9902344 z M 12 7 L 29.953125 7 L 29.953125 10.917969 L 12 10.917969 L 12 7 z M 12.054688 14.037109 L 34.044922 14.037109 L 34.044922 18.054688 L 12.054688 18.054688 L 12.054688 14.037109 z M 12.021484 20.970703 L 26.039062 20.970703 L 26.039062 24.988281 L 12.021484 24.988281 L 12.021484 20.970703 z "
+       transform="translate(341.6478,641.58173)"
+       id="rect4167" />
   </g>
 </svg>
