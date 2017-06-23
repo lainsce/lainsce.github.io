@@ -200,9 +200,6 @@ main div .avatar {
     width: 100%;
 }
 
-.grid > * {
-    margin: 16px;
-}
 
 @media only screen and (max-width: 640px) {
     .grid > *:first-child {
@@ -216,8 +213,8 @@ main div .avatar {
 
 @media only screen and (min-width: 640px) {
     .grid > * {
-        padding-top: 20px;
-        padding-bottom: 20px;
+        padding-top: 16px;
+        padding-bottom: 16px;
     }
 
     .grid .half {
@@ -249,6 +246,10 @@ main div .avatar {
         display: inline-block;
         vertical-align: top;
         width: calc(66% - 48px);
+        margin-top: 0px;
+        margin-right: 0px;
+        margin-left: 0px;
+        padding-top: 16px;
     }
 
     .grid .two-thirds:only-child {
