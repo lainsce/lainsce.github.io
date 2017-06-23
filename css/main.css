@@ -26,6 +26,7 @@ nav {
 nav a {
   color: #F1F1F1;
   vertical-align: text-bottom;
+  font-family: 'Open Sans', 'Helvetica', 'Arial', 'Sans-Serif';
 }
 
 nav a:hover {
@@ -140,12 +141,25 @@ footer ul li {
     width: 36px;
 }
 
+footer a {
+  font-family: 'Open Sans', 'Helvetica', 'Arial', 'Sans-Serif';
+  text-decoration: none;
+  color: #0099FF;
+}
+
+footer a:hover {
+    text-decoration: none;
+    font-family: 'Open Sans', 'Helvetica', 'Arial', 'Sans-Serif';
+    color: #66DDFF;
+}
+
 footer ul a {
     color: #f1f1f1;
     display: block;
     height: 100%;
     text-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
     width: 100%;
+    font-family: 'Open Sans', 'Helvetica', 'Arial', 'Sans-Serif';
 }
 
 footer ul a:hover {
@@ -154,6 +168,7 @@ footer ul a:hover {
     height: 100%;
     text-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
     width: 100%;
+    font-family: 'Open Sans', 'Helvetica', 'Arial', 'Sans-Serif';
 }
 
 footer ul .black {
