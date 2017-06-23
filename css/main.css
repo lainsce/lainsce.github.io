@@ -27,6 +27,7 @@ nav {
 nav a {
   color: #F1F1F1;
   vertical-align: text-bottom;
+  text-decoration: none;
 }
 
 nav a:hover {
