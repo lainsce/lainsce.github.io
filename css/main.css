@@ -171,9 +171,6 @@ main {
 }
 
 main div ul li {
-    width:20%;
-    list-style:none;
-    display:inline-block;
     text-align:left;
     word-wrap: break-word;
 }
