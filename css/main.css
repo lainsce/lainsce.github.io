@@ -40,7 +40,8 @@ a {
 }
 
 h1 {
-    font-family: Pacifico;
+    font-family: Raleway;
+    font-weight: 300;
     font-size: 40px;
     font-weight: normal;
     margin: 0;
@@ -292,8 +293,8 @@ img {
 
 nav {
     background-color: #08c;
-    background-image: -webkit-linear-gradient(left, #057dc7, #38a2c2);
-    background-image: linear-gradient(to right, #057dc7, #38a2c2);
+    background-image: -webkit-linear-gradient(left, #337dc7, #6983d3);
+    background-image: linear-gradient(to right, #337dc7, #6983d3);
     box-shadow:
         0 1px 3px rgba(0, 0, 0, 0.12),
         0 1px 2px rgba(0, 0, 0, 0.24);
