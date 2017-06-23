@@ -80,17 +80,6 @@ p {
     opacity: 0.8;
 }
 
-.avatar {
-    border: 1px solid rgba(0,0,0,0.7);
-    border-radius: 50%;
-    background-color: #fff;
-    box-shadow: inset 0 0 0 1px rgba(255,255,255,0.05), inset 0 1px 0 0 rgba(255,255,255,0.45), inset 0 -1px 0 0 rgba(255,255,255,0.15), 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-    height: 48px;
-    vertical-align: middle;
-    margin: -10px 0px 0px 7px;
-    width: 48px;
-}
-
 /**********
  * Button *
  *********/
@@ -188,6 +177,17 @@ main div ul li {
 
 main div ul li a {
     color: burlywood;
+}
+
+main div .avatar {
+    border: 1px solid rgba(0,0,0,0.7);
+    border-radius: 50%;
+    background-color: #fff;
+    box-shadow: inset 0 0 0 1px rgba(255,255,255,0.05), inset 0 1px 0 0 rgba(255,255,255,0.45), inset 0 -1px 0 0 rgba(255,255,255,0.15), 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    height: 48px;
+    vertical-align: middle;
+    margin: -10px 0px 0px 7px;
+    width: 48px;
 }
 
 .grid {
