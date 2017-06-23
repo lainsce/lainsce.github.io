@@ -13,7 +13,6 @@
 <meta property="og:description" content="The personal site for Lains">
 
 <body>
-  <main>
   <nav>
     <ul>
       <li><a href="/"><i class="fa fa-lg fa-home"></i> Home</a></li>
@@ -25,28 +24,32 @@
       <li><a href="/quilter" class="logo"><img src="../icons/quilter.svg" /> Quilter</a></li>
     </ul>
   </nav>
-  <div class="row container">
-    <div>
-      <center>
-      <h1>Hi there, I'm Lains!</h1>
-      <p>Also known as Paulo Galardi</p>
-      <p>I'm <script type="text/javascript">
-          var birth = new Date('1993-06-06');
-          function getAge(birth) {
-            ageMS = Date.parse(Date()) - Date.parse(birth);
-            age = new Date();
-            age.setTime(ageMS);
-            ageYear = age.getFullYear() - 1970;
+<main>
+  <section>
+    <div class="grid">
+      <div class="two-thirds">
+        <center>
+        <h1>Hi there, I'm Lains!</h1>
+        <p>Also known as Paulo Galardi</p>
+        <p>I'm <script type="text/javascript">
+            var birth = new Date('1993-06-06');
+            function getAge(birth) {
+              ageMS = Date.parse(Date()) - Date.parse(birth);
+              age = new Date();
+              age.setTime(ageMS);
+              ageYear = age.getFullYear() - 1970;
 
-            return ageYear;
-          }
+              return ageYear;
+            }
 
-          document.write(getAge(birth));
-      </script> years old, live in <a href="https://goo.gl/maps/CBYjVt4hQ2C2">São Paulo</a>, and I love to program things!</p>
-      <p>I'm a developer of many apps on <a href="https://elementary.io">elementary OS</a>.</p>
-    </center>
+            document.write(getAge(birth));
+        </script> years old, live in <a href="https://goo.gl/maps/CBYjVt4hQ2C2">São Paulo</a>, and I love to program things!</p>
+        <p>I'm a developer of many apps on <a href="https://elementary.io">elementary OS</a>.</p>
+      </center>
+      </div>
     </div>
-  </div>
+  </section>
+
   <section class="grid">
     <div><p>My apps:</p></div>
     <div class="third">
@@ -64,24 +67,25 @@
     </div>
   </section>
 </main>
-  <footer>
-    <ul>
-      <li class=green><a href="mailto:lainsce@airmail.cc"><i class="fa fa-lg fa-envelope"></i></a></li>
-      <li class=blue-twitter><a href="https://twitter.com/lainscereal"><i class="fa fa-lg fa-twitter"></i></a></li>
-      <li class=orange><a href="https://www.reddit.com/user/Lainss/"><i class="fa fa-lg fa-reddit"></i></a></li>
-      <li class=instagram><a href="https://www.instagram.com/lainsce/"><i class="fa fa-lg fa-instagram"></i></a></li>
-      <li class=red><a href="https://plus.google.com/+LainsCE"><i class="fa fa-lg fa-google"></i></a></li>
-      <li class=black><a href="https://github.com/lainsce"><i class="fa fa-lg fa-github"></i></a></li>
-    </ul>
 
-    <a href="https://github.com/lainsce/lainsce.github.io/issues/new" target="_blank"><i class="fa fa-bug"></i> Report an Issue</a>
+<footer>
+  <ul>
+    <li class=green><a href="mailto:lainsce@airmail.cc"><i class="fa fa-lg fa-envelope"></i></a></li>
+    <li class=blue-twitter><a href="https://twitter.com/lainscereal"><i class="fa fa-lg fa-twitter"></i></a></li>
+    <li class=orange><a href="https://www.reddit.com/user/Lainss/"><i class="fa fa-lg fa-reddit"></i></a></li>
+    <li class=instagram><a href="https://www.instagram.com/lainsce/"><i class="fa fa-lg fa-instagram"></i></a></li>
+    <li class=red><a href="https://plus.google.com/+LainsCE"><i class="fa fa-lg fa-google"></i></a></li>
+    <li class=black><a href="https://github.com/lainsce"><i class="fa fa-lg fa-github"></i></a></li>
+  </ul>
 
-    <p>©
-      <script language="javascript" type="text/javascript">
-        var today = new Date();
-        var year = today.getFullYear();
-        document.write(year);
-      </script> Paulo Galardi. Made in São Paulo.</p>
-    <p>CSS styling by <a href="http://danielfore.com"><i class="fa fa-lg fa-user"></i> Daniel Foré</a></p>
-  </footer>
+  <a href="https://github.com/lainsce/lainsce.github.io/issues/new" target="_blank"><i class="fa fa-bug"></i> Report an Issue</a>
+
+  <p>©
+    <script language="javascript" type="text/javascript">
+      var today = new Date();
+      var year = today.getFullYear();
+      document.write(year);
+    </script> Paulo Galardi. Made in São Paulo.</p>
+  <p>CSS styling by <a href="http://danielfore.com"><i class="fa fa-lg fa-user"></i> Daniel Foré</a></p>
+</footer>
 </body>
