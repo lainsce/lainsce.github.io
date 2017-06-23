@@ -192,8 +192,8 @@ main {
 
 @media only screen and (min-width: 640px) {
     .grid > * {
-        padding-top: 32px;
-        padding-bottom: 32px;
+        padding-top: 12px;
+        padding-bottom: 12px;
     }
 
     .grid .half {
