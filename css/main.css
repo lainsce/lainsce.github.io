@@ -2,7 +2,7 @@
 
 body,
 html {
-    background-color: #f1f1f1;
+    background-color: #fff;
     color: #333;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -85,7 +85,7 @@ p {
  *********/
 
 .button {
-    background-color: #fff;
+    background-color: #f1f1f1;
     background-image:
         -webkit-linear-gradient(
             top,
@@ -126,7 +126,7 @@ p {
             rgba(255, 255, 255, 0.2),
             rgba(0, 0, 0, 0.05)
         );
-    color: #fff;
+    color: #f1f1f1;
     text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
 }
 
@@ -157,7 +157,7 @@ p {
  ***************/
 
 .button.green {
-    background-color: #45d363;
+    background-color: #d1ff82;
 }
 
 /********
@@ -176,7 +176,11 @@ main div ul li {
 }
 
 main div ul li a {
-    color: burlywood;
+    color: #64baff;
+}
+
+main div ul li a:hover {
+    color: #8cd5ff;
 }
 
 main div .avatar {
@@ -270,7 +274,7 @@ img {
  ******************/
 
 .read-more {
-    color: #708090;
+    color: #7E8087;
     font-size: 14px;
     opacity: 0.8;
 }
@@ -305,15 +309,15 @@ img {
 }
 
 .read-more.blue:hover .fa {
-    color: #3689e6;
+    color: #64baff;
 }
 
 .read-more.green:hover .fa {
-    color: #1d7e0d;
+    color: #9bdb4d;
 }
 
 .read-more.red:hover .fa {
-    color: #dd4b39;
+    color: #ed5353;
 }
 
 /*******
@@ -321,10 +325,10 @@ img {
  *******/
 
 nav {
-    background-color: #43748e;
-    background-image: #43748e;
-    background-image: #43748e;
-    color: #fff;
+    background-color: #485a6c;
+    background-image: #485a6c;
+    background-image: #485a6c;
+    color: #f1f1f1;
     font-weight: 600;
     height: 56px;
     line-height: 56px;
@@ -334,7 +338,13 @@ nav {
 }
 
 nav a {
-    color: #fff;
+    color: #f1f1f1;
+}
+
+nav a:hover {
+  box-shadow:
+      0 2px 5px 0 rgba(255, 255, 255, 0.24),
+      0 2px 4px 0 rgba(255, 255, 255, 0.12);
 }
 
 nav ul {
@@ -363,7 +373,7 @@ nav .logo img {
  *********/
 
 footer {
-    background-color: #c9c9c9;
+    background-color: #e5e5e5;
     box-shadow:
         0 -1px 3px 0 rgba(0, 0, 0, 0.24),
         0 -1px 2px 0 rgba(0, 0, 0, 0.12);
@@ -412,15 +422,29 @@ footer ul li {
 }
 
 footer ul a {
-    color: #fff;
+    color: #f8f8f8;
     display: block;
     height: 100%;
     text-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
     width: 100%;
 }
 
+footer ul a:hover {
+    color: #f1f1f1;
+}
+
+footer a {
+    color: #0d52bf;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
+}
+
+footer a:hover {
+    color: #3689e6;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
+}
+
 footer ul .black {
-    background-color: #444;
+    background-color: #333;
 }
 
 footer ul .black:hover {
@@ -509,7 +533,7 @@ footer ul .blue-twitter:hover {
 }
 
 footer ul .green {
-    background-color: #3cd428;
+    background-color: #68b723;
 }
 
 footer ul .green:hover {
@@ -517,13 +541,13 @@ footer ul .green:hover {
         inset 0 0 0 1px rgba(255, 255, 255, 0.07),
         inset 0 1px 0 0 rgba(255, 255, 255, 0.3),
         inset 0 -1px 0 0 rgba(255, 255, 255, 0.1),
-        0 8px 10px 1px rgba(21, 194, 0, 0.14),
-        0 3px 14px 2px rgba(21, 194, 0, 0.12),
-        0 5px 5px -3px rgba(21, 194, 0, 0.4);
+        0 8px 10px 1px rgba(104, 183, 35, 0.14),
+        0 3px 14px 2px rgba(104, 183, 35, 0.12),
+        0 5px 5px -3px rgba(104, 183, 35, 0.4);
 }
 
 footer ul .orange {
-    background-color: #f96c2d;
+    background-color: #FF7822;
 }
 
 footer ul .orange:hover {
@@ -579,7 +603,7 @@ footer ul .red:hover {
 }
 
 footer ul .yellow {
-    background-color: #ffb300;
+    background-color: #f9c440;
     box-shadow:
         inset 0 0 0 1px rgba(255, 255, 255, 0.07),
         inset 0 1px 0 0 rgba(255, 255, 255, 0.5),
@@ -639,7 +663,7 @@ footer ul .yellow:hover {
  **********/
 
  .hero {
-     background-color: #43748e;
+     background-color: #667885;
      box-shadow:
          0 1px 3px rgba(0, 0, 0, 0.12),
          0 1px 2px rgba(0, 0, 0, 0.24);
