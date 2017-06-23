@@ -170,6 +170,14 @@ main {
     flex: 1;
 }
 
+main div ul li {
+    width:20%;
+    list-style:none;
+    display:inline-block;
+    text-align:left;
+    word-wrap: break-word;
+}
+
 .grid {
     margin: 0 auto;
     max-width: 1000px;
