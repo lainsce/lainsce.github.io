@@ -55,6 +55,8 @@ h2 {
 }
 
 h3 {
+    color: #08c;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
     font-weight: 300;
     font-size: 24px;
     margin: 0;
@@ -104,16 +106,16 @@ p {
         0 1px 2px rgba(0, 0, 0, 0.24);
     color: #555;
     display: inline-block;
-    margin: 6px 0;
+    margin: 3px 12px 6px 0;
     min-width: 100px;
-    padding: 12px;
+    padding: 8px;
     text-align: center;
     -webkit-transition: all 100ms ease-in-out;
     transition: all 100ms ease-in-out;
 }
 
 .button.suggested-action {
-    background-color: #08c;
+    background-color: #64baff;
     background-image:
         -webkit-linear-gradient(
             top,
@@ -153,11 +155,11 @@ p {
 }
 
 /***************
- * Green Button *
+ * Alt Button *
  ***************/
 
-.button.green {
-    background-color: #9bdb4d;
+.button.alt {
+    background-color: #75baae;
 }
 
 /********
@@ -694,15 +696,15 @@ footer ul .yellow:hover {
      background-position-x: 80%;
      background-position-y: 100%;
      background-repeat: no-repeat;
-     height: calc(50vh - 56px);
+     height: calc(65vh - 56px);
      max-height: calc(100vh - 56px);
      padding-top: 16px;
  }
 
  @media only screen and (min-width: 425px) {
      .hero {
-         height: 277px;
-         min-height: 277px;
+         height: 370px;
+         min-height: 370px;
      }
  }
 
@@ -720,6 +722,7 @@ footer ul .yellow:hover {
      .hero {
          background-size: 90%;
          text-align: center;
+         height: calc(55vh - 27px);
      }
 
      main div ul {
@@ -748,6 +751,7 @@ footer ul .yellow:hover {
  @media only screen and (max-height: 667px) and (orientation: portrait) {
      .hero {
          background-size: 90%;
+         height: calc(65vh - 45px);
      }
 
      main div ul {
@@ -774,8 +778,7 @@ footer ul .yellow:hover {
 
      .hero h1 {
          font-size: 36px;
-         line-height: 36px;
-         margin-bottom: 16px;
+         line-height: 24px;
      }
 
      h3 {

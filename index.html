@@ -7,21 +7,38 @@
 
 <title>Lains</title>
 
-<link rel="stylesheet" type="text/css" href="/css/main.css">
+<link rel="stylesheet" type="text/css" href="css/main.css">
 <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Raleway:300|Open+Sans:300,400,600">
 <link rel="stylesheet" type="text/css" media="all" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
-<link rel="shortcut icon" href="/favicon.ico">
-<link rel="icon" sizes="16x16 32x32 64x64" href="/fav/favicon.ico">
+<link rel="shortcut icon" href="fav/favicon.ico">
+<link rel="icon" sizes="16x16 32x32 64x64" href="fav/favicon.ico">
 
-<link rel="stylesheet" type="text/css" href="css/main.css" />
+<script
+  src="https://s3.amazonaws.com/snappycheckout/StripeButton.js"
+  id="stripebutton"
+  class="checkout-button"
+  key="pk_live_GW0qUkH42VLtBjw6mXPemPtJ"
+  name="Lains"
+  description="Support me with this small amount. :D"
+  amount="100"
+  currency="BRL"
+  locale="en"
+  image="https://s3.amazonaws.com/stripe-uploads/acct_1AWsC5JNQvOWEJeNmerchant-icon-1498171558703-fav.jpg"
+  billing="false"
+  shipping="false"
+  rememberme="true"
+  checkoutlabel="Pay {{amount}}"
+  message="Thanks! :D"
+  visible="false">
+</script>
 
 <nav>
     <ul>
-      <li><i class="fa fa-lg fa-home"></i></a></li>
+      <li><i class="fa fa-fw fa-home"></i></a></li>
     </ul>
 
     <ul class=right>
-      <li><a href="mailto:lainsce@airmail.cc" class="tooltip" data-tooltip="Email me..." target="_blank"><i class="fa fa-lg fa-envelope"></i></a></li>
+      <li><a href="mailto:lainsce@airmail.cc" class="tooltip" data-tooltip="Email me..." target="_blank"><i class="fa fa-fw fa-envelope"></i></a></li>
     </ul>
 </nav>
 <main>
@@ -30,8 +47,8 @@
       <div class="two-thirds">
           <p><h1 align=center><img class="avatar" src="https://avatars0.githubusercontent.com/u/4886639?v=3">  Hi, I'm Lains!</h1><p>
           <ul align=center>
-            <li><i class="fa fa-fw fa-user" style="color:#d4d4d4"></i> Paulo Galardi</li>
-            <li><i class="fa fa-fw fa-birthday-cake" style="color:#d4d4d4"></i> <script type="text/javascript">
+            <li><i class="fa fa-fw fa-user-circle" style="color:#d4d4d4"></i> Paulo Galardi</li>
+            <li><i class="fa fa-fw fa-calendar" style="color:#d4d4d4"></i> <script type="text/javascript">
               var birth = new Date(1993, 5, 6, 18, 59, 59, 999);
               function getAge(birth) {
                 ageMS = Date.parse(Date()) - Date.parse(birth);
@@ -44,10 +61,14 @@
 
               document.write(getAge(birth));
             </script> years old</li>
-            <li><i class="fa fa-fw fa-map" style="color:#d4d4d4"></i> Lives in <a href="https://goo.gl/maps/CBYjVt4hQ2C2">São Paulo</a></li>
-            <li><i class="fa fa-fw fa-code" style="color:#d4d4d4"></i> App developer on <a href="https://elementary.io">elementary OS</a></li>
-            <li><i class="fa fa-fw fa-heart" style="color:#ff8c82"></i> Loves programming in Vala, Python, and C</li>
+            <li><i class="fa fa-fw fa-map-marker" style="color:#d4d4d4"></i> Lives in <a href="https://goo.gl/maps/CBYjVt4hQ2C2">São Paulo</a></li>
+            <li><i class="fa fa-fw fa-building" style="color:#d4d4d4"></i> App developer on <a href="https://elementary.io">elementary OS</a></li>
+            <li><i class="fa fa-fw fa-heart" style="color:#ff8ca9"></i> Loves programming in Vala, Python, and C</li>
           </ul>
+          <p align=center>
+              <a class="button suggested-action" href="https://twitter.com/intent/follow?screen_name=lainscereal"><i class="fa fa-twitter"></i>Follow Me on Twitter</a>
+              <a class="button suggested-action alt" href="#" onclick="CheckoutButton.loadButton('stripebutton'); return false;"><i class="fa fa-usd"></i> Buy Me a Coffee</a>
+          </p>
       </div>
     </div>
   </section>
@@ -57,20 +78,20 @@
       <h3 data-align="center">My apps:</a></h3>
     </div>
     <div class="third">
-        <p data-align=center><img src="/icons/coinn-big.png"></p>
+        <p data-align=center><img src="icons/coinn-big.png"></p>
         <h3 data-align="center">Coin</a></h3>
         <p>Track the most important cryptocurrencies in real world currency values.</p>
         <p><a href="/coin" class="read-more red"><i class="fa fa-lg fa-link"></i> Check it out</a></p>
     </div>
     <div class="third">
-        <p data-align=center><img src="/icons/notejot-big.png"></p>
+        <p data-align=center><img src="icons/notejot-big.png"></p>
         <h3 data-align="center">Notejot</a></h3>
         <p>Take short-term notes with this stupidly-simple sticky notes applet.</p>
         <p><a href="/notejot" class="read-more green"><i class="fa fa-lg fa-link"></i> Check it out</a></p>
         </p>
     </div>
    <div class="third">
-        <p data-align=center><img src="/icons/quilter-big.png"></p>
+        <p data-align=center><img src="icons/quilter-big.png"></p>
         <h3 data-align="center">Quilter</a></h3>
         <p>Focus on your writing and write beautiful solid stories with the Focus Mode in tow.</p>
         <p><a href="/quilter" class="read-more blue"><i class="fa fa-lg fa-link"></i> Check it out</a></p>
@@ -80,12 +101,13 @@
 
 <footer>
   <ul>
-    <li class=yellow><a href="mailto:lainsce@airmail.cc" class="tooltip" data-tooltip="Email" target="_blank"><i class="fa fa-lg fa-envelope"></i></a></li>
-    <li class=telegram><a href="https://t.me/lainsce" class="tooltip" data-tooltip="Telegram" target="_blank"><i class="fa fa-lg fa-telegram"></i></a></li>
-    <li class=black><a href="https://github.com/lainsce" class="tooltip" data-tooltip="GitHub" target="_blank"><i class="fa fa-lg fa-github"></i></a></li>
+    <li class=yellow><a href="mailto:lainsce@airmail.cc" class="tooltip" data-tooltip="Email" target="_blank"><i class="fa fa-lg fa-fw fa-envelope"></i></a></li>
+    <li class=telegram><a href="https://t.me/lainsce" class="tooltip" data-tooltip="Telegram" target="_blank"><i class="fa fa-lg fa-fw fa-telegram"></i></a></li>
+    <li class=blue-twitter><a href="https://twitter.com/@lainscereal" class="tooltip" data-tooltip="Telegram" target="_blank"><i class="fa fa-lg fa-fw fa-telegram"></i></a></li>
+    <li class=black><a href="https://github.com/lainsce" class="tooltip" data-tooltip="GitHub" target="_blank"><i class="fa fa-lg fa-fw fa-github-alt"></i></a></li>
   </ul>
 
-  <a href="https://github.com/lainsce/lainsce.github.io/issues/new" target="_blank"><i class="fa fa-bug"></i> Report an Issue</a>
+  <a href="https://github.com/lainsce/lainsce.github.io/issues/new" target="_blank"><i class="fa fa-lg fa-fw fa-bug"></i> Report an Issue</a>
 
   <p>©
     <script language="javascript" type="text/javascript">
@@ -93,5 +115,4 @@
       var year = today.getFullYear();
       document.write(year);
     </script> Paulo Galardi. Made in São Paulo.</p>
-  <p>CSS styling by <a href="http://danielfore.com"><i class="fa fa-lg fa-user"></i> Daniel Foré</a>.</p>
 </footer>
