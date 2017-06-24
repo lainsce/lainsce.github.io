@@ -2,7 +2,7 @@
 
 body,
 html {
-    background-color: #fff;
+    background-color: #fafafa;
     color: #333;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -401,7 +401,7 @@ nav .logo img {
  *********/
 
 footer {
-    background-color: #e5e5e5;
+    background-color: #dfdfdf;
     box-shadow:
         0 -1px 3px 0 rgba(0, 0, 0, 0.24),
         0 -1px 2px 0 rgba(0, 0, 0, 0.12);
@@ -602,13 +602,14 @@ footer ul .yellow:hover {
  **********/
 
  .hero {
-     background-color: #667885;
+     background-color: #334554;
+     background-image: url("../img/hero.png");
      box-shadow:
          0 1px 3px rgba(0, 0, 0, 0.12),
          0 1px 2px rgba(0, 0, 0, 0.24);
      color: #F1F1F1;
-     background-size: contain;
-     background-position-x: 80%;
+     background-size: cover;
+     background-position-x: 100%;
      background-position-y: 100%;
      background-repeat: no-repeat;
      height: calc(65vh - 56px);
