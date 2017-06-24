@@ -708,7 +708,7 @@ footer ul .yellow:hover {
  @media only screen and (min-width: 425px) {
      .hero {
          height: calc(50vh - 56px);
-         min-height: calc(50vh - 56px);
+         min-height: 277px;
      }
  }
 
