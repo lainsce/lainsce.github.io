@@ -721,11 +721,55 @@ footer ul .yellow:hover {
          background-size: 90%;
          text-align: center;
      }
+
+     main div ul {
+         list-style: none;
+         padding-top: 32px;
+         padding-left: 16px;
+         padding-right: 16px;
+         padding-bottom: 32px;
+         margin-top: 0px;
+         margin-bottom: 0px;
+         vertical-align: text-bottom;
+     }
+
+     .grid .third {
+         list-style: none;
+         padding-top: 32px;
+         padding-left: 16px;
+         padding-right: 16px;
+         padding-bottom: 32px;
+         margin-top: 0px;
+         margin-bottom: 0px;
+         vertical-align: text-bottom;
+     }
  }
 
  @media only screen and (max-height: 667px) and (orientation: portrait) {
      .hero {
          background-size: 90%;
+     }
+
+     main div ul {
+         list-style: none;
+         padding-top: 32px;
+         padding-left: 16px;
+         padding-right: 16px;
+         padding-bottom: 32px;
+         margin-top: 0px;
+         margin-bottom: 0px;
+         vertical-align: text-bottom;
+     }
+
+     .grid .third {
+         list-style: none;
+         padding-top: 32px;
+         padding-left: 16px;
+         padding-right: 16px;
+         padding-bottom: 32px;
+         margin-top: 0px;
+         margin-bottom: 0px;
+         vertical-align: text-bottom;
      }
 
      .hero h1 {
