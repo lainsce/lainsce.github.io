@@ -170,6 +170,12 @@ main {
     flex: 1;
 }
 
+main div ul {
+  list-style: none;
+  margin-top: 32px;
+  padding-left: 160px;
+}
+
 main div ul li {
     text-align:left;
     word-wrap: break-word;
@@ -208,6 +214,12 @@ main div .avatar {
 
     .grid > *:last-child {
         padding-bottom: 16px;
+    }
+
+    main div ul {
+      list-style: none;
+      margin-top: 32px;
+      padding-left: 40px;
     }
 }
 
@@ -688,19 +700,21 @@ footer ul .yellow:hover {
      background-position-x: 80%;
      background-position-y: 100%;
      background-repeat: no-repeat;
-     height: calc(95vh - 56px);
+     height: calc(50vh - 56px);
      max-height: calc(100vh - 56px);
+     padding-top: 16px;
  }
 
  @media only screen and (min-width: 425px) {
      .hero {
-         height: 260px;
+         height: calc(50vh - 56px);
+         min-height: calc(50vh - 56px);
      }
  }
 
  @media only screen and (max-width: 425px) {
      .vexpand {
-         height: calc(95vh - 225px); /* I dunno magic numbers are magic */
+         height: calc(50vh - 225px); /* I dunno magic numbers are magic */
      }
 
      .hero .two-thirds {
@@ -731,6 +745,6 @@ footer ul .yellow:hover {
      }
 
      .vexpand {
-         height: calc(95vh - 224px); /* I dunno magic numbers are magic */
+         height: calc(50vh - 224px); /* I dunno magic numbers are magic */
      }
  }
