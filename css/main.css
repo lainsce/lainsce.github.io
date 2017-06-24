@@ -171,7 +171,8 @@ main {
 }
 
 main div ul li {
-    text-align:left;
+    list-style: none;
+    text-align: left;
     word-wrap: break-word;
 }
 
