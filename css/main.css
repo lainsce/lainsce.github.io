@@ -170,6 +170,10 @@ main {
     flex: 1;
 }
 
+main div ul {
+    list-style: none;
+}
+
 main div ul li {
     list-style: none;
     text-align: left;
