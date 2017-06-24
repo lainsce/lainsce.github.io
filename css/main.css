@@ -170,12 +170,6 @@ main {
     flex: 1;
 }
 
-main div ul {
-  list-style: none;
-  margin-top: 32px;
-  padding-left: 160px;
-}
-
 main div ul li {
     text-align:left;
     word-wrap: break-word;
@@ -206,11 +200,9 @@ main div .avatar {
     width: 100%;
 }
 
-.grid .third {
-    padding-left: 16px;
-    padding-right: 16px;
+.grid > * {
+    margin: 16px;
 }
-
 
 @media only screen and (max-width: 640px) {
     .grid > *:first-child {
@@ -220,18 +212,12 @@ main div .avatar {
     .grid > *:last-child {
         padding-bottom: 16px;
     }
-
-    main div ul {
-      list-style: none;
-      margin-top: 32px;
-      padding-left: 40px;
-    }
 }
 
 @media only screen and (min-width: 640px) {
     .grid > * {
-        padding-top: 16px;
-        padding-bottom: 16px;
+        padding-top: 20px;
+        padding-bottom: 20px;
     }
 
     .grid .half {
@@ -256,8 +242,6 @@ main div .avatar {
     .grid .third {
         display: inline-block;
         vertical-align: top;
-        padding-left: 16px;
-        padding-right: 16px;
         width: calc(33% - 32px);
     }
 
@@ -265,10 +249,6 @@ main div .avatar {
         display: inline-block;
         vertical-align: top;
         width: calc(66% - 48px);
-        margin-top: 0px;
-        margin-right: 0px;
-        margin-left: 0px;
-        padding-top: 16px;
     }
 
     .grid .two-thirds:only-child {
