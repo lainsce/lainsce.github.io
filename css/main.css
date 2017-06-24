@@ -203,9 +203,12 @@ main div .avatar {
 .grid {
     margin: 0 auto;
     max-width: 1000px;
+    width: 100%;
+}
+
+.grid .third {
     padding-left: 16px;
     padding-right: 16px;
-    width: 100%;
 }
 
 
@@ -253,6 +256,8 @@ main div .avatar {
     .grid .third {
         display: inline-block;
         vertical-align: top;
+        padding-left: 16px;
+        padding-right: 16px;
         width: calc(33% - 32px);
     }
 
