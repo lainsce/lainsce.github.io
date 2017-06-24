@@ -27,18 +27,18 @@
   billing="false"
   shipping="false"
   rememberme="true"
-  checkoutlabel="Pay {{amount}}"
+  checkoutlabel="Donate {{amount}}"
   message="Thanks! :D"
   visible="false">
 </script>
 
 <nav>
     <ul>
-      <li><i class="fa fa-fw fa-home"></i></a></li>
+      <li><a href="/" target="_parent"><i class="fa fa-lg fa-home"></i></a></li>
     </ul>
 
     <ul class=right>
-      <li><a href="mailto:lainsce@airmail.cc" class="tooltip" data-tooltip="Email me..." target="_blank"><i class="fa fa-fw fa-envelope"></i></a></li>
+      <li><a href="mailto:lainsce@airmail.cc"><i class="fa fa-lg fa-envelope"></i></a></li>
     </ul>
 </nav>
 <main>
@@ -66,8 +66,12 @@
             <li><i class="fa fa-fw fa-heart" style="color:#ff8ca9"></i> Loves programming in Vala, Python, and C</li>
           </ul>
           <p align=center>
-              <a class="button" href="https://twitter.com/intent/follow?screen_name=lainscereal"><i class="fa fa-fw fa-twitter" style="color:#09E"></i>Follow Me on Twitter</a>
-              <a class="button suggested-action alt" href="#" onclick="CheckoutButton.loadButton('stripebutton'); return false;"><i class="fa fa-fw fa-usd"></i>Buy Me a Coffee</a>
+              <a class="button suggested-action main" href="https://twitter.com/intent/follow?screen_name=lainscereal"><i class="fa fa-fw fa-twitter"></i>Follow Me on Twitter</a>
+              <a class="button suggested-action alt" href="#" onclick="CheckoutButton.loadButton('stripebutton'); return false;"><i class="fa fa-fw fa-usd"></i>Buy Me a
+                <script language="javascript" type="text/javascript">
+                  var things = ["Beer", "Coffee", "Drink", "Pizza", "Snack", "Pop"];
+                  document.write(things[Math.floor(Math.random()*things.length)]);
+                </script></a>
           </p>
       </div>
     </div>
