@@ -172,11 +172,13 @@ main {
 
 main div ul {
     list-style: none;
+    padding-top: 32px;
+    vertical-align: text-bottom;
 }
 
 main div ul li {
     list-style: none;
-    text-align: left;
+    text-align: justify;
     word-wrap: break-word;
 }
 
