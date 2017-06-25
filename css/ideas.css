@@ -4,11 +4,11 @@
 
  nav {
     background-color: #38e;
-    background-image: linear-gradient(to right, #68b723, #f9c440, #3689e6);
     background-image: -webkit-linear-gradient(left, #68b723, #f9c440, #3689e6);
     background-image: -o-linear-gradient(left, #68b723, #f9c440, #3689e6);
     background-image: -moz-linear-gradient(left, #68b723, #f9c440, #3689e6);
     background-image: -ms-linear-gradient(left, #68b723, #f9c440, #3689e6);
+    background-image: linear-gradient(to right, #68b723, #f9c440, #3689e6);
     box-shadow:
         0 1px 3px rgba(0, 0, 0, 0.12),
         0 1px 2px rgba(0, 0, 0, 0.24);
