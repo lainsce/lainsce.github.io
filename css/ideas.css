@@ -4,7 +4,9 @@
 
  nav {
     background-color: #38e;
+    background-image: #38e;
     background-image: -webkit-linear-gradient(left, #68b723, #f9c440, #3689e6);
+    background-image: -webkit-gradient(left, #68b723, #f9c440, #3689e6);
     background-image: -o-linear-gradient(left, #68b723, #f9c440, #3689e6);
     background-image: -moz-linear-gradient(left, #68b723, #f9c440, #3689e6);
     background-image: -ms-linear-gradient(left, #68b723, #f9c440, #3689e6);
