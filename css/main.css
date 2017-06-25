@@ -193,9 +193,11 @@ p {
   text-align: center;
   outline: none;
   text-decoration: none;
-  margin: 9px 6px 6px 9px;
+  margin: 9px 6px 9px 6px;
+  padding: 0px 8px 0px 8px;
   min-width: 135px;
-  max-height: 50px;
+  max-height: 40px;
+  line-height: 40px;
   text-align: center;
 }
 
