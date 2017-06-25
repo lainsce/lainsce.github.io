@@ -163,9 +163,23 @@ p {
 }
 
 .button.alt:active {
+    background-color: #0d8c4d;
+    color: #ccc;
     box-shadow:
-        0 3px 15px rgba(0, 0, 0, 0.16),
-        0 3px 15px rgba(0, 0, 0, 0.23);
+        0 0px 15px rgba(0, 0, 0, 0.16),
+        0 0px 15px rgba(0, 0, 0, 0.23);
+        background-image:
+            -webkit-linear-gradient(
+                top,
+                rgba(0, 0, 0, 0.2),
+                rgba(255, 255, 255, 0.1)
+            );
+        background-image:
+            linear-gradient(
+                to bottom,
+                rgba(0, 0, 0, 0.2),
+                rgba(255, 255, 255, 0.1)
+            );
 }
 
 .button.main {
@@ -179,16 +193,30 @@ p {
 }
 
 .button.main:active {
+    background-color: #3ea0eb;
+    color: #ccc;
     box-shadow:
-        0 3px 15px rgba(0, 0, 0, 0.16),
-        0 3px 15px rgba(0, 0, 0, 0.23);
+        0 0px 15px rgba(0, 0, 0, 0.16),
+        0 0px 15px rgba(0, 0, 0, 0.23);
+        background-image:
+            -webkit-linear-gradient(
+                top,
+                rgba(0, 0, 0, 0.2),
+                rgba(255, 255, 255, 0.1)
+            );
+        background-image:
+            linear-gradient(
+                to bottom,
+                rgba(0, 0, 0, 0.2),
+                rgba(255, 255, 255, 0.1)
+            );
 }
 
 .ghost {
   display: inline-block;
   padding: 0px;
-  color: #0d52bf;
-  border: 1px solid #0d52bf;
+  color: #2b63a0;
+  border: 1px solid #2b63a0;
   border-radius: 5px;
   text-align: center;
   outline: none;
@@ -225,24 +253,24 @@ p {
 }
 
 .ghost:active {
-    background-image:
-        -webkit-linear-gradient(
-            top,
-            rgba(255, 255, 255, 0.2),
-            rgba(0, 0, 0, 0.1)
-        );
-    background-image:
-        linear-gradient(
-            to bottom,
-            rgba(255, 255, 255, 0.2),
-            rgba(0, 0, 0, 0.1)
-        );
-    color: #fff;
-    border: 1px solid #69abf9;
-    background-color: #69abf9;
-    box-shadow:
-        0 3px 15px rgba(0, 0, 0, 0.16),
-        0 3px 15px rgba(0, 0, 0, 0.23);
+  background-color: #2b63a0;
+  border: 1px solid #2b63a0;
+  color: #ccc;
+  box-shadow:
+      0 0px 15px rgba(0, 0, 0, 0.16),
+      0 0px 15px rgba(0, 0, 0, 0.23);
+      background-image:
+          -webkit-linear-gradient(
+              top,
+              rgba(0, 0, 0, 0.2),
+              rgba(255, 255, 255, 0.1)
+          );
+      background-image:
+          linear-gradient(
+              to bottom,
+              rgba(0, 0, 0, 0.2),
+              rgba(255, 255, 255, 0.1)
+          );
 }
 
 /********
@@ -376,16 +404,11 @@ img {
 .read-more {
     color: #7E8087;
     font-size: 14px;
-    opacity: 0.8;
-}
-
-.read-more:hover {
-    opacity: 1;
+    opacity: 0.85;
 }
 
 .read-more::after {
     color: inherit;
-    content: "→";
     font-family: "FontAwesome";
     font-style: normal;
     font-weight: inherit;
@@ -412,12 +435,27 @@ img {
     color: #64baff;
 }
 
+.read-more.blue:hover {
+    color: #64baff;
+    opacity: 1;
+}
+
 .read-more.green:hover .fa {
     color: #9bdb4d;
 }
 
+.read-more.green:hover {
+    color: #9bdb4d;
+    opacity: 1;
+}
+
 .read-more.red:hover .fa {
     color: #ed5353;
+}
+
+.read-more.red:hover {
+    color: #ed5353;
+    opacity: 1;
 }
 
 /*******
@@ -708,10 +746,7 @@ footer ul .yellow:hover {
 
      main div ul {
          list-style: none;
-         padding-top: 32px;
-         padding-left: 16px;
-         padding-right: 16px;
-         padding-bottom: 32px;
+         padding: 16px 32px 32px 16px;
          margin-top: 0px;
          margin-bottom: 0px;
          vertical-align: text-bottom;
@@ -719,10 +754,7 @@ footer ul .yellow:hover {
 
      .grid .third {
          list-style: none;
-         padding-top: 32px;
-         padding-left: 16px;
-         padding-right: 16px;
-         padding-bottom: 32px;
+         padding-top: 16px 32px 32px 16px;
          margin-top: 0px;
          margin-bottom: 0px;
          vertical-align: text-bottom;
@@ -746,10 +778,7 @@ footer ul .yellow:hover {
 
      main div ul {
          list-style: none;
-         padding-top: 32px;
-         padding-left: 0px;
-         padding-right: 0px;
-         padding-bottom: 32px;
+         padding: 0px 32px 32px 0px;
          margin-top: 0px;
          margin-bottom: 0px;
          vertical-align: text-bottom;
@@ -786,10 +815,7 @@ footer ul .yellow:hover {
 
      main div ul {
          list-style: none;
-         padding-top: 32px;
-         padding-left: 0px;
-         padding-right: 0px;
-         padding-bottom: 32px;
+         padding: 32px 0px 0px 32px;
          margin-top: 0px;
          margin-bottom: 0px;
          vertical-align: text-bottom;
@@ -824,10 +850,7 @@ footer ul .yellow:hover {
 
      main div ul {
          list-style: none;
-         padding-top: 32px;
-         padding-left: 16px;
-         padding-right: 16px;
-         padding-bottom: 32px;
+         padding: 32px 16px 16px 32px;
          margin-top: 0px;
          margin-bottom: 0px;
          vertical-align: text-bottom;
@@ -835,10 +858,7 @@ footer ul .yellow:hover {
 
      .grid .third {
          list-style: none;
-         padding-top: 32px;
-         padding-left: 16px;
-         padding-right: 16px;
-         padding-bottom: 32px;
+         padding: 32px 16px 16px 32px;
          margin-top: 0px;
          margin-bottom: 0px;
          vertical-align: text-bottom;
