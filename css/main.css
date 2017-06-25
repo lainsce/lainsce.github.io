@@ -141,54 +141,62 @@ p {
  *********************/
 
 .button.alt {
-    background-color: #11bb67;
+    border: 1px solid #6ec06e;
+    background-color: #5cb85c;
 }
 
 .button.alt:hover {
+    border: 1px solid #6ec06e;
     box-shadow:
         0 3px 6px rgba(0, 0, 0, 0.16),
         0 3px 6px rgba(0, 0, 0, 0.23);
 }
 
 .button.alt:active {
-    background-color: #0d8c4d;
+    background-color: #3d8b3d;
+    border: 1px solid #6ec06e;
     color: #ccc;
     box-shadow: 0 0px 15px rgba(0, 0, 0, 0.16), 0 0px 15px rgba(0, 0, 0, 0.23);
-    background-image: -webkit-gradient(top, rgba(0, 0, 0, 0.1), rgba(255, 255, 255, 0.2));
-    background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.1), rgba(255, 255, 255, 0.2));
-    background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0.1), rgba(255, 255, 255, 0.2));
-    background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.1), rgba(255, 255, 255, 0.2));
-    background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0.1), rgba(255, 255, 255, 0.2));
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(255, 255, 255, 0.2));
+    background-image: -webkit-gradient(top, rgba(0, 0, 0, 0.1), rgba(61, 139, 61, 0.2));
+    background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.1), rgba(61, 139, 61, 0.2));
+    background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0.1), rgba(61, 139, 61, 0.2));
+    background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.1), rgba(61, 139, 61, 0.2));
+    background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0.1), rgba(61, 139, 61, 0.2));
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(61, 139, 61, 0.2));
 }
 
 .button.main {
     background-color: #55acee;
+    border: 1px solid #6cb7f0;
 }
 
 .button.main:hover {
+    border: 1px solid #6cb7f0;
     box-shadow:
         0 3px 6px rgba(0, 0, 0, 0.16),
         0 3px 6px rgba(0, 0, 0, 0.23);
 }
 
 .button.main:active {
-    background-color: #3ea0eb;
+    background-color: #2795e9;
+    border: 1px solid #6cb7f0;
     color: #ccc;
     box-shadow: 0 0px 15px rgba(0, 0, 0, 0.16), 0 0px 15px rgba(0, 0, 0, 0.23);
-    background-image: -webkit-gradient(top, rgba(0, 0, 0, 0.1), rgba(255, 255, 255, 0.2));
-    background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.1), rgba(255, 255, 255, 0.2));
-    background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0.1), rgba(255, 255, 255, 0.2));
-    background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.1), rgba(255, 255, 255, 0.2));
-    background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0.1), rgba(255, 255, 255, 0.2));
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(255, 255, 255, 0.2));
+    background-image: -webkit-gradient(top, rgba(0, 0, 0, 0.1), rgba(	39, 149, 233, 0.2));
+    background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.1), rgba(39, 149, 233, 0.2));
+    background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0.1), rgba(39, 149, 233, 0.2));
+    background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.1), rgba(39, 149, 233, 0.2));
+    background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0.1), rgba(39, 149, 233, 0.2));
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(39, 149, 233, 0.2));
 }
 
 .ghost {
   display: inline-block;
   padding: 0px;
-  color: #fff;
-  border: 1px solid #fff;
+  color: #094180;
+  border: 1px solid #094180;
+  box-shadow: none;
+  text-shadow: none;
   border-radius: 5px;
   text-align: center;
   outline: none;
@@ -213,7 +221,7 @@ p {
     background-image: -ms-linear-gradient(top, rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.1));
     background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.1));
     color: #fff;
-    border: 1px solid #2b63a0;
+    border: 1px solid #4988ce;
     background-color: #2b63a0;
     box-shadow:
         0 3px 6px rgba(0, 0, 0, 0.16),
@@ -222,7 +230,7 @@ p {
 
 .ghost:active {
   background-color: #2b63a0;
-  border: 1px solid #2b63a0;
+  border: 1px solid #4988ce;
   color: #ccc;
   box-shadow: 0 0px 15px rgba(0, 0, 0, 0.16), 0 0px 15px rgba(0, 0, 0, 0.23);
   background-image: -webkit-gradient(top, rgba(0, 0, 0, 0.1), rgba(255, 255, 255, 0.2));
@@ -302,7 +310,6 @@ main div ul li a:hover {
 
 @media only screen and (min-width: 640px) {
     .grid > * {
-        padding-top: 20px;
         padding-bottom: 20px;
     }
 
@@ -423,8 +430,8 @@ img {
  *******/
 
 nav {
-    background-color: #485a6c;
-    background-image: #485a6c;
+    background-color: #607d8b;
+    background-image: #607d8b;
     color: #f1f1f1;
     font-weight: 600;
     height: 50px;
@@ -439,8 +446,12 @@ nav a {
     color: #f1f1f1;
 }
 
-nav a:active {
-    color: #e1e1e1;
+nav a:hover:active {
+    color: #ccc;
+}
+
+nav a:hover {
+    opacity: 0.85;
 }
 
 nav ul {
@@ -456,7 +467,7 @@ nav ul.right {
 
 nav ul li {
     display: inline-block;
-    margin: 0 8px;
+    margin: 0 16px 0 16px;
 }
 
 nav .logo img {
@@ -469,10 +480,10 @@ nav .logo img {
  *********/
 
 footer {
-    background-color: #555;
+    background-color: #eee;
     box-shadow: 0 -1px 3px 0 rgba(0, 0, 0, 0.24), 0 -1px 2px 0 rgba(0, 0, 0, 0.12);
     box-sizing: border-box;
-    color: #aaa;
+    color: #555;
     font-size: 12px;
     line-height: 48px;
     padding: 0px;
@@ -647,7 +658,7 @@ footer ul .yellow:hover {
  **********/
 
  .hero {
-     background-color: #7393b3;
+     background-color: #607d8b;
      background-image: url("../img/hero.png");
      box-shadow:
          0 1px 3px rgba(0, 0, 0, 0.12),
@@ -664,8 +675,8 @@ footer ul .yellow:hover {
 
  @media only screen and (min-width: 425px) {
      .hero {
-         height: 360px;
-         min-height: 360px;
+         height: 365px;
+         min-height: 365px;
      }
  }
 
@@ -701,9 +712,14 @@ footer ul .yellow:hover {
          vertical-align: text-bottom;
      }
 
+     p .hero.grid.two-thirds {
+       margin-top: 0px;
+       margin-bottom: 0px;
+     }
+
      .grid .third {
          list-style: none;
-         padding-top: 16px 32px 32px 16px;
+         padding: 16px 32px 32px 16px;
          margin-top: 0px;
          margin-bottom: 0px;
          vertical-align: text-bottom;
@@ -718,53 +734,16 @@ footer ul .yellow:hover {
      }
  }
 
- @media only screen and (max-width: 330px) and (orientation: portrait) {
+ @media only screen and (max-width: 375px) and (orientation: portrait) {
      .hero {
          text-align: center;
-         height: calc(77vh - 15px);
-         min-height: calc(77vh - 15px);
+         height: calc(42vh - 15px);
+         min-height: calc(42vh - 15px);
      }
 
      main div ul {
          list-style: none;
-         padding: 0px 32px 32px 0px;
-         margin-top: 0px;
-         margin-bottom: 0px;
-         vertical-align: text-bottom;
-     }
-
-     .grid .two-thirds {
-        margin: 12px;
-     }
-
-     .hero h1 {
-         font-size: 24px;
-         line-height: 12px;
-     }
-
-     h3 {
-         font-size: 12px;
-     }
-
-     a.button.suggested-action.alt {
-        margin-right: 0px;
-     }
-
-     a.button.suggested-action.main {
-        margin-right: 0px;
-     }
- }
-
- @media only screen and (max-width: 330px) and (max-height: 490px) and (orientation: portrait) {
-     .hero {
-         text-align: center;
-         height: calc(92vh - 15px);
-         min-height: calc(92vh - 15px);
-     }
-
-     main div ul {
-         list-style: none;
-         padding: 32px 0px 0px 32px;
+         padding: 12px 3px 12px 3px;
          margin-top: 0px;
          margin-bottom: 0px;
          vertical-align: text-bottom;
@@ -794,12 +773,12 @@ footer ul .yellow:hover {
 
  @media only screen and (max-height: 667px) and (orientation: portrait) {
      .hero {
-         height: calc(65vh - 45px);
+         height: calc(55vh - 45px);
      }
 
      main div ul {
          list-style: none;
-         padding: 32px 16px 16px 32px;
+         padding: 12px 3px 12px 3px;
          margin-top: 0px;
          margin-bottom: 0px;
          vertical-align: text-bottom;
