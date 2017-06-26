@@ -3,31 +3,30 @@
  *********************/
 
  nav {
-    background-color: #38e;
-    background-image: #38e;
-    background-image: -webkit-linear-gradient(left, #68b723, #f9c440, #3689e6);
-    background-image: -webkit-gradient(left, #68b723, #f9c440, #3689e6);
-    background-image: -o-linear-gradient(left, #68b723, #f9c440, #3689e6);
-    background-image: -moz-linear-gradient(left, #68b723, #f9c440, #3689e6);
-    background-image: -ms-linear-gradient(left, #68b723, #f9c440, #3689e6);
-    background-image: linear-gradient(to right, #68b723, #f9c440, #3689e6);
-    box-shadow:
-        0 1px 3px rgba(0, 0, 0, 0.12),
-        0 1px 2px rgba(0, 0, 0, 0.24);
-    color: #fff;
-    font-weight: 600;
-    height: 50px;
-    line-height: 50px;
-    padding-left: 16px;
-    padding-right: 16px;
-    z-index: 999;
-    box-shadow:
-        0 1px 3px rgba(0, 0, 0, 0.12),
-        0 1px 2px rgba(0, 0, 0, 0.24);
+   background-color: #2196f3;
+   color: #f1f1f1;
+   font-weight: 600;
+   height: 50px;
+   line-height: 3rem;
+   padding-left: 16px;
+   padding-right: 16px;
+   z-index: 999;
+   display: inline-block;
+   font-size: 1.20rem;
+   white-space: nowrap;
+   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
 
 nav a {
-    color: #fff;
+    color: #f1f1f1;
+}
+
+nav a:hover:active {
+    color: #ccc;
+}
+
+nav a:hover {
+    opacity: 0.85;
 }
 
 nav ul {
@@ -43,7 +42,7 @@ nav ul.right {
 
 nav ul li {
     display: inline-block;
-    margin: 0 8px;
+    margin: 0 16px 0 16px;
 }
 
 nav .logo img {
