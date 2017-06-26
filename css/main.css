@@ -243,6 +243,7 @@ main div ul li a:hover {
 
 .grid {
     margin: auto;
+    margin-top: 45px;
     max-width: 1000px;
     width: 100%;
 }
