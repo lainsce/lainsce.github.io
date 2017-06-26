@@ -1,8 +1,6 @@
-/* Styling by Daniel Foré */
-
 body,
 html {
-    background-color: #fafafa;
+    background-color: #fffffc;
     color: #333;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -11,16 +9,30 @@ html {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    font: 16px "Open Sans", sans-serif;
+    font: 1rem "Open Sans", sans-serif;
     font-weight: 400;
     margin: 0;
-    min-height: 100%;
-    min-width: 100%;
+    min-height: 100vh;
 }
 
 .animated {
     -webkit-transition: all 250ms ease-in-out;
     transition: all 250ms ease-in-out;
+}
+
+.avatar {
+    border: 1px solid rgba(0, 0, 0, 0.6);
+    border-radius: 100%;
+    max-width:10%;
+    max-height:10%;
+    background-color: #f1f1f1;
+    box-shadow:
+        inset 0 0 0 1px rgba(255, 255, 255, 0.07),
+        inset 0 -1px 0 0 rgba(255, 255, 255, 0.1),
+        0 1px 3px rgba(0, 0, 0, 0.12),
+        0 1px 2px rgba(0, 0, 0, 0.24);
+    vertical-align: middle;
+    margin: -10px 0px 0px 7px;
 }
 
 /***************
@@ -36,26 +48,26 @@ html {
 }
 
 a {
-    color: #2b63a0;
+    color: #08c;
     text-decoration: none;
 }
 
 h1 {
     font-family: Raleway;
-    font-weight: 300;
-    font-size: 48px;
+    font-size: 40px;
+    font-weight: normal;
     margin: 0;
 }
 
 h2 {
     font-size: 32px;
     font-weight: 300;
-    margin: 0 0 16px;
+    margin: 0 0 1rem;
     padding: 0;
 }
 
 h3 {
-    font-weight: 400;
+    font-weight: 300;
     font-size: 24px;
     margin: 0;
     padding: 0;
@@ -67,8 +79,9 @@ section:not(.hero) h2,
 }
 
 h4 {
-    font-size: 20px;
-    font-weight: 500;
+    font-size: 14px;
+    font-weight: 600;
+    opacity: 0.8;
 }
 
 p {
@@ -84,32 +97,59 @@ p {
  *********/
 
 .button {
-  display: inline-block;
-  padding: 6px 12px;
-  margin-bottom: 6px;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 1.5;
-  text-align: center;
-  white-space: nowrap;
-  vertical-align: middle;
-  -ms-touch-action: manipulation;
-  touch-action: manipulation;
-  cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  background-image: none;
-  border: 1px solid transparent;
-  border-radius: 4px;
-  -webkit-transition: all 100ms ease-in-out;
-  transition: all 100ms ease-in-out;
-  color: #f1f1f1;
+    background-color: #fff;
+    background-image:
+        -webkit-linear-gradient(
+            top,
+            rgba(255, 255, 255, 0.2),
+            rgba(0, 0, 0, 0.1)
+        );
+    background-image:
+        linear-gradient(
+            to bottom,
+            rgba(255, 255, 255, 0.2),
+            rgba(0, 0, 0, 0.1)
+        );
+    border-radius: 3px;
+    box-shadow:
+        0 1px 3px rgba(0, 0, 0, 0.12),
+        0 1px 2px rgba(0, 0, 0, 0.24);
+    color: #555;
+    display: inline-block;
+    margin: 6px 0;
+    min-width: 100px;
+    padding: 12px;
+    text-align: center;
+    -webkit-transition: all 100ms ease-in-out;
+    transition: all 100ms ease-in-out;
+}
+
+.button.suggested-action {
+    background-color: #08c;
+    background-image:
+        -webkit-linear-gradient(
+            top,
+            rgba(255, 255, 255, 0.2),
+            rgba(0, 0, 0, 0.05)
+        );
+    background-image:
+        linear-gradient(
+            to bottom,
+            rgba(255, 255, 255, 0.2),
+            rgba(0, 0, 0, 0.05)
+        );
+    color: #fff;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.button:hover {
+    box-shadow:
+        0 3px 6px rgba(0, 0, 0, 0.16),
+        0 3px 6px rgba(0, 0, 0, 0.23);
 }
 
 .button .fa {
-    margin-right: 6px;
+    margin-right: 12px;
 }
 
 @media only screen and (max-width: 640px) {
@@ -124,69 +164,12 @@ p {
     }
 }
 
-/*********************
- * Alt Button States *
- *********************/
+/***************
+ * Green Button *
+ ***************/
 
-.button.alt {
-    border: 1px solid #6ec06e;
-    background-color: #5cb85c;
-    color: #f1f1f1;
-}
-
-.button.alt:hover {
-    border: 1px solid #398439;
-    background-color: #449d44;
-    color: #fff;
-}
-
-.button.alt:active {
-    background-color: #449d44;
-    border: 1px solid #398439;
-    color: #ccc;
-    box-shadow: inset 0 3px 5px rgba(0,0,0,.125);
-    background-image: none;
-    outline: 0;
-}
-
-.button.ghost {
-    border: 1px solid #f1f1f1;
-    color: #f1f1f1;
-}
-
-.button.ghost:hover {
-    border: 1px solid #35abf3;
-    background-color: #1da1f2;
-    color: #fff;
-}
-
-.button.ghost:active {
-    background-color: #1da1f2;
-    border: 1px solid #35abf3;
-    color: #ccc;
-    box-shadow: inset 0 3px 5px rgba(0,0,0,.125);
-    background-image: none;
-    outline: 0;
-}
-
-.button.ghost.live {
-    border: 1px solid #888;
-    color: #888;
-}
-
-.button.ghost.live:hover {
-    border: 1px solid #555;
-    background-color: #666;
-    color: #fff;
-}
-
-.button.ghost.live:active {
-    background-color: #666;
-    border: 1px solid #555;
-    color: #ccc;
-    box-shadow: inset 0 3px 5px rgba(0,0,0,.125);
-    background-image: none;
-    outline: 0;
+.button.green {
+    background-color: #45d363;
 }
 
 /********
@@ -203,6 +186,8 @@ main div ul {
     list-style: none;
     padding-top: 32px;
     padding-bottom: 32px;
+    padding-left: 0.6rem;
+    padding-right: 0.6rem;
     vertical-align: text-bottom;
 }
 
@@ -222,31 +207,16 @@ main div ul li a:hover {
     color: #acf5ff;
 }
 
-.avatar {
-    border: 1px solid rgba(0, 0, 0, 0.6);
-    border-radius: 100%;
-    max-width:10%;
-    max-height:10%;
-    background-color: #f1f1f1;
-    box-shadow:
-        inset 0 0 0 1px rgba(255, 255, 255, 0.07),
-        inset 0 -1px 0 0 rgba(255, 255, 255, 0.1),
-        0 1px 3px rgba(0, 0, 0, 0.12),
-        0 1px 2px rgba(0, 0, 0, 0.24);
-    vertical-align: middle;
-    margin: -10px 0px 0px 7px;
-}
-
 .grid {
-    margin: auto;
-    margin-top: 45px;
-    margin-bottom: 45px;
+    margin: 0 auto;
     max-width: 1000px;
     width: 100%;
 }
 
 .grid > * {
-    margin: 16px;
+    margin: 1rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
 }
 
 @media only screen and (max-width: 640px) {
@@ -255,28 +225,20 @@ main div ul li a:hover {
     }
 
     .grid > *:last-child {
-        padding-bottom: 16px;
+        padding-bottom: 1rem;
     }
 }
 
 @media only screen and (min-width: 640px) {
     .grid > * {
-        padding-bottom: 20px;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
     }
 
     .grid .half {
         display: inline-block;
         vertical-align: top;
         width: calc(50% - 48px);
-    }
-
-    .grid .whole {
-        display: inline-block;
-        vertical-align: top;
-        margin: 5px;
-        padding-top: 20px;
-        padding-bottom: 8px;
-        width: 100%;
     }
 
     .grid .half:only-child {
@@ -287,8 +249,6 @@ main div ul li a:hover {
         display: inline-block;
         vertical-align: top;
         width: calc(33% - 32px);
-        padding-top: 0px;
-        padding-bottom: 0px;
     }
 
     .grid .two-thirds {
@@ -315,18 +275,65 @@ img {
     max-width: 100%;
 }
 
+/********
+ * Hero *
+ ********/
+
+.hero {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background-color: #78909c;
+    color: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    max-width: 100%;
+    min-height: 30vh;
+}
+
+@media only screen and (min-width: 640px) {
+    .hero .grid > * {
+        padding: 64px 0;
+    }
+}
+
+.hero a:not(.button) {
+    color: #fff;
+}
+
+.hero a:not(.button):hover {
+    color: #42baea;
+}
+
+.hero a.button:not(.suggested-action) {
+    color: #08c;
+}
+
+.hero h2 {
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
 /*******************
  * Read More Links *
  ******************/
 
 .read-more {
-    color: #7E8087;
+    color: inherit;
     font-size: 14px;
-    opacity: 0.85;
+    opacity: 0.8;
+}
+
+.read-more:hover {
+    opacity: 1;
 }
 
 .read-more::after {
     color: inherit;
+    content: "→";
     font-family: "FontAwesome";
     font-style: normal;
     font-weight: inherit;
@@ -350,82 +357,27 @@ img {
 }
 
 .read-more.blue:hover .fa {
-    color: #64baff;
-}
-
-.read-more.blue:hover {
-    color: #64baff;
-    opacity: 1;
+    color: #3689e6;
 }
 
 .read-more.green:hover .fa {
-    color: #9bdb4d;
+    color: #1d7e0d;
 }
 
-.read-more.green:hover {
-    color: #9bdb4d;
-    opacity: 1;
+.read-more.pink:hover .fa {
+    color: #e04c86;
+}
+
+.read-more.soundcloud:hover .fa {
+    color: #f96c2d;
+}
+
+.read-more.twitter:hover .fa {
+    color: #55acee;
 }
 
 .read-more.red:hover .fa {
-    color: #ed5353;
-}
-
-.read-more.red:hover {
-    color: #ed5353;
-    opacity: 1;
-}
-
-/*******
- * Nav *
- *******/
-
-nav {
-    background-color: #607d8b;
-    color: #f1f1f1;
-    font-weight: 600;
-    height: 50px;
-    line-height: 3rem;
-    padding-left: 16px;
-    padding-right: 16px;
-    z-index: 999;
-    display: inline-block;
-    font-size: 1.20rem;
-    white-space: nowrap;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-}
-
-nav a {
-    color: #f1f1f1;
-}
-
-nav a:hover:active {
-    color: #ccc;
-}
-
-nav a:hover {
-    opacity: 0.85;
-}
-
-nav ul {
-    display: inline-block;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-nav ul.right {
-    float: right;
-}
-
-nav ul li {
-    display: inline-block;
-    margin: 0 16px 0 16px;
-}
-
-nav .logo img {
-    height: 20px;
-    vertical-align: middle;
+    color: #dd4b39;
 }
 
 /**********
@@ -433,13 +385,12 @@ nav .logo img {
  *********/
 
 footer {
-    background-color: #eee;
-    box-shadow: 0 -1px 3px 0 rgba(0, 0, 0, 0.24), 0 -1px 2px 0 rgba(0, 0, 0, 0.12);
+    background-color: #f2f2f2;
     box-sizing: border-box;
-    color: #555;
+    color: #777;
     font-size: 12px;
     line-height: 48px;
-    padding: 0px;
+    padding: 1rem 0;
     text-align: center;
     width: 100%;
 }
@@ -448,21 +399,26 @@ footer ul {
     list-style: none;
     padding: 0;
     text-align: center;
-    margin-top: 6px;
-    margin-bottom: 16px;
 }
 
 footer ul li {
-    background-image: -webkit-gradient(top, rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.1));
-    background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.1));
-    background-image: -o-linear-gradient(top, rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.1));
-    background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.1));
-    background-image: -ms-linear-gradient(top, rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.1));
-    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.1));
+    background-image:
+        -webkit-linear-gradient(
+            top,
+            rgba(255, 255, 255, 0.2),
+            rgba(0, 0, 0, 0.05)
+        );
+    background-image:
+        linear-gradient(
+            to bottom,
+            rgba(255, 255, 255, 0.2),
+            rgba(0, 0, 0, 0.05)
+        );
     border-radius: 50%;
     border: 1px solid rgba(0, 0, 0, 0.15);
     box-shadow:
         inset 0 0 0 1px rgba(255, 255, 255, 0.07),
+        inset 0 1px 0 0 rgba(255, 255, 255, 0.3),
         inset 0 -1px 0 0 rgba(255, 255, 255, 0.1),
         0 1px 3px rgba(0, 0, 0, 0.12),
         0 1px 2px rgba(0, 0, 0, 0.24);
@@ -475,94 +431,204 @@ footer ul li {
 }
 
 footer ul a {
-    color: #f1f1f1;
+    color: #fff;
     display: block;
     height: 100%;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
     width: 100%;
 }
 
-footer ul a:hover {
-    color: #f8f8f8;
+footer ul .black {
+    background-color: #444;
 }
 
-footer a {
-    color: #0d52bf;
-}
-
-footer a:hover {
-    color: #3689e6;
-}
-
-footer a:active {
-    color: #69abf9;
-}
-
-footer ul .gray-github {
-    background-color: #5c6876;
-}
-
-footer ul .gray-github:active {
-    background-color: #818e9d;
-}
-
-footer ul .gray-github:hover {
+footer ul .black:hover {
     box-shadow:
         inset 0 0 0 1px rgba(255, 255, 255, 0.07),
+        inset 0 1px 0 0 rgba(255, 255, 255, 0.3),
         inset 0 -1px 0 0 rgba(255, 255, 255, 0.1),
-        0 8px 10px 1px rgba(92, 104, 118, 0.14),
-        0 3px 14px 2px rgba(92, 104, 118, 0.12),
-        0 5px 5px -3px rgba(92, 104, 118, 0.4);
+        0 8px 10px 1px rgba(0, 0, 0, 0.14),
+        0 3px 14px 2px rgba(0, 0, 0, 0.12),
+        0 5px 5px -3px rgba(0, 0, 0, 0.4);
+}
+
+footer ul .instagram {
+    background:
+        -webkit-radial-gradient(
+            32% 106%,
+            circle cover,
+            rgb(255, 225, 125) 0%,
+            rgb(255, 205, 105) 10%,
+            rgb(250, 145, 55) 28%,
+            rgb(235, 65, 65) 42%,
+            transparent 82%
+        ),
+        -webkit-linear-gradient(
+            -45deg,
+            rgb(35, 75, 215) 12%,
+            rgb(195, 60, 190) 58%
+        );
+    background:
+        -webkit-radial-gradient(
+            circle farthest-corner at 32% 106%,
+            rgb(255, 225, 125) 0%,
+            rgb(255, 205, 105) 10%,
+            rgb(250, 145, 55) 28%,
+            rgb(235, 65, 65) 42%,
+            transparent 82%
+        ),
+        -webkit-linear-gradient(
+            315deg,
+            rgb(35, 75, 215) 12%,
+            rgb(195, 60, 190) 58%
+        );
+    background:
+        radial-gradient(
+            circle farthest-corner at 32% 106%,
+            rgb(255, 225, 125) 0%,
+            rgb(255, 205, 105) 10%,
+            rgb(250, 145, 55) 28%,
+            rgb(235, 65, 65) 42%,
+            transparent 82%
+        ),
+        linear-gradient(
+            135deg,
+            rgb(35, 75, 215) 12%,
+            rgb(195, 60, 190) 58%
+        );
+    border-color: rgba(181, 70, 70, 0.7);
+}
+
+footer ul .instagram .fa {
+    vertical-align: middle;
+}
+
+footer ul .instagram:hover {
+    box-shadow:
+        inset 0 0 0 1px rgba(255, 255, 255, 0.07),
+        inset 0 1px 0 0 rgba(255, 255, 255, 0.3),
+        inset 0 -1px 0 0 rgba(255, 255, 255, 0.1),
+        0 8px 10px 1px rgba(137, 77, 49, 0.14),
+        0 3px 14px 2px rgba(137, 77, 49, 0.12),
+        0 5px 5px -3px rgba(137, 77, 49, 0.4);
 }
 
 footer ul .blue-twitter {
     background-color: #55acee;
 }
 
-footer ul .blue-twitter:active {
-    background-color: #88ceff;
-}
-
 footer ul .blue-twitter:hover {
     box-shadow:
         inset 0 0 0 1px rgba(255, 255, 255, 0.07),
+        inset 0 1px 0 0 rgba(255, 255, 255, 0.3),
         inset 0 -1px 0 0 rgba(255, 255, 255, 0.1),
         0 8px 10px 1px rgba(0, 100, 214, 0.14),
         0 3px 14px 2px rgba(0, 100, 214, 0.12),
         0 5px 5px -3px rgba(0, 100, 214, 0.4);
 }
 
-footer ul .telegram {
-    background-color: #0088cc;
+footer ul .green {
+    background-color: #3cd428;
 }
 
-footer ul .telegram:active {
-    background-color: #33aaee;
+footer ul .green:hover {
+    box-shadow:
+        inset 0 0 0 1px rgba(255, 255, 255, 0.07),
+        inset 0 1px 0 0 rgba(255, 255, 255, 0.3),
+        inset 0 -1px 0 0 rgba(255, 255, 255, 0.1),
+        0 8px 10px 1px rgba(21, 194, 0, 0.14),
+        0 3px 14px 2px rgba(21, 194, 0, 0.12),
+        0 5px 5px -3px rgba(21, 194, 0, 0.4);
+}
+
+footer ul .orange {
+    background-color: #f96c2d;
+}
+
+footer ul .orange:hover {
+    box-shadow:
+        inset 0 0 0 1px rgba(255, 255, 255, 0.07),
+        inset 0 1px 0 0 rgba(255, 255, 255, 0.3),
+        inset 0 -1px 0 0 rgba(255, 255, 255, 0.1),
+        0 8px 10px 1px rgba(249, 108, 45, 0.14),
+        0 3px 14px 2px rgba(249, 108, 45, 0.12),
+        0 5px 5px -3px rgba(249, 108, 45, 0.4);
+}
+
+footer ul .pink {
+    background-color: #e04c86;
+}
+
+footer ul .pink:hover {
+    box-shadow:
+        inset 0 0 0 1px rgba(255, 255, 255, 0.07),
+        inset 0 1px 0 0 rgba(255, 255, 255, 0.3),
+        inset 0 -1px 0 0 rgba(255, 255, 255, 0.1),
+        0 8px 10px 1px rgba(224, 76, 134, 0.14),
+        0 3px 14px 2px rgba(224, 76, 134, 0.12),
+        0 5px 5px -3px rgba(224, 76, 134, 0.4);
+}
+
+footer ul .purple {
+    background-color: #6441a5;
+}
+
+footer ul .purple:hover {
+    box-shadow:
+        inset 0 0 0 1px rgba(255, 255, 255, 0.07),
+        inset 0 1px 0 0 rgba(255, 255, 255, 0.3),
+        inset 0 -1px 0 0 rgba(255, 255, 255, 0.1),
+        0 8px 10px 1px rgba(100, 65, 165, 0.14),
+        0 3px 14px 2px rgba(100, 65, 165, 0.12),
+        0 5px 5px -3px rgba(100, 65, 165, 0.4);
+}
+
+footer ul .telegram {
+    background-color: #007bee;
 }
 
 footer ul .telegram:hover {
     box-shadow:
         inset 0 0 0 1px rgba(255, 255, 255, 0.07),
+        inset 0 1px 0 0 rgba(255, 255, 255, 0.3),
         inset 0 -1px 0 0 rgba(255, 255, 255, 0.1),
-        0 8px 10px 1px rgba(0, 136, 204, 0.14),
-        0 3px 14px 2px rgba(0, 136, 204, 0.12),
-        0 5px 5px -3px rgba(0, 136, 204, 0.4);
+        0 8px 10px 1px rgba(0, 100, 214, 0.14),
+        0 3px 14px 2px rgba(0, 100, 214, 0.12),
+        0 5px 5px -3px rgba(0, 100, 214, 0.4);
+}
+
+footer ul .red {
+    background-color: #dd4b39;
+}
+
+footer ul .red:hover {
+    box-shadow:
+        inset 0 0 0 1px rgba(255, 255, 255, 0.07),
+        inset 0 1px 0 0 rgba(255, 255, 255, 0.3),
+        inset 0 -1px 0 0 rgba(255, 255, 255, 0.1),
+        0 8px 10px 1px rgba(221, 75, 57, 0.14),
+        0 3px 14px 2px rgba(221, 75, 57, 0.12),
+        0 5px 5px -3px rgba(221, 75, 57, 0.4);
 }
 
 footer ul .yellow {
-    background-color: #f9c440;
-}
-
-footer ul .yellow:active {
-    background-color: #fad663;
+    background-color: #ffb300;
+    box-shadow:
+        inset 0 0 0 1px rgba(255, 255, 255, 0.07),
+        inset 0 1px 0 0 rgba(255, 255, 255, 0.5),
+        inset 0 -1px 0 0 rgba(255, 255, 255, 0.1),
+        0 1px 3px rgba(0, 0, 0, 0.12),
+        0 1px 2px rgba(0, 0, 0, 0.24);
 }
 
 footer ul .yellow:hover {
     box-shadow:
         inset 0 0 0 1px rgba(255, 255, 255, 0.07),
+        inset 0 1px 0 0 rgba(255, 255, 255, 0.5),
         inset 0 -1px 0 0 rgba(255, 255, 255, 0.1),
-        0 8px 10px 1px rgba(249, 196, 64, 0.14),
-        0 3px 14px 2px rgba(249, 196, 64, 0.12),
-        0 5px 5px -3px rgba(249, 196, 64, 0.4);
+        0 8px 10px 1px rgba(255, 111, 0, 0.14),
+        0 3px 14px 2px rgba(255, 111, 0, 0.12),
+        0 5px 5px -3px rgba(255, 111, 0, 0.4);
 }
 
 /***********
@@ -586,6 +652,7 @@ footer ul .yellow:hover {
     padding: 8px 6px;
     pointer-events: none;
     position: absolute;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
     -webkit-transition: all 250ms;
     transition: all 250ms;
     -webkit-transition-delay: 0ms;
@@ -599,156 +666,3 @@ footer ul .yellow:hover {
     -webkit-transition-delay: 500ms;
     transition-delay: 500ms;
 }
-
-/***********
- *   Hero  *
- **********/
-
- .hero {
-     background-color: #607d8b;
-     background-image: url("../img/hero.png");
-     box-shadow:
-         0 1px 3px rgba(0, 0, 0, 0.12),
-         0 1px 2px rgba(0, 0, 0, 0.24);
-     color: #F1F1F1;
-     background-size: cover;
-     background-position-x: 100%;
-     background-position-y: 100%;
-     background-repeat: no-repeat;
-     height: calc(65vh - 56px);
-     max-height: calc(100vh - 56px);
-     padding-top: 16px;
- }
-
- @media only screen and (min-width: 425px) {
-     .hero {
-         height: 410px;
-         min-height: 365px;
-     }
- }
-
- @media only screen and (max-width: 425px) {
-     .vexpand {
-         height: calc(50vh - 225px); /* I dunno magic numbers are magic */
-     }
-
-     .hero .two-thirds {
-         padding: 0;
-     }
-
-     a.button.suggested-action.alt {
-        margin-right: 0px;
-     }
-
-     a.button.suggested-action.main {
-        margin-right: 0px;
-     }
- }
-
- @media only screen and (max-width: 425px) and (orientation: portrait) {
-     .hero {
-         text-align: center;
-         height: calc(55vh - 15px);
-     }
-
-     main div ul {
-         list-style: none;
-         padding: 16px 32px 32px 16px;
-         margin-top: 0px;
-         margin-bottom: 0px;
-         vertical-align: text-bottom;
-     }
-
-     p .hero.grid.two-thirds {
-       margin-top: 0px;
-       margin-bottom: 0px;
-     }
-
-     .grid .third {
-         list-style: none;
-         padding: 16px 32px 32px 16px;
-         margin-top: 0px;
-         margin-bottom: 0px;
-         vertical-align: text-bottom;
-     }
-
-     a.button.suggested-action.alt {
-        margin-right: 0px;
-     }
-
-     a.button.suggested-action.main {
-        margin-right: 0px;
-     }
- }
-
- @media only screen and (max-width: 375px) and (orientation: portrait) {
-     .hero {
-         text-align: center;
-         height: calc(42vh - 15px);
-         min-height: calc(42vh - 15px);
-     }
-
-     main div ul {
-         list-style: none;
-         padding: 12px 3px 12px 3px;
-         margin-top: 0px;
-         margin-bottom: 0px;
-         vertical-align: text-bottom;
-     }
-
-     .grid .two-thirds {
-        margin: 12px;
-     }
-
-     .hero h1 {
-         font-size: 24px;
-         line-height: 12px;
-     }
-
-     h3 {
-         font-size: 12px;
-     }
-
-     a.button.suggested-action.alt {
-        margin-right: 0px;
-     }
-
-     a.button.suggested-action.main {
-        margin-right: 0px;
-     }
- }
-
- @media only screen and (max-height: 667px) and (orientation: portrait) {
-     .hero {
-         height: calc(58vh - 45px);
-     }
-
-     main div ul {
-         list-style: none;
-         padding: 12px 3px 12px 3px;
-         margin-top: 0px;
-         margin-bottom: 0px;
-         vertical-align: text-bottom;
-     }
-
-     .grid .third {
-         list-style: none;
-         padding: 32px 16px 16px 32px;
-         margin-top: 0px;
-         margin-bottom: 0px;
-         vertical-align: text-bottom;
-     }
-
-     .hero h1 {
-         font-size: 36px;
-         line-height: 24px;
-     }
-
-     h3 {
-         font-size: 18px;
-     }
-
-     .vexpand {
-         height: calc(50vh - 224px); /* I dunno magic numbers are magic */
-     }
- }

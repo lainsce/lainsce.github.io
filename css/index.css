@@ -1,0 +1,88 @@
+nav {
+    background-color: #212121;
+    background-image: none;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    font-weight: 600;
+    height: 50px;
+    line-height: 3rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    display: inline-block;
+    font-size: 1.20rem;
+    white-space: nowrap;
+}
+
+nav a {
+    color: #f1f1f1;
+}
+
+nav a:hover:active {
+    color: #ccc;
+}
+
+nav a:hover {
+    opacity: 0.85;
+}
+
+nav ul {
+    display: inline-block;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul.right {
+    float: right;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 1rem 0 1rem;
+}
+
+nav .logo img {
+    height: 20px;
+    vertical-align: middle;
+}
+
+.hero {
+    background-image: url("../img/hero.png");
+    background-size: cover;
+    background-position-x: 100%;
+    background-position-y: 100%;
+    background-repeat: no-repeat;
+    height: 31.25rem;
+}
+
+@media only screen and (max-width: 26.56rem) {
+    .vexpand {
+        height: calc(95vh - 14rem); /* I dunno magic numbers are magic */
+    }
+
+    .hero .two-thirds {
+        padding: 0;
+    }
+}
+
+@media only screen and (max-width: 26.56rem) and (orientation: portrait) {
+    .hero {
+        text-align: center;
+        height: 41rem;
+    }
+}
+
+@media only screen and (max-height: 667rem) and (orientation: portrait) {
+    .hero h1 {
+        font-size: 2.25rem;
+        line-height: 2.25rem;
+        margin-bottom: 6rem;
+    }
+
+    h3 {
+        font-size: 1.125rem;
+    }
+
+    .vexpand {
+        height: calc(95vh - 14rem); /* I dunno magic numbers are magic */
+    }
+}
