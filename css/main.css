@@ -60,7 +60,7 @@ h1 {
 }
 
 h2 {
-    font-size: 32px;
+    font-size: 2rem;
     font-weight: 300;
     margin: 0 0 1rem;
     padding: 0;
@@ -184,8 +184,8 @@ main {
 
 main div ul {
     list-style: none;
-    padding-top: 32px;
-    padding-bottom: 32px;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
     padding-left: 0.6rem;
     padding-right: 0.6rem;
     vertical-align: text-bottom;
@@ -238,7 +238,7 @@ main div ul li a:hover {
     .grid .half {
         display: inline-block;
         vertical-align: top;
-        width: calc(50% - 48px);
+        width: calc(50% - 3rem);
     }
 
     .grid .half:only-child {
@@ -248,13 +248,13 @@ main div ul li a:hover {
     .grid .third {
         display: inline-block;
         vertical-align: top;
-        width: calc(33% - 32px);
+        width: calc(33% - 2rem);
     }
 
     .grid .two-thirds {
         display: inline-block;
         vertical-align: top;
-        width: calc(66% - 48px);
+        width: calc(66% - 3rem);
     }
 
     .grid .two-thirds:only-child {
@@ -389,7 +389,7 @@ footer {
     box-sizing: border-box;
     color: #777;
     font-size: 12px;
-    line-height: 48px;
+    line-height: 3rem;
     padding: 1rem 0;
     text-align: center;
     width: 100%;
