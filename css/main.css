@@ -88,36 +88,28 @@ p {
  *********/
 
 .button {
-    background-color: #f1f1f1;
-    background-image: -webkit-gradient(top, rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.1));
-    background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.1));
-    background-image: -o-linear-gradient(top, rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.1));
-    background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.1));
-    background-image: -ms-linear-gradient(top, rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.1));
-    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.1));
-    border-radius: 5px;
-    box-shadow:
-        0 1px 3px rgba(0, 0, 0, 0.12),
-        0 1px 2px rgba(0, 0, 0, 0.24);
-    color: #555;
-    display: inline-block;
-    margin: 3px 12px 6px 0;
-    min-width: 100px;
-    padding: 8px;
-    text-align: center;
-    -webkit-transition: all 100ms ease-in-out;
-    transition: all 100ms ease-in-out;
-}
-
-.button.suggested-action {
-  background-image: -webkit-gradient(top, rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.1));
-  background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.1));
-  background-image: -o-linear-gradient(top, rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.1));
-  background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.1));
-  background-image: -ms-linear-gradient(top, rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.1));
-  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.1));
-    color: #f1f1f1;
-    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 6px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  -webkit-transition: all 100ms ease-in-out;
+  transition: all 100ms ease-in-out;
+  color: #f1f1f1;
 }
 
 .button .fa {
@@ -143,102 +135,62 @@ p {
 .button.alt {
     border: 1px solid #6ec06e;
     background-color: #5cb85c;
+    color: #f1f1f1;
 }
 
 .button.alt:hover {
-    border: 1px solid #6ec06e;
-    box-shadow:
-        0 3px 6px rgba(0, 0, 0, 0.16),
-        0 3px 6px rgba(0, 0, 0, 0.23);
+    border: 1px solid #398439;
+    background-color: #449d44;
+    color: #fff;
 }
 
 .button.alt:active {
-    background-color: #3d8b3d;
-    border: 1px solid #6ec06e;
+    background-color: #449d44;
+    border: 1px solid #398439;
     color: #ccc;
-    box-shadow: 0 0px 15px rgba(0, 0, 0, 0.16), 0 0px 15px rgba(0, 0, 0, 0.23);
-    background-image: -webkit-gradient(top, rgba(0, 0, 0, 0.1), rgba(61, 139, 61, 0.2));
-    background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.1), rgba(61, 139, 61, 0.2));
-    background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0.1), rgba(61, 139, 61, 0.2));
-    background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.1), rgba(61, 139, 61, 0.2));
-    background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0.1), rgba(61, 139, 61, 0.2));
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(61, 139, 61, 0.2));
+    box-shadow: inset 0 3px 5px rgba(0,0,0,.125);
+    background-image: none;
+    outline: 0;
 }
 
-.button.main {
-    background-color: #55acee;
-    border: 1px solid #6cb7f0;
+.button.ghost {
+    border: 1px solid #f1f1f1;
+    color: #f1f1f1;
 }
 
-.button.main:hover {
-    border: 1px solid #6cb7f0;
-    box-shadow:
-        0 3px 6px rgba(0, 0, 0, 0.16),
-        0 3px 6px rgba(0, 0, 0, 0.23);
-}
-
-.button.main:active {
-    background-color: #2795e9;
-    border: 1px solid #6cb7f0;
-    color: #ccc;
-    box-shadow: 0 0px 15px rgba(0, 0, 0, 0.16), 0 0px 15px rgba(0, 0, 0, 0.23);
-    background-image: -webkit-gradient(top, rgba(0, 0, 0, 0.1), rgba(	39, 149, 233, 0.2));
-    background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.1), rgba(39, 149, 233, 0.2));
-    background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0.1), rgba(39, 149, 233, 0.2));
-    background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.1), rgba(39, 149, 233, 0.2));
-    background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0.1), rgba(39, 149, 233, 0.2));
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(39, 149, 233, 0.2));
-}
-
-.ghost {
-  display: inline-block;
-  padding: 0px;
-  color: #094180;
-  border: 1px solid #094180;
-  box-shadow: none;
-  text-shadow: none;
-  border-radius: 5px;
-  text-align: center;
-  outline: none;
-  text-decoration: none;
-  margin: 9px 6px 9px 6px;
-  padding: 0px 8px 0px 8px;
-  min-width: 135px;
-  max-height: 40px;
-  line-height: 40px;
-  text-align: center;
-}
-
-.ghost .fa {
-  margin-right: 12px;
-}
-
-.ghost:hover {
-    background-image: -webkit-gradient(top, rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.1));
-    background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.1));
-    background-image: -o-linear-gradient(top, rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.1));
-    background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.1));
-    background-image: -ms-linear-gradient(top, rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.1));
-    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.1));
+.button.ghost:hover {
+    border: 1px solid #35abf3;
+    background-color: #1da1f2;
     color: #fff;
-    border: 1px solid #4988ce;
-    background-color: #2b63a0;
-    box-shadow:
-        0 3px 6px rgba(0, 0, 0, 0.16),
-        0 3px 6px rgba(0, 0, 0, 0.23);
 }
 
-.ghost:active {
-  background-color: #2b63a0;
-  border: 1px solid #4988ce;
-  color: #ccc;
-  box-shadow: 0 0px 15px rgba(0, 0, 0, 0.16), 0 0px 15px rgba(0, 0, 0, 0.23);
-  background-image: -webkit-gradient(top, rgba(0, 0, 0, 0.1), rgba(255, 255, 255, 0.2));
-  background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.1), rgba(255, 255, 255, 0.2));
-  background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0.1), rgba(255, 255, 255, 0.2));
-  background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.1), rgba(255, 255, 255, 0.2));
-  background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0.1), rgba(255, 255, 255, 0.2));
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(255, 255, 255, 0.2));
+.button.ghost:active {
+    background-color: #1da1f2;
+    border: 1px solid #35abf3;
+    color: #ccc;
+    box-shadow: inset 0 3px 5px rgba(0,0,0,.125);
+    background-image: none;
+    outline: 0;
+}
+
+.button.ghost.live {
+    border: 1px solid #888;
+    color: #888;
+}
+
+.button.ghost.live:hover {
+    border: 1px solid #555;
+    background-color: #666;
+    color: #fff;
+}
+
+.button.ghost.live:active {
+    background-color: #666;
+    border: 1px solid #555;
+    color: #ccc;
+    box-shadow: inset 0 3px 5px rgba(0,0,0,.125);
+    background-image: none;
+    outline: 0;
 }
 
 /********
@@ -263,6 +215,7 @@ main div ul li {
     text-align: justify;
     word-wrap: break-word;
     font-weight: 500;
+    font-size: 1.1rem;
 }
 
 main div ul li a {
@@ -431,14 +384,16 @@ img {
 
 nav {
     background-color: #607d8b;
-    background-image: #607d8b;
     color: #f1f1f1;
     font-weight: 600;
     height: 50px;
-    line-height: 50px;
+    line-height: 3rem;
     padding-left: 16px;
     padding-right: 16px;
     z-index: 999;
+    display: inline-block;
+    font-size: 1.20rem;
+    white-space: nowrap;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
 
@@ -675,7 +630,7 @@ footer ul .yellow:hover {
 
  @media only screen and (min-width: 425px) {
      .hero {
-         height: 365px;
+         height: 410px;
          min-height: 365px;
      }
  }
@@ -773,7 +728,7 @@ footer ul .yellow:hover {
 
  @media only screen and (max-height: 667px) and (orientation: portrait) {
      .hero {
-         height: calc(55vh - 45px);
+         height: calc(58vh - 45px);
      }
 
      main div ul {
