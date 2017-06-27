@@ -46,7 +46,7 @@ nav .logo img {
 }
 
 .hero {
-    background-image: url("../img/hero.png");
+    background-image: url("../img/hero.png"), linear-gradient(to bottom, #3F51B5 0%,#009688 100%);
     background-size: cover;
     background-position-x: 100%;
     background-position-y: 100%;
@@ -61,6 +61,8 @@ nav .logo img {
 
     .hero .two-thirds {
         padding: 0;
+        padding-left: 32px;
+        padding-right: 32px;
     }
 }
 
@@ -73,13 +75,13 @@ nav .logo img {
 
 @media only screen and (max-height: 667rem) and (orientation: portrait) {
     .hero h1 {
-        font-size: 2.25rem;
+        font-size: 2.6rem;
         line-height: 2.25rem;
-        margin-bottom: 6rem;
+        margin-bottom: 1rem;
     }
 
     h3 {
-        font-size: 1.125rem;
+        font-size: 1.7rem;
     }
 
     .vexpand {
