@@ -377,7 +377,8 @@ main div ul a:hover {
         display: inline-block;
         vertical-align: top;
         width: 30%;
-        padding-left: 6px;
+        padding-left: 1.4rem;
+        margin: 0 auto;
     }
 
     .grid .two-thirds {
