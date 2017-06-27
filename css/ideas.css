@@ -3,7 +3,7 @@
  *********************/
 
  nav {
-   background-color: #2196f3;
+   background-color: #546E7A;
    color: #f1f1f1;
    font-weight: 600;
    height: 50px;
@@ -14,7 +14,7 @@
    display: inline-block;
    font-size: 1.20rem;
    white-space: nowrap;
-   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2)
 }
 
 nav a {
@@ -56,20 +56,20 @@ nav .logo img {
 
 section:not(.hero) .economy h2,
 .economy .fa-4x {
-    color: #1d7e0d;
+    color: #558B2F;
 }
 
 section:not(.hero) .energy h2,
 .energy .fa-4x {
-    color: #e48b20;
+    color: #F9A825;
 }
 
 section:not(.hero) .tech h2,
 .tech .fa-4x {
-    color: #208be4;
+    color: #1565C0;
 }
 
 section:not(.hero) .health h2,
 .health .fa-4x {
-    color: #c6262e;
+    color: #C62828;
 }

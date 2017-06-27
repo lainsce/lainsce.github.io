@@ -26,13 +26,36 @@ html {
     max-width:10%;
     max-height:10%;
     background-color: #f1f1f1;
-    box-shadow:
-        inset 0 0 0 1px rgba(255, 255, 255, 0.07),
-        inset 0 -1px 0 0 rgba(255, 255, 255, 0.1),
-        0 1px 3px rgba(0, 0, 0, 0.12),
-        0 1px 2px rgba(0, 0, 0, 0.24);
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
     vertical-align: middle;
     margin: -10px 0px 0px 7px;
+}
+
+.badge {
+    display: inline;
+    padding: .2em .6em .2em .6em;
+    font-size: 75%;
+    font-weight: 700;
+    line-height: 1;
+    color: #888;
+    background-color: transparent;
+    border: 1px solid #888;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: .25em;
+    margin: 3px;
+}
+
+.badge.grn {
+    color: #f1f1f1;
+    background-color: #009966;
+    border: 1px solid #009966;
+}
+
+.badge.fa {
+    margin-right: 2px;
+    font-size: 13px;
 }
 
 /***************
@@ -87,7 +110,7 @@ h4 {
 }
 
 p {
-    line-height: 1.5;
+    line-height: 2;
 }
 
 .dim-label {
@@ -95,21 +118,26 @@ p {
 }
 
 .card {
-  border: 1px solid #f1f1f1;
-  background-color: #f1f1f1;
-  border-radius: 0.2rem;
+  border: 1px solid #f8f8f8;
+  background-color: #f8f8f8;
+  border-radius: 2px;
   padding: 1rem 1rem 1rem 1rem;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
   margin: 0 auto;
   text-align: center;
 }
 
 .card a {
-  color: #2b63a0;
+  color: #306fb4;
 }
 
 .card a:hover {
   color: #6e96d3;
+}
+
+.card h3 {
+  text-shadow: none;
+  font-weight: normal;
 }
 
 /**********
@@ -117,7 +145,6 @@ p {
  *********/
 
 .button {
-    background-color: #fff;
     background-image:
         -webkit-linear-gradient(
             top,
@@ -131,10 +158,7 @@ p {
             rgba(0, 0, 0, 0.1)
         );
     border-radius: 3px;
-    box-shadow:
-        0 1px 3px rgba(0, 0, 0, 0.12),
-        0 1px 2px rgba(0, 0, 0, 0.24);
-    color: #555;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
     display: inline-block;
     margin: 6px 0;
     min-width: 100px;
@@ -144,28 +168,8 @@ p {
     transition: all 100ms ease-in-out;
 }
 
-.button.suggested-action {
-    background-color: #08c;
-    background-image:
-        -webkit-linear-gradient(
-            top,
-            rgba(255, 255, 255, 0.2),
-            rgba(0, 0, 0, 0.05)
-        );
-    background-image:
-        linear-gradient(
-            to bottom,
-            rgba(255, 255, 255, 0.2),
-            rgba(0, 0, 0, 0.05)
-        );
-    color: #fff;
-    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
-}
-
 .button:hover {
-    box-shadow:
-        0 3px 6px rgba(0, 0, 0, 0.16),
-        0 3px 6px rgba(0, 0, 0, 0.23);
+  box-shadow: 0 12px 16px 1px rgba(0, 0, 0, 0.14), 0 4px 22px 3px rgba(0, 0, 0, 0.12), 0 6px 7px -4px rgba(0, 0, 0, 0.4);
 }
 
 .button .fa {
@@ -193,78 +197,47 @@ p {
  ***********************/
 
 .button.green {
-    background-color: #22bb44;
-    border: 1px solid #33cc55;
+    background-color: #22bb88;
+    background-image: none;
+    border: 1px solid #33cc99;
+    color: #f1f1f1;
 }
 
 .button.green.hover {
-    background-color: #44dd66;
-    background-image:
-        -webkit-linear-gradient(
-            top,
-            rgba(255, 255, 255, 0.2),
-            rgba(0, 0, 0, 0.05)
-        );
-    background-image:
-        linear-gradient(
-            to bottom,
-            rgba(255, 255, 255, 0.2),
-            rgba(0, 0, 0, 0.05)
-        );
+    background-color: #55eebb;
     color: #fff;
     text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
-    border: 1px solid #22bb44;
-    box-shadow:
-        0 3px 6px rgba(0, 0, 0, 0.16),
-        0 3px 6px rgba(0, 0, 0, 0.23);
+    border: 1px solid #22bb88;
+    box-shadow: 0 12px 16px 1px rgba(0, 0, 0, 0.14), 0 4px 22px 3px rgba(0, 0, 0, 0.12), 0 6px 7px -4px rgba(0, 0, 0, 0.4);
 }
 
 .button.green:active {
-    background-color: #22bb44;
+    background-color: #22bb88;
     background-image: none;
     color: #ddd;
     text-shadow: none;
-    border: 1px solid #17822e;
-    box-shadow:
-      inset 0 3px 6px rgba(0, 0, 0, 0.16),
-      inset 0 3px 6px rgba(0, 0, 0, 0.23);
+    border: 1px solid #178250;
+    box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.4);
 }
 
 .button.green:focus {
-    box-shadow: 0 0 0 2px rgba(92, 184, 92, 0.5);
+    box-shadow: 0 0 0 2px rgba(52, 184, 94, 0.5);
 }
 
 .button.ghost {
     background-color: transparent;
     background-image: none;
-    box-shadow: none;
     border: 1px solid #fff;
     color: #fff;
-    box-shadow:
-        0 1px 3px rgba(0, 0, 0, 0.12),
-        0 1px 2px rgba(0, 0, 0, 0.24);
+    box-shadow: none;
 }
 
 .button.ghost:hover {
     background-color: #55acee;
-    background-image:
-        -webkit-linear-gradient(
-            top,
-            rgba(255, 255, 255, 0.2),
-            rgba(0, 0, 0, 0.05)
-        );
-    background-image:
-        linear-gradient(
-            to bottom,
-            rgba(255, 255, 255, 0.2),
-            rgba(0, 0, 0, 0.05)
-        );
     color: #fff;
     text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
     border: 1px solid #55acee;
-    box-shadow:
-        0 3px 6px rgba(0, 0, 0, 0.16),
-        0 3px 6px rgba(0, 0, 0, 0.23);
+    box-shadow: 0 12px 16px 1px rgba(0, 0, 0, 0.14), 0 4px 22px 3px rgba(0, 0, 0, 0.12), 0 6px 7px -4px rgba(0, 0, 0, 0.4);
 }
 
 .button.ghost:active {
@@ -273,9 +246,7 @@ p {
     color: #ddd;
     text-shadow: none;
     border: 1px solid #3a78a6;
-    box-shadow:
-      inset 0 3px 6px rgba(0, 0, 0, 0.16),
-      inset 0 3px 6px rgba(0, 0, 0, 0.23);
+    box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.4);
 }
 
 .button.ghost:focus {
@@ -363,9 +334,11 @@ main div ul a:hover {
     }
 
     .grid .half {
-        display: inline-block;
+        display: inline-flex;
         vertical-align: top;
-        width: calc(50% - 3rem);
+        width: calc(50% - 1rem);
+        padding-left: 8px;
+        padding-bottom: 0px;
     }
 
     .grid .half:only-child {
@@ -387,6 +360,7 @@ main div ul a:hover {
 
     .grid .two-thirds:only-child {
         width: 66%;
+        margin: 0 auto;
     }
 
     .grid > *:only-child {
@@ -447,12 +421,9 @@ img {
 }
 
 .read-more::after {
-    color: inherit;
-    content: "→";
-    font-family: "FontAwesome";
     font-style: normal;
-    font-weight: inherit;
-    margin-top: 0.2em;
+    font-weight: 500;
+    margin-top: 0.1em;
     padding-left: 6px;
     position: absolute;
     -webkit-transition: all 0.15s ease-in-out;
@@ -553,12 +524,7 @@ footer ul li {
         );
     border-radius: 50%;
     border: 1px solid rgba(0, 0, 0, 0.15);
-    box-shadow:
-        inset 0 0 0 1px rgba(255, 255, 255, 0.07),
-        inset 0 1px 0 0 rgba(255, 255, 255, 0.3),
-        inset 0 -1px 0 0 rgba(255, 255, 255, 0.1),
-        0 1px 3px rgba(0, 0, 0, 0.12),
-        0 1px 2px rgba(0, 0, 0, 0.24);
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
     display: inline-block;
     height: 36px;
     line-height: 36px;
@@ -780,9 +746,7 @@ footer ul .yellow:hover {
     font-size: 12px;
     background-color: rgba(51, 51, 51, 0.8);
     border-radius: 3px;
-    box-shadow:
-        0 1px 3px rgba(0, 0, 0, 0.12),
-        0 1px 2px rgba(0, 0, 0, 0.24);
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2)
     line-height: 12px;
     margin: -36px -30px;
     opacity: 0;
