@@ -114,7 +114,7 @@ h4 {
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
   margin: 0 auto;
   text-align: center;
-  line-height: 2;
+  line-height: 1.5;
 }
 
 .card a {
@@ -137,7 +137,7 @@ h4 {
 .card-subtitle {
   text-shadow: none;
   font-weight: 500;
-  font-size: 1.5rem;
+  font-size: 1.64rem;
 }
 
 .card-text {
@@ -147,8 +147,29 @@ h4 {
 }
 
 .card-image {
-  display:block;
-  margin:auto;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    padding: 2rem 0 2rem 0;
+    border-radius: 3px;
+    border-bottom: 1px solid rgba(160,160,160,0.2);
+    border-radius: 2px 2px 0 0;
+}
+
+.card-image.coin {
+    background-color: #badbad
+}
+
+.card-image.quilter {
+  background-color: #b8d2e2;
+}
+
+.card-image.notejot {
+  background-color: #fff3ae;
 }
 
 .card-action {
@@ -161,7 +182,7 @@ h4 {
 
 .card-body {
   border-radius: 2px 2px 0 0;
-  padding: 1.5rem;
+  padding: 2px 1.5rem 1.5rem 1.5rem;
 }
 
 .card-badge {
