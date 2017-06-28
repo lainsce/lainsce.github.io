@@ -11,6 +11,7 @@ html {
     flex-direction: column;
     font: 1rem "Roboto", sans-serif;
     font-weight: 400;
+    letter-spacing: 0.5px;
     margin: 0;
     min-height: 100vh;
 }
@@ -84,7 +85,7 @@ h1 {
 }
 
 h2 {
-    font-size: 2rem;
+    font-size: 2.28rem;
     font-weight: 300;
     margin: 0 0 1rem;
     padding: 0;
@@ -92,7 +93,7 @@ h2 {
 
 h3 {
     font-weight: 300;
-    font-size: 1.4rem;
+    font-size: 1.64rem;
     margin: 0;
     padding: 0;
     text-shadow: 0 1px 1px rgba(0, 0, 0, 0.24), 0 1px 3px rgba(0, 0, 0, 0.36);
@@ -109,26 +110,21 @@ h4 {
     opacity: 0.8;
 }
 
-p {
-    line-height: 2;
-}
-
 .dim-label {
     opacity: 0.8;
 }
 
 .card {
-  border: 1px solid #f8f8f8;
   background-color: #f8f8f8;
   border-radius: 2px;
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
   margin: 0 auto;
   text-align: center;
+  line-height: 2;
 }
 
 .card a {
   color: #306fb4;
-  margin-right: 24px;
   text-transform: uppercase;
   transition: color .3s ease;
 }
@@ -143,7 +139,7 @@ p {
 }
 
 .card p {
-  text-align: justify;
+  text-align: left;
   margin-top: 1rem;
 }
 
@@ -154,9 +150,10 @@ p {
 
 .card-action {
   position: relative;
-  background-color: inherit;
+  background-color: transparent;
   border-top: 1px solid rgba(160,160,160,0.2);
   padding: 16px 24px;
+  justify-content: space-between;
 }
 
 .card-body {
@@ -173,27 +170,16 @@ p {
  *********/
 
 .button {
-    background-image:
-        -webkit-linear-gradient(
-            top,
-            rgba(255, 255, 255, 0.2),
-            rgba(0, 0, 0, 0.1)
-        );
-    background-image:
-        linear-gradient(
-            to bottom,
-            rgba(255, 255, 255, 0.2),
-            rgba(0, 0, 0, 0.1)
-        );
     border-radius: 3px;
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
     display: inline-block;
     margin: 6px 0;
     min-width: 100px;
-    padding: 0.5rem;
+    padding: 1rem;
     text-align: center;
     -webkit-transition: all 100ms ease-in-out;
     transition: all 100ms ease-in-out;
+    text-transform: uppercase;
 }
 
 .button:hover {
@@ -229,6 +215,7 @@ p {
     background-image: none;
     border: 1px solid #33cc99;
     color: #f1f1f1;
+    padding: 6px 12px 6px 12px;
 }
 
 .button.green.hover {
@@ -258,6 +245,7 @@ p {
     border: 1px solid #fff;
     color: #fff;
     box-shadow: none;
+    padding: 6px 12px 6px 12px;
 }
 
 .button.ghost:hover {
@@ -341,17 +329,20 @@ main div ul a:hover {
 }
 
 @media only screen and (max-width: 40rem) {
-    .grid > *:first-child {
-        padding-top: 3px;
+    .grid {
+        padding: 1rem 0rem 1rem 0rem;
+        margin: 1rem 0rem 1rem 0rem;
     }
 
-    .grid > *:last-child {
-        padding-bottom: 1rem;
+    .card {
+      width: 88%;
+      margin-bottom: 2rem;
     }
 
     .grid p {
         width: 95%;
-        margin: 1rem auto;
+        margin: 1rem 0.6rem 1rem 0.6rem;
+
     }
 }
 
@@ -459,10 +450,6 @@ img {
     transition: all 0.15s ease-in-out;
 }
 
-.read-more:hover::after {
-    padding-left: 10px;
-}
-
 .read-more .fa {
     margin-right: 12px;
 }
@@ -503,7 +490,7 @@ footer {
     background-color: #151515;
     box-sizing: border-box;
     color: #ccc;
-    font-size: 12px;
+    font-size: 13px;
     line-height: 3rem;
     padding: 1rem 0;
     text-align: center;
