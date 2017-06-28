@@ -10,7 +10,6 @@ nav {
     font-size: 1.20rem;
     white-space: nowrap;
     position: relative;
-    border-bottom: 1px solid rgba(255,255,255,0.4);
 }
 
 nav a {
@@ -47,7 +46,7 @@ nav .logo img {
 }
 
 .hero {
-    background-image: url(../img/hero.png), linear-gradient(120deg, #0F71E5 0%, #4564b2 50%, #009688 100%);
+    background-image: url(../img/main.png), linear-gradient(120deg, #0F71E5 0%, #4564b2 50%, #009688 100%);
     background-size: cover;
     background-position-x: 100%;
     background-repeat: no-repeat;
@@ -70,19 +69,19 @@ nav .logo img {
 @media only screen and (max-width: 26.56rem) and (orientation: portrait) {
     .hero {
         text-align: center;
-        height: 41rem;
+        height: 42rem;
     }
 }
 
 @media only screen and (max-height: 667rem) and (orientation: portrait) {
     .hero h1 {
-      font-size: 2rem;
+      font-size: 2.66rem;
       line-height: 2rem;
       margin-bottom: 1rem;
     }
 
     h3 {
-        font-size: 1.2rem;
+        font-size: 1.8rem;
     }
 
     .vexpand {

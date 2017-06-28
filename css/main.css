@@ -72,7 +72,6 @@ html {
 }
 
 a {
-    color: #08c;
     text-decoration: none;
 }
 
@@ -80,28 +79,23 @@ h1 {
     font-family: Raleway;
     font-size: 40px;
     font-weight: 300;
-    margin: 0;
+    margin: 0 auto;
     text-shadow: 0 1px 1px rgba(0, 0, 0, 0.24), 0 1px 3px rgba(0, 0, 0, 0.36);
 }
 
 h2 {
     font-size: 2.28rem;
     font-weight: 300;
-    margin: 0 0 1rem;
+    margin: 0 auto;
     padding: 0;
 }
 
 h3 {
     font-weight: 300;
     font-size: 1.64rem;
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
     text-shadow: 0 1px 1px rgba(0, 0, 0, 0.24), 0 1px 3px rgba(0, 0, 0, 0.36);
-}
-
-section:not(.hero) h2,
-.fa-4x {
-    color: #2b63a0;
 }
 
 h4 {
@@ -133,17 +127,26 @@ h4 {
   color: #6e96d3;
 }
 
-.card h3 {
+.card-title {
   text-shadow: none;
-  font-weight: normal;
+  font-weight: 300;
+  color: #212121;
+  font-size: 2.6rem;
 }
 
-.card p {
+.card-subtitle {
+  text-shadow: none;
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+
+.card-text {
   text-align: left;
   margin-top: 1rem;
+  color: #212121;
 }
 
-.card img {
+.card-image {
   display:block;
   margin:auto;
 }
@@ -152,12 +155,13 @@ h4 {
   position: relative;
   background-color: transparent;
   border-top: 1px solid rgba(160,160,160,0.2);
-  padding: 16px 24px;
+  padding: 16px 1.5rem;
   justify-content: space-between;
 }
 
 .card-body {
-  padding: 24px;
+  border-radius: 2px 2px 0 0;
+  padding: 1.5rem;
 }
 
 .card-badge {
@@ -174,7 +178,7 @@ h4 {
     display: inline-block;
     margin: 6px 0;
     min-width: 100px;
-    padding: 1rem;
+    padding: 6px 6px 6px 6px;
     text-align: center;
     -webkit-transition: all 100ms ease-in-out;
     transition: all 100ms ease-in-out;
@@ -191,7 +195,7 @@ h4 {
 
 @media only screen and (max-width: 40rem) {
     .button {
-        width: calc(100% - 24px);
+        width: calc(100% - 1.5rem);
     }
 
     .button + .button {
@@ -214,7 +218,6 @@ h4 {
     background-image: none;
     border: 1px solid #33cc99;
     color: #f1f1f1;
-    padding: 6px 12px 6px 12px;
 }
 
 .button.green.hover {
@@ -244,10 +247,21 @@ h4 {
     border: 1px solid #fff;
     color: #fff;
     box-shadow: none;
-    padding: 6px 12px 6px 12px;
 }
 
 .button.ghost:hover {
+    color: #000;
+    background-color: #f1f1f1;
+    border: 1px solid #fff;
+}
+
+.button.ghost:active {
+    color: #333;
+    background-color: #f1f1f1;
+    border: 1px solid #fff;
+}
+
+.button.ghost.twitter:hover {
     background-color: #55acee;
     color: #fff;
     text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
@@ -255,7 +269,7 @@ h4 {
     box-shadow: 0 12px 16px 1px rgba(0, 0, 0, 0.14), 0 4px 22px 3px rgba(0, 0, 0, 0.12), 0 6px 7px -4px rgba(0, 0, 0, 0.4);
 }
 
-.button.ghost:active {
+.button.ghost.twitter:active {
     background-color: #55acee;
     background-image: none;
     color: #ddd;
@@ -264,7 +278,7 @@ h4 {
     box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.4);
 }
 
-.button.ghost:focus {
+.button.ghost.twitter:focus {
     box-shadow: 0 0 0 2px rgba(91,192,222,.5)
 }
 
@@ -276,39 +290,6 @@ main {
     -webkit-box-flex: 1;
     -ms-flex: 1;
     flex: 1;
-}
-
-main a {
-    color: #4fcfff;
-}
-
-main a:hover {
-    color: #acf5ff;
-}
-
-main div ul {
-    list-style: none;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    padding-left: 0.6rem;
-    padding-right: 0.6rem;
-    vertical-align: text-bottom;
-}
-
-main div ul li {
-    list-style: none;
-    text-align: justify;
-    word-wrap: break-word;
-    font-weight: 500;
-    font-size: 1.1rem;
-}
-
-main div ul a {
-    color: #4fcfff;
-}
-
-main div ul a:hover {
-    color: #acf5ff;
 }
 
 .grid {
@@ -489,42 +470,21 @@ footer {
     background-color: #151515;
     box-sizing: border-box;
     color: #ccc;
-    font-size: 13px;
-    line-height: 3rem;
+    font-size: 0.7rem;
     padding: 1rem 0;
     text-align: center;
     width: 100%;
     display: inline-block;
 }
 
-footer a.ghost {
-    color: #f1f1f1;
-    border: 1px solid #fff;
-    padding: 0.5rem;
-    border-radius: 5px;
-    margin: 0.5rem;
-}
-
-footer a.ghost:hover {
-    color: #000;
-    background-color: #f1f1f1;
-    border: 1px solid #fff;
-}
-
-footer a.ghost:active {
-    color: #333;
-    background-color: #f1f1f1;
-    border: 1px solid #fff;
-}
-
-footer ul {
+.footer-space {
     list-style: none;
     padding: 0 0 1rem 0;
     margin: 0 auto;
     text-align: center;
 }
 
-footer ul li {
+.fab {
     background-image:
         -webkit-linear-gradient(
             top,
@@ -548,7 +508,7 @@ footer ul li {
     width: 36px;
 }
 
-footer ul a {
+.fab-img {
     color: #fff;
     display: block;
     height: 100%;
@@ -556,11 +516,11 @@ footer ul a {
     width: 100%;
 }
 
-footer ul .black {
+.fab.black {
     background-color: #444;
 }
 
-footer ul .black:hover {
+.fab.black:hover {
     box-shadow:
         inset 0 0 0 1px rgba(255, 255, 255, 0.07),
         inset 0 1px 0 0 rgba(255, 255, 255, 0.3),
@@ -570,7 +530,7 @@ footer ul .black:hover {
         0 5px 5px -3px rgba(88, 88, 88, 0.4);
 }
 
-footer ul .instagram {
+.fab.instagram {
     background:
         -webkit-radial-gradient(
             32% 106%,
@@ -617,11 +577,11 @@ footer ul .instagram {
     border-color: rgba(181, 70, 70, 0.7);
 }
 
-footer ul .instagram .fa {
+.fab.instagram .fa {
     vertical-align: middle;
 }
 
-footer ul .instagram:hover {
+.fab.instagram:hover {
     box-shadow:
         inset 0 0 0 1px rgba(255, 255, 255, 0.07),
         inset 0 1px 0 0 rgba(255, 255, 255, 0.3),
@@ -631,11 +591,11 @@ footer ul .instagram:hover {
         0 5px 5px -3px rgba(137, 77, 49, 0.4);
 }
 
-footer ul .blue-twitter {
+.fab.blue-twitter {
     background-color: #55acee;
 }
 
-footer ul .blue-twitter:hover {
+.fab.blue-twitter:hover {
     box-shadow:
         inset 0 0 0 1px rgba(255, 255, 255, 0.07),
         inset 0 1px 0 0 rgba(255, 255, 255, 0.3),
@@ -645,11 +605,11 @@ footer ul .blue-twitter:hover {
         0 5px 5px -3px rgba(0, 100, 214, 0.4);
 }
 
-footer ul .green {
+.fab.green {
     background-color: #3cd428;
 }
 
-footer ul .green:hover {
+.fab.green:hover {
     box-shadow:
         inset 0 0 0 1px rgba(255, 255, 255, 0.07),
         inset 0 1px 0 0 rgba(255, 255, 255, 0.3),
@@ -659,11 +619,11 @@ footer ul .green:hover {
         0 5px 5px -3px rgba(21, 194, 0, 0.4);
 }
 
-footer ul .orange {
+.fab.orange {
     background-color: #f96c2d;
 }
 
-footer ul .orange:hover {
+.fab.orange:hover {
     box-shadow:
         inset 0 0 0 1px rgba(255, 255, 255, 0.07),
         inset 0 1px 0 0 rgba(255, 255, 255, 0.3),
@@ -673,11 +633,11 @@ footer ul .orange:hover {
         0 5px 5px -3px rgba(249, 108, 45, 0.4);
 }
 
-footer ul .pink {
+.fab.pink {
     background-color: #e04c86;
 }
 
-footer ul .pink:hover {
+.fab.pink:hover {
     box-shadow:
         inset 0 0 0 1px rgba(255, 255, 255, 0.07),
         inset 0 1px 0 0 rgba(255, 255, 255, 0.3),
@@ -687,11 +647,11 @@ footer ul .pink:hover {
         0 5px 5px -3px rgba(224, 76, 134, 0.4);
 }
 
-footer ul .purple {
+.fab.purple {
     background-color: #6441a5;
 }
 
-footer ul .purple:hover {
+.fab.purple:hover {
     box-shadow:
         inset 0 0 0 1px rgba(255, 255, 255, 0.07),
         inset 0 1px 0 0 rgba(255, 255, 255, 0.3),
@@ -701,11 +661,11 @@ footer ul .purple:hover {
         0 5px 5px -3px rgba(100, 65, 165, 0.4);
 }
 
-footer ul .telegram {
+.fab.telegram {
     background-color: #007bee;
 }
 
-footer ul .telegram:hover {
+.fab.telegram:hover {
     box-shadow:
         inset 0 0 0 1px rgba(255, 255, 255, 0.07),
         inset 0 1px 0 0 rgba(255, 255, 255, 0.3),
@@ -715,11 +675,11 @@ footer ul .telegram:hover {
         0 5px 5px -3px rgba(0, 100, 214, 0.4);
 }
 
-footer ul .red {
+.fab.red {
     background-color: #dd4b39;
 }
 
-footer ul .red:hover {
+.fab.red:hover {
     box-shadow:
         inset 0 0 0 1px rgba(255, 255, 255, 0.07),
         inset 0 1px 0 0 rgba(255, 255, 255, 0.3),
@@ -729,17 +689,11 @@ footer ul .red:hover {
         0 5px 5px -3px rgba(221, 75, 57, 0.4);
 }
 
-footer ul .yellow {
+.fab.yellow {
     background-color: #ffb300;
-    box-shadow:
-        inset 0 0 0 1px rgba(255, 255, 255, 0.07),
-        inset 0 1px 0 0 rgba(255, 255, 255, 0.5),
-        inset 0 -1px 0 0 rgba(255, 255, 255, 0.1),
-        0 1px 3px rgba(0, 0, 0, 0.12),
-        0 1px 2px rgba(0, 0, 0, 0.24);
 }
 
-footer ul .yellow:hover {
+.fab.yellow:hover {
     box-shadow:
         inset 0 0 0 1px rgba(255, 255, 255, 0.07),
         inset 0 1px 0 0 rgba(255, 255, 255, 0.5),
