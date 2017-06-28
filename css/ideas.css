@@ -50,7 +50,7 @@
  }
 
  .hero {
-     background-image: url(../img/ideas.png), linear-gradient(120deg, #0F71E5 0%, #4564b2 50%, #009688 100%);
+     background-image: url(../img/ideas.png), linear-gradient(120deg, #F44336 0%, #FF9800 50%, #9C27B0 100%);
      background-size: cover;
      background-position-x: 100%;
      background-repeat: no-repeat;
