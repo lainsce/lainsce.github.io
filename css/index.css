@@ -1,15 +1,16 @@
 nav {
-    background-color: #212121;
+    background-color: transparent;
     background-image: none;
-    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2)
     font-weight: 600;
-    height: 50px;
-    line-height: 3rem;
+    height: 4rem;
+    line-height: 4rem;
     padding-left: 1rem;
     padding-right: 1rem;
     display: inline-block;
     font-size: 1.20rem;
     white-space: nowrap;
+    position: relative;
+    border-bottom: 1px solid rgba(255,255,255,0.4);
 }
 
 nav a {
@@ -46,12 +47,12 @@ nav .logo img {
 }
 
 .hero {
-    background-image: url("../img/hero.png"), linear-gradient(to bottom, #3F51B5 0%,#009688 100%);
+    background-image: url(../img/hero.png), linear-gradient(to bottom, #3F51B5 0%,#009688 100%);
     background-size: cover;
     background-position-x: 100%;
-    background-position-y: 100%;
     background-repeat: no-repeat;
-    height: 31.25rem;
+    height: 34.25rem;
+    margin-top: -4rem;
 }
 
 @media only screen and (max-width: 26.56rem) {
