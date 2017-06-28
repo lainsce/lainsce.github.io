@@ -47,7 +47,7 @@ nav .logo img {
 }
 
 .hero {
-    background-image: url(../img/hero.png), linear-gradient(to bottom, #3F51B5 0%,#009688 100%);
+    background-image: url(../img/hero.png), linear-gradient(120deg, #0F71E5 0%, #4564b2 50%, #009688 100%);
     background-size: cover;
     background-position-x: 100%;
     background-repeat: no-repeat;
