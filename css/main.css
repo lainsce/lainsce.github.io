@@ -319,7 +319,7 @@ main {
 
 .grid {
     margin: 5rem auto;
-    max-width: 1000px;
+    max-width: 965.76px;
     width: 100%;
 }
 
@@ -373,7 +373,7 @@ main {
         display: inline-block;
         vertical-align: top;
         width: 30%;
-        padding-left: 1.4rem;
+        padding-left: 1.37rem;
         margin: 0 auto;
     }
 
