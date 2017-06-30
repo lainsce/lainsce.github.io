@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /fav/
+Disallow: /icons/
+Disallow: /img/
+Disallow: /scss/
+Disallow: /README.md
+Disallow: /LICENSE
