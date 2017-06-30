@@ -21,7 +21,20 @@
     <link rel="stylesheet" type="text/css" href="css/media.css">
 
     <script async type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
-    <script async type="text/javascript" src="js/main.js"></script>
+    <script async type="text/javascript">$(function () {
+        // Copyright year stuff
+        $("#year").text((new Date).getFullYear ());
+
+        // Buy me a foo plz
+        var things = ["Beer", "Coffee", "Drink", "Pizza", "Snack", "Pop"];
+        $("#thing").text (things[Math.floor(Math.random()*things.length)]);
+    });
+
+    function yearsSince (epoch) {
+        var diff = new Date () - new Date (epoch);
+        var age = Math.floor (diff/31536000000);
+        return age;
+    }</script>
   </head>
   <body>
     <nav class="nav">
