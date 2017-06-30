@@ -1,50 +1,56 @@
 <!DOCTYPE html>
 <html lang="en-us">
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-  <meta name="author" content="Lains">
-  <meta name="theme-color" content="#485a6c">
-  <meta property="og:description" content="The personal site for Lains">
-  <title>Lains</title>
-  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Raleway:300">
-  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" media="all" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
-  <link rel="shortcut icon" href="fav/favicon.ico">
-  <link rel="icon" sizes="16x16 32x32 64x64" href="fav/favicon.ico">
-  <link rel="stylesheet" type="text/css" href="css/main.css">
-  <link rel="stylesheet" type="text/css" href="css/index.css">
-  <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
-  <script type="text/javascript" src="js/main.js"></script>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta name="author" content="Lains">
+    <meta name="theme-color" content="#485a6c">
+    <meta property="og:description" content="The personal site for Lains">
+
+    <title>Lains</title>
+
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Raleway:300">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="all" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="fav/favicon.ico">
+    <link rel="icon" sizes="16x16 32x32 64x64" href="fav/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/var.css">
+    <link rel="stylesheet" type="text/css" href="css/media.css">
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+  </head>
   <body>
-    <nav>
-        <ul>
-          <li><a href="/" target="_parent"><i class="fa fa-lg fa-home"></i></a></li>
+    <nav class="nav">
+        <ul class="left nav-bar">
+          <li class="nav-icon"><a class="nav-link" href="/" target="_parent"><i class="fa fa-lg fa-home"></i></a></li>
         </ul>
 
-        <ul class=right>
-          <li><a href="/ideas.html"><i class="fa fa-lg fa-lightbulb-o"></i></a></li>
-          <li><a href="mailto:lainsce@airmail.cc"><i class="fa fa-lg fa-envelope"></i></a></li>
+        <ul class="right nav-bar">
+          <li class="nav-icon"><a class="nav-link" href="/ideas.html"><i class="fa fa-lg fa-lightbulb-o"></i></a></li>
+          <li class="nav-icon"><a class="nav-link" href="mailto:lainsce@airmail.cc"><i class="fa fa-lg fa-envelope"></i></a></li>
         </ul>
     </nav>
     <main>
-      <section class="hero">
+      <section class="hero index">
         <div class="grid">
-          <div class="two-thirds">
-              <p><h1 align=center><img class="avatar" src="https://avatars0.githubusercontent.com/u/4886639?v=3">  Hi, I'm Lains!</h1><p>
-              <p><h3 align=center>App Developer @ elementary Team</h3><p>
+          <div class="whole">
+              <h2 align=center><img class="avatar shadow" src="https://avatars0.githubusercontent.com/u/4886639?v=3"> Hi, I'm Lains!</h2>
+              <h3 align=center>App Developer @ elementary Team</h3>
               <p align=center>
-                <a class="button ghost twitter" href="https://twitter.com/intent/follow?screen_name=lainscereal"><i class="fa fa-fw fa-twitter"></i>Follow Me on Twitter</a>
-                <a class="button green" href="#" onclick="CheckoutButton.loadButton('stripebutton'); return false;"><i class="fa fa-fw fa-usd"></i>Buy Me a <span id="thing">Thing</span></a>
+                  <a class="button ghost shadow twitter" href="https://twitter.com/intent/follow?screen_name=lainscereal"><i class="fa fa-fw fa-twitter"></i>Follow Me on Twitter</a>
+                  <a class="button shadow green"  href="#" onclick="CheckoutButton.loadButton('stripebutton'); return false;"><i class="fa fa-fw fa-usd"></i>Buy Me a <span id="thing">Thing</span></a>
               </p>
           </div>
         </div>
       </section>
-      <section class="grid">
+      <section class="grid" id="part2">
         <div class="whole">
           <h2>Check out my apps:</a></h2>
         </div>
         <div class="third">
-          <div class="card">
+          <div class="card shadow">
             <div class="card-image coin">
               <p><img src="icons/coinn-big.png"></p>
             </div>
@@ -53,19 +59,19 @@
                 <p>Coin</a></p>
               </div>
               <div class="card-badge">
-                <p class="badge">1.1.2</p><p class="badge grn">$  1.00</p>
+                <p class="badge">1.1.2</p><p class="badge green">$  1.00</p>
               </div>
               <div class="card-text">
                 <p>Track cryptocurrencies in relation to world currencies.</p>
               </div>
             </div>
             <div class="card-action">
-              <a href="https://appcenter.elementary.io/com.github.lainsce.coin" class="read-more blue" target="_blank"><i class="fa fa-fw fa-cloud-download"></i>Download on AppCenter</a>
+              <a href="https://appcenter.elementary.io/com.github.lainsce.coin" class="link read-more blue" target="_blank"><i class="fa fa-fw fa-cloud-download"></i>Download on AppCenter</a>
             </div>
           </div>
         </div>
         <div class="third">
-          <div class="card">
+          <div class="card shadow">
             <div class="card-image notejot">
               <p><img src="icons/notejot-big.png"></p>
             </div>
@@ -74,19 +80,19 @@
                 <p>Notejot</a></p>
               </div>
               <div class="card-badge">
-                <p class="badge">1.1.4</p><p class="badge grn">$  1.00</p>
+                <p class="badge">1.1.4</p><p class="badge green">$  1.00</p>
               </div>
               <div class="card-text">
                 <p>Take notes with this stupidly-simple sticky notes applet.</p>
               </div>
             </div>
             <div class="card-action">
-              <a href="https://appcenter.elementary.io/com.github.lainsce.notejot" class="read-more blue" target="_blank"><i class="fa fa-fw fa-cloud-download"></i>Download on AppCenter</a>
+              <a href="https://appcenter.elementary.io/com.github.lainsce.notejot" class="link read-more blue" target="_blank"><i class="fa fa-fw fa-cloud-download"></i>Download on AppCenter</a>
             </div>
           </div>
         </div>
         <div class="third">
-          <div class="card">
+          <div class="card shadow">
             <div class="card-image quilter">
               <p><img src="icons/quilter-big.png"></p>
             </div>
@@ -95,14 +101,14 @@
                 <p>Quilter</a></p>
               </div>
               <div class="card-badge">
-                <p class="badge">1.1.4</p><p class="badge grn">$  2.00</p>
+                <p class="badge">1.1.4</p><p class="badge green">$  2.00</p>
               </div>
               <div class="card-text">
                 <p>Focus on your writing and write beautiful extensive stories.</p>
               </div>
             </div>
             <div class="card-action">
-              <a href="https://appcenter.elementary.io/com.github.lainsce.quilter" class="read-more blue" target="_blank"><i class="fa fa-fw fa-cloud-download"></i>Download on AppCenter</a>
+              <a href="https://appcenter.elementary.io/com.github.lainsce.quilter" class="link read-more blue" target="_blank"><i class="fa fa-fw fa-cloud-download"></i>Download on AppCenter</a>
             </div>
           </div>
         </div>
@@ -118,7 +124,7 @@
         <li class="fab blue-twitter"><a class="fab-img" href="https://twitter.com/@lainscereal" target="_blank"><i class="fa fa-fw fa-lg fa-twitter"></i></a></li>
         <li class="fab black"><a class="fab-img" href="https://github.com/lainsce" target="_blank"><i class="fa fa-fw fa-lg fa-github-alt"></i></a></li>
       </ul>
-      <a class="button ghost" href="https://github.com/lainsce/lainsce.github.io/issues/new" target="_blank" class="ghost"><i class="fa fa-fw fa-sm fa-bug"></i> Report an Issue</a>
+      <a class="button ghost neutral shadow" href="https://github.com/lainsce/lainsce.github.io/issues/new" target="_blank" class="ghost"><i class="fa fa-fw fa-sm fa-bug"></i> Report an Issue</a>
       <p>© <span id="year">2017</span> Paulo Galardi. Made in São Paulo.</p>
     </footer>
     <script
