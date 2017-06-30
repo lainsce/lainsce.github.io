@@ -45,6 +45,12 @@
         width: 50%;
     }
 
+    .grid .quarter {
+          width: 25%;
+          margin: 1rem 0.5rem 1rem 0.5rem;
+          padding: 0;
+    }
+
     .grid .third {
         display: inline-block;
         vertical-align: top;
