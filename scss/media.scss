@@ -1,0 +1,172 @@
+/***********
+ *  Media  *
+ **********/
+
+@media only screen and (max-width: 40rem) {
+    .grid {
+        padding: 1rem 0rem 1rem 0rem;
+        margin: 1rem 0rem 1rem 0rem;
+    }
+
+    .card {
+      width: 88%;
+      margin-bottom: 2rem;
+    }
+
+    .grid p {
+        width: 95%;
+        margin: 1rem 0.6rem 1rem 0.6rem;
+
+    }
+
+    .button {
+        width: calc(100% - 1.5rem);
+    }
+
+    .button + .button {
+        margin-left: 0;
+    }
+}
+
+@media only screen and (min-width: 40rem) {
+    .grid > * {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    .grid .half {
+        display: inline-flex;
+        vertical-align: top;
+        width: calc(50% - 1rem);
+        padding-left: 8px;
+        padding-bottom: 0px;
+    }
+
+    .grid .half:only-child {
+        width: 50%;
+    }
+
+    .grid .quarter {
+          width: 25%;
+          margin: 1rem 0.5rem 1rem 0.5rem;
+          padding: 0;
+    }
+
+    .grid .quarter + .quarter {
+          width: 25%;
+          margin: 1rem 0.5rem 1rem 0.5rem;
+          padding: 0;
+    }
+
+    .grid .third {
+        display: inline-block;
+        vertical-align: top;
+        width: 30%;
+        margin: 0 auto;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .grid .third + .third {
+        display: inline-block;
+        vertical-align: top;
+        width: 30%;
+        margin: 0 auto;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .grid .two-thirds {
+        display: inline-block;
+        vertical-align: top;
+        width: calc(66% - 3rem);
+    }
+
+    .grid .two-thirds:only-child {
+        width: 66%;
+        margin: 0 auto;
+    }
+
+    .grid > *:only-child {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .hero .grid > * {
+        padding: 64px 0;
+    }
+
+    .button + .button {
+        margin-left: 12px;
+    }
+}
+
+@media only screen and (max-width: 48rem) and (orientation: portrait) {
+  .grid .whole {
+      width: 85%;
+      margin: auto;
+  }
+
+  .grid .third {
+      padding-left: 1.5rem;
+      width: 29%;
+  }
+
+  .grid .third + .third {
+      display: inline-block;
+      padding-left: 1.5rem;
+      vertical-align: top;
+      width: 29%;
+      margin: 0 auto;
+  }
+}
+
+@media only screen and (max-width: 26.5625rem) and (orientation: portrait) {
+    .vexpand {
+        height: calc(95vh - 14rem); /* I dunno magic numbers are magic */
+    }
+
+    .hero .two-thirds {
+        padding: 0;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .grid .whole {
+        width: 85%;
+        margin: auto;
+    }
+
+    .grid .third {
+        display: inline-block;
+        vertical-align: top;
+        width: 95%;
+        padding-left: 0.8rem;
+        padding-top: 1rem;
+        margin: 0 auto;
+    }
+
+    .grid .third + .third {
+        display: inline-block;
+        vertical-align: top;
+        width: 95%;
+        padding-left: 0.8rem;
+        padding-top: 1rem;
+        margin: 0 auto;
+    }
+
+    h1 {
+        display: inline-block;
+        width: 95%;
+    }
+
+    .button {
+        width: 66%;
+    }
+}
+
+@media only screen and (max-width: 26.56rem) and (orientation: portrait) {
+    .hero {
+        text-align: center;
+    }
+}
