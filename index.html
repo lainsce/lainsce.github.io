@@ -128,24 +128,20 @@ layout: compress
       <a class="button ghost neutral shadow" href="https://github.com/lainsce/lainsce.github.io/issues/new" target="_blank" class="ghost"><i class="fa fa-fw fa-sm fa-bug"></i> Report an Issue</a>
       <p>© <span id="year">2017</span> Paulo Galardi. Made in São Paulo.</p>
     </footer>
-    <script
-      src="https://s3.amazonaws.com/snappycheckout/StripeButton.js"
+
+    <script src="https://checkout.stripe.com/checkout.js"
       id="stripebutton"
-      class="checkout-button"
-      key="pk_live_GW0qUkH42VLtBjw6mXPemPtJ"
-      name="Lains"
-      description="Support me with this small amount."
-      amount="100"
-      currency="USD"
-      bitcoin="true"
-      locale="auto"
-      image="icons/me.png"
-      billing="false"
-      shipping="false"
-      rememberme="true"
-      checkoutlabel="Donate {{amount}}"
-      message="Thanks!"
-      visible="false">
+      class="stripe-button"
+      data-key="pk_live_GW0qUkH42VLtBjw6mXPemPtJ"
+      data-amount="100"
+      data-name="Lains"
+      data-description="Support me with this small amount."
+      data-image="icons/me.png"
+      data-locale="auto"
+      data-billing="true"
+      data-shipping="false"
+      data-rememberme="false"
+    >
     </script>
 
     <script async type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
