@@ -3,16 +3,21 @@
 
 /* GENERIC COLORS */
 
+html, body {
+    background-color: #EBF2FA;
+    color: 1A1A1F;
+}
+
 .link {
-    color: #3689e6;
+    color: #05668D;
 }
 
 .link:hover {
-    color: #64baff;
+    color: #09adf0;
 }
 
 .link:active {
-    color: #0d52bf;
+    color: #03425c;
 }
 
 .shadow {
@@ -38,11 +43,11 @@
 }
 
 .hero.index {
-    background-image: url(../img/main.png), linear-gradient(120deg, #3689e6 0%, #4564b2 50%, #009688 100%);
+    background-image: url(../img/main.png), linear-gradient(to bottom, #3788af 0%, #05668d 100%);
 }
 
 .hero.ideas {
-    background-image: url(../img/ideas.png), linear-gradient(120deg, #F44336 0%, #FF9800 50%, #9C27B0 100%);
+    background-image: url(../img/ideas.png),linear-gradient(to bottom, #0DAB76 0%, #0B8954 100%);
 }
 
 /* FAB COLORS */
