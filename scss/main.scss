@@ -3,7 +3,7 @@
 
 body,
 html {
-    background-color: #fffffc;
+    background-color: #fcfcfc;
     color: #333;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -119,6 +119,7 @@ h4 {
 .card-text {
   text-align: left;
   margin-top: 1rem;
+  font-weight: 500;
 }
 
 .card-image {

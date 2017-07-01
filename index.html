@@ -41,23 +41,7 @@ layout: compress
               <h3 align=center>App Developer @ elementary Team</h3>
               <p align=center>
                   <a class="button ghost shadow twitter" href="https://twitter.com/intent/follow?screen_name=lainscereal"><i class="fa fa-fw fa-twitter"></i>Follow Me on Twitter</a>
-                  <form action="/your-server-side-code" method="POST">
-                    <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
-                    data-key="pk_live_GW0qUkH42VLtBjw6mXPemPtJ"
-                    data-description="Support me with this small amount."
-                    data-amount="100"
-                    data-currency="usd"
-                    data-name="Lains"
-                    data-image="icons/me.png"
-                    data-locale="auto">
-                    </script>
-                    <script>
-                    // Hide default stripe button, be careful there if you
-                    // have more than 1 button of that class
-                    document.getElementsByClassName("stripe-button-el")[0].style.display = 'none';
-                    </script>
-                    <button type="button" class="stripe-button"><a class="button shadow green" href="#"><i class="fa fa-fw fa-usd"></i>Buy Me a <span id="thing">Thing</span></a></button>
-                  </form>
+                  <a class="button shadow green" href="#" onclick="CheckoutButton.loadButton('stripebutton'); return false;"><i class="fa fa-fw fa-usd"></i>Buy Me a <span id="thing">Thing</span></a>
               </p>
           </div>
         </div>
@@ -148,5 +132,25 @@ layout: compress
     <script async type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script async type="text/javascript" src="main.js"></script>
     <script async type="text/javascript" src="font.js"></script>
+
+    <script
+      src="https://s3.amazonaws.com/snappycheckout/StripeButton.js"
+      id="stripebutton"
+      class="checkout-button"
+      key="pk_live_GW0qUkH42VLtBjw6mXPemPtJ"
+      name="Lains"
+      description="Support me with this small amount."
+      amount="100"
+      currency="USD"
+      bitcoin="true"
+      locale="auto"
+      image="icons/me.png"
+      billing="false"
+      shipping="false"
+      rememberme="true"
+      checkoutlabel="Donate {{amount}}"
+      message="Thanks!"
+      visible="false">
+    </script>
   </body>
 </html>
