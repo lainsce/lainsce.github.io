@@ -12,22 +12,19 @@ layout: compress
     <meta property="og:description" content="The personal site for Lains">
     <meta property='og:title' content='Lains'/>
     <meta property='og:image' content='icons/me.png'/>
-
     <title>Lains</title>
-
     <link rel="shortcut icon" href="fav/favicon.ico">
     <link rel="icon" sizes="16x16 32x32 64x64" href="fav/favicon.ico">
-    <link rel="stylesheet" href="scss/main.css">
-    <link rel="stylesheet" href="scss/var.css">
-    <link rel="stylesheet" href="scss/media.css">
-    <link rel="stylesheet" href="scss/fa.css">
+    <link rel="preload" href="scss/main.css" as="style" onload="this.rel='stylesheet'">
+    <link rel="preload" href="scss/var.css" as="style" onload="this.rel='stylesheet'">
+    <link rel="preload" href="scss/media.css" as="style" onload="this.rel='stylesheet'">
+    <link rel="preload" href="scss/fa.css" as="style" onload="this.rel='stylesheet'">
   </head>
   <body>
     <nav class="nav" tabindex="-1">
         <ul class="left nav-bar">
           <li class="nav-icon"><a class="nav-link" href="/" target="_parent"><i class="fa fa-lg fa-home"></i></a></li>
         </ul>
-
         <ul class="right nav-bar">
           <li class="nav-icon"><a class="nav-link" href="/ideas.html"><i class="fa fa-lg fa-lightbulb-o"></i></a></li>
           <li class="nav-icon"><a class="nav-link" href="mailto:lainsce@airmail.cc"><i class="fa fa-lg fa-envelope"></i></a></li>
@@ -115,7 +112,6 @@ layout: compress
         </div>
       </section>
     </main>
-
     <footer>
       <ul class="footer-space">
         <li class="fab yellow"><a class="fab-img" href="mailto:lainsce@airmail.cc" target="_blank"><i class="fa fa-fw fa-lg fa-envelope"></i></a></li>
@@ -128,49 +124,8 @@ layout: compress
       <a class="button ghost neutral shadow" href="https://github.com/lainsce/lainsce.github.io/issues/new" target="_blank" class="ghost"><i class="fa fa-fw fa-sm fa-bug"></i> Report an Issue</a>
       <p>© <span id="year">2017</span> Paulo Galardi. Made in São Paulo.</p>
     </footer>
-
     <script async type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script async type="text/javascript">
-      $(function () {
-          // Copyright year stuff
-          $("#year").text((new Date).getFullYear ());
-
-          // Buy me a foo plz
-          var things = ["Beer", "Coffee", "Drink", "Pizza", "Snack", "Pop"];
-          $("#thing").text (things[Math.floor(Math.random()*things.length)]);
-      });
-
-      function yearsSince (epoch) {
-          var diff = new Date () - new Date (epoch);
-          var age = Math.floor (diff/31536000000);
-          return age;
-      }
-
-      $(function() {
-        var fonts = 'https://fonts.googleapis.com/css?family=Raleway:300|Roboto:300,400,500';
-        if (document.createStyleSheet) document.createStyleSheet(fonts);
-        else $("head").append($("<link rel='stylesheet' href='"+ fonts +"' type='text/css' media='screen' />"));
-      });
-    </script>
-
-    <script async
-      src="js/stripe-button.js"
-      id="stripebutton"
-      class="checkout-button"
-      key="pk_live_GW0qUkH42VLtBjw6mXPemPtJ"
-      name="Lains"
-      description="Support me with this small amount."
-      amount="100"
-      currency="USD"
-      bitcoin="true"
-      locale="auto"
-      image="icons/me.png"
-      billing="false"
-      shipping="false"
-      rememberme="true"
-      checkoutlabel="Donate {{amount}}"
-      message="Thanks!"
-      visible="false">
-    </script>
+    <script async type="text/javascript">$(function () {$("#year").text((new Date).getFullYear ());var things = ["Beer", "Coffee", "Drink", "Pizza", "Snack", "Pop"];$("#thing").text (things[Math.floor(Math.random()*things.length)]);}); $(function yearsSince(epoch) { var diff = new Date () - new Date (epoch);var age = Math.floor (diff/31536000000);return age;});$(function() {var fonts = 'https://fonts.googleapis.com/css?family=Raleway:300|Roboto:300,400,500';if (document.createStyleSheet) document.createStyleSheet(fonts);else $("head").append($("<link rel='stylesheet' href='"+ fonts +"' type='text/css' media='screen' />"));});</script>
+    <script async src="js/stripe-button.js"id="stripebutton"class="checkout-button"key="pk_live_GW0qUkH42VLtBjw6mXPemPtJ"name="Lains"description="Support me with this small amount."amount="100"currency="USD"locale="auto"image="icons/me.png"billing="false"shipping="false"rememberme="true"checkoutlabel="Donate {{amount}}"message="Thanks!"visible="false"></script>
   </body>
 </html>
