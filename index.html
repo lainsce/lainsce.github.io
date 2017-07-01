@@ -40,7 +40,23 @@ layout: compress
               <h3 align=center>App Developer @ elementary Team</h3>
               <p align=center>
                   <a class="button ghost shadow twitter" href="https://twitter.com/intent/follow?screen_name=lainscereal"><i class="fa fa-fw fa-twitter"></i>Follow Me on Twitter</a>
-                  <a class="button shadow green"  href="#" onclick="CheckoutButton.loadButton('stripebutton'); return false;"><i class="fa fa-fw fa-usd"></i>Buy Me a <span id="thing">Thing</span></a>
+                  <form action="/your-server-side-code" method="POST">
+                    <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+                    data-key="pk_live_GW0qUkH42VLtBjw6mXPemPtJ"
+                    data-description="Support me with this small amount."
+                    data-amount="100"
+                    data-currency="usd"
+                    data-name="Lains"
+                    data-image="icons/me.png"
+                    data-locale="auto">
+                    </script>
+                    <script>
+                    // Hide default stripe button, be careful there if you
+                    // have more than 1 button of that class
+                    document.getElementsByClassName("stripe-button-el")[0].style.display = 'none';
+                    </script>
+                    <a class="button shadow green" href="#"><i class="fa fa-fw fa-usd"></i>Buy Me a <span id="thing">Thing</span></a>
+                  </form>
               </p>
           </div>
         </div>
@@ -127,21 +143,6 @@ layout: compress
       <a class="button ghost neutral shadow" href="https://github.com/lainsce/lainsce.github.io/issues/new" target="_blank" class="ghost"><i class="fa fa-fw fa-sm fa-bug"></i> Report an Issue</a>
       <p>© <span id="year">2017</span> Paulo Galardi. Made in São Paulo.</p>
     </footer>
-
-    <script src="https://checkout.stripe.com/checkout.js"
-      id="stripebutton"
-      class="stripe-button"
-      data-key="pk_live_GW0qUkH42VLtBjw6mXPemPtJ"
-      data-amount="100"
-      data-name="Lains"
-      data-description="Support me with this small amount."
-      data-image="icons/me.png"
-      data-locale="auto"
-      data-billing="true"
-      data-shipping="false"
-      data-rememberme="false"
-    >
-    </script>
 
     <script async type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script async type="text/javascript" src="main.js"></script>
