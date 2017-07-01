@@ -10,3 +10,7 @@ compress_html:
   blanklines: true
   ignore:
     envs: []
+
+asset_bundler:
+  compress:
+    js: yui
