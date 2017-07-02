@@ -14,6 +14,8 @@ html {
     text-rendering:optimizeLegibility;
     margin: 0;
     min-height: 100vh;
+    max-width: 100%;
+    overflow-x: hidden;
     background-color: #fff;
     color: #1A1A1F;
 }
