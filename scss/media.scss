@@ -50,15 +50,21 @@
     }
 
     .grid .quarter {
-          width: 25%;
-          margin: 1rem 0.5rem 1rem 0.5rem;
-          padding: 0;
+        display: inline-block;
+        vertical-align: top;
+        width: 22%;
+        margin: 0 auto;
+        padding-left: 1rem;
+        padding-right: 1rem;
     }
 
     .grid .quarter + .quarter {
-          width: 25%;
-          margin: 1rem 0.5rem 1rem 0.5rem;
-          padding: 0;
+        display: inline-block;
+        vertical-align: top;
+        width: 22%;
+        margin: 0 auto;
+        padding-left: 1rem;
+        padding-right: 1rem;
     }
 
     .grid .third {
