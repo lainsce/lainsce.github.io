@@ -11,6 +11,7 @@ html {
     -ms-flex-direction: column;
     flex-direction: column;
     font: 1rem "Roboto", sans-serif;
+    text-rendering:optimizeLegibility;
     margin: 0;
     min-height: 100vh;
     background-color: #fff;
@@ -30,7 +31,19 @@ html {
 }
 
 .shadow {
-    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 5px 0 rgba(0,0,0,0.14), 0 1px 10px 0 rgba(0,0,0,0.12), 0 2px 4px -1px rgba(0,0,0,0.3);
+}
+
+.button-shadow {
+    box-shadow: 0 4px 5px 0 rgba(0,0,0,0.14), 0 1px 10px 0 rgba(0,0,0,0.12), 0 2px 4px -1px rgba(0,0,0,0.3);
+}
+
+.button-shadow:hover {
+    box-shadow: 0 8px 10px 1px rgba(0,0,0,0.14), 0 3px 14px 2px rgba(0,0,0,0.12), 0 5px 5px -3px rgba(0,0,0,0.3);
+}
+
+.button-shadow:active {
+    box-shadow: 0 4px 2px 0 rgba(0,0,0,0.14), 0 1px 7px 0 rgba(0,0,0,0.12), 0 2px 1px -1px rgba(0,0,0,0.3);
 }
 
 .text-shadow {
@@ -38,7 +51,19 @@ html {
 }
 
 .footer-shadow {
-    box-shadow: 0px -2px 2px 0 rgba(0, 0, 0, 0.1), 0px -3px 5px 0 rgba(0, 0, 0, 0.06), 0px -3px 1px 0px rgba(0, 0, 0, 0.03);
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);
+}
+
+.footer-button-shadow {
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);
+}
+
+.footer-button-shadow:hover {
+    box-shadow: 0 8px 10px 1px rgba(0,0,0,0.14), 0 3px 14px 2px rgba(0,0,0,0.12), 0 5px 5px -3px rgba(0,0,0,0.3);
+}
+
+.footer-button-shadow:active {
+    box-shadow: 0 4px 2px 0 rgba(0,0,0,0.14), 0 1px 7px 0 rgba(0,0,0,0.12), 0 2px 1px -1px rgba(0,0,0,0.3);
 }
 
 .fab-shadow {
@@ -290,7 +315,6 @@ h4 {
     color: #fff;
     text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
     border: 1px solid #419641;
-    box-shadow: 0 12px 16px 1px rgba(0, 0, 0, 0.14), 0 4px 22px 3px rgba(0, 0, 0, 0.12), 0 6px 7px -4px rgba(0, 0, 0, 0.4);
 }
 
 .button.green:active {
@@ -299,7 +323,6 @@ h4 {
     color: #ddd;
     text-shadow: none;
     border: 1px solid #419641;
-    box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.4);
 }
 
 .button.green:focus {
@@ -318,7 +341,6 @@ h4 {
     color: #fff;
     text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
     border: 1px solid #2aabd2;
-    box-shadow: 0 12px 16px 1px rgba(0, 0, 0, 0.14), 0 4px 22px 3px rgba(0, 0, 0, 0.12), 0 6px 7px -4px rgba(0, 0, 0, 0.4);
 }
 
 .button.twitter:active {
@@ -327,19 +349,24 @@ h4 {
     color: #ddd;
     text-shadow: none;
     border: 1px solid #2aabd2;
-    box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.4);
 }
 
 .button.twitter:focus {
     box-shadow: 0 0 0 2px rgba(91,192,222,.5);
 }
 
+.button.neutral {
+    background-color: #e6e6e6;
+    color: #292b2c;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e6e6e6;
+}
+
 .button.neutral:hover {
     background-color: #e6e6e6;
     color: #292b2c;
     text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
-    border: 1px solid #adadad;
-    box-shadow: 0 12px 16px 1px rgba(0, 0, 0, 0.14), 0 4px 22px 3px rgba(0, 0, 0, 0.12), 0 6px 7px -4px rgba(0, 0, 0, 0.4);
+    border: 1px solid #d6d6d6;
 }
 
 .button.neutral:active {
@@ -348,27 +375,10 @@ h4 {
     color: #292b2c;
     text-shadow: none;
     border: 1px solid #adadad;
-    box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.4);
 }
 
 .button.neutral:focus {
     box-shadow: 0 0 0 2px rgba(55,55,55,.5)
-}
-
-.button.ghost {
-    background-color: transparent;
-    background-image: none;
-    border: 1px solid #292b2c;
-    color: #292b2c;
-    box-shadow: none;
-}
-
-.button.ghost-night {
-    background-color: transparent;
-    background-image: none;
-    border: 1px solid #e6e6e6;
-    color: #e6e6e6;
-    box-shadow: none;
 }
 
 /********
