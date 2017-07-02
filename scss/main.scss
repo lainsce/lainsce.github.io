@@ -11,14 +11,13 @@ html {
     -ms-flex-direction: column;
     flex-direction: column;
     font: 1rem "Roboto", sans-serif;
-    letter-spacing: 0.5px;
     margin: 0;
     min-height: 100vh;
 }
 
 .animated {
-    -webkit-transition: all 250ms ease-in-out;
-    transition: all 250ms ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
 }
 
 .avatar {
@@ -152,10 +151,6 @@ h4 {
   padding: 2px 1.5rem 1.5rem 1.5rem;
 }
 
-.card-badge {
-  margin-top: 0.5rem;
-}
-
 /**********
  * Button *
  *********/
@@ -163,17 +158,21 @@ h4 {
 .button {
     border-radius: 3px;
     display: inline-block;
-    margin: 6px 0;
+    margin: 12px 0;
     min-width: 100px;
-    padding: 0.7rem;
+    padding: 0.8rem;
     text-align: center;
-    -webkit-transition: all 100ms ease-in-out;
-    transition: all 100ms ease-in-out;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
     text-transform: uppercase;
 }
 
 .button .fa {
-    margin-right: 12px;
+    margin-right: 8px;
+}
+
+.footer-button {
+    font-size: 0.8rem;
 }
 
 /********
@@ -317,7 +316,7 @@ footer {
     display: inline-block;
     height: 36px;
     line-height: 36px;
-    margin: 6px;
+    margin: 5px;
     text-align: center;
     width: 36px;
 }
@@ -345,8 +344,8 @@ footer {
     padding: 0px 6px;
     pointer-events: none;
     position: absolute;
-    -webkit-transition: all 250ms;
-    transition: all 250ms;
+    -webkit-transition: all .3s;
+    transition: all .3s;
     -webkit-transition-delay: 0ms;
     transition-delay: 0ms;
 }

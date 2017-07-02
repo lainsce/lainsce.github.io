@@ -9,11 +9,11 @@ html, body {
 }
 
 .link {
-    color: #05668D;
+    color: #078abe;
 }
 
 .link:hover {
-    color: #078abe;
+    color: #05668D;
 }
 
 .link:active {
@@ -53,19 +53,7 @@ html, body {
 /* FAB COLORS */
 
 .fab {
-    background-image:
-        -webkit-linear-gradient(
-            top,
-            rgba(255, 255, 255, 0.2),
-            rgba(0, 0, 0, 0.05)
-            );
-    background-image:
-        linear-gradient(
-            to bottom,
-            rgba(255, 255, 255, 0.2),
-            rgba(0, 0, 0, 0.05)
-            );
-    border: 1px solid rgba(0, 0, 0, 0.15);
+    border: 1px solid rgba(0, 0, 0, 0);
 }
 
 .fab-img {
@@ -73,7 +61,7 @@ html, body {
 }
 
 .fab-img:active {
-    color: #ccc;
+    color: #eeeeee;
 }
 
 .fab.black {
@@ -82,9 +70,6 @@ html, body {
 
 .fab.black:hover {
     box-shadow:
-        inset 0 0 0 1px rgba(255, 255, 255, 0.07),
-        inset 0 1px 0 0 rgba(255, 255, 255, 0.3),
-        inset 0 -1px 0 0 rgba(255, 255, 255, 0.1),
         0 8px 10px 1px rgba(88, 88, 88, 0.14),
         0 3px 14px 2px rgba(88, 88, 88, 0.12),
         0 5px 5px -3px rgba(88, 88, 88, 0.4);
@@ -143,9 +128,6 @@ html, body {
 
 .fab.instagram:hover {
     box-shadow:
-        inset 0 0 0 1px rgba(255, 255, 255, 0.07),
-        inset 0 1px 0 0 rgba(255, 255, 255, 0.3),
-        inset 0 -1px 0 0 rgba(255, 255, 255, 0.1),
         0 8px 10px 1px rgba(137, 77, 49, 0.14),
         0 3px 14px 2px rgba(137, 77, 49, 0.12),
         0 5px 5px -3px rgba(137, 77, 49, 0.4);
@@ -157,9 +139,6 @@ html, body {
 
 .fab.blue-twitter:hover {
     box-shadow:
-        inset 0 0 0 1px rgba(255, 255, 255, 0.07),
-        inset 0 1px 0 0 rgba(255, 255, 255, 0.3),
-        inset 0 -1px 0 0 rgba(255, 255, 255, 0.1),
         0 8px 10px 1px rgba(0, 100, 214, 0.14),
         0 3px 14px 2px rgba(0, 100, 214, 0.12),
         0 5px 5px -3px rgba(0, 100, 214, 0.4);
@@ -171,9 +150,6 @@ html, body {
 
 .fab.green:hover {
     box-shadow:
-        inset 0 0 0 1px rgba(255, 255, 255, 0.07),
-        inset 0 1px 0 0 rgba(255, 255, 255, 0.3),
-        inset 0 -1px 0 0 rgba(255, 255, 255, 0.1),
         0 8px 10px 1px rgba(21, 194, 0, 0.14),
         0 3px 14px 2px rgba(21, 194, 0, 0.12),
         0 5px 5px -3px rgba(21, 194, 0, 0.4);
@@ -185,9 +161,6 @@ html, body {
 
 .fab.medium:hover {
     box-shadow:
-        inset 0 0 0 1px rgba(255, 255, 255, 0.07),
-        inset 0 1px 0 0 rgba(255, 255, 255, 0.3),
-        inset 0 -1px 0 0 rgba(255, 255, 255, 0.1),
         0 8px 10px 1px rgba(0, 209, 133, 0.14),
         0 3px 14px 2px rgba(0, 209, 133, 0.12),
         0 5px 5px -3px rgba(0, 209, 133, 0.4);
@@ -199,9 +172,6 @@ html, body {
 
 .fab.orange:hover {
     box-shadow:
-        inset 0 0 0 1px rgba(255, 255, 255, 0.07),
-        inset 0 1px 0 0 rgba(255, 255, 255, 0.3),
-        inset 0 -1px 0 0 rgba(255, 255, 255, 0.1),
         0 8px 10px 1px rgba(249, 108, 45, 0.14),
         0 3px 14px 2px rgba(249, 108, 45, 0.12),
         0 5px 5px -3px rgba(249, 108, 45, 0.4);
@@ -213,9 +183,6 @@ html, body {
 
 .fab.pink:hover {
     box-shadow:
-        inset 0 0 0 1px rgba(255, 255, 255, 0.07),
-        inset 0 1px 0 0 rgba(255, 255, 255, 0.3),
-        inset 0 -1px 0 0 rgba(255, 255, 255, 0.1),
         0 8px 10px 1px rgba(224, 76, 134, 0.14),
         0 3px 14px 2px rgba(224, 76, 134, 0.12),
         0 5px 5px -3px rgba(224, 76, 134, 0.4);
@@ -227,26 +194,20 @@ html, body {
 
 .fab.purple:hover {
     box-shadow:
-        inset 0 0 0 1px rgba(255, 255, 255, 0.07),
-        inset 0 1px 0 0 rgba(255, 255, 255, 0.3),
-        inset 0 -1px 0 0 rgba(255, 255, 255, 0.1),
         0 8px 10px 1px rgba(100, 65, 165, 0.14),
         0 3px 14px 2px rgba(100, 65, 165, 0.12),
         0 5px 5px -3px rgba(100, 65, 165, 0.4);
 }
 
 .fab.telegram {
-    background-color: #007bee;
+    background-color: #0088cc;
 }
 
 .fab.telegram:hover {
     box-shadow:
-        inset 0 0 0 1px rgba(255, 255, 255, 0.07),
-        inset 0 1px 0 0 rgba(255, 255, 255, 0.3),
-        inset 0 -1px 0 0 rgba(255, 255, 255, 0.1),
-        0 8px 10px 1px rgba(0, 100, 214, 0.14),
-        0 3px 14px 2px rgba(0, 100, 214, 0.12),
-        0 5px 5px -3px rgba(0, 100, 214, 0.4);
+        0 8px 10px 1px rgba(0, 136, 204, 0.14),
+        0 3px 14px 2px rgba(0, 136, 204, 0.12),
+        0 5px 5px -3px rgba(0, 136, 204, 0.4);
 }
 
 .fab.red {
@@ -255,9 +216,6 @@ html, body {
 
 .fab.red:hover {
     box-shadow:
-        inset 0 0 0 1px rgba(255, 255, 255, 0.07),
-        inset 0 1px 0 0 rgba(255, 255, 255, 0.3),
-        inset 0 -1px 0 0 rgba(255, 255, 255, 0.1),
         0 8px 10px 1px rgba(221, 75, 57, 0.14),
         0 3px 14px 2px rgba(221, 75, 57, 0.12),
         0 5px 5px -3px rgba(221, 75, 57, 0.4);
@@ -269,12 +227,9 @@ html, body {
 
 .fab.yellow:hover {
     box-shadow:
-        inset 0 0 0 1px rgba(255, 255, 255, 0.07),
-        inset 0 1px 0 0 rgba(255, 255, 255, 0.5),
-        inset 0 -1px 0 0 rgba(255, 255, 255, 0.1),
-        0 8px 10px 1px rgba(255, 111, 0, 0.14),
-        0 3px 14px 2px rgba(255, 111, 0, 0.12),
-        0 5px 5px -3px rgba(255, 111, 0, 0.4);
+        0 8px 10px 1px rgba(255, 179, 0, 0.14),
+        0 3px 14px 2px rgba(255, 179, 0, 0.12),
+        0 5px 5px -3px rgba(255, 179, 0, 0.4);
 }
 
 /* BUTTON COLORS */
@@ -394,8 +349,16 @@ html, body {
   color: #212121;
 }
 
-.card-action {
+.card-title.night {
+  color: #f8f8f8;
+}
 
+.card-subtitle.night {
+  color: #f8f8f8;
+}
+
+.card-text.night {
+  color: #f8f8f8;
 }
 
 .card-image.coin {
@@ -411,27 +374,27 @@ html, body {
 }
 
 .card-image.neutral {
-  background-color: #ccc;
+  background-color: #eeeeee;
 }
 
 /* BADGE COLORS */
 
 .badge {
-    color: #888;
+    color: #999;
     background-color: transparent;
-    border: 1px solid #888;
+    border: 1px solid #999;
 }
 
 .badge.green {
     color: #f1f1f1;
-    background-color: #009966;
-    border: 1px solid #009966;
+    background-color: #009944;
+    border: 1px solid #009944;
 }
 
 .badge.red {
     color: #f1f1f1;
-    background-color: #888;
-    border: 1px solid #888;
+    background-color: #999;
+    border: 1px solid #999;
 }
 
 .badge.red:hover {
@@ -442,8 +405,8 @@ html, body {
 
 .badge.blue {
     color: #f1f1f1;
-    background-color: #888;
-    border: 1px solid #888;
+    background-color: #999;
+    border: 1px solid #999;
 }
 
 .badge.blue:hover {
@@ -493,12 +456,12 @@ section:not(.hero) .health .card-title,
 }
 
 .nav-link:hover:active {
-    color: #ccc;
+    color: #eeeeee;
 }
 
 /* FOOTER COLORS */
 
 footer {
-    background-color: #151515;
-    color: #ccc;
+    background-color: #212121;
+    color: #eee;
 }
