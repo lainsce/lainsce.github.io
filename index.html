@@ -21,7 +21,7 @@
     <link type="text/css" rel = "stylesheet" href="scss/main.css">
   </head>
   <body>
-    <nav class="nav" tabindex="-1">
+    <nav class="nav index shadow" tabindex="-1">
         <ul class="left nav-bar">
           <li class="nav-icon"><a class="nav-link tooltip-bottom" data-tooltip="Home" href="/" target="_parent"><img class="logo" height="32" width="32" src="icons/me.svg" alt="My Icon"></a></li>
         </ul>
@@ -33,13 +33,23 @@
     <main>
       <section class="hero index">
         <div class="grid">
-          <div class="whole">
-              <h2 align=center>Hi, I'm Lains!</h2>
-              <h3 align=center>App Developer @ elementary Team</h3>
-              <p align=center>
-                  <a class="button button-shadow info" href="https://twitter.com/intent/follow?screen_name=lainscereal"><i class="fa fa-fw fa-twitter"></i>Follow Me on Twitter</a>
-                  <a class="button button-shadow success" href="#" onclick="CheckoutButton.loadButton('stripebutton'); return false;"><i class="fa fa-fw fa-usd"></i>Buy Me a <span id="thing">Thing</span></a>
-              </p>
+          <div class="two-thirds">
+            <div class="card shadow">
+              <div class="card-body">
+                <div class="card-title">
+                  <h2 align=center>Hi, I'm Lains!</h2>
+                </div>
+                <div class="card-subtitle" data-align=center>
+                  <h3 align=center>App Developer @ elementary Team</h3>
+                </div>
+              </div>
+              <div class="card-action">
+                <p align=center>
+                    <a class="button button-shadow info" href="https://twitter.com/intent/follow?screen_name=lainscereal"><i class="fa fa-fw fa-twitter"></i>Follow Me on Twitter</a>
+                    <a class="button button-shadow success" href="#" onclick="CheckoutButton.loadButton('stripebutton'); return false;"><i class="fa fa-fw fa-usd"></i>Buy Me a <span id="thing">Thing</span></a>
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -49,7 +59,7 @@
         </div>
         <div class="third">
           <div class="card shadow">
-            <div class="card-image">
+            <div class="card-image coin">
               <p><img width="128" height="128" src="icons/coin.svg" alt="Coin's Icon"></p>
             </div>
             <div class="card-body">
@@ -70,7 +80,7 @@
         </div>
         <div class="third">
           <div class="card shadow">
-            <div class="card-image">
+            <div class="card-image notejot">
               <p><img width="128" height="128" src="icons/notejot.svg" alt="Notejot's Icon"></p>
             </div>
             <div class="card-body">
@@ -91,7 +101,7 @@
         </div>
         <div class="third">
           <div class="card shadow">
-            <div class="card-image">
+            <div class="card-image quilter">
               <p><img width="128" height="128" src="icons/quilter.svg" alt="Quilter's Icon"></p>
             </div>
             <div class="card-body">
