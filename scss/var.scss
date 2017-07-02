@@ -4,8 +4,8 @@
 /* GENERIC COLORS */
 
 html, body {
-    background-color: #EBF2FA;
-    color: 1A1A1F;
+    background-color: #f1f1f1;
+    color: #1A1A1F;
 }
 
 .link {
@@ -13,7 +13,7 @@ html, body {
 }
 
 .link:hover {
-    color: #09adf0;
+    color: #078abe;
 }
 
 .link:active {
@@ -38,8 +38,8 @@ html, body {
 /* HERO COLORS */
 
 .hero {
-    background-color: #000;
-    color: #fff;
+    background-color: #1A1A1F;
+    color: #f1f1f1;
 }
 
 .hero.index {
@@ -275,32 +275,6 @@ html, body {
         0 8px 10px 1px rgba(255, 111, 0, 0.14),
         0 3px 14px 2px rgba(255, 111, 0, 0.12),
         0 5px 5px -3px rgba(255, 111, 0, 0.4);
-}
-
-/* READ MORE COLORS */
-
-.link.blue:hover, .link.blue:hover .fa {
-    color: #3689e6;
-}
-
-.link.green:hover, .link.green:hover .fa {
-    color: #1d7e0d;
-}
-
-.link.pink:hover, .link.pink:hover .fa {
-    color: #e04c86;
-}
-
-.link.soundcloud:hover, .link.soundcloud:hover .fa {
-    color: #f96c2d;
-}
-
-.link.twitter:hover, .link.twitter:hover .fa {
-    color: #55acee;
-}
-
-.link.red:hover, .link.red:hover .fa {
-    color: #c6262e;
 }
 
 /* BUTTON COLORS */
