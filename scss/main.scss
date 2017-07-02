@@ -13,20 +13,20 @@ html {
     font: 1rem "Roboto", sans-serif;
     margin: 0;
     min-height: 100vh;
-    background-color: #fafdff;
+    background-color: #fff;
     color: #1A1A1F;
 }
 
 .link {
-    color: #078abe;
+    color: #0275d8;
 }
 
 .link:hover {
-    color: #05668D;
+    color: #025aa5;
 }
 
 .link:active {
-    color: #03425c;
+    color: #01549b;
 }
 
 .shadow {
@@ -37,13 +37,21 @@ html {
     text-shadow: 0 1px 1px rgba(0, 0, 0, 0.24), 0 1px 3px rgba(0, 0, 0, 0.36);
 }
 
+.footer-shadow {
+    box-shadow: 0px -2px 2px 0 rgba(0, 0, 0, 0.1), 0px -3px 5px 0 rgba(0, 0, 0, 0.06), 0px -3px 1px 0px rgba(0, 0, 0, 0.03);
+}
+
+.fab-shadow {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
 .animated {
     -webkit-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
 }
 
 .avatar {
-    background-color: #f1f1f1;
+    background-color: #fff;
     border: 1px solid rgba(0, 0, 0, 0.5);
     border-radius: 100%;
     vertical-align: middle;
@@ -73,33 +81,28 @@ html {
 /* BADGE COLORS */
 
 .badge.green {
-    color: #f1f1f1;
-    background-color: #009944;
-    border: 1px solid #009944;
+    color: #fff;
+    background-color: #5cb85c;
+    border: 1px solid #5cb85c;
 }
 
-.badge.red {
-    color: #f1f1f1;
-    background-color: #999;
-    border: 1px solid #999;
+.badge.green:hover {
+    color: #fff;
+    background-color: #449d44;
+    border: 1px solid #449d44;
 }
+
 
 .badge.red:hover {
-    color: #f1f1f1;
-    background-color: #C62828;
-    border: 1px solid #C62828;
-}
-
-.badge.blue {
-    color: #f1f1f1;
-    background-color: #999;
-    border: 1px solid #999;
+    color: #fff;
+    background-color: #d9534f;
+    border: 1px solid #d9534f;
 }
 
 .badge.blue:hover {
-    color: #f1f1f1;
-    background-color: #1565C0;
-    border: 1px solid #1565C0;
+    color: #fff;
+    background-color: #31b0d5;
+    border: 1px solid #31b0d5;
 }
 
 
@@ -159,7 +162,7 @@ h4 {
   text-align: center;
   line-height: 1.5;
   transition: color .3s ease;
-  background-color: #f8f8f8;
+  background-color: #f7f7f9;
 }
 
 .card-title {
@@ -189,15 +192,15 @@ h4 {
 }
 
 .card-title.night {
-  color: #f8f8f8;
+  color: #f7f7f9;
 }
 
 .card-subtitle.night {
-  color: #f8f8f8;
+  color: #f7f7f9;
 }
 
 .card-text.night {
-  color: #f8f8f8;
+  color: #f7f7f9;
 }
 
 .card-image {
@@ -227,7 +230,7 @@ h4 {
 }
 
 .card-image.neutral {
-  background-color: #eeeeee;
+  background-color: #f7f7f9;
 }
 
 .card-action {
@@ -276,75 +279,75 @@ h4 {
 /* BUTTON COLORS */
 
 .button.green {
-    background-color: #68b723;
+    background-color: #5cb85c;
     background-image: none;
-    border: 1px solid #68b723;
-    color: #f1f1f1;
+    border: 1px solid #5cb85c;
+    color: #fff;
 }
 
 .button.green:hover {
-    background-color: #9bdb4d;
+    background-color: #449d44;
     color: #fff;
     text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
-    border: 1px solid #9bdb4d;
+    border: 1px solid #419641;
     box-shadow: 0 12px 16px 1px rgba(0, 0, 0, 0.14), 0 4px 22px 3px rgba(0, 0, 0, 0.12), 0 6px 7px -4px rgba(0, 0, 0, 0.4);
 }
 
 .button.green:active {
-    background-color: #3a9104;
+    background-color: #449d44;
     background-image: none;
     color: #ddd;
     text-shadow: none;
-    border: 1px solid #3a9104;
+    border: 1px solid #419641;
     box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.4);
 }
 
 .button.green:focus {
-    box-shadow: 0 0 0 2px rgba(40, 91, 4, 0.5);
+    box-shadow: 0 0 0 2px rgba(92,184,92,.5);
 }
 
 .button.twitter {
-    background-color: #64baff;
+    background-color: #5bc0de;
     background-image: none;
-    border: 1px solid #64baff;
-    color: #f1f1f1;
+    border: 1px solid #5bc0de;
+    color: #fff;
 }
 
 .button.twitter:hover {
-    background-color: #64baff;
+    background-color: #31b0d5;
     color: #fff;
     text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
-    border: 1px solid #64baff;
+    border: 1px solid #2aabd2;
     box-shadow: 0 12px 16px 1px rgba(0, 0, 0, 0.14), 0 4px 22px 3px rgba(0, 0, 0, 0.12), 0 6px 7px -4px rgba(0, 0, 0, 0.4);
 }
 
 .button.twitter:active {
-    background-color: #3689e6;
+    background-color: #31b0d5;
     background-image: none;
     color: #ddd;
     text-shadow: none;
-    border: 1px solid #3689e6;
+    border: 1px solid #2aabd2;
     box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.4);
 }
 
 .button.twitter:focus {
-    box-shadow: 0 0 0 2px rgba(36,89,156,.5)
+    box-shadow: 0 0 0 2px rgba(91,192,222,.5);
 }
 
 .button.neutral:hover {
-    background-color: #555555;
-    color: #fff;
+    background-color: #e6e6e6;
+    color: #292b2c;
     text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
-    border: 1px solid #555555;
+    border: 1px solid #adadad;
     box-shadow: 0 12px 16px 1px rgba(0, 0, 0, 0.14), 0 4px 22px 3px rgba(0, 0, 0, 0.12), 0 6px 7px -4px rgba(0, 0, 0, 0.4);
 }
 
 .button.neutral:active {
-    background-color: #555555;
+    background-color: #e6e6e6;
     background-image: none;
-    color: #ddd;
+    color: #292b2c;
     text-shadow: none;
-    border: 1px solid #333333;
+    border: 1px solid #adadad;
     box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.4);
 }
 
@@ -355,16 +358,16 @@ h4 {
 .button.ghost {
     background-color: transparent;
     background-image: none;
-    border: 1px solid #000;
-    color: #000;
+    border: 1px solid #292b2c;
+    color: #292b2c;
     box-shadow: none;
 }
 
 .button.ghost-night {
     background-color: transparent;
     background-image: none;
-    border: 1px solid #fff;
-    color: #fff;
+    border: 1px solid #e6e6e6;
+    color: #e6e6e6;
     box-shadow: none;
 }
 
@@ -385,7 +388,8 @@ main {
 }
 
 .whole {
-    width: 95%;
+    width: 100%;
+    margin: 0 1rem;
 }
 
 .half {
@@ -425,8 +429,8 @@ img {
  ********/
 
 .hero {
-    background-color: #1A1A1F;
-    color: #f1f1f1;
+    background-color: #000;
+    color: #fff;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
@@ -495,11 +499,11 @@ img {
 }
 
 .nav-link {
-    color: #f1f1f1;
+    color: #fff;
 }
 
 .nav-link:hover:active {
-    color: #eeeeee;
+    color: #f7f7f9;
 }
 
 /**********
@@ -507,11 +511,12 @@ img {
  *********/
 
 footer {
-    background-color: #eeeeee;
+    background-color: #f7f7f9;
     color: #212121;
     box-sizing: border-box;
     font-size: 0.7rem;
     padding: 1rem 0;
+    position: relative;
     text-align: center;
     width: 100%;
     display: inline-block;
@@ -543,18 +548,18 @@ footer {
 }
 
 .fab-img:active {
-    color: #eeeeee;
+    color: #f7f7f9;
 }
 
 .fab.black {
-    background-color: #444;
+    background-color: #222;
 }
 
 .fab.black:hover {
     box-shadow:
-        0 8px 10px 1px rgba(88, 88, 88, 0.14),
-        0 3px 14px 2px rgba(88, 88, 88, 0.12),
-        0 5px 5px -3px rgba(88, 88, 88, 0.4);
+        0 8px 10px 1px rgba(22, 22, 22, 0.14),
+        0 3px 14px 2px rgba(22, 22, 22, 0.12),
+        0 5px 5px -3px rgba(22, 22, 22, 0.4);
 }
 
 .fab.instagram {
@@ -736,13 +741,13 @@ footer {
 
 /* Position tooltip above the element */
 .tooltip:before {
-  background-color: #555555;
+  background-color: #555;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
   position: absolute;
-  bottom: 150%;
+  bottom: 120%;
   left: 50%;
   margin-bottom: 5px;
-  margin-left: -60px;
+  margin-left: -58px;
   padding: 7px;
   width: 100px;
   -webkit-border-radius: 3px;
@@ -756,11 +761,11 @@ footer {
 
 .tooltip:after {
   position: absolute;
-  bottom: 150%;
+  bottom: 120%;
   left: 50%;
   margin-left: -5px;
   width: 0;
-  border-top: 5px solid #555555;
+  border-top: 5px solid #555;
   border-right: 5px solid transparent;
   border-left: 5px solid transparent;
   content: " ";
