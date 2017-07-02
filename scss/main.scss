@@ -127,12 +127,10 @@ html {
     transition: all .3s ease-in-out;
 }
 
-.avatar {
-    background-color: $bg;
-    border: 1px solid rgba(0, 0, 0, 0.5);
-    border-radius: 100%;
+.logo {
+    display: inline-block;
     vertical-align: middle;
-    margin: -10px 10px 0px 0px;
+    margin: -5px 5px 0px 5px;
 }
 
 .badge {
