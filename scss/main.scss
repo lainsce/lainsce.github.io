@@ -723,14 +723,14 @@ footer {
  * Tooltip *
  **********/
 
-/* Add this attribute to the element that needs a tooltip */
+/* Top tooltip*/
+
 .tooltip {
   position: relative;
   z-index: 2;
   cursor: pointer;
 }
 
-/* Hide the tooltip content by default */
 .tooltip:before,
 .tooltip:after {
   visibility: hidden;
@@ -739,7 +739,6 @@ footer {
   text-transform: capitalize;
 }
 
-/* Position tooltip above the element */
 .tooltip:before {
   background-color: #555;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
@@ -773,9 +772,63 @@ footer {
   line-height: 0;
 }
 
-/* Show tooltip content on hover */
 .tooltip:hover:before,
 .tooltip:hover:after {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* Bottom Tooltip */
+
+.tooltip-bottom {
+  position: relative;
+  z-index: 2;
+  cursor: pointer;
+}
+
+.tooltip-bottom:before,
+.tooltip-bottom:after {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  text-transform: capitalize;
+}
+
+.tooltip-bottom:before {
+  background-color: #555;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+  position: absolute;
+  top: 120%;
+  left: 50%;
+  margin-top: 5px;
+  margin-left: -58px;
+  padding: 7px;
+  width: 100px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  content: attr(data-tooltip);
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.2;
+}
+
+.tooltip-bottom:after {
+  position: absolute;
+  top: 120%;
+  left: 50%;
+  margin-left: -5px;
+  width: 0;
+  border-bottom: 5px solid #555;
+  border-right: 5px solid transparent;
+  border-left: 5px solid transparent;
+  content: " ";
+  font-size: 0;
+  line-height: 0;
+}
+
+.tooltip-bottom:hover:before,
+.tooltip-bottom:hover:after {
   visibility: visible;
   opacity: 1;
 }
