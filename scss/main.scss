@@ -238,7 +238,6 @@ h4 {
 
 .card-title {
   font-family: Raleway;
-  text-shadow: none;
   font-weight: 300;
   font-size: 2.6rem;
   color: $fg;
@@ -246,7 +245,6 @@ h4 {
 
 .card-subtitle {
   font-family: Raleway;
-  text-shadow: none;
   font-weight: 300;
   font-size: 1.64rem;
   color: $fg;
@@ -347,15 +345,13 @@ h4 {
 .button.success:hover {
     background-color: $button-success-hover;
     color: $bg;
-    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
     border: 1px solid $button-success-border;
 }
 
 .button.success:active {
     background-color: $button-success-hover;
     background-image: none;
-    color: #ddd;
-    text-shadow: none;
+    color: $bg;
     border: 1px solid $button-success-border;
 }
 
@@ -373,15 +369,13 @@ h4 {
 .button.info:hover {
     background-color: $button-info-hover;
     color: $bg;
-    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
     border: 1px solid $button-info-border;
 }
 
 .button.info:active {
     background-color: $button-info-hover;
     background-image: none;
-    color: #ddd;
-    text-shadow: none;
+    color: $bg;
     border: 1px solid $button-info-border;
 }
 
@@ -392,14 +386,12 @@ h4 {
 .button.neutral {
     background-color: $button-neutral;
     color: $fg;
-    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
     border: 1px solid $button-neutral;
 }
 
 .button.neutral:hover {
     background-color: $button-neutral;
     color: $fg;
-    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
     border: 1px solid $button-neutral-border;
 }
 
@@ -407,7 +399,6 @@ h4 {
     background-color: $button-neutral;
     background-image: none;
     color: $fg;
-    text-shadow: none;
     border: 1px solid $button-neutral-border;
 }
 
