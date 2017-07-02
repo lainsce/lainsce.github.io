@@ -30,7 +30,7 @@ $hero-idea-a: lighten($button-success, 10%);
 $hero-idea-b: lighten($button-success-hover, 10%);
 $tooltip: lighten($fg, 20%);
 $fab-black: lighten($fg, 10%);
-$fab-blue-info: lighten($button-info-hover, 15%);
+$fab-info: $button-info;
 $fab-medium: #00d185;
 $fab-telegram: darken($button-info, 20%);
 $fab-success: $button-success-border;
@@ -600,7 +600,7 @@ footer {
 }
 
 .fab.blue-twitter {
-    background-color: $fab-blue-info;
+    background-color: $fab-info;
 }
 
 .fab.medium {
