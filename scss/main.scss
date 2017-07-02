@@ -3,36 +3,36 @@
 
 /* COLORS */
 
-$button-neutral: #e6e6eb;
-$button-neutral-border: #d6d6db;
+$bg: #f6f6fb;
+$fg: #1A1A1F;
+$card-coin: #badbad;
+$card-notejot: #fff3ae;
+$card-quilter: #b8d2e2;
 $button-success: #5cb85c;
 $button-success-hover: #449d44;
 $button-success-border: #419641;
 $button-info: #5bc0de;
 $button-info-hover: #31b0d5;
 $button-info-border: #2aabd2;
+$card: lighten($fg, 90%);
+$badge: lighten($fg, 40%);
+$button-neutral: lighten($fg, 80%);
+$button-neutral-border: lighten($fg, 70%);
 $link: darken($button-info, 20%);
 $link-hover: darken($button-info-hover, 20%);
-$link-active: darken($button-info-border, 20%);;
-$bg: #f6f6fb;
-$fg: #1A1A1F;
-$badge: #999;
+$link-active: darken($button-info-border, 20%);
 $badge-success: $button-success;
 $badge-success-hover: darken($button-success, 20%);
 $badge-blue-hover: darken($button-info, 20%);
-$card: #fafaff;
-$card-coin: #badbad;
-$card-notejot: #fff3ae;
-$card-quilter: #b8d2e2;
-$tooltip: #555;
 $hero-main-a: darken($button-info, 20%);
 $hero-main-b: darken($button-info-hover, 20%);
 $hero-idea-a: darken($button-success, 20%);
 $hero-idea-b: darken($button-success-hover, 20%);
-$fab-black: #222;
-$fab-blue-info: #55acee;
+$tooltip: lighten($fg, 20%);
+$fab-black: lighten($fg, 10%);
+$fab-blue-info: lighten($button-info-hover, 15%);
 $fab-medium: #00d185;
-$fab-telegram: darken($button-info-hover, 20%);
+$fab-telegram: darken($button-info, 20%);
 $fab-success: $button-success-border;
 $fab-red: #dd4b39;
 $fab-yellow: #ffb300;
@@ -117,6 +117,10 @@ html {
 
 .fab-shadow {
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.fab-shadow:hover {
+    box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.4);
 }
 
 .animated {
@@ -595,66 +599,25 @@ footer {
     background-color: $fab-black;
 }
 
-.fab.black:hover {
-    box-shadow:
-        0 8px 10px 1px rgba(22, 22, 22, 0.14),
-        0 3px 14px 2px rgba(22, 22, 22, 0.12),
-        0 5px 5px -3px rgba(22, 22, 22, 0.4);
-}
-
 .fab.blue-twitter {
     background-color: $fab-blue-info;
-}
-
-.fab.blue-twitter:hover {
-    box-shadow:
-        0 8px 10px 1px rgba(0, 100, 214, 0.14),
-        0 3px 14px 2px rgba(0, 100, 214, 0.12),
-        0 5px 5px -3px rgba(0, 100, 214, 0.4);
 }
 
 .fab.medium {
     background-color: $fab-medium;
 }
 
-.fab.medium:hover {
-    box-shadow:
-        0 8px 10px 1px rgba(0, 209, 133, 0.14),
-        0 3px 14px 2px rgba(0, 209, 133, 0.12),
-        0 5px 5px -3px rgba(0, 209, 133, 0.4);
-}
-
 .fab.telegram {
-    background-color: #0088cc;
-}
-
-.fab.telegram:hover {
-    box-shadow:
-        0 8px 10px 1px rgba(0, 136, 204, 0.14),
-        0 3px 14px 2px rgba(0, 136, 204, 0.12),
-        0 5px 5px -3px rgba(0, 136, 204, 0.4);
+    background-color: $fab-telegram;
 }
 
 .fab.red {
     background-color: $fab-red;
 }
 
-.fab.red:hover {
-    box-shadow:
-        0 8px 10px 1px rgba(221, 75, 57, 0.14),
-        0 3px 14px 2px rgba(221, 75, 57, 0.12),
-        0 5px 5px -3px rgba(221, 75, 57, 0.4);
-}
 
 .fab.yellow {
     background-color: $fab-yellow;
-}
-
-.fab.yellow:hover {
-    box-shadow:
-        0 8px 10px 1px rgba(255, 179, 0, 0.14),
-        0 3px 14px 2px rgba(255, 179, 0, 0.12),
-        0 5px 5px -3px rgba(255, 179, 0, 0.4);
 }
 
 /***********
@@ -679,7 +642,6 @@ footer {
 
 .tooltip:before {
   background-color: $tooltip;
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
   position: absolute;
   bottom: 120%;
   left: 50%;
@@ -734,7 +696,6 @@ footer {
 
 .tooltip-bottom:before {
   background-color: $tooltip;
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
   position: absolute;
   top: 120%;
   left: 50%;
