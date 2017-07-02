@@ -1,6 +1,53 @@
 ---
 ---
 
+/* COLORS */
+
+$button-neutral: #e6e6eb;
+$button-neutral-border: #d6d6db;
+$button-success: #5cb85c;
+$button-success-hover: #449d44;
+$button-success-border: #419641;
+$button-info: #5bc0de;
+$button-info-hover: #31b0d5;
+$button-info-border: #2aabd2;
+$link: darken($button-info, 20%);
+$link-hover: darken($button-info-hover, 20%);
+$link-active: darken($button-info-border, 20%);;
+$bg: #f6f6fb;
+$fg: #1A1A1F;
+$badge: #999;
+$badge-success: $button-success;
+$badge-success-hover: $button-success-hover;
+$badge-blue-hover: $button-info-hover;
+$card: #fafaff;
+$card-coin: #badbad;
+$card-notejot: #fff3ae;
+$card-quilter: #b8d2e2;
+$tooltip: #555;
+$hero-main-a: darken($button-info, 20%);
+$hero-main-b: darken($button-info-hover, 20%);
+$hero-idea-a: #0DAB76;
+$hero-idea-b: #0B8954;
+$fab-black: #222;
+$fab-blue-info: #55acee;
+$fab-medium: #00d185;
+$fab-telegram: darken($button-info-hover, 20%);
+$fab-success: $button-success-border;
+$fab-red: #dd4b39;
+$fab-yellow: #ffb300;
+$info: $button-info;
+$economy: $fab-success;
+$energy: $fab-yellow;
+$tech: $fab-telegram;
+$health: $fab-red;
+
+/* DEVICE MEDIA */
+
+$mobile: "(min-width: 320px) and (max-width: 768px)";
+$tablet: "(min-width: 768px) and (max-width: 1024px)";
+$desktop: "(min-width: 1024px) and (max-width: 1440px)";
+
 body,
 html {
     display: -webkit-box;
@@ -16,20 +63,20 @@ html {
     min-height: 100vh;
     max-width: 100%;
     overflow-x: hidden;
-    background-color: #fff;
-    color: #1A1A1F;
+    background-color: $bg;
+    color: $fg;
 }
 
 .link {
-    color: #0275d8;
+    color: $link;
 }
 
 .link:hover {
-    color: #025aa5;
+    color: $link-hover;
 }
 
 .link:active {
-    color: #01549b;
+    color: $link-active;
 }
 
 .shadow {
@@ -53,7 +100,7 @@ html {
 }
 
 .footer-shadow {
-    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.3), 0 1px 10px 0 rgba(0,0,0,0.3), 0 3px 4px -2px rgba(0,0,0,0.3);
 }
 
 .footer-button-shadow {
@@ -78,7 +125,7 @@ html {
 }
 
 .avatar {
-    background-color: #fff;
+    background-color: $bg;
     border: 1px solid rgba(0, 0, 0, 0.5);
     border-radius: 100%;
     vertical-align: middle;
@@ -86,9 +133,9 @@ html {
 }
 
 .badge {
-    color: #999;
+    color: $badge;
     background-color: transparent;
-    border: 1px solid #999;
+    border: 1px solid $badge;
     display: inline;
     padding: .2em .6em .2em .6em;
     font-size: 85%;
@@ -107,29 +154,22 @@ html {
 
 /* BADGE COLORS */
 
-.badge.green {
-    color: #fff;
-    background-color: #5cb85c;
-    border: 1px solid #5cb85c;
+.badge.success {
+    color: $bg;
+    background-color: $badge-success;
+    border: 1px solid $badge-success;
 }
 
-.badge.green:hover {
-    color: #fff;
-    background-color: #449d44;
-    border: 1px solid #449d44;
-}
-
-
-.badge.red:hover {
-    color: #fff;
-    background-color: #d9534f;
-    border: 1px solid #d9534f;
+.badge.success:hover {
+    color: $bg;
+    background-color: $badge-success-hover;
+    border: 1px solid $badge-success-hover;
 }
 
 .badge.blue:hover {
-    color: #fff;
-    background-color: #31b0d5;
-    border: 1px solid #31b0d5;
+    color: $bg;
+    background-color: $badge-blue-hover;
+    border: 1px solid $badge-blue-hover;
 }
 
 
@@ -189,7 +229,7 @@ h4 {
   text-align: center;
   line-height: 1.5;
   transition: color .3s ease;
-  background-color: #f7f7f9;
+  background-color: $card;
 }
 
 .card-title {
@@ -197,7 +237,7 @@ h4 {
   text-shadow: none;
   font-weight: 300;
   font-size: 2.6rem;
-  color: #212121;
+  color: $fg;
 }
 
 .card-subtitle {
@@ -205,29 +245,13 @@ h4 {
   text-shadow: none;
   font-weight: 300;
   font-size: 1.64rem;
-  color: #212121;
+  color: $fg;
 }
 
 .card-text {
   text-align: left;
   margin-top: 1rem;
-  color: #212121;
-}
-
-.card.night {
-    background-color: #212121;
-}
-
-.card-title.night {
-  color: #f7f7f9;
-}
-
-.card-subtitle.night {
-  color: #f7f7f9;
-}
-
-.card-text.night {
-  color: #f7f7f9;
+  color: $fg;
 }
 
 .card-image {
@@ -245,19 +269,19 @@ h4 {
 }
 
 .card-image.coin {
-    background-color: #badbad;
+    background-color: $card-coin;
 }
 
 .card-image.quilter {
-  background-color: #b8d2e2;
+  background-color: $card-quilter;
 }
 
 .card-image.notejot {
-  background-color: #fff3ae;
+  background-color: $card-notejot;
 }
 
 .card-image.neutral {
-  background-color: #f7f7f9;
+  background-color: $card;
 }
 
 .card-action {
@@ -305,78 +329,78 @@ h4 {
 
 /* BUTTON COLORS */
 
-.button.green {
-    background-color: #5cb85c;
+.button.success {
+    background-color: $button-success;
     background-image: none;
-    border: 1px solid #5cb85c;
-    color: #fff;
+    border: 1px solid $button-success;
+    color: $bg;
 }
 
-.button.green:hover {
-    background-color: #449d44;
-    color: #fff;
+.button.success:hover {
+    background-color: $button-success-hover;
+    color: $bg;
     text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
-    border: 1px solid #419641;
+    border: 1px solid $button-success-border;
 }
 
-.button.green:active {
-    background-color: #449d44;
+.button.success:active {
+    background-color: $button-success-hover;
     background-image: none;
     color: #ddd;
     text-shadow: none;
-    border: 1px solid #419641;
+    border: 1px solid $button-success-border;
 }
 
-.button.green:focus {
+.button.success:focus {
     box-shadow: 0 0 0 2px rgba(92,184,92,.5);
 }
 
-.button.twitter {
-    background-color: #5bc0de;
+.button.info {
+    background-color: $button-info;
     background-image: none;
-    border: 1px solid #5bc0de;
-    color: #fff;
+    border: 1px solid $button-info;
+    color: $bg;
 }
 
-.button.twitter:hover {
-    background-color: #31b0d5;
-    color: #fff;
+.button.info:hover {
+    background-color: $button-info-hover;
+    color: $bg;
     text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
-    border: 1px solid #2aabd2;
+    border: 1px solid $button-info-border;
 }
 
-.button.twitter:active {
-    background-color: #31b0d5;
+.button.info:active {
+    background-color: $button-info-hover;
     background-image: none;
     color: #ddd;
     text-shadow: none;
-    border: 1px solid #2aabd2;
+    border: 1px solid $button-info-border;
 }
 
-.button.twitter:focus {
+.button.info:focus {
     box-shadow: 0 0 0 2px rgba(91,192,222,.5);
 }
 
 .button.neutral {
-    background-color: #e6e6e6;
-    color: #292b2c;
+    background-color: $button-neutral;
+    color: $fg;
     text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
-    border: 1px solid #e6e6e6;
+    border: 1px solid $button-neutral;
 }
 
 .button.neutral:hover {
-    background-color: #e6e6e6;
-    color: #292b2c;
+    background-color: $button-neutral;
+    color: $fg;
     text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
-    border: 1px solid #d6d6d6;
+    border: 1px solid $button-neutral-border;
 }
 
 .button.neutral:active {
-    background-color: #e6e6e6;
+    background-color: $button-neutral;
     background-image: none;
-    color: #292b2c;
+    color: $fg;
     text-shadow: none;
-    border: 1px solid #adadad;
+    border: 1px solid $button-neutral-border;
 }
 
 .button.neutral:focus {
@@ -441,8 +465,8 @@ img {
  ********/
 
 .hero {
-    background-color: #000;
-    color: #fff;
+    background-color: $fg;
+    color: $bg;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
@@ -462,11 +486,11 @@ img {
 }
 
 .hero.index {
-    background-image: url(../img/main.png), linear-gradient(to bottom, #3788af 0%, #05668d 100%);
+    background-image: url(../img/main.png), linear-gradient(to bottom, $hero-main-a 0%, $hero-main-b 100%);
 }
 
 .hero.ideas {
-    background-image: url(../img/ideas.png),linear-gradient(to bottom, #0DAB76 0%, #0B8954 100%);
+    background-image: url(../img/ideas.png),linear-gradient(to bottom, $hero-idea-a 0%, $hero-idea-b 100%);
 }
 
 /*******************
@@ -511,11 +535,11 @@ img {
 }
 
 .nav-link {
-    color: #fff;
+    color: $bg;
 }
 
 .nav-link:hover:active {
-    color: #f7f7f9;
+    opacity: 0.8;
 }
 
 /**********
@@ -523,8 +547,8 @@ img {
  *********/
 
 footer {
-    background-color: #f7f7f9;
-    color: #212121;
+    background-color: $card;
+    color: $fg;
     box-sizing: border-box;
     font-size: 0.7rem;
     padding: 1rem 0;
@@ -553,18 +577,18 @@ footer {
 }
 
 .fab-img {
-    color: #fff;
+    color: $bg;
     display: block;
     height: 100%;
     width: 100%;
 }
 
 .fab-img:active {
-    color: #f7f7f9;
+    opacity: 0.8;
 }
 
 .fab.black {
-    background-color: #222;
+    background-color: $fab-black;
 }
 
 .fab.black:hover {
@@ -574,66 +598,8 @@ footer {
         0 5px 5px -3px rgba(22, 22, 22, 0.4);
 }
 
-.fab.instagram {
-    background:
-        -webkit-radial-gradient(
-            32% 106%,
-            circle cover,
-            rgb(255, 225, 125) 0%,
-            rgb(255, 205, 105) 10%,
-            rgb(250, 145, 55) 28%,
-            rgb(235, 65, 65) 42%,
-            transparent 82%
-        ),
-        -webkit-linear-gradient(
-            -45deg,
-            rgb(35, 75, 215) 12%,
-            rgb(195, 60, 190) 58%
-        );
-    background:
-        -webkit-radial-gradient(
-            circle farthest-corner at 32% 106%,
-            rgb(255, 225, 125) 0%,
-            rgb(255, 205, 105) 10%,
-            rgb(250, 145, 55) 28%,
-            rgb(235, 65, 65) 42%,
-            transparent 82%
-        ),
-        -webkit-linear-gradient(
-            315deg,
-            rgb(35, 75, 215) 12%,
-            rgb(195, 60, 190) 58%
-        );
-    background:
-        radial-gradient(
-            circle farthest-corner at 32% 106%,
-            rgb(255, 225, 125) 0%,
-            rgb(255, 205, 105) 10%,
-            rgb(250, 145, 55) 28%,
-            rgb(235, 65, 65) 42%,
-            transparent 82%
-        ),
-        linear-gradient(
-            135deg,
-            rgb(35, 75, 215) 12%,
-            rgb(195, 60, 190) 58%
-        );
-    border-color: rgba(181, 70, 70, 0.7);
-}
-
-.fab.instagram .fa {
-    vertical-align: middle;
-}
-
-.fab.instagram:hover {
-    box-shadow:
-        0 8px 10px 1px rgba(137, 77, 49, 0.14),
-        0 3px 14px 2px rgba(137, 77, 49, 0.12),
-        0 5px 5px -3px rgba(137, 77, 49, 0.4);
-}
-
 .fab.blue-twitter {
-    background-color: #55acee;
+    background-color: $fab-blue-info;
 }
 
 .fab.blue-twitter:hover {
@@ -643,19 +609,8 @@ footer {
         0 5px 5px -3px rgba(0, 100, 214, 0.4);
 }
 
-.fab.green {
-    background-color: #3cd428;
-}
-
-.fab.green:hover {
-    box-shadow:
-        0 8px 10px 1px rgba(21, 194, 0, 0.14),
-        0 3px 14px 2px rgba(21, 194, 0, 0.12),
-        0 5px 5px -3px rgba(21, 194, 0, 0.4);
-}
-
 .fab.medium {
-    background-color: #00d185;
+    background-color: $fab-medium;
 }
 
 .fab.medium:hover {
@@ -663,39 +618,6 @@ footer {
         0 8px 10px 1px rgba(0, 209, 133, 0.14),
         0 3px 14px 2px rgba(0, 209, 133, 0.12),
         0 5px 5px -3px rgba(0, 209, 133, 0.4);
-}
-
-.fab.orange {
-    background-color: #f96c2d;
-}
-
-.fab.orange:hover {
-    box-shadow:
-        0 8px 10px 1px rgba(249, 108, 45, 0.14),
-        0 3px 14px 2px rgba(249, 108, 45, 0.12),
-        0 5px 5px -3px rgba(249, 108, 45, 0.4);
-}
-
-.fab.pink {
-    background-color: #e04c86;
-}
-
-.fab.pink:hover {
-    box-shadow:
-        0 8px 10px 1px rgba(224, 76, 134, 0.14),
-        0 3px 14px 2px rgba(224, 76, 134, 0.12),
-        0 5px 5px -3px rgba(224, 76, 134, 0.4);
-}
-
-.fab.purple {
-    background-color: #6441a5;
-}
-
-.fab.purple:hover {
-    box-shadow:
-        0 8px 10px 1px rgba(100, 65, 165, 0.14),
-        0 3px 14px 2px rgba(100, 65, 165, 0.12),
-        0 5px 5px -3px rgba(100, 65, 165, 0.4);
 }
 
 .fab.telegram {
@@ -710,7 +632,7 @@ footer {
 }
 
 .fab.red {
-    background-color: #dd4b39;
+    background-color: $fab-red;
 }
 
 .fab.red:hover {
@@ -721,7 +643,7 @@ footer {
 }
 
 .fab.yellow {
-    background-color: #ffb300;
+    background-color: $fab-yellow;
 }
 
 .fab.yellow:hover {
@@ -752,7 +674,7 @@ footer {
 }
 
 .tooltip:before {
-  background-color: #555;
+  background-color: $tooltip;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
   position: absolute;
   bottom: 120%;
@@ -776,7 +698,7 @@ footer {
   left: 50%;
   margin-left: -5px;
   width: 0;
-  border-top: 5px solid #555;
+  border-top: 5px solid $tooltip;
   border-right: 5px solid transparent;
   border-left: 5px solid transparent;
   content: " ";
@@ -807,7 +729,7 @@ footer {
 }
 
 .tooltip-bottom:before {
-  background-color: #555;
+  background-color: $tooltip;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
   position: absolute;
   top: 120%;
@@ -831,7 +753,7 @@ footer {
   left: 50%;
   margin-left: -5px;
   width: 0;
-  border-bottom: 5px solid #555;
+  border-bottom: 5px solid $tooltip;
   border-right: 5px solid transparent;
   border-left: 5px solid transparent;
   content: " ";
@@ -849,63 +771,44 @@ footer {
 
 .info .card-title,
  .info .fa-4x {
-     color: #009688;
+     color: $info;
  }
 
 section:not(.hero) .economy .card-title,
 .economy .fa-4x {
-    color: #558B2F;
+    color: $economy;
 }
 
 section:not(.hero) .energy .card-title,
 .energy .fa-4x {
-    color: #F9A825;
+    color: $energy;
 }
 
 section:not(.hero) .tech .card-title,
 .tech .fa-4x {
-    color: #1565C0;
+    color: $tech;
 }
 
 section:not(.hero) .health .card-title,
 .health .fa-4x {
-    color: #C62828;
+    color: $health;
 }
 
 /***********
  *  Media  *
  **********/
 
-@media only screen and (max-width: 40rem) {
-    .grid {
-        padding: 1rem 0rem 1rem 0rem;
-        margin: 1rem 0rem 1rem 0rem;
-    }
-
+@media #{$desktop} {
     .card {
       width: 88%;
       margin-bottom: 2rem;
     }
 
-    .grid p {
-        width: 95%;
-        margin: 1rem 0.6rem 1rem 0.6rem;
-
-    }
-
-    .button {
-        width: calc(100% - 1.5rem);
-    }
-
-    .button + .button {
-        margin-left: 0;
-    }
-}
-
-@media only screen and (min-width: 40rem) {
     .grid > * {
         padding-top: 1rem;
         padding-bottom: 1rem;
+        padding: 1rem 0rem 1rem 0rem;
+        margin: 1rem 0rem 1rem 0rem;
     }
 
     .grid .half {
@@ -943,8 +846,8 @@ section:not(.hero) .health .card-title,
         vertical-align: top;
         width: 30%;
         margin: 0 auto;
-        padding-left: 1rem;
-        padding-right: 1rem;
+        padding-left: 0.8rem;
+        padding-right: 0.8rem;
     }
 
     .grid .third + .third {
@@ -952,8 +855,8 @@ section:not(.hero) .health .card-title,
         vertical-align: top;
         width: 30%;
         margin: 0 auto;
-        padding-left: 1rem;
-        padding-right: 1rem;
+        padding-left: 0.8rem;
+        padding-right: 0.8rem;
     }
 
     .grid .two-thirds {
@@ -972,6 +875,16 @@ section:not(.hero) .health .card-title,
         margin: 0 auto;
     }
 
+    .grid p {
+        width: 95%;
+        margin: 1rem 0.6rem 1rem 0.6rem;
+
+    }
+
+    .button + .button {
+        margin-left: 0;
+    }
+
     .hero .grid > * {
         padding: 64px 0;
     }
@@ -981,40 +894,37 @@ section:not(.hero) .health .card-title,
     }
 }
 
-@media only screen and (max-width: 48rem) and (orientation: portrait) {
-  .grid .whole {
-      width: 85%;
-      margin: auto;
-  }
-
+@media #{$tablet} {
   .grid .third {
-      padding-left: 1.5rem;
-      width: 29%;
+      display: inline-block;
+      vertical-align: top;
+      margin: 0 auto;
   }
 
   .grid .third + .third {
       display: inline-block;
-      padding-left: 1.5rem;
       vertical-align: top;
-      width: 29%;
       margin: 0 auto;
+  }
+
+  .button+.button {
+    margin-left: 12px;
   }
 }
 
-@media only screen and (max-width: 26.5625rem) and (orientation: portrait) {
+@media #{$mobile} {
     .vexpand {
         height: calc(95vh - 14rem); /* I dunno magic numbers are magic */
+    }
+
+    .hero {
+      text-align: center;
     }
 
     .hero .two-thirds {
         padding: 0;
         padding-left: 1rem;
         padding-right: 1rem;
-    }
-
-    .grid .whole {
-        width: 85%;
-        margin: auto;
     }
 
     .grid .third {
@@ -1040,13 +950,17 @@ section:not(.hero) .health .card-title,
         width: 95%;
     }
 
-    .button {
-        width: 66%;
+    h2 {
+        width: 100%;
+        font-size: 2.2rem;
     }
-}
 
-@media only screen and (max-width: 26.56rem) and (orientation: portrait) {
-    .hero {
-        text-align: center;
+    .avatar {
+        height: 15%;
+        width: 15%;
+    }
+
+    .button {
+        width: 75%;
     }
 }
