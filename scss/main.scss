@@ -11,7 +11,8 @@ $fab-red: #F46268;
 $fab-yellow: #F7CD2F;
 $nav-index: mix(darken($bg, 70%), $button-info, 70%);
 $nav-ideas: mix(darken($bg, 70%), $button-success, 70%);
-$nav-fourohfour: mix(darken($bg, 70%), $fab-yellow, 70%);
+$nav-tastes: mix(darken($bg, 70%), $fab-yellow, 70%);
+$nav-fourohfour: mix(darken($bg, 70%), $fab-red, 70%);
 $button-success-hover: darken($button-success, 5%);
 $button-success-border: darken($button-success, 10%);
 $button-success-active: darken($button-success, 15%);
@@ -22,6 +23,10 @@ $button-ghost: lighten($fg, 20%);
 $button-ghost-hover: darken($button-ghost, 5%);
 $button-ghost-border: darken($button-ghost, 10%);
 $button-ghost-active: darken($button-ghost, 15%);
+$button-ghost-night: lighten($button-ghost, 20%);
+$button-ghost-night-hover: lighten($button-ghost, 10%);
+$button-ghost-night-border: lighten($button-ghost, 5%);
+$button-ghost-night-active: $button-ghost;
 $link: darken($button-info, 5%);
 $link-hover: darken($button-info-hover, 5%);
 $link-active: darken($button-info-border, 5%);
@@ -43,10 +48,11 @@ $fab-medium: $button-success;
 $fab-telegram: darken($button-info, 10%);
 $fab-success: $button-success-border;
 $info: $button-info;
-$economy: $fab-success;
-$energy: $fab-yellow;
-$tech: $fab-telegram;
-$health: $fab-red;
+$green: $fab-success;
+$yellow: $fab-yellow;
+$blue: $fab-telegram;
+$red: $fab-red;
+$orange: darken(mix($fab-red, $fab-yellow, 50%), 5%);
 
 /* DEVICE MEDIA */
 
@@ -90,6 +96,17 @@ html {
     transition: all .3s ease-in-out;
 }
 
+.circle {
+    border: 1px solid $badge;
+    background-color: $badge;
+    border-radius: 50%;
+    width: 15%;
+    height: 15%;
+    margin-top: 10px;
+    margin-bottom: -25px;
+    margin-right: 15px;
+}
+
 .shadow {
     -webkit-box-shadow: 0px 3px 9px 0px rgba(0,0,0,0.25);
     -moz-box-shadow: 0px 3px 9px 0px rgba(0,0,0,0.25);
@@ -116,7 +133,6 @@ html {
     padding: .2em .6em .2em .6em;
     font-size: 85%;
     line-height: 1;
-    text-align: center;
     white-space: nowrap;
     vertical-align: baseline;
     border-radius: .25em;
@@ -221,11 +237,12 @@ h4 {
   font-weight: 300;
   font-size: 1.6rem;
   color: $fg;
+  text-align: left;
 }
 
 .card-text {
   text-align: left;
-  margin-top: 1rem;
+  margin-top: 1.5rem;
   color: $fg;
 }
 
@@ -345,7 +362,7 @@ h4 {
 }
 
 .button.info:focus {
-    box-shadow: 0 0 0 2px rgba(91,192,222,.5);
+    box-shadow: 0 0 0 2px rgba(31,152,222,.5);
 }
 
 .button.neutral {
@@ -368,7 +385,7 @@ h4 {
 }
 
 .button.neutral:focus {
-    box-shadow: 0 0 0 2px rgba(55,55,55,.5)
+    box-shadow: 0 0 0 2px rgba(233,233,233,.5)
 }
 
 .button.ghost {
@@ -393,6 +410,30 @@ h4 {
     box-shadow: none;
     color: $bg;
     border: 1px solid $button-ghost-border;
+}
+
+.button.ghost-night {
+    background-color: transparent;
+    background-image: none;
+    box-shadow: none;
+    color: $button-ghost-night;
+    border: 1px solid $button-ghost-night;
+}
+
+.button.ghost-night:hover {
+    background-color: $button-ghost-night-hover;
+    background-image: none;
+    box-shadow: none;
+    color: $bg;
+    border: 1px solid $button-ghost-night-border;
+}
+
+.button.ghost-night:active {
+    background-color: $button-ghost-night-active;
+    background-image: none;
+    box-shadow: none;
+    color: $bg;
+    border: 1px solid $button-ghost-night-border;
 }
 
 .button.ghost-twitter {
@@ -507,9 +548,14 @@ img {
     background-image: url(../img/waver2.svg);
 }
 
-.hero.fourohfour {
+.hero.tastes {
     background-color: initial;
     background-image: url(../img/waver3.svg);
+}
+
+.hero.fourohfour {
+    background-color: initial;
+    background-image: url(../img/waver4.svg);
 }
 
 /*******************
@@ -534,6 +580,10 @@ img {
 
 .nav.ideas {
    background-color: $nav-ideas;
+}
+
+.nav.tastes {
+   background-color: $nav-tastes;
 }
 
 .nav.fourohfour {
@@ -576,9 +626,21 @@ img {
  * Footer *
  *********/
 
-footer {
+.footer {
     background-color: $card;
     color: $fg;
+    box-sizing: border-box;
+    font-size: 0.7rem;
+    padding: 1rem 0;
+    position: relative;
+    text-align: center;
+    width: 100%;
+    display: inline-block;
+}
+
+.footer-black {
+    background-color: $fg;
+    color: $card;
     box-sizing: border-box;
     font-size: 0.7rem;
     padding: 1rem 0;
@@ -783,24 +845,29 @@ footer {
      color: $info;
  }
 
-section:not(.hero) .economy .card-title,
-.economy .fa-4x {
-    color: $economy;
+section:not(.hero) .green .card-title,
+.green .fa-4x {
+    color: $green;
 }
 
-section:not(.hero) .energy .card-title,
-.energy .fa-4x {
-    color: $energy;
+section:not(.hero) .yellow .card-title,
+.yellow .fa-4x {
+    color: $yellow;
 }
 
-section:not(.hero) .tech .card-title,
-.tech .fa-4x {
-    color: $tech;
+section:not(.hero) .blue .card-title,
+.blue .fa-4x {
+    color: $blue;
 }
 
-section:not(.hero) .health .card-title,
-.health .fa-4x {
-    color: $health;
+section:not(.hero) .red .card-title,
+.red .fa-4x {
+    color: $red;
+}
+
+section:not(.hero) .orange .card-title,
+.orange .fa-4x {
+    color: $orange;
 }
 
 /***********
