@@ -43,6 +43,9 @@
                 <div class="card-subtitle" data-align=center>
                   <h3 align=center>App Developer @ elementary Team</h3>
                 </div>
+                <div class="card-text">
+                  <p align=center>Also known as Paulo Galardi, and is <span id=age>2x</span> years old.</p>
+                </div>
               </div>
               <div class="card-action">
                 <p align=center>
@@ -138,5 +141,6 @@
     <script async type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript">$(function(){$("#year").text((new Date).getFullYear ());var things=["Beer", "Coffee", "Drink", "Pizza", "Snack", "Pop"];$("#thing").text (things[Math.floor(Math.random()*things.length)]);}); $(function yearsSince(epoch){var diff= new Date()-new Date(epoch);var age= Math.floor(diff/31536000000);return age;});</script>
     <script async src="js/stripe-button.js" id="stripebutton" class="checkout-button" key="pk_live_GW0qUkH42VLtBjw6mXPemPtJ" name="Lains" description="Support me with this small amount." amount="100" currency="USD" locale="auto" billing="false" shipping="false" rememberme="false" checkoutlabel="Donate {{amount}}" message="Thanks!" visible="false"></script>
+    <script type="text/javascript">var birth = new Date('1993-06-06'); function getAge(birth) { ageMS = Date.parse(Date()) - Date.parse(birth); age = new Date(); age.setTime(ageMS); ageYear = age.getFullYear() - 1970; return ageYear; } document.getElementById('age').innerHTML = getAge(birth);</script>
   </body>
 </html>
