@@ -7,6 +7,7 @@ $bg: #eeeeee;
 $fg: #333333;
 $button-success: #00ab6c;
 $button-info: #21a4f3;
+$button-ghost: #666666;
 $fab-red: #dd4b39;
 $fab-yellow: #ffcc00;
 $nav-index: #3c4c65;
@@ -14,14 +15,19 @@ $nav-ideas: #3d655e;
 $nav-fourohfour: #655e3d;
 $button-success-hover: darken($button-success, 5%);
 $button-success-border: darken($button-success, 10%);
+$button-success-active: darken($button-success, 15%);
 $button-info-hover: darken($button-info, 5%);
 $button-info-border: darken($button-info, 10%);
+$button-info-active: darken($button-info, 15%);
+$button-ghost-hover: darken($button-ghost, 5%);
+$button-ghost-border: darken($button-ghost, 10%);
+$button-ghost-active: darken($button-ghost, 15%);
 $link: darken($button-info, 5%);
 $link-hover: darken($button-info-hover, 5%);
 $link-active: darken($button-info-border, 5%);
 $card: lighten($fg, 90%);
-$card-image-coin: mix(lighten($fg, 70%), $button-success, 80%);
-$card-image-notejot: mix(lighten($fg, 80%), $fab-yellow, 80%);
+$card-image-coin: mix(lighten($fg, 70%), $button-success-hover, 70%);
+$card-image-notejot: mix(lighten($fg, 80%), $fab-yellow, 70%);
 $card-image-quilter: mix(lighten($fg, 70%), $button-info, 80%);
 $badge: lighten($fg, 40%);
 $button-neutral: lighten($fg, 60%);
@@ -47,9 +53,9 @@ $health: $fab-red;
 
 /* DEVICE MEDIA */
 
-$mobile: "(min-width: 320px) and (max-width: 768px)";
-$tablet: "(min-width: 768px) and (max-width: 1024px)";
-$desktop: "(min-width: 1024px) and (max-width: 3840px)";
+$mobile: "(max-width: 425px)";
+$tablet: "(min-width: 425px) and (max-width: 768px)";
+$desktop: "(min-width: 769px)";
 
 body,
 html {
@@ -80,50 +86,6 @@ html {
 
 .link:active {
     color: $link-active;
-}
-
-.shadow {
-    box-shadow: 0 4px 5px 0 rgba(0,0,0,0.14), 0 1px 10px 0 rgba(0,0,0,0.12), 0 2px 4px -1px rgba(0,0,0,0.3);
-}
-
-.button-shadow {
-    box-shadow: 0 4px 5px 0 rgba(0,0,0,0.14), 0 1px 10px 0 rgba(0,0,0,0.12), 0 2px 4px -1px rgba(0,0,0,0.3);
-}
-
-.button-shadow:hover {
-    box-shadow: 0 8px 10px 1px rgba(0,0,0,0.14), 0 3px 14px 2px rgba(0,0,0,0.12), 0 5px 5px -3px rgba(0,0,0,0.3);
-}
-
-.button-shadow:active {
-    box-shadow: 0 4px 2px 0 rgba(0,0,0,0.14), 0 1px 7px 0 rgba(0,0,0,0.12), 0 2px 1px -1px rgba(0,0,0,0.3);
-}
-
-.text-shadow {
-    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.24), 0 1px 3px rgba(0, 0, 0, 0.36);
-}
-
-.footer-shadow {
-    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.3), 0 1px 10px 0 rgba(0,0,0,0.3), 0 3px 4px -2px rgba(0,0,0,0.3);
-}
-
-.footer-button-shadow {
-    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);
-}
-
-.footer-button-shadow:hover {
-    box-shadow: 0 8px 10px 1px rgba(0,0,0,0.14), 0 3px 14px 2px rgba(0,0,0,0.12), 0 5px 5px -3px rgba(0,0,0,0.3);
-}
-
-.footer-button-shadow:active {
-    box-shadow: 0 4px 2px 0 rgba(0,0,0,0.14), 0 1px 7px 0 rgba(0,0,0,0.12), 0 2px 1px -1px rgba(0,0,0,0.3);
-}
-
-.fab-shadow {
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-}
-
-.fab-shadow:hover {
-    box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.4);
 }
 
 .animated {
@@ -268,7 +230,7 @@ h4 {
     bottom: 0;
     padding: 2rem 0 2rem 0;
     border-radius: 3px;
-    border-bottom: 1px solid rgba(160,160,160,0.2);
+    border-bottom: 1px solid rgba(160,160,160,0.4);
     border-radius: 3px 3px 0 0;
 }
 
@@ -287,7 +249,7 @@ h4 {
 .card-action {
   position: relative;
   background-color: transparent;
-  border-top: 1px solid rgba(160,160,160,0.2);
+  border-top: 1px solid rgba(160,160,160,0.4);
   padding: 16px 1.5rem;
   justify-content: space-between;
   text-align: left;
@@ -319,10 +281,6 @@ h4 {
     text-transform: uppercase;
 }
 
-.button + .button {
-    margin-left: 12px;
-}
-
 .button .fa {
     margin-right: 8px;
 }
@@ -347,7 +305,7 @@ h4 {
 }
 
 .button.success:active {
-    background-color: $button-success-hover;
+    background-color: $button-success-active;
     background-image: none;
     color: $bg;
     border: 1px solid $button-success-border;
@@ -371,7 +329,7 @@ h4 {
 }
 
 .button.info:active {
-    background-color: $button-info-hover;
+    background-color: $button-info-active;
     background-image: none;
     color: $bg;
     border: 1px solid $button-info-border;
@@ -402,6 +360,54 @@ h4 {
 
 .button.neutral:focus {
     box-shadow: 0 0 0 2px rgba(55,55,55,.5)
+}
+
+.button.ghost {
+    background-color: transparent;
+    background-image: none;
+    box-shadow: none;
+    color: $button-ghost;
+    border: 1px solid $button-ghost;
+}
+
+.button.ghost:hover {
+    background-color: $button-ghost-hover;
+    background-image: none;
+    box-shadow: none;
+    color: $bg;
+    border: 1px solid $button-ghost-border;
+}
+
+.button.ghost:active {
+    background-color: $button-ghost-active;
+    background-image: none;
+    box-shadow: none;
+    color: $bg;
+    border: 1px solid $button-ghost-border;
+}
+
+.button.ghost-twitter {
+    background-color: transparent;
+    background-image: none;
+    box-shadow: none;
+    color: $button-info;
+    border: 1px solid $button-info;
+}
+
+.button.ghost-twitter:hover {
+    background-color: $button-info-hover;
+    background-image: none;
+    box-shadow: none;
+    color: $bg;
+    border: 1px solid $button-info-border;
+}
+
+.button.ghost-twitter:active {
+    background-color: $button-info-active;
+    background-image: none;
+    box-shadow: none;
+    color: $bg;
+    border: 1px solid $button-info-border;
 }
 
 /********
@@ -581,14 +587,14 @@ footer {
 }
 
 .fab {
-    border: 1px solid rgba(0, 0, 0, 0);
+    border: 3px solid rgba(255, 255, 255, 1);
     border-radius: 50%;
     display: inline-block;
-    height: 36px;
-    line-height: 36px;
-    margin: 5px;
+    height: 40px;
+    line-height: 40px;
+    margin: 9px;
     text-align: center;
-    width: 36px;
+    width: 40px;
 }
 
 .fab-img {
@@ -606,25 +612,48 @@ footer {
     background-color: $fab-black;
 }
 
+.fab.black:hover {
+    background-color: darken($fab-black, 5%);
+}
+
 .fab.blue-twitter {
     background-color: $fab-info;
+}
+
+.fab.blue-twitter:hover {
+    background-color: darken($fab-info, 5%);
 }
 
 .fab.medium {
     background-color: $fab-medium;
 }
 
+.fab.medium:hover {
+    background-color: darken($fab-medium, 5%);
+}
+
 .fab.telegram {
     background-color: $fab-telegram;
+}
+
+.fab.telegram:hover {
+    background-color: darken($fab-telegram, 5%);
 }
 
 .fab.red {
     background-color: $fab-red;
 }
 
+.fab.red:hover {
+    background-color: darken($fab-red, 5%);
+}
 
 .fab.yellow {
     background-color: $fab-yellow;
+}
+
+.fab.yellow:hover {
+    background-color: darken($fab-yellow, 5%);
 }
 
 /***********
@@ -854,15 +883,11 @@ section:not(.hero) .health .card-title,
     }
 
     .button + .button {
-        margin-left: 0;
+        margin-left: 12px;
     }
 
     .hero .grid > * {
         padding: 64px 0;
-    }
-
-    .button + .button {
-        margin-left: 12px;
     }
 }
 
@@ -879,14 +904,28 @@ section:not(.hero) .health .card-title,
       margin: 0 auto;
   }
 
+  .button {
+      margin: 0.5rem auto;
+  }
+
   .button + .button {
-    margin-left: 12px;
+      margin-left: 0.5rem;
+  }
+
+  .grid p {
+      width: 95%;
+      margin: 1rem 0rem 1rem 1rem;
   }
 }
 
 @media #{$mobile} {
     .vexpand {
         height: calc(95vh - 14rem); /* I dunno magic numbers are magic */
+    }
+
+    .grid p {
+        width: 100%;
+        margin: 1rem 0;
     }
 
     .hero {
@@ -934,5 +973,9 @@ section:not(.hero) .health .card-title,
 
     .button {
         width: 75%;
+    }
+
+    .button + .button {
+        margin-left: 0px;
     }
 }
