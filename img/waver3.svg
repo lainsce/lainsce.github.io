@@ -26,7 +26,7 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.70000001"
-     inkscape:cx="976.01677"
+     inkscape:cx="756.73106"
      inkscape:cy="341.39931"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
@@ -47,7 +47,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -57,28 +57,28 @@
      id="layer1"
      transform="translate(0,-125.02082)">
     <rect
-       style="opacity:0.19299999;fill:#554400;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.26313442;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       style="opacity:0.19299999;fill:#7a6100;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.26313442;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="rect5185"
        width="508"
        height="171.97917"
        x="0"
        y="125.02082" />
     <rect
-       style="opacity:0.19299999;fill:#554400;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.27016458;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       style="opacity:0.19299999;fill:#7a6100;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.27016458;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="rect5179"
        width="507.93768"
        height="164.35602"
        x="0"
        y="125.02082" />
     <rect
-       style="opacity:0.19299999;fill:#554400;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.27596539;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       style="opacity:0.19299999;fill:#7a6100;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.27596539;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="rect5181"
        width="507.93768"
        height="155.86235"
        x="0"
        y="125.02082" />
     <rect
-       style="opacity:0.19299999;fill:#554400;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.28376099;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       style="opacity:0.19299999;fill:#7a6100;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.28376099;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="rect5183"
        width="507.89014"
        height="147.1978"
