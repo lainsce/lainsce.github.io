@@ -11,7 +11,7 @@ $fab-red: #dd4b39;
 $fab-yellow: #ffcc00;
 $nav-index: #3c4c65;
 $nav-ideas: #3d655e;
-$nav-404: #655e3d;
+$nav-fourohfour: #655e3d;
 $button-success-hover: darken($button-success, 5%);
 $button-success-border: darken($button-success, 10%);
 $button-info-hover: darken($button-info, 5%);
@@ -31,7 +31,7 @@ $badge-success-hover: $button-success-hover;
 $badge-blue-hover: $button-info-hover;
 $hero-index: mix($link-active, $fab-red, 78%);
 $hero-ideas: mix($button-success-border, $fab-red, 78%);
-$hero-404: mix($nav-404, $fab-yellow, 78%);
+$hero-fourohfour: mix($nav-fourohfour, $fab-yellow, 78%);
 $tooltip: lighten($fg, 20%);
 $fab-img: $card;
 $fab-black: lighten($fg, 10%);
@@ -492,7 +492,7 @@ img {
     background-image: url(../img/waver2.svg);
 }
 
-.hero.404 {
+.hero.fourohfour {
     background-color: initial;
     background-image: url(../img/waver3.svg);
 }
@@ -521,8 +521,8 @@ img {
    background-color: $nav-ideas;
 }
 
-.nav.404 {
-   background-color: $nav-404;
+.nav.fourohfour {
+   background-color: $nav-fourohfour;
 }
 
 .nav-icon:hover {
