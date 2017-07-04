@@ -31,7 +31,7 @@ $link: darken($button-info, 5%);
 $link-hover: darken($button-info-hover, 5%);
 $link-active: darken($button-info-border, 5%);
 $card: lighten($fg, 90%);
-$card-image-coin: mix(lighten($fg, 70%), $button-success-hover, 70%);
+$card-image-coin: mix(lighten($fg, 75%), $button-success, 70%);
 $card-image-notejot: mix(lighten($fg, 80%), $fab-yellow, 70%);
 $card-image-quilter: mix(lighten($fg, 70%), $button-info, 80%);
 $badge: lighten($fg, 40%);
@@ -490,9 +490,9 @@ main {
 }
 
 .grid {
-    margin: 5rem auto;
+    margin: 4.5rem auto;
     max-width: 1100px;
-    width: 95%;
+    width: 100%;
 }
 
 .whole {
