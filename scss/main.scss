@@ -3,22 +3,34 @@
 
 /* COLORS */
 
-$bg: #eeeeee;
-$fg: #333333;
-$button-success: #12B083;
-$button-info: #3FA0DE;
-$fab-red: #F46268;
-$fab-yellow: #F7CD2F;
-$nav-index: mix(darken($bg, 70%), $button-info, 70%);
-$nav-ideas: mix(darken($bg, 70%), $button-success, 70%);
-$nav-tastes: mix(darken($bg, 70%), $fab-yellow, 70%);
-$nav-fourohfour: mix(darken($bg, 70%), $fab-red, 70%);
-$button-success-hover: darken($button-success, 5%);
-$button-success-border: darken($button-success, 10%);
+$fg: #353A47;
+$button-success: #00cd6c;
+$button-info: #006ccd;
+$bg: #f8f8f8;
+$nav: #d1dce7;
+$nav-about: #dce7d1;
+$nav-idea: #e7e7d1;
+$nav-four: #e7d1dc;
+$link: #339eef;
+
+$hero: darken($nav, 10%);
+$hero-idea: darken($nav-idea, 10%);
+$hero-about: darken($nav-about, 10%);
+$hero-four: darken($nav-four, 10%);
+$link-hover: mix($link, lighten($fg, 15%), 50%);
+$link-active: mix($link, lighten($fg, 15%), 20%);
+$header: mix($link, $button-success, 50%);
+$card: lighten($fg, 75%);
+$badge: lighten($fg, 40%);
+$tooltip: lighten($fg, 5%);
+$fab: lighten($fg, 10%);
+$fab-hover: lighten($fg, 20%);
+$button-success-hover: darken($button-success, 10%);
+$button-success-border: darken($button-success, 15%);
 $button-success-active: darken($button-success, 15%);
 $button-info-hover: darken($button-info, 5%);
 $button-info-border: darken($button-info, 10%);
-$button-info-active: darken($button-info, 15%);
+$button-info-active: darken($button-info, 10%);
 $button-ghost: lighten($fg, 20%);
 $button-ghost-hover: darken($button-ghost, 5%);
 $button-ghost-border: darken($button-ghost, 10%);
@@ -27,38 +39,17 @@ $button-ghost-night: lighten($button-ghost, 20%);
 $button-ghost-night-hover: lighten($button-ghost, 10%);
 $button-ghost-night-border: lighten($button-ghost, 5%);
 $button-ghost-night-active: $button-ghost;
-$link: darken($button-info, 5%);
-$link-hover: darken($button-info-hover, 5%);
-$link-active: darken($button-info-border, 5%);
-$card: lighten($fg, 90%);
-$card-image-coin: mix(lighten($fg, 75%), $button-success, 70%);
-$card-image-notejot: mix(lighten($fg, 80%), $fab-yellow, 70%);
-$card-image-quilter: mix(lighten($fg, 70%), $button-info, 80%);
-$badge: lighten($fg, 40%);
-$button-neutral: lighten($fg, 60%);
-$button-neutral-border: lighten($fg, 60%);
+$button-neutral: lighten($button-ghost, 20%);
+$button-neutral-border: lighten($button-ghost, 20%);
 $badge-success: $button-success;
 $badge-success-hover: $button-success-hover;
 $badge-blue-hover: $button-info-hover;
-$tooltip: lighten($fg, 20%);
-$fab-img: lighten($fg, 90%);
-$fab-black: lighten($fg, 10%);
-$fab-info: $button-info;
-$fab-medium: $button-success;
-$fab-telegram: darken($button-info, 10%);
-$fab-success: $button-success-border;
-$info: mix($button-success, $button-info, 50%);
-$green: $button-success;
-$yellow: $fab-yellow;
-$blue: $fab-telegram;
-$red: $fab-red;
-$orange: darken(mix($fab-red, $fab-yellow, 50%), 5%);
 
 /* DEVICE MEDIA */
 
 $mobile: "(max-width: 425px)";
-$tablet: "(min-width: 425px) and (max-width: 768px)";
-$desktop: "(min-width: 769px)";
+$tablet: "(min-width: 425px) and (max-width: 1023px)";
+$desktop: "(min-width: 1024px)";
 
 body,
 html {
@@ -70,7 +61,7 @@ html {
     -ms-flex-direction: column;
     flex-direction: column;
     font: 1rem "Roboto", sans-serif;
-    text-rendering:optimizeLegibility;
+    text-rendering: geometricPrecision;
     margin: 0;
     min-height: 100vh;
     max-width: 100%;
@@ -125,15 +116,15 @@ html {
 }
 
 .shadow {
-    -webkit-box-shadow: 0px 3px 9px 0px rgba(0,0,0,0.25);
-    -moz-box-shadow: 0px 3px 9px 0px rgba(0,0,0,0.25);
-    box-shadow: 0px 3px 9px 0px rgba(0,0,0,0.25);
+    -webkit-box-shadow: 0 6px 15px rgba(36,37,38,0.08);
+    -moz-boz-shadow: 0 6px 15px rgba(36,37,38,0.08);
+    box-shadow: 0 6px 15px rgba(36,37,38,0.08);
 }
 
 .footer-shadow {
-    -webkit-box-shadow: 0px -3px 9px 1px rgba(0,0,0,0.15);
-    -moz-box-shadow: 0px -3px 9px 1px rgba(0,0,0,0.15);
-    box-shadow: 0px -3px 9px 1px rgba(0,0,0,0.15);
+    -webkit-box-shadow: 0px -6px 15px rgba(36,37,38,0.08);
+    -moz-box-shadow: 0px -6px 15px rgba(36,37,38,0.08);
+    box-shadow: 0px -6px 15px rgba(36,37,38,0.08);
 }
 
 .logo {
@@ -213,7 +204,7 @@ h2 {
     font-weight: 300;
     margin: 0 auto;
     padding: 1rem;
-    text-align: center;
+    width: 100%;
 }
 
 h3 {
@@ -222,6 +213,7 @@ h3 {
     font-size: 1.5rem;
     margin: 0 auto;
     padding: 0.5rem;
+    width: 100%;
 }
 
 h4 {
@@ -234,7 +226,7 @@ h4 {
 }
 
 .card {
-  border-radius: 3px;
+  border-radius: 16px;
   margin: 0 auto;
   text-align: center;
   line-height: 1.5;
@@ -271,21 +263,8 @@ h4 {
     top: 0;
     bottom: 0;
     padding: 2rem 0 2rem 0;
-    border-radius: 3px;
     border-bottom: 1px solid rgba(160,160,160,0.4);
-    border-radius: 3px 3px 0 0;
-}
-
-.card-image.coin {
-    background-color: $card-image-coin;
-}
-
-.card-image.notejot {
-    background-color: $card-image-notejot;
-}
-
-.card-image.quilter {
-    background-color: $card-image-quilter;
+    border-radius: 16px 16px 0 0;
 }
 
 .card-action {
@@ -296,7 +275,7 @@ h4 {
   padding: 16px 1.5rem;
   justify-content: space-between;
   text-align: left;
-  border-radius: 0 0 3px 3px;
+  border-radius: 0 0 16px 16px;
 }
 
 .card-action .fa {
@@ -304,12 +283,27 @@ h4 {
 }
 
 .card-body {
-  border-radius: 2px 2px 0 0;
-  padding: 2px 1.5rem 1.5rem 1.5rem;
+  padding: 1rem 1.5rem 1.5rem 1.5rem;
 }
 
 .card-badge {
   text-align: justify;
+}
+
+.card-image.coin {
+    background-color: #badbad;
+}
+
+.card-image.quilter {
+  background-color: #b8d2e2;
+}
+
+.card-image.notejot {
+  background-color: #fff3ae;
+}
+
+.card-image.neutral {
+  background-color: #ccc;
 }
 
 /**********
@@ -324,6 +318,18 @@ h4 {
     padding: 0.8rem;
     text-align: center;
     text-transform: uppercase;
+}
+
+.button-nav {
+    border-radius: 50px;
+    display: inline-block;
+    margin: 1.2rem 0;
+    min-height: 8px;
+    text-align: center;
+    line-height: 0rem;
+    padding: 0.5rem;
+    text-transform: uppercase;
+    width: 200px;
 }
 
 .button .fa {
@@ -357,6 +363,30 @@ h4 {
 }
 
 .button.success:focus {
+    box-shadow: 0 0 0 2px rgba(92,184,92,.5);
+}
+
+.button-nav.success {
+    background-color: $button-success;
+    background-image: none;
+    border: 1px solid $button-success;
+    color: $bg;
+}
+
+.button-nav.success:hover {
+    background-color: $button-success-hover;
+    color: $bg;
+    border: 1px solid $button-success-border;
+}
+
+.button-nav.success:active {
+    background-color: $button-success-active;
+    background-image: none;
+    color: $bg;
+    border: 1px solid $button-success-border;
+}
+
+.button-nav.success:focus {
     box-shadow: 0 0 0 2px rgba(92,184,92,.5);
 }
 
@@ -490,37 +520,33 @@ main {
 }
 
 .grid {
-    margin: 4.5rem auto;
-    max-width: 1100px;
+    margin: 0 auto;
+    max-width: 1320px;
     width: 100%;
+    padding: 1rem 2rem;
 }
 
-.whole {
-    width: 100%;
-    margin: 0 1rem;
+.grid .whole {
+    width: calc(100% - 24px);
 }
 
-.half {
-    width: 50%;
+.grid .two-thirds {
+    width: calc(66% - 24px);
+}
+
+.grid .half {
+    width: calc(50% - 24px);
     padding: 0.23rem;
     margin: 0 auto;
 }
 
-.two-thirds {
-    width: 66%;
-    padding: 0.5rem;
-    margin: 0 auto;
+.grid .third {
+    width: calc(33% - 24px);
+    padding: 0 1rem;
 }
 
-.third {
-    margin: 1rem 0.5rem 1rem 0.5rem;
-    width: 33%;
-    padding: 0;
-}
-
-.quarter {
+.grid .quarter {
     width: 25%;
-    margin: 1rem 0.5rem 1rem 0.5rem;
     padding: 0;
 }
 
@@ -548,33 +574,28 @@ img {
      -webkit-box-pack: center;
      -ms-flex-pack: center;
      justify-content: center;
+     width: 100%;
      max-width: 100%;
      min-height: 30vh;
      background-size: cover;
      background-position-x: 0%;
      background-position-y: 28%;
      background-repeat: no-repeat;
-     height: 40.625rem;
- }
-
-.hero.index {
-    background-color: initial;
-    background-image: url(../img/waver.svg);
+     height: 41.625rem;
+     background-color: initial;
+     background-image: linear-gradient(to top, $hero 0%, $nav 100%);
 }
 
-.hero.ideas {
-    background-color: initial;
-    background-image: url(../img/waver2.svg);
+.hero.idea {
+    background-image: linear-gradient(to top, $hero-idea 0%, $nav-idea 100%);
 }
 
-.hero.tastes {
-    background-color: initial;
-    background-image: url(../img/waver3.svg);
+.hero.about {
+    background-image: linear-gradient(to top, $hero-about 0%, $nav-about 100%);
 }
 
-.hero.fourohfour {
-    background-color: initial;
-    background-image: url(../img/waver4.svg);
+.hero.four {
+    background-image: linear-gradient(to top, $hero-four 0%, $nav-four 100%);
 }
 
 /*******************
@@ -583,39 +604,40 @@ img {
 
 .nav {
    background-image: none;
-   height: 4rem;
-   line-height: 4rem;
-   padding-left: 1.2rem;
-   padding-right: 1.2rem;
+   height: 3.5rem;
+   line-height: 3.5rem;
+   padding-left: 1rem;
+   padding-right: 1rem;
    display: inline-block;
    font-size: 1.2rem;
    white-space: nowrap;
    position: relative;
+   background-color: $nav;
 }
 
-.nav.index {
-   background-color: $nav-index;
+.nav.idea {
+  background-color: $nav-idea;
 }
 
-.nav.ideas {
-   background-color: $nav-ideas;
+.nav.about {
+  background-color: $nav-about;
 }
 
-.nav.tastes {
-   background-color: $nav-tastes;
+.nav.four {
+  background-color: $nav-four;
 }
 
-.nav.fourohfour {
-   background-color: $nav-fourohfour;
-}
-
-.nav-icon:hover {
-    opacity: 0.8;
+.nav:focus {
+   outline: none;
 }
 
 .nav-icon {
      display: inline-block;
-     margin: 0 8px;
+     margin: 0 1rem;
+}
+
+.nav-icon:hover {
+    border-bottom: 3px solid $fg;
 }
 
 .nav-bar {
@@ -634,11 +656,7 @@ img {
 }
 
 .nav-link {
-    color: $bg;
-}
-
-.nav-link:hover:active {
-    opacity: 0.8;
+    color: $fg;
 }
 
 /**********
@@ -670,14 +688,17 @@ img {
 }
 
 .footer-space {
-    list-style: none;
-    padding: 0 0 1rem 0;
-    margin: 0 auto;
+    display: block;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
     text-align: center;
 }
 
 .fab {
     border-radius: 100%;
+    color: $fab;
+    border: 1px solid $fab;
     display: inline-block;
     height: 42px;
     line-height: 42px;
@@ -686,205 +707,85 @@ img {
     width: 42px;
 }
 
+.fab:hover {
+    background-color: $fab-hover;
+    border: 1px solid $fab-hover;
+    color: $fg;
+}
+
 .fab-img {
-    color: $fab-img;
+    color: $fg;
     display: block;
     height: 100%;
     width: 100%;
 }
 
-.fab-img:active {
-    opacity: 0.8;
-}
-
-.fab.black {
-    background-color: $fab-black;
-}
-
-.fab.black:hover {
-    background-color: darken($fab-black, 5%);
-}
-
-.fab.blue-twitter {
-    background-color: $fab-info;
-}
-
-.fab.blue-twitter:hover {
-    background-color: darken($fab-info, 5%);
-}
-
-.fab.medium {
-    background-color: $fab-medium;
-}
-
-.fab.medium:hover {
-    background-color: darken($fab-medium, 5%);
-}
-
-.fab.telegram {
-    background-color: $fab-telegram;
-}
-
-.fab.telegram:hover {
-    background-color: darken($fab-telegram, 5%);
-}
-
-.fab.red {
-    background-color: $fab-red;
-}
-
-.fab.red:hover {
-    background-color: darken($fab-red, 5%);
-}
-
-.fab.yellow {
-    background-color: $fab-yellow;
-}
-
-.fab.yellow:hover {
-    background-color: darken($fab-yellow, 5%);
+.fab-img:hover {
+    color: $bg;
 }
 
 /***********
  * Tooltip *
  **********/
 
-/* Top tooltip*/
+ /* Top tooltip*/
 
-.tooltip {
-  position: relative;
-  z-index: 2;
-  cursor: pointer;
-}
+ .tooltip {
+   position: relative;
+   z-index: 2;
+   cursor: pointer;
+ }
 
-.tooltip:before,
-.tooltip:after {
-  visibility: hidden;
-  opacity: 0;
-  pointer-events: none;
-  text-transform: capitalize;
-}
+ .tooltip:before,
+ .tooltip:after {
+   visibility: hidden;
+   opacity: 0;
+   pointer-events: none;
+   text-transform: capitalize;
+ }
 
-.tooltip:before {
-  background-color: $tooltip;
-  position: absolute;
-  bottom: 120%;
-  left: 50%;
-  margin: 0 0 5px -58px;
-  padding: 7px;
-  width: 100px;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;
-  content: attr(data-tooltip);
-  text-align: center;
-  font-size: 14px;
-  line-height: 1.2;
-}
+ .tooltip:before {
+   background-color: $tooltip;
+   position: absolute;
+   bottom: 120%;
+   left: 50%;
+   margin: 0 0 5px -58px;
+   padding: 7px;
+   width: 100px;
+   -webkit-border-radius: 3px;
+   -moz-border-radius: 3px;
+   border-radius: 3px;
+   content: attr(data-tooltip);
+   text-align: center;
+   font-size: 14px;
+   line-height: 1.2;
+ }
 
-.tooltip:after {
-  position: absolute;
-  bottom: 120%;
-  left: 50%;
-  margin-left: -5px;
-  width: 0;
-  border-top: 5px solid $tooltip;
-  border-right: 5px solid transparent;
-  border-left: 5px solid transparent;
-  content: " ";
-  font-size: 0;
-  line-height: 0;
-}
+ .tooltip:after {
+   position: absolute;
+   bottom: 120%;
+   left: 50%;
+   margin-left: -5px;
+   width: 0;
+   border-top: 5px solid $tooltip;
+   border-right: 5px solid transparent;
+   border-left: 5px solid transparent;
+   content: " ";
+   font-size: 0;
+   line-height: 0;
+ }
 
-.tooltip:hover:before,
-.tooltip:hover:after {
-  visibility: visible;
-  opacity: 1;
-}
-
-/* Bottom Tooltip */
-
-.tooltip-bottom {
-  position: relative;
-  z-index: 2;
-  cursor: pointer;
-}
-
-.tooltip-bottom:before,
-.tooltip-bottom:after {
-  visibility: hidden;
-  opacity: 0;
-  pointer-events: none;
-  text-transform: capitalize;
-}
-
-.tooltip-bottom:before {
-  background-color: $tooltip;
-  position: absolute;
-  top: 120%;
-  left: 50%;
-  margin: 0 0 5px -58px;
-  padding: 7px;
-  width: 100px;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;
-  content: attr(data-tooltip);
-  text-align: center;
-  font-size: 14px;
-  line-height: 1.2;
-}
-
-.tooltip-bottom:after {
-  position: absolute;
-  top: 120%;
-  left: 50%;
-  margin-left: -5px;
-  width: 0;
-  border-bottom: 5px solid $tooltip;
-  border-right: 5px solid transparent;
-  border-left: 5px solid transparent;
-  content: " ";
-  font-size: 0;
-  line-height: 0;
-}
-
-.tooltip-bottom:hover:before,
-.tooltip-bottom:hover:after {
-  visibility: visible;
-  opacity: 1;
-}
+ .tooltip:hover:before,
+ .tooltip:hover:after {
+   visibility: visible;
+   opacity: 1;
+ }
 
 /* HEADER COLORS */
 
-.info .card-title,
- .info .fa-4x {
-     color: $info;
- }
-
-section:not(.hero) .green .card-title,
-.green .fa-4x {
-    color: $green;
-}
-
-section:not(.hero) .yellow .card-title,
-.yellow .fa-4x {
-    color: $yellow;
-}
-
-section:not(.hero) .blue .card-title,
-.blue .fa-4x {
-    color: $blue;
-}
-
-section:not(.hero) .red .card-title,
-.red .fa-4x {
-    color: $red;
-}
-
-section:not(.hero) .orange .card-title,
-.orange .fa-4x {
-    color: $orange;
+.header .card-title,
+.header .fa-4x {
+    color: $header;
 }
 
 /***********
@@ -908,12 +809,10 @@ section:not(.hero) .orange .card-title,
         display: inline-flex;
         vertical-align: top;
         width: calc(50% - 1rem);
-        padding-left: 8px;
-        padding-bottom: 0px;
-    }
-
-    .grid .half:only-child {
-        width: 50%;
+        padding-bottom: 3.5rem;
+        padding-left: 0.4rem;
+        padding-right: 0.4rem;
+        padding-top: 3.5rem;
     }
 
     .grid .quarter {
@@ -939,8 +838,8 @@ section:not(.hero) .orange .card-title,
         vertical-align: top;
         width: 30%;
         margin: 0 auto;
-        padding-left: 1.05rem;
-        padding-right: 1.05rem;
+        padding-left: 1.266rem;
+        padding-right: 1.266rem;
     }
 
     .grid .third + .third {
@@ -948,8 +847,9 @@ section:not(.hero) .orange .card-title,
         vertical-align: top;
         width: 30%;
         margin: 0 auto;
-        padding-left: 1.05rem;
-        padding-right: 1.05rem;
+        padding-left: 1.266rem;
+        padding-right: 1.266rem;
+        padding-bottom: 4rem;
     }
 
     .grid .two-thirds {
@@ -969,9 +869,8 @@ section:not(.hero) .orange .card-title,
     }
 
     .grid p {
-        width: 95%;
+        width: 100%;
         margin: 1rem 0.6rem 1rem 0.6rem;
-
     }
 
     .button + .button {
