@@ -19,7 +19,7 @@
     <link type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
     <link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400">
     <link type="text/css" rel="stylesheet" href="scss/main.css">
-    <script type="text/javascript" data-cfasync="false">(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');ga('create', 'UA-102003152-1', 'auto');ga('send', 'pageview');</script>
+    <script type="text/javascript" data-cfasync="false">(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');ga('create', 'UA-1020031122-1', 'auto');ga('send', 'pageview');</script>
   </head>
   <body>
     <nav class="nav" tabindex="-1">
@@ -34,35 +34,40 @@
     </nav>
     <main>
       <section class="hero">
-        <div class="grid">
-          <div class="two-thirds">
-            <div class="card shadow">
-              <div class="card-body">
-                <div class="card-title">
-                  <h2 align=center>Hi, I'm Lains!</h2>
+        <div class="container">
+          <div class="row center-block">
+            <div class="col-xs-12">
+              <div class="card shadow">
+                <div class="card-body">
+                  <div class="card-title">
+                    <h2 align=center>Hi, I'm Lains!</h2>
+                  </div>
+                  <div class="card-subtitle" data-align=center>
+                    <h3 align=center>App Developer @ elementary Team</h3>
+                  </div>
+                  <div class="card-text">
+                    <p align=center>Also known as Paulo Galardi, and is <span id=age>2x</span> years old.</p>
+                  </div>
                 </div>
-                <div class="card-subtitle" data-align=center>
-                  <h3 align=center>App Developer @ elementary Team</h3>
+                <div class="card-action">
+                  <p align=center>
+                      <a class="button ghost-twitter animated" href="https://twitter.com/intent/follow?screen_name=lainscereal"><i class="fa fa-fw fa-twitter"></i>Follow Me</a>
+                      <a class="button success animated" href="#" onclick="CheckoutButton.loadButton('stripebutton'); return false;"><i class="fa fa-fw fa-usd"></i>Buy Me a <span id="thing">Thing</span></a>
+                  </p>
                 </div>
-                <div class="card-text">
-                  <p align=center>Also known as Paulo Galardi, and is <span id=age>2x</span> years old.</p>
-                </div>
-              </div>
-              <div class="card-action">
-                <p align=center>
-                    <a class="button ghost-twitter animated" href="https://twitter.com/intent/follow?screen_name=lainscereal"><i class="fa fa-fw fa-twitter"></i>Follow Me</a>
-                    <a class="button success animated" href="#" onclick="CheckoutButton.loadButton('stripebutton'); return false;"><i class="fa fa-fw fa-usd"></i>Buy Me a <span id="thing">Thing</span></a>
-                </p>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <section class="grid" id="part2">
-          <div class="whole">
-            <h2>Check out my apps:</a></h2>
+      <div class="container">
+        <div class="row center-block" id="part2">
+          <div class="col-md-11">
+            <h2>Check out my apps:</h2>
           </div>
-          <div class="third">
+        </div>
+        <div class="row center-block" id="part3">
+          <div class="col-xs-11 col-sm-11 col-md-3 col-lg-3 form-group">
             <div class="card shadow">
               <div class="card-image coin">
                 <p><img width="128" height="128" src="icons/coin.svg" alt="Coin's Icon"></p>
@@ -75,7 +80,7 @@
                   <p class="badge blue tooltip" data-tooltip="Version">1.1.2</p><p class="badge success tooltip" data-tooltip="Suggested">$  1.00</p>
                 </div>
                 <div class="card-text">
-                  <p>Track cryptocurrencies in relation to world currencies.</p>
+                  <p>Track the virtual currencies in real world currency value.</p>
                 </div>
               </div>
               <div class="card-action">
@@ -83,7 +88,7 @@
               </div>
             </div>
           </div>
-          <div class="third">
+          <div class="col-xs-11 col-sm-11 col-md-3 col-lg-3 form-group">
             <div class="card shadow">
               <div class="card-image notejot">
                 <p><img width="128" height="128" src="icons/notejot.svg" alt="Notejot's Icon"></p>
@@ -96,7 +101,7 @@
                   <p class="badge blue tooltip" data-tooltip="Version">1.1.4</p><p class="badge success tooltip" data-tooltip="Suggested">$  1.00</p>
                 </div>
                 <div class="card-text">
-                  <p>Take notes with this stupidly-simple sticky notes applet.</p>
+                  <p>A stupidly-simple sticky notes app for any type of short term notes.</p>
                 </div>
               </div>
               <div class="card-action">
@@ -104,7 +109,7 @@
               </div>
             </div>
           </div>
-          <div class="third">
+          <div class="col-xs-11 col-sm-11 col-md-3 col-lg-3 form-group">
             <div class="card shadow">
               <div class="card-image quilter">
                 <p><img width="128" height="128" src="icons/quilter.svg" alt="Quilter's Icon"></p>
@@ -117,7 +122,7 @@
                   <p class="badge blue tooltip" data-tooltip="Version">1.1.7</p><p class="badge success tooltip" data-tooltip="Suggested">$  2.00</p>
                 </div>
                 <div class="card-text">
-                  <p>Focus on your writing and write beautiful extensive stories.</p>
+                  <p>Focus on your writing and write beautiful solid stories.</p>
                 </div>
               </div>
               <div class="card-action">
@@ -125,7 +130,8 @@
               </div>
             </div>
           </div>
-      </section>
+        </div>
+      </div>
     </main>
     <footer class="footer footer-shadow">
       <ul class="footer-space">
@@ -142,7 +148,7 @@
       <p>© <span id="year">2017</span> Paulo Galardi. Made in São Paulo.</p>
     </footer>
     <script async type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script type="text/javascript">$(function(){$("#year").text((new Date).getFullYear ());var things=["Beer", "Coffee", "Drink", "Pizza", "Snack", "Pop"];$("#thing").text (things[Math.floor(Math.random()*things.length)]);}); $(function yearsSince(epoch){var diff= new Date()-new Date(epoch);var age= Math.floor(diff/31536000000);return age;});</script>
+    <script type="text/javascript">$(function(){$("#year").text((new Date).getFullYear ());var things=["Beer", "Coffee", "Drink", "Pizza", "Snack", "Pop"];$("#thing").text (things[Math.floor(Math.random()*things.length)]);}); $(function yearsSince(epoch){var diff= new Date()-new Date(epoch);var age= Math.floor(diff/311236000000);return age;});</script>
     <script async src="js/stripe-button.js" id="stripebutton" class="checkout-button" key="pk_live_GW0qUkH42VLtBjw6mXPemPtJ" name="Lains" description="Support me with this small amount." amount="100" currency="USD" locale="auto" billing="false" shipping="false" rememberme="false" checkoutlabel="Donate {{amount}}" message="Thanks!" visible="false"></script>
     <script type="text/javascript">var birth = new Date('1993-06-06'); function getAge(birth) { ageMS = Date.parse(Date()) - Date.parse(birth); age = new Date(); age.setTime(ageMS); ageYear = age.getFullYear() - 1970; return ageYear; } document.getElementById('age').innerHTML = getAge(birth);</script>
   </body>
