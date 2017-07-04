@@ -13,6 +13,17 @@ $nav-idea: #e7e7d1;
 $nav-four: #e7d1dc;
 $link: #339eef;
 
+$fab-telegram: #0088cc;
+$fab-hover-telegram: lighten($fab-telegram, 10%);
+$fab-twitter: #1da1f2;
+$fab-hover-twitter: lighten($fab-twitter, 10%);
+$fab-gplus: #dd4b39;
+$fab-hover-gplus: lighten($fab-gplus, 10%);
+$fab-mail: #fbbc05;
+$fab-hover-mail: lighten($fab-mail, 20%);
+$fab-medium: #00ab6c;
+$fab-hover-medium: lighten($fab-medium, 20%);
+
 $hero: darken($nav, 10%);
 $hero-idea: darken($nav-idea, 10%);
 $hero-about: darken($nav-about, 10%);
@@ -707,10 +718,34 @@ img {
     width: 42px;
 }
 
-.fab:hover {
-    background-color: $fab-hover;
-    border: 1px solid $fab-hover;
-    color: $fg;
+.fab.github:hover {
+    background-color: $fab;
+    border: 1px solid $fab;
+}
+
+.fab.mail:hover {
+    background-color: $fab-mail;
+    border: 1px solid $fab-mail;
+}
+
+.fab.twitter:hover {
+    background-color: $fab-twitter;
+    border: 1px solid $fab-twitter;
+}
+
+.fab.gplus:hover {
+    background-color: $fab-gplus;
+    border: 1px solid $fab-gplus;
+}
+
+.fab.medium:hover {
+    background-color: $fab-medium;
+    border: 1px solid $fab-medium;
+}
+
+.fab.telegram:hover {
+    background-color: $fab-telegram;
+    border: 1px solid $fab-telegram;
 }
 
 .fab-img {
