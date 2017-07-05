@@ -10,17 +10,11 @@ $button-success: #00ab6c;
 $button-info: #1da2f3;
 $bg: #efeded;
 $card: #fff;
-$card-body: @include linear-gradient(180deg, #fff 0%, #f6f4f4 100%);
-$footer: @include linear-gradient(180deg, #fff 0%, #f6f4f4 100%);
-$footer-night: @include linear-gradient(180deg, #333 0%, #262424 100%);
 $nav: #d1dce7;
 $nav-about: #dce7d1;
 $nav-idea: #e7e7d1;
 $nav-four: #e7d1dc;
 $link: #339eef;
-$card-image-coin: @include linear-gradient(180deg, #cbecbe 0%, #badbad 100%);
-$card-image-quilter: @include linear-gradient(180deg, #c9e3f3 0%, #b8d2e2 100%);
-$card-image-notejot: @include linear-gradient(180deg, #fff3ae 0%, #eee29d 100%);
 
 $fab-telegram: #0088cc;
 $fab-hover-telegram: lighten($fab-telegram, 10%);
@@ -93,8 +87,50 @@ $badge-blue-hover: $button-info-hover;
   @include prefixer(box-shadow, $box-shadow, webkit moz ms o spec);
 }
 
-@mixin linear-gradient($linear-gradient) {
-  @include prefixer(linear-gradient, $linear-gradient, webkit moz ms o spec);
+@function legacy-direction($value) {
+  @if is-direction($value) == false {
+    @warn "Cannot convert `#{$value}` to legacy syntax because it doesn't seem to be a direction.";
+  }
+
+  $conversion-map: (
+    to top          : bottom,
+    to top right    : bottom left,
+    to right top    : left bottom,
+    to right        : left,
+    to bottom right : top left,
+    to right bottom : left top,
+    to bottom       : top,
+    to bottom left  : top right,
+    to left bottom  : right top,
+    to left         : right,
+    to left top     : right bottom,
+    to top left     : bottom right
+  );
+
+  @if map-has-key($conversion-map, $value) {
+    @return map-get($conversion-map, $value);
+  }
+
+  @return 90deg - $value;
+}
+
+@function is-direction($value) {
+  $is-keyword: index((to top, to top right, to right top, to right, to bottom right, to right bottom, to bottom, to bottom left, to left bottom, to left, to left top, to top left), $value);
+  $is-angle: type-of($value) == 'number' and index('deg' 'grad' 'turn' 'rad', unit($value));
+
+  @return $is-keyword or $is-angle;
+}
+
+@mixin linear-gradient($direction, $color-stops...) {
+  // Direction has been omitted and happens to be a color-stop
+  @if is-direction($direction) == false {
+    $color-stops: $direction, $color-stops;
+    $direction: 180deg;
+  }
+
+  background: nth(nth($color-stops, 1), 1);
+  background: -webkit-linear-gradient(legacy-direction($direction), $color-stops);
+  background: linear-gradient($direction, $color-stops);
 }
 
 /*****************
@@ -297,7 +333,7 @@ h4 {
 .card {
   border-radius: 16px;
   line-height: 1.5;
-  background-image: $card-body;
+  background-image: @include linear-gradient(180deg, #fff 0%, #f6f4f4 100%);
 }
 
 .card-title {
@@ -357,15 +393,15 @@ h4 {
 }
 
 .card-image.coin {
-  background-image: $card-image-coin;
+  background-image: @include linear-gradient(to bottom, #cbecbe 0%, #badbad 100%);
 }
 
 .card-image.quilter {
-  background-image: $card-image-quilter;
+  background-image: @include linear-gradient(to bottom, #c9e3f3 0%, #b8d2e2 100%);
 }
 
 .card-image.notejot {
-  background-image: $card-image-notejot;
+  background-image: @include linear-gradient(to bottom, #fff3ae 0%, #eee29d 100%);
 }
 
 /********************
@@ -716,7 +752,7 @@ $pad: 3%;
  ********************/
 
 .footer {
-    background-image: $footer;
+    background-image: @include linear-gradient(to bottom, #fff 0%, #e6e4e4 100%);
     color: $fg;
     box-sizing: border-box;
     font-size: 0.7rem;
@@ -729,7 +765,7 @@ $pad: 3%;
 }
 
 .footer-black {
-    background-image: $footer-night;
+    background-image: @include linear-gradient(to bottom, #333 0%, #262424 100%);
     color: $card;
     box-sizing: border-box;
     font-size: 0.7rem;
@@ -801,7 +837,6 @@ $pad: 3%;
     display: block;
     height: 100%;
     width: 100%;
-    margin-top: -2px;
 }
 
 .fab-img:hover {
