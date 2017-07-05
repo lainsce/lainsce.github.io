@@ -15,6 +15,9 @@ $nav-about: #dce7d1;
 $nav-idea: #e7e7d1;
 $nav-four: #e7d1dc;
 $link: #339eef;
+$coin: #badbad;
+$quilter: #b8d2e2;
+$notejot: #fff3ae;
 
 $fab-telegram: #0088cc;
 $fab-hover-telegram: lighten($fab-telegram, 10%);
@@ -128,9 +131,12 @@ $badge-blue-hover: $button-info-hover;
     $direction: 180deg;
   }
 
-  background: nth(nth($color-stops, 1), 1);
-  background: -webkit-linear-gradient(legacy-direction($direction), $color-stops);
-  background: linear-gradient($direction, $color-stops);
+  background-color: nth(nth($color-stops, 1), 1);
+  background-image: -webkit-linear-gradient(legacy-direction($direction), $color-stops);
+  background-image: -moz-linear-gradient($direction, $color-stops);
+  background-image: -ms-linear-gradient($direction, $color-stops);
+  background-image: -o-linear-gradient($direction, $color-stops);
+  background-image: linear-gradient($direction, $color-stops);
 }
 
 /*****************
@@ -333,7 +339,7 @@ h4 {
 .card {
   border-radius: 16px;
   line-height: 1.5;
-  background-image: @include linear-gradient(180deg, #fff 0%, #f6f4f4 100%);
+  @include linear-gradient($card 0%, darken($card, 5%) 100%);
 }
 
 .card-title {
@@ -393,15 +399,15 @@ h4 {
 }
 
 .card-image.coin {
-  background-image: @include linear-gradient(to bottom, #cbecbe 0%, #badbad 100%);
+  @include linear-gradient(135deg, $coin 0%, darken($coin, 5%) 50%, darken($coin, 10%) 100%);
 }
 
 .card-image.quilter {
-  background-image: @include linear-gradient(to bottom, #c9e3f3 0%, #b8d2e2 100%);
+  @include linear-gradient(135deg, $quilter 0%, darken($quilter, 5%) 50%, darken($quilter, 10%) 100%);
 }
 
 .card-image.notejot {
-  background-image: @include linear-gradient(to bottom, #fff3ae 0%, #eee29d 100%);
+  @include linear-gradient(135deg, $notejot 0%, darken($notejot, 5%) 50%, darken($notejot, 10%) 100%);
 }
 
 /********************
@@ -678,19 +684,19 @@ $pad: 3%;
      display: flex;
      margin-bottom: 32px;
      height: 40rem;
-     background-image: @include linear-gradient(180deg, $hero 0%, $nav 100%);
+     @include linear-gradient(0deg, $hero 0%, $nav 100%);
 }
 
 .hero.idea {
-    background-image: @include linear-gradient(180deg, $hero-idea 0%, $nav-idea 100%);
+    @include linear-gradient(0deg, $hero-idea 0%, $nav-idea 100%);
 }
 
 .hero.about {
-    background-image: @include linear-gradient(180deg, $hero-about 0%, $nav-about 100%);
+    @include linear-gradient(0deg, $hero-about 0%, $nav-about 100%);
 }
 
 .hero.four {
-    background-image: @include linear-gradient(180deg, $hero-four 0%, $nav-four 100%);
+    @include linear-gradient(0deg, $hero-four 0%, $nav-four 100%);
 }
 
 /*******************
@@ -752,7 +758,7 @@ $pad: 3%;
  ********************/
 
 .footer {
-    background-image: @include linear-gradient(to bottom, #fff 0%, #e6e4e4 100%);
+    @include linear-gradient(#fff 0%, #e6e4e4 100%);
     color: $fg;
     box-sizing: border-box;
     font-size: 0.7rem;
@@ -765,7 +771,7 @@ $pad: 3%;
 }
 
 .footer-black {
-    background-image: @include linear-gradient(to bottom, #333 0%, #262424 100%);
+    @include linear-gradient(#333 0%, #262424 100%);
     color: $card;
     box-sizing: border-box;
     font-size: 0.7rem;
