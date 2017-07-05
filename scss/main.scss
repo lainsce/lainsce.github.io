@@ -10,17 +10,17 @@ $button-success: #00ab6c;
 $button-info: #1da2f3;
 $bg: #efeded;
 $card: #fff;
-$card-body: linear-gradient(to bottom, #fff 0%, #f6f4f4 100%);
-$footer: linear-gradient(to bottom, #fff 0%, #e6e4e4 100%);
-$footer-night: linear-gradient(to bottom, #333 0%, #262424 100%);
+$card-body: @include linear-gradient(180deg, #fff 0%, #f6f4f4 100%);
+$footer: @include linear-gradient(180deg, #fff 0%, #f6f4f4 100%);
+$footer-night: @include linear-gradient(180deg, #333 0%, #262424 100%);
 $nav: #d1dce7;
 $nav-about: #dce7d1;
 $nav-idea: #e7e7d1;
 $nav-four: #e7d1dc;
 $link: #339eef;
-$card-image-coin: linear-gradient(to bottom, #cbecbe 0%, #badbad 100%);
-$card-image-quilter: linear-gradient(to bottom, #c9e3f3 0%, #b8d2e2 100%);
-$card-image-notejot: linear-gradient(to bottom, #fff3ae 0%, #eee29d 100%);
+$card-image-coin: @include linear-gradient(180deg, #cbecbe 0%, #badbad 100%);
+$card-image-quilter: @include linear-gradient(180deg, #c9e3f3 0%, #b8d2e2 100%);
+$card-image-notejot: @include linear-gradient(180deg, #fff3ae 0%, #eee29d 100%);
 
 $fab-telegram: #0088cc;
 $fab-hover-telegram: lighten($fab-telegram, 10%);
@@ -91,6 +91,10 @@ $badge-blue-hover: $button-info-hover;
 
 @mixin box-shadow($box-shadow) {
   @include prefixer(box-shadow, $box-shadow, webkit moz ms o spec);
+}
+
+@mixin linear-gradient($linear-gradient) {
+  @include prefixer(linear-gradient, $linear-gradient, webkit moz ms o spec);
 }
 
 /*****************
@@ -638,19 +642,19 @@ $pad: 3%;
      display: flex;
      margin-bottom: 32px;
      height: 40rem;
-     background-image: linear-gradient(to top, $hero 0%, $nav 100%);
+     background-image: @include linear-gradient(180deg, $hero 0%, $nav 100%);
 }
 
 .hero.idea {
-    background-image: linear-gradient(to top, $hero-idea 0%, $nav-idea 100%);
+    background-image: @include linear-gradient(180deg, $hero-idea 0%, $nav-idea 100%);
 }
 
 .hero.about {
-    background-image: linear-gradient(to top, $hero-about 0%, $nav-about 100%);
+    background-image: @include linear-gradient(180deg, $hero-about 0%, $nav-about 100%);
 }
 
 .hero.four {
-    background-image: linear-gradient(to top, $hero-four 0%, $nav-four 100%);
+    background-image: @include linear-gradient(180deg, $hero-four 0%, $nav-four 100%);
 }
 
 /*******************
