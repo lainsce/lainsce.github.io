@@ -36,12 +36,12 @@
     </nav>
     <main>
       <section class="hero four">
-        <div class="grid">
-          <div class="whole">
+        <div class="container">
+          <div class="col-1-1">
             <div class="card shadow">
               <div class="card-body">
                 <div class="card-title">
-                  <h1 align=center>404</h1>
+                  <h1 align=center><i class="fa fa-fw fa-exclamation-triangle" style="color: #FFEA69"></i> 404</h1>
                 </div>
                 <div class="card-subtitle" data-align=center>
                   <h3 align=center>Oh no! Seems you went thru a wrong turn!</h3>
@@ -59,9 +59,18 @@
       </section>
     </main>
     <footer class="footer-black footer-shadow">
-      <a class="button ghost-night animated" href="https://github.com/lainsce/lainsce.github.io/issues/new" target="_blank" class="ghost"><i class="fa fa-fw fa-sm fa-bug"></i> Report an Issue</a>
-      <p>© <span id="year">2017</span> Paulo Galardi. Made in São Paulo.</p>
-    </footer>
+      <div class="container">
+        <div class="col-1-1">
+          <ul class="footer-space">
+            <li><a class="button ghost animated" href="https://github.com/lainsce/lainsce.github.io/issues/new" target="_blank" class="ghost"><i class="fa fa-fw fa-sm fa-bug"></i> Report an Issue</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="container">
+        <div class="col-1-1">
+          <p>© <span id="year">2017</span> Paulo Galardi. Made in São Paulo.</p>
+        </div>
+      </div>    </footer>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript">$(function yearsSince(epoch){var diff= new Date()-new Date(epoch);var age= Math.floor(diff/31536000000);return age;});</script>
   </body>

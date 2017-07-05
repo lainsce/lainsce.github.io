@@ -36,8 +36,7 @@
     <main>
       <section class="hero">
         <div class="container">
-          <div class="row center-block">
-            <div class="col-xs-12">
+            <div class="col-1-1">
               <div class="card shadow">
                 <div class="card-body">
                   <div class="card-title">
@@ -58,17 +57,13 @@
                 </div>
               </div>
             </div>
-          </div>
         </div>
       </section>
       <div class="container">
-        <div class="row center-block" id="part2">
-          <div class="col-md-12">
+          <div class="col-1-1">
             <h2>Check out my apps:</h2>
           </div>
-        </div>
-        <div class="row center-block" id="part3">
-          <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 form-group">
+          <div class="col-1-3 form-group">
             <div class="card shadow">
               <div class="card-image coin">
                 <p><img width="128" height="128" src="icons/coin.svg" alt="Coin's Icon"></p>
@@ -89,7 +84,7 @@
               </div>
             </div>
           </div>
-          <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 form-group">
+          <div class="col-1-3 form-group">
             <div class="card shadow">
               <div class="card-image notejot">
                 <p><img width="128" height="128" src="icons/notejot.svg" alt="Notejot's Icon"></p>
@@ -110,7 +105,7 @@
               </div>
             </div>
           </div>
-          <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 form-group">
+          <div class="col-1-3 form-group">
             <div class="card shadow">
               <div class="card-image quilter">
                 <p><img width="128" height="128" src="icons/quilter.svg" alt="Quilter's Icon"></p>
@@ -131,22 +126,33 @@
               </div>
             </div>
           </div>
-        </div>
       </div>
     </main>
     <footer class="footer footer-shadow">
-      <ul class="footer-space">
-        <li class="fab animated mail"><a class="fab-img tooltip" href="mailto:lainsce@airmail.cc" target="_blank" data-tooltip="Mail Me"><i class="fa fa-fw fa-lg fa-envelope"></i></a></li>
-        <li class="fab animated telegram"><a class="fab-img tooltip" href="https://t.me/lainsce" target="_blank" data-tooltip="Telegram"><i class="fa fa-fw fa-lg fa-telegram"></i></a></li>
-        <li class="fab animated gplus"><a class="fab-img tooltip" href="https://plus.google.com/u/0/+LainsCE" target="_blank" data-tooltip="Google +"><i class="fa fa-fw fa-lg fa-google-plus"></i></a></li>
-        <li class="fab animated medium"><a class="fab-img tooltip" href="https://medium.com/@lainsce" target="_blank" data-tooltip="Medium"><i class="fa fa-fw fa-lg fa-medium"></i></a></li>
-        <li class="fab animated twitter"><a class="fab-img tooltip" href="https://twitter.com/@lainscereal" target="_blank" data-tooltip="Twitter"><i class="fa fa-fw fa-lg fa-twitter"></i></a></li>
-        <li class="fab animated github"><a class="fab-img tooltip" href="https://github.com/lainsce" target="_blank" data-tooltip="GitHub"><i class="fa fa-fw fa-lg fa-github-alt"></i></a></li>
-      </ul>
-      <ul class="footer-space">
-        <li><a class="button ghost animated" href="https://github.com/lainsce/lainsce.github.io/issues/new" target="_blank" class="ghost"><i class="fa fa-fw fa-sm fa-bug"></i> Report an Issue</a></li>
-      </ul>
-      <p>© <span id="year">2017</span> Paulo Galardi. Made in São Paulo.</p>
+      <div class="container">
+        <div class="col-1-1">
+          <ul class="footer-space">
+            <li class="fab animated mail"><a class="fab-img tooltip" href="mailto:lainsce@airmail.cc" target="_blank" data-tooltip="Mail Me"><i class="fa fa-fw fa-lg fa-envelope"></i></a></li>
+            <li class="fab animated telegram"><a class="fab-img tooltip" href="https://t.me/lainsce" target="_blank" data-tooltip="Telegram"><i class="fa fa-fw fa-lg fa-telegram"></i></a></li>
+            <li class="fab animated gplus"><a class="fab-img tooltip" href="https://plus.google.com/u/0/+LainsCE" target="_blank" data-tooltip="Google +"><i class="fa fa-fw fa-lg fa-google-plus"></i></a></li>
+            <li class="fab animated medium"><a class="fab-img tooltip" href="https://medium.com/@lainsce" target="_blank" data-tooltip="Medium"><i class="fa fa-fw fa-lg fa-medium"></i></a></li>
+            <li class="fab animated twitter"><a class="fab-img tooltip" href="https://twitter.com/@lainscereal" target="_blank" data-tooltip="Twitter"><i class="fa fa-fw fa-lg fa-twitter"></i></a></li>
+            <li class="fab animated github"><a class="fab-img tooltip" href="https://github.com/lainsce" target="_blank" data-tooltip="GitHub"><i class="fa fa-fw fa-lg fa-github-alt"></i></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="container">
+        <div class="col-1-1">
+          <ul class="footer-space">
+            <li><a class="button ghost animated" href="https://github.com/lainsce/lainsce.github.io/issues/new" target="_blank" class="ghost"><i class="fa fa-fw fa-sm fa-bug"></i> Report an Issue</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="container">
+        <div class="col-1-1">
+          <p>© <span id="year">2017</span> Paulo Galardi. Made in São Paulo.</p>
+        </div>
+      </div>
     </footer>
     <script async type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript">$(function(){$("#year").text((new Date).getFullYear ());var things=["Beer", "Coffee", "Drink", "Pizza", "Snack", "Pop"];$("#thing").text (things[Math.floor(Math.random()*things.length)]);}); $(function yearsSince(epoch){var diff= new Date()-new Date(epoch);var age= Math.floor(diff/311236000000);return age;});</script>

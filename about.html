@@ -36,8 +36,7 @@
       <main>
           <section class="hero about">
             <div class="container">
-              <div class="row center-block">
-                <div class="col-xs-12 header" align=center>
+                <div class="col-1-1 header" align=center>
                   <div class="card shadow">
                     <div class="card-body">
                       <div class="card-title">
@@ -52,12 +51,11 @@
                     </div>
                   </div>
                 </div>
-              </div>
             </div>
           </section>
           <div class="container">
             <div class="row center-block">
-              <div class="col-xs-12 col-md-5 header form-group">
+              <div class="col-1-2 header form-group">
                 <div class="card shadow">
                   <div class="card-body">
                     <div class="card-title">
@@ -135,7 +133,7 @@
                   </div>
                 </div>
               </div>
-                <div class="col-xs-12 col-md-5 header form-group">
+                <div class="col-1-2 header form-group">
                   <div class="card shadow">
                     <div class="card-body">
                       <div class="card-title">
@@ -213,7 +211,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-xs-12 col-md-5 header form-group">
+                <div class="col-1-2 header form-group">
                   <div class="card shadow">
                     <div class="card-body">
                       <div class="card-title">
@@ -260,9 +258,18 @@
           </section>
       </main>
       <footer class="footer footer-shadow">
-        <a class="button ghost animated" href="https://github.com/lainsce/lainsce.github.io/issues/new" target="_blank" class="ghost"><i class="fa fa-fw fa-sm fa-bug"></i> Report an Issue</a>
-        <p>© <span id="year">2017</span> Paulo Galardi. Made in São Paulo. All images used are © their Authors.</p>
-      </footer>
+        <div class="container">
+          <div class="col-1-1">
+            <ul class="footer-space">
+              <li><a class="button ghost animated" href="https://github.com/lainsce/lainsce.github.io/issues/new" target="_blank" class="ghost"><i class="fa fa-fw fa-sm fa-bug"></i> Report an Issue</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="container">
+          <div class="col-1-1">
+            <p>© <span id="year">2017</span> Paulo Galardi. Made in São Paulo.</p>
+          </div>
+        </div>      </footer>
       <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
       <script type="text/javascript">$(function(){$("#year").text((new Date).getFullYear ());var things=["Beer", "Coffee", "Drink", "Pizza", "Snack", "Pop"];$("#thing").text (things[Math.floor(Math.random()*things.length)]);}); $(function yearsSince(epoch){var diff= new Date()-new Date(epoch);var age= Math.floor(diff/31536000000);return age;});</script>
   </body>
