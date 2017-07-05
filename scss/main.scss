@@ -324,19 +324,19 @@ h4 {
 }
 
 .card-image.coin {
-    background-color: #badbad;
+  background-image: linear-gradient(to bottom, #cbecbe 0%, #badbad 100%);
 }
 
 .card-image.quilter {
-  background-color: #b8d2e2;
+  background-image: linear-gradient(to bottom, #c9e3f3 0%, #b8d2e2 100%);
 }
 
 .card-image.notejot {
-  background-color: #fff3ae;
+  background-image: linear-gradient(to bottom, #fff3ae 0%, #eee29d 100%);
 }
 
 .card-image.neutral {
-  background-color: #ccc;
+  background-image: linear-gradient(to bottom, #ddd 0%, #ccc 100%);
 }
 
 /********************
