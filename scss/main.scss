@@ -65,14 +65,40 @@ $badge-success-hover: $button-success-hover;
 $badge-blue-hover: $button-info-hover;
 
 /*****************
+ *    MIXINS     *
+ *****************/
+@mixin prefixer($property, $value, $prefixes) {
+  @each $prefix in $prefixes {
+    @if $prefix == webkit {
+      -webkit-#{$property}: $value;
+    } @else if $prefix == moz {
+      -moz-#{$property}: $value;
+    } @else if $prefix == ms {
+      -ms-#{$property}: $value;
+    } @else if $prefix == o {
+      -o-#{$property}: $value;
+    } @else if $prefix == spec {
+      #{$property}: $value;
+    } @else  {
+      @warn "Unrecognized prefix: #{$prefix}";
+    }
+  }
+}
+
+@mixin box-sizing($box) {
+   @include prefixer(box-sizing, $box, webkit moz ms o spec);
+}
+
+@mixin box-shadow($box-shadow) {
+  @include prefixer(box-shadow, $box-shadow, webkit moz ms o spec);
+}
+
+/*****************
  * DEVICE MEDIA  *
  *****************/
 
 *, *:after, *:before {
-  $box: border-box;
-  @mixin box-sizing($box) {
-    @include prefixer(box-sizing, $box, webkit moz ms o spec);
-  }
+  @include box-sizing(border-box);
 }
 
 $mobile: "only screen and (max-width: 480px)";
@@ -154,17 +180,11 @@ img {
 }
 
 .shadow {
-    $box-shadow: 0 6px 15px rgba(36,37,38,0.08);
-    @mixin box-sizing($box-shadow) {
-      @include prefixer(box-shadow, $box-shadow, webkit moz ms o spec);
-    }
+    @include box-shadow(0 6px 15px rgba(36,37,38,0.08));
 }
 
 .footer-shadow {
-    $box-shadow: 0px -6px 15px rgba(36,37,38,0.08);
-    @mixin box-sizing($box-shadow) {
-      @include prefixer(box-shadow, $box-shadow, webkit moz ms o spec);
-    }
+    @include box-shadow(0px -6px 15px rgba(36,37,38,0.08));
 }
 
 .logo {
@@ -813,7 +833,7 @@ $pad: 3%;
    padding: 7px;
    width: 100px;
    -webkit-border-radius: 3px;
-   -moz ms o-border-radius: 3px;
+   -moz-border-radius: 3px;
    border-radius: 3px;
    content: attr(data-tooltip);
    text-align: center;
