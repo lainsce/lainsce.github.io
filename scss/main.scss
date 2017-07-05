@@ -8,13 +8,19 @@
 $fg: #353A47;
 $button-success: #00ab6c;
 $button-info: #1da1f2;
-$bg: #f8f8f8;
+$bg: #efeded;
 $card: #fff;
+$card-body: linear-gradient(to bottom, #fff 0%, #f6f4f4 100%);
+$footer: linear-gradient(to bottom, #fff 0%, #e6e4e4 100%);
+$footer-night: linear-gradient(to bottom, #333 0%, #262424 100%);
 $nav: #d1dce7;
 $nav-about: #dce7d1;
 $nav-idea: #e7e7d1;
 $nav-four: #e7d1dc;
 $link: #339eef;
+$card-image-coin: linear-gradient(to bottom, #cbecbe 0%, #badbad 100%);
+$card-image-quilter: linear-gradient(to bottom, #c9e3f3 0%, #b8d2e2 100%);
+$card-image-notejot: linear-gradient(to bottom, #fff3ae 0%, #eee29d 100%);
 
 $fab-telegram: #0088cc;
 $fab-hover-telegram: lighten($fab-telegram, 10%);
@@ -48,10 +54,10 @@ $button-ghost: lighten($fg, 20%);
 $button-ghost-hover: darken($button-ghost, 5%);
 $button-ghost-border: darken($button-ghost, 10%);
 $button-ghost-active: darken($button-ghost, 15%);
-$button-ghost-night: lighten($button-ghost, 20%);
-$button-ghost-night-hover: lighten($button-ghost, 10%);
-$button-ghost-night-border: lighten($button-ghost, 5%);
-$button-ghost-night-active: $button-ghost;
+$button-ghost-night: lighten($button-ghost, 35%);
+$button-ghost-night-hover: lighten($button-ghost-night, 10%);
+$button-ghost-night-border: lighten($button-ghost-night, 5%);
+$button-ghost-night-active: $button-ghost-night;
 $button-neutral: lighten($button-ghost, 20%);
 $button-neutral-border: lighten($button-ghost, 20%);
 $badge-success: $button-success;
@@ -264,7 +270,7 @@ h4 {
 .card {
   border-radius: 16px;
   line-height: 1.5;
-  background-color: $card;
+  background-image: $card-body;
 }
 
 .card-title {
@@ -324,19 +330,15 @@ h4 {
 }
 
 .card-image.coin {
-  background-image: linear-gradient(to bottom, #cbecbe 0%, #badbad 100%);
+  background-image: $card-image-coin;
 }
 
 .card-image.quilter {
-  background-image: linear-gradient(to bottom, #c9e3f3 0%, #b8d2e2 100%);
+  background-image: $card-image-quilter;
 }
 
 .card-image.notejot {
-  background-image: linear-gradient(to bottom, #fff3ae 0%, #eee29d 100%);
-}
-
-.card-image.neutral {
-  background-image: linear-gradient(to bottom, #ddd 0%, #ccc 100%);
+  background-image: $card-image-notejot;
 }
 
 /********************
@@ -509,7 +511,7 @@ h4 {
     background-color: $button-ghost-night-hover;
     background-image: none;
     box-shadow: none;
-    color: $bg;
+    color: $fg;
     border: 1px solid $button-ghost-night-border;
 }
 
@@ -517,7 +519,7 @@ h4 {
     background-color: $button-ghost-night-active;
     background-image: none;
     box-shadow: none;
-    color: $bg;
+    color: $fg;
     border: 1px solid $button-ghost-night-border;
 }
 
@@ -687,7 +689,7 @@ $pad: 3%;
  ********************/
 
 .footer {
-    background-color: $card;
+    background-image: $footer;
     color: $fg;
     box-sizing: border-box;
     font-size: 0.7rem;
@@ -700,7 +702,7 @@ $pad: 3%;
 }
 
 .footer-black {
-    background-color: $fg;
+    background-image: $footer-night;
     color: $card;
     box-sizing: border-box;
     font-size: 0.7rem;
