@@ -132,11 +132,11 @@ $badge-blue-hover: $button-info-hover;
   }
 
   background-color: nth(nth($color-stops, 1), 1);
-  background-image: -webkit-linear-gradient(legacy-direction($direction), $color-stops);
-  background-image: -moz-linear-gradient($direction, $color-stops);
-  background-image: -ms-linear-gradient($direction, $color-stops);
-  background-image: -o-linear-gradient($direction, $color-stops);
-  background-image: linear-gradient($direction, $color-stops);
+  background: -webkit-linear-gradient(legacy-direction($direction), $color-stops);
+  background: -moz-linear-gradient($direction, $color-stops);
+  background: -ms-linear-gradient($direction, $color-stops);
+  background: -o-linear-gradient($direction, $color-stops);
+  background: linear-gradient($direction, $color-stops);
 }
 
 /*****************
