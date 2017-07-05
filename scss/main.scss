@@ -69,9 +69,10 @@ $badge-blue-hover: $button-info-hover;
  *****************/
 
 *, *:after, *:before {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
+  $box: border-box;
+  @mixin box-sizing($box) {
+    @include prefixer(box-sizing, $box, webkit moz ms o spec);
+  }
 }
 
 $mobile: "only screen and (max-width: 480px)";
@@ -153,15 +154,17 @@ img {
 }
 
 .shadow {
-    -webkit-box-shadow: 0 6px 15px rgba(36,37,38,0.08);
-    -moz-boz-shadow: 0 6px 15px rgba(36,37,38,0.08);
-    box-shadow: 0 6px 15px rgba(36,37,38,0.08);
+    $box-shadow: 0 6px 15px rgba(36,37,38,0.08);
+    @mixin box-sizing($box-shadow) {
+      @include prefixer(box-shadow, $box-shadow, webkit moz ms o spec);
+    }
 }
 
 .footer-shadow {
-    -webkit-box-shadow: 0px -6px 15px rgba(36,37,38,0.08);
-    -moz-box-shadow: 0px -6px 15px rgba(36,37,38,0.08);
-    box-shadow: 0px -6px 15px rgba(36,37,38,0.08);
+    $box-shadow: 0px -6px 15px rgba(36,37,38,0.08);
+    @mixin box-sizing($box-shadow) {
+      @include prefixer(box-shadow, $box-shadow, webkit moz ms o spec);
+    }
 }
 
 .logo {
@@ -810,7 +813,7 @@ $pad: 3%;
    padding: 7px;
    width: 100px;
    -webkit-border-radius: 3px;
-   -moz-border-radius: 3px;
+   -moz ms o-border-radius: 3px;
    border-radius: 3px;
    content: attr(data-tooltip);
    text-align: center;
