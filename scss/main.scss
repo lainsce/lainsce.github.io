@@ -40,7 +40,9 @@ $link-active: mix($link, lighten($fg, 15%), 20%);
 $intro: mix($link, $button-success, 50%);
 $music: mix($fab-mail, $fab-gplus, 50%);
 $movies: $fab-gplus;
+$health: darken($fab-gplus, 10%);
 $books: mix($link, $button-info, 50%);
+$tech: darken(mix($link, $button-info, 50%), 10%);
 $economy: darken($button-success, 5%);
 
 $badge: lighten($fg, 40%);
@@ -929,6 +931,16 @@ h4 {
 .movies .card-title,
 .movies .fa-4x {
     color: $movies;
+}
+
+.tech .card-title,
+.tech .fa-4x {
+    color: $tech;
+}
+
+.health .card-title,
+.health .fa-4x {
+    color: $health;
 }
 
 /********************
