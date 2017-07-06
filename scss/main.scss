@@ -36,7 +36,13 @@ $hero-about: darken($nav-about, 10%);
 $hero-four: darken($nav-four, 10%);
 $link-hover: mix($link, lighten($fg, 15%), 50%);
 $link-active: mix($link, lighten($fg, 15%), 20%);
-$header: mix($link, $button-success, 50%);
+
+$intro: mix($link, $button-success, 50%);
+$music: mix($fab-mail, $fab-gplus, 50%);
+$movies: $fab-gplus;
+$books: mix($link, $button-info, 50%);
+$economy: darken($button-success, 5%);
+
 $badge: lighten($fg, 40%);
 $tooltip: lighten($fg, 5%);
 $fab: lighten($fg, 10%);
@@ -900,9 +906,29 @@ h4 {
   *      HEADER       *
   *********************/
 
-.header .card-title,
-.header .fa-4x {
-    color: $header;
+.intro .card-title,
+.intro .fa-4x {
+    color: $intro;
+}
+
+.economy .card-title,
+.economy .fa-4x {
+    color: $economy;
+}
+
+.music .card-title,
+.music .fa-4x {
+    color: $music;
+}
+
+.books .card-title,
+.books .fa-4x {
+    color: $books;
+}
+
+.movies .card-title,
+.movies .fa-4x {
+    color: $movies;
 }
 
 /********************
