@@ -47,7 +47,7 @@ $books: mix($link, $button-info, 50%);
 $tech: darken(mix($link, $button-info, 50%), 10%);
 $economy: darken($button-success, 5%);
 
-$badge: lighten($fg, 40%);
+$badge: lighten($fg, 20%);
 $tooltip: lighten($fg, 5%);
 $fab: lighten($fg, 10%);
 $fab-hover: lighten($fg, 20%);
@@ -792,6 +792,7 @@ h4 {
     display: block;
     height: 100%;
     width: 100%;
+    margin-top: -2px;
 }
 
 .fab-img:hover {
