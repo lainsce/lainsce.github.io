@@ -98,6 +98,14 @@ $badge-blue-hover: $button-info-hover;
   @include prefixer(box-shadow, $box-shadow, webkit moz ms o spec);
 }
 
+@mixin font($size: false, $color: false, $weight: false,  $lh: false) {
+    font-family: 'Muli', Helvetica, Arial, sans-serif;
+    @if $size { font-size: $size; }
+    @if $color { color: $color; }
+    @if $weight { font-weight: $weight; }
+    @if $lh { line-height: $lh; }
+}
+
 @function legacy-direction($value) {
   @if is-direction($value) == false {
     @warn "Cannot convert `#{$value}` to legacy syntax because it doesn't seem to be a direction.";
@@ -157,7 +165,7 @@ $badge-blue-hover: $button-info-hover;
 
 $mobile: "only screen and (max-width: 480px)";
 $tablet: "only screen and (max-width: 768px)";
-$laptop-small: "(min-width: 992px)";
+$laptop-small: "(min-width: 992px) and (max-width: 1199px)";
 $desktop: "(min-width: 1200px)";
 
 /*****************
@@ -173,7 +181,7 @@ html {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    font: 1rem "Roboto", sans-serif;
+    @include font($size: 1rem, $weight: 400);
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
     text-rendering: geometricPrecision;
@@ -314,31 +322,25 @@ a {
 }
 
 h1 {
-    font-family: "Roboto", sans-serif;
-    font-size: 3.5rem;
-    font-weight: 300;
+    @include font($size: 3.5rem, $weight: 700);
 }
 
 h2 {
-    font-family: "Roboto", sans-serif;
-    font-size: 2.5rem;
-    font-weight: 300;
+    @include font($size: 2.5rem, $weight: 700);
 }
 
 h3 {
-    font-family: "Roboto", sans-serif;
-    font-weight: 300;
-    font-size: 1.5rem;
+    @include font($size: 1.5rem, $weight: 700);
 }
 
 h4 {
-    font-size: 1px;
-    opacity: 0.8;
+    @include font($size: 1.0rem, $weight: 700);
 }
 
 .title {
     margin: 0 auto;
     text-align: center;
+    @include font($size: 1.5rem, $weight: 400, $color: $fg);
 }
 
 .dim-label {
@@ -356,23 +358,17 @@ h4 {
 }
 
 .card-title {
-  font-family: "Roboto", sans-serif;
-  font-weight: 300;
-  font-size: 2.6rem;
-  color: $fg;
+  @include font($size: 2.5rem, $weight: 700, $color: $fg);
 }
 
 .card-subtitle {
-  font-family: "Roboto", sans-serif;
-  font-weight: 300;
-  font-size: 1.6rem;
-  color: $fg;
+  @include font($size: 1.5rem, $weight: 700, $color: $fg);
   text-align: left;
 }
 
 .card-text {
+  @include font($size: 1.0rem, $weight: 400, $color: $fg);
   text-align: left;
-  color: $fg;
 }
 
 .card-image {
@@ -392,11 +388,10 @@ h4 {
   position: relative;
   background-color: transparent;
   border-top: 1px solid rgba(160,160,160,0.4);
-  color: $fg;
   padding: 16px 1.5rem;
-  justify-content: space-between;
   text-align: left;
   border-radius: 0 0 16px 16px;
+  @include font($size: 1.0rem, $weight: 700);
 }
 
 .card-action .fa {
@@ -435,6 +430,7 @@ h4 {
     padding: 0.8rem;
     text-align: center;
     text-transform: uppercase;
+    @include font($weight: 700);
 }
 
 .button + .button {
@@ -458,7 +454,7 @@ h4 {
 }
 
 .footer-button {
-    font-size: 0.7rem;
+    @include font($size: 0.7rem);
     padding: 0.4rem;
 }
 
@@ -654,10 +650,10 @@ h4 {
   width: 100%;
 }
 .col-2-3 {
-  width: 66.66%;
+  width: 66.66666%;
 }
 .col-1-3 {
-  width: 33.33%;
+  width: 33.33333%;
 }
 .col-1-2 {
   width: 50%;
@@ -666,7 +662,7 @@ h4 {
   width: 25%;
 }
 .col-1-8 {
-  width: 12.5%;
+  width: 12.50000%;
 }
 
 /******************
@@ -703,12 +699,11 @@ h4 {
 
 .nav {
    background-image: none;
-   height: 3.2rem;
-   line-height: 3.2rem;
+   height: 3rem;
    padding-left: 1rem;
    padding-right: 1rem;
    display: inline-block;
-   font-size: 1.2rem;
+   @include font($size: 1rem, $weight: 400, $lh: 3rem);
    white-space: nowrap;
    position: relative;
    background-color: $nav;
@@ -733,7 +728,9 @@ h4 {
 
 .nav-icon {
      display: inline-block;
-     margin: 0 0.5rem;
+     margin: 0.5rem 0;
+     border-bottom: 3px solid transparent;
+     @include font($size: 0.9rem, $weight: 700, $color: $fg, $lh: 3rem);
 }
 
 .nav-icon:hover {
@@ -748,7 +745,8 @@ h4 {
 }
 
 .nav-link {
-    color: $fg;
+    @include font($color: $fg);
+    padding: 0 0.6rem;
 }
 
 /********************
@@ -759,7 +757,7 @@ h4 {
     @include linear-gradient(#fff 0%, #e6e4e4 100%);
     color: $fg;
     box-sizing: border-box;
-    font-size: 0.7rem;
+    @include font($size: 0.8rem, $weight: 400, $lh: 0.8rem);
     padding: 1rem;
     position: relative;
     text-align: center;
@@ -772,7 +770,7 @@ h4 {
     @include linear-gradient(#333 0%, #262424 100%);
     color: $card;
     box-sizing: border-box;
-    font-size: 0.7rem;
+    @include font($size: 0.8rem, $weight: 400, $lh: 0.8rem);
     padding: 1rem 0;
     position: relative;
     text-align: center;
@@ -947,19 +945,9 @@ h4 {
  *     MEDIA        *
  ********************/
 
-@media #{$mobile} {
-  .button {
-    width: 80%
-  }
-
-  .button + .button {
-    margin-left: 0px;
-  }
-}
-
-@media #{$tablet} {
+@media #{$desktop} {
   .container {
-    width: 768px;
+    width: 1160px;
   }
 }
 
@@ -969,8 +957,18 @@ h4 {
   }
 }
 
-@media #{$desktop} {
+@media #{$tablet} {
   .container {
-    width: 1170px;
+    width: 768px;
+  }
+}
+
+@media #{$mobile} {
+  .button {
+    width: 80%
+  }
+
+  .button + .button {
+    margin-left: 0px;
   }
 }
