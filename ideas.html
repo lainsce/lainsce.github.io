@@ -36,7 +36,7 @@
       <main>
         <section class="hero idea">
           <div class="container">
-              <div class="col-1-1 intro" align=center>
+              <div class="col-xs-12 intro" align=center>
                 <div class="card shadow">
                   <div class="card-body">
                     <div class="card-title">
@@ -54,8 +54,8 @@
           </div>
        </section>
        <div class="container">
-         <div class="row center-block">
-           <div class="col-1-2 economy form-group">
+         <div class="row">
+           <div class="col-xs-6 economy form-group">
             <div class="card shadow">
               <div class="card-body">
                 <div class="card-title">
@@ -86,7 +86,7 @@
               </div>
             </div>
           </div>
-          <div class="col-1-2 tech form-group">
+          <div class="col-xs-6 tech form-group">
             <div class="card shadow">
               <div class="card-body">
                 <div class="card-title">
@@ -116,7 +116,7 @@
               </div>
             </div>
           </div>
-          <div class="col-1-2 health form-group">
+          <div class="col-xs-6 health form-group">
             <div class="card shadow">
               <div class="card-body">
                 <div class="card-title">
@@ -148,17 +148,22 @@
       </main>
       <footer class="footer footer-shadow">
         <div class="container">
-          <div class="col-1-1">
-            <ul class="footer-space">
-              <li><a class="button ghost animated" href="https://github.com/lainsce/lainsce.github.io/issues/new" target="_blank" class="ghost"><i class="fa fa-fw fa-sm fa-bug"></i> Report an Issue</a></li>
-            </ul>
+          <div class="row">
+            <div class="col-xs-12">
+              <ul class="footer-space">
+                <li><a class="button ghost animated" href="https://github.com/lainsce/lainsce.github.io/issues/new" target="_blank" class="ghost"><i class="fa fa-fw fa-sm fa-bug"></i> Report an Issue</a></li>
+              </ul>
+            </div>
           </div>
         </div>
         <div class="container">
-          <div class="col-1-1">
-            <p>© <span id="year">2017</span> Paulo Galardi. Made in São Paulo.</p>
+          <div class="row">
+            <div class="col-xs-12">
+              <p>© <span id="year">2017</span> Paulo Galardi. Made in São Paulo.</p>
+            </div>
           </div>
-        </div>      </footer>
+        </div>
+      </footer>
       <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
       <script type="text/javascript">$(function(){$("#year").text((new Date).getFullYear ());var things=["Beer", "Coffee", "Drink", "Pizza", "Snack", "Pop"];$("#thing").text (things[Math.floor(Math.random()*things.length)]);}); $(function yearsSince(epoch){var diff= new Date()-new Date(epoch);var age= Math.floor(diff/31536000000);return age;});</script>
   </body>

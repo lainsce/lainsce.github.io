@@ -1,6 +1,8 @@
 ---
 ---
 
+@import "bootstrap";
+
 /*****************
  * COLOR PALETTE *
  *****************/
@@ -155,18 +157,9 @@ $badge-blue-hover: $button-info-hover;
   background: linear-gradient($direction, $color-stops);
 }
 
-/*****************
- * DEVICE MEDIA  *
- *****************/
-
 *, *:after, *:before {
   @include box-sizing(border-box);
 }
-
-$mobile: "only screen and (max-width: 480px)";
-$tablet: "only screen and (max-width: 768px)";
-$laptop-small: "(min-width: 992px) and (max-width: 1199px)";
-$desktop: "(min-width: 1200px)";
 
 /*****************
  * GENERAL STUFF *
@@ -625,46 +618,6 @@ h4 {
     border: 1px solid $button-info-border;
 }
 
-/********************
- *       GRID       *
- ********************/
-
-.container {
-  margin-right: auto;
-  margin-left: auto;
-  padding: 1rem 0;
-}
-
-.form-group {
-  margin-top: 3%;
-}
-
-[class*='col-'] {
-  float: left;
-  padding-right: calc(3% / 2.66);
-  padding-left: calc(3% / 2.66);
-
-}
-
-.col-1-1 {
-  width: 100%;
-}
-.col-2-3 {
-  width: 66.66666%;
-}
-.col-1-3 {
-  width: 33.33333%;
-}
-.col-1-2 {
-  width: 50%;
-}
-.col-1-4 {
-  width: 25%;
-}
-.col-1-8 {
-  width: 12.50000%;
-}
-
 /******************
  *      HERO      *
  ******************/
@@ -939,36 +892,4 @@ h4 {
 .health .card-title,
 .health .fa-4x {
     color: $health;
-}
-
-/********************
- *     MEDIA        *
- ********************/
-
-@media #{$desktop} {
-  .container {
-    width: 1160px;
-  }
-}
-
-@media #{$laptop-small} {
-  .container {
-    width: 970px;
-  }
-}
-
-@media #{$tablet} {
-  .container {
-    width: 768px;
-  }
-}
-
-@media #{$mobile} {
-  .button {
-    width: 80%
-  }
-
-  .button + .button {
-    margin-left: 0px;
-  }
 }
