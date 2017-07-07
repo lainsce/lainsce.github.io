@@ -646,7 +646,7 @@ h4 {
 
 .nav {
    background-image: none;
-   height: 3rem;
+   height: 3.78rem;
    padding-left: 1rem;
    padding-right: 1rem;
    display: inline-block;
@@ -655,6 +655,7 @@ h4 {
    position: relative;
    background-color: $nav;
    outline: none;
+   border-bottom: 1px solid rgba(0, 0, 0, 0.15);
 }
 
 .nav.idea {
