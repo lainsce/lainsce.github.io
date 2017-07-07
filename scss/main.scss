@@ -7,16 +7,20 @@
  * COLOR PALETTE *
  *****************/
 
-$fg: #353A47;
-$button-success: #00ab6c;
-$button-info: #1da2f3;
-$bg: #efeded;
+$fg: #353f4a;
+$button-success: #28ac5d;
+$button-info: #1da1f2;
+$bg: #f6f6f6;
+$link: #2d6cc1;
 $card: #fff;
-$nav: #d1dce7;
-$nav-about: #dce7d1;
-$nav-idea: #e7e7d1;
-$nav-four: #e7d1dc;
-$link: #339eef;
+$nav: #c2e9fb;
+$hero: #a1c4fd;
+$nav-idea: #e1ffc4;
+$hero-idea: #b1ffc4;
+$nav-about: #fbf1c2;
+$hero-about: #fbd1b2;
+$nav-four: #fad0c4;
+$hero-four: #ff9abe;
 $coin: #badbad;
 $quilter: #b8d2e2;
 $notejot: #fff3ae;
@@ -28,17 +32,12 @@ $fab-hover-twitter: lighten($fab-twitter, 10%);
 $fab-gplus: #dd4b39;
 $fab-hover-gplus: lighten($fab-gplus, 10%);
 $fab-mail: #fbbc05;
-$fab-hover-mail: lighten($fab-mail, 20%);
+$fab-hover-mail: lighten($fab-mail, 10%);
 $fab-medium: #00ab6c;
-$fab-hover-medium: lighten($fab-medium, 20%);
+$fab-hover-medium: lighten($fab-medium, 10%);
 
-$hero: darken($nav, 10%);
-$hero-idea: darken($nav-idea, 10%);
-$hero-about: darken($nav-about, 10%);
-$hero-four: darken($nav-four, 10%);
-$link-hover: mix($link, lighten($fg, 15%), 50%);
-$link-active: mix($link, lighten($fg, 15%), 20%);
-
+$link-hover: lighten(mix($button-info, $link, 25%), 10%);
+$link-active: lighten(mix($button-info, $link, 25%), 15%);
 $intro: mix($link, $button-success, 50%);
 $music: mix($fab-mail, $fab-gplus, 50%);
 $movies: $fab-gplus;
@@ -48,8 +47,8 @@ $tech: darken(mix($link, $button-info, 50%), 10%);
 $economy: darken($button-success, 5%);
 
 $badge: lighten($fg, 20%);
-$tooltip: lighten($fg, 5%);
-$fab: lighten($fg, 10%);
+$tooltip: $fg;
+$fab: lighten($fg, 5%);
 $fab-hover: lighten($fg, 20%);
 $button-success-hover: darken($button-success, 10%);
 $button-success-border: darken($button-success, 15%);
@@ -347,7 +346,7 @@ h4 {
 .card {
   border-radius: 16px;
   line-height: 1.5;
-  @include linear-gradient($card 0%, darken($card, 5%) 100%);
+  background-color: $card;
 }
 
 .card-title {
@@ -707,7 +706,7 @@ h4 {
  ********************/
 
 .footer {
-    @include linear-gradient(#fff 0%, #e6e4e4 100%);
+    @include linear-gradient(#fff 0%, #f6f6f6 100%);
     color: $fg;
     box-sizing: border-box;
     @include font($size: 0.8rem, $weight: 400, $lh: 0.8rem);
@@ -788,7 +787,7 @@ h4 {
 }
 
 .fab-img {
-    color: $fg;
+    color: $fab;
     display: block;
     height: 100%;
     width: 100%;
@@ -796,7 +795,7 @@ h4 {
 }
 
 .fab-img:hover {
-    color: $bg;
+    color: $card;
 }
 
 /*********************

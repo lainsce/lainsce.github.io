@@ -1,5 +1,5 @@
 /_site
 /_site/*
 /.jekyll_metadata
-/.sass_cache
-/.sass_cache/*
+/.sass-cache
+/.sass-cache/*
