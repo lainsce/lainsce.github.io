@@ -424,18 +424,6 @@ h4 {
     margin-left: 12px;
 }
 
-.button-nav {
-    border-radius: 50px;
-    display: inline-block;
-    margin: 1.2rem 0;
-    min-height: 8px;
-    text-align: center;
-    line-height: 0rem;
-    padding: 0.5rem;
-    text-transform: uppercase;
-    width: 200px;
-}
-
 .button .fa {
     margin-right: 8px;
 }
@@ -450,12 +438,14 @@ h4 {
     background-image: none;
     border: 1px solid $button-success;
     color: $bg1;
+    @include box-shadow(0 3px 2px rgba(92,184,92,.5));
 }
 
 .button.success:hover {
     background-color: $button-success-hover;
     color: $bg1;
     border: 1px solid $button-success-border;
+    @include box-shadow(0 3px 2px rgba(92,184,92,.5));
 }
 
 .button.success:active {
@@ -463,33 +453,10 @@ h4 {
     background-image: none;
     color: $bg1;
     border: 1px solid $button-success-border;
+    @include box-shadow(0 3px 2px rgba(92,184,92,.5));
 }
 
 .button.success:focus {
-    box-shadow: 0 0 0 2px rgba(92,184,92,.5);
-}
-
-.button-nav.success {
-    background-color: $button-success;
-    background-image: none;
-    border: 1px solid $button-success;
-    color: $bg1;
-}
-
-.button-nav.success:hover {
-    background-color: $button-success-hover;
-    color: $bg1;
-    border: 1px solid $button-success-border;
-}
-
-.button-nav.success:active {
-    background-color: $button-success-active;
-    background-image: none;
-    color: $bg1;
-    border: 1px solid $button-success-border;
-}
-
-.button-nav.success:focus {
     box-shadow: 0 0 0 2px rgba(92,184,92,.5);
 }
 
@@ -498,12 +465,14 @@ h4 {
     background-image: none;
     border: 1px solid $button-info;
     color: $bg1;
+    @include box-shadow(0 3px 2px rgba(31,152,222,.5));
 }
 
 .button.info:hover {
     background-color: $button-info-hover;
     color: $bg1;
     border: 1px solid $button-info-border;
+    @include box-shadow(0 3px 2px rgba(31,152,222,.5));
 }
 
 .button.info:active {
@@ -511,6 +480,7 @@ h4 {
     background-image: none;
     color: $bg1;
     border: 1px solid $button-info-border;
+    @include box-shadow(0 3px 2px rgba(31,152,222,.5));
 }
 
 .button.info:focus {
@@ -537,7 +507,7 @@ h4 {
 }
 
 .button.neutral:focus {
-    box-shadow: 0 0 0 2px rgba(233,233,233,.5)
+    box-shadow: 0 0 0 2px rgba(233,233,233,.5);
 }
 
 .button.ghost {
@@ -646,28 +616,15 @@ h4 {
 
 .nav {
    background-image: none;
-   height: 3.78rem;
+   height: 3.2rem;
    padding-left: 1rem;
    padding-right: 1rem;
    display: inline-block;
    @include font($size: 1rem, $weight: 400, $lh: 3rem);
    white-space: nowrap;
    position: relative;
-   background-color: $nav;
+   background-color: lighten($fg, 5%);
    outline: none;
-   border-bottom: 1px solid rgba(0, 0, 0, 0.15);
-}
-
-.nav.idea {
-  background-color: $nav-idea;
-}
-
-.nav.about {
-  background-color: $nav-about;
-}
-
-.nav.four {
-  background-color: $nav-four;
 }
 
 .nav:focus {
@@ -676,13 +633,22 @@ h4 {
 
 .nav-icon {
      display: inline-block;
-     margin: 0.5rem 0;
+     margin: 0;
      border-bottom: 3px solid transparent;
-     @include font($size: 0.9rem, $weight: 700, $color: $fg, $lh: 3rem);
+     @include font($size: 0.9rem, $weight: 700, $color: $bg1, $lh: 3rem);
 }
 
 .nav-icon:hover {
-    border-bottom: 3px solid $fg;
+    border-bottom: 3px solid $bg1;
+}
+
+.nav-icon.active {
+    border-bottom: 3px solid $bg1;
+}
+
+.nav-icon.active:hover {
+    border-bottom: 3px solid darken($bg1, 10%);
+    background-color: rgba(255,255,255,0.3);
 }
 
 .nav-bar {
@@ -693,7 +659,7 @@ h4 {
 }
 
 .nav-link {
-    @include font($color: $fg);
+    @include font($color: $bg1);
     padding: 0 0.6rem;
 }
 
