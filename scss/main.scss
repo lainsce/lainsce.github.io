@@ -9,7 +9,7 @@
 
 $fg: #383940;
 $button-success: #28ac5d;
-$button-info: #1da1f2;
+$button-info: #1da1d2;
 $bg1: #F6F9FC;
 $bg2: #F1F5F9;
 $link: #2d6cc1;
@@ -22,6 +22,8 @@ $nav-about: #fbf1c2;
 $hero-about: #fbd1b2;
 $nav-four: #fad0c4;
 $hero-four: #ff9abe;
+$nav-apps: mix($nav, $nav-idea, 50%);
+$hero-apps: mix($hero, $hero-idea, 50%);
 $coin: #badbad;
 $quilter: #b8d2e2;
 $notejot: #fff3ae;
@@ -324,6 +326,28 @@ h4 {
     @include font($size: 1.0rem, $weight: 700);
 }
 
+pre {
+    display: block;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-size: 90%;
+    color: #292b2c;
+}
+
+pre code {
+    padding: 0;
+    font-size: inherit;
+    position: relative;
+    left: -160px;
+    color: inherit;
+    background-color: transparent;
+    border-radius: 0;
+}
+
+code, kbd, pre, samp {
+    font-family: Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+}
+
 .title {
     margin: 0 auto;
     text-align: center;
@@ -371,6 +395,24 @@ h4 {
     border-radius: 16px 16px 0 0;
 }
 
+.card-image-big {
+    display: block;
+    position: relative;
+    text-align: center;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    padding: 0;
+    border-bottom: 1px solid rgba(160,160,160,0.4);
+    border-radius: 16px 16px 0 0;
+}
+
+.card-image-big img {
+  width: 66%;
+  height: 66%;
+}
+
 .card-action {
   position: relative;
   background-color: transparent;
@@ -403,6 +445,18 @@ h4 {
 
 .card-image.notejot {
   @include linear-gradient(135deg, $notejot 0%, darken($notejot, 5%) 50%, darken($notejot, 10%) 100%);
+}
+
+.card-image-big.coin {
+  @include linear-gradient(135deg, $coin 0%, lighten($coin, 5%) 50%, lighten($coin, 10%) 100%);
+}
+
+.card-image-big.quilter {
+  @include linear-gradient(135deg, $quilter 0%, lighten($quilter, 5%) 50%, lighten($quilter, 10%) 100%);
+}
+
+.card-image-big.notejot {
+  @include linear-gradient(135deg, $notejot 0%, lighten($notejot, 5%) 50%, lighten($notejot, 10%) 100%);
 }
 
 /********************
@@ -608,6 +662,10 @@ h4 {
 
 .hero.four {
     @include linear-gradient(0deg, $hero-four 0%, $nav-four 100%);
+}
+
+.hero.apps {
+    @include linear-gradient(0deg, $hero-apps 0%, $nav-apps 100%);
 }
 
 /*******************

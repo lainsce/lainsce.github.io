@@ -1,0 +1,191 @@
+
+
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Lains">
+    <meta property="og:description" content="The personal site for Lains">
+    <meta property='og:title' content='404 Page Not Found | Lains'/>
+    <meta property='og:image' content='icons/me.png'/>
+    <title>Apps | Lains</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/fav/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/fav/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/fav/favicon-16x16.png">
+    <link rel="manifest" href="/fav/manifest.json">
+    <link rel="mask-icon" href="/fav/safari-pinned-tab.svg" color="#b91d47">
+    <link rel="shortcut icon" href="/fav/favicon.ico">
+    <meta name="msapplication-config" content="/fav/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+    <link type="text/css" rel = "stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Muli:400,700&amp;subset=latin-ext" rel="stylesheet">
+    <link type="text/css" rel = "stylesheet" href="scss/main.css">
+  </head>
+  <body>
+    <nav class="nav" tabindex="-1">
+        <ul class="left nav-bar">
+          <li class="nav-icon animated"><a class="nav-link tooltip-top" data-tooltip="Home" href="/" target="_self"> <img class="logo" height="32" width="32" src="icons/me.svg" alt="My Icon"> </a></li>
+          <li class="nav-icon animated active"><a class="nav-link tooltip-top" data-tooltip="About" target="_self" href="/apps.html"> APPS </a></li>
+          <li class="nav-icon animated"><a class="nav-link tooltip-top" data-tooltip="Ideas" target="_self" href="/ideas.html"> IDEAS </a></li>
+          <li class="nav-icon animated"><a class="nav-link tooltip-top" data-tooltip="About" target="_self" href="/about.html"> ABOUT </a></li>
+        </ul>
+        <ul class="right nav-bar">
+          <li class="nav-icon animated"><a class="nav-link tooltip-top" data-tooltip="Mail" target="_self" href="mailto:lainsce@airmail.cc"> <i class="fa fa-fw fa-lg fa-envelope"></i> </a></li>
+        </ul>
+    </nav>
+    <main>
+      <section class="hero apps">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12">
+              <div class="card shadow">
+                <div class="card-body">
+                  <div class="card-title">
+                    <p align=center>My Apps</p>
+                  </div>
+                  <div class="card-text">
+                    <p align=center>Here you'll learn about each of my apps and what they do. Each card will also have a handy screenshot of the app. Feel free to also visit their GitHub repo and leve your bug reports, star them or even watch development magic happen!</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-md-6 form-group">
+            <div class="card shadow">
+              <div class="card-image-big coin">
+                <p><img src="img/coin-shot.png" alt="Coin"></p>
+              </div>
+              <div class="card-body">
+                <div class="card-subtitle">
+                  <p>Coin</a></p>
+                </div>
+                <div class="card-badge">
+                  <p class="badge blue tooltip" data-tooltip="Version">1.1.2</p><p class="badge success tooltip" data-tooltip="Suggested">$  1.00</p>
+                </div>
+                <div class="card-text">
+                  <p>Never miss out on the value of a virtual currency with this applet</p>
+                  <ul>
+                      <li>Choose which currency and virtual currency to use for tracking</li>
+                      <li>Quit anytime with the shortcut Ctrl + Q</li>
+                      <li>Move the applet by dragging it from anywhere in the window</li>
+                      <li>Stays out of your way in the desktop</li>
+                  </ul>
+                  <p>Feeling adventurous? Start by compiling it locally:</p>
+                  <pre><code>
+                    $ git clone https://github.com/lainsce/coin
+                    $ cd coin
+                    $ meson build &amp;&amp; cd build
+                    $ mesonconf -Dprefix=/usr
+                    $ sudo ninja install
+                  </code></pre>
+                  <p>If you have any new features or you've fixed a bug locally, don't forget to submit a Pull Request on GitHub so I can review your additions!</p>
+                </div>
+              </div>
+              <div class="card-action">
+                <p><a href="https://github.com/lainsce/coin" class="link" target="_blank"><i class="fa fa-fw fa-code-fork"></i>View on GitHub</a></p>
+                <p><a href="https://appcenter.elementary.io/com.github.lainsce.coin" class="link" target="_blank"><i class="fa fa-fw fa-cloud-download"></i>Download on AppCenter</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-md-6 form-group">
+            <div class="card shadow">
+              <div class="card-image-big notejot">
+                <p><img src="img/notejot-shot.png" alt="Notejot"></p>
+              </div>
+              <div class="card-body">
+                <div class="card-subtitle">
+                  <p>Notejot</a></p>
+                </div>
+                <div class="card-badge">
+                  <p class="badge blue tooltip" data-tooltip="Version">1.1.4</p><p class="badge success tooltip" data-tooltip="Suggested">$  1.00</p>
+                </div>
+                <div class="card-text">
+                  <p>A stupidly-simple sticky notes app for any type of short term notes.</p>
+                  <ul>
+                      <li>Quit anytime with the shortcut Ctrl + Q</li>
+                  </ul>
+                  <p>Itching for an adventure? Oh, then compile it locally:</p>
+                  <pre><code>
+                    $ git clone https://github.com/lainsce/notejot
+                    $ cd coin
+                    $ meson build &amp;&amp; cd build
+                    $ mesonconf -Dprefix=/usr
+                    $ sudo ninja install
+                  </code></pre>
+                  <p>If you have any new features or you've fixed a bug locally, don't forget to submit a Pull Request on GitHub so I can review your additions!</p>
+                </div>
+              </div>
+              <div class="card-action">
+                <p><a href="https://github.com/lainsce/notejot" class="link" target="_blank"><i class="fa fa-fw fa-code-fork"></i>View on GitHub</a></p>
+                <p><a href="https://appcenter.elementary.io/com.github.lainsce.notejot" class="link" target="_blank"><i class="fa fa-fw fa-cloud-download"></i>Download on AppCenter</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-md-6 form-group">
+            <div class="card shadow">
+              <div class="card-image-big quilter">
+                <p><img src="img/quilter-shot.png" alt="Quilter"></p>
+              </div>
+              <div class="card-body">
+                <div class="card-subtitle">
+                  <p>Quilter</a></p>
+                </div>
+                <div class="card-badge">
+                  <p class="badge blue tooltip" data-tooltip="Version">1.1.7</p><p class="badge success tooltip" data-tooltip="Suggested">$  2.00</p>
+                </div>
+                <div class="card-text">
+                  <p>Focus on your writing and write beautiful solid stories with the Focus Mode in tow</p>
+                  <ul>
+                      <li>Save your documents anywhere, even on existing files.</li>
+                      <li>Configure whether to have Focus Mode or not.</li>
+                      <li>Configure whether to have Dark Mode or not.</li>
+                      <li>Fullscreen your writing area with F11.</li>
+                      <li>Quit anytime with the shortcut Ctrl + Q</li>
+                  </ul>
+                  <p>You know what you're doing? Then, compile it locally:</p>
+                  <pre><code>
+                    $ git clone https://github.com/lainsce/quilter
+                    $ cd coin
+                    $ meson build &amp;&amp; cd build
+                    $ mesonconf -Dprefix=/usr
+                    $ sudo ninja install
+                  </code></pre>
+                  <p>If you have any new features or you've fixed a bug locally, don't forget to submit a Pull Request on GitHub so I can review your additions!</p>
+                </div>
+              </div>
+              <div class="card-action">
+                <p><a href="https://github.com/lainsce/quilter" class="link" target="_blank"><i class="fa fa-fw fa-code-fork"></i>View on GitHub</a></p>
+                <p><a href="https://appcenter.elementary.io/com.github.lainsce.quilter" class="link" target="_blank"><i class="fa fa-fw fa-cloud-download"></i>Download on AppCenter</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer footer-shadow">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12">
+            <ul class="footer-space">
+              <li><a class="button ghost animated" href="https://github.com/lainsce/lainsce.github.io/issues/new" target="_blank" class="ghost"><i class="fa fa-fw fa-sm fa-bug"></i> Report an Issue</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12">
+            <p>© <span id="year">2017</span> Paulo Galardi. Made in São Paulo.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript">$(function yearsSince(epoch){var diff= new Date()-new Date(epoch);var age= Math.floor(diff/31536000000);return age;});</script>
+  </body>
+</html>
