@@ -331,7 +331,10 @@ pre {
     margin-top: 0;
     margin-bottom: 1rem;
     font-size: 90%;
-    color: #292b2c;
+    background-color: rgba(0, 43, 54, 1);
+    border-radius: 8px;
+    color: rgba(131, 148, 150, 1);
+    border: 3px solid rgba(147, 161, 161, 1);
 }
 
 pre code {
@@ -340,7 +343,6 @@ pre code {
     position: relative;
     left: -160px;
     color: inherit;
-    background-color: transparent;
     border-radius: 0;
 }
 
