@@ -7,12 +7,13 @@
  * COLOR PALETTE *
  *****************/
 
-$fg: #353f4a;
+$fg: #383940;
 $button-success: #28ac5d;
 $button-info: #1da1f2;
-$bg: #f6f6f6;
+$bg1: #F6F9FC;
+$bg2: #F1F5F9;
 $link: #2d6cc1;
-$card: #fff;
+$card: #FFFFFF;
 $nav: #c2e9fb;
 $hero: #a1c4fd;
 $nav-idea: #e1ffc4;
@@ -24,30 +25,24 @@ $hero-four: #ff9abe;
 $coin: #badbad;
 $quilter: #b8d2e2;
 $notejot: #fff3ae;
-
 $fab-telegram: #0088cc;
-$fab-hover-telegram: lighten($fab-telegram, 10%);
 $fab-twitter: #1da1f2;
-$fab-hover-twitter: lighten($fab-twitter, 10%);
 $fab-gplus: #dd4b39;
-$fab-hover-gplus: lighten($fab-gplus, 10%);
 $fab-mail: #fbbc05;
-$fab-hover-mail: lighten($fab-mail, 10%);
 $fab-medium: #00ab6c;
-$fab-hover-medium: lighten($fab-medium, 10%);
+$fab-github: #445566;
 
 $link-hover: lighten(mix($button-info, $link, 25%), 10%);
 $link-active: lighten(mix($button-info, $link, 25%), 15%);
 $intro: mix($link, $button-success, 50%);
 $music: mix($fab-mail, $fab-gplus, 50%);
-$movies: $fab-gplus;
+$movies: darken($fab-gplus, 5%);
 $health: darken($fab-gplus, 10%);
 $books: mix($link, $button-info, 50%);
 $tech: darken(mix($link, $button-info, 50%), 10%);
 $economy: darken($button-success, 5%);
-
 $badge: lighten($fg, 20%);
-$tooltip: $fg;
+$tooltip: darken($fg, 20%);
 $fab: lighten($fg, 5%);
 $fab-hover: lighten($fg, 20%);
 $button-success-hover: darken($button-success, 10%);
@@ -66,9 +61,9 @@ $button-ghost-night-border: lighten($button-ghost-night, 5%);
 $button-ghost-night-active: $button-ghost-night;
 $button-neutral: lighten($button-ghost, 20%);
 $button-neutral-border: lighten($button-ghost, 20%);
-$badge-success: $button-success;
-$badge-success-hover: $button-success-hover;
-$badge-blue-hover: $button-info-hover;
+$badge-success: lighten($button-success, 5%);
+$badge-success-hover: lighten($button-success, 10%);
+$badge-blue-hover: darken($button-info, 5%);
 
 /*****************
  *    MIXINS     *
@@ -180,7 +175,7 @@ html {
     margin: 0;
     min-height: 100%;
     overflow-x: hidden;
-    background-color: $bg;
+    @include linear-gradient(0deg, $bg1 0%, $bg2 100%);
     color: $fg;
 }
 
@@ -273,19 +268,19 @@ img {
 /* BADGE COLORS */
 
 .badge.success {
-    color: $bg;
+    color: $bg1;
     background-color: $badge-success;
     border: 1px solid $badge-success;
 }
 
 .badge.success:hover {
-    color: $bg;
+    color: $bg1;
     background-color: $badge-success-hover;
     border: 1px solid $badge-success-hover;
 }
 
 .badge.blue:hover {
-    color: $bg;
+    color: $bg1;
     background-color: $badge-blue-hover;
     border: 1px solid $badge-blue-hover;
 }
@@ -454,19 +449,19 @@ h4 {
     background-color: $button-success;
     background-image: none;
     border: 1px solid $button-success;
-    color: $bg;
+    color: $bg1;
 }
 
 .button.success:hover {
     background-color: $button-success-hover;
-    color: $bg;
+    color: $bg1;
     border: 1px solid $button-success-border;
 }
 
 .button.success:active {
     background-color: $button-success-active;
     background-image: none;
-    color: $bg;
+    color: $bg1;
     border: 1px solid $button-success-border;
 }
 
@@ -478,19 +473,19 @@ h4 {
     background-color: $button-success;
     background-image: none;
     border: 1px solid $button-success;
-    color: $bg;
+    color: $bg1;
 }
 
 .button-nav.success:hover {
     background-color: $button-success-hover;
-    color: $bg;
+    color: $bg1;
     border: 1px solid $button-success-border;
 }
 
 .button-nav.success:active {
     background-color: $button-success-active;
     background-image: none;
-    color: $bg;
+    color: $bg1;
     border: 1px solid $button-success-border;
 }
 
@@ -502,19 +497,19 @@ h4 {
     background-color: $button-info;
     background-image: none;
     border: 1px solid $button-info;
-    color: $bg;
+    color: $bg1;
 }
 
 .button.info:hover {
     background-color: $button-info-hover;
-    color: $bg;
+    color: $bg1;
     border: 1px solid $button-info-border;
 }
 
 .button.info:active {
     background-color: $button-info-active;
     background-image: none;
-    color: $bg;
+    color: $bg1;
     border: 1px solid $button-info-border;
 }
 
@@ -557,7 +552,7 @@ h4 {
     background-color: $button-ghost-hover;
     background-image: none;
     box-shadow: none;
-    color: $bg;
+    color: $bg1;
     border: 1px solid $button-ghost-border;
 }
 
@@ -565,7 +560,7 @@ h4 {
     background-color: $button-ghost-active;
     background-image: none;
     box-shadow: none;
-    color: $bg;
+    color: $bg1;
     border: 1px solid $button-ghost-border;
 }
 
@@ -605,7 +600,7 @@ h4 {
     background-color: $button-info-hover;
     background-image: none;
     box-shadow: none;
-    color: $bg;
+    color: $bg1;
     border: 1px solid $button-info-border;
 }
 
@@ -613,7 +608,7 @@ h4 {
     background-color: $button-info-active;
     background-image: none;
     box-shadow: none;
-    color: $bg;
+    color: $bg1;
     border: 1px solid $button-info-border;
 }
 
@@ -757,8 +752,8 @@ h4 {
 }
 
 .fab.github:hover {
-    background-color: $fab;
-    border: 1px solid $fab;
+    background-color: $fab-github;
+    border: 1px solid $fab-github;
 }
 
 .fab.mail:hover {
