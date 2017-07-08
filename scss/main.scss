@@ -15,14 +15,14 @@ $bg2: #F1F5F9;
 $chip: #E0E4E9;
 $link: #1963CE;
 $card: #FBFDFF;
-$nav: #c2e9fb;
-$hero: #a1c4fd;
-$nav-idea: #e1ffc4;
-$hero-idea: #b1ffc4;
-$nav-about: #fbf1c2;
-$hero-about: #fbd1b2;
-$nav-four: #fad0c4;
-$hero-four: #ff9abe;
+$nav: #1E93D8;
+$hero: #457fca;
+$nav-idea: #93F9B9;
+$hero-idea: #1D976C;
+$nav-about: #F3D999;
+$hero-about: #9D976C;
+$nav-four: #556270;
+$hero-four: #334050;
 $nav-apps: mix($nav, $nav-idea, 50%);
 $hero-apps: mix($hero, $hero-idea, 50%);
 $coin: #badbad;
@@ -97,8 +97,16 @@ $badge-blue-hover: darken($button-info, 5%);
   @include prefixer(box-shadow, $box-shadow, webkit moz ms o spec);
 }
 
-@mixin font($size: false, $color: false, $weight: false,  $lh: false) {
+@mixin font-sans($size: false, $color: false, $weight: false,  $lh: false) {
     font-family: 'Muli', Helvetica, Arial, sans-serif;
+    @if $size { font-size: $size; }
+    @if $color { color: $color; }
+    @if $weight { font-weight: $weight; }
+    @if $lh { line-height: $lh; }
+}
+
+@mixin font-serif($size: false, $color: false, $weight: false,  $lh: false) {
+    font-family: 'Playfair Display', Georgia, Times, serif;
     @if $size { font-size: $size; }
     @if $color { color: $color; }
     @if $weight { font-weight: $weight; }
@@ -171,7 +179,7 @@ html {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    @include font($size: 1rem, $weight: 400);
+    @include font-sans($size: 1rem, $weight: 400);
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
     text-rendering: geometricPrecision;
@@ -337,19 +345,19 @@ a {
 }
 
 h1 {
-    @include font($size: 3.5rem, $weight: 700);
+    @include font-serif($size: 3.5rem, $weight: 700);
 }
 
 h2 {
-    @include font($size: 2.5rem, $weight: 700);
+    @include font-serif($size: 2.5rem, $weight: 400);
 }
 
 h3 {
-    @include font($size: 1.5rem, $weight: 700);
+    @include font-serif($size: 1.5rem, $weight: 400);
 }
 
 h4 {
-    @include font($size: 1.0rem, $weight: 700);
+    @include font-sans($size: 1.0rem);
 }
 
 pre {
@@ -379,7 +387,7 @@ code, kbd, pre, samp {
 .title {
     margin: 0 auto;
     text-align: center;
-    @include font($size: 1.5rem, $weight: 400, $color: $fg);
+    @include font-serif($size: 1.5rem, $weight: 400, $color: $fg);
 }
 
 .dim-label {
@@ -397,16 +405,16 @@ code, kbd, pre, samp {
 }
 
 .card-title {
-  @include font($size: 2.5rem, $weight: 700, $color: $fg);
+  @include font-serif($size: 2.5rem, $color: $fg, $weight: 400);
 }
 
 .card-subtitle {
-  @include font($size: 1.5rem, $weight: 700, $color: $fg);
+  @include font-serif($size: 1.5rem, $color: $fg, $weight: 400);
   text-align: left;
 }
 
 .card-text {
-  @include font($size: 1.0rem, $weight: 400, $color: $fg);
+  @include font-sans($size: 1.0rem, $color: $fg, $weight: 400);
   text-align: left;
 }
 
@@ -448,7 +456,7 @@ code, kbd, pre, samp {
   padding: 16px 1.5rem;
   text-align: left;
   border-radius: 0 0 16px 16px;
-  @include font($size: 1.0rem, $weight: 700);
+  @include font-sans($size: 1.0rem, $weight: 400);
 }
 
 .card-action .fa {
@@ -503,7 +511,7 @@ code, kbd, pre, samp {
     padding: 0.8rem;
     text-align: center;
     text-transform: uppercase;
-    @include font($weight: 700);
+    @include font-sans($weight: 700);
 }
 
 .button + .button {
@@ -515,7 +523,7 @@ code, kbd, pre, samp {
 }
 
 .footer-button {
-    @include font($size: 0.7rem);
+    @include font-sans($size: 0.7rem);
     padding: 0.4rem;
 }
 
@@ -710,10 +718,10 @@ code, kbd, pre, samp {
    padding-left: 1rem;
    padding-right: 1rem;
    display: inline-block;
-   @include font($size: 1rem, $weight: 400, $lh: 3rem);
+   @include font-sans($size: 1rem, $weight: 400, $lh: 3rem);
    white-space: nowrap;
    position: relative;
-   background-color: lighten($fg, 5%);
+   background-color: #556270;
    outline: none;
 }
 
@@ -725,7 +733,7 @@ code, kbd, pre, samp {
      display: inline-block;
      margin: 0;
      border-bottom: 3px solid transparent;
-     @include font($size: 0.9rem, $weight: 700, $color: $bg1, $lh: 3rem);
+     @include font-sans($size: 0.9rem, $weight: 700, $color: $bg1, $lh: 3rem);
 }
 
 .nav-icon:hover {
@@ -749,7 +757,7 @@ code, kbd, pre, samp {
 }
 
 .nav-link {
-    @include font($color: $bg1);
+    @include font-sans($color: $bg1);
     padding: 0 0.6rem;
 }
 
@@ -761,7 +769,7 @@ code, kbd, pre, samp {
     @include linear-gradient(#fff 0%, #f6f6f6 100%);
     color: $fg;
     box-sizing: border-box;
-    @include font($size: 0.8rem, $weight: 400, $lh: 0.8rem);
+    @include font-sans($size: 0.8rem, $weight: 400, $lh: 0.8rem);
     padding: 1rem;
     position: relative;
     text-align: center;
@@ -774,7 +782,7 @@ code, kbd, pre, samp {
     @include linear-gradient(#333 0%, #262424 100%);
     color: $card;
     box-sizing: border-box;
-    @include font($size: 0.8rem, $weight: 400, $lh: 0.8rem);
+    @include font-sans($size: 0.8rem, $weight: 400, $lh: 0.8rem);
     padding: 1rem 0;
     position: relative;
     text-align: center;
