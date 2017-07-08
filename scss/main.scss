@@ -33,6 +33,7 @@ $fab-twitter: #1da1f2;
 $fab-gplus: #dd4b39;
 $fab-mail: #fbbc05;
 $fab-medium: #00ab6c;
+$fab-patreon: #ee7c48;
 $fab-github: #445566;
 
 $link-hover: lighten(mix($button-info, $link, 25%), 5%);
@@ -844,6 +845,11 @@ code, kbd, pre, samp {
 .fab.telegram:hover {
     background-color: $fab-telegram;
     border: 1px solid $fab-telegram;
+}
+
+.fab.patreon:hover {
+    background-color: $fab-patreon;
+    border: 1px solid $fab-patreon;
 }
 
 .fab-img {
