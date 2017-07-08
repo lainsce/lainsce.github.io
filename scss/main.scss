@@ -12,6 +12,7 @@ $button-success: #28ac5d;
 $button-info: #1da1d2;
 $bg1: #F6F9FC;
 $bg2: #F1F5F9;
+$chip: #E0E0E0;
 $link: #2d6cc1;
 $card: #FFFFFF;
 $nav: #c2e9fb;
@@ -253,13 +254,15 @@ img {
     background-color: transparent;
     border: 1px solid $badge;
     display: inline;
-    padding: .2em .6em .2em .6em;
-    font-size: 85%;
-    line-height: 1;
+    padding: 6px 8px;
+    font-size: 13px;
+    line-height: 32px;
+    height: 32px;
     white-space: nowrap;
     vertical-align: baseline;
     border-radius: .25em;
-    margin-right: 5px;
+    margin-right: 6px;
+    margin-bottom: 5px;
 }
 
 .badge.fa {
@@ -287,7 +290,30 @@ img {
     border: 1px solid $badge-blue-hover;
 }
 
+/*****************
+ *     CHIPS    *
+ *****************/
+.chip {
+    display: inline-block;
+    height: 32px;
+    font-size: 13px;
+    font-weight: 700;
+    color: $fg;
+    line-height: 32px;
+    padding: 0 12px;
+    border-radius: 16px;
+    background-color: $chip;
+    margin-bottom: 5px;
+    margin-right: 5px;
+}
 
+.chip>img {
+    float: left;
+    margin: 0 8px 0 -12px;
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+}
 
 /***************
  * TEXT STYLES *
