@@ -463,6 +463,10 @@ code, kbd, pre, samp {
   text-align: justify;
 }
 
+.card-chip {
+  text-align: justify;
+}
+
 .card-image.coin {
   @include linear-gradient(135deg, $coin 0%, darken($coin, 5%) 50%, darken($coin, 10%) 100%);
 }
