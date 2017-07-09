@@ -9,18 +9,19 @@
 
 $fg: #383940;
 $button-success: #2DCF94;
-$button-info: #1E93D8;
+$button-info: #55a7da;
+$scroll: $fg;
 $bg1: #F6F9FC;
 $bg2: #F1F5F9;
 $chip: #E0E4E9;
-$link: #1963CE;
+$link: #5585da;
 $card: #FBFDFF;
-$nav: #1E93D8;
-$hero: #457fca;
-$nav-idea: #93F9B9;
-$hero-idea: #1D976C;
-$nav-about: #F3D999;
-$hero-about: #9D976C;
+$nav: #cae7f7;
+$hero: #a9c3e6;
+$nav-idea: #c3fcd8;
+$hero-idea: #95eacc;
+$nav-about: #f8eac7;
+$hero-about: #d0cdb9;
 $nav-four: #556270;
 $hero-four: #334050;
 $nav-apps: mix($nav, $nav-idea, 50%);
@@ -49,9 +50,9 @@ $badge: lighten($fg, 20%);
 $tooltip: darken($fg, 20%);
 $fab: lighten($fg, 5%);
 $fab-hover: lighten($fg, 20%);
-$button-success-hover: darken($button-success, 10%);
-$button-success-border: darken($button-success, 15%);
-$button-success-active: darken($button-success, 15%);
+$button-success-hover: darken($button-success, 5%);
+$button-success-border: darken($button-success, 5%);
+$button-success-active: darken($button-success, 10%);
 $button-info-hover: darken($button-info, 5%);
 $button-info-border: darken($button-info, 10%);
 $button-info-active: darken($button-info, 10%);
@@ -350,6 +351,7 @@ h1 {
 }
 
 h2 {
+    padding-top: 1rem;
     @include font-serif($size: 2.5rem, $weight: 400);
 }
 
@@ -689,7 +691,8 @@ code, kbd, pre, samp {
      display: -ms-flexbox;
      display: flex;
      margin-bottom: 32px;
-     height: 40rem;
+     margin-top: -5px;
+     height: 42rem;
      @include linear-gradient(0deg, $hero 0%, $nav 100%);
 }
 
@@ -716,6 +719,7 @@ code, kbd, pre, samp {
 .nav {
    background-image: none;
    height: 3.2rem;
+   width: 100%;
    padding-left: 1rem;
    padding-right: 1rem;
    display: inline-block;
@@ -724,6 +728,7 @@ code, kbd, pre, samp {
    position: relative;
    background-color: #556270;
    outline: none;
+   z-index: 999;
 }
 
 .nav:focus {
