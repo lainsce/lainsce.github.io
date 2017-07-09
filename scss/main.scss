@@ -412,7 +412,7 @@ code, kbd, pre, samp {
 }
 
 .card-subtitle {
-  @include font-serif($size: 1.5rem, $color: $fg, $weight: 400);
+  @include font-sans($size: 1.5rem, $color: $fg, $weight: 400);
   text-align: left;
 }
 
