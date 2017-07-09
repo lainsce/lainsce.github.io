@@ -367,23 +367,24 @@ pre {
     margin-top: 0;
     margin-bottom: 1rem;
     font-size: 90%;
-    background-color: rgba(0, 43, 54, 1);
+    @include linear-gradient(to bottom, #3D3F44 0%, darken(#3D3F44, 5%) 50%, darken(#3D3F44, 10%) 100%);
     border-radius: 8px;
-    color: rgba(131, 148, 150, 1);
-    border: 3px solid rgba(147, 161, 161, 1);
+    color: #E5E8E9;
+    border: 4px solid #808890;
 }
 
 pre code {
     padding: 0;
+    width: 80px;
     font-size: inherit;
     position: relative;
-    left: -160px;
+    left: -150px;
     color: inherit;
     border-radius: 0;
 }
 
 code, kbd, pre, samp {
-    font-family: Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+    font-family: Hack,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
 }
 
 .title {
