@@ -107,7 +107,7 @@ $badge-blue-hover: darken($button-info, 5%);
 }
 
 @mixin font-serif($size: false, $color: false, $weight: false,  $lh: false) {
-    font-family: 'Playfair Display', Georgia, Times, serif;
+    font-family: 'Lora', Georgia, Times, serif;
     @if $size { font-size: $size; }
     @if $color { color: $color; }
     @if $weight { font-weight: $weight; }
