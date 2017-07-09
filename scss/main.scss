@@ -7,15 +7,13 @@
  * COLOR PALETTE *
  *****************/
 
-$fg: #383940;
-$button-success: #2DCF94;
-$button-info: #55a7da;
-$scroll: $fg;
-$bg1: #F6F9FC;
-$bg2: #F1F5F9;
+$fg: #545464;
+$button-success: #41CEB4;
+$button-info: #668DFC;
+$bg1: #F0F4F9;
+$bg2: #EDF1F6;
 $chip: #E0E4E9;
-$link: #5585da;
-$card: #FBFDFF;
+$card: #FFF;
 $nav: #cae7f7;
 $hero: #a9c3e6;
 $nav-idea: #c3fcd8;
@@ -31,19 +29,20 @@ $quilter: #b8d2e2;
 $notejot: #fff3ae;
 $fab-telegram: #0088cc;
 $fab-twitter: #1da1f2;
-$fab-gplus: #dd4b39;
-$fab-mail: #fbbc05;
-$fab-medium: #00ab6c;
-$fab-patreon: #ee7c48;
-$fab-github: #445566;
+$fab-gplus: #FF4D41;
+$fab-mail: #fcd566;
+$fab-medium: #0BE370;
+$fab-patreon: #F96854;
+$fab-github: #555566;
 
+$link: $button-info;
 $link-hover: lighten(mix($button-info, $link, 25%), 5%);
 $link-active: lighten(mix($button-info, $link, 25%), 10%);
 $intro: mix($link, $button-success, 50%);
 $music: mix($fab-mail, $fab-gplus, 50%);
 $movies: darken($fab-gplus, 5%);
 $health: darken($fab-gplus, 10%);
-$books: mix($link, $button-info, 50%);
+$books: darken(mix($link, $button-info, 50%), 5%);
 $tech: darken(mix($link, $button-info, 50%), 10%);
 $economy: darken($button-success, 5%);
 $badge: lighten($fg, 20%);
@@ -562,14 +561,14 @@ code, kbd, pre, samp {
     background-image: none;
     border: 1px solid $button-info;
     color: $bg1;
-    @include box-shadow(0px 3px 12px 0px rgba(31,152,222,.5));
+    @include box-shadow(0px 3px 12px 0px $button-info);
 }
 
 .button.info:hover {
     background-color: $button-info-hover;
     color: $bg1;
     border: 1px solid $button-info-border;
-    @include box-shadow(0px 3px 12px 0px rgba(31,152,222,.5));
+    @include box-shadow(0px 3px 12px 0px $button-info);
 }
 
 .button.info:active {
@@ -577,7 +576,7 @@ code, kbd, pre, samp {
     background-image: none;
     color: $bg1;
     border: 1px solid $button-info-border;
-    @include box-shadow(0px 3px 12px 0px rgba(31,152,222,.5));
+    @include box-shadow(0px 3px 12px 0px $button-info);
 }
 
 .button.info:focus {
