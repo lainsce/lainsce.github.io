@@ -363,19 +363,15 @@ h4 {
 }
 
 pre {
-    display: block;
-    margin-top: 0;
-    margin-bottom: 1rem;
     font-size: 90%;
-    @include linear-gradient(to bottom, #3D3F44 0%, darken(#3D3F44, 5%) 50%, darken(#3D3F44, 10%) 100%);
     border-radius: 8px;
+    @include linear-gradient(to bottom, #3D3F44 0%, darken(#3D3F44, 5%) 50%, darken(#3D3F44, 10%) 100%);
     color: #E5E8E9;
     border: 4px solid #808890;
 }
 
 pre code {
-    padding: 0;
-    width: 80px;
+    white-space: pre-wrap;
     font-size: inherit;
     position: relative;
     left: -150px;
@@ -383,8 +379,20 @@ pre code {
     border-radius: 0;
 }
 
+kbd {
+    padding: .2rem .4rem;
+    font-size: 90%;
+    position: relative;
+    left: 5px;
+    color: #3D3F44;
+    background-color: #E8E8DF;
+    border-bottom: 2px solid #D7D7CE;
+    border-radius: .2rem;
+}
+
 code, kbd, pre, samp {
     font-family: Hack,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+    font-size: 1em;
 }
 
 .title {
