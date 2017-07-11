@@ -365,9 +365,9 @@ h4 {
 pre {
     font-size: 90%;
     border-radius: 8px;
-    @include linear-gradient(to bottom, #3D3F44 0%, darken(#3D3F44, 5%) 50%, darken(#3D3F44, 10%) 100%);
-    color: #E5E8E9;
-    border: 4px solid #808890;
+    @include linear-gradient(to bottom, #021B21 0%, darken(#021B21, 5%) 50%, darken(#021B21, 10%) 100%);
+    color: #E8DFD6;
+    border: 4px solid #E8E8DF;
 }
 
 pre code {
@@ -384,9 +384,9 @@ kbd {
     font-size: 90%;
     position: relative;
     left: 5px;
-    color: #3D3F44;
-    background-color: #E8E8DF;
-    border-bottom: 2px solid #D7D7CE;
+    color: #E8E8DF;
+    background-color: #3D3F44;
+    border-bottom: 2px solid #4E4F55;
     border-radius: .2rem;
 }
 
