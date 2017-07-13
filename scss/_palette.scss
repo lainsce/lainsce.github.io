@@ -1,0 +1,65 @@
+/*****************
+ * COLOR PALETTE *
+ *****************/
+
+$fg: #545464;
+$button-success: #41CEB4;
+$button-info: #668DFC;
+$bg1: #F0F4F9;
+$bg2: #EDF1F6;
+$chip: #E0E4E9;
+$card: #FFF;
+$nav: #cae7f7;
+$hero: #a9c3e6;
+$nav-idea: #c3fcd8;
+$hero-idea: #95eacc;
+$nav-about: #f8eac7;
+$hero-about: #d0cdb9;
+$nav-four: #556270;
+$hero-four: #334050;
+$nav-apps: mix($nav, $nav-idea, 50%);
+$hero-apps: mix($hero, $hero-idea, 50%);
+$coin: #badbad;
+$quilter: #b8d2e2;
+$notejot: #fff3ae;
+$fab-telegram: #0088cc;
+$fab-twitter: #1da1f2;
+$fab-gplus: #FF4D41;
+$fab-mail: #fcd566;
+$fab-medium: #0BE370;
+$fab-patreon: #F96854;
+$fab-github: #555566;
+
+$link: $button-info;
+$link-hover: lighten(mix($button-info, $link, 25%), 5%);
+$link-active: lighten(mix($button-info, $link, 25%), 10%);
+$intro: mix($link, $button-success, 50%);
+$music: mix($fab-mail, $fab-gplus, 50%);
+$movies: darken($fab-gplus, 5%);
+$health: darken($fab-gplus, 10%);
+$books: darken(mix($link, $button-info, 50%), 5%);
+$tech: darken(mix($link, $button-info, 50%), 10%);
+$economy: darken($button-success, 5%);
+$badge: lighten($fg, 20%);
+$tooltip: darken($fg, 20%);
+$fab: lighten($fg, 5%);
+$fab-hover: lighten($fg, 20%);
+$button-success-hover: darken($button-success, 5%);
+$button-success-border: darken($button-success, 5%);
+$button-success-active: darken($button-success, 10%);
+$button-info-hover: darken($button-info, 5%);
+$button-info-border: darken($button-info, 10%);
+$button-info-active: darken($button-info, 10%);
+$button-ghost: lighten($fg, 20%);
+$button-ghost-hover: darken($button-ghost, 5%);
+$button-ghost-border: darken($button-ghost, 10%);
+$button-ghost-active: darken($button-ghost, 15%);
+$button-ghost-night: lighten($button-ghost, 35%);
+$button-ghost-night-hover: lighten($button-ghost-night, 10%);
+$button-ghost-night-border: lighten($button-ghost-night, 5%);
+$button-ghost-night-active: $button-ghost-night;
+$button-neutral: lighten($button-ghost, 20%);
+$button-neutral-border: lighten($button-ghost, 20%);
+$badge-success: lighten($button-success, 5%);
+$badge-success-hover: lighten($button-success, 10%);
+$badge-blue-hover: darken($button-info, 5%);
