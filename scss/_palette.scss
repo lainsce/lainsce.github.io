@@ -34,6 +34,7 @@ $link: $button-info;
 $link-hover: lighten(mix($button-info, $link, 25%), 5%);
 $link-active: lighten(mix($button-info, $link, 25%), 10%);
 $intro: mix($link, $button-success, 50%);
+$me: mix($button-success, $fab-mail, 50%);
 $music: mix($fab-mail, $fab-gplus, 50%);
 $movies: darken($fab-gplus, 5%);
 $health: darken($fab-gplus, 10%);

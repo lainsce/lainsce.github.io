@@ -783,6 +783,11 @@ code, kbd, pre, samp {
     color: $intro;
 }
 
+.me .card-title,
+.me .fa-4x {
+    color: $me;
+}
+
 .economy .card-title,
 .economy .fa-4x {
     color: $economy;

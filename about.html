@@ -42,18 +42,23 @@ permalink: /about
           <section class="hero about">
             <div class="container">
               <div class="row">
-                <div class="col-xs-12 intro" align=center>
+                <div class="col-xs-12 me">
                   <div class="card shadow">
                     <div class="card-body">
-                      <div class="card-title">
-                        <p><i class="fa fa-fw fa-info"></i> Intro</p>
-                      </div>
-                      <div class="card-subtitle">
-                        <p>This page is about stuff I like most in media.</p>
+                      <div class="card-title" align=center>
+                        <p><i class="fa fa-fw fa-male"></i> About Me</p>
                       </div>
                       <div class="card-text">
-                        <p>This is the section where I show you what artists I like to listen, books I've read and liked, and movies I enjoyed watching. Feel free to search these titles/artists up and enjoy listening/reading/watching them.</p>
+                        <p>I am a <span id=age>2x</span> year old programmer by hobby and UI/UX designer also by hobby that loves to code in JavaScript and Vala.</p>
+                        <p>I live in the "city of downpours", São Paulo, in Brazil. Actually in the outskirts of its metropolitan area, but it still counts.</p>
+                        <p>I can't live without a Linux distro on my PC, since I like to live freely. I also used to "rice" my desktop. Now I just "rice" my Android phone.</p>
+                        <p>I know about: <b>Vala, Python, HTML/CSS, Sass, JavaScript (ES5, ES6, and ES7), Electron, PyGame, Meson, Bash, Zsh, Webpack, and npm.</b></p>
                       </div>
+                    </div>
+                    <div class="card-action">
+                      <p><a class="link" href="https://i.redd.it/odzbrga7zuzx.png"><i class="fa fa-fw fa-link"></i> An example of my desktop rice</a></p>
+                      <p><a class="link" href="https://i.redd.it/wt4fuh5h44gy.png"><i class="fa fa-fw fa-link"></i> An example of my phone rice</a></p>
+                      <p>Note: I don't rice my desktop anymore since I'm using the elementary OS desktop now.</p>
                     </div>
                   </div>
                 </div>
@@ -85,6 +90,12 @@ permalink: /about
                     </div>
                     <div class="card-text">
                       <p><i class="fa fa-fw fa-star"></i><i class="fa fa-fw fa-star"></i><i class="fa fa-fw fa-star"></i>· 80's Revival</p>
+                    </div>
+                    <div class="card-subtitle">
+                      <p><img src="" alt="" class="circle"> James Ferraro</p>
+                    </div>
+                    <div class="card-text">
+                      <p><i class="fa fa-fw fa-star"></i><i class="fa fa-fw fa-star"></i><i class="fa fa-fw fa-star"></i>· IDM</p>
                     </div>
                     <div class="card-subtitle">
                       <p><img src="https://lastfm-img2.akamaized.net/i/u/avatar170s/f7abc7c43028469bada0d13cec314f31.jpg" alt="" class="circle"> Oneohtrix Point Never</p>
@@ -285,6 +296,7 @@ permalink: /about
         </div>
       </footer>
       <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-      <script type="text/javascript">$(function(){$("#year").text((new Date).getFullYear ());var things=["Beer", "Coffee", "Drink", "Pizza", "Snack", "Pop"];$("#thing").text (things[Math.floor(Math.random()*things.length)]);}); $(function yearsSince(epoch){var diff= new Date()-new Date(epoch);var age= Math.floor(diff/31536000000);return age;});</script>
+      <script type="text/javascript">$(function(){$("#year").text((new Date).getFullYear ());var things=["Beer", "Coffee", "Drink", "Pizza", "Snack", "Pop"];$("#thing").text (things[Math.floor(Math.random()*things.length)]);}); $(function yearsSince(epoch){var diff= new Date()-new Date(epoch);var age= Math.floor(diff/311236000000);return age;});</script>
+      <script type="text/javascript">var birth = new Date('1993-06-06'); function getAge(birth) { ageMS = Date.parse(Date()) - Date.parse(birth); age = new Date(); age.setTime(ageMS); ageYear = age.getFullYear() - 1970; return ageYear; } document.getElementById('age').innerHTML = getAge(birth);</script>
   </body>
 </html>
