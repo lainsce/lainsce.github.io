@@ -2,12 +2,12 @@
  * COLOR PALETTE *
  *****************/
 
-$fg: #545464;
-$button-success: #41CEB4;
-$button-info: #668DFC;
-$bg1: #F0F4F9;
-$bg2: #EDF1F6;
-$chip: #E0E4E9;
+$fg: #555555;
+$button-success: #00D664;
+$button-info: #2C7DF7;
+$bg1: #FEFEFE;
+$bg2: #FFFFFF;
+$chip: #EEE;
 $card: #FFF;
 $nav: #cae7f7;
 $hero: #a9c3e6;
@@ -15,8 +15,8 @@ $nav-idea: #c3fcd8;
 $hero-idea: #95eacc;
 $nav-about: #f8eac7;
 $hero-about: #d0cdb9;
-$nav-four: #556270;
-$hero-four: #334050;
+$nav-four: #555555;
+$hero-four: #333333;
 $nav-apps: mix($nav, $nav-idea, 50%);
 $hero-apps: mix($hero, $hero-idea, 50%);
 $coin: #badbad;
@@ -28,7 +28,7 @@ $fab-gplus: #FF4D41;
 $fab-mail: #fcd566;
 $fab-medium: #0BE370;
 $fab-patreon: #F96854;
-$fab-github: #555566;
+$fab-github: #555555;
 
 $link: $button-info;
 $link-hover: lighten(mix($button-info, $link, 25%), 5%);
