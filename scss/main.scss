@@ -83,11 +83,11 @@ img {
 }
 
 .shadow {
-    @include box-shadow(0 6px 15px rgba(36,37,38,0.08));
+    @include box-shadow(0 3px 15px rgba(0,0,0,0.12));
 }
 
 .footer-shadow {
-    @include box-shadow(0px -6px 15px rgba(36,37,38,0.08));
+    @include box-shadow(0px -3px 15px rgba(0,0,0,0.12));
 }
 
 .logo {
@@ -204,10 +204,10 @@ h4 {
 
 pre {
     font-size: 90%;
-    border-radius: 8px;
-    @include linear-gradient(to bottom, #021B21 0%, lighten(#021B21, 2%) 50%, lighten(#021B21, 5%) 100%);
+    border-radius: 3px;
+    background-color: #021B21;
     color: #E8DFD6;
-    border: 4px solid #E8E8DF;
+    border: 5px solid #354E54;
 }
 
 pre code {
@@ -250,7 +250,7 @@ code, kbd, pre, samp {
  *****************/
 
 .card {
-  border-radius: 16px;
+  border-radius: 8px;
   line-height: 1.5;
   background-color: $card;
 }
@@ -269,6 +269,20 @@ code, kbd, pre, samp {
   text-align: left;
 }
 
+.card-title-night {
+  @include font-header($size: 2.5rem, $color: $bg1, $weight: 400);
+}
+
+.card-subtitle-night {
+  @include font-sans($size: 1.5rem, $color: $bg1, $weight: 400);
+  text-align: left;
+}
+
+.card-text-night {
+  @include font-sans($size: 1.0rem, $color: $bg1, $weight: 400);
+  text-align: left;
+}
+
 .card-image {
     display: block;
     position: relative;
@@ -279,7 +293,7 @@ code, kbd, pre, samp {
     bottom: 0;
     padding: 2rem 0 2rem 0;
     border-bottom: 1px solid rgba(160,160,160,0.4);
-    border-radius: 16px 16px 0 0;
+    border-radius: 8px 8px 0 0;
 }
 
 .card-image-big {
@@ -292,7 +306,7 @@ code, kbd, pre, samp {
     bottom: 0;
     padding: 0;
     border-bottom: 1px solid rgba(160,160,160,0.4);
-    border-radius: 16px 16px 0 0;
+    border-radius: 8px 8px 0 0;
 }
 
 .card-image-big img {
@@ -327,27 +341,27 @@ code, kbd, pre, samp {
 }
 
 .card-image.coin {
-  @include linear-gradient(135deg, $coin 0%, darken($coin, 5%) 50%, darken($coin, 10%) 100%);
+  @include linear-gradient(135deg, $coin 0%, darken($coin, 5%) 50%, darken($coin, 7%) 100%);
 }
 
 .card-image.quilter {
-  @include linear-gradient(135deg, $quilter 0%, darken($quilter, 5%) 50%, darken($quilter, 10%) 100%);
+  @include linear-gradient(135deg, $quilter 0%, darken($quilter, 5%) 50%, darken($quilter, 7%) 100%);
 }
 
 .card-image.notejot {
-  @include linear-gradient(135deg, $notejot 0%, darken($notejot, 5%) 50%, darken($notejot, 10%) 100%);
+  @include linear-gradient(135deg, $notejot 0%, darken($notejot, 5%) 50%, darken($notejot, 7%) 100%);
 }
 
 .card-image-big.coin {
-  @include linear-gradient(135deg, $coin 0%, lighten($coin, 5%) 50%, lighten($coin, 10%) 100%);
+  @include linear-gradient(160deg, $coin 0%, darken($coin, 5%) 50%, darken($coin, 7%) 100%);
 }
 
 .card-image-big.quilter {
-  @include linear-gradient(135deg, $quilter 0%, lighten($quilter, 5%) 50%, lighten($quilter, 10%) 100%);
+  @include linear-gradient(160deg, $quilter 0%, darken($quilter, 5%) 50%, darken($quilter, 7%) 100%);
 }
 
 .card-image-big.notejot {
-  @include linear-gradient(135deg, $notejot 0%, lighten($notejot, 5%) 50%, lighten($notejot, 10%) 100%);
+  @include linear-gradient(160deg, $notejot 0%, darken($notejot, 5%) 50%, darken($notejot, 7%) 100%);
 }
 
 /********************
@@ -355,7 +369,7 @@ code, kbd, pre, samp {
  ********************/
 
 .button {
-    border-radius: 100px;
+    border-radius: 8px;
     display: inline-block;
     margin: 1rem 0;
     min-width: 100px;
@@ -456,11 +470,11 @@ code, kbd, pre, samp {
 }
 
 .button.ghost {
-    background-color: transparent;
+    background-color: rgba(0,0,0,0.1);
     background-image: none;
     box-shadow: none;
-    color: $button-ghost;
-    border: 1px solid $button-ghost;
+    color: $fg;
+    border: 1px solid transparent;
 }
 
 .button.ghost:hover {
@@ -468,7 +482,7 @@ code, kbd, pre, samp {
     background-image: none;
     box-shadow: none;
     color: $bg1;
-    border: 1px solid $button-ghost-border;
+    border: 1px solid transparent;
 }
 
 .button.ghost:active {
@@ -476,15 +490,15 @@ code, kbd, pre, samp {
     background-image: none;
     box-shadow: none;
     color: $bg1;
-    border: 1px solid $button-ghost-border;
+    border: 1px solid transparent;
 }
 
 .button.ghost-night {
-    background-color: transparent;
-    background-image: none;
-    box-shadow: none;
-    color: $button-ghost-night;
-    border: 1px solid $button-ghost-night;
+  background-color: rgba(255,255,255,0.3);
+  background-image: none;
+  border: 1px solid transparent;
+  box-shadow: none;
+  color: $bg1;
 }
 
 .button.ghost-night:hover {
@@ -492,7 +506,7 @@ code, kbd, pre, samp {
     background-image: none;
     box-shadow: none;
     color: $fg;
-    border: 1px solid $button-ghost-night-border;
+    border: 1px solid transparent;
 }
 
 .button.ghost-night:active {
@@ -500,31 +514,55 @@ code, kbd, pre, samp {
     background-image: none;
     box-shadow: none;
     color: $fg;
-    border: 1px solid $button-ghost-night-border;
+    border: 1px solid transparent;
 }
 
 .button.ghost-twitter {
-    background-color: transparent;
+    background-color: rgba(255,255,255,0.3);
     background-image: none;
+    border: 1px solid transparent;
     box-shadow: none;
-    color: $button-info;
-    border: 1px solid $button-info;
+    color: $bg1;
 }
 
 .button.ghost-twitter:hover {
-    background-color: $button-info-hover;
+    background-color: $button-info;
+    border: 1px solid transparent;
     background-image: none;
     box-shadow: none;
     color: $bg1;
-    border: 1px solid $button-info-border;
 }
 
 .button.ghost-twitter:active {
     background-color: $button-info-active;
+    border: 1px solid transparent;
     background-image: none;
     box-shadow: none;
     color: $bg1;
-    border: 1px solid $button-info-border;
+}
+
+.button.ghost-success {
+    background-color: rgba(255,255,255,0.3);
+    border: 1px solid transparent;
+    background-image: none;
+    box-shadow: none;
+    color: $bg1;
+}
+
+.button.ghost-success:hover {
+    background-color: $button-success;
+    border: 1px solid transparent;
+    background-image: none;
+    box-shadow: none;
+    color: $bg1;
+}
+
+.button.ghost-success:active {
+    background-color: $button-success-active;
+    border: 1px solid transparent;
+    background-image: none;
+    box-shadow: none;
+    color: $bg1;
 }
 
 /******************
@@ -539,25 +577,28 @@ code, kbd, pre, samp {
      display: -ms-flexbox;
      display: flex;
      margin-bottom: 32px;
-     margin-top: -5px;
-     height: 42rem;
-     @include linear-gradient(0deg, $hero 0%, $nav 100%);
+     height: 40rem;
+     background-image: url("/img/hero.svg"), linear-gradient(0deg, $hero, $nav);
+     background-size: contain;
+     background-position-x: 80%;
+     background-position-y: 100%;
+     background-repeat: no-repeat;
 }
 
-.hero.idea {
-    @include linear-gradient(0deg, $hero-idea 0%, $nav-idea 100%);
-}
-
-.hero.about {
-    @include linear-gradient(0deg, $hero-about 0%, $nav-about 100%);
-}
-
-.hero.four {
-    @include linear-gradient(0deg, $hero-four 0%, $nav-four 100%);
+.hero.ideas {
+    background-image: url("/img/hero2.svg"), linear-gradient(0deg, $hero-ideas, $nav-ideas);
 }
 
 .hero.apps {
-    @include linear-gradient(0deg, $hero-apps 0%, $nav-apps 100%);
+    background-image: url("/img/hero2.svg"), linear-gradient(0deg, $hero-apps, $nav-apps);
+}
+
+.hero.about {
+    background-image: url("/img/hero2.svg"), linear-gradient(0deg, $hero-about, $nav-about);
+}
+
+.hero.four {
+    @include linear-gradient(0deg, $hero-neutral 0%, $nav-neutral 100%);
 }
 
 /*******************
@@ -566,17 +607,33 @@ code, kbd, pre, samp {
 
 .nav {
    background-image: none;
-   height: 3.2rem;
+   height: 3.25rem;
    width: 100%;
    padding-left: 1rem;
    padding-right: 1rem;
    display: inline-block;
-   @include font-sans($size: 1rem, $weight: 400, $lh: 3rem);
+   @include font-sans($size: 1rem, $weight: 400, $lh: 3.2rem);
    white-space: nowrap;
    position: relative;
-   background-color: #556270;
+   background-color: $nav;
    outline: none;
    z-index: 999;
+}
+
+.nav.ideas {
+  background-color: $nav-ideas;
+}
+
+.nav.about {
+  background-color: $nav-about;
+}
+
+.nav.apps {
+  background-color: $nav-apps;
+}
+
+.nav.four {
+  background-color: $nav-neutral;
 }
 
 .nav:focus {
@@ -586,21 +643,11 @@ code, kbd, pre, samp {
 .nav-icon {
      display: inline-block;
      margin: 0;
-     border-bottom: 3px solid transparent;
      @include font-sans($size: 0.9rem, $weight: 700, $color: $bg1, $lh: 3rem);
 }
 
 .nav-icon:hover {
-    border-bottom: 3px solid $bg1;
-}
-
-.nav-icon.active {
-    border-bottom: 3px solid $bg1;
-}
-
-.nav-icon.active:hover {
-    border-bottom: 3px solid darken($bg1, 10%);
-    background-color: rgba(255,255,255,0.3);
+    background-color: rgba(255,255,255,0.5);
 }
 
 .nav-bar {
@@ -611,7 +658,7 @@ code, kbd, pre, samp {
 }
 
 .nav-link {
-    @include font-sans($color: $bg1);
+    @include font-sans($color: $nav-link);
     padding: 0 0.6rem;
 }
 
@@ -620,7 +667,7 @@ code, kbd, pre, samp {
  ********************/
 
 .footer {
-    @include linear-gradient(#fff 0%, #f6f6f6 100%);
+    background-color: $footer;
     color: $fg;
     box-sizing: border-box;
     @include font-sans($size: 0.8rem, $weight: 400, $lh: 0.8rem);
@@ -659,8 +706,11 @@ code, kbd, pre, samp {
 
 .fab {
     border-radius: 100%;
-    color: $fab;
-    border: 1px solid $fab;
+    background-color: rgba(0,0,0,0.1);
+    background-image: none;
+    box-shadow: none;
+    color: $fg;
+    border: 1px solid transparent;
     display: inline-block;
     text-align: center;
     margin: 6px;
@@ -786,6 +836,11 @@ code, kbd, pre, samp {
 .me .card-title,
 .me .fa-4x {
     color: $me;
+}
+
+.apps .card-title,
+.apps .fa-4x {
+    color: $apps;
 }
 
 .economy .card-title,
