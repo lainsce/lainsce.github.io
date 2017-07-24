@@ -29,7 +29,7 @@ html {
     margin: 0;
     min-height: 100%;
     overflow-x: hidden;
-    @include linear-gradient(0deg, $bg1 0%, $bg2 100%);
+    @include linear-gradient(0deg, $bg 0%, $bg 100%);
     color: $fg;
 }
 
@@ -122,19 +122,19 @@ img {
 /* BADGE COLORS */
 
 .badge.success {
-    color: $bg1;
+    color: $bg;
     background-color: $badge-success;
     border: 1px solid $badge-success;
 }
 
 .badge.success:hover {
-    color: $bg1;
+    color: $bg;
     background-color: $badge-success-hover;
     border: 1px solid $badge-success-hover;
 }
 
 .badge.blue:hover {
-    color: $bg1;
+    color: $bg;
     background-color: $badge-blue-hover;
     border: 1px solid $badge-blue-hover;
 }
@@ -270,17 +270,15 @@ code, kbd, pre, samp {
 }
 
 .card-title-night {
-  @include font($size: 2.5rem, $color: $bg1, $weight: 400);
+  @include font($size: 2.5rem, $color: $bg, $weight: 400);
 }
 
 .card-subtitle-night {
-  @include font($size: 1.5rem, $color: $bg1, $weight: 400);
-  text-align: left;
+  @include font($size: 1.5rem, $color: $bg, $weight: 400);
 }
 
 .card-text-night {
-  @include font($size: 1.0rem, $color: $bg1, $weight: 400);
-  text-align: left;
+  @include font($size: 1.0rem, $color: $bg, $weight: 400);
 }
 
 .card-image {
@@ -396,13 +394,13 @@ code, kbd, pre, samp {
     background-color: $button-success;
     background-image: none;
     border: 1px solid $button-success;
-    color: $bg1;
+    color: $bg;
     @include box-shadow(0px 3px 12px 0px $button-success);
 }
 
 .button.success:hover {
     background-color: $button-success-hover;
-    color: $bg1;
+    color: $bg;
     border: 1px solid $button-success-border;
     @include box-shadow(0px 3px 12px 0px $button-success-border);
 }
@@ -410,7 +408,7 @@ code, kbd, pre, samp {
 .button.success:active {
     background-color: $button-success-active;
     background-image: none;
-    color: $bg1;
+    color: $bg;
     border: 1px solid $button-success-border;
     @include box-shadow(0px 3px 12px 0px $button-success-border);
 }
@@ -423,13 +421,13 @@ code, kbd, pre, samp {
     background-color: $button-info;
     background-image: none;
     border: 1px solid $button-info;
-    color: $bg1;
+    color: $bg;
     @include box-shadow(0px 3px 12px 0px $button-info);
 }
 
 .button.info:hover {
     background-color: $button-info-hover;
-    color: $bg1;
+    color: $bg;
     border: 1px solid $button-info-border;
     @include box-shadow(0px 3px 12px 0px $button-info);
 }
@@ -437,7 +435,7 @@ code, kbd, pre, samp {
 .button.info:active {
     background-color: $button-info-active;
     background-image: none;
-    color: $bg1;
+    color: $bg;
     border: 1px solid $button-info-border;
     @include box-shadow(0px 3px 12px 0px $button-info);
 }
@@ -481,7 +479,7 @@ code, kbd, pre, samp {
     background-color: $button-ghost-hover;
     background-image: none;
     box-shadow: none;
-    color: $bg1;
+    color: $bg;
     border: 1px solid transparent;
 }
 
@@ -489,7 +487,7 @@ code, kbd, pre, samp {
     background-color: $button-ghost-active;
     background-image: none;
     box-shadow: none;
-    color: $bg1;
+    color: $bg;
     border: 1px solid transparent;
 }
 
@@ -498,7 +496,7 @@ code, kbd, pre, samp {
   background-image: none;
   border: 1px solid transparent;
   box-shadow: none;
-  color: $bg1;
+  color: $bg;
 }
 
 .button.ghost-night:hover {
@@ -522,7 +520,7 @@ code, kbd, pre, samp {
     background-image: none;
     border: 1px solid transparent;
     box-shadow: none;
-    color: $bg1;
+    color: $bg;
 }
 
 .button.ghost-twitter:hover {
@@ -530,7 +528,7 @@ code, kbd, pre, samp {
     border: 1px solid transparent;
     background-image: none;
     box-shadow: none;
-    color: $bg1;
+    color: $bg;
 }
 
 .button.ghost-twitter:active {
@@ -538,7 +536,7 @@ code, kbd, pre, samp {
     border: 1px solid transparent;
     background-image: none;
     box-shadow: none;
-    color: $bg1;
+    color: $bg;
 }
 
 .button.ghost-success {
@@ -546,7 +544,7 @@ code, kbd, pre, samp {
     border: 1px solid transparent;
     background-image: none;
     box-shadow: none;
-    color: $bg1;
+    color: $bg;
 }
 
 .button.ghost-success:hover {
@@ -554,7 +552,7 @@ code, kbd, pre, samp {
     border: 1px solid transparent;
     background-image: none;
     box-shadow: none;
-    color: $bg1;
+    color: $bg;
 }
 
 .button.ghost-success:active {
@@ -562,7 +560,7 @@ code, kbd, pre, samp {
     border: 1px solid transparent;
     background-image: none;
     box-shadow: none;
-    color: $bg1;
+    color: $bg;
 }
 
 /******************
@@ -577,28 +575,30 @@ code, kbd, pre, samp {
      display: -ms-flexbox;
      display: flex;
      margin-bottom: 32px;
-     height: 28rem;
-     background-image: url("/img/hero.svg"), linear-gradient(0deg, $hero, $nav);
-     background-size: contain;
-     background-position-x: 80%;
-     background-position-y: 100%;
+     margin-top: -3.3rem;
+     height: 42rem;
+     background-color: #888;
+     background-image: url("/img/hero.jpg");
+     background-size: cover;
+     background-position-x: 0%;
+     background-position-y: 55%;
      background-repeat: no-repeat;
 }
 
 .hero.ideas {
-    @include linear-gradient(0deg, $hero-ideas 0%, $nav-ideas 100%);
+    background-image: url("/img/hero.jpg");
 }
 
 .hero.apps {
-    @include linear-gradient(0deg, $hero-apps 0%, $nav-apps 100%);
+    background-image: url("/img/hero.jpg");
 }
 
 .hero.about {
-    @include linear-gradient(0deg, $hero-about 0%, $nav-about 100%);
+    background-image: url("/img/hero.jpg");
 }
 
 .hero.four {
-    @include linear-gradient(0deg, $hero-neutral 0%, $nav-neutral 100%);
+    background-image: url("/img/hero.jpg");
 }
 
 /*******************
@@ -615,21 +615,9 @@ code, kbd, pre, samp {
    @include font($size: 1rem, $weight: 400, $lh: 3.2rem);
    white-space: nowrap;
    position: relative;
-   background-color: $nav;
+   background-color: transparent;
    outline: none;
    z-index: 999;
-}
-
-.nav.ideas {
-  background-color: $nav-ideas;
-}
-
-.nav.about {
-  background-color: $nav-about;
-}
-
-.nav.apps {
-  background-color: $nav-apps;
 }
 
 .nav.four {
@@ -643,7 +631,7 @@ code, kbd, pre, samp {
 .nav-icon {
      display: inline-block;
      margin: 0;
-     @include font($size: 0.9rem, $weight: 700, $color: $bg1, $lh: 3rem);
+     @include font($size: 0.9rem, $weight: 700, $color: $bg, $lh: 3rem);
 }
 
 .nav-icon:hover {
@@ -827,22 +815,6 @@ code, kbd, pre, samp {
  /*********************
   *      HEADER       *
   *********************/
-
-.intro .card-title,
-.intro .fa-4x {
-    color: $intro;
-}
-
-.me .card-title,
-.me .fa-4x {
-    color: $me;
-}
-
-.apps .card-title,
-.apps .fa-4x {
-    color: $apps;
-}
-
 .economy .card-title,
 .economy .fa-4x {
     color: $economy;
