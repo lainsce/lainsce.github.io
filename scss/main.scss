@@ -22,7 +22,7 @@ html {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    @include font-sans($size: 1rem, $weight: 400);
+    @include font($size: 1rem, $weight: 400);
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
     text-rendering: geometricPrecision;
@@ -186,20 +186,20 @@ a {
 }
 
 h1 {
-    @include font-header($size: 3.5rem, $weight: 700);
+    @include font($size: 3.5rem, $weight: 700);
 }
 
 h2 {
     padding-top: 1rem;
-    @include font-header($size: 2.5rem, $weight: 400);
+    @include font($size: 2.5rem, $weight: 400);
 }
 
 h3 {
-    @include font-header($size: 1.5rem, $weight: 400);
+    @include font($size: 1.5rem, $weight: 400);
 }
 
 h4 {
-    @include font-sans($size: 1.0rem);
+    @include font($size: 1.0rem);
 }
 
 pre {
@@ -238,7 +238,7 @@ code, kbd, pre, samp {
 .title {
     margin: 0 auto;
     text-align: center;
-    @include font-header($size: 1.5rem, $weight: 400, $color: $fg);
+    @include font($size: 1.5rem, $weight: 400, $color: $fg);
 }
 
 .dim-label {
@@ -256,30 +256,30 @@ code, kbd, pre, samp {
 }
 
 .card-title {
-  @include font-header($size: 2.5rem, $color: $fg, $weight: 400);
+  @include font($size: 2.5rem, $color: $fg, $weight: 400);
 }
 
 .card-subtitle {
-  @include font-sans($size: 1.5rem, $color: $fg, $weight: 400);
+  @include font($size: 1.5rem, $color: $fg, $weight: 400);
   text-align: left;
 }
 
 .card-text {
-  @include font-sans($size: 1.0rem, $color: $fg, $weight: 400);
+  @include font($size: 1.0rem, $color: $fg, $weight: 400);
   text-align: left;
 }
 
 .card-title-night {
-  @include font-header($size: 2.5rem, $color: $bg1, $weight: 400);
+  @include font($size: 2.5rem, $color: $bg1, $weight: 400);
 }
 
 .card-subtitle-night {
-  @include font-sans($size: 1.5rem, $color: $bg1, $weight: 400);
+  @include font($size: 1.5rem, $color: $bg1, $weight: 400);
   text-align: left;
 }
 
 .card-text-night {
-  @include font-sans($size: 1.0rem, $color: $bg1, $weight: 400);
+  @include font($size: 1.0rem, $color: $bg1, $weight: 400);
   text-align: left;
 }
 
@@ -321,7 +321,7 @@ code, kbd, pre, samp {
   padding: 16px 1.5rem;
   text-align: left;
   border-radius: 0 0 16px 16px;
-  @include font-sans($size: 1.0rem, $weight: 400);
+  @include font($size: 1.0rem, $weight: 400);
 }
 
 .card-action .fa {
@@ -376,7 +376,7 @@ code, kbd, pre, samp {
     padding: 0.8rem;
     text-align: center;
     text-transform: uppercase;
-    @include font-sans($weight: 700);
+    @include font($weight: 700);
 }
 
 .button + .button {
@@ -388,7 +388,7 @@ code, kbd, pre, samp {
 }
 
 .footer-button {
-    @include font-sans($size: 0.7rem);
+    @include font($size: 0.7rem);
     padding: 0.4rem;
 }
 
@@ -612,7 +612,7 @@ code, kbd, pre, samp {
    padding-left: 1rem;
    padding-right: 1rem;
    display: inline-block;
-   @include font-sans($size: 1rem, $weight: 400, $lh: 3.2rem);
+   @include font($size: 1rem, $weight: 400, $lh: 3.2rem);
    white-space: nowrap;
    position: relative;
    background-color: $nav;
@@ -643,7 +643,7 @@ code, kbd, pre, samp {
 .nav-icon {
      display: inline-block;
      margin: 0;
-     @include font-sans($size: 0.9rem, $weight: 700, $color: $bg1, $lh: 3rem);
+     @include font($size: 0.9rem, $weight: 700, $color: $bg1, $lh: 3rem);
 }
 
 .nav-icon:hover {
@@ -658,7 +658,7 @@ code, kbd, pre, samp {
 }
 
 .nav-link {
-    @include font-sans($color: $nav-link);
+    @include font($color: $nav-link);
     padding: 0 0.6rem;
 }
 
@@ -670,7 +670,7 @@ code, kbd, pre, samp {
     background-color: $footer;
     color: $fg;
     box-sizing: border-box;
-    @include font-sans($size: 0.8rem, $weight: 400, $lh: 0.8rem);
+    @include font($size: 0.8rem, $weight: 400, $lh: 0.8rem);
     padding: 1rem;
     position: relative;
     text-align: center;
@@ -683,7 +683,7 @@ code, kbd, pre, samp {
     @include linear-gradient(#333 0%, #262424 100%);
     color: $card;
     box-sizing: border-box;
-    @include font-sans($size: 0.8rem, $weight: 400, $lh: 0.8rem);
+    @include font($size: 0.8rem, $weight: 400, $lh: 0.8rem);
     padding: 1rem 0;
     position: relative;
     text-align: center;

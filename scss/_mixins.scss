@@ -27,16 +27,8 @@
   @include prefixer(box-shadow, $box-shadow, webkit moz ms o spec);
 }
 
-@mixin font-sans($size: false, $color: false, $weight: false,  $lh: false) {
-    font-family: 'Muli', Helvetica, Arial, sans-serif;
-    @if $size { font-size: $size; }
-    @if $color { color: $color; }
-    @if $weight { font-weight: $weight; }
-    @if $lh { line-height: $lh; }
-}
-
-@mixin font-header($size: false, $color: false, $weight: false,  $lh: false) {
-    font-family: 'Muli', Helvetica, Arial, sans-serif;
+@mixin font($size: false, $color: false, $weight: false,  $lh: false) {
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
     @if $size { font-size: $size; }
     @if $color { color: $color; }
     @if $weight { font-weight: $weight; }
