@@ -29,7 +29,7 @@ html {
     margin: 0;
     min-height: 100%;
     overflow-x: hidden;
-    @include linear-gradient(0deg, $bg 0%, $bg 100%);
+    background-color: $bg;
     color: $fg;
 }
 
@@ -70,9 +70,9 @@ img {
 .book {
     border: 1px solid $badge;
     background-color: $badge;
-    border-radius: 50%;
+    border-radius: 20%;
     width: 70px;
-    height: 70px;
+    height: 90px;
     margin: 10px 5px -25px -5px;
     object-fit: cover;
     overflow-y: hidden;
@@ -122,19 +122,19 @@ img {
 /* BADGE COLORS */
 
 .badge.success {
-    color: $bg;
+    color: $badge-text;
     background-color: $badge-success;
     border: 1px solid $badge-success;
 }
 
 .badge.success:hover {
-    color: $bg;
+    color: $badge-text;
     background-color: $badge-success-hover;
     border: 1px solid $badge-success-hover;
 }
 
 .badge.blue:hover {
-    color: $bg;
+    color: $badge-text;
     background-color: $badge-blue-hover;
     border: 1px solid $badge-blue-hover;
 }
@@ -195,11 +195,11 @@ h2 {
 }
 
 h3 {
-    @include font($size: 1.5rem, $weight: 400);
+    @include font($size: 1.8rem, $weight: 400);
 }
 
 h4 {
-    @include font($size: 1.0rem);
+    @include font($size: 1.3rem);
 }
 
 pre {
@@ -327,7 +327,7 @@ code, kbd, pre, samp {
 }
 
 .card-body {
-  padding: 1rem 1.5rem 1.5rem 1.5rem;
+  padding: 1.5rem;
 }
 
 .card-badge {
@@ -401,20 +401,16 @@ code, kbd, pre, samp {
 .button.success:hover {
     background-color: $button-success-hover;
     color: $bg;
-    border: 1px solid $button-success-border;
-    @include box-shadow(0px 3px 12px 0px $button-success-border);
+    border: 1px solid $button-success-hover;
+    @include box-shadow(0px 3px 12px 0px $button-success);
 }
 
 .button.success:active {
     background-color: $button-success-active;
     background-image: none;
     color: $bg;
-    border: 1px solid $button-success-border;
-    @include box-shadow(0px 3px 12px 0px $button-success-border);
-}
-
-.button.success:focus {
-    box-shadow: 0 0 0 2px rgba(92,184,92,.5);
+    border: 1px solid $button-success-active;
+    @include box-shadow(0px 3px 12px 0px $button-success);
 }
 
 .button.info {
@@ -428,7 +424,7 @@ code, kbd, pre, samp {
 .button.info:hover {
     background-color: $button-info-hover;
     color: $bg;
-    border: 1px solid $button-info-border;
+    border: 1px solid $button-info-hover;
     @include box-shadow(0px 3px 12px 0px $button-info);
 }
 
@@ -436,35 +432,8 @@ code, kbd, pre, samp {
     background-color: $button-info-active;
     background-image: none;
     color: $bg;
-    border: 1px solid $button-info-border;
+    border: 1px solid $button-info-active;
     @include box-shadow(0px 3px 12px 0px $button-info);
-}
-
-.button.info:focus {
-    box-shadow: 0 0 0 2px rgba(31,152,222,.5);
-}
-
-.button.neutral {
-    background-color: $button-neutral;
-    color: $fg;
-    border: 1px solid $button-neutral;
-}
-
-.button.neutral:hover {
-    background-color: $button-neutral;
-    color: $fg;
-    border: 1px solid $button-neutral-border;
-}
-
-.button.neutral:active {
-    background-color: $button-neutral;
-    background-image: none;
-    color: $fg;
-    border: 1px solid $button-neutral-border;
-}
-
-.button.neutral:focus {
-    box-shadow: 0 0 0 2px rgba(233,233,233,.5);
 }
 
 .button.ghost {
@@ -577,7 +546,7 @@ code, kbd, pre, samp {
      margin-bottom: 32px;
      margin-top: -3.3rem;
      height: 42rem;
-     background-color: #888;
+     background-color: $fg;
      background-image: url("/img/hero.jpg");
      background-size: cover;
      background-position-x: 0%;
@@ -599,6 +568,7 @@ code, kbd, pre, samp {
 
 .hero.four {
     background-color: $fg;
+    background-image: none;
 }
 
 /*******************
@@ -621,7 +591,7 @@ code, kbd, pre, samp {
 }
 
 .nav.four {
-  background-color: $nav-neutral;
+  background-color: $fg;
 }
 
 .nav:focus {
@@ -646,7 +616,7 @@ code, kbd, pre, samp {
 }
 
 .nav-link {
-    @include font($color: $nav-link);
+    @include font($color: $bg);
     padding: 0 0.6rem;
 }
 
@@ -655,7 +625,7 @@ code, kbd, pre, samp {
  ********************/
 
 .footer {
-    background-color: $footer;
+    background-color: $card;
     color: $fg;
     box-sizing: border-box;
     @include font($size: 0.8rem, $weight: 400, $lh: 0.8rem);
@@ -668,8 +638,8 @@ code, kbd, pre, samp {
 }
 
 .footer-black {
-    @include linear-gradient(#333 0%, #262424 100%);
-    color: $card;
+    background-color: $card-night;
+    color: $bg;
     box-sizing: border-box;
     @include font($size: 0.8rem, $weight: 400, $lh: 0.8rem);
     padding: 1rem 0;
@@ -744,7 +714,7 @@ code, kbd, pre, samp {
 }
 
 .fab-img {
-    color: $fab;
+    color: $fg;
     display: block;
     height: 100%;
     width: 100%;
@@ -752,7 +722,7 @@ code, kbd, pre, samp {
 }
 
 .fab-img:hover {
-    color: $card;
+    color: $fab-icon;
 }
 
 /*********************
@@ -815,32 +785,7 @@ code, kbd, pre, samp {
  /*********************
   *      HEADER       *
   *********************/
-.economy .card-title,
-.economy .fa-4x {
-    color: $economy;
-}
-
-.music .card-title,
-.music .fa-4x {
-    color: $music;
-}
-
-.books .card-title,
-.books .fa-4x {
-    color: $books;
-}
-
-.movies .card-title,
-.movies .fa-4x {
-    color: $movies;
-}
-
-.tech .card-title,
-.tech .fa-4x {
-    color: $tech;
-}
-
-.health .card-title,
-.health .fa-4x {
-    color: $health;
+.header .card-title,
+.header .fa-4x {
+    color: $header;
 }
