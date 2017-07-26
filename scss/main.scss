@@ -15,22 +15,20 @@
 
 body,
 html {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
     @include font($size: 1rem, $weight: 400);
-    -ms-text-size-adjust: 100%;
-    -webkit-text-size-adjust: 100%;
     text-rendering: geometricPrecision;
     margin: 0;
-    min-height: 100%;
-    overflow-x: hidden;
-    background-color: $bg;
+    padding: 0;
     color: $fg;
+    z-index: 1;
+}
+
+.bg {
+  background: $bg;
+  padding: 3.2rem 0;
+  display: block;
+  @include box-shadow(0 -3px 15px rgba(33,33,33,0.4));
+  z-index: 1;
 }
 
 .link {
@@ -677,31 +675,31 @@ code, kbd, pre, samp {
  ******************/
 
  .hero {
-     -webkit-box-align: center;
-     -ms-flex-align: center;
      align-items: center;
-     display: -webkit-box;
-     display: -ms-flexbox;
+     -webkit-box-pack: center;
+     -ms-flex-pack: center;
+     justify-content: center;
      display: flex;
-     margin-bottom: 32px;
-     margin-top: -3.3rem;
-     height: 42rem;
-     background: transparent;
-}
+     height: 65vh;
+     position: relative;
+     overflow: hidden;
 
-.parallax {
+   &::before {
+    background: #000;
     background-image: url("/img/hero.jpg");
-    height: 42rem;
-    background-attachment: fixed;
-    background-position: center;
+    filter: brightness(40%);
     background-repeat: no-repeat;
+    background-position: center top;
     background-size: cover;
-}
-
-@media only screen and (max-width: 1024px) {
-    .parallax {
-        background-attachment: scroll;
-    }
+    content: '';
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    will-change: transform;
+    z-index: -1;
+  }
 }
 
 /*******************
@@ -728,7 +726,7 @@ code, kbd, pre, samp {
     top: 0;
     right: 0;
     left: 0;
-    z-index: 1030;
+    z-index: 1000;
 }
 
 .nav:focus {
@@ -766,23 +764,22 @@ code, kbd, pre, samp {
     color: $fg;
     box-sizing: border-box;
     @include font($size: 0.8rem, $weight: 400, $lh: 0.8rem);
-    padding: 1rem;
+    padding: 1.2rem 0;
+    height: 30%;
     position: relative;
     text-align: center;
-    margin-top: 8rem;
     width: 100%;
-    display: inline-block;
+    display: block;
 }
 
 .footer-black {
-    background-color: $card-night;
     color: $bg;
     box-sizing: border-box;
     @include font($size: 0.8rem, $weight: 400, $lh: 0.8rem);
-    padding: 1rem 0;
+    padding: 1.2rem 0;
+    height: 100%;
     position: relative;
     text-align: center;
-    margin-top: 5.2rem;
     width: 100%;
     display: inline-block;
 }
@@ -870,7 +867,6 @@ code, kbd, pre, samp {
 
  .tooltip {
    position: relative;
-   z-index: 2;
    cursor: pointer;
  }
 
