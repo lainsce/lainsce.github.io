@@ -714,6 +714,7 @@ code, kbd, pre, samp {
    padding-right: 1rem;
    display: inline-block;
    background-color: transparent;
+   border-bottom: 2px solid rgba(255,255,255,0.25);
    @include font($size: 1rem, $weight: 400, $lh: 3.2rem);
    white-space: nowrap;
    position: relative;
