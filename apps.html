@@ -26,7 +26,7 @@ permalink: /apps
     <link type="text/css" rel = "stylesheet" href="scss/main.css">
   </head>
   <body>
-    <nav class="nav" tabindex="-1">
+    <nav class="nav fixed-top" tabindex="-1">
         <ul class="left nav-bar">
           <li class="nav-icon animated"><a class="nav-link tooltip-top" data-tooltip="Home" href="/" target="_self"> <img class="logo" height="32" width="32" src="icons/me.svg" alt="My Icon"> </a></li>
           <li class="nav-icon animated active"><a class="nav-link tooltip-top" data-tooltip="About" target="_self" href="/apps"> APPS </a></li>
@@ -38,7 +38,7 @@ permalink: /apps
         </ul>
     </nav>
     <main>
-      <div class="hero">
+      <div class="hero parallax">
         <div class="container">
           <div class="row">
             <div class="col-xs-12 form-group">
@@ -193,5 +193,6 @@ permalink: /apps
     </footer>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript">$(function yearsSince(epoch){var diff= new Date()-new Date(epoch);var age= Math.floor(diff/31536000000);return age;});</script>
+    <script type="text/javascript">$(document).ready(function(){$(window).on("scroll",function(){var wn = $(window).scrollTop();if(wn > 610){$(".nav").css("background","#555864");}else{$(".nav").css("background","rgba(0,0,0,0)");}});});</script>
   </body>
 </html>

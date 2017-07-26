@@ -22,7 +22,7 @@
     <script type="text/javascript" data-cfasync="false">(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');ga('create', 'UA-1020031122-1', 'auto');ga('send', 'pageview');</script>
   </head>
   <body>
-    <nav class="nav" tabindex="-1">
+    <nav class="nav fixed-top" tabindex="-1">
         <div class="blur"></div>
         <ul class="left nav-bar">
           <li class="nav-icon animated active"><a class="nav-link tooltip-top" data-tooltip="Home" href="/" target="_self"> <img class="logo" height="32" width="32" src="icons/me.svg" alt="My Icon"> </a></li>
@@ -35,7 +35,7 @@
         </ul>
     </nav>
     <main>
-      <div class="hero shadow">
+      <div class="hero parallax">
         <div class="container">
           <div class="row">
             <div class="col-xs-12">
@@ -159,5 +159,6 @@
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript">$(function(){$("#year").text((new Date).getFullYear ());var things=["Beer", "Coffee", "Drink", "Pizza", "Snack", "Pop"];$("#thing").text (things[Math.floor(Math.random()*things.length)]);}); $(function yearsSince(epoch){var diff= new Date()-new Date(epoch);var age= Math.floor(diff/311236000000);return age;});</script>
     <script type="text/javascript">var birth = new Date('1993-06-06'); function getAge(birth) { ageMS = Date.parse(Date()) - Date.parse(birth); age = new Date(); age.setTime(ageMS); ageYear = age.getFullYear() - 1970; return ageYear; } document.getElementById('age').innerHTML = getAge(birth);</script>
+    <script type="text/javascript">$(document).ready(function(){$(window).on("scroll",function(){var wn = $(window).scrollTop();if(wn > 610){$(".nav").css("background","#555864");}else{$(".nav").css("background","rgba(0,0,0,0)");}});});</script>
   </body>
 </html>

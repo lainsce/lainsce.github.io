@@ -362,6 +362,146 @@ code, kbd, pre, samp {
   @include linear-gradient(160deg, $notejot 0%, darken($notejot, 5%) 50%, darken($notejot, 7%) 100%);
 }
 
+.card-text.javascript {
+  text-align: right;
+  padding-right: 20px;
+  line-height: 35px;
+  color: $fg;
+  width: 60%;
+  background-color: $js;
+  border-radius: 32px;
+}
+
+.card-text.python {
+  text-align: right;
+  padding-right: 20px;
+  line-height: 35px;
+  color: $bg;
+  width: 70%;
+  background-color: $py;
+  border-radius: 32px;
+}
+
+.card-text.vala {
+  text-align: right;
+  padding-right: 20px;
+  line-height: 35px;
+  color: $bg;
+  width: 50%;
+  background-color: $vala;
+  border-radius: 32px;
+}
+
+.card-text.bash {
+  text-align: right;
+  padding-right: 20px;
+  line-height: 35px;
+  color: $bg;
+  width: 90%;
+  background-color: $bash;
+  border-radius: 32px;
+}
+
+.card-text.java {
+  text-align: right;
+  padding-right: 20px;
+  line-height: 35px;
+  color: $bg;
+  width: 20%;
+  background-color: $java;
+  border-radius: 32px;
+}
+
+.card-text.c {
+  text-align: right;
+  padding-right: 20px;
+  line-height: 35px;
+  color: $bg;
+  width: 40%;
+  background-color: $c;
+  border-radius: 32px;
+}
+
+.card-text.html {
+  text-align: right;
+  padding-right: 20px;
+  line-height: 35px;
+  color: $bg;
+  width: 80%;
+  background-color: $html;
+  border-radius: 32px;
+}
+
+.card-text.pt {
+  text-align: right;
+  padding-right: 20px;
+  line-height: 35px;
+  color: $bg;
+  width: 100%;
+  background-color: $pt;
+  border-radius: 32px;
+}
+
+.card-text.en {
+  text-align: right;
+  padding-right: 20px;
+  line-height: 35px;
+  color: $bg;
+  width: 99%;
+  background-color: $en;
+  border-radius: 32px;
+}
+
+.card-text.de {
+  text-align: right;
+  padding-right: 20px;
+  line-height: 35px;
+  color: $fg;
+  width: 50%;
+  background-color: $de;
+  border-radius: 32px;
+}
+
+.card-text.it {
+  text-align: right;
+  padding-right: 20px;
+  line-height: 35px;
+  color: $bg;
+  width: 40%;
+  background-color: $it;
+  border-radius: 32px;
+}
+
+.card-text.es {
+  text-align: right;
+  padding-right: 20px;
+  line-height: 35px;
+  color: $bg;
+  width: 60%;
+  background-color: $es;
+  border-radius: 32px;
+}
+
+.card-text.zh {
+  text-align: right;
+  padding-right: 20px;
+  line-height: 35px;
+  color: $bg;
+  width: 25%;
+  background-color: $zh;
+  border-radius: 32px;
+}
+
+.card-text.jp {
+  text-align: right;
+  padding-right: 20px;
+  line-height: 35px;
+  color: $fg;
+  width: 20%;
+  background-color: $jp;
+  border-radius: 32px;
+}
+
 /********************
  *     BUTTON       *
  ********************/
@@ -546,29 +686,22 @@ code, kbd, pre, samp {
      margin-bottom: 32px;
      margin-top: -3.3rem;
      height: 42rem;
-     background-color: $fg;
-     background-image: url("/img/hero.jpg");
-     background-size: cover;
-     background-position-x: 0%;
-     background-position-y: 55%;
-     background-repeat: no-repeat;
+     background: transparent;
 }
 
-.hero.ideas {
+.parallax {
     background-image: url("/img/hero.jpg");
+    height: 42rem;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-.hero.apps {
-    background-image: url("/img/hero.jpg");
-}
-
-.hero.about {
-    background-image: url("/img/hero.jpg");
-}
-
-.hero.four {
-    background-color: $fg;
-    background-image: none;
+@media only screen and (max-device-width: 1024px) {
+    .parallax {
+        background-attachment: scroll;
+    }
 }
 
 /*******************
@@ -582,16 +715,20 @@ code, kbd, pre, samp {
    padding-left: 1rem;
    padding-right: 1rem;
    display: inline-block;
+   background-color: transparent;
    @include font($size: 1rem, $weight: 400, $lh: 3.2rem);
    white-space: nowrap;
    position: relative;
-   background-color: transparent;
    outline: none;
    z-index: 999;
 }
 
-.nav.four {
-  background-color: $fg;
+.nav.fixed-top {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
 }
 
 .nav:focus {

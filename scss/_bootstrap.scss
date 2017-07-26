@@ -9,6 +9,12 @@
   padding-left: 15px;
   padding-right: 15px;
 }
+
+.col-alone {
+  margin-right: -15px;
+  padding-right: 0px !important;
+}
+
 @media (min-width: 768px) {
   .container {
     width: 750px;
