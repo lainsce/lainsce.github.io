@@ -21,46 +21,53 @@
 .fab.github:hover {
     background-color: $fab-github;
     border: 1px solid $fab-github;
+    @include box-shadow(0 3px 7px rgba($fab-github,0.5));
 }
 
 .fab.mail:hover {
     background-color: $fab-mail;
     border: 1px solid $fab-mail;
+    @include box-shadow(0 3px 7px rgba($fab-mail,0.5));
 }
 
 .fab.twitter:hover {
     background-color: $fab-twitter;
     border: 1px solid $fab-twitter;
+    @include box-shadow(0 3px 7px rgba($fab-twitter,0.5));
 }
 
 .fab.gplus:hover {
     background-color: $fab-gplus;
     border: 1px solid $fab-gplus;
+    @include box-shadow(0 3px 7px rgba($fab-gplus,0.5));
 }
 
 .fab.medium:hover {
     background-color: $fab-medium;
     border: 1px solid $fab-medium;
+    @include box-shadow(0 3px 7px rgba($fab-medium,0.5));
 }
 
 .fab.telegram:hover {
     background-color: $fab-telegram;
     border: 1px solid $fab-telegram;
+    @include box-shadow(0 3px 7px rgba($fab-telegram,0.5));
 }
 
 .fab.patreon:hover {
     background-color: $fab-patreon;
     border: 1px solid $fab-patreon;
+    @include box-shadow(0 3px 7px rgba($fab-patreon,0.5));
 }
 
-.fab-img {
+.fab>a {
     color: $fg;
     display: block;
     height: 100%;
     width: 100%;
-    margin-top: -2px;
+    margin-top: 0px;
 }
 
-.fab-img:hover {
+.fab>a:hover {
     color: $fab-icon;
 }

@@ -3,7 +3,7 @@
  *****************/
 
 .card {
-  border-radius: 8px;
+  border-radius: 16px;
   line-height: 1.5;
   background-color: $card;
 }
@@ -72,7 +72,7 @@
     bottom: 0;
     padding: 2rem 0 2rem 0;
     border-bottom: 1px solid rgba(160,160,160,0.4);
-    border-radius: 8px 8px 0 0;
+    border-radius: 16px 16px 0 0;
 }
 
 .card-image-big {
@@ -85,7 +85,7 @@
     bottom: 0;
     padding: 0;
     border-bottom: 1px solid rgba(160,160,160,0.4);
-    border-radius: 8px 8px 0 0;
+    border-radius: 16px 16px 0 0;
 }
 
 .card-image-big img {
@@ -127,142 +127,16 @@
   @include linear-gradient(160deg, $card-background-2 0%, $card-background-1 100%);
 }
 
-.card-text.javascript {
-  text-align: right;
-  padding-right: 20px;
-  line-height: 35px;
-  color: $fg;
-  width: 60%;
-  background-color: $js;
-  border-radius: 32px;
-}
-
-.card-text.python {
-  text-align: right;
-  padding-right: 20px;
-  line-height: 35px;
-  color: $bg;
-  width: 70%;
-  background-color: $py;
-  border-radius: 32px;
-}
-
-.card-text.vala {
+.card-skillbar {
   text-align: right;
   padding-right: 20px;
   line-height: 35px;
   color: $bg;
   width: 50%;
-  background-color: $vala;
-  border-radius: 32px;
+  background-color: $card-skillbar;
+  border-radius: 16px;
 }
 
-.card-text.bash {
-  text-align: right;
-  padding-right: 20px;
-  line-height: 35px;
-  color: $bg;
-  width: 90%;
-  background-color: $bash;
-  border-radius: 32px;
-}
-
-.card-text.java {
-  text-align: right;
-  padding-right: 20px;
-  line-height: 35px;
-  color: $bg;
-  width: 20%;
-  background-color: $java;
-  border-radius: 32px;
-}
-
-.card-text.c {
-  text-align: right;
-  padding-right: 20px;
-  line-height: 35px;
-  color: $bg;
-  width: 40%;
-  background-color: $c;
-  border-radius: 32px;
-}
-
-.card-text.html {
-  text-align: right;
-  padding-right: 20px;
-  line-height: 35px;
-  color: $bg;
-  width: 80%;
-  background-color: $html;
-  border-radius: 32px;
-}
-
-.card-text.pt {
-  text-align: right;
-  padding-right: 20px;
-  line-height: 35px;
-  color: $bg;
-  width: 100%;
-  background-color: $pt;
-  border-radius: 32px;
-}
-
-.card-text.en {
-  text-align: right;
-  padding-right: 20px;
-  line-height: 35px;
-  color: $bg;
-  width: 99%;
-  background-color: $en;
-  border-radius: 32px;
-}
-
-.card-text.de {
-  text-align: right;
-  padding-right: 20px;
-  line-height: 35px;
-  color: $fg;
-  width: 50%;
-  background-color: $de;
-  border-radius: 32px;
-}
-
-.card-text.it {
-  text-align: right;
-  padding-right: 20px;
-  line-height: 35px;
-  color: $bg;
-  width: 40%;
-  background-color: $it;
-  border-radius: 32px;
-}
-
-.card-text.es {
-  text-align: right;
-  padding-right: 20px;
-  line-height: 35px;
-  color: $bg;
-  width: 60%;
-  background-color: $es;
-  border-radius: 32px;
-}
-
-.card-text.zh {
-  text-align: right;
-  padding-right: 20px;
-  line-height: 35px;
-  color: $bg;
-  width: 25%;
-  background-color: $zh;
-  border-radius: 32px;
-}
-
-.card-text.jp {
-  text-align: right;
-  padding-right: 20px;
-  line-height: 35px;
-  color: $fg;
-  width: 20%;
-  background-color: $jp;
-  border-radius: 32px;
+.card-stars {
+  color: $card-stars;
 }

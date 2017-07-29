@@ -31,13 +31,13 @@
     background-image: none;
     border: 1px solid $button-success;
     color: $bg;
-    @include box-shadow(0px 3px 12px 0px $button-success);
+    box-shadow: none;
 }
 
 .button.success:hover {
-    background-color: $button-success-hover;
+    background-color: $button-success;
     color: $bg;
-    border: 1px solid $button-success-hover;
+    border: 1px solid $button-success;
     @include box-shadow(0px 3px 12px 0px $button-success);
 }
 
@@ -54,13 +54,13 @@
     background-image: none;
     border: 1px solid $button-info;
     color: $bg;
-    @include box-shadow(0px 3px 12px 0px $button-info);
+    box-shadow: none;
 }
 
 .button.info:hover {
-    background-color: $button-info-hover;
+    background-color: $button-info;
     color: $bg;
-    border: 1px solid $button-info-hover;
+    border: 1px solid $button-info;
     @include box-shadow(0px 3px 12px 0px $button-info);
 }
 
@@ -81,9 +81,9 @@
 }
 
 .button.ghost:hover {
-    background-color: $button-ghost-hover;
+    background-color: $button-ghost;
     background-image: none;
-    box-shadow: none;
+    @include box-shadow(0 3px 7px rgba($button-ghost,0.5));
     color: $bg;
     border: 1px solid transparent;
 }
@@ -91,7 +91,7 @@
 .button.ghost:active {
     background-color: $button-ghost-active;
     background-image: none;
-    box-shadow: none;
+    @include box-shadow(0 3px 7px rgba($button-ghost-active,0.5));
     color: $bg;
     border: 1px solid transparent;
 }
@@ -105,9 +105,9 @@
 }
 
 .button.ghost-night:hover {
-    background-color: $button-ghost-night-hover;
+    background-color: $button-ghost-night;
     background-image: none;
-    box-shadow: none;
+    @include box-shadow(0 3px 7px rgba($button-ghost-night,0.5));
     color: $fg;
     border: 1px solid transparent;
 }
@@ -115,7 +115,7 @@
 .button.ghost-night:active {
     background-color: $button-ghost-night-active;
     background-image: none;
-    box-shadow: none;
+    @include box-shadow(0 3px 7px rgba($button-ghost-night-active,0.5));
     color: $fg;
     border: 1px solid transparent;
 }
@@ -132,7 +132,7 @@
     background-color: $button-info;
     border: 1px solid transparent;
     background-image: none;
-    box-shadow: none;
+    @include box-shadow(0 3px 7px rgba($button-info,0.5));
     color: $bg;
 }
 
@@ -140,7 +140,7 @@
     background-color: $button-info-active;
     border: 1px solid transparent;
     background-image: none;
-    box-shadow: none;
+    @include box-shadow(0 3px 7px rgba($button-info-active,0.5));
     color: $bg;
 }
 
@@ -156,7 +156,7 @@
     background-color: $button-success;
     border: 1px solid transparent;
     background-image: none;
-    box-shadow: none;
+    @include box-shadow(0 3px 7px rgba($button-success,0.5));
     color: $bg;
 }
 
@@ -164,6 +164,6 @@
     background-color: $button-success-active;
     border: 1px solid transparent;
     background-image: none;
-    box-shadow: none;
+    @include box-shadow(0 3px 7px rgba($button-success-active,0.5));
     color: $bg;
 }

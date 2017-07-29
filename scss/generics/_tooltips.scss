@@ -2,11 +2,10 @@
  *     TOOLTIP       *
  *********************/
 
- /* Top tooltip*/
-
  .tooltip {
    position: relative;
    cursor: pointer;
+   @include font($size: 13px, $weight: 500, $lh: 32px);
  }
 
  .tooltip:before,
