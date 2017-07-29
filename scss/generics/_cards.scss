@@ -119,28 +119,12 @@
   text-align: justify;
 }
 
-.card-image.coin {
-  @include linear-gradient(135deg, $coin 0%, darken($coin, 5%) 50%, darken($coin, 7%) 100%);
+.card-image.card-image-background {
+  @include linear-gradient(160deg, $card-background-2 0%, $card-background-1 100%);
 }
 
-.card-image.quilter {
-  @include linear-gradient(135deg, $quilter 0%, darken($quilter, 5%) 50%, darken($quilter, 7%) 100%);
-}
-
-.card-image.notejot {
-  @include linear-gradient(135deg, $notejot 0%, darken($notejot, 5%) 50%, darken($notejot, 7%) 100%);
-}
-
-.card-image-big.coin {
-  @include linear-gradient(160deg, $coin 0%, darken($coin, 5%) 50%, darken($coin, 7%) 100%);
-}
-
-.card-image-big.quilter {
-  @include linear-gradient(160deg, $quilter 0%, darken($quilter, 5%) 50%, darken($quilter, 7%) 100%);
-}
-
-.card-image-big.notejot {
-  @include linear-gradient(160deg, $notejot 0%, darken($notejot, 5%) 50%, darken($notejot, 7%) 100%);
+.card-image-big.card-image-background {
+  @include linear-gradient(160deg, $card-background-2 0%, $card-background-1 100%);
 }
 
 .card-text.javascript {
