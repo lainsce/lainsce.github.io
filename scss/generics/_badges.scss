@@ -1,0 +1,41 @@
+/*****************
+ *     BADGES    *
+ *****************/
+
+.badge {
+    color: $badge;
+    background-color: transparent;
+    border: 1px solid $badge;
+    display: inline;
+    padding: 6px 8px;
+    font-size: 13px;
+    line-height: 32px;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: .40em;
+    margin-right: 6px;
+}
+
+.badge.fa {
+    margin-right: 2px;
+    font-size: 13px;
+}
+
+
+.badge.success {
+    color: $badge-text;
+    background-color: $badge-success;
+    border: 1px solid $badge-success;
+}
+
+.badge.success:hover {
+    color: $badge-text;
+    background-color: $badge-success-hover;
+    border: 1px solid $badge-success-hover;
+}
+
+.badge.blue:hover {
+    color: $badge-text;
+    background-color: $badge-blue-hover;
+    border: 1px solid $badge-blue-hover;
+}

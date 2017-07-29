@@ -1,0 +1,284 @@
+/*****************
+ *     CARDS     *
+ *****************/
+
+.card {
+  border-radius: 8px;
+  line-height: 1.5;
+  background-color: $card;
+}
+
+.circle {
+    border: 1px solid $badge;
+    background-color: $badge;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    max-width: 100%;
+    max-height: 100%;
+    margin: 10px 5px -25px -5px;
+    object-fit: cover;
+    overflow-y: hidden;
+}
+
+.book {
+    border: 1px solid $badge;
+    background-color: $badge;
+    border-radius: 20%;
+    width: 70px;
+    height: 90px;
+    margin: 10px 5px -25px -5px;
+    object-fit: cover;
+    overflow-y: hidden;
+    left: -100%;
+    right: -100%;
+    top: -100%;
+    bottom: -100%;
+}
+
+.card-title {
+  @include font($size: 2.5rem, $color: $fg, $weight: 400);
+}
+
+.card-subtitle {
+  @include font($size: 1.5rem, $color: $fg, $weight: 400);
+  text-align: left;
+}
+
+.card-text {
+  @include font($size: 1.0rem, $color: $fg, $weight: 400);
+  text-align: left;
+}
+
+.card-title-night {
+  @include font($size: 2.5rem, $color: $bg, $weight: 400);
+}
+
+.card-subtitle-night {
+  @include font($size: 1.5rem, $color: $bg, $weight: 400);
+}
+
+.card-text-night {
+  @include font($size: 1.0rem, $color: $bg, $weight: 400);
+}
+
+.card-image {
+    display: block;
+    position: relative;
+    text-align: center;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    padding: 2rem 0 2rem 0;
+    border-bottom: 1px solid rgba(160,160,160,0.4);
+    border-radius: 8px 8px 0 0;
+}
+
+.card-image-big {
+    display: block;
+    position: relative;
+    text-align: center;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    padding: 0;
+    border-bottom: 1px solid rgba(160,160,160,0.4);
+    border-radius: 8px 8px 0 0;
+}
+
+.card-image-big img {
+  width: 60%;
+  height: 60%;
+}
+
+.card-action {
+  position: relative;
+  background-color: transparent;
+  border-top: 1px solid rgba(160,160,160,0.4);
+  padding: 16px 1.5rem;
+  text-align: left;
+  border-radius: 0 0 16px 16px;
+  @include font($size: 1.0rem, $weight: 400);
+}
+
+.card-action .fa {
+  margin-right: 8px;
+}
+
+.card-body {
+  padding: 1.5rem;
+}
+
+.card-badge {
+  text-align: justify;
+}
+
+.card-chip {
+  text-align: justify;
+}
+
+.card-image.coin {
+  @include linear-gradient(135deg, $coin 0%, darken($coin, 5%) 50%, darken($coin, 7%) 100%);
+}
+
+.card-image.quilter {
+  @include linear-gradient(135deg, $quilter 0%, darken($quilter, 5%) 50%, darken($quilter, 7%) 100%);
+}
+
+.card-image.notejot {
+  @include linear-gradient(135deg, $notejot 0%, darken($notejot, 5%) 50%, darken($notejot, 7%) 100%);
+}
+
+.card-image-big.coin {
+  @include linear-gradient(160deg, $coin 0%, darken($coin, 5%) 50%, darken($coin, 7%) 100%);
+}
+
+.card-image-big.quilter {
+  @include linear-gradient(160deg, $quilter 0%, darken($quilter, 5%) 50%, darken($quilter, 7%) 100%);
+}
+
+.card-image-big.notejot {
+  @include linear-gradient(160deg, $notejot 0%, darken($notejot, 5%) 50%, darken($notejot, 7%) 100%);
+}
+
+.card-text.javascript {
+  text-align: right;
+  padding-right: 20px;
+  line-height: 35px;
+  color: $fg;
+  width: 60%;
+  background-color: $js;
+  border-radius: 32px;
+}
+
+.card-text.python {
+  text-align: right;
+  padding-right: 20px;
+  line-height: 35px;
+  color: $bg;
+  width: 70%;
+  background-color: $py;
+  border-radius: 32px;
+}
+
+.card-text.vala {
+  text-align: right;
+  padding-right: 20px;
+  line-height: 35px;
+  color: $bg;
+  width: 50%;
+  background-color: $vala;
+  border-radius: 32px;
+}
+
+.card-text.bash {
+  text-align: right;
+  padding-right: 20px;
+  line-height: 35px;
+  color: $bg;
+  width: 90%;
+  background-color: $bash;
+  border-radius: 32px;
+}
+
+.card-text.java {
+  text-align: right;
+  padding-right: 20px;
+  line-height: 35px;
+  color: $bg;
+  width: 20%;
+  background-color: $java;
+  border-radius: 32px;
+}
+
+.card-text.c {
+  text-align: right;
+  padding-right: 20px;
+  line-height: 35px;
+  color: $bg;
+  width: 40%;
+  background-color: $c;
+  border-radius: 32px;
+}
+
+.card-text.html {
+  text-align: right;
+  padding-right: 20px;
+  line-height: 35px;
+  color: $bg;
+  width: 80%;
+  background-color: $html;
+  border-radius: 32px;
+}
+
+.card-text.pt {
+  text-align: right;
+  padding-right: 20px;
+  line-height: 35px;
+  color: $bg;
+  width: 100%;
+  background-color: $pt;
+  border-radius: 32px;
+}
+
+.card-text.en {
+  text-align: right;
+  padding-right: 20px;
+  line-height: 35px;
+  color: $bg;
+  width: 99%;
+  background-color: $en;
+  border-radius: 32px;
+}
+
+.card-text.de {
+  text-align: right;
+  padding-right: 20px;
+  line-height: 35px;
+  color: $fg;
+  width: 50%;
+  background-color: $de;
+  border-radius: 32px;
+}
+
+.card-text.it {
+  text-align: right;
+  padding-right: 20px;
+  line-height: 35px;
+  color: $bg;
+  width: 40%;
+  background-color: $it;
+  border-radius: 32px;
+}
+
+.card-text.es {
+  text-align: right;
+  padding-right: 20px;
+  line-height: 35px;
+  color: $bg;
+  width: 60%;
+  background-color: $es;
+  border-radius: 32px;
+}
+
+.card-text.zh {
+  text-align: right;
+  padding-right: 20px;
+  line-height: 35px;
+  color: $bg;
+  width: 25%;
+  background-color: $zh;
+  border-radius: 32px;
+}
+
+.card-text.jp {
+  text-align: right;
+  padding-right: 20px;
+  line-height: 35px;
+  color: $fg;
+  width: 20%;
+  background-color: $jp;
+  border-radius: 32px;
+}

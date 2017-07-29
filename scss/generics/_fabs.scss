@@ -1,0 +1,66 @@
+/********************
+ *       FAB        *
+ ********************/
+
+.fab {
+    border-radius: 100%;
+    background-color: rgba(0,0,0,0.1);
+    background-image: none;
+    box-shadow: none;
+    color: $fg;
+    border: 1px solid transparent;
+    display: inline-block;
+    text-align: center;
+    margin: 6px;
+    list-style: none;
+    height: 36px;
+    line-height: 36px;
+    width: 36px;
+}
+
+.fab.github:hover {
+    background-color: $fab-github;
+    border: 1px solid $fab-github;
+}
+
+.fab.mail:hover {
+    background-color: $fab-mail;
+    border: 1px solid $fab-mail;
+}
+
+.fab.twitter:hover {
+    background-color: $fab-twitter;
+    border: 1px solid $fab-twitter;
+}
+
+.fab.gplus:hover {
+    background-color: $fab-gplus;
+    border: 1px solid $fab-gplus;
+}
+
+.fab.medium:hover {
+    background-color: $fab-medium;
+    border: 1px solid $fab-medium;
+}
+
+.fab.telegram:hover {
+    background-color: $fab-telegram;
+    border: 1px solid $fab-telegram;
+}
+
+.fab.patreon:hover {
+    background-color: $fab-patreon;
+    border: 1px solid $fab-patreon;
+}
+
+.fab-img {
+    color: $fg;
+    display: block;
+    height: 100%;
+    width: 100%;
+    margin-top: -2px;
+}
+
+.fab-img:hover {
+    color: $fab-icon;
+}

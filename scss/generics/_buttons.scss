@@ -1,0 +1,169 @@
+/********************
+ *     BUTTON       *
+ ********************/
+
+.button {
+    border-radius: 8px;
+    display: inline-block;
+    margin: 1rem 0;
+    min-width: 100px;
+    padding: 0.8rem;
+    text-align: center;
+    text-transform: uppercase;
+    @include font($weight: 700);
+}
+
+.button + .button {
+    margin-left: 12px;
+}
+
+.button .fa {
+    margin-right: 8px;
+}
+
+.footer-button {
+    @include font($size: 0.7rem);
+    padding: 0.4rem;
+}
+
+.button.success {
+    background-color: $button-success;
+    background-image: none;
+    border: 1px solid $button-success;
+    color: $bg;
+    @include box-shadow(0px 3px 12px 0px $button-success);
+}
+
+.button.success:hover {
+    background-color: $button-success-hover;
+    color: $bg;
+    border: 1px solid $button-success-hover;
+    @include box-shadow(0px 3px 12px 0px $button-success);
+}
+
+.button.success:active {
+    background-color: $button-success-active;
+    background-image: none;
+    color: $bg;
+    border: 1px solid $button-success-active;
+    @include box-shadow(0px 3px 12px 0px $button-success);
+}
+
+.button.info {
+    background-color: $button-info;
+    background-image: none;
+    border: 1px solid $button-info;
+    color: $bg;
+    @include box-shadow(0px 3px 12px 0px $button-info);
+}
+
+.button.info:hover {
+    background-color: $button-info-hover;
+    color: $bg;
+    border: 1px solid $button-info-hover;
+    @include box-shadow(0px 3px 12px 0px $button-info);
+}
+
+.button.info:active {
+    background-color: $button-info-active;
+    background-image: none;
+    color: $bg;
+    border: 1px solid $button-info-active;
+    @include box-shadow(0px 3px 12px 0px $button-info);
+}
+
+.button.ghost {
+    background-color: rgba(0,0,0,0.1);
+    background-image: none;
+    box-shadow: none;
+    color: $fg;
+    border: 1px solid transparent;
+}
+
+.button.ghost:hover {
+    background-color: $button-ghost-hover;
+    background-image: none;
+    box-shadow: none;
+    color: $bg;
+    border: 1px solid transparent;
+}
+
+.button.ghost:active {
+    background-color: $button-ghost-active;
+    background-image: none;
+    box-shadow: none;
+    color: $bg;
+    border: 1px solid transparent;
+}
+
+.button.ghost-night {
+  background-color: rgba(255,255,255,0.3);
+  background-image: none;
+  border: 1px solid transparent;
+  box-shadow: none;
+  color: $bg;
+}
+
+.button.ghost-night:hover {
+    background-color: $button-ghost-night-hover;
+    background-image: none;
+    box-shadow: none;
+    color: $fg;
+    border: 1px solid transparent;
+}
+
+.button.ghost-night:active {
+    background-color: $button-ghost-night-active;
+    background-image: none;
+    box-shadow: none;
+    color: $fg;
+    border: 1px solid transparent;
+}
+
+.button.ghost-twitter {
+    background-color: rgba(255,255,255,0.3);
+    background-image: none;
+    border: 1px solid transparent;
+    box-shadow: none;
+    color: $bg;
+}
+
+.button.ghost-twitter:hover {
+    background-color: $button-info;
+    border: 1px solid transparent;
+    background-image: none;
+    box-shadow: none;
+    color: $bg;
+}
+
+.button.ghost-twitter:active {
+    background-color: $button-info-active;
+    border: 1px solid transparent;
+    background-image: none;
+    box-shadow: none;
+    color: $bg;
+}
+
+.button.ghost-success {
+    background-color: rgba(255,255,255,0.3);
+    border: 1px solid transparent;
+    background-image: none;
+    box-shadow: none;
+    color: $bg;
+}
+
+.button.ghost-success:hover {
+    background-color: $button-success;
+    border: 1px solid transparent;
+    background-image: none;
+    box-shadow: none;
+    color: $bg;
+}
+
+.button.ghost-success:active {
+    background-color: $button-success-active;
+    border: 1px solid transparent;
+    background-image: none;
+    box-shadow: none;
+    color: $bg;
+}

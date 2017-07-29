@@ -1,0 +1,36 @@
+/********************
+ *     FOOTER       *
+ ********************/
+
+.footer {
+    background-color: $card;
+    color: $fg;
+    box-sizing: border-box;
+    @include font($size: 0.8rem, $weight: 400, $lh: 0.8rem);
+    padding: 1.2rem 0;
+    height: 30%;
+    position: relative;
+    text-align: center;
+    width: 100%;
+    display: block;
+}
+
+.footer-black {
+    color: $bg;
+    box-sizing: border-box;
+    @include font($size: 0.8rem, $weight: 400, $lh: 0.8rem);
+    padding: 1.2rem 0;
+    height: 100%;
+    position: relative;
+    text-align: center;
+    width: 100%;
+    display: inline-block;
+}
+
+.footer-space {
+    display: block;
+    padding: 0;
+    margin: 0 auto;
+    text-align: center;
+    list-style: none;
+}

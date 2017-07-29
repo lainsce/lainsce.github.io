@@ -1,0 +1,24 @@
+/*****************
+ *     CHIPS    *
+ *****************/
+.chip {
+    display: inline-block;
+    height: 32px;
+    font-size: 13px;
+    font-weight: 700;
+    color: $fg;
+    line-height: 32px;
+    padding: 0 12px;
+    border-radius: 16px;
+    background-color: $chip;
+    margin-bottom: 5px;
+    margin-right: 5px;
+}
+
+.chip>img {
+    float: left;
+    margin: 0 8px 0 -12px;
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+}
