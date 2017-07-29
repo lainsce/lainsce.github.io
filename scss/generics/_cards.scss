@@ -124,7 +124,7 @@
 }
 
 .card-image-big.card-image-background {
-  @include linear-gradient(160deg, $card-background-2 0%, $card-background-1 100%);
+  @include linear-gradient(160deg, $background-1 0%, $background-2 100%);
 }
 
 .card-skillbar {
