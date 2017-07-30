@@ -1,25 +1,23 @@
 /******************
- *      HERO      *
- ******************/
+*      HERO      *
+******************/
 
- .hero {
-     align-items: center;
-     -webkit-box-pack: center;
-     -ms-flex-pack: center;
-     justify-content: center;
-     display: flex;
-     height: 65vh;
-     position: relative;
-     overflow: hidden;
+.hero {
+  align-items: center;
+  display: flex;
+  height: 65vh;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
 
-   &::before {
+  &:before {
     background: #000;
     background-image: url("/img/hero.jpg");
-    filter: brightness(40%);
-    background-repeat: no-repeat;
     background-position: center top;
+    background-repeat: no-repeat;
     background-size: cover;
-    content: '';
+    content: "";
+    filter: brightness(40%);
     height: 100%;
     left: 0;
     position: fixed;

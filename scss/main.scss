@@ -3,12 +3,12 @@
 
 /* BASE */
 @import "base/bootstrap";
+@import "base/mixins";
 
 /* THEME */
 @import "theme/palette";
 
 /* GENERICS */
-@import "generics/mixins";
 @import "generics/basic";
 @import "generics/typography";
 @import "generics/cards";

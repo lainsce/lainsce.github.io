@@ -1,6 +1,6 @@
 /*****************
- *    MIXINS     *
- *****************/
+*    MIXINS     *
+*****************/
 @mixin prefixer($property, $value, $prefixes) {
   @each $prefix in $prefixes {
     @if $prefix == webkit {
@@ -20,7 +20,7 @@
 }
 
 @mixin box-sizing($box) {
-   @include prefixer(box-sizing, $box, webkit moz ms o spec);
+  @include prefixer(box-sizing, $box, webkit moz ms o spec);
 }
 
 @mixin box-shadow($box-shadow) {
@@ -28,31 +28,31 @@
 }
 
 @mixin font($size: false, $color: false, $weight: false,  $lh: false) {
-    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
-    @if $size { font-size: $size; }
-    @if $color { color: $color; }
-    @if $weight { font-weight: $weight; }
-    @if $lh { line-height: $lh; }
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  @if $size { font-size: $size; }
+  @if $color { color: $color; }
+  @if $weight { font-weight: $weight; }
+  @if $lh { line-height: $lh; }
 }
 
 @function legacy-direction($value) {
   @if is-direction($value) == false {
-    @warn "Cannot convert `#{$value}` to legacy syntax because it doesn't seem to be a direction.";
+    @warn "Cannot convert `#{$value}` to legacy syntax because it does not seem to be a direction.";
   }
 
   $conversion-map: (
-    to top          : bottom,
-    to top right    : bottom left,
-    to right top    : left bottom,
-    to right        : left,
-    to bottom right : top left,
-    to right bottom : left top,
-    to bottom       : top,
-    to bottom left  : top right,
-    to left bottom  : right top,
-    to left         : right,
-    to left top     : right bottom,
-    to top left     : bottom right
+    to top: bottom,
+    to top right: bottom left,
+    to right top: left bottom,
+    to right: left,
+    to bottom right: top left,
+    to right bottom: left top,
+    to bottom: top,
+    to bottom left: top right,
+    to left bottom: right top,
+    to left: right,
+    to left top: right bottom,
+    to top left: bottom right
   );
 
   @if map-has-key($conversion-map, $value) {
@@ -64,7 +64,7 @@
 
 @function is-direction($value) {
   $is-keyword: index((to top, to top right, to right top, to right, to bottom right, to right bottom, to bottom, to bottom left, to left bottom, to left, to left top, to top left), $value);
-  $is-angle: type-of($value) == 'number' and index('deg' 'grad' 'turn' 'rad', unit($value));
+  $is-angle: type-of($value) == "number" and index("deg" "grad" "turn" "rad", unit($value));
 
   @return $is-keyword or $is-angle;
 }

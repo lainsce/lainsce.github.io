@@ -1,78 +1,81 @@
-*.right {
-    float: right;
+.right {
+  float: right;
 }
 
-*.left {
-    float: left;
+.left {
+  float: left;
 }
 
-*.middle {
-    float: center;
+.middle {
+  float: center;
 }
 
 a {
-    text-decoration: none;
-    text-transform: uppercase;
+  text-decoration: none;
+  text-transform: uppercase;
 }
 
 h1 {
-    @include font($size: 3.5rem, $weight: 700);
+  @include font($size: 3.5rem, $weight: 700);
 }
 
 h2 {
-    @include font($size: 2.5rem, $weight: 400);
+  @include font($size: 2.5rem, $weight: 400);
 }
 
 h3 {
-    @include font($size: 1.8rem, $weight: 400);
+  @include font($size: 1.8rem, $weight: 400);
 }
 
 h4 {
-    @include font($size: 1.3rem);
+  @include font($size: 1.3rem);
 }
 
 pre {
-    font-size: 90%;
-    border-radius: 3px;
-    background-color: #021B21;
-    color: #E8DFD6;
-    border: 5px solid #354E54;
-}
+  background-color: #021B21;
+  border: 5px solid #354E54;
+  border-radius: 3px;
+  color: #E8DFD6;
+  font-size: 90%;
 
-pre code {
-    white-space: pre-line;
-    font-size: inherit;
-    position: relative;
-    left: 30px;
+  & code {
+    border-radius: 0;
     bottom: 10px;
     color: inherit;
-    border-radius: 0;
+    font-size: inherit;
+    left: 30px;
+    position: relative;
+    white-space: pre-line;
+  }
 }
 
 kbd {
-    padding: .2rem .35rem;
-    font-size: 90%;
-    position: relative;
-    left: 5px;
-    color: $bg;
-    background-color: $fg;
-    border-bottom: 2px solid $badge;
-    border-left: 1px solid $badge;
-    border-right: 1px solid $badge;
-    border-radius: .3rem;
+  background-color: $fg;
+  border-bottom: 2px solid $badge;
+  border-left: 1px solid $badge;
+  border-radius: .3rem;
+  border-right: 1px solid $badge;
+  color: $bg;
+  font-size: 90%;
+  left: 5px;
+  padding: .2rem .35rem;
+  position: relative;
 }
 
-code, kbd, pre, samp {
-    font-family: Hack,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
-    font-size: 1em;
+code,
+kbd,
+pre,
+samp {
+  font-family: Hack, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-size: 1em;
 }
 
 .title {
-    margin: 0 auto;
-    text-align: center;
-    @include font($size: 1.5rem, $weight: 400, $color: $fg);
+  @include font($size: 1.5rem, $weight: 400, $color: $fg);
+  margin: 0 auto;
+  text-align: center;
 }
 
 .dim-label {
-    opacity: 0.8;
+  opacity: .8;
 }

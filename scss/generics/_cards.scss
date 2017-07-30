@@ -1,39 +1,50 @@
 /*****************
- *     CARDS     *
- *****************/
+*     CARDS     *
+*****************/
 
 .card {
+  background-color: $card;
   border-radius: 16px;
   line-height: 1.5;
-  background-color: $card;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.card-alone {
+  margin-right: 0;
+}
+
+.card + .card {
+  margin-right: 0;
+  padding-right: 0;
 }
 
 .circle {
-    border: 1px solid $badge;
-    background-color: $badge;
-    border-radius: 50%;
-    width: 70px;
-    height: 70px;
-    max-width: 100%;
-    max-height: 100%;
-    margin: 10px 5px -25px -5px;
-    object-fit: cover;
-    overflow-y: hidden;
+  background-color: $badge;
+  border: 1px solid $badge;
+  border-radius: 50%;
+  height: 70px;
+  margin: 10px 5px -25px -5px;
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: cover;
+  overflow-y: hidden;
+  width: 70px;
 }
 
 .book {
-    border: 1px solid $badge;
-    background-color: $badge;
-    border-radius: 20%;
-    width: 70px;
-    height: 90px;
-    margin: 10px 5px -25px -5px;
-    object-fit: cover;
-    overflow-y: hidden;
-    left: -100%;
-    right: -100%;
-    top: -100%;
-    bottom: -100%;
+  background-color: $badge;
+  border: 1px solid $badge;
+  border-radius: 20%;
+  bottom: -100%;
+  height: 90px;
+  left: -100%;
+  margin: 10px 5px -25px -5px;
+  object-fit: cover;
+  overflow-y: hidden;
+  right: -100%;
+  top: -100%;
+  width: 70px;
 }
 
 .card-title {
@@ -46,7 +57,7 @@
 }
 
 .card-text {
-  @include font($size: 1.0rem, $color: $fg, $weight: 400);
+  @include font($size: 1rem, $color: $fg, $weight: 400);
   text-align: left;
 }
 
@@ -59,52 +70,60 @@
 }
 
 .card-text-night {
-  @include font($size: 1.0rem, $color: $bg, $weight: 400);
+  @include font($size: 1rem, $color: $bg, $weight: 400);
 }
 
 .card-image {
-    display: block;
-    position: relative;
-    text-align: center;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    padding: 2rem 0 2rem 0;
-    border-bottom: 1px solid rgba(160,160,160,0.4);
-    border-radius: 16px 16px 0 0;
+  border-bottom: 1px solid rgba(160, 160, 160, .4);
+  border-radius: 16px 16px 0 0;
+  bottom: 0;
+  display: block;
+  left: 0;
+  padding: 2rem 0;
+  position: relative;
+  right: 0;
+  text-align: center;
+  top: 0;
+
+  &.card-image-background {
+    @include linear-gradient(160deg, $card-background-2 0%, $card-background-1 100%);
+  }
 }
 
 .card-image-big {
-    display: block;
-    position: relative;
-    text-align: center;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    padding: 0;
-    border-bottom: 1px solid rgba(160,160,160,0.4);
-    border-radius: 16px 16px 0 0;
-}
+  border-bottom: 1px solid rgba(160, 160, 160, .4);
+  border-radius: 16px 16px 0 0;
+  bottom: 0;
+  display: block;
+  left: 0;
+  padding: 0;
+  position: relative;
+  right: 0;
+  text-align: center;
+  top: 0;
 
-.card-image-big img {
-  width: 60%;
-  height: 60%;
+  & img {
+    height: 60%;
+    width: 60%;
+  }
+
+  &.card-image-background {
+    @include linear-gradient(160deg, $background-1 0%, $background-2 100%);
+  }
 }
 
 .card-action {
-  position: relative;
+  @include font($size: 1rem, $weight: 400);
   background-color: transparent;
-  border-top: 1px solid rgba(160,160,160,0.4);
-  padding: 16px 1.5rem;
-  text-align: left;
   border-radius: 0 0 16px 16px;
-  @include font($size: 1.0rem, $weight: 400);
-}
+  border-top: 1px solid rgba(160, 160, 160, .4);
+  padding: 16px 1.5rem;
+  position: relative;
+  text-align: left;
 
-.card-action .fa {
-  margin-right: 8px;
+  &.fa {
+    margin-right: 8px;
+  }
 }
 
 .card-body {
@@ -119,22 +138,14 @@
   text-align: justify;
 }
 
-.card-image.card-image-background {
-  @include linear-gradient(160deg, $card-background-2 0%, $card-background-1 100%);
-}
-
-.card-image-big.card-image-background {
-  @include linear-gradient(160deg, $background-1 0%, $background-2 100%);
-}
-
 .card-skillbar {
-  text-align: right;
-  padding-right: 20px;
-  line-height: 35px;
-  color: $bg;
-  width: 50%;
   background-color: $card-skillbar;
   border-radius: 16px;
+  color: $bg;
+  line-height: 35px;
+  padding-right: 20px;
+  text-align: right;
+  width: 50%;
 }
 
 .card-stars {
