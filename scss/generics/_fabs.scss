@@ -5,7 +5,7 @@
 .fab {
   background-color: none;
   background-image: none;
-  border: 1px solid $fg;
+  border: 2px solid $fg;
   border-radius: 100%;
   box-shadow: none;
   color: $fg;
@@ -21,7 +21,7 @@
     &:hover {
       @include box-shadow(0 3px 7px rgba($fab-github, .5));
       background-color: $fab-github;
-      border: 1px solid $fab-github;
+      border: 2px solid $fab-github;
     }
   }
 
@@ -29,7 +29,7 @@
     &:hover {
       @include box-shadow(0 3px 7px rgba($fab-mail, .5));
       background-color: $fab-mail;
-      border: 1px solid $fab-mail;
+      border: 2px solid $fab-mail;
     }
   }
 
@@ -37,7 +37,7 @@
     &:hover {
       @include box-shadow(0 3px 7px rgba($fab-twitter, .5));
       background-color: $fab-twitter;
-      border: 1px solid $fab-twitter;
+      border: 2px solid $fab-twitter;
     }
   }
 
@@ -45,7 +45,7 @@
     &:hover {
       @include box-shadow(0 3px 7px rgba($fab-gplus, .5));
       background-color: $fab-gplus;
-      border: 1px solid $fab-gplus;
+      border: 2px solid $fab-gplus;
     }
   }
 
@@ -53,7 +53,7 @@
     &:hover {
       @include box-shadow(0 3px 7px rgba($fab-medium, .5));
       background-color: $fab-medium;
-      border: 1px solid $fab-medium;
+      border: 2px solid $fab-medium;
     }
   }
 
@@ -61,7 +61,7 @@
     &:hover {
       @include box-shadow(0 3px 7px rgba($fab-telegram, .5));
       background-color: $fab-telegram;
-      border: 1px solid $fab-telegram;
+      border: 2px solid $fab-telegram;
     }
   }
 
@@ -69,7 +69,7 @@
     &:hover {
       @include box-shadow(0 3px 7px rgba($fab-patreon, .5));
       background-color: $fab-patreon;
-      border: 1px solid $fab-patreon;
+      border: 2px solid $fab-patreon;
     }
   }
 

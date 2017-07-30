@@ -48,7 +48,6 @@
 
 .card-subtitle {
   @include font($size: 1.5rem, $color: $fg, $weight: 400);
-  text-align: left;
 }
 
 .card-text {
@@ -81,7 +80,7 @@
   top: 0;
 
   &.card-image-background {
-    @include linear-gradient(160deg, $card-background-2 0%, $card-background-1 100%);
+    @include linear-gradient(150deg, $card-background 0%, darken($card-background, 10%) 100%);
   }
 }
 
@@ -91,20 +90,20 @@
   bottom: 0;
   display: block;
   left: 0;
-  padding: 0;
+  padding: 1rem 0;
   position: relative;
   right: 0;
   text-align: center;
   top: 0;
 
-  & img {
-    height: 60%;
-    width: 60%;
-  }
-
   &.card-image-background {
-    @include linear-gradient(160deg, $background-1 0%, $background-2 100%);
+    @include linear-gradient(150deg, $card-background 0%, darken($card-background, 10%) 100%);
   }
+}
+
+.card-inside-img {
+  height: 60%;
+  width: 60%;
 }
 
 .card-action {

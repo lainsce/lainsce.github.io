@@ -19,14 +19,14 @@
   &.success {
     background-color: $button-success;
     background-image: none;
-    border: 1px solid $button-success;
+    border: 2px solid $button-success;
     box-shadow: none;
     color: $bg;
 
     &:hover {
       @include box-shadow(0 3px 12px 0 $button-success);
       background-color: $button-success;
-      border: 1px solid $button-success;
+      border: 2px solid $button-success;
       color: $bg;
     }
 
@@ -34,7 +34,7 @@
       @include box-shadow(0 3px 12px 0 $button-success);
       background-color: $button-success-active;
       background-image: none;
-      border: 1px solid $button-success-active;
+      border: 2px solid $button-success-active;
       color: $bg;
     }
   }
@@ -42,14 +42,14 @@
   &.info {
     background-color: $button-info;
     background-image: none;
-    border: 1px solid $button-info;
+    border: 2px solid $button-info;
     box-shadow: none;
     color: $bg;
 
     &:hover {
       @include box-shadow(0 3px 12px 0 $button-info);
       background-color: $button-info;
-      border: 1px solid $button-info;
+      border: 2px solid $button-info;
       color: $bg;
     }
 
@@ -57,7 +57,7 @@
       @include box-shadow(0 3px 12px 0 $button-info-active);
       background-color: $button-info-active;
       background-image: none;
-      border: 1px solid $button-info-active;
+      border: 2px solid $button-info-active;
       color: $bg;
     }
   }
@@ -65,7 +65,7 @@
   &.ghost {
     background-color: transparent;
     background-image: none;
-    border: 1px solid $fg;
+    border: 2px solid $fg;
     box-shadow: none;
     color: $fg;
 
@@ -73,7 +73,7 @@
       @include box-shadow(0 3px 7px rgba($button-ghost, .5));
       background-color: $button-ghost;
       background-image: none;
-      border: 1px solid transparent;
+      border: 2px solid transparent;
       color: $bg;
     }
 
@@ -81,7 +81,7 @@
       @include box-shadow(0 3px 7px rgba($button-ghost-active, .5));
       background-color: $button-ghost-active;
       background-image: none;
-      border: 1px solid transparent;
+      border: 2px solid transparent;
       color: $bg;
     }
   }
@@ -89,7 +89,7 @@
   &.ghost-night {
     background-color: transparent;
     background-image: none;
-    border: 1px solid $bg;
+    border: 2px solid $bg;
     box-shadow: none;
     color: $bg;
 
@@ -97,7 +97,7 @@
       @include box-shadow(0 3px 7px rgba($button-ghost-night, .5));
       background-color: $button-ghost-night;
       background-image: none;
-      border: 1px solid transparent;
+      border: 2px solid transparent;
       color: $fg;
     }
 
@@ -105,7 +105,7 @@
       @include box-shadow(0 3px 7px rgba($button-ghost-night-active, .5));
       background-color: $button-ghost-night-active;
       background-image: none;
-      border: 1px solid transparent;
+      border: 2px solid transparent;
       color: $fg;
     }
   }
@@ -113,7 +113,7 @@
   &.ghost-twitter {
     background-color: transparent;
     background-image: none;
-    border: 1px solid $bg;
+    border: 2px solid $bg;
     box-shadow: none;
     color: $bg;
 
@@ -121,7 +121,7 @@
       @include box-shadow(0 3px 7px rgba($button-info, .5));
       background-color: $button-info;
       background-image: none;
-      border: 1px solid transparent;
+      border: 2px solid transparent;
       color: $bg;
     }
 
@@ -129,7 +129,7 @@
       @include box-shadow(0 3px 7px rgba($button-info-active, .5));
       background-color: $button-info-active;
       background-image: none;
-      border: 1px solid transparent;
+      border: 2px solid transparent;
       color: $bg;
     }
   }
@@ -137,7 +137,7 @@
   &.ghost-success {
     background-color: transparent;
     background-image: none;
-    border: 1px solid $bg;
+    border: 2px solid $bg;
     box-shadow: none;
     color: $bg;
 
@@ -145,7 +145,7 @@
       @include box-shadow(0 3px 7px rgba($button-success, .5));
       background-color: $button-success;
       background-image: none;
-      border: 1px solid transparent;
+      border: 2px solid transparent;
       color: $bg;
     }
 
@@ -153,7 +153,7 @@
       @include box-shadow(0 3px 7px rgba($button-success-active, .5));
       background-color: $button-success-active;
       background-image: none;
-      border: 1px solid transparent;
+      border: 2px solid transparent;
       color: $bg;
     }
   }
