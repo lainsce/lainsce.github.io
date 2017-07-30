@@ -3,9 +3,9 @@
 ********************/
 
 .fab {
-  background-color: rgba(0, 0, 0, .1);
+  background-color: none;
   background-image: none;
-  border: 1px solid transparent;
+  border: 1px solid $fg;
   border-radius: 100%;
   box-shadow: none;
   color: $fg;
@@ -77,7 +77,6 @@
     color: $fg;
     display: block;
     height: 100%;
-    margin-top: 0;
     width: 100%;
 
     &:hover {
