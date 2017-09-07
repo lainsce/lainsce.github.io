@@ -65,7 +65,7 @@
   &.ghost {
     background-color: transparent;
     background-image: none;
-    border: 2px solid $fg;
+    border: 2px solid rgba($fg, .5);
     box-shadow: none;
     color: $fg;
 
@@ -89,7 +89,7 @@
   &.ghost-night {
     background-color: transparent;
     background-image: none;
-    border: 2px solid $bg;
+    border: 2px solid rgba($bg, .5);
     box-shadow: none;
     color: $bg;
 
