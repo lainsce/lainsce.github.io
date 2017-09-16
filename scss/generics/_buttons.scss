@@ -113,7 +113,7 @@
   &.ghost-twitter {
     background-color: transparent;
     background-image: none;
-    border: 2px solid $bg;
+    border: 2px solid rgba($bg, .5);
     box-shadow: none;
     color: $bg;
 
@@ -137,7 +137,7 @@
   &.ghost-success {
     background-color: transparent;
     background-image: none;
-    border: 2px solid $bg;
+    border: 2px solid rgba($bg, .5);
     box-shadow: none;
     color: $bg;
 

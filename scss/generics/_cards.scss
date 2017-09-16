@@ -4,7 +4,7 @@
 
 .card {
   background-color: $card;
-  border-radius: 16px;
+  border-radius: 1rem;
   line-height: 1.5;
   margin-left: 15px;
   margin-right: 15px;
@@ -30,7 +30,7 @@
 .book {
   background-color: $badge;
   border: 1px solid $badge;
-  border-radius: 20%;
+  border-radius: 15%;
   bottom: -100%;
   height: 90px;
   left: -100%;
@@ -69,7 +69,7 @@
 
 .card-image {
   border-bottom: 1px solid rgba(160, 160, 160, .4);
-  border-radius: 16px 16px 0 0;
+  border-radius: 1rem 1rem 0 0;
   bottom: 0;
   display: block;
   left: 0;
@@ -86,7 +86,7 @@
 
 .card-image-big {
   border-bottom: 1px solid rgba(160, 160, 160, .4);
-  border-radius: 16px 16px 0 0;
+  border-radius: 1rem 1rem 0 0;
   bottom: 0;
   display: block;
   left: 0;
@@ -107,13 +107,13 @@
 }
 
 .card-action {
-  @include font($size: 0.75rem, $weight: 400);
+  @include font($size: .9rem, $weight: 400);
   background-color: $background-3;
-  border-radius: 0 0 16px 16px;
+  border-radius: 0 0 1rem 1rem;
   border-top: transparent;
-  padding: 16px 1.5rem;
+  padding: 1rem 1.5rem;
   position: relative;
-  text-align: left;
+  text-align: center;
 
   &.fa {
     margin-right: 8px;
@@ -134,7 +134,7 @@
 
 .card-skillbar {
   background-color: $card-skillbar;
-  border-radius: 16px;
+  border-radius: 1rem;
   color: $bg;
   line-height: 35px;
   padding-right: 20px;
