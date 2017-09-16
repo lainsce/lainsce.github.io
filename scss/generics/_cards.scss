@@ -107,7 +107,7 @@
 }
 
 .card-action {
-  @include font($size: 1rem, $weight: 400);
+  @include font($size: 0.75rem, $weight: 400);
   background-color: $background-3;
   border-radius: 0 0 16px 16px;
   border-top: transparent;
