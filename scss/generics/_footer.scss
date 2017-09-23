@@ -3,7 +3,7 @@
 ********************/
 
 .footer {
-  @include font($size: .8rem, $weight: 400, $lh: .8rem);
+  @include font($size: .9rem, $weight: 400, $lh: .9rem);
   background-color: $card;
   box-sizing: border-box;
   color: $fg;
@@ -16,7 +16,7 @@
 }
 
 .footer-black {
-  @include font($size: .8rem, $weight: 400, $lh: .8rem);
+  @include font($size: .9rem, $weight: 400, $lh: .9rem);
   box-sizing: border-box;
   color: $bg;
   display: inline-block;

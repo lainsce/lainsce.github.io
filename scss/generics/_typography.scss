@@ -16,19 +16,19 @@ a {
 }
 
 h1 {
-  @include font($size: 3.5rem, $weight: 700);
+  @include font($size: 3.25rem, $weight: 700);
 }
 
 h2 {
-  @include font($size: 2.5rem, $weight: 400);
+  @include font($size: 3rem, $weight: 400);
 }
 
 h3 {
-  @include font($size: 1.8rem, $weight: 400);
+  @include font($size: 1.75rem, $weight: 400);
 }
 
 h4 {
-  @include font($size: 1.3rem);
+  @include font($size: 1.25rem);
 }
 
 pre {
@@ -71,7 +71,7 @@ samp {
 }
 
 .title {
-  @include font($size: 1.5rem, $weight: 400, $color: $fg);
+  @include font($size: 1.5rem, $weight: 700, $color: $fg);
   margin: 0 auto;
   text-align: center;
 }

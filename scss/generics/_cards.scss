@@ -4,7 +4,7 @@
 
 .card {
   background-color: $card;
-  border-radius: 1rem;
+  border-radius: .8rem;
   line-height: 1.5;
   margin-left: 15px;
   margin-right: 15px;
@@ -30,7 +30,7 @@
 .book {
   background-color: $badge;
   border: 1px solid $badge;
-  border-radius: 15%;
+  border-radius: 10%;
   bottom: -100%;
   height: 90px;
   left: -100%;
@@ -43,28 +43,28 @@
 }
 
 .card-title {
-  @include font($size: 2.5rem, $color: $fg, $weight: 400);
+  @include font($size: 2.5rem, $color: $fg, $weight: 700);
 }
 
 .card-subtitle {
-  @include font($size: 1.5rem, $color: $fg, $weight: 400);
+  @include font($size: 1.75rem, $color: $fg, $weight: 400);
 }
 
 .card-text {
-  @include font($size: 1rem, $color: $fg, $weight: 400);
+  @include font($size: 1.25rem, $color: $fg, $weight: 400);
   text-align: left;
 }
 
 .card-title-night {
-  @include font($size: 2.5rem, $color: $bg, $weight: 400);
+  @include font($size: 2.5rem, $color: $bg, $weight: 700);
 }
 
 .card-subtitle-night {
-  @include font($size: 1.5rem, $color: $bg, $weight: 400);
+  @include font($size: 1.75rem, $color: $bg, $weight: 400);
 }
 
 .card-text-night {
-  @include font($size: 1rem, $color: $bg, $weight: 400);
+  @include font($size: 1.25rem, $color: $bg, $weight: 400);
 }
 
 .card-image {
@@ -125,7 +125,7 @@
 }
 
 .card-action {
-  @include font($size: .9rem, $weight: 400);
+  @include font($size: 1.1rem, $weight: 400);
   background-color: $background-3;
   border-radius: 0 0 1rem 1rem;
   border-top: transparent;
