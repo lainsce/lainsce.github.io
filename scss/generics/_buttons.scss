@@ -3,7 +3,7 @@
 ********************/
 
 .button {
-  @include font($size: 1.1rem, $weight: 700);
+  @include font($size: .9rem, $weight: 700);
   border-radius: 8px;
   display: inline-block;
   margin: 1rem 0;
