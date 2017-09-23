@@ -69,7 +69,7 @@
 
 .card-image {
   border-bottom: 1px solid rgba(160, 160, 160, .4);
-  border-radius: 1rem 1rem 0 0;
+  border-radius: .8rem .8rem 0 0;
   bottom: 0;
   display: block;
   left: 0;
@@ -95,7 +95,7 @@
 
 .card-image-big {
   border-bottom: 1px solid rgba(160, 160, 160, .4);
-  border-radius: 1rem 1rem 0 0;
+  border-radius: .8rem .8rem 0 0;
   bottom: 0;
   display: block;
   left: 0;
@@ -125,16 +125,16 @@
 }
 
 .card-action {
-  @include font($size: 1.1rem, $weight: 400);
+  @include font($size: .9rem, $weight: 500);
   background-color: $background-3;
-  border-radius: 0 0 1rem 1rem;
+  border-radius: 0 0 .8rem .8rem;
   border-top: transparent;
   padding: 1rem 1.5rem;
   position: relative;
   text-align: left;
 
   &.fa {
-    margin-right: 8px;
+    margin-right: 12px;
   }
 }
 
