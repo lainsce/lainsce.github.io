@@ -106,16 +106,16 @@
   top: 0;
 
   &.card-image-background-coin {
-    @include linear-gradient(150deg, $card-background-coin 0%, darken($card-background-coin, 10%) 100%);
+    @include linear-gradient(150deg, $card-background-coin 0%, darken($card-background-coin, 15%) 100%);
   }
   &.card-image-background-notejot {
-    @include linear-gradient(150deg, $card-background-notejot 0%, darken($card-background-notejot, 10%) 100%);
+    @include linear-gradient(150deg, $card-background-notejot 0%, darken($card-background-notejot, 15%) 100%);
   }
   &.card-image-background-palaura {
-    @include linear-gradient(150deg, $card-background-palaura 0%, darken($card-background-palaura, 10%) 100%);
+    @include linear-gradient(150deg, $card-background-palaura 0%, darken($card-background-palaura, 15%) 100%);
   }
   &.card-image-background-quilter {
-    @include linear-gradient(150deg, $card-background-quilter 0%, darken($card-background-quilter, 10%) 100%);
+    @include linear-gradient(150deg, $card-background-quilter 0%, darken($card-background-quilter, 15%) 100%);
   }
 }
 
@@ -131,7 +131,7 @@
   border-top: transparent;
   padding: 1rem 1.5rem;
   position: relative;
-  text-align: right;
+  text-align: left;
 
   &.fa {
     margin-right: 8px;
