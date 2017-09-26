@@ -3,38 +3,38 @@
  *****************/
 
 // Swatches
-$fg: #515767;
-$bg: #FAF9F9;
-$background-1: #FAF9F9;
-$background-2: #F5F5F7;
-$background-3: #EFF0F1;
-$link: #0091F9;
-$button-success: #18CEAE;
-$button-info: #0091F9;
-$button-ghost: #515767;
-$button-ghost-night: #F5F5F7;
-$badge: #868A99;
-$badge-text: #F5F5F7;
-$badge-success: #18CEAE;
-$chip: #EBF1F5;
-$card: #FBFEFE;
-$card-background-coin: #badbad;
-$card-background-notejot: #fff3ae;
-$card-background-palaura: #ddbdbd;
-$card-background-quilter: #b8d2e2;
-$card-skillbar: #9E6DEB;
-$card-stars: #FFC716;
-$tooltip: #515767;
-$fab-icon: #FBFEFE;
-$fab-twitter: #0091F9;
-$fab-gplus: #FF4D61;
-$fab-mail: #FFC716;
-$fab-medium: #18CEAE;
-$fab-patreon: #FF7B33;
-$fab-github: #515767;
+$fg: #4D4D4D;
+$bg: #F5F5F5;
+$background-1: #FFFFFF;
+$background-2: #FAFAFA;
+$background-3: #F5F5F5;
+$link: #3689E6;
+$button-success: #68B723;
+$button-info: #3689E6;
+$button-ghost: #4D4D4D;
+$button-ghost-night: #F5F5F5;
+$badge: #95A3AB;
+$badge-text: #F5F5F5;
+$badge-success: #68B723;
+$chip: #D4D4D4;
+$card: #FAFAFA;
+$card-background-coin: #BADBAD;
+$card-background-notejot: #FFF3AE;
+$card-background-palaura: #DDBDBD;
+$card-background-quilter: #B8D2E2;
+$card-skillbar: #AD65D6;
+$card-stars: #F9C440;
+$tooltip: #4D4D4D;
+$fab-icon: #FAFAFA;
+$fab-twitter: #3689E6;
+$fab-gplus: #ED5353;
+$fab-mail: #F9C440;
+$fab-medium: #68B723;
+$fab-patreon: #F37329;
+$fab-github: #4D4D4D;
 
 // Mixes
-$fab-telegram: darken($fab-twitter, 7%);
+$fab-telegram: darken($fab-twitter, 10%);
 $link-hover: darken($link, 5%);
 $link-active: darken($link, 10%);
 $button-success-active: darken($button-success, 10%);
