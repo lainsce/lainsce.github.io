@@ -43,7 +43,6 @@ pre {
   background-color: #FDF6E3;
   border: 3px solid #eee8d5;
   border-radius: 3px;
-  color: #657B83;
   font-size: 90%;
 
   & code {
@@ -57,6 +56,11 @@ pre {
 
     & p.symbol {
       color: #859900;
+      display: inline;
+    }
+
+    & p.command {
+      color: #657B83;
       display: inline;
     }
   }
