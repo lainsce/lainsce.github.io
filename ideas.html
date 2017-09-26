@@ -173,23 +173,8 @@ title: Ideas | Lains permalink: /ideas
     </div>
   </footer>
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script type="text/javascript">
-    $(function () {
-      $("#year").text((new Date).getFullYear());
-    });
-  </script>
-  <script type="text/javascript">
-    $(document).ready(function () {
-      $(window).on("scroll", function () {
-        var wn = $(window).scrollTop();
-        if (wn > 580) {
-          $(".nav").css("background", "#4D4D4D");
-        } else {
-          $(".nav").css("background", "rgba(0,0,0,0)");
-        }
-      });
-    });
-  </script>
+  <script type="text/javascript" src="js/common.js"></script>
+  <script type="text/javascript" src="js/scroll.js"></script>
 </body>
 
 </html>
