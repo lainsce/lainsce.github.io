@@ -43,7 +43,7 @@
 }
 
 .card-title {
-  @include font($size: 2.28rem, $color: $fg, $weight: 700);
+  @include font($size: 2.28rem, $color: $fg, $weight: 400);
 }
 
 .card-subtitle {
@@ -56,7 +56,7 @@
 }
 
 .card-title-night {
-  @include font($size: 2.28rem, $color: $bg, $weight: 700);
+  @include font($size: 2.28rem, $color: $bg, $weight: 400);
 }
 
 .card-subtitle-night {

@@ -6,7 +6,7 @@
     border-radius: 12px;
 
     & button {
-        @include font($size: 0.9rem, $weight: 400, $lh: 1.1rem);
+        @include font($size: 1rem, $weight: 400, $lh: 1.2rem);
         background-color: inherit;
         float: left;
         border: none;
