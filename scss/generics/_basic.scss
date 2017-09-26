@@ -59,7 +59,7 @@ img {
 }
 
 .header {
-  @include font($weight: 700, $lh: 32px);
+  @include font($size: 2.28rem, $weight: 700, $lh: 32px);
 }
 
 .logo {
