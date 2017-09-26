@@ -1,4 +1,6 @@
---- title: About Me | Lains permalink: /about ---
+---
+title: About Me | Lains permalink: /about
+---
 
 <!DOCTYPE html>
 <html lang="en-us">
@@ -77,8 +79,8 @@
                   <p><i class="fa fa-fw fa-star"></i> Skills</p>
                 </div>
                 <div class="tab">
-                  <button class="tablinks" onclick="tab(event, 'Programming')" id="default_open"><i class="fa fa-cogs"></i> Programming</button>
-                  <button class="tablinks" onclick="tab(event, 'Languages')"><i class="fa fa-globe"></i> Languages</button>
+                  <button class="tablinks" onclick="tab(event, 'Programming')" id="default_open"><i class="fa fa-fw fa-cogs"></i> Programming</button>
+                  <button class="tablinks" onclick="tab(event, 'Languages')"><i class="fa fa-fw fa-globe"></i> Languages</button>
                 </div>
                 <div class="tabcontent" id="Programming">
                   <div class="card-text">
@@ -461,13 +463,6 @@
   <script type="text/javascript">
     $(function () {
       $("#year").text((new Date).getFullYear());
-      var things = ["Beer", "Coffee", "Drink", "Pizza", "Snack", "Pop"];
-      $("#thing").text(things[Math.floor(Math.random() * things.length)]);
-    });
-    $(function yearsSince(epoch) {
-      var diff = new Date() - new Date(epoch);
-      var age = Math.floor(diff / 311236000000);
-      return age;
     });
   </script>
   <script type="text/javascript">

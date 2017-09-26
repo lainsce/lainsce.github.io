@@ -74,10 +74,8 @@
   </footer>
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script type="text/javascript">
-    $(function yearsSince(epoch) {
-      var diff = new Date() - new Date(epoch);
-      var age = Math.floor(diff / 31536000000);
-      return age;
+    $(function () {
+      $("#year").text((new Date).getFullYear());
     });
   </script>
 </body>

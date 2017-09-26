@@ -1,4 +1,6 @@
---- title: Apps | Lains permalink: /apps ---
+---
+title: Apps | Lains permalink: /apps
+---
 
 <!DOCTYPE html>
 <html lang="en-us">
@@ -31,9 +33,6 @@
       <li class="nav-icon animated active"><a class="nav-link" href="/apps"> APPS </a></li>
       <li class="nav-icon animated"><a class="nav-link" href="/ideas"> IDEAS </a></li>
       <li class="nav-icon animated"><a class="nav-link" href="/about"> ABOUT </a></li>
-    </ul>
-    <ul class="right nav-bar">
-      <li class="nav-icon animated"><a class="nav-link" href="mailto:lainsce@airmail.cc"> <i class="fa fa-fw fa-lg fa-envelope"></i> </a></li>
     </ul>
   </nav>
   <main>
@@ -244,10 +243,8 @@
   </footer>
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script type="text/javascript">
-    $(function yearsSince(epoch) {
-      var diff = new Date() - new Date(epoch);
-      var age = Math.floor(diff / 31536000000);
-      return age;
+    $(function () {
+      $("#year").text((new Date).getFullYear());
     });
   </script>
   <script type="text/javascript">
