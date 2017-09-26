@@ -43,11 +43,11 @@
 }
 
 .card-title {
-  @include font($size: 1.75rem, $color: $fg, $weight: 700);
+  @include font($size: 2.28rem, $color: $fg, $weight: 700);
 }
 
 .card-subtitle {
-  @include font($size: 1.25rem, $color: $fg, $weight: 400);
+  @include font($size: 1.64rem, $color: $fg, $weight: 400);
 }
 
 .card-text {
@@ -56,11 +56,11 @@
 }
 
 .card-title-night {
-  @include font($size: 1.75rem, $color: $bg, $weight: 700);
+  @include font($size: 2.28rem, $color: $bg, $weight: 700);
 }
 
 .card-subtitle-night {
-  @include font($size: 1.25rem, $color: $bg, $weight: 400);
+  @include font($size: 1.64rem, $color: $bg, $weight: 400);
 }
 
 .card-text-night {
