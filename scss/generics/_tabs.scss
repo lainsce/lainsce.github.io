@@ -1,0 +1,33 @@
+.tab {
+    overflow: hidden;
+    background-color: $background-3;
+    border: none;
+    width: 100%;
+    border-radius: 12px;
+
+    & button {
+        @include font($size: 0.9rem, $weight: 400, $lh: 1.1rem);
+        background-color: inherit;
+        float: left;
+        border: none;
+        border-bottom: 3px solid $background-3;
+        outline: none;
+        padding: 14px 16px;
+        margin-left: 12px;
+        transition: all .2s ease-in-out;
+
+        &:hover {
+            border-bottom: 3px solid $badge;
+            background: $chip;
+        }
+
+        &.active {
+            border-bottom: 3px solid $button-info;
+        }
+    }
+}
+
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+}
