@@ -102,7 +102,7 @@
 }
 
 .card-image-big {
-  border-bottom: 1px solid rgba(160, 160, 160, .4);
+  border-bottom: 1px solid rgba(160, 160, 160, .5);
   border-radius: .3rem .3rem 0 0;
   bottom: 0;
   display: block;
@@ -135,7 +135,7 @@
   @include font($size: .9rem, $weight: 500);
   background-color: $background-3;
   border-radius: 0 0 .3rem .3rem;
-  border-top: transparent;
+  border-top: 1px solid rgba(160, 160, 160, .5);
   padding: 1rem 1.5rem;
   position: relative;
   text-align: left;
