@@ -1,7 +1,6 @@
 sass:
   style: compressed
   sass_dir: scss
-
 compress_html:
   clippings: all
   comments: [""]
