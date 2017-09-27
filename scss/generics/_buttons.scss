@@ -4,7 +4,7 @@
 
 .button {
   @include font($size: .9rem, $weight: 700);
-  border-radius: 8px;
+  border-radius: 4px;
   display: inline-block;
   margin: 1rem 0;
   min-width: 100px;
