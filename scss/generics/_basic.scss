@@ -54,15 +54,15 @@ img {
 }
 
 .shadow {
-  @include box-shadow(0 3px 15px rgba(0, 0, 0, .12));
+  @include box-shadow(0 3px 15px rgba(0, 0, 0, .15));
 }
 
 .footer-shadow {
-  @include box-shadow(0 -3px 15px rgba(0, 0, 0, .12));
+  @include box-shadow(0 -3px 15px rgba(0, 0, 0, .15));
 }
 
 .header {
-  @include font($size: 2.28rem, $weight: 700, $lh: 32px);
+  @include font($size: 2.28rem, $weight: 700, $lh: 2rem);
 }
 
 .logo {
