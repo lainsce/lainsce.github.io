@@ -1,11 +1,11 @@
 .tab {
     overflow: hidden;
     background-color: $background-3;
-    border: none;
-    width: 100%;
-    border-radius: 12px;
+    border-radius: 2px;
+    display: flex;
+    line-height: 1rem;
 
-    & button {
+    & button.tablinks {
         @include font($size: 1rem, $weight: 400, $lh: 1.2rem);
         background-color: inherit;
         float: left;
@@ -13,8 +13,7 @@
         border-bottom: 3px solid $background-3;
         outline: none;
         padding: 14px 16px;
-        margin-left: 12px;
-        transition: all .2s ease-in-out;
+        transition: color .2s ease;
 
         &:hover {
             border-bottom: 3px solid $badge;
