@@ -1,18 +1,18 @@
 /*****************
 *    MIXINS     *
 *****************/
-@mixin prefixer($property, $value, $prefixes) {
+@mixin prefixer($property, $prefixes, $value1: false, $value2: false, $value3: false) {
   @each $prefix in $prefixes {
     @if $prefix == webkit {
-      -webkit-#{$property}: $value;
+      -webkit-#{$property}: $value1, $value2, $value3;
     } @else if $prefix == moz {
-      -moz-#{$property}: $value;
+      -moz-#{$property}: $value1, $value2, $value3;
     } @else if $prefix == ms {
-      -ms-#{$property}: $value;
+      -ms-#{$property}: $value1, $value2, $value3;
     } @else if $prefix == o {
-      -o-#{$property}: $value;
+      -o-#{$property}: $value1, $value2, $value3;
     } @else if $prefix == spec {
-      #{$property}: $value;
+      #{$property}: $value1, $value2, $value3;
     } @else  {
       @warn "Unrecognized prefix: #{$prefix}";
     }
@@ -20,11 +20,11 @@
 }
 
 @mixin box-sizing($box) {
-  @include prefixer(box-sizing, $box, webkit moz ms o spec);
+  @include prefixer(box-sizing, webkit moz ms o spec, $box);
 }
 
-@mixin box-shadow($box-shadow) {
-  @include prefixer(box-shadow, $box-shadow, webkit moz ms o spec);
+@mixin box-shadow($color1: false, $color2: false, $color3: false) {
+  @include prefixer(box-shadow, webkit moz ms o spec, $color1, $color2, $color3);
 }
 
 @mixin font($size: false, $color: false, $weight: false,  $lh: false) {
@@ -78,8 +78,5 @@
 
   background-color: nth(nth($color-stops, 1), 1);
   background: -webkit-linear-gradient(legacy-direction($direction), $color-stops);
-  background: -moz-linear-gradient($direction, $color-stops);
-  background: -ms-linear-gradient($direction, $color-stops);
-  background: -o-linear-gradient($direction, $color-stops);
-  background: linear-gradient($direction, $color-stops);
+  @include prefixer(background, moz ms o spec, linear-gradient($direction, $color-stops));
 }
