@@ -23,6 +23,10 @@ html {
   color: $fg;
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  flex-wrap: wrap;
   text-rendering: geometricPrecision;
   -webkit-font-smoothing: antialiased;
   z-index: 1;
