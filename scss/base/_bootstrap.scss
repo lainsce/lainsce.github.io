@@ -5,8 +5,6 @@
 .container {
   margin-left: auto;
   margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
 
   &:before,
   &:after {
@@ -1038,6 +1036,10 @@
   color: transparent;
   font: 0/0 a;
   text-shadow: none;
+}
+
+.flex {
+  display: flex;
 }
 
 .hidden {

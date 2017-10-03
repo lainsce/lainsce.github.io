@@ -6,6 +6,8 @@ $tablet: "(min-width: 768px) and (max-width: 1023px)";
 $desktop: "(min-width: 1024px)";
 
 * {
+  box-sizing: inherit;
+
   &:after {
     @include box-sizing(border-box);
   }
@@ -22,6 +24,7 @@ html {
   margin: 0;
   padding: 0;
   text-rendering: geometricPrecision;
+  -webkit-font-smoothing: antialiased;
   z-index: 1;
 }
 
