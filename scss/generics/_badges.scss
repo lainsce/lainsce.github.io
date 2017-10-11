@@ -9,10 +9,16 @@
   border-radius: 2px;
   color: $badge;
   display: inline;
-  margin-right: 6px;
+  margin-left: 12px;
   padding: 6px 8px;
-  vertical-align: baseline;
+  vertical-align: middle;
   white-space: nowrap;
+
+  &:hover {
+    background-color: $badge;
+    border: 1px solid $badge;
+    color: $badge-text;
+  }
 }
 
 .badge-success {
