@@ -20,38 +20,20 @@
       margin-left: 0px;
       border-radius: 0 .3rem .3rem 0;
   }
-}
 
-.card-inside {
-  background-color: $card;
-  border-radius: .3rem;
-  line-height: 1.5rem;
+  &.card-content {
+      padding: 24px;
+      border-radius: 0 0 .3rem .3rem;
 
-  &.card-stacked {
-      display: flex;
-      flex-direction: column;
-      flex: 1;
-      position: relative;
+      & p {
+          padding: 0;
+          color: inherit;
+      }
   }
 
-  &.horizontal {
-      margin-left: 0px;
-      border-radius: 0 .3rem .3rem 0;
+  &.card-alone {
+    margin-right: 0;
   }
-}
-
-.card-content {
-    padding: 24px;
-    border-radius: 0 0 .3rem .3rem;
-
-    & p {
-        padding: 0;
-        color: inherit;
-    }
-}
-
-.card-alone {
-  margin-right: 0;
 }
 
 .circle {
@@ -70,7 +52,7 @@
 .book {
   background-color: $badge;
   border: 1px solid $badge;
-  border-radius: 10%;
+  border-radius: 2%;
   bottom: -100%;
   height: 90px;
   left: -100%;
@@ -84,8 +66,8 @@
 
 .card-title {
   @include font($size: 2.25rem, $color: $fg, $weight: 400);
-  margin-top: 32px;
-  margin-bottom: 32px;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 
   & p {
     margin-top: 0px;
@@ -95,8 +77,8 @@
 
 .card-subtitle {
   @include font($size: 1.5rem, $color: $fg, $weight: 400);
-  margin-top: 16px;
-  margin-bottom: 16px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 
   & p {
     margin-top: 0px;
@@ -123,18 +105,43 @@
     margin-top: 10px;
     margin-bottom: 10px;
   }
+
+  &.card-text-music {
+    margin-left: 78px;
+  }
 }
 
 .card-title-night {
   @include font($size: 2.25rem, $color: $bg, $weight: 400);
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+
+  & p {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
 }
 
 .card-subtitle-night {
   @include font($size: 1.5rem, $color: $bg, $weight: 400);
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+
+  & p {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
 }
 
 .card-subsubtitle-night {
   @include font($size: 1.25rem, $color: $bg, $weight: 400);
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+  & p {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
 }
 
 .card-text-night {
@@ -143,6 +150,10 @@
   & p {
     margin-top: 10px;
     margin-bottom: 10px;
+  }
+
+  &.card-text-music {
+    margin-left: 78px;
   }
 }
 
@@ -159,16 +170,16 @@
   top: 0;
 
   &.card-image-background-coin {
-    @include linear-gradient(150deg, $card-background-coin 0%, darken($card-background-coin, 10%) 100%);
+    @include linear-gradient(150deg, $card-background-coin 0%, darken($card-background-coin, 30%) 100%);
   }
   &.card-image-background-notejot {
-    @include linear-gradient(150deg, $card-background-notejot 0%, darken($card-background-notejot, 10%) 100%);
+    @include linear-gradient(150deg, $card-background-notejot 0%, darken($card-background-notejot, 30%) 100%);
   }
   &.card-image-background-palaura {
-    @include linear-gradient(150deg, $card-background-palaura 0%, darken($card-background-palaura, 10%) 100%);
+    @include linear-gradient(150deg, $card-background-palaura 0%, darken($card-background-palaura, 30%) 100%);
   }
   &.card-image-background-quilter {
-    @include linear-gradient(150deg, $card-background-quilter 0%, darken($card-background-quilter, 10%) 100%);
+    @include linear-gradient(150deg, $card-background-quilter 0%, darken($card-background-quilter, 30%) 100%);
   }
 }
 
@@ -185,7 +196,7 @@
   top: 0;
 
   &.card-banner-background-hack {
-    @include linear-gradient(150deg, $card-background-hack 0%, darken($card-background-hack, 2%) 100%);
+    @include linear-gradient(150deg, $card-background-hack 0%, darken($card-background-hack, 5%) 100%);
   }
 
   &.horizontal {
@@ -201,23 +212,23 @@
   bottom: 0;
   display: block;
   left: 0;
-  padding: 1.2rem 0;
+  padding: 1rem 0;
   position: relative;
   right: 0;
   text-align: center;
   top: 0;
 
   &.card-image-background-coin {
-    @include linear-gradient(150deg, $card-background-coin 0%, darken($card-background-coin, 15%) 100%);
+    @include linear-gradient(150deg, $card-background-coin 0%, darken($card-background-coin, 30%) 100%);
   }
   &.card-image-background-notejot {
-    @include linear-gradient(150deg, $card-background-notejot 0%, darken($card-background-notejot, 15%) 100%);
+    @include linear-gradient(150deg, $card-background-notejot 0%, darken($card-background-notejot, 30%) 100%);
   }
   &.card-image-background-palaura {
-    @include linear-gradient(150deg, $card-background-palaura 0%, darken($card-background-palaura, 15%) 100%);
+    @include linear-gradient(150deg, $card-background-palaura 0%, darken($card-background-palaura, 30%) 100%);
   }
   &.card-image-background-quilter {
-    @include linear-gradient(150deg, $card-background-quilter 0%, darken($card-background-quilter, 15%) 100%);
+    @include linear-gradient(150deg, $card-background-quilter 0%, darken($card-background-quilter, 30%) 100%);
   }
 }
 
@@ -227,7 +238,7 @@
   right: 0;
   top: 0;
   bottom: 0;
-  padding: 0;
+  padding: 1rem;
   margin: 0 auto;
   display: inline;
 }
@@ -263,10 +274,6 @@
 
 .card-body {
   padding: 1.5rem;
-}
-
-.card-badge {
-  text-align: justify;
 }
 
 .card-chip {

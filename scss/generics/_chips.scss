@@ -4,15 +4,14 @@
 .chip {
   @include font($size: 13px, $weight: 700, $lh: 32px);
   background-color: $chip;
-  border-radius: 0.9rem;
+  border-radius: 1rem;
   color: $fg;
   display: inline-block;
   height: 32px;
-  margin-bottom: 5px;
-  margin-right: 5px;
+  margin: 2px;
   padding: 0 12px;
 
-  img {
+  & img {
     border-radius: 50%;
     float: left;
     height: 32px;
