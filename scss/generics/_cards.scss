@@ -185,7 +185,7 @@
   top: 0;
 
   &.card-banner-background-hack {
-    background-color: $card-background-hack;
+    @include linear-gradient(150deg, $card-background-hack 0%, darken($card-background-hack, 2%) 100%);
   }
 
   &.horizontal {
