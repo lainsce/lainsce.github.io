@@ -413,8 +413,7 @@
   }
 
   document.getElementById("default_open").click();
-  </script>
-  <script type="text/javascript">
+
   $(function () {
       $("#year").text((new Date).getFullYear());
       var things = ["Patron", "Backer", "Booster", "Supporter", "Big Fan"];
@@ -437,18 +436,6 @@
       return ageYear;
   }
   document.getElementById('age').innerHTML = getAge(birth);
-  </script>
-  <script type="text/javascript">
-  $(document).ready(function () {
-      $(window).on("scroll", function () {
-        var wn = $(window).scrollTop();
-        if (wn > 46) {
-          $(".nav").css("background", "rgba(63, 63, 63, 1)");
-        } else {
-          $(".nav").css("background", "transparent");
-        }
-      });
-    });
   </script>
 </body>
 </html>

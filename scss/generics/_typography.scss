@@ -39,6 +39,11 @@ h6 {
   @include font($size: 1rem, $weight: 400);
 }
 
+.medium-icon-new {
+  @include medium-font($size: 1.1rem, $weight: 700, $lh: .768);
+  vertical-align: -15%;
+}
+
 pre {
   background-color: #FDF6E3;
   border: 3px solid #eee8d5;

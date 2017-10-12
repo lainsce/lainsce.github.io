@@ -4,8 +4,7 @@
 
 .nav {
   @include font($size: 1.1rem, $weight: 400, $lh: 3.2rem);
-  background-color: transparent;
-  background-image: none;
+  background-color: $nav;
   display: inline-block;
   height: 3.25rem;
   outline: none;
@@ -29,13 +28,12 @@
 }
 
 .nav-icon {
-  @include font($size: .9rem, $weight: 700, $color: $bg, $lh: 3rem);
+  @include font($size: .875rem, $weight: 700, $color: $bg, $lh: 2.8rem);
   display: inline-block;
-  margin: 0 2px;
-  padding: 0 .4rem;
+  padding: 0 .5rem;
 
   &:hover {
-    background-color: rgba(255, 255, 255, .25);
+    border-bottom: 3px solid rgba(255, 255, 255, .5);
   }
 }
 

@@ -1,18 +1,18 @@
 /*****************
 *    MIXINS     *
 *****************/
-@mixin prefixer($property, $prefixes, $value1: false, $value2: false, $value3: false) {
+@mixin prefixer($property, $prefixes, $value: false) {
   @each $prefix in $prefixes {
     @if $prefix == webkit {
-      -webkit-#{$property}: $value1, $value2, $value3;
+      -webkit-#{$property}: $value;
     } @else if $prefix == moz {
-      -moz-#{$property}: $value1, $value2, $value3;
+      -moz-#{$property}: $value;
     } @else if $prefix == ms {
-      -ms-#{$property}: $value1, $value2, $value3;
+      -ms-#{$property}: $value;
     } @else if $prefix == o {
-      -o-#{$property}: $value1, $value2, $value3;
+      -o-#{$property}: $value;
     } @else if $prefix == spec {
-      #{$property}: $value1, $value2, $value3;
+      #{$property}: $value;
     } @else  {
       @warn "Unrecognized prefix: #{$prefix}";
     }
@@ -23,12 +23,20 @@
   @include prefixer(box-sizing, webkit moz ms o spec, $box);
 }
 
-@mixin box-shadow($color1: false, $color2: false, $color3: false) {
-  @include prefixer(box-shadow, webkit moz ms o spec, $color1, $color2, $color3);
+@mixin box-shadow($color: false) {
+  @include prefixer(box-shadow, webkit moz ms o spec, $color);
 }
 
 @mixin font($size: false, $color: false, $weight: false,  $lh: false) {
   font-family: "Maven Pro", Helvetica, Arial, sans-serif;
+  @if $size { font-size: $size; }
+  @if $color { color: $color; }
+  @if $weight { font-weight: $weight; }
+  @if $lh { line-height: $lh; }
+}
+
+@mixin medium-font($size: false, $color: false, $weight: false,  $lh: false) {
+  font-family: serif;
   @if $size { font-size: $size; }
   @if $color { color: $color; }
   @if $weight { font-weight: $weight; }

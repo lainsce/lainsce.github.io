@@ -9,15 +9,15 @@
 @import "theme/palette";
 
 /* GENERICS */
-@import "generics/basic";
-@import "generics/typography";
-@import "generics/tabs";
-@import "generics/cards";
 @import "generics/badges";
-@import "generics/chips";
+@import "generics/basic";
 @import "generics/buttons";
+@import "generics/cards";
+@import "generics/chips";
+@import "generics/fabs";
+@import "generics/footer";
 @import "generics/hero";
 @import "generics/nav";
-@import "generics/footer";
-@import "generics/fabs";
+@import "generics/tabs";
 @import "generics/tooltips";
+@import "generics/typography";

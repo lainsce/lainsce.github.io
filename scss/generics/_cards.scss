@@ -170,16 +170,16 @@
   top: 0;
 
   &.card-image-background-coin {
-    @include linear-gradient(150deg, $card-background-coin 0%, darken($card-background-coin, 30%) 100%);
+    @include linear-gradient(150deg, $card-background-coin 0%, darken($card-background-coin, 10%) 100%);
   }
   &.card-image-background-notejot {
-    @include linear-gradient(150deg, $card-background-notejot 0%, darken($card-background-notejot, 30%) 100%);
+    @include linear-gradient(150deg, $card-background-notejot 0%, darken($card-background-notejot, 10%) 100%);
   }
   &.card-image-background-palaura {
-    @include linear-gradient(150deg, $card-background-palaura 0%, darken($card-background-palaura, 30%) 100%);
+    @include linear-gradient(150deg, $card-background-palaura 0%, darken($card-background-palaura, 10%) 100%);
   }
   &.card-image-background-quilter {
-    @include linear-gradient(150deg, $card-background-quilter 0%, darken($card-background-quilter, 30%) 100%);
+    @include linear-gradient(150deg, $card-background-quilter 0%, darken($card-background-quilter, 10%) 100%);
   }
 }
 
@@ -196,7 +196,7 @@
   top: 0;
 
   &.card-banner-background-hack {
-    @include linear-gradient(150deg, $card-background-hack 0%, darken($card-background-hack, 5%) 100%);
+    @include linear-gradient(150deg, $card-background-hack 0%, darken($card-background-hack, 10%) 100%);
   }
 
   &.horizontal {
@@ -219,16 +219,16 @@
   top: 0;
 
   &.card-image-background-coin {
-    @include linear-gradient(150deg, $card-background-coin 0%, darken($card-background-coin, 30%) 100%);
+    @include linear-gradient(150deg, $card-background-coin 0%, darken($card-background-coin, 10%) 100%);
   }
   &.card-image-background-notejot {
-    @include linear-gradient(150deg, $card-background-notejot 0%, darken($card-background-notejot, 30%) 100%);
+    @include linear-gradient(150deg, $card-background-notejot 0%, darken($card-background-notejot, 10%) 100%);
   }
   &.card-image-background-palaura {
-    @include linear-gradient(150deg, $card-background-palaura 0%, darken($card-background-palaura, 30%) 100%);
+    @include linear-gradient(150deg, $card-background-palaura 0%, darken($card-background-palaura, 10%) 100%);
   }
   &.card-image-background-quilter {
-    @include linear-gradient(150deg, $card-background-quilter 0%, darken($card-background-quilter, 30%) 100%);
+    @include linear-gradient(150deg, $card-background-quilter 0%, darken($card-background-quilter, 10%) 100%);
   }
 }
 
@@ -256,7 +256,7 @@
 
 .card-action {
   @include font($size: .9rem, $weight: 500);
-  background-color: $background-3;
+  background-color: $background-2;
   border-radius: 0 0 .3rem .3rem;
   border-top: 1px solid rgba(160, 160, 160, .5);
   padding: 1rem 1.5rem;

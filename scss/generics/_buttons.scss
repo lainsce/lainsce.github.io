@@ -24,14 +24,14 @@
     color: $bg;
 
     &:hover {
-      @include box-shadow(0 3px 12px 0 $button-success);
-      background-color: $button-success;
-      border: 2px solid $button-success;
+      @include box-shadow(0 3px 12px 0 $button-success-hover);
+      background-color: $button-success-hover;
+      border: 2px solid $button-success-hover;
       color: $bg;
     }
 
     &:active {
-      @include box-shadow(0 3px 12px 0 $button-success);
+      @include box-shadow(0 3px 12px 0 $button-success-active);
       background-color: $button-success-active;
       background-image: none;
       border: 2px solid $button-success-active;
