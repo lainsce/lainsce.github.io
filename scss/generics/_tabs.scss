@@ -1,6 +1,6 @@
 .tab {
     overflow: hidden;
-    background-color: $background-2;
+    background-color: $bg;
     border-radius: 2px;
     display: flex;
     line-height: 1rem;
@@ -10,7 +10,7 @@
         background-color: inherit;
         float: left;
         border: none;
-        border-bottom: 3px solid $background-2;
+        border-bottom: 3px solid $bg;
         outline: none;
         padding: 14px 16px;
         transition: color .2s ease;

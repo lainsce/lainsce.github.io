@@ -3,7 +3,7 @@
 ******************/
 
 .nav {
-  @include font($size: 1.1rem, $weight: 400, $lh: 3.2rem);
+  @include font($size: 1.1rem, $weight: 400, $lh: 1.1rem);
   background-color: $nav;
   display: inline-block;
   height: 3.25rem;
@@ -31,6 +31,7 @@
   @include font($size: .875rem, $weight: 700, $color: $bg, $lh: 2.8rem);
   display: inline-block;
   padding: 0 .5rem;
+  margin: .2rem auto;
 
   &:hover {
     border-bottom: 3px solid rgba(255, 255, 255, .5);

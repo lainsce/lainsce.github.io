@@ -84,3 +84,52 @@
     }
   }
 }
+
+.fab-alone {
+   width: 56px;
+   height: 56px;
+   background-color: $fg;
+   border-radius: 100%;
+   display: inline-block;
+
+   font-size: 1.5rem;
+   color: $fab-icon;
+   text-align: center;
+   line-height: 56px;
+
+   position: absolute;
+   right: 24px;
+   bottom: -28px;
+
+   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);
+
+   &:hover {
+      transform: scale(1.07);
+      box-shadow: 0 3px 3px 0 rgba(0,0,0,0.14), 0 1px 7px 0 rgba(0,0,0,0.12), 0 3px 1px -1px rgba(0,0,0,0.2);
+   }
+
+   & a {
+      color: $fab-icon;
+      margin: auto;
+   }
+
+   &.fab-alone-home {
+      background-color: $fab-gplus;
+   }
+
+   &.fab-alone-quilter {
+      background-color: darken($card-background-quilter, 60%);
+   }
+
+   &.fab-alone-coin {
+      background-color: darken($card-background-coin, 60%);
+   }
+
+   &.fab-alone-palaura {
+      background-color: darken($card-background-palaura, 60%);
+   }
+
+   &.fab-alone-notejot {
+      background-color: darken($card-background-notejot, 60%);
+   }
+}

@@ -33,7 +33,7 @@ html {
 }
 
 .bg {
-  @include linear-gradient(0deg, $background 0%, $background-2 100%);
+  background-color: $bg;
   @include box-shadow(0 -3px 15px rgba(33, 33, 33, .5));
   display: flex;
   flex-direction: column;
@@ -56,7 +56,7 @@ html {
 }
 
 .animated {
-  transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+    transition: 0.3s cubic-bezier(0.53, 0.01, 0.36, 0.63);
 }
 
 img {
