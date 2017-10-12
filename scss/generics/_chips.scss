@@ -18,4 +18,9 @@
     margin: 0 8px 0 -12px;
     width: 32px;
   }
+
+  &.chip-vala {
+      background-color: $chip-vala;
+      color: $bg;
+  }
 }

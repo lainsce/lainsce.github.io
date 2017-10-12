@@ -3,20 +3,26 @@
  *****************/
 
 .badge {
-  @include font($size: 13px, $weight: 700, $lh: 32px);
+  @include font($size: 16px, $weight: 500, $lh: 32px);
   background-color: transparent;
-  border: 1px solid $badge;
-  border-radius: 2px;
+  border: 2px solid $chip;
+  border-radius: 8%;
   color: $badge;
   display: inline;
-  margin-left: 12px;
-  padding: 6px 8px;
+  left: -5px;
+  margin-left: 16px;
+  margin-bottom: 0px;
+  width: 50px;
+  height: 50px;
+  position: relative;
+  line-height: 50px;
+  padding: 8px;
   vertical-align: middle;
   white-space: nowrap;
 
   &:hover {
     background-color: $badge;
-    border: 1px solid $badge;
+    border: 2px solid $badge;
     color: $badge-text;
   }
 }
@@ -24,7 +30,7 @@
 .badge-success {
   &:hover {
     background-color: $badge-success-hover;
-    border: 1px solid $badge-success-hover;
+    border: 2px solid $badge-success-hover;
     color: $badge-text;
   }
 }
@@ -32,7 +38,7 @@
 .badge-info {
   &:hover {
     background-color: $badge-info-hover;
-    border: 1px solid $badge-info-hover;
+    border: 2px solid $badge-info-hover;
     color: $badge-text;
   }
 }

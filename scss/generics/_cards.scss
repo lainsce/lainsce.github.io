@@ -258,10 +258,31 @@
   @include font($size: .9rem, $weight: 500);
   background-color: $background-2;
   border-radius: 0 0 .3rem .3rem;
+  margin: 0;
   border-top: 1px solid rgba(160, 160, 160, .5);
   padding: 1rem 1.5rem;
   position: relative;
   text-align: left;
+
+  & a {
+      padding: 8px;
+      border: 2px solid transparent;
+      border-radius: .3rem;
+
+    &:hover {
+      background-color: $card-action-hover;
+      border: 2px solid $card-action-hover;
+      color: $fg;
+      border-radius: .3rem;
+      padding: 8px;
+    }
+
+    &:active {
+      background-color: darken($card-action-hover, 15%);
+      border: 2px solid darken($card-action-hover, 15%);
+      color: $bg;
+    }
+  }
 
   &.fa {
     margin-right: 12px;

@@ -3,7 +3,7 @@
 *********************/
 
 .tooltip {
-  @include font($size: 13px, $weight: 500, $lh: 32px);
+  @include font($weight: 500, $lh: 32px);
   cursor: pointer;
   position: relative;
 
