@@ -34,7 +34,7 @@ html {
 
 .bg {
   background-color: $bg;
-  @include box-shadow(0 -3px 15px rgba(33, 33, 33, .5));
+  @include box-shadow(0 -3px 6px rgba(33, 33, 33, .5));
   display: flex;
   flex-direction: column;
   flex: 1;
@@ -64,11 +64,11 @@ img {
 }
 
 .shadow {
-  @include box-shadow(0 3px 15px rgba(36,37,38,0.3));
+  @include box-shadow(0 3px 6px rgba(36,37,38,0.3));
 }
 
 .footer-shadow {
-  @include box-shadow(0 -3px 15px rgba(36,37,38,0.3));
+  @include box-shadow(0 -3px 6px rgba(36,37,38,0.3));
 }
 
 .header {

@@ -24,14 +24,14 @@
     color: $bg;
 
     &:hover {
-      @include box-shadow(0 3px 12px 0 $button-success-hover);
+      @include box-shadow(0 3px 6px 0 rgba($button-success-hover, .5));
       background-color: $button-success-hover;
       border: 2px solid $button-success-hover;
       color: $bg;
     }
 
     &:active {
-      @include box-shadow(0 3px 12px 0 $button-success-active);
+      @include box-shadow(0 3px 6px 0 rgba($button-success-active, .5));
       background-color: $button-success-active;
       background-image: none;
       border: 2px solid $button-success-active;
@@ -47,14 +47,14 @@
     color: $bg;
 
     &:hover {
-      @include box-shadow(0 3px 12px 0 $button-info);
-      background-color: $button-info;
-      border: 2px solid $button-info;
+      @include box-shadow(0 3px 6px 0 rgba($button-info-hover, .5));
+      background-color: $button-info-hover;
+      border: 2px solid $button-info-hover;
       color: $bg;
     }
 
     &:active {
-      @include box-shadow(0 3px 12px 0 $button-info-active);
+      @include box-shadow(0 3px 6px 0 rgba($button-info-active, .5));
       background-color: $button-info-active;
       background-image: none;
       border: 2px solid $button-info-active;
