@@ -52,6 +52,42 @@
             <a class="navbar-item" href="/about">
                 ABOUT
             </a>
+
+            <a class="navbar-burger nav-toggle" data-target="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+        </div>
+        <div class="navbar-menu" id="Menu">
+            <div class="navbar-end">
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-item is-hidden-mobile">
+                        <span class="icon is-medium">
+                            <i class="fa fa-fw fa-bars"></i>
+                        </span>
+                    </a>
+
+                    <div class="navbar-dropdown is-right">
+                        <a class="navbar-item" href="mailto:lainsce@airmail.cc/" target="_blank">
+                            <span class="icon is-medium has-text-dark">
+                                <i class="fa fa-fw fa-envelope"></i>
+                            </span>
+                            <span>
+                                Mail Me
+                            </span>
+                        </a>
+                        <a class="navbar-item" href="" target="_blank">
+                            <span class="icon is-medium has-text-dark">
+                                <i class="fa fa-fw fa-telegram"></i>
+                            </span>
+                            <span>
+                                Add Me on Telegram
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
     </nav>
     <main>
@@ -89,22 +125,24 @@
                                     Economy
                                 </span>
                             </div>
-                            <div class="subtitle is-5">
+                            <div class="subtitle is-4">
                                 <p>Implement Universal Basic Income</p>
                             </div>
-                            <div class="card-content">
+                            <div class="content flow-text">
                                 <p>Job automation is looming in the shadows, but more than that, it is good for society that it appears someday. We should strive for a future where people are no longer coearced societally to find work. UBI allows for an updated economy where not having jobs doesn't mean your failure.</p>
                             </div>
-                            <div class="subtitle is-5">
+                            <hr style="margin-bottom: 0;">
+                            <div class="subtitle is-4">
                                 <p>Abolish Unnecessary Taxes</p>
                             </div>
-                            <div class="card-content">
+                            <div class="content flow-text">
                                 <p>Current state has some taxes that either are stuck in victorian times, or didn't update to our current technologies. One such tax is the 75% tax on video games, because in the law corpus, these objects are compared to gambling products.</p>
                             </div>
-                            <div class="subtitle is-5">
+                            <hr style="margin-bottom: 0;">
+                            <div class="subtitle is-4">
                                 <p>Abolish Minimum Wage</p>
                             </div>
-                            <div class="card-content">
+                            <div class="content flow-text">
                                 <p>Experts in economy say that raising the minimum wage is either harmful or has no effect. Universal Basic Income would allow us to abolish the minimum wage, creating a free-er market by lowering costs of production.</p>
                             </div>
                         </div>
@@ -125,22 +163,24 @@
                                     Technology
                                 </span>
                             </div>
-                            <div class="subtitle is-5">
+                            <div class="subtitle is-4">
                                 <p>Abolish Protectionism in Tech</p>
                             </div>
-                            <div class="card-content">
+                            <div class="content flow-text">
                                 <p>Today, we live in a mixed politics-economy model, with remnants of protectionism being heavily positioned in technology and tech products. In a possible future, we could abolish those little problems and expect national growth, after failing to secure a national industry in tech, but a massive growth in international companies serving us goods, making us updated to live in the current century. </p>
                             </div>
-                            <div class="subtitle is-5">
+                            <hr style="margin-bottom: 0;">
+                            <div class="subtitle is-4">
                                 <p>Abolish the DRM</p>
                             </div>
-                            <div class="card-content">
+                            <div class="content flow-text">
                                 <p>Copyright is something of a law that is expected to stil be a thing in the foreseeable future. This means of securing the author's ideas is outdated for the fast, growing, and virtual world we live in today. A spawn of the current Copyright manoeuvres, is DRM. It is a piece of code embedded in media that limits your freedoms on where you can play it, to make you lock-in to a certain site or app. It's a poison of the virtual world, and so, we must fight to kill it.</p>
                             </div>
-                            <div class="subtitle is-5">
+                            <hr style="margin-bottom: 0;">
+                            <div class="subtitle is-4">
                                 <p>Approve the Use of Ethical Torrents</p>
                             </div>
-                            <div class="card-content">
+                            <div class="content flow-text">
                                 <p>Torrents today are seen as a maladie and something we should combat and get rid of. That thought is dangerous. We've grown to such a huge civilization, sprawling an entire planet, albeit not united under a single banner like Coruscant. Do you see the benefits in using a unified format on which we can share ideas, media, and human produced content? Yeah, me too. So we must fight to secure torrent as a viable means of sharing media, by ethically using it.</p>
                             </div>
                         </div>
@@ -206,6 +246,33 @@ function getAge(birth) {
     return ageYear;
 }
 document.getElementById('age').innerHTML = getAge(birth);
+</script>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', function () {
+
+    // Get all "navbar-burger" elements
+    var $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+    // Check if there are any navbar burgers
+    if ($navbarBurgers.length > 0) {
+
+        // Add a click event on each of them
+        $navbarBurgers.forEach(function ($el) {
+            $el.addEventListener('click', function () {
+
+                // Get the target from the "data-target" attribute
+                var target = $el.dataset.target;
+                var $target = document.getElementById(target);
+
+                // Toggle the class on both the "navbar-burger" and the "navbar-menu"
+                $el.classList.toggle('is-active');
+                $target.classList.toggle('is-active');
+
+            });
+        });
+    }
+
+});
 </script>
 </body>
 </html>

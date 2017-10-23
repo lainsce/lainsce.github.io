@@ -52,26 +52,62 @@
             <a class="navbar-item" href="/about">
                 ABOUT
             </a>
+
+            <a class="navbar-burger nav-toggle" data-target="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+        </div>
+        <div class="navbar-menu" id="Menu">
+            <div class="navbar-end">
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-item is-hidden-mobile">
+                        <span class="icon is-medium">
+                            <i class="fa fa-fw fa-bars"></i>
+                        </span>
+                    </a>
+
+                    <div class="navbar-dropdown is-right">
+                        <a class="navbar-item" href="mailto:lainsce@airmail.cc/" target="_blank">
+                            <span class="icon is-medium has-text-dark">
+                                <i class="fa fa-fw fa-envelope"></i>
+                            </span>
+                            <span>
+                                Mail Me
+                            </span>
+                        </a>
+                        <a class="navbar-item" href="" target="_blank">
+                            <span class="icon is-medium has-text-dark">
+                                <i class="fa fa-fw fa-telegram"></i>
+                            </span>
+                            <span>
+                                Add Me on Telegram
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
     </nav>
     <main>
         <div class="hero is-link is-medium is-bold">
             <div class="hero-body">
                 <div class="container is-fluid">
-                        <div class="title is-spaced" align=center>
-                            <span class="icon is-medium">
-                                <i class="fa fa-fw fa-user"></i>
-                            </span>
-                            <span>
-                                About Me
-                            </span>
-                        </div>
-                        <div class="subtitle" align=center>
-                            <p>I am a <span id=age>2x</span> year old programmer by hobby that loves to code in Vala and Javascript.</p>
-                        </div>
-                        <div class="text" align=center>
-                            <p>I can't live without a Linux distro on my PC, since I like to live freely, although I also know how to use macOS.</p>
-                        </div>
+                    <div class="title is-spaced" align=center>
+                        <span class="icon is-medium">
+                            <i class="fa fa-fw fa-user"></i>
+                        </span>
+                        <span>
+                            About Me
+                        </span>
+                    </div>
+                    <div class="subtitle" align=center>
+                        <p>I am a <span id=age>2x</span> year old programmer by hobby that loves to code in Vala and Javascript.</p>
+                    </div>
+                    <div class="text" align=center>
+                        <p>I can't live without a Linux distro on my PC, since I like to live freely, although I also know how to use macOS.</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -228,26 +264,26 @@
                                     <div class="columns">
                                         <div class="column is-half">
                                             <div class="container is-fluid">
-                                                    <div class="card">
-                                                        <div class="card-image card-header custom-card-banner image-hack">
-                                                            <figure class="custom-banner">
-                                                                <img width="128" height="128" src="img/hack.png" alt="Hacktoberfest 2017">
-                                                            </figure>
+                                                <div class="card">
+                                                    <div class="card-image card-header custom-card-banner image-hack">
+                                                        <figure class="custom-banner">
+                                                            <img width="128" height="128" src="img/hack.png" alt="Hacktoberfest 2017">
+                                                        </figure>
+                                                    </div>
+                                                    <div class="card-content">
+                                                        <div class="subtitle">
+                                                            <p>Hacktoberfest 2017</p>
                                                         </div>
-                                                        <div class="card-content">
-                                                            <div class="subtitle">
-                                                                <p>Hacktoberfest 2017</p>
-                                                            </div>
-                                                            <div class="text">
-                                                                <p>Support open source and earn a limited edition T-shirt. Make 4 pull requests to earn it.</p>
-                                                            </div>
-                                                        </div>
-                                                        <div class="card-footer">
-                                                            <div class="card-footer-item">
-                                                                <i class="fa fa-fw fa-code-fork"></i><a href="https://hacktoberfest.digitalocean.com/">Hacktoberfest 2017</a></p>
-                                                            </div>
+                                                        <div class="text">
+                                                            <p>Support open source and earn a limited edition T-shirt. Make 4 pull requests to earn it.</p>
                                                         </div>
                                                     </div>
+                                                    <div class="card-footer">
+                                                        <div class="card-footer-item">
+                                                            <i class="fa fa-fw fa-code-fork"></i><a href="https://hacktoberfest.digitalocean.com/">Hacktoberfest 2017</a></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -257,70 +293,97 @@
                     </div>
                 </div>
             </div>
-    </section>
-    <footer class="footer">
-      <div class="container is-fluid">
-          <div class="content has-text-centered">
-              <div class="level">
-                  <p class="level-item has-text-centered">
-                      <a class="button is-dark is-uppercase" href="https://github.com/lainsce/lainsce.github.io/issues/new" target="_blank" class="ghost">
-                          <span class="icon is-small">
-                              <i class="fa fa-fw fa-sm fa-bug"></i>
-                          </span>
+        </section>
+        <footer class="footer">
+            <div class="container is-fluid">
+                <div class="content has-text-centered">
+                    <div class="level">
+                        <p class="level-item has-text-centered">
+                            <a class="button is-dark is-uppercase" href="https://github.com/lainsce/lainsce.github.io/issues/new" target="_blank" class="ghost">
+                                <span class="icon is-small">
+                                    <i class="fa fa-fw fa-sm fa-bug"></i>
+                                </span>
 
-                          <span>
-                              Report an Issue
-                          </span>
-                      </a>
-                  </p>
-              </div>
-          </div>
+                                <span>
+                                    Report an Issue
+                                </span>
+                            </a>
+                        </p>
+                    </div>
+                </div>
 
-          <section class="section">
-              <div class="container is-fluid" align=center>
-                  <a href="https://bulma.io">
-                      <img src="https://bulma.io/images/made-with-bulma.png" alt="Made with Bulma" width="128" height="24">
-                  </a>
-                  <p>
-                      © <span id="year">2017</span> Paulo Galardi. Made in São Paulo.
-                  </p>
-              </div>
-          </section>
-      </div>
-    </footer>
-    <script async type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script async type="text/javascript">
-    $(document).ready(function() {
-      $('#tab_header ul li.item').on('click', function() {
-        var number = $(this).data('option');
-        $('#tab_header ul li.item').removeClass('is-active');
-        $(this).addClass('is-active');
-        $('#tab_container .container_item').removeClass('is-active');
-        $('div[data-item="' + number + '"]').addClass('is-active');
-      });
-    });
+                <section class="section">
+                    <div class="container is-fluid" align=center>
+                        <a href="https://bulma.io">
+                            <img src="https://bulma.io/images/made-with-bulma.png" alt="Made with Bulma" width="128" height="24">
+                        </a>
+                        <p>
+                            © <span id="year">2017</span> Paulo Galardi. Made in São Paulo.
+                        </p>
+                    </div>
+                </section>
+            </div>
+        </footer>
+        <script async type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script async type="text/javascript">
+        $(document).ready(function() {
+            $('#tab_header ul li.item').on('click', function() {
+                var number = $(this).data('option');
+                $('#tab_header ul li.item').removeClass('is-active');
+                $(this).addClass('is-active');
+                $('#tab_container .container_item').removeClass('is-active');
+                $('div[data-item="' + number + '"]').addClass('is-active');
+            });
+        });
 
-    $(function () {
-        $("#year").text((new Date).getFullYear());
-        var things = ["Patron", "Backer", "Booster", "Supporter", "Big Fan"];
-        $("#thing").text(things[Math.floor(Math.random() * things.length)]);
-    });
+        $(function () {
+            $("#year").text((new Date).getFullYear());
+            var things = ["Patron", "Backer", "Booster", "Supporter", "Big Fan"];
+            $("#thing").text(things[Math.floor(Math.random() * things.length)]);
+        });
 
-    $(function yearsSince(epoch) {
-        var diff = new Date() - new Date(epoch);
-        var age = Math.floor(diff / 311236000000);
-        return age;
-    });
+        $(function yearsSince(epoch) {
+            var diff = new Date() - new Date(epoch);
+            var age = Math.floor(diff / 311236000000);
+            return age;
+        });
 
-    var birth = new Date('1993-06-06');
-    function getAge(birth) {
-        ageMS = Date.parse(Date()) - Date.parse(birth);
-        age = new Date();
-        age.setTime(ageMS);
-        ageYear = age.getFullYear() - 1970;
-        return ageYear;
-    }
-    document.getElementById('age').innerHTML = getAge(birth);
-    </script>
+        var birth = new Date('1993-06-06');
+        function getAge(birth) {
+            ageMS = Date.parse(Date()) - Date.parse(birth);
+            age = new Date();
+            age.setTime(ageMS);
+            ageYear = age.getFullYear() - 1970;
+            return ageYear;
+        }
+        document.getElementById('age').innerHTML = getAge(birth);
+        </script>
+        <script type="text/javascript">
+        document.addEventListener('DOMContentLoaded', function () {
+
+            // Get all "navbar-burger" elements
+            var $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+            // Check if there are any navbar burgers
+            if ($navbarBurgers.length > 0) {
+
+                // Add a click event on each of them
+                $navbarBurgers.forEach(function ($el) {
+                    $el.addEventListener('click', function () {
+
+                        // Get the target from the "data-target" attribute
+                        var target = $el.dataset.target;
+                        var $target = document.getElementById(target);
+
+                        // Toggle the class on both the "navbar-burger" and the "navbar-menu"
+                        $el.classList.toggle('is-active');
+                        $target.classList.toggle('is-active');
+
+                    });
+                });
+            }
+
+        });
+        </script>
     </body>
 </html>
