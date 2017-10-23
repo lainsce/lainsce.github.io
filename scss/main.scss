@@ -1,24 +1,5 @@
 ---
 ---
 
-/* BASE */
-@import "base/bootstrap";
-@import "base/mixins";
-
-/* THEME */
-@import "theme/palette";
-
-/* GENERICS */
-@import "generics/avatar";
-@import "generics/badges";
-@import "generics/basic";
-@import "generics/buttons";
-@import "generics/cards";
-@import "generics/chips";
-@import "generics/fabs";
-@import "generics/footer";
-@import "generics/hero";
-@import "generics/nav";
-@import "generics/tabs";
-@import "generics/tooltips";
-@import "generics/typography";
+@import "base/bulma";
+@import "base/custom";

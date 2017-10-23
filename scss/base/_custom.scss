@@ -1,0 +1,84 @@
+.image-coin {
+    background: linear-gradient(150deg,#c8e6c9 0%,#a5d6a7 100%);
+}
+
+.image-notejot {
+    background: linear-gradient(150deg,#fff59d 0%,#fff06a 100%);
+}
+
+.image-quilter {
+    background: linear-gradient(150deg,#bbdefb 0%,#8bc7f8 100%);
+}
+
+.image-palaura {
+    background: linear-gradient(150deg,#ef9a9a 0%,#e86e6e 100%);
+}
+
+.image-hack {
+    background-color: #213C86;
+}
+
+.has-text-patreon {
+    color: #F96854 !important;
+}
+
+.custom-title {
+    color: #000000aa;
+    font-size: 1.5rem;
+    text-align: center;
+    display: block;
+}
+
+.custom-image {
+    text-align: center;
+    padding: 1.2rem 0;
+}
+
+.custom-card-banner {
+    text-align: center;
+    padding: 1.2rem 0;
+}
+
+.custom-banner {
+    width: 70%;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    padding: 0;
+    margin: 0 auto;
+    display: inline;
+}
+
+.card-skillbar {
+    background-color: #00D1B2;
+    border-radius: .5rem;
+    line-height: 2rem;
+    padding-right: 20px;
+    text-align: right;
+}
+
+.tag:not(body).is-vala {
+    background-color: #403757;
+    color: #fff;
+}
+
+.value-00 { width: 0; }
+.value-10 { width: 10%; }
+.value-20 { width: 20%; }
+.value-30 { width: 30%; }
+.value-40 { width: 40%; }
+.value-50 { width: 50%; }
+.value-60 { width: 60%; }
+.value-70 { width: 70%; }
+.value-80 { width: 80%; }
+.value-90 { width: 90%; }
+.value-100 { width: 100%; }
+
+#tab_container .container_item {
+  display: none;
+}
+
+#tab_container .container_item.is-active {
+  display: block;
+}

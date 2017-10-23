@@ -37,119 +37,128 @@
   </script>
 </head>
 <body>
-    <nav class="nav fixed-top" tabindex="-1">
-      <div class="left nav-bar">
-        <p class="nav-icon animated"><a class="nav-link" href="/"> <img class="logo" height="32" width="32" src="icons/me.svg" alt="My Icon"> </a></p>
-        <p class="nav-icon animated active"><a class="nav-link" href="/apps"> APPS </a></p>
-        <p class="nav-icon animated"><a class="nav-link" href="/ideas"> IDEAS </a></p>
-        <p class="nav-icon animated"><a class="nav-link" href="/about"> ABOUT </a></p>
+    <nav class="navbar is-black" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="/">
+          <img src="icons/me.svg" alt="My Icon" width="32" height="32">
+        </a>
+        <a class="navbar-item" href="/ideas">
+            IDEAS
+        </a>
+        <a class="navbar-item" href="/about">
+            ABOUT
+        </a>
       </div>
     </nav>
   <main>
-    <div class="hero parallax">
-      <div class="container">
-        <div class="row">
-          <div class="col-xs-12 form-group">
-              <div class="card-title-night" align=center>
-                <p><i class="fa fa-fw fa-lightbulb-o"></i> My Ideas</p>
-              </div>
-              <div class="card-subtitle-night" align=center>
-                <p>This page is about my personal view on politics.</p>
-              </div>
-              <div class="card-text-night" align=center>
-                <p>It's my main belief that we should always strive to explain ourselves no matter the subject, in a didatical way,</p>
-                <p>and to also share our ideas and tools with others, with no barriers. This page is about Brazilian politics.</p>
-              </div>
-          </div>
+    <div class="hero is-info is-medium">
+        <div class="hero-body">
+            <div class="container">
+                <div class="title is-spaced" align=center>
+                      <p><i class="fa fa-fw fa-lightbulb-o"></i> My Ideas</p>
+                </div>
+                <div class="subtitle" align=center>
+                      <p>This page is about my personal view on politics.</p>
+                </div>
+                <div class="text" align=center>
+                      <p>It's my main belief that we should always strive to explain ourselves no matter the subject, in a didatical way,</p>
+                      <p>and to also share our ideas and tools with others, with no barriers. This page is about Brazilian politics.</p>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-    <div class="bg">
-      <div class="container">
-        <div class="row">
-          <div class="col-xs-12 col-md-6 header form-group">
-            <div class="card shadow">
-              <div class="card-body">
-                <div class="card-title">
+    <section class="section">
+      <div class="columns">
+          <div class="column">
+            <div class="card">
+              <div class="card-content">
+                <div class="title is-spaced">
                   <p><i class="fa fa-fw fa-usd"></i> Economy</p>
                 </div>
-                <div class="card-subtitle">
+                <div class="subtitle is-5">
                   <p>Implement Universal Basic Income</p>
                 </div>
-                <div class="card-text">
+                <div class="card-content">
                   <p>Job automation is looming in the shadows, but more than that, it is good for society that it appears someday. We should strive for a future where people are no longer coearced societally to find work. UBI allows for an updated economy where not having jobs doesn't mean your failure.</p>
                 </div>
-                <div class="card-subtitle">
+                <div class="subtitle is-5">
                   <p>Abolish Unnecessary Taxes</p>
                 </div>
-                <div class="card-text">
+                <div class="card-content">
                   <p>Current state has some taxes that either are stuck in victorian times, or didn't update to our current technologies. One such tax is the 75% tax on video games, because in the law corpus, these objects are compared to gambling products.</p>
                 </div>
-                <div class="card-subtitle">
+                <div class="subtitle is-5">
                   <p>Abolish Minimum Wage</p>
                 </div>
-                <div class="card-text">
+                <div class="card-content">
                   <p>Experts in economy say that raising the minimum wage is either harmful or has no effect. Universal Basic Income would allow us to abolish the minimum wage, creating a free-er market by lowering costs of production.</p>
                 </div>
               </div>
-              <div class="card-action">
-                <p><a class="link animated" href="https://www.youtube.com/watch?v=7Pq-S557XQU"><i class="fa fa-fw fa-link"></i> Humans Need Not Apply: On Automation</a></p>
-                <p><a class="link animated" href="http://www.politifact.com/truth-o-meter/statements/2014/nov/06/ben-cardin/does-raising-minimum-wage-result-job-growth"><i class="fa fa-fw fa-link"></i> Politifact: On Raising Minimum Wage</a></p>
+              <div class="card-footer">
+                <p class="card-footer-item"><a href="https://www.youtube.com/watch?v=7Pq-S557XQU"><i class="fa fa-fw fa-link"></i> Humans Need Not Apply: On Automation</a></p>
+                <p class="card-footer-item"><a href="http://www.politifact.com/truth-o-meter/statements/2014/nov/06/ben-cardin/does-raising-minimum-wage-result-job-growth"><i class="fa fa-fw fa-link"></i> Politifact: On Raising Minimum Wage</a></p>
               </div>
             </div>
           </div>
-          <div class="col-xs-12 col-md-6 header form-group">
-            <div class="card shadow">
-              <div class="card-body">
-                <div class="card-title">
+          <div class="column">
+            <div class="card">
+              <div class="card-content">
+                <div class="title is-spaced">
                   <p><i class="fa fa-fw fa-gear"></i> Technology</p>
                 </div>
-                <div class="card-subtitle">
+                <div class="subtitle is-5">
                   <p>Abolish Protectionism in Tech</p>
                 </div>
-                <div class="card-text">
+                <div class="card-content">
                   <p>Today, we live in a mixed politics-economy model, with remnants of protectionism being heavily positioned in technology and tech products. In a possible future, we could abolish those little problems and expect national growth, after failing to secure a national industry in tech, but a massive growth in international companies serving us goods, making us updated to live in the current century. </p>
                 </div>
-                <div class="card-subtitle">
+                <div class="subtitle is-5">
                   <p>Abolish the DRM</p>
                 </div>
-                <div class="card-text">
+                <div class="card-content">
                   <p>Copyright is something of a law that is expected to stil be a thing in the foreseeable future. This means of securing the author's ideas is outdated for the fast, growing, and virtual world we live in today. A spawn of the current Copyright manoeuvres, is DRM. It is a piece of code embedded in media that limits your freedoms on where you can play it, to make you lock-in to a certain site or app. It's a poison of the virtual world, and so, we must fight to kill it.</p>
                 </div>
-                <div class="card-subtitle">
+                <div class="subtitle is-5">
                   <p>Approve the Use of Ethical Torrents</p>
                 </div>
-                <div class="card-text">
+                <div class="card-content">
                   <p>Torrents today are seen as a maladie and something we should combat and get rid of. That thought is dangerous. We've grown to such a huge civilization, sprawling an entire planet, albeit not united under a single banner like Coruscant. Do you see the benefits in using a unified format on which we can share ideas, media, and human produced content? Yeah, me too. So we must fight to secure torrent as a viable means of sharing media, by ethically using it.</p>
                 </div>
               </div>
-              <div class="card-action">
-                <p><a class="link animated" href="https://defectivebydesign.org/"><i class="fa fa-fw fa-link"></i> "Defective By Design": About DRM Erradication</a></p>
+              <div class="card-footer">
+                <p class="card-footer-item"><a href="https://defectivebydesign.org/"><i class="fa fa-fw fa-link"></i> "Defective By Design": About DRM Erradication</a></p>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+  </section>
   </main>
-  <footer class="footer footer-shadow">
-    <div class="container">
-      <div class="row">
-        <div class="col-xs-12">
-          <ul class="footer-space">
-            <li><a class="button ghost animated" href="https://github.com/lainsce/lainsce.github.io/issues/new" target="_blank" class="ghost"><i class="fa fa-fw fa-sm fa-bug"></i> Report an Issue</a></li>
-          </ul>
+  <footer class="footer">
+    <div class="container is-fluid">
+        <div class="content has-text-centered">
+            <div class="level">
+                <p class="level-item has-text-centered">
+                    <a class="button is-dark is-uppercase" href="https://github.com/lainsce/lainsce.github.io/issues/new" target="_blank" class="ghost">
+                        <i class="fa fa-fw fa-sm fa-bug"></i> Report an Issue
+                    </a>
+                </p>
+            </div>
         </div>
-      </div>
-    </div>
-    <div class="container">
-      <div class="row">
-        <div class="col-xs-12">
-          <p>© <span id="year">2017</span> Paulo Galardi. Made in São Paulo.</p>
-        </div>
-      </div>
+
+        <section class="section">
+            <div class="container is-fluid" align=center>
+                <a href="https://bulma.io">
+                    <img src="https://bulma.io/images/made-with-bulma.png" alt="Made with Bulma" width="128" height="24">
+                </a>
+                <p>
+                    © <span id="year">2017</span> Paulo Galardi. Made in São Paulo.
+                </p>
+            </div>
+        </section>
     </div>
   </footer>
+
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script type="text/javascript">
   $(function () {
