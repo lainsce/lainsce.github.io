@@ -22,6 +22,28 @@
     color: #F96854 !important;
 }
 
+.button.is-patreon {
+    background-color: #F96854;
+    border-color: transparent;
+    color: #fff;
+
+    &:hover {
+        background-color: #E85743;
+        border-color: transparent;
+        color: #fff;
+    }
+
+    &:active {
+        background-color: #E85743;
+        border-color: transparent;
+        color: #fff;
+    }
+
+    &:focus:not(:active) {
+        box-shadow: 0 0 0 0.125em rgba(#E85743,.25);
+    }
+}
+
 .header-icon-star {
     color: #FFDD57;
 }
