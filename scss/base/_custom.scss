@@ -22,6 +22,18 @@
     color: #F96854 !important;
 }
 
+.header-icon-star {
+    color: #FFDD57;
+}
+
+.header-icon-economy {
+    color: #00D192;
+}
+
+.header-icon-tech {
+    color: #215CD6;
+}
+
 .custom-title {
     color: #000000aa;
     font-size: 1.5rem;
@@ -52,9 +64,11 @@
 
 .card-skillbar {
     background-color: #00D1B2;
-    border-radius: .5rem;
+    border-radius: .23rem;
     line-height: 2rem;
     padding-right: 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
     text-align: right;
 }
 
