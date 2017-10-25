@@ -172,6 +172,9 @@
 }
 
 .card {
+    border-radius: 5px;
+
+
     &:hover {
         @include card(2);
     }
@@ -179,4 +182,8 @@
     &.z-2:hover {
         @include card(3);
     }
+}
+
+.card-image {
+    border-radius: 5px 5px 0 0;
 }
