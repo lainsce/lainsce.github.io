@@ -18,8 +18,8 @@
     background: linear-gradient(150deg,#296CB6 0%,#213C86 100%);
 }
 
-.has-text-patreon {
-    color: #F96854 !important;
+.button a {
+    color: #fff;
 }
 
 .button.is-patreon {
@@ -44,12 +44,26 @@
     }
 }
 
+.footer {
+    display: inline-flex;
+    width: 100%;
+    flex-direction: column;
+}
+
 .header-icon-star {
-    color: #FFDD57;
+    color: #FFBB57;
 }
 
 .header-icon-economy {
     color: #57DD88;
+}
+
+.icon-check {
+    color: #57DD88;
+}
+
+.icon-check-faded {
+    color: #ccc;
 }
 
 .header-icon-tech {
@@ -57,7 +71,7 @@
 }
 
 .custom-title {
-    color: #000000aa;
+    color: #00000077;
     font-size: 1.5rem;
     text-align: center;
     display: block;
@@ -85,21 +99,19 @@
 }
 
 .tag:not(body).is-vala {
-    background-color: #403757;
+    background-color: #473757;
     color: #fff;
 }
 
 .navbar-burger {
-    color: #fff;
+    color: #363636;
 
     &:active {
         border: none;
-        color: #fff;
     }
 
     &:hover {
         border: none;
-        color: #aaa;
     }
 }
 
@@ -139,10 +151,11 @@
 @function bottom-shadow($depth) {
     $primary-offset: nth(1.5 3 6 10 15, $depth) * 1px;
     $blur: nth(1 3 3 5 6, $depth) * 4px;
-    $color: rgba(black, nth(.24 .23 .23 .22 .22, $depth));
+    $color: rgba(black, nth(.24 .23 .23 .22 .20, $depth));
 
     @return 0 $primary-offset $blur $color;
 }
+
 @mixin card($depth:1) {
     @if $depth < 1 {
         box-shadow: none;

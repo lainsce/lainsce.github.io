@@ -41,7 +41,7 @@
     </script>
 </head>
 <body>
-    <nav class="navbar is-black z-1" role="navigation" aria-label="main navigation">
+    <nav class="navbar is-light z-1" role="navigation" aria-label="main navigation">
         <div class="navbar-brand">
             <a class="navbar-item" href="/">
                 <img src="icons/me.svg" alt="My Icon" width="32" height="32">
@@ -64,11 +64,11 @@
                 <div class="navbar-item has-dropdown is-hoverable">
                     <a class="navbar-item is-hidden-mobile">
                         <span class="icon is-medium">
-                            <i class="fa fa-fw fa-bars" style="color: #888;"></i>
+                            <i class="fa fa-fw fa-bars" style="color: #363636;"></i>
                         </span>
                     </a>
 
-                    <div class="navbar-dropdown is-right">
+                    <div class="navbar-dropdown is-right z-1">
                         <a class="navbar-item" href="mailto:lainsce@airmail.cc/" target="_blank">
                             <span class="icon is-medium has-text-dark">
                                 <i class="fa fa-fw fa-envelope"></i>
@@ -78,11 +78,11 @@
                             </span>
                         </a>
                         <a class="navbar-item" href="https://t.me/lainsce/" target="_blank">
-                            <span class="icon is-medium has-text-dark">
+                            <span class="icon is-medium has-text-info">
                                 <i class="fa fa-fw fa-telegram"></i>
                             </span>
                             <span>
-                                Add Me on Telegram
+                                Chat With Me
                             </span>
                         </a>
                     </div>
@@ -91,7 +91,7 @@
         </div>
     </nav>
     <main>
-        <div class="hero is-primary is-medium is-bold">
+        <div class="hero is-primary is-medium">
             <div class="hero-body">
                 <div class="container is-fluid">
                     <div class="title is-2 is-spaced" align=center>
@@ -109,7 +109,7 @@
                                 Be My Patron
                             </span>
                         </a>
-                        <a class="button is-info is-medium is-inverted is-outlined" href="https://twitter.com/intent/follow?screen_name=lainscereal"
+                        <a class="button is-info is-medium is-inverted z-1" href="https://twitter.com/intent/follow?screen_name=lainscereal"
                         >
                         <span class="icon is-small">
                             <i class="fa fa-fw fa-twitter"></i>
@@ -294,78 +294,84 @@
 </main>
 <footer class="footer">
     <div class="container is-fluid">
-        <div class="content has-text-centered">
-            <nav class="breadcrumb is-centered" aria-label="breadcrumbs">
-                <ul>
-                    <li>
-                        <a href="mailto:lainsce@airmail.cc/" target="_blank">
-                            <span class="icon has-text-dark">
-                                <i class="fa fa-fw fa-lg fa-envelope"></i>
-                            </span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://t.me/lainsce/" target="_blank">
-                            <span class="icon has-text-link">
-                                <i class="fa fa-fw fa-lg fa-telegram"></i>
-                            </span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://plus.google.com/u/0/+LainsCE/" target="_blank">
-                            <span class="icon has-text-danger">
-                                <i class="fa fa-fw fa-lg fa-google-plus"></i>
-                            </span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://medium.com/@lainsce/" target="_blank">
-                            <span class="icon has-text-success">
-                                <i class="fa fa-fw fa-lg fa-medium"></i>
-                            </span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://twitter.com/@lainscereal/" target="_blank">
-                            <span class="icon has-text-info">
-                                <i class="fa fa-fw fa-lg fa-twitter"></i>
-                            </span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://github.com/lainsce/" target="_blank">
-                            <span class="icon has-text-black">
-                                <i class="fa fa-fw fa-lg fa-github"></i>
-                            </span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.patreon.com/lainsce/" target="_blank">
-                            <span class="icon has-text-patreon">
-                                <i class="fa fa-fw fa-lg fa-usd"></i>
-                            </span>
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-
-            <div class="level">
-                <p class="level-item has-text-centered">
-                    <a class="button is-dark is-uppercase z-1" href="https://github.com/lainsce/lainsce.github.io/issues/new" target="_blank" class="ghost">
-                        <span class="icon is-small">
-                            <i class="fa fa-fw fa-sm fa-bug"></i>
-                        </span>
-
-                        <span>
-                            Report an Issue
+        <div class="has-text-centered">
+            <div class="buttons has-addons is-centered">
+                <span class="button is-dark">
+                    <a href="mailto:lainsce@airmail.cc/" target="_blank">
+                        <span class="icon is-=medium">
+                            <i class="fa fa-fw fa-lg fa-envelope"></i>
                         </span>
                     </a>
+                </span>
+                <span class="button is-link">
+                    <a href="https://t.me/lainsce/" target="_blank">
+                        <span class="icon is-=medium">
+                            <i class="fa fa-fw fa-lg fa-telegram"></i>
+                        </span>
+                    </a>
+                </span>
+                <span class="button is-danger">
+                    <a href="https://plus.google.com/u/0/+LainsCE/" target="_blank">
+                        <span class="icon is-=medium">
+                            <i class="fa fa-fw fa-lg fa-google-plus"></i>
+                        </span>
+                    </a>
+                </span>
+                <span class="button is-success">
+                    <a href="https://medium.com/@lainsce/" target="_blank">
+                        <span class="icon is-=medium">
+                            <i class="fa fa-fw fa-lg fa-medium"></i>
+                        </span>
+                    </a>
+                </span>
+                <span class="button is-info">
+                    <a href="https://twitter.com/@lainscereal/" target="_blank">
+                        <span class="icon is-=medium">
+                            <i class="fa fa-fw fa-lg fa-twitter"></i>
+                        </span>
+                    </a>
+                </span>
+                <span class="button is-black">
+                    <a href="https://github.com/lainsce/" target="_blank">
+                        <span class="icon is-=medium">
+                            <i class="fa fa-fw fa-lg fa-github"></i>
+                        </span>
+                    </a>
+                </span>
+                <span class="button is-patreon">
+                    <a href="https://www.patreon.com/lainsce/" target="_blank">
+                        <span class="icon is-=medium">
+                            <i class="fa fa-fw fa-lg fa-usd"></i>
+                        </span>
+                    </a>
+                </span>
+            </div>
+
+            <div class="content">
+                <p>
+                    <div class="buttons">
+                        <span class="button is-dark is-uppercase z-1">
+                            <a class="has-text-light" href="https://github.com/lainsce/lainsce.github.io/issues/new" target="_blank">
+                                <span class="icon is-small">
+                                    <i class="fa fa-fw fa-sm fa-bug"></i>
+                                </span>
+
+                                <span>
+                                    Report an Issue
+                                </span>
+                            </a>
+                        </span>
+                    </div>
                 </p>
             </div>
 
-            <a href="https://bulma.io">
-                <img src="https://bulma.io/images/made-with-bulma.png" alt="Made with Bulma" width="128" height="24">
-            </a>
+            <div class="level">
+                <p class="level-item has-text-centered">
+                    <a href="https://bulma.io">
+                        <img src="https://bulma.io/images/made-with-bulma.png" alt="Made with Bulma" width="128" height="24">
+                    </a>
+                </p>
+            </div>
 
             <p>
                 © <span id="year">2017</span> Paulo Galardi. Made in São Paulo.
