@@ -19,7 +19,6 @@
     <link rel="manifest" href="/fav/manifest.json">
     <link rel="mask-icon" href="/fav/safari-pinned-tab.svg" color="#00D1B2">
     <link rel="shortcut icon" href="/fav/favicon.ico">
-    <link type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
     <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.0/css/bulma.min.css">
     <link type="text/css" rel="stylesheet" href="scss/main.css">
 </head>
@@ -52,7 +51,7 @@
                     <div class="navbar-dropdown is-right z-1">
                         <a class="navbar-item" href="mailto:lainsce@airmail.cc/" target="_blank">
                             <span class="icon is-medium has-text-dark">
-                                <i class="fa fa-fw fa-envelope"></i>
+                                <i class="fa fa-fw fa-mail-alt"></i>
                             </span>
                             <span>
                                 Mail Me
@@ -278,7 +277,7 @@
             <span class="button z-1 is-dark">
                 <a href="mailto:lainsce@airmail.cc/" target="_blank">
                     <span class="icon is-medium">
-                        <i class="fa fa-fw fa-lg fa-envelope"></i>
+                        <i class="fa fa-fw fa-lg fa-mail-alt"></i>
                     </span>
                 </a>
             </span>
@@ -292,7 +291,7 @@
             <span class="button z-1 is-danger">
                 <a href="https://plus.google.com/u/0/+LainsCE/" target="_blank">
                     <span class="icon is-medium">
-                        <i class="fa fa-fw fa-lg fa-google-plus"></i>
+                        <i class="fa fa-fw fa-lg fa-gplus"></i>
                     </span>
                 </a>
             </span>
@@ -348,9 +347,13 @@
     </div>
 </footer>
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script async type="text/javascript">
-$(function(){$("#year").text((new Date).getFullYear())});$(function(a){return Math.floor((new Date-new Date(a))/311236E6)});var b=document.getElementById("age"),c=new Date("1993-06-06");ageMS=Date.parse(Date())-Date.parse(c);age=new Date;age.setTime(ageMS);ageYear=age.getFullYear()-1970;b.innerHTML=ageYear;
-document.addEventListener("DOMContentLoaded",function(){var a=Array.prototype.slice.call(document.querySelectorAll(".navbar-burger"),0);0<a.length&&a.forEach(function(a){a.addEventListener("click",function(){var d=document.getElementById(a.dataset.target);a.classList.toggle("is-active");d.classList.toggle("is-active")})})});
+<script type="text/javascript">
+        $(document).ready(function(){$("#tab_header ul li.item").on("click",function(){var a=$(this).data("option");$("#tab_header ul li.item").removeClass("is-active");$(this).addClass("is-active");$("#tab_container .container_item").removeClass("is-active");$('div[data-item="'+a+'"]').addClass("is-active")})});
+        $(function(){$("#year").text((new Date).getFullYear())});$(function(a){return Math.floor((new Date-new Date(a))/311236E6)});var b=document.getElementById("age"),c=new Date("1993-06-06");ageMS=Date.parse(Date())-Date.parse(c);age=new Date;age.setTime(ageMS);ageYear=age.getFullYear()-1970;b.innerHTML=ageYear;
+</script>
+<script type="text/javascript">
+        document.addEventListener("DOMContentLoaded",function(){var a=Array.prototype.slice.call(document.querySelectorAll(".navbar-burger"),0);0<a.length&&a.forEach(function(a){a.addEventListener("click",function(){var b=document.getElementById(a.dataset.target);a.classList.toggle("is-active");b.classList.toggle("is-active")})})});
+        $(document).ready(function(){$("#tab_header ul li.item").on("click",function(){var a=$(this).data("option");$("#tab_header ul li.item").removeClass("is-active");$(this).addClass("is-active");$("#tab_container .container_item").removeClass("is-active");$('div[data-item="'+a+'"]').addClass("is-active")})});
 </script>
 </body>
 </html>
