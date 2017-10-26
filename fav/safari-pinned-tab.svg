@@ -1,1 +1,67 @@
-<svg version="1" xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 300.000000 300.000000"><path d="M114.5 36.7c-.9 2.3-71.6 205.6-76 218.5l-3.4 9.8H220v-35h-67.5c-37.1 0-67.5-.1-67.5-.3 0-.1 14.6-44 32.4-97.5L149.8 35h-17.3c-15.5 0-17.4.2-18 1.7zM230 110v15h30.1l-.3-14.8-.3-14.7-14.7-.3-14.8-.3V110z"/><path d="M194 149.5V164h30v-29h-30v14.5zM221 194v15h30.1l-.3-14.8-.3-14.7-14.7-.3-14.8-.3V194z"/></svg>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1"
+   width="400"
+   height="400"
+   viewBox="0 0 300.000000 300.000000"
+   id="svg6"
+   sodipodi:docname="safari-pinned-tab.svg"
+   inkscape:version="0.92.2 (5c3e80d, 2017-08-06)">
+  <metadata
+     id="metadata12">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs10" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="962"
+     id="namedview8"
+     showgrid="false"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     inkscape:zoom="1.668772"
+     inkscape:cx="271.51628"
+     inkscape:cy="177.97299"
+     inkscape:window-x="0"
+     inkscape:window-y="30"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg6" />
+  <path
+     style="fill:#000000;fill-opacity:1"
+     d="M 114.5,36.7 C 87.924491,112.76196 61.483853,188.87131 35.1,265 c 61.633333,0 123.26667,0 184.9,0 0,-11.66667 0,-23.33333 0,-35 -44.99969,-0.0861 -90.00469,0.23203 -135,-0.3 21.51149,-64.92939 43.17544,-129.808185 64.8,-194.7 -11.46236,0.285662 -23.05922,-0.7248 -34.41406,0.801563 z M 230,110 c 0,5 0,10 0,15 10.03333,0 20.06667,0 30.1,0 -0.19894,-9.83335 -0.39892,-19.66669 -0.6,-29.5 -9.83331,-0.201068 -19.66665,-0.401054 -29.5,-0.6 0,5.033333 0,10.06667 0,15.1 z"
+     id="path2"
+     inkscape:connector-curvature="0" />
+  <path
+     style="opacity:1;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+     d="m 185.17805,131.30402 c 10.03334,0 20.06667,0 30.10001,0 0,10.03333 0,20.06666 0,30.1 -10.03334,0 -20.06667,0 -30.10001,0 0,-10.03334 0,-20.06667 0,-30.1 z"
+     id="rect4511"
+     inkscape:connector-curvature="0" />
+  <path
+     style="opacity:1;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+     d="m 229.6599,171.24364 c 10.03333,0 20.06667,0 30.1,0 0,10.03333 0,20.06667 0,30.1 -10.03333,0 -20.06667,0 -30.1,0 0,-10.03333 0,-20.06667 0,-30.1 z"
+     id="rect4511-3"
+     inkscape:connector-curvature="0" />
+</svg>
