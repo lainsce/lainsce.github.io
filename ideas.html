@@ -12,9 +12,7 @@
     <meta property='og:image' content='icons/me.png'>
     <meta name="msapplication-config" content="/fav/browserconfig.xml">
     <meta name="theme-color" content="#00D1B2">
-
     <title>Ideas | Lains</title>
-
     <link rel="apple-touch-icon" sizes="180x180" href="/fav/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/fav/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/fav/favicon-16x16.png">
@@ -37,7 +35,6 @@
             <a class="navbar-item" href="/about">
                 ABOUT
             </a>
-
             <a class="navbar-burger nav-toggle" data-target="Menu">
                 <span></span>
                 <span></span>
@@ -52,7 +49,6 @@
                             <i class="fa fa-fw fa-bars" style="color: #363636;"></i>
                         </span>
                     </a>
-
                     <div class="navbar-dropdown is-right z-1">
                         <a class="navbar-item" href="mailto:lainsce@airmail.cc/" target="_blank">
                             <span class="icon is-medium has-text-dark">
@@ -195,7 +191,6 @@
                 </p>
             </div>
         </div>
-
         <section class="section">
             <div class="container is-fluid" align=center>
                 <p>
@@ -205,55 +200,10 @@
         </section>
     </div>
 </footer>
-
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script async type="text/javascript">
-$(function () {
-    $("#year").text((new Date).getFullYear());
-    var things = ["Patron", "Backer", "Booster", "Supporter", "Big Fan"];
-    $("#thing").text(things[Math.floor(Math.random() * things.length)]);
-});
-$(function yearsSince(epoch) {
-    var diff = new Date() - new Date(epoch);
-    var age = Math.floor(diff / 311236000000);
-    return age;
-});
-var birth = new Date('1993-06-06');
-function getAge(birth) {
-    ageMS = Date.parse(Date()) - Date.parse(birth);
-    age = new Date();
-    age.setTime(ageMS);
-    ageYear = age.getFullYear() - 1970;
-    return ageYear;
-}
-document.getElementById('age').innerHTML = getAge(birth);
-</script>
-<script type="text/javascript">
-document.addEventListener('DOMContentLoaded', function () {
-
-    // Get all "navbar-burger" elements
-    var $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
-
-    // Check if there are any navbar burgers
-    if ($navbarBurgers.length > 0) {
-
-        // Add a click event on each of them
-        $navbarBurgers.forEach(function ($el) {
-            $el.addEventListener('click', function () {
-
-                // Get the target from the "data-target" attribute
-                var target = $el.dataset.target;
-                var $target = document.getElementById(target);
-
-                // Toggle the class on both the "navbar-burger" and the "navbar-menu"
-                $el.classList.toggle('is-active');
-                $target.classList.toggle('is-active');
-
-            });
-        });
-    }
-
-});
+$(function(){$("#year").text((new Date).getFullYear())});$(function(a){return Math.floor((new Date-new Date(a))/311236E6)});var b=document.getElementById("age"),c=new Date("1993-06-06");ageMS=Date.parse(Date())-Date.parse(c);age=new Date;age.setTime(ageMS);ageYear=age.getFullYear()-1970;b.innerHTML=ageYear;
+document.addEventListener("DOMContentLoaded",function(){var a=Array.prototype.slice.call(document.querySelectorAll(".navbar-burger"),0);0<a.length&&a.forEach(function(a){a.addEventListener("click",function(){var d=document.getElementById(a.dataset.target);a.classList.toggle("is-active");d.classList.toggle("is-active")})})});
 </script>
 </body>
 </html>
