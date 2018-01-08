@@ -37,11 +37,11 @@
     &:hover {
         background-color: #E85743;
         border-color: transparent;
-        color: #fff;
+        color: #f1f1f1;
     }
 
     &:active {
-        background-color: #E85743;
+        background-color: #C63521;
         border-color: transparent;
         color: #fff;
     }
@@ -55,7 +55,7 @@
     &:hover {
         background-color: #6ac6ad;
         border-color: transparent;
-        color: #fff;
+        color: #f1f1f1;
     }
 
     &:active {
@@ -120,8 +120,8 @@
 }
 
 .tag:not(body).is-vala {
-    background-color: #573767;
-    color: #fff;
+    background-color: #7A36B1;
+    color: #f1f1f1;
 }
 
 .navbar-burger {
