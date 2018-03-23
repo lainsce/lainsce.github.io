@@ -4,79 +4,50 @@
 <!DOCTYPE html>
 <html lang="en-us">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Lains">
-    <meta property="og:description" content="The personal site for Lains">
-    <meta property='og:title' content='404 Page Not Found | Lains'>
-    <meta property='og:image' content='icons/me.png'>
-    <meta name="msapplication-config" content="/fav/browserconfig.xml">
-    <meta name="theme-color" content="#00D1B2">
-    <title>404 Page Not Found | Lains</title>
-    <link rel="apple-touch-icon" sizes="180x180" href="/fav/apple-touch-icon.png">
-    <link rel="manifest" href="/fav/manifest.json">
-    <link rel="mask-icon" href="/fav/safari-pinned-tab.svg" color="#00D1B2">
-    <link href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAQAAAC1+jfqAAAARElEQVQoz52RwQ4AIAhCn63//2W6
-dDHNZZycAwYDPIT8Y9BC0NcOQp4gwE7WLBwsMYz3c4skf6tFmv+xhW39ldDc4gcL3XcRDIdoAU0A
-AAAASUVORK5CYII=" rel="icon" type="image/png"/>
-    <link type="text/css" rel="stylesheet" href="scss/main.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Lains">
+  <meta property="og:description" content="The personal site for Lains">
+  <meta property='og:title' content='404 Page Not Found | Lains'>
+  <meta property='og:image' content='icons/me.png'>
+  <title>404 Page Not Found | Lains</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon.png">
+  <link rel="shortcut icon" href="favicon.ico">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css" integrity="sha384-v2Tw72dyUXeU3y4aM2Y0tBJQkGfplr39mxZqlTBDUZAb9BGoC40+rdFCG0m10lXk" crossorigin="anonymous">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/regular.css" integrity="sha384-A/oR8MwZKeyJS+Y0tLZ16QIyje/AmPduwrvjeH6NLiLsp4cdE4uRJl8zobWXBm4u" crossorigin="anonymous">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/brands.css" integrity="sha384-IiIL1/ODJBRTrDTFk/pW8j0DUI5/z9m1KYsTm/RjZTNV8RHLGZXkUDwgRRbbQ+Jh" crossorigin="anonymous">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/fontawesome.css" integrity="sha384-q3jl8XQu1OpdLgGFvNRnPdj5VIlCvgsDQTQB6owSOHWlAurxul7f+JpUOVdAiJ5P" crossorigin="anonymous">
+  <link type="text/css" rel="stylesheet" href="scss/main.css">
 </head>
-<body>
-    <main>
-        <div class="hero" style="height: 100vh; overflow-y: hidden;">
-            <div class="container is-fluid">
-                <section class="section">
-                    <div class="card" align=center>
-                        <div class="card-content">
-                            <div class="title is-spaced">
-                                <span>
-                                    404
-                                </span>
-                            </div>
-                            <div class="subtitle">
-                                Oh No! Seems you just went thru a wrong turn!
-                            </div>
-                            <div class="text">
-                                It can be fixed though: click the home link below!
-                            </div>
-                        </div>
-                        <div class="card-footer">
-                            <a href="/" class="card-footer-item">
-                                <span>
-                                    Home
-                                </span>
-                            </a>
-                        </div>
-                    </div>
-                </section>
-            </div>
-        </div>
-    </main>
-    <footer class="footer">
-        <div class="container is-fluid">
-            <div class="content has-text-centered">
-                <div class="level">
-                    <p class="level-item has-text-centered">
-                        <a class="button is-dark is-uppercase" href="https://github.com/lainsce/lainsce.github.io/issues/new" target="_blank" class="ghost">
-                            <span class="icon is-small">
-                                <i class="fa fa-fw fa-sm fa-bug"></i>
-                            </span>
-
-                            <span>
-                                Report an Issue
-                            </span>
-                        </a>
-                    </p>
+<body style="background: #4D4D4D">
+  <main>
+    <div class="hero parallax">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 form-group">
+            <div class="card shadow" align=center>
+              <div class="card-body">
+                <div class="card-title">
+                  <p><i class="fas fa-fw fa-exclamation-triangle" style="background-color: #F9C440; color: #FAFAFA; border-radius: 50%; padding: 10px; width: 40px"></i> 404</p>
                 </div>
-            </div>
-            <section class="section">
-                <div class="container is-fluid" align=center>
-                    <p>
-                        © 2017-<span id="year">201x</span> Lains. Made in São Paulo.
-                    </p>
+                <div class="card-subtitle">
+                  <p align=center>Oh no! Seems you just went thru a wrong turn!</p>
                 </div>
-            </section>
+                <div class="card-text">
+                  <p align=center>It can be fixed though! Whew...</p>
+                  <p align=center>Just click on the home button on the corner...</p>
+                  <div class="fab-alone fab-alone-home animated">
+                      <a href="/"><i class="fas fa-home" style="color: #FFF; text-align: center"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-    </footer>
+      </div>
+    </div>
+  </main>
 </body>
 </html>

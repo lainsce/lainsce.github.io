@@ -1,0 +1,40 @@
+/********************
+*     FOOTER       *
+********************/
+
+.footer {
+  @include font($size: .8rem, $weight: 400, $lh: .8rem);
+  background-color: $card;
+  box-sizing: border-box;
+  color: $fg;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  height: 33%;
+  padding: 1.1rem 0;
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+
+.footer-black {
+  @include font($size: .8rem, $weight: 400, $lh: .8rem);
+  box-sizing: border-box;
+  color: $bg;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  height: 100%;
+  padding: 1.1rem 0;
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+
+.footer-space {
+  display: block;
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+}

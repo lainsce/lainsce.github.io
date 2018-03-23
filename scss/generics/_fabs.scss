@@ -1,0 +1,144 @@
+/********************
+*       FAB        *
+********************/
+
+.faba {
+  background-color: none;
+  background-image: none;
+  border: 2px solid rgba($fg, .5);
+  border-radius: 100%;
+  box-shadow: none;
+  color: $fg;
+  display: inline-block;
+  height: 38px;
+  line-height: 38px;
+  list-style: none;
+  margin: 6px;
+  text-align: center;
+  width: 38px;
+
+  & .fas.fa-lg,.fab.fa-lg {
+    line-height: 1em;
+    vertical-align: -0.12em;
+  }
+
+  &.github {
+    &:hover {
+      @include box-shadow(0 3px 7px rgba($fab-github, .5));
+      background-color: $fab-github;
+      border: 2px solid $fab-github;
+    }
+  }
+
+  &.mail {
+    &:hover {
+      @include box-shadow(0 3px 7px rgba($fab-mail, .5));
+      background-color: $fab-mail;
+      border: 2px solid $fab-mail;
+    }
+  }
+
+  &.twitter {
+    &:hover {
+      @include box-shadow(0 3px 7px rgba($fab-twitter, .5));
+      background-color: $fab-twitter;
+      border: 2px solid $fab-twitter;
+    }
+  }
+
+  &.gplus {
+    &:hover {
+      @include box-shadow(0 3px 7px rgba($fab-gplus, .5));
+      background-color: $fab-gplus;
+      border: 2px solid $fab-gplus;
+    }
+  }
+
+  &.medium {
+    &:hover {
+      @include box-shadow(0 3px 7px rgba($fab-medium, .5));
+      background-color: $fab-medium;
+      border: 2px solid $fab-medium;
+    }
+  }
+
+  &.telegram {
+    &:hover {
+      @include box-shadow(0 3px 7px rgba($fab-telegram, .5));
+      background-color: $fab-telegram;
+      border: 2px solid $fab-telegram;
+    }
+  }
+
+  &.patreon {
+    &:hover {
+      @include box-shadow(0 3px 7px rgba($fab-patreon, .5));
+      background-color: $fab-patreon;
+      border: 2px solid $fab-patreon;
+    }
+  }
+
+  &>a {
+    color: $fg;
+    display: block;
+    height: 100%;
+    width: 100%;
+
+    &:hover {
+      color: $fab-icon;
+    }
+  }
+}
+
+.fab-alone {
+   width: 56px;
+   height: 56px;
+   background-color: $fg;
+   border-radius: 100%;
+   display: inline-block;
+
+   font-size: 1.5rem;
+   color: $fab-icon;
+   text-align: center;
+   line-height: 56px;
+
+   position: absolute;
+   right: 24px;
+   bottom: -28px;
+
+   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);
+
+   &:hover {
+      transform: scale(1.07);
+      box-shadow: 0 3px 3px 0 rgba(0,0,0,0.14), 0 1px 7px 0 rgba(0,0,0,0.12), 0 3px 1px -1px rgba(0,0,0,0.2);
+   }
+
+   & a {
+      color: $fab-icon;
+      margin: auto;
+   }
+
+   &.fab-alone-home {
+      background-color: $fab-gplus;
+   }
+
+   &.fab-alone-quilter {
+      background-color: darken($card-background-quilter, 60%);
+   }
+
+   &.fab-alone-coin {
+      background-color: darken($card-background-coin, 60%);
+   }
+
+   &.fab-alone-palaura {
+      background-color: darken($card-background-palaura, 60%);
+   }
+
+   &.fab-alone-notejot {
+      background-color: darken($card-background-notejot, 60%);
+   }
+
+   &.fab-alone-yishu {
+    background-color: darken($card-background-yishu, 60%);
+   }
+}

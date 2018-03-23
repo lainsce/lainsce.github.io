@@ -1,0 +1,12 @@
+.avatar {
+    color: $fg;
+    background-color: $bg;
+    box-sizing: border-box;
+    box-shadow: rgba($fg, 0.5) 0px 1px 6px, rgba($fg, 0.5) 0px 1px 4px;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    margin: 20px;
+    text-align: center;
+    display: inline-block;
+}

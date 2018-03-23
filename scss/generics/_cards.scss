@@ -1,0 +1,325 @@
+/*****************
+*     CARDS     *
+*****************/
+
+.card {
+  background-color: $card;
+  border-radius: .3rem;
+  line-height: 1.5rem;
+  margin-left: 15px;
+  margin-right: 15px;
+
+  &.card-stacked {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      position: relative;
+  }
+
+  &.horizontal {
+      margin-left: 0px;
+      border-radius: 0 .3rem .3rem 0;
+  }
+
+  &.card-content {
+      padding: 24px;
+      border-radius: 0 0 .3rem .3rem;
+
+      & p {
+          padding: 0;
+          color: inherit;
+      }
+  }
+
+  &.card-alone {
+    margin-right: 0;
+  }
+}
+
+.circle {
+  background-color: $badge;
+  border: 1px solid $badge;
+  border-radius: 50%;
+  height: 70px;
+  margin: 10px 5px -25px -5px;
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: cover;
+  overflow-y: hidden;
+  width: 70px;
+}
+
+.book {
+  background-color: $badge;
+  border: 1px solid $badge;
+  border-radius: 15%;
+  bottom: -100%;
+  height: 90px;
+  left: -100%;
+  margin: 10px 5px -25px -5px;
+  object-fit: cover;
+  overflow-y: hidden;
+  right: -100%;
+  top: -100%;
+  width: 70px;
+}
+
+.card-title {
+  @include font($size: 2.25rem, $color: $fg, $weight: 400);
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+
+  & p {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
+  & i {
+    padding: 5px;
+  }
+}
+
+.card-subtitle {
+  @include font($size: 1.5rem, $color: $fg, $weight: 400);
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+
+  & p {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+}
+
+.card-subsubtitle {
+  @include font($size: 1.25rem, $color: $fg, $weight: 400);
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+  & p {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+}
+
+.card-text {
+  @include font($size: 1rem, $color: $fg, $weight: 400);
+  text-align: left;
+
+  & p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  &.card-text-music {
+    margin-left: 78px;
+  }
+}
+
+.card-title-night {
+  @include font($size: 2.25rem, $color: $bg, $weight: 400);
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+
+  & p {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+}
+
+.card-subtitle-night {
+  @include font($size: 1.5rem, $color: $bg, $weight: 400);
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+
+  & p {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+}
+
+.card-subsubtitle-night {
+  @include font($size: 1.25rem, $color: $bg, $weight: 400);
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+  & p {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+}
+
+.card-text-night {
+  @include font($size: 1rem, $color: $bg, $weight: 400);
+
+  & p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  &.card-text-music {
+    margin-left: 78px;
+  }
+}
+
+.card-image {
+  border-bottom: 1px solid rgba(160, 160, 160, .4);
+  border-radius: .3rem .3rem 0 0;
+  bottom: 0;
+  display: block;
+  left: 0;
+  padding: 1.8rem 0;
+  position: relative;
+  right: 0;
+  text-align: center;
+  top: 0;
+
+  &.card-image-background-coin {
+    @include linear-gradient(150deg, $card-background-coin 0%, darken($card-background-coin, 10%) 100%);
+  }
+  &.card-image-background-notejot {
+    @include linear-gradient(150deg, $card-background-notejot 0%, darken($card-background-notejot, 10%) 100%);
+  }
+  &.card-image-background-palaura {
+    @include linear-gradient(150deg, $card-background-palaura 0%, darken($card-background-palaura, 10%) 100%);
+  }
+  &.card-image-background-quilter {
+    @include linear-gradient(150deg, $card-background-quilter 0%, darken($card-background-quilter, 10%) 100%);
+  }
+  &.card-image-background-yishu {
+    @include linear-gradient(150deg, $card-background-yishu 0%, darken($card-background-yishu, 10%) 100%);
+  }
+}
+
+.card-banner {
+  border-bottom: 1px solid rgba(160, 160, 160, .4);
+  border-radius: .3rem .3rem 0 0;
+  bottom: 0;
+  display: block;
+  left: 0;
+  padding: .5rem;
+  position: relative;
+  right: 0;
+  text-align: center;
+  top: 0;
+
+  &.card-banner-background-hack {
+    @include linear-gradient(150deg, $card-background-hack 0%, darken($card-background-hack, 10%) 100%);
+  }
+
+  &.horizontal {
+      max-width: 40%;
+      text-align: center;
+      border-radius: .3rem 0 0 .3rem;
+  }
+}
+
+.card-image-big {
+  border-bottom: 1px solid rgba(160, 160, 160, .5);
+  border-radius: .3rem .3rem 0 0;
+  bottom: 0;
+  display: block;
+  left: 0;
+  padding: 1rem 0;
+  position: relative;
+  right: 0;
+  text-align: center;
+  top: 0;
+
+  &.card-image-background-coin {
+    @include linear-gradient(150deg, $card-background-coin 0%, darken($card-background-coin, 10%) 100%);
+  }
+  &.card-image-background-notejot {
+    @include linear-gradient(150deg, $card-background-notejot 0%, darken($card-background-notejot, 10%) 100%);
+  }
+  &.card-image-background-palaura {
+    @include linear-gradient(150deg, $card-background-palaura 0%, darken($card-background-palaura, 10%) 100%);
+  }
+  &.card-image-background-quilter {
+    @include linear-gradient(150deg, $card-background-quilter 0%, darken($card-background-quilter, 10%) 100%);
+  }
+  &.card-image-background-yishu {
+    @include linear-gradient(150deg, $card-background-yishu 0%, darken($card-background-yishu, 10%) 100%);
+  }
+}
+
+.card-inside-img {
+  width: 60%;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  padding: 1rem;
+  margin: 0 auto;
+  display: inline;
+}
+
+.card-inside-banner {
+  width: 70%;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  padding: 0;
+  margin: 0 auto;
+  display: inline;
+}
+
+.card-action {
+  @include font($size: .9rem, $weight: 500);
+  background-color: $card-action;
+  border-radius: 0 0 .3rem .3rem;
+  margin: 0;
+  padding: 1rem 1.5rem;
+  position: relative;
+  text-align: left;
+
+  & a {
+      margin: 0;
+      padding: 8px;
+      border: 2px solid transparent;
+      border-radius: .3rem;
+
+    &:hover {
+      background-color: $card-action-hover;
+      border: 2px solid $card-action-hover;
+      color: $fg;
+      border-radius: .3rem;
+      padding: 8px;
+    }
+
+    &:active {
+      background-color: darken($card-action-hover, 15%);
+      border: 2px solid darken($card-action-hover, 15%);
+      color: $bg;
+    }
+  }
+
+  &.fa {
+    margin-right: 12px;
+  }
+
+  &.horizontal {
+      border-radius: 0 0 .3rem 0;
+  }
+}
+
+.card-body {
+  padding: 1.5rem;
+}
+
+.card-chip {
+  text-align: justify;
+}
+
+.card-skillbar {
+  background-color: $card-skillbar;
+  border-radius: .5rem;
+  color: $bg;
+  line-height: 2rem;
+  padding-right: 20px;
+  text-align: right;
+}
+
+.card-stars {
+  color: $card-stars;
+}
