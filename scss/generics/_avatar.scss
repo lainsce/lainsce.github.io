@@ -2,7 +2,7 @@
     color: $fg;
     background-color: $bg;
     box-sizing: border-box;
-    @include box_shadow(1, rgba($fg, 0.5));
+    @include box_shadow(2, rgba($fg, 0.5));
     border-radius: 50%;
     height: 100px;
     width: 100px;

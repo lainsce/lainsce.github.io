@@ -25,13 +25,13 @@
     color: $bg;
 
     &:hover {
-      @include box-shadow(1, rgba($button-success, .5));
+      @include box-shadow(2, rgba($fg, .5));
       background-color: $button-success-hover;
       color: $bg;
     }
 
     &:active {
-      @include box-shadow(1, rgba($button-success, .5));
+      @include box-shadow(2, rgba($fg, .5));
       background-color: $button-success-active;
       background-image: none;
       color: $bg;
@@ -46,13 +46,13 @@
     color: $bg;
 
     &:hover {
-      @include box-shadow(1, rgba($button-info, .5));
+      @include box-shadow(2, rgba($fg, .5));
       background-color: $button-info-hover;
       color: $bg;
     }
 
     &:active {
-      @include box-shadow(1, rgba($button-info, .5));
+      @include box-shadow(2, rgba($fg, .5));
       background-color: $button-info-active;
       background-image: none;
       color: $bg;
@@ -67,14 +67,35 @@
     color: $bg;
 
     &:hover {
-      @include box-shadow(1, rgba($button-kofi, .5));
+      @include box-shadow(2, rgba($fg, .5));
       background-color: $button-kofi-hover;
       color: $bg;
     }
 
     &:active {
-      @include box-shadow(1, rgba($button-kofi, .5));
+      @include box-shadow(2, rgba($fg, .5));
       background-color: $button-kofi-active;
+      background-image: none;
+      color: $bg;
+    }
+  }
+
+  &.patreon {
+    background-color: $button-patreon;
+    border-color: transparent;
+    @include box_shadow(1, rgba($fg, 0.5));
+    box-shadow: none;
+    color: $bg;
+
+    &:hover {
+      @include box-shadow(2, rgba($fg, .5));
+      background-color: $button-patreon-hover;
+      color: $bg;
+    }
+
+    &:active {
+      @include box-shadow(2, rgba($fg, .5));
+      background-color: $button-patreon-active;
       background-image: none;
       color: $bg;
     }
@@ -83,19 +104,18 @@
   &.ghost {
     background-color: transparent;
     background-image: none;
-    border: 2px solid rgba($fg, .5);
     box-shadow: none;
     color: $fg;
 
     &:hover {
-      @include box-shadow(1, rgba($button-ghost, .5));
+      @include box-shadow(2, rgba($fg, .5));
       background-color: $button-ghost;
       background-image: none;
       color: $bg;
     }
 
     &:active {
-      @include box-shadow(1, rgba($button-ghost, .5));
+      @include box-shadow(2, rgba($fg, .5));
       background-color: $button-ghost-active;
       background-image: none;
       color: $bg;
@@ -105,19 +125,18 @@
   &.ghost-night {
     background-color: transparent;
     background-image: none;
-    border: 2px solid rgba($bg, .5);
     box-shadow: none;
     color: $bg;
 
     &:hover {
-      @include box-shadow(1, rgba($button-ghost-night, .5));
+      @include box-shadow(2, rgba($fg, .5));
       background-color: $button-ghost-night;
       background-image: none;
       color: $fg;
     }
 
     &:active {
-      @include box-shadow(1, rgba($button-ghost-night, .5));
+      @include box-shadow(2, rgba($fg, .5));
       background-color: $button-ghost-night-active;
       background-image: none;
       color: $fg;
@@ -127,19 +146,18 @@
   &.ghost-twitter {
     background-color: transparent;
     background-image: none;
-    border: 2px solid rgba($bg, .5);
     box-shadow: none;
     color: $bg;
 
     &:hover {
-      @include box-shadow(1, rgba($button-info, .5));
+      @include box-shadow(2, rgba($fg, .5));
       background-color: $button-info;
       background-image: none;
       color: $bg;
     }
 
     &:active {
-      @include box-shadow(1, rgba($button-info, .5));
+      @include box-shadow(2, rgba($fg, .5));
       background-color: $button-info-active;
       background-image: none;
       color: $bg;
@@ -149,19 +167,18 @@
   &.ghost-success {
     background-color: transparent;
     background-image: none;
-    border: 2px solid rgba($bg, .5);
     box-shadow: none;
     color: $bg;
 
     &:hover {
-      @include box-shadow(1, rgba($button-success, .5));
+      @include box-shadow(2, rgba($fg, .5));
       background-color: $button-success;
       background-image: none;
       color: $bg;
     }
 
     &:active {
-      @include box-shadow(1, rgba($button-success, .5));
+      @include box-shadow(2, rgba($fg, .5));
       background-color: $button-success-active;
       background-image: none;
       color: $bg;
@@ -177,4 +194,16 @@
   @include font($size: .7rem);
   @include box_shadow(1, rgba($fg, 0.5));
   padding: .4rem;
+
+  &:hover {
+    @include box-shadow(2, rgba($fg, .5));
+    background-image: none;
+    color: $bg;
+  }
+
+  &:active {
+    @include box-shadow(2, rgba($fg, .5));
+    background-image: none;
+    color: $bg;
+  }
 }
