@@ -24,10 +24,10 @@
 <body>
   <nav class="nav nav-apps fixed-top" tabindex="-1">
     <div class="left nav-bar">
-      <p class="nav-icon animated"><a class="nav-link" href="/"> <img class="logo" height="32" width="32" src="icons/me.svg" alt="My Icon"> </a></p>
-      <p class="nav-icon animated active"><a class="nav-link" href="/apps"> APPS </a></p>
-      <p class="nav-icon animated"><a class="nav-link" href="/ideas"> IDEAS </a></p>
-      <p class="nav-icon animated"><a class="nav-link" href="/about"> ABOUT </a></p>
+      <p class="nav-icon"><a class="waves-effect waves-light nav-link" href="/"> <img class="logo" height="32" width="32" src="icons/me.svg" alt="My Icon"> </a></p>
+      <p class="nav-icon"><a class="waves-effect waves-light nav-link" href="/apps"> APPS </a></p>
+      <p class="nav-icon"><a class="waves-effect waves-light nav-link" href="/ideas"> IDEAS </a></p>
+      <p class="nav-icon"><a class="waves-effect waves-light nav-link" href="/about"> ABOUT </a></p>
     </div>
   </nav>
   <main>
@@ -94,7 +94,7 @@
             <div class="card shadow">
               <div class="card-image-big card-image-background-notejot">
                 <p><img class="card-inside-img" src="img/notejot-shot.png" alt="Notejot"></p>
-                <div class="fab-alone fab-alone-notejot">
+                <div class="waves-effect waves-light fab-alone fab-alone-notejot">
                   <a href="https://github.com/lainsce/notejot" target="_blank"><i class="fas fa-fw fa-code-branch"></i></a>
                 </div>
               </div>
@@ -130,7 +130,7 @@
             <div class="card shadow">
               <div class="card-image-big card-image-background-quilter">
                 <p><img class="card-inside-img" src="img/quilter-shot.png" alt="Quilter"></p>
-                <div class="fab-alone fab-alone-quilter">
+                <div class="waves-effect waves-light fab-alone fab-alone-quilter">
                   <a href="https://github.com/lainsce/quilter" target="_blank"><i class="fas fa-fw fa-code-branch"></i></a>
                 </div>
               </div>
@@ -169,7 +169,7 @@
             <div class="card shadow">
               <div class="card-image-big card-image-background-palaura">
                 <p><img class="card-inside-img" src="img/palaura-shot.png" alt="Palaura"></p>
-                <div class="fab-alone fab-alone-palaura">
+                <div class="waves-effect waves-light fab-alone fab-alone-palaura">
                   <a href="https://github.com/lainsce/palaura" target="_blank"><i class="fas fa-fw fa-code-branch"></i></a>
                 </div>
               </div>
@@ -203,7 +203,7 @@
             <div class="card shadow">
               <div class="card-image-big card-image-background-yishu">
                 <p><img class="card-inside-img" src="img/yishu-shot.png" alt="Yishu"></p>
-                <div class="fab-alone fab-alone-yishu">
+                <div class="waves-effect waves-light fab-alone fab-alone-yishu">
                   <a href="https://github.com/lainsce/yishu" target="_blank"><i class="fas fa-fw fa-code-branch"></i></a>
                 </div>
               </div>
@@ -242,7 +242,7 @@
       <div class="row">
         <div class="col-xs-12">
           <ul class="footer-space">
-            <li><a class="button ghost animated" href="https://github.com/lainsce/lainsce.github.io/issues/new" target="_blank" class="ghost"><i class="fas fa-fw fa-sm fa-bug"></i> Report an Issue</a></li>
+            <li><a class="waves-effect waves-light button ghost" href="https://github.com/lainsce/lainsce.github.io/issues/new" target="_blank" class="ghost"><i class="fas fa-fw fa-sm fa-bug"></i> Report an Issue</a></li>
           </ul>
         </div>
       </div>
@@ -250,12 +250,13 @@
     <div class="container">
       <div class="row">
         <div class="col-xs-12">
-          <p>© <span id="year">2017</span> Paulo Galardi. Made in São Paulo.</p>
+          <p>© 2017-<span id="year">2017</span> Paulo Galardi. Made in São Paulo.</p>
         </div>
       </div>
     </div>
   </footer>
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript" src="js/waves.js"></script>
   <script type="text/javascript">
   $(function () {
       $("#year").text((new Date).getFullYear());

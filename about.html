@@ -24,10 +24,10 @@
 <body>
     <nav class="nav nav-about fixed-top" tabindex="-1">
       <div class="left nav-bar">
-        <p class="nav-icon animated"><a class="nav-link" href="/"> <img class="logo" height="32" width="32" src="icons/me.svg" alt="My Icon"> </a></p>
-        <p class="nav-icon animated active"><a class="nav-link" href="/apps"> APPS </a></p>
-        <p class="nav-icon animated"><a class="nav-link" href="/ideas"> IDEAS </a></p>
-        <p class="nav-icon animated"><a class="nav-link" href="/about"> ABOUT </a></p>
+        <p class="nav-icon"><a class="waves-effect waves-light nav-link" href="/"> <img class="logo" height="32" width="32" src="icons/me.svg" alt="My Icon"> </a></p>
+        <p class="nav-icon"><a class="waves-effect waves-light nav-link" href="/apps"> APPS </a></p>
+        <p class="nav-icon"><a class="waves-effect waves-light nav-link" href="/ideas"> IDEAS </a></p>
+        <p class="nav-icon"><a class="waves-effect waves-light nav-link" href="/about"> ABOUT </a></p>
       </div>
     </nav>
   <main>
@@ -62,9 +62,9 @@
                   <p><i class="fas fa-fw fa-star"></i> Skills</p>
                 </div>
                 <div class="tab shadow">
-                  <button class="tablinks" onclick="tab(event, 'Programming')" id="default_open"><i class="fas fa-fw fa-cogs"></i> Programming</button>
-                  <button class="tablinks" onclick="tab(event, 'Languages')"><i class="fas fa-fw fa-globe"></i> Languages</button>
-                  <button class="tablinks" onclick="tab(event, 'Events')"><i class="fas fa-fw fa-calendar"></i> Events</button>
+                  <button class="waves-effect waves-light tablinks" onclick="tab(event, 'Programming')" id="default_open"><i class="fas fa-fw fa-cogs"></i> Programming</button>
+                  <button class="waves-effect waves-light tablinks" onclick="tab(event, 'Languages')"><i class="fas fa-fw fa-globe"></i> Languages</button>
+                  <button class="waves-effect waves-light tablinks" onclick="tab(event, 'Events')"><i class="fas fa-fw fa-calendar"></i> Events</button>
                 </div>
                 <div class="tabcontent" id="Programming">
                   <div class="card-subtitle">
@@ -182,7 +182,7 @@
                                   </div>
                               </div>
                               <div class="card-action horizontal">
-                                  <p><i class="fas fa-fw fa-code"></i> <a class="link" href="https://hacktoberfest.digitalocean.com/">Hacktoberfest 2017</a></p>
+                                  <p><i class="fas fa-fw fa-code"></i> <a class="waves-effect waves-light link" href="https://hacktoberfest.digitalocean.com/">Hacktoberfest 2017</a></p>
                               </div>
                           </div>
                       </div>
@@ -367,7 +367,7 @@
       <div class="row">
         <div class="col-xs-12">
           <ul class="footer-space">
-            <li><a class="button ghost animated" href="https://github.com/lainsce/lainsce.github.io/issues/new" target="_blank" class="ghost"><i class="fas fa-fw fa-sm fa-bug"></i> Report an Issue</a></li>
+            <li><a class="waves-effect waves-light button ghost" href="https://github.com/lainsce/lainsce.github.io/issues/new" target="_blank" class="ghost"><i class="fas fa-fw fa-sm fa-bug"></i> Report an Issue</a></li>
           </ul>
         </div>
       </div>
@@ -375,12 +375,13 @@
     <div class="container">
       <div class="row">
         <div class="col-xs-12">
-          <p>© <span id="year">2017</span> Paulo Galardi. Made in São Paulo.</p>
+          <p>© 2017-<span id="year">2017</span> Paulo Galardi. Made in São Paulo.</p>
         </div>
       </div>
     </div>
   </footer>
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript" src="js/waves.js"></script>
   <script type="text/javascript">
   function tab(evt, name) {
       var i, tabcontent, tablinks;

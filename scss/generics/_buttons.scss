@@ -21,14 +21,12 @@
     background-color: $button-success;
     background-image: none;
     @include box_shadow(1, rgba($fg, 0.5));
-    border: 2px solid $button-success;
     box-shadow: none;
     color: $bg;
 
     &:hover {
       @include box-shadow(1, rgba($button-success, .5));
       background-color: $button-success-hover;
-      border: 2px solid $button-success-hover;
       color: $bg;
     }
 
@@ -36,7 +34,6 @@
       @include box-shadow(1, rgba($button-success, .5));
       background-color: $button-success-active;
       background-image: none;
-      border: 2px solid $button-success-active;
       color: $bg;
     }
   }
@@ -45,14 +42,12 @@
     background-color: $button-info;
     background-image: none;
     @include box_shadow(1, rgba($fg, 0.5));
-    border: 2px solid $button-info;
     box-shadow: none;
     color: $bg;
 
     &:hover {
       @include box-shadow(1, rgba($button-info, .5));
       background-color: $button-info-hover;
-      border: 2px solid $button-info-hover;
       color: $bg;
     }
 
@@ -60,7 +55,6 @@
       @include box-shadow(1, rgba($button-info, .5));
       background-color: $button-info-active;
       background-image: none;
-      border: 2px solid $button-info-active;
       color: $bg;
     }
   }
@@ -69,14 +63,12 @@
     background-color: $button-kofi;
     border-color: transparent;
     @include box_shadow(1, rgba($fg, 0.5));
-    border: 2px solid $button-kofi;
     box-shadow: none;
     color: $bg;
 
     &:hover {
       @include box-shadow(1, rgba($button-kofi, .5));
       background-color: $button-kofi-hover;
-      border: 2px solid $button-kofi-hover;
       color: $bg;
     }
 
@@ -84,7 +76,6 @@
       @include box-shadow(1, rgba($button-kofi, .5));
       background-color: $button-kofi-active;
       background-image: none;
-      border: 2px solid $button-kofi-active;
       color: $bg;
     }
   }
@@ -100,7 +91,6 @@
       @include box-shadow(1, rgba($button-ghost, .5));
       background-color: $button-ghost;
       background-image: none;
-      border: 2px solid transparent;
       color: $bg;
     }
 
@@ -108,7 +98,6 @@
       @include box-shadow(1, rgba($button-ghost, .5));
       background-color: $button-ghost-active;
       background-image: none;
-      border: 2px solid transparent;
       color: $bg;
     }
   }
@@ -124,7 +113,6 @@
       @include box-shadow(1, rgba($button-ghost-night, .5));
       background-color: $button-ghost-night;
       background-image: none;
-      border: 2px solid transparent;
       color: $fg;
     }
 
@@ -132,7 +120,6 @@
       @include box-shadow(1, rgba($button-ghost-night, .5));
       background-color: $button-ghost-night-active;
       background-image: none;
-      border: 2px solid transparent;
       color: $fg;
     }
   }
@@ -148,7 +135,6 @@
       @include box-shadow(1, rgba($button-info, .5));
       background-color: $button-info;
       background-image: none;
-      border: 2px solid transparent;
       color: $bg;
     }
 
@@ -156,7 +142,6 @@
       @include box-shadow(1, rgba($button-info, .5));
       background-color: $button-info-active;
       background-image: none;
-      border: 2px solid transparent;
       color: $bg;
     }
   }
@@ -172,7 +157,6 @@
       @include box-shadow(1, rgba($button-success, .5));
       background-color: $button-success;
       background-image: none;
-      border: 2px solid transparent;
       color: $bg;
     }
 
@@ -180,7 +164,6 @@
       @include box-shadow(1, rgba($button-success, .5));
       background-color: $button-success-active;
       background-image: none;
-      border: 2px solid transparent;
       color: $bg;
     }
   }
