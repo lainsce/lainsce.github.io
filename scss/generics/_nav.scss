@@ -4,6 +4,7 @@
 
 .nav {
   @include font($size: 1.1rem, $weight: 400, $lh: 1.1rem);
+  @include box_shadow(1, rgba($fg, 0.5));
   background-color: $nav;
   display: inline-block;
   height: 3.25rem;
@@ -46,6 +47,7 @@
   margin: .2rem auto;
 
   &:hover {
+    transition: .2s cubic-bezier(0.46, 0.03, 0.52, 0.96);
     border-bottom: 3px solid rgba(255, 255, 255, .5);
   }
 }

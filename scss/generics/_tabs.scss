@@ -17,11 +17,15 @@
 
         &:hover {
             border-bottom: 3px solid $badge;
-            background: $chip;
+            background-color: rgba($card, 0.766);
         }
 
         &.active {
             border-bottom: 3px solid $button-info;
+        }
+
+        & .fas,.fab {
+            margin-right: 12px;
         }
     }
 }

@@ -23,10 +23,6 @@
   @include prefixer(box-sizing, webkit moz ms o spec, $box);
 }
 
-@mixin box-shadow($color: false) {
-  @include prefixer(box-shadow, webkit moz ms o spec, $color);
-}
-
 @mixin font($size: false, $color: false, $weight: false,  $lh: false) {
   font-family: "Roboto", Helvetica, Arial, sans-serif;
   @if $size { font-size: $size; }
@@ -87,4 +83,24 @@
   background-color: nth(nth($color-stops, 1), 1);
   background: -webkit-linear-gradient(legacy-direction($direction), $color-stops);
   @include prefixer(background, moz ms o spec, linear-gradient($direction, $color-stops));
+}
+
+@mixin box_shadow ($level, $color: false) {
+
+  @include prefixer(box-shadow, webkit moz ms o spec, $color);
+
+  @if $level == 1 {
+      box-shadow: 0 1px 3px $color, 0 1px 2px $color;
+  } @else if $level == 2 {
+      box-shadow: 0 3px 6px $color, 0 3px 6px $color;
+  } @else if $level == 3 {
+      box-shadow: 0 10px 20px $color, 0 6px 6px $color;
+  } @else if $level == 4 {
+      box-shadow: 0 14px 28px $color, 0 10px 10px $color;
+  } @else if $level == 5 {
+      box-shadow: 0 19px 38px $color, 0 15px 12px $color;
+  } @else if $level == -1 {
+    box-shadow: 0 -1px 3px $color, 0 -1px 2px $color;
+}
+
 }

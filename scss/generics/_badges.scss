@@ -20,6 +20,7 @@
   &:hover {
     background-color: $badge;
     border: 2px solid $badge;
+    @include box_shadow(1, rgba($fg, 0.5));
     color: $badge-text;
   }
 }
@@ -28,6 +29,7 @@
   &:hover {
     background-color: $badge-success-hover;
     border: 2px solid $badge-success-hover;
+    @include box_shadow(1, rgba($badge-success-hover, 0.5));
     color: $badge-text;
   }
 }
@@ -36,6 +38,7 @@
   &:hover {
     background-color: $badge-info-hover;
     border: 2px solid $badge-info-hover;
+    @include box_shadow(1, rgba($badge-info-hover, 0.5));
     color: $badge-text;
   }
 }
