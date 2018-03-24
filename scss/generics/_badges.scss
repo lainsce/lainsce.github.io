@@ -6,7 +6,7 @@
   @include font($size: 16px, $weight: 500, $lh: 32px);
   background-color: transparent;
   border: 2px solid $chip;
-  border-radius: 8%;
+  border-radius: 5px;
   color: $badge;
   display: inline;
   left: -5px;
