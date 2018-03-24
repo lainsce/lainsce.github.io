@@ -42,3 +42,12 @@
     color: $badge-text;
   }
 }
+
+.badge-neutral {
+  &:hover {
+    background-color: $badge-neutral-hover;
+    border: 2px solid $badge-neutral-hover;
+    @include box_shadow(1, rgba($badge-neutral-hover, 0.5));
+    color: $badge-text;
+  }
+}
