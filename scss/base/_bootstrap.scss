@@ -3,31 +3,58 @@
 ********************/
 
 .container {
+  display: grid;
+  grid-gap: 25px;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  align-items: self-start;
+  grid-template-rows: repeat(auto-fit, 480px);
+  margin-left: 25px;
+  margin-right: 25px;
+  margin-top: 25px;
+}
+
+.container-big {
+  display: grid;
+  grid-gap: 25px;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  align-items: self-start;
+  grid-template-rows: repeat(auto-fit, minmax(1fr, auto));
   margin-left: auto;
   margin-right: auto;
-
-  &:before,
-  &:after {
-    clear: both;
-    content: " ";
-    display: table;
-  }
+  margin-top: 25px;
 }
 
-@media (min-width: 768px) {
-  .container {
-    width: 750px;
-  }
+.container-bigger {
+  display: grid;
+  grid-gap: 25px;
+  grid-template-columns: [col1-start] 500px [col1-end col2-start] 500px [col2-end];
+  align-items: self-start;
+  grid-template-rows: repeat(auto-fit, minmax(1fr, auto));
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 25px;
 }
-@media (min-width: 992px) {
-  .container {
-    width: 970px;
-  }
+
+.container-biggerest {
+  display: grid;
+  grid-gap: 25px;
+  grid-template-columns: [col1-start] 1fr [col1-end col2-start] 1fr [col2-end];
+  align-items: self-start;
+  grid-template-rows: repeat(auto-fit, minmax(1fr, auto));
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 25px;
 }
-@media (min-width: 1200px) {
-  .container {
-    width: 1170px;
-  }
+
+.container-huge {
+  display: grid;
+  grid-gap: 25px;
+  grid-template-columns: [col1-start] 2fr [col1-end];
+  align-items: self-start;
+  grid-template-rows: repeat(auto-fit, 1fr);
+  margin-left: 9rem;
+  margin-right: 9rem;
+  margin-top: 25px;
 }
 
 .container-fluid {

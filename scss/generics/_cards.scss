@@ -6,8 +6,6 @@
   background-color: $card;
   border-radius: .8rem;
   line-height: 1.5rem;
-  margin-left: 15px;
-  margin-right: 15px;
 
   &.card-stacked {
       display: flex;
@@ -266,7 +264,7 @@
   background-color: $card-action;
   border-radius: 0 0 .8rem .8rem;
   margin: 0;
-  padding: 1rem 1.5rem;
+  padding: 0.8rem 1.5rem;
   position: relative;
   text-align: left;
 
