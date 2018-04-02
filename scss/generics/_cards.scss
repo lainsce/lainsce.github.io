@@ -3,9 +3,21 @@
 *****************/
 
 .card {
+  display: block;
   background-color: $card;
   border-radius: .8rem;
   line-height: 1.5rem;
+  transition: all 250ms;
+  @include box-shadow(1, rgba($fg,0.2));
+
+  &:hover,&:focus {
+    @include box-shadow(3, rgba($fg,0.2));
+    transform: translateY(-5px);
+  }
+  &:active {
+    @include box-shadow(2, rgba($fg,0.2));
+    transform: translateY(-2px);
+  }
 
   &.card-stacked {
       display: flex;
@@ -31,6 +43,7 @@
 
   &.card-alone {
     margin-right: 0;
+    vertical-align: middle;
   }
 }
 
