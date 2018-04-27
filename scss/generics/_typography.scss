@@ -83,6 +83,7 @@ kbd {
   border-left: 1px solid $badge;
   border-radius: 8px;
   border-right: 1px solid $badge;
+  border-top: 1px solid lighten($badge, 2%)
   color: $bg;
   font-size: 90%;
   left: 5px;
