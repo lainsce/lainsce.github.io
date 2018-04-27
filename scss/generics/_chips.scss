@@ -4,7 +4,7 @@
 .chip {
   @include font($size: 13px, $weight: 700, $lh: 32px);
   background-color: $chip;
-  border-radius: 1rem;
+  border-radius: 16px;
   color: $fg;
   display: inline-block;
   height: 32px;

@@ -5,7 +5,7 @@
 .card {
   display: block;
   background-color: $card;
-  border-radius: .8rem;
+  border-radius: 8px;
   line-height: 1.5rem;
   transition: all 250ms;
   @include box-shadow(1, rgba($fg,0.2));

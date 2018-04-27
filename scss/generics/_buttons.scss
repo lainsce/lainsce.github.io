@@ -5,7 +5,7 @@
 .button {
   @include font($size: .9rem, $weight: 700);
   @include box_shadow(1, rgba($fg, 0.5));
-  border-radius: .5rem;
+  border-radius: 8px;
   display: inline-block;
   margin: 1rem 0;
   min-width: 100px;
@@ -54,27 +54,6 @@
     &:active {
       @include box-shadow(2, rgba($fg, .5));
       background-color: $button-info-active;
-      background-image: none;
-      color: $bg;
-    }
-  }
-
-  &.kofi {
-    background-color: $button-kofi;
-    border-color: transparent;
-    @include box_shadow(1, rgba($fg, 0.5));
-    box-shadow: none;
-    color: $bg;
-
-    &:hover {
-      @include box-shadow(2, rgba($fg, .5));
-      background-color: $button-kofi-hover;
-      color: $bg;
-    }
-
-    &:active {
-      @include box-shadow(2, rgba($fg, .5));
-      background-color: $button-kofi-active;
       background-image: none;
       color: $bg;
     }

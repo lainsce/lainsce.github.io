@@ -9,7 +9,7 @@
 
   &:before {
     background-color: $tooltip;
-    border-radius: 4px;
+    border-radius: 8px;
     bottom: 120%;
     content: attr(data-tooltip);
     font-size: 14px;
