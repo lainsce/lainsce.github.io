@@ -28,12 +28,12 @@
 
   &.horizontal {
       margin-left: 0px;
-      border-radius: 0 .8rem .8rem 0;
+      border-radius: 0 8px 8px 0;
   }
 
   &.card-content {
       padding: 24px;
-      border-radius: 0 0 .8rem .8rem;
+      border-radius: 0 0 8px 8px;
 
       & p {
           padding: 0;
@@ -63,7 +63,7 @@
 .book {
   background-color: $badge;
   border: 1px solid $badge;
-  border-radius: 15%;
+  border-radius: 8px;
   bottom: -100%;
   height: 90px;
   left: -100%;
@@ -173,7 +173,7 @@
 }
 
 .card-image {
-  border-radius: .8rem .8rem 0 0;
+  border-radius: 8px 8px 0 0;
   bottom: 0;
   display: block;
   left: 0;
@@ -201,7 +201,7 @@
 }
 
 .card-banner {
-  border-radius: .8rem .8rem 0 0;
+  border-radius: 8px 8px 0 0;
   bottom: 0;
   display: block;
   left: 0;
@@ -223,7 +223,7 @@
 }
 
 .card-image-big {
-  border-radius: .8rem .8rem 0 0;
+  border-radius: 8px 8px 0 0;
   bottom: 0;
   display: block;
   left: 0;
@@ -251,7 +251,7 @@
 }
 
 .card-inside-img {
-  width: 60%;
+  max-width: 60%;
   left: 0;
   right: 0;
   top: 0;
@@ -262,7 +262,7 @@
 }
 
 .card-inside-banner {
-  width: 70%;
+  max-width: 70%;
   left: 0;
   right: 0;
   top: 0;
@@ -275,7 +275,7 @@
 .card-action {
   @include font($size: .9rem, $weight: 500);
   background-color: $card-action;
-  border-radius: 0 0 .8rem .8rem;
+  border-radius: 0 0 8px 8px;
   margin: 0;
   padding: 0.8rem 1.5rem;
   position: relative;
@@ -307,7 +307,7 @@
   }
 
   &.horizontal {
-      border-radius: 0 0 .8rem 0;
+      border-radius: 0 0 8px 0;
   }
 }
 
