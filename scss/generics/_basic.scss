@@ -31,7 +31,7 @@ html {
 }
 
 .bg {
-  background-color: $bg;
+  background-color: lighten($bg, 3%);
   @include box-shadow(1, rgba($fg,0.2));
   display: grid;
   grid-column: 1;
