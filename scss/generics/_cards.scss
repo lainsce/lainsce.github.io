@@ -198,6 +198,9 @@
   &.card-image-background-yishu {
     @include linear-gradient(150deg, $card-background-yishu 0%, darken($card-background-yishu, 10%) 100%);
   }
+  &.card-image-background-rccar {
+    @include linear-gradient(150deg, $card-background-rccar 0%, darken($card-background-rccar, 10%) 100%);
+  }
 }
 
 .card-banner {
