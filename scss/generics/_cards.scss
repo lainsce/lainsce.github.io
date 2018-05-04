@@ -3,41 +3,37 @@
 *****************/
 
 .card {
-  display: block;
   background-color: $card;
   border-radius: 8px;
+  display: block;
   line-height: 1.5rem;
   transition: all 250ms;
   @include box-shadow(1, rgba($fg,0.2));
 
   &:hover,&:focus {
     @include box-shadow(3, rgba($fg,0.2));
-    transform: translateY(-5px);
-  }
-  &:active {
-    @include box-shadow(2, rgba($fg,0.2));
-    transform: translateY(-2px);
+    transform: translateY(-3px);
   }
 
   &.card-stacked {
       display: flex;
-      flex-direction: column;
       flex: 1;
+      flex-direction: column;
       position: relative;
   }
 
   &.horizontal {
-      margin-left: 0px;
       border-radius: 0 8px 8px 0;
+      margin-left: 0px;
   }
 
   &.card-content {
-      padding: 24px;
       border-radius: 0 0 8px 8px;
+      padding: 24px;
 
       & p {
-          padding: 0;
           color: inherit;
+          padding: 0;
       }
   }
 
@@ -77,12 +73,12 @@
 
 .card-title {
   @include font($size: 2.25rem, $color: $fg, $weight: 400);
-  margin-top: 2rem;
   margin-bottom: 2rem;
+  margin-top: 2rem;
 
   & p {
-    margin-top: 0px;
     margin-bottom: 0px;
+    margin-top: 0px;
   }
 
   & i {
@@ -92,23 +88,23 @@
 
 .card-subtitle {
   @include font($size: 1.5rem, $color: $fg, $weight: 400);
-  margin-top: 1rem;
   margin-bottom: 1rem;
+  margin-top: 1rem;
 
   & p {
-    margin-top: 0px;
     margin-bottom: 0px;
+    margin-top: 0px;
   }
 }
 
 .card-subsubtitle {
   @include font($size: 1.25rem, $color: $fg, $weight: 400);
-  margin-top: 10px;
   margin-bottom: 10px;
+  margin-top: 10px;
 
   & p {
-    margin-top: 0px;
     margin-bottom: 0px;
+    margin-top: 0px;
   }
 }
 
@@ -117,8 +113,8 @@
   text-align: left;
 
   & p {
-    margin-top: 10px;
     margin-bottom: 10px;
+    margin-top: 10px;
   }
 
   &.card-text-music {
@@ -128,34 +124,34 @@
 
 .card-title-night {
   @include font($size: 2.25rem, $color: $bg, $weight: 400);
-  margin-top: 2rem;
   margin-bottom: 2rem;
+  margin-top: 2rem;
 
   & p {
-    margin-top: 0px;
     margin-bottom: 0px;
+    margin-top: 0px;
   }
 }
 
 .card-subtitle-night {
   @include font($size: 1.5rem, $color: $bg, $weight: 400);
-  margin-top: 1rem;
   margin-bottom: 1rem;
+  margin-top: 1rem;
 
   & p {
-    margin-top: 0px;
     margin-bottom: 0px;
+    margin-top: 0px;
   }
 }
 
 .card-subsubtitle-night {
   @include font($size: 1.25rem, $color: $bg, $weight: 400);
-  margin-top: 10px;
   margin-bottom: 10px;
+  margin-top: 10px;
 
   & p {
-    margin-top: 0px;
     margin-bottom: 0px;
+    margin-top: 0px;
   }
 }
 
@@ -163,8 +159,8 @@
   @include font($size: 1rem, $color: $bg, $weight: 400);
 
   & p {
-    margin-top: 10px;
     margin-bottom: 10px;
+    margin-top: 10px;
   }
 
   &.card-text-music {
@@ -219,9 +215,9 @@
   }
 
   &.horizontal {
+      border-radius: .3rem 0 0 .3rem;
       max-width: 40%;
       text-align: center;
-      border-radius: .3rem 0 0 .3rem;
   }
 }
 
@@ -254,25 +250,25 @@
 }
 
 .card-inside-img {
-  max-width: 60%;
+  bottom: 0;
+  display: inline;
   left: 0;
+  margin: 0 auto;
+  max-width: 60%;
+  padding: 1rem;
   right: 0;
   top: 0;
-  bottom: 0;
-  padding: 1rem;
-  margin: 0 auto;
-  display: inline;
 }
 
 .card-inside-banner {
-  max-width: 70%;
+  bottom: 0;
+  display: inline;
   left: 0;
+  margin: 0 auto;
+  max-width: 70%;
+  padding: 0;
   right: 0;
   top: 0;
-  bottom: 0;
-  padding: 0;
-  margin: 0 auto;
-  display: inline;
 }
 
 .card-action {
@@ -285,16 +281,16 @@
   text-align: left;
 
   & a {
-      margin: 0;
-      padding: 8px;
       border: 2px solid transparent;
       border-radius: .2rem;
+      margin: 0;
+      padding: 8px;
 
     &:hover {
       background-color: $card-action-hover;
       border: 2px solid $card-action-hover;
-      color: $fg;
       border-radius: .2rem;
+      color: $fg;
       padding: 8px;
     }
 

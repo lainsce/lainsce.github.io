@@ -19,15 +19,18 @@
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/regular.css" integrity="sha384-A/oR8MwZKeyJS+Y0tLZ16QIyje/AmPduwrvjeH6NLiLsp4cdE4uRJl8zobWXBm4u" crossorigin="anonymous" media="none" onload="if(media!='all')media='all'">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/brands.css" integrity="sha384-IiIL1/ODJBRTrDTFk/pW8j0DUI5/z9m1KYsTm/RjZTNV8RHLGZXkUDwgRRbbQ+Jh" crossorigin="anonymous" media="none" onload="if(media!='all')media='all'">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/fontawesome.css" integrity="sha384-q3jl8XQu1OpdLgGFvNRnPdj5VIlCvgsDQTQB6owSOHWlAurxul7f+JpUOVdAiJ5P" crossorigin="anonymous" media="none" onload="if(media!='all')media='all'">
-  <link type="text/css" rel="stylesheet" href="scss/main.css" media="none" onload="if(media!='all')media='all'">
+  <link type="text/css" rel="stylesheet" href="scss/main.css">
 </head>
 <body>
   <nav class="nav nav-apps fixed-top" tabindex="-1">
-    <div class="left nav-bar">
+    <div class="nav-bar">
       <p class="nav-icon"><a class="waves-effect waves-light nav-link" href="/"> <img class="logo" height="32" width="32" src="icons/me.svg" alt="My Icon"> </a></p>
       <p class="nav-icon"><a class="waves-effect waves-light nav-link" href="/apps"> APPS </a></p>
       <p class="nav-icon"><a class="waves-effect waves-light nav-link" href="/ideas"> IDEAS </a></p>
       <p class="nav-icon"><a class="waves-effect waves-light nav-link" href="/about"> ABOUT </a></p>
+      <div class="right">
+        <p class="nav-icon"><a id="Contact-Button" class="waves-effect waves-light nav-link"> CONTACT </a></p>
+      </div>
     </div>
   </nav>
   <main>
@@ -241,6 +244,37 @@
       </div>
     </div>
   </footer>
+  <div id="Contact" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <span class="close">&times;</span>
+        <p>Contact</p>
+      </div>
+      <div class="modal-body">
+        <form action="https://getsimpleform.com/messages?form_api_token=070eab839ac87b9cf362a3553a508213" id="form1" method="post">
+          <div class="group">
+            <input type="text" required>
+            <span class="bar"></span>
+            <label>Name</label>
+          </div>
+
+          <div class="group">
+            <input type="text" required>
+            <span class="bar"></span>
+            <label>Email</label>
+          </div>
+
+          <textarea name="message" required placeholder="Message..." rows="20" cols="20" id="message"></textarea>
+
+          <input type="submit" name="submit" form="form1" value="submit" />
+          <input type="reset" name="cancel" form="form1" value="reset" />
+        </form>
+      </div>
+      <div class="modal-footer">
+        <p>Send me any general messages, just not spam please.</p>
+      </div>
+    </div>
+  </div>
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script type="text/javascript" src="js/waves.js"></script>
   <script type="text/javascript">
@@ -263,6 +297,23 @@
       return ageYear;
   }
   document.getElementById('age').innerHTML = getAge(birth);
+  </script>
+  <script>
+  var modal = document.getElementById('Contact');
+  var btn = document.getElementById("Contact-Button");
+  var span = document.getElementsByClassName("close")[0];
+  btn.onclick = function() {
+    modal.style.display = "block";
+  }
+  span.onclick = function() {
+    modal.style.display = "none";
+  }
+
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
   </script>
   </body>
 </html>

@@ -20,13 +20,13 @@ $desktop: "(min-width: 1024px)";
 body,
 html {
   @include font($size: 1.1rem, $weight: 400);
+  -webkit-font-smoothing: antialiased;
   color: $fg;
-  margin: 0;
-  padding: 0;
   display: grid;
   grid-column: 1;
+  margin: 0;
+  padding: 0;
   text-rendering: optimizeSpeed;
-  -webkit-font-smoothing: antialiased;
   z-index: 1;
 }
 
@@ -35,8 +35,8 @@ html {
   @include box-shadow(1, rgba($fg,0.2));
   display: grid;
   grid-column: 1;
-  width: 100%;
   padding: 3.3rem 0;
+  width: 100%;
   z-index: 1;
 }
 
@@ -78,6 +78,16 @@ img {
   vertical-align: middle;
 }
 
+.left {
+  float: left;
+  text-align:left;
+}
+
+.right {
+  float: right;
+  text-align:right;
+}
+
 .value-00 { width: 0; }
 .value-10 { width: 10%; }
 .value-20 { width: 20%; }
@@ -91,39 +101,39 @@ img {
 .value-100 { width: 100%; }
 
 .waves-effect {
-  position: relative;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-transition: .3s ease-out;
+  -webkit-user-select: none;
   cursor: pointer;
   display: inline-block;
   overflow: hidden;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
+  position: relative;
+  transition: .3s ease-out;
   user-select: none;
-  -webkit-tap-highlight-color: transparent;
   vertical-align: middle;
-  z-index: 1;
-  -webkit-transition: .3s ease-out;
-  transition: .3s ease-out
+  z-index: 1
 }
 
 .waves-effect .waves-ripple {
-  position: absolute;
-  border-radius: 50%;
-  width: 20px;
-  height: 20px;
-  margin-top: -10px;
-  margin-left: -10px;
-  opacity: 0;
-  background: rgba(0,0,0,0.2);
+  -webkit-transform: scale(0);
   -webkit-transition: all 0.7s ease-out;
-  transition: all 0.7s ease-out;
   -webkit-transition-property: opacity, -webkit-transform;
+  background: rgba(0,0,0,0.2);
+  border-radius: 50%;
+  height: 20px;
+  margin-left: -10px;
+  margin-top: -10px;
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+  transform: scale(0);
+  transition: all 0.7s ease-out;
   transition-property: opacity, -webkit-transform;
   transition-property: transform, opacity;
   transition-property: transform, opacity, -webkit-transform;
-  -webkit-transform: scale(0);
-  transform: scale(0);
-  pointer-events: none
+  width: 20px
 }
 
 .waves-effect.waves-light .waves-ripple {
@@ -155,11 +165,11 @@ img {
 }
 
 .waves-effect input[type="button"],.waves-effect input[type="reset"],.waves-effect input[type="submit"] {
+  background: none;
   border: 0;
-  font-style: normal;
   font-size: inherit;
-  text-transform: inherit;
-  background: none
+  font-style: normal;
+  text-transform: inherit
 }
 
 .waves-effect img {
@@ -173,9 +183,9 @@ img {
 }
 
 .waves-circle {
+  -webkit-mask-image: -webkit-radial-gradient(circle, white 100%, black 100%);
   -webkit-transform: translateZ(0);
-  transform: translateZ(0);
-  -webkit-mask-image: -webkit-radial-gradient(circle, white 100%, black 100%)
+  transform: translateZ(0)
 }
 
 .waves-input-wrapper {
@@ -184,19 +194,19 @@ img {
 }
 
 .waves-input-wrapper .waves-button-input {
+  left: 0;
   position: relative;
   top: 0;
-  left: 0;
   z-index: 1
 }
 
 .waves-circle {
-  text-align: center;
-  width: 2.5em;
+  -webkit-mask-image: none;
+  border-radius: 50%;
   height: 2.5em;
   line-height: 2.5em;
-  border-radius: 50%;
-  -webkit-mask-image: none
+  text-align: center;
+  width: 2.5em
 }
 
 .waves-block {
