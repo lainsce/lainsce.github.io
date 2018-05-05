@@ -58,12 +58,13 @@ input[type=submit] {
   align-self: center;
   background-color: $button-success;
   border: 2px solid $button-success;
-  border-radius: 320px;
+  border-radius: 160px;
   color: white;
   cursor: pointer;
   float: right;
   font-size: 0.888rem;
   font-weight: 700;
+  margin-right: -5px;
   outline: none;
   padding: 12px 20px;
   text-align: center;
@@ -82,7 +83,7 @@ input[type=reset] {
   align-self: center;
   background-color: transparent;
   border: 2px solid $card-background-rccar;
-  border-radius: 320px;
+  border-radius: 160px;
   color: $fg;
   cursor: pointer;
   float: right;

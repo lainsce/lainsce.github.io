@@ -1,6 +1,10 @@
 /*****************
 *    MIXINS     *
 *****************/
+$mobile: "and (min-width: 320px) and (max-width: 767px)";
+$tablet: "and (min-width: 768px) and (max-width: 1023px)";
+$desktop: "and (min-width: 1024px)";
+
 @mixin prefixer($property, $prefixes, $value: false) {
   @each $prefix in $prefixes {
     @if $prefix == webkit {
@@ -67,8 +71,8 @@
 }
 
 @function is-direction($value) {
-  $is-keyword: index((to top, to top right, to right top, to right, to bottom right, to right bottom, to bottom, to bottom left, to left bottom, to left, to left top, to top left), $value);
   $is-angle: type-of($value) == "number" and index("deg" "grad" "turn" "rad", unit($value));
+  $is-keyword: index((to top, to top right, to right top, to right, to bottom right, to right bottom, to bottom, to bottom left, to left bottom, to left, to left top, to top left), $value);
 
   @return $is-keyword or $is-angle;
 }
@@ -79,9 +83,9 @@
     $color-stops: $direction, $color-stops;
     $direction: 180deg;
   }
+  background: -webkit-linear-gradient(legacy-direction($direction), $color-stops);
 
   background-color: nth(nth($color-stops, 1), 1);
-  background: -webkit-linear-gradient(legacy-direction($direction), $color-stops);
   @include prefixer(background, moz ms o spec, linear-gradient($direction, $color-stops));
 }
 
