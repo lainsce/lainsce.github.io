@@ -46,7 +46,7 @@
   margin: auto;
 
   &:hover {
-    border-bottom: 3px solid rgba(255, 255, 255, .5);
+    border-bottom: 3px solid rgba($hero, .5);
     transition: .2s cubic-bezier(0.46, 0.03, 0.52, 0.96);
   }
 }
