@@ -29,15 +29,30 @@
   }
 
   &.hero-apps {
+    background-attachment: fixed;
     background-color: $hero-apps;
+    background-image: linear-gradient(rgba($fg,.75),rgba($fg,.75)), url(https://images.unsplash.com/photo-1515524738708-327f6b0037a7?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=ff90e72db15176afc516fac82d04f14f&auto=format&fit=crop&w=1350&q=80);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 
   &.hero-ideas {
+    background-attachment: fixed;
     background-color: $hero-ideas;
+    background-image: linear-gradient(rgba($fg,.75),rgba($fg,.75)), url(https://images.unsplash.com/photo-1507925921958-8a62f3d1a50d?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=c6e515b18f362fa50e05a285e03225d5&auto=format&fit=crop&w=1355&q=80);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 
   &.hero-about {
+    background-attachment: fixed;
     background-color: $hero-about;
+    background-image: linear-gradient(rgba($fg,.75),rgba($fg,.75)), url(https://images.unsplash.com/photo-1508399181942-f208fb6ca712?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=c674ba755e328fd5d1876b329a483986&auto=format&fit=crop&w=1350&q=80);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 
   & p {
