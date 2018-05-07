@@ -12,7 +12,12 @@
   position: relative;
 
   &:before {
-    background-color: $hero;
+    background-attachment: fixed;
+    background-color: #bdc1c6;
+    background-image: linear-gradient(rgba($fg,.5),rgba($fg,.5)), url(http://cognitive-edge.com/wp-content/uploads/2017/12/cq5dam.web-.1280.1280.jpeg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
     content: "";
     height: 100%;
     left: 0;
