@@ -11,8 +11,8 @@
   @include box-shadow(1, rgba($fg,0.2));
 
   &:hover,&:focus {
-    @include box-shadow(3, rgba($fg,0.2));
-    transform: translateY(-3px);
+    @include box-shadow(2, rgba($fg,0.2));
+    transform: translateY(-2px);
   }
 
   &.card-stacked {

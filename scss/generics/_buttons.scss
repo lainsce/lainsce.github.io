@@ -12,6 +12,7 @@
   padding: .8rem;
   text-align: center;
   text-transform: uppercase;
+  z-index: 1;
 
   & .fas,.fab {
     margin-right: 8px;
@@ -20,69 +21,73 @@
   &.success {
     background-color: $button-success;
     background-image: none;
+    border: 2px solid $button-success;
     @include box_shadow(1, rgba($fg, 0.5));
     box-shadow: none;
-    color: $bg;
+    color: $card;
 
     &:hover {
       @include box-shadow(2, rgba($fg, .5));
       background-color: $button-success-hover;
-      color: $bg;
+      color: $card;
     }
 
     &:active {
       @include box-shadow(2, rgba($fg, .5));
       background-color: $button-success-active;
       background-image: none;
-      color: $bg;
+      color: $card;
     }
   }
 
   &.info {
     background-color: $button-info;
     background-image: none;
+    border: 2px solid $button-info;
     @include box_shadow(1, rgba($fg, 0.5));
     box-shadow: none;
-    color: $bg;
+    color: $card;
 
     &:hover {
       @include box-shadow(2, rgba($fg, .5));
       background-color: $button-info-hover;
-      color: $bg;
+      color: $card;
     }
 
     &:active {
       @include box-shadow(2, rgba($fg, .5));
       background-color: $button-info-active;
       background-image: none;
-      color: $bg;
+      color: $card;
     }
   }
 
   &.patreon {
     background-color: $button-patreon;
+    border: 2px solid $button-patreon;
     border-color: transparent;
     @include box_shadow(1, rgba($fg, 0.5));
     box-shadow: none;
-    color: $bg;
+    color: $card;
 
     &:hover {
       @include box-shadow(2, rgba($fg, .5));
       background-color: $button-patreon-hover;
-      color: $bg;
+      color: $card;
     }
 
     &:active {
       @include box-shadow(2, rgba($fg, .5));
       background-color: $button-patreon-active;
       background-image: none;
-      color: $bg;
+      color: $card;
     }
   }
 
   &.ghost {
     background-color: transparent;
     background-image: none;
+    border: 2px solid rgba($fg, .5);
     box-shadow: none;
     color: $fg;
 
@@ -90,22 +95,23 @@
       @include box-shadow(2, rgba($fg, .5));
       background-color: $button-ghost;
       background-image: none;
-      color: $bg;
+      color: $card;
     }
 
     &:active {
       @include box-shadow(2, rgba($fg, .5));
       background-color: $button-ghost-active;
       background-image: none;
-      color: $bg;
+      color: $card;
     }
   }
 
   &.ghost-night {
     background-color: transparent;
     background-image: none;
+    border: 2px solid rgba($bg, .5);
     box-shadow: none;
-    color: $bg;
+    color: $fg;
 
     &:hover {
       @include box-shadow(2, rgba($fg, .5));
@@ -125,42 +131,44 @@
   &.ghost-twitter {
     background-color: transparent;
     background-image: none;
+    border: 2px solid rgba($button-info, .75);
     box-shadow: none;
-    color: $bg;
+    color: $card;
 
     &:hover {
       @include box-shadow(2, rgba($fg, .5));
       background-color: $button-info;
       background-image: none;
-      color: $bg;
+      color: $card;
     }
 
     &:active {
       @include box-shadow(2, rgba($fg, .5));
       background-color: $button-info-active;
       background-image: none;
-      color: $bg;
+      color: $card;
     }
   }
 
   &.ghost-success {
     background-color: transparent;
     background-image: none;
+    border: 2px solid rgba($button-success, .75);
     box-shadow: none;
-    color: $bg;
+    color: $card;
 
     &:hover {
       @include box-shadow(2, rgba($fg, .5));
       background-color: $button-success;
       background-image: none;
-      color: $bg;
+      color: $card;
     }
 
     &:active {
       @include box-shadow(2, rgba($fg, .5));
       background-color: $button-success-active;
       background-image: none;
-      color: $bg;
+      color: $card;
     }
   }
 }
@@ -177,12 +185,12 @@
   &:hover {
     @include box-shadow(2, rgba($fg, .5));
     background-image: none;
-    color: $bg;
+    color: $card;
   }
 
   &:active {
     @include box-shadow(2, rgba($fg, .5));
     background-image: none;
-    color: $bg;
+    color: $card;
   }
 }
