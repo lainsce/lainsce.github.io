@@ -3,11 +3,11 @@
  *****************/
 
 // Swatches
-$fg: #263238;
+$fg: #3C4043;
 $bg: #F1F3F4;
 $bg-tab: #BDC1C6;
-$nav: #3C4043;
-$hero: #5F6368;
+$nav: #FFF;
+$hero: #BDC1C6;
 $link: #4285F4;
 $button-success: #6bd12b;
 $button-info: #4285F4;
@@ -20,8 +20,8 @@ $card-background-notejot: #fff59d;
 $card-background-palaura: #ef9a9a;
 $card-background-quilter: #bbdefb;
 $card-background-yishu: #dee8bc;
-$card-background-rccar: #888899;
-$card-background-hack: #274597;
+$card-background-rccar: #778899;
+$card-background-hack: #375597;
 $card-skillbar: #965081;
 $card-stars: #ebbd6a;
 $tooltip: #3C4043;
@@ -37,7 +37,7 @@ $fab-github: #212121;
 $badge-text: darken($bg, 5%);
 $button-ghost-night: darken($bg, 5%);
 $chip: darken($bg, 5%);
-$card: lighten($bg, 5%);
+$card: lighten($bg, 15%);
 $card-action: darken($card, 5%);
 $card-action-hover: lighten($chip, 5%);
 $nav-apps: mix($nav, $link, 50%);

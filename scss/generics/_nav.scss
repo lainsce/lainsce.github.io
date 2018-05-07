@@ -41,7 +41,7 @@
 }
 
 .nav-icon {
-  @include font($size: .875rem, $weight: 700, $color: $bg, $lh: 2.8rem);
+  @include font($size: .875rem, $weight: 700, $color: $fg, $lh: 2.8rem);
   display: inline-block;
   margin: auto;
 
@@ -58,6 +58,6 @@
 }
 
 .nav-link {
-  @include font($color: $bg);
+  @include font($color: $fg);
   padding: .13rem 1.3rem;
 }
