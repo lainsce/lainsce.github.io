@@ -3,8 +3,7 @@
 ********************/
 
 .button {
-  @include font($size: .9rem, $weight: 700);
-  @include box_shadow(1, rgba($fg, 0.5));
+  @include font($size: .9rem, $weight: 500);
   border-radius: 8px;
   display: inline-block;
   margin: 1rem 0;
@@ -22,18 +21,16 @@
     background-color: $button-success;
     background-image: none;
     border: 2px solid $button-success;
-    @include box_shadow(1, rgba($fg, 0.5));
     box-shadow: none;
     color: $card;
 
     &:hover {
-      @include box-shadow(2, rgba($fg, .5));
       background-color: $button-success-hover;
       color: $card;
+      @include box-shadow(3, rgba($fg,0.2));
     }
 
     &:active {
-      @include box-shadow(2, rgba($fg, .5));
       background-color: $button-success-active;
       background-image: none;
       color: $card;
@@ -44,18 +41,16 @@
     background-color: $button-info;
     background-image: none;
     border: 2px solid $button-info;
-    @include box_shadow(1, rgba($fg, 0.5));
     box-shadow: none;
     color: $card;
 
     &:hover {
-      @include box-shadow(2, rgba($fg, .5));
       background-color: $button-info-hover;
       color: $card;
+      @include box-shadow(3, rgba($fg,0.2));
     }
 
     &:active {
-      @include box-shadow(2, rgba($fg, .5));
       background-color: $button-info-active;
       background-image: none;
       color: $card;
@@ -63,21 +58,19 @@
   }
 
   &.patreon {
-    background-color: $button-patreon;
-    border: 2px solid $button-patreon;
+    background-color: $bg;
+    border: 2px solid $bg;
     border-color: transparent;
-    @include box_shadow(1, rgba($fg, 0.5));
     box-shadow: none;
-    color: $card;
+    color: $fg;
 
     &:hover {
-      @include box-shadow(2, rgba($fg, .5));
-      background-color: $button-patreon-hover;
+      background-color: $button-patreon;
       color: $card;
+      @include box-shadow(3, rgba($fg,0.2));
     }
 
     &:active {
-      @include box-shadow(2, rgba($fg, .5));
       background-color: $button-patreon-active;
       background-image: none;
       color: $card;
@@ -92,14 +85,13 @@
     color: $fg;
 
     &:hover {
-      @include box-shadow(2, rgba($fg, .5));
       background-color: $button-ghost;
       background-image: none;
       color: $card;
+      @include box-shadow(3, rgba($fg,0.2));
     }
 
     &:active {
-      @include box-shadow(2, rgba($fg, .5));
       background-color: $button-ghost-active;
       background-image: none;
       color: $card;
@@ -114,14 +106,13 @@
     color: $fg;
 
     &:hover {
-      @include box-shadow(2, rgba($fg, .5));
       background-color: $button-ghost-night;
       background-image: none;
       color: $fg;
+      @include box-shadow(3, rgba($fg,0.2));
     }
 
     &:active {
-      @include box-shadow(2, rgba($fg, .5));
       background-color: $button-ghost-night-active;
       background-image: none;
       color: $fg;
@@ -131,21 +122,22 @@
   &.ghost-twitter {
     background-color: transparent;
     background-image: none;
-    border: 2px solid rgba($button-info, .75);
+    border: 2px solid rgba($bg, .75);
     box-shadow: none;
     color: $card;
 
     &:hover {
-      @include box-shadow(2, rgba($fg, .5));
       background-color: $button-info;
       background-image: none;
+      border: 2px solid rgba($button-info, .75);
       color: $card;
+      @include box-shadow(3, rgba($fg,0.2));
     }
 
     &:active {
-      @include box-shadow(2, rgba($fg, .5));
       background-color: $button-info-active;
       background-image: none;
+      border: 2px solid rgba($button-info-active, .75);
       color: $card;
     }
   }
@@ -158,14 +150,13 @@
     color: $card;
 
     &:hover {
-      @include box-shadow(2, rgba($fg, .5));
       background-color: $button-success;
       background-image: none;
       color: $card;
+      @include box-shadow(3, rgba($fg,0.2));
     }
 
     &:active {
-      @include box-shadow(2, rgba($fg, .5));
       background-color: $button-success-active;
       background-image: none;
       color: $card;
@@ -179,17 +170,15 @@
 
 .footer-button {
   @include font($size: .7rem);
-  @include box_shadow(1, rgba($fg, 0.5));
   padding: .4rem;
 
   &:hover {
-    @include box-shadow(2, rgba($fg, .5));
     background-image: none;
     color: $card;
+    @include box-shadow(3, rgba($fg,0.2));
   }
 
   &:active {
-    @include box-shadow(2, rgba($fg, .5));
     background-image: none;
     color: $card;
   }

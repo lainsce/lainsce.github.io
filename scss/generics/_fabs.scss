@@ -3,9 +3,8 @@
 ********************/
 
 .faba {
-  background-color: transparent;
+  background-color: $chip;
   background-image: none;
-  border: 2px solid rgba($fg, .5);
   border-radius: 100%;
   box-shadow: none;
   color: $fg;
@@ -18,15 +17,13 @@
   width: 38px;
 
   & .fas.fa-lg,.fab.fa-lg {
-    line-height: 1em;
-    vertical-align: -0.12em;
+    line-height: 2.1rem;
   }
 
   &.github {
     &:hover {
       @include box-shadow(2, rgba($fab-github, .5));
       background-color: $fab-github;
-      border: 2px solid $fab-github;
     }
   }
 
@@ -34,7 +31,6 @@
     &:hover {
       @include box-shadow(2, rgba($fab-mail, .5));
       background-color: $fab-mail;
-      border: 2px solid $fab-mail;
     }
   }
 
@@ -42,7 +38,6 @@
     &:hover {
       @include box-shadow(2, rgba($fab-twitter, .5));
       background-color: $fab-twitter;
-      border: 2px solid $fab-twitter;
     }
   }
 
@@ -50,7 +45,6 @@
     &:hover {
       @include box-shadow(2, rgba($fab-gplus, .5));
       background-color: $fab-gplus;
-      border: 2px solid $fab-gplus;
     }
   }
 
@@ -58,7 +52,6 @@
     &:hover {
       @include box-shadow(2, rgba($fab-medium, .5));
       background-color: $fab-medium;
-      border: 2px solid $fab-medium;
     }
   }
 
@@ -66,7 +59,6 @@
     &:hover {
       @include box-shadow(2, rgba($fab-telegram, .5));
       background-color: $fab-telegram;
-      border: 2px solid $fab-telegram;
     }
   }
 
@@ -74,7 +66,6 @@
     &:hover {
       @include box-shadow(2, rgba($fab-patreon, .5));
       background-color: $fab-patreon;
-      border: 2px solid $fab-patreon;
     }
   }
 
@@ -93,19 +84,15 @@
 .fab-alone {
    width: 56px;
    height: 56px;
-   background-color: $fg;
    border-radius: 100%;
    display: inline-block;
-
+   background-color: $chip;
    font-size: 1.5rem;
-   color: $fab-icon;
    text-align: center;
    line-height: 56px;
-
    position: absolute;
    right: 15px;
    bottom: -24px;
-
    @include box_shadow(1, rgba($fg, 0.5));
 
    &:hover {
@@ -115,31 +102,11 @@
    }
 
    & a {
-      color: $fab-icon;
+      color: $fg;
       margin: auto;
    }
 
    &.fab-alone-home {
       background-color: $fab-gplus;
-   }
-
-   &.fab-alone-quilter {
-      background-color: darken($card-background-quilter, 50%);
-   }
-
-   &.fab-alone-coin {
-      background-color: darken($card-background-coin, 40%);
-   }
-
-   &.fab-alone-palaura {
-      background-color: darken($card-background-palaura, 40%);
-   }
-
-   &.fab-alone-notejot {
-      background-color: darken($card-background-notejot, 50%);
-   }
-
-   &.fab-alone-yishu {
-      background-color: darken($card-background-yishu, 50%);
    }
 }

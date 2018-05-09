@@ -1,19 +1,19 @@
 .tab {
     overflow: hidden;
-    background-color: $bg-tab;
-    border-radius: 8px;
     display: flex;
     line-height: 1rem;
+    width: 100%;
 
     & button.tablinks {
-        @include font($size: 1rem, $weight: 400, $lh: 1.2rem);
+        @include font($size: 1rem, $weight: 400, $lh: 1rem);
         background-color: inherit;
         float: left;
         border: none;
-        border-bottom: 3px solid $bg-tab;
         outline: none;
         padding: 14px 16px;
         transition: color .2s ease;
+        border-bottom: 3px solid $chip;
+        width: 33.333%;
 
         &:hover {
             border-bottom: 3px solid $badge;

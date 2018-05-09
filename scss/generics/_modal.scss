@@ -15,16 +15,17 @@
   margin: 50% auto;
   overflow: hidden;
   padding: 20px;
+  border-radius: 8px;
   width: 50%;
 }
 
 .close {
-  color: $bg;
+  color: $fg;
   float: right;
   font-size: 25px;
   font-weight: bold;
   margin-right: 15px;
-  margin-top: 15px;
+  margin-top: 30px;
 
   &:hover, &:focus {
     color: $fab-patreon;
@@ -34,13 +35,14 @@
 }
 
 .modal-header {
-  background-color: $link;
-  border-radius: 8px 8px 0 0;
-  color: $bg;
-  padding: 2px 16px;
+  border-top: 8px solid $link;
+  border-radius: 0;
+  background-color: $bg;
+  color: $fg;
+  padding: 2px 15px;
 
   & p {
-    font-size: 1.12rem;
+    font-size: 1.6rem;
   }
 
   @media screen #{ $mobile } {
@@ -83,7 +85,7 @@
     display: block;
   }
 
-  
+
 }
 
 .modal-content {

@@ -3,7 +3,7 @@
 ******************/
 
 .nav {
-  @include font($size: 1.1rem, $weight: 400, $lh: 1.1rem);
+  @include font($size: 1.1rem, $weight: 500, $lh: 1.1rem);
   @include box_shadow(1, rgba($fg, 0.2));
   background-color: $nav;
   display: inline-block;
@@ -26,27 +26,16 @@
   &:focus {
     outline: none;
   }
-
-  &.nav-apps {
-    background-color: $nav-apps;
-  }
-
-  &.nav-ideas {
-    background-color: $nav-ideas;
-  }
-
-  &.nav-about {
-    background-color: $nav-about;
-  }
 }
 
 .nav-icon {
-  @include font($size: .875rem, $weight: 700, $color: $fg, $lh: 2.8rem);
+  @include font($size: .875rem, $weight: 500, $color: $fg, $lh: 2.8rem);
   display: inline-block;
   margin: auto;
 
   &:hover {
-    border-bottom: 3px solid rgba($hero, .5);
+    border-bottom: 3px solid rgba($fg, .75);
+    background-color: rgba($card, 0.5);
     transition: .2s cubic-bezier(0.46, 0.03, 0.52, 0.96);
   }
 }
