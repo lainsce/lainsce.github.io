@@ -182,6 +182,30 @@
   right: 0;
   text-align: center;
   top: 0;
+
+  &.card-flair-notejot {
+    border-top: 3px solid $notejot;
+  }
+
+  &.card-flair-quilter {
+    border-top: 3px solid $quilter;
+  }
+
+  &.card-flair-coin {
+    border-top: 3px solid $coin;
+  }
+
+  &.card-flair-palaura {
+    border-top: 3px solid $palaura;
+  }
+
+  &.card-flair-yishu {
+    border-top: 3px solid $yishu;
+  }
+
+  &.card-flair-rccar {
+    border-top: 3px solid $rccar;
+  }
 }
 
 .card-banner {

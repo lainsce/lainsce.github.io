@@ -20,7 +20,6 @@
   &.success {
     background-color: $button-success;
     background-image: none;
-    border: 2px solid $button-success;
     box-shadow: none;
     color: $card;
 
@@ -40,7 +39,6 @@
   &.info {
     background-color: $button-info;
     background-image: none;
-    border: 2px solid $button-info;
     box-shadow: none;
     color: $card;
 
@@ -58,8 +56,7 @@
   }
 
   &.patreon {
-    background-color: $bg;
-    border: 2px solid $bg;
+    background-color: $button-patreon;
     border-color: transparent;
     box-shadow: none;
     color: $fg;

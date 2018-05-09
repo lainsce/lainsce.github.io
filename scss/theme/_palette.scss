@@ -12,20 +12,30 @@ $hero: #BDC1C6;
 $link: #4285F4;
 $button-success: #6bd12b;
 $button-info: #4285F4;
+$button-error: #d13e2b;
 $button-ghost: #3C4043;
 $badge: #263238;
 $badge-success: #6bd12b;
-$chip-vala: #9484b1;
 $card-skillbar: #965081;
 $card-stars: #ebbd6a;
 $tooltip: #3C4043;
 $fab-icon: #FAFAFA;
+
+// Brands
+$chip-vala: #9484b1;
 $fab-twitter: #2196f3;
+$fab-telegram: #0d8aee;
 $fab-gplus: #df4035;
 $fab-mail: #ebbd6a;
 $fab-medium: #00e676;
 $fab-patreon: #FF6559;
 $fab-github: #212121;
+$notejot: #FCEE9B;
+$quilter: #ABC8DB;
+$coin: #AFD4A1;
+$palaura: #D5B1B1;
+$yishu: #D6E1AE;
+$rccar: #97A1BE;
 
 // Mixes
 $card: darken($card-body, 5%);
@@ -35,8 +45,7 @@ $button-ghost-night: darken($bg, 5%);
 $chip: darken($bg, 5%);
 $hero-apps: mix($hero, $link, 50%);
 $hero-ideas: mix($hero, $button-success, 50%);
-$hero-about: mix($hero, $fab-patreon, 50%);
-$fab-telegram: darken($fab-twitter, 10%);
+$hero-about: mix($hero, $button-error, 50%);
 $link-hover: darken($link, 10%);
 $link-active: darken($link, 15%);
 $button-success-hover: darken($button-success, 5%);
