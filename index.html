@@ -26,10 +26,10 @@
 <body>
   <nav class="nav fixed-top" tabindex="-1">
         <div class="nav-bar">
-          <p class="nav-icon active"><a class="waves-effect waves-light nav-link" href="/"> <img class="logo" height="32" width="32" src="icons/me.svg" alt="My Icon"> </a></p>
-          <p class="nav-icon"><a class="waves-effect waves-light nav-link" href="/apps"> APPS </a></p>
-          <p class="nav-icon"><a class="waves-effect waves-light nav-link" href="/ideas"> IDEAS </a></p>
-          <p class="nav-icon"><a class="waves-effect waves-light nav-link" href="/about"> ABOUT </a></p>
+          <p class="nav-icon active" onclick="tab(event, 'HOME')" id="default_open"><a class="waves-effect waves-light nav-link" href="/"> <img class="logo" height="32" width="32" src="icons/me.svg" alt="My Icon"> HOME</a></p>
+          <p class="nav-icon" onclick="tab(event, 'APPS')"><a class="waves-effect waves-light nav-link" href="/apps"> APPS </a></p>
+          <p class="nav-icon" onclick="tab(event, 'IDEAS')"><a class="waves-effect waves-light nav-link" href="/ideas"> IDEAS </a></p>
+          <p class="nav-icon" onclick="tab(event, 'ABOUT')"><a class="waves-effect waves-light nav-link" href="/about"> ABOUT </a></p>
           <div class="right">
             <p class="nav-icon"><a id="Contact-Button" class="waves-effect waves-light nav-link"> CONTACT </a></p>
           </div>
@@ -248,6 +248,21 @@
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script type="text/javascript" src="js/waves.js"></script>
   <script type="text/javascript">
+  function navtab(evt, name) {
+    var i, nav-content, nav-link;
+    nav-content = document.getElementsById("guts");
+    for (i = 0; i < nav-content.length; i++) {
+      nav-content[i].style.display = "none";
+    }
+    nav-link = document.getElementsByClassName("nav-icon");
+    for (i = 0; i < nav-link.length; i++) {
+      nav-link[i].className = nav-link[i].className.replace(" active", "");
+    }
+    document.getElementById(name).style.display = "block";
+    evt.currentTarget.className += " active";
+  }
+  document.getElementById("default_open").click();
+
   $(function () {
       $("#year").text((new Date).getFullYear());
       var things = ["Patron", "Backer", "Booster", "Supporter", "Big Fan"];

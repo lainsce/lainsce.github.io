@@ -25,17 +25,17 @@
   <link type="text/css" rel="stylesheet" href="scss/main.css">
 </head>
 <body>
-  <nav class="nav fixed-top" tabindex="-1">
-        <div class="nav-bar">
-          <p class="nav-icon"><a class="waves-effect waves-light nav-link" href="/"> <img class="logo" height="32" width="32" src="icons/me.svg" alt="My Icon"> </a></p>
-          <p class="nav-icon active"><a class="waves-effect waves-light nav-link" href="/apps"> APPS </a></p>
-          <p class="nav-icon"><a class="waves-effect waves-light nav-link" href="/ideas"> IDEAS </a></p>
-          <p class="nav-icon"><a class="waves-effect waves-light nav-link" href="/about"> ABOUT </a></p>
-          <div class="right">
-            <p class="nav-icon"><a id="Contact-Button" class="waves-effect waves-light nav-link"> CONTACT </a></p>
-          </div>
+<nav class="nav fixed-top" tabindex="-1">
+      <div class="nav-bar">
+        <p class="nav-icon" onclick="tab(event, 'HOME')"><a class="waves-effect waves-light nav-link" href="/"> <img class="logo" height="32" width="32" src="icons/me.svg" alt="My Icon"> HOME</a></p>
+        <p class="nav-icon active" onclick="tab(event, 'APPS')" id="default_open"><a class="waves-effect waves-light nav-link" href="/apps"> APPS </a></p>
+        <p class="nav-icon" onclick="tab(event, 'IDEAS')"><a class="waves-effect waves-light nav-link" href="/ideas"> IDEAS </a></p>
+        <p class="nav-icon" onclick="tab(event, 'ABOUT')" ><a class="waves-effect waves-light nav-link" href="/about"> ABOUT </a></p>
+        <div class="right">
+          <p class="nav-icon"><a id="Contact-Button" class="waves-effect waves-light nav-link"> CONTACT </a></p>
         </div>
-  </nav>
+      </div>
+</nav>
 <div id="page-wrap">
   <main>
   <div id="guts">
