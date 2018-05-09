@@ -8,7 +8,8 @@
   display: inline-block;
   margin: 1rem 0;
   min-width: 100px;
-  padding: .8rem;
+  max-width: 170px;
+  padding: .9rem;
   text-align: center;
   text-transform: uppercase;
   z-index: 1;
@@ -59,10 +60,11 @@
     background-color: $button-patreon;
     border-color: transparent;
     box-shadow: none;
-    color: $fg;
+    padding: 1rem;
+    color: $bg;
 
     &:hover {
-      background-color: $button-patreon;
+      background-color: $button-patreon-hover;
       color: $card;
       @include box-shadow(3, rgba($fg,0.2));
     }
@@ -155,6 +157,27 @@
 
     &:active {
       background-color: $button-success-active;
+      background-image: none;
+      color: $card;
+    }
+  }
+
+  &.ghost-error {
+    background-color: transparent;
+    background-image: none;
+    border: 2px solid rgba($button-error, .75);
+    box-shadow: none;
+    color: $card;
+
+    &:hover {
+      background-color: $button-error;
+      background-image: none;
+      color: $card;
+      @include box-shadow(3, rgba($fg,0.2));
+    }
+
+    &:active {
+      background-color: $button-error-active;
       background-image: none;
       color: $card;
     }

@@ -19,7 +19,6 @@
   <meta name="msapplication-TileColor" content="#406794">
   <meta name="theme-color" content="#406794">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css" integrity="sha384-v2Tw72dyUXeU3y4aM2Y0tBJQkGfplr39mxZqlTBDUZAb9BGoC40+rdFCG0m10lXk" crossorigin="anonymous" media="none" onload="if(media!='all')media='all'">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/regular.css" integrity="sha384-A/oR8MwZKeyJS+Y0tLZ16QIyje/AmPduwrvjeH6NLiLsp4cdE4uRJl8zobWXBm4u" crossorigin="anonymous" media="none" onload="if(media!='all')media='all'">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/brands.css" integrity="sha384-IiIL1/ODJBRTrDTFk/pW8j0DUI5/z9m1KYsTm/RjZTNV8RHLGZXkUDwgRRbbQ+Jh" crossorigin="anonymous" media="none" onload="if(media!='all')media='all'">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/fontawesome.css" integrity="sha384-q3jl8XQu1OpdLgGFvNRnPdj5VIlCvgsDQTQB6owSOHWlAurxul7f+JpUOVdAiJ5P" crossorigin="anonymous" media="none" onload="if(media!='all')media='all'">
   <link type="text/css" rel="stylesheet" href="scss/main.css">
@@ -43,7 +42,7 @@
         <div class="row">
           <div class="col-xs-12">
               <div class="card-title" align=center>
-                <p><img class="avatar" src="https://avatars2.githubusercontent.com/u/4886639?v=4&s=400&u=e10d5c5a16c6b341b307dc2d516d0f6fcae31649"></img></p>
+                <p><img class="avatar" src="icons/me.svg"></img></p>
                 <p>Hi, I'm Lains!</p>
               </div>
               <div class="card-subtitle" align=center>
@@ -153,7 +152,7 @@
       <div class="container-fluid">
         <div class="row">
           <div class="col-xs-12 form-group" align=center>
-            <a class="waves-effect waves-light button info" href="/apps.html"><i class="fas fa-fw fa-rocket"></i>View More About Apps</a>
+            <a class="waves-effect waves-light button info" href="/apps.html"><i class="fas fa-fw fa-rocket"></i>About Apps</a>
           </div>
         </div>
       </div>
@@ -257,15 +256,6 @@
       var age = Math.floor(diff / 311236000000);
       return age;
   });
-  var birth = new Date('1993-06-06');
-  function getAge(birth) {
-      ageMS = Date.parse(Date()) - Date.parse(birth);
-      age = new Date();
-      age.setTime(ageMS);
-      ageYear = age.getFullYear() - 1970;
-      return ageYear;
-  }
-  document.getElementById('age').innerHTML = getAge(birth);
   </script>
   <script>
   var modal = document.getElementById('Contact');
