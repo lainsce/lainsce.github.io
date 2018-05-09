@@ -616,7 +616,7 @@
     }
     document.getElementById("default_open").click();
   </script>
-  <script>
+  <script type="text/javascript">
     $(function () {
       $("#year").text((new Date).getFullYear());
       var things = ["Patron", "Backer", "Booster", "Supporter", "Big Fan"];
@@ -638,7 +638,7 @@
     }
     document.getElementById('age').innerHTML = getAge(birth);
   </script>
-  <script>
+  <script type="text/javascript">
   var modal = document.getElementById('Contact');
   var btn = document.getElementById("Contact-Button");
   var span = document.getElementsByClassName("close")[0];
@@ -655,8 +655,8 @@
     }
   }
   </script>
-  <script src='js/modernizr.js'></script>
-  <script>
+  <script type="text/javascript" src='js/modernizr.js'></script>
+  <script type="text/javascript">
     $(function() {
       if (Modernizr.history) {
         $("nav-link").delegate("a", "click", function() {
