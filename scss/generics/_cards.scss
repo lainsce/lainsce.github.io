@@ -24,15 +24,16 @@
   &.horizontal {
       border-radius: 0 8px 8px 0;
       margin-left: 0px;
-  }
 
-  &.card-content {
-      border-radius: 0 0 8px 8px;
-      padding: 24px;
+      &.card-content {
+          border-radius: 0 0 8px 8px;
+          padding: 24px;
+          box-shadow: none;
 
-      & p {
-          color: inherit;
-          padding: 0;
+          & p {
+              color: inherit;
+              padding: 0;
+          }
       }
   }
 
