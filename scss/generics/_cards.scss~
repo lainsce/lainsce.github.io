@@ -225,10 +225,6 @@
       max-width: 40%;
       text-align: center;
   }
-
-  &.card-flair-hack {
-    border-left: 8px solid $hack;
-  }
 }
 
 .card-image-big {

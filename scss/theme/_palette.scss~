@@ -36,7 +36,6 @@ $coin: #AFD4A1;
 $palaura: #D5B1B1;
 $yishu: #D6E1AE;
 $rccar: #97A1BE;
-$hack: #9966aa;
 
 // Mixes
 $card: darken($card-body, 5%);
