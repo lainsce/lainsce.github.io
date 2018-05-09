@@ -72,7 +72,7 @@
                 <i class="fas fa-fw fa-star"></i> Skills</p>
             </div>
             <div class="tab">
-              <button class="waves-effect waves-light tablinks" onclick="tab(event, 'Programming')" id="default_open">
+              <button class="waves-effect waves-light tablinks" onclick="tab(event, 'Programming')" id="default_open_tab">
                 <i class="fas fa-fw fa-cogs"></i> Programming</button>
               <button class="waves-effect waves-light tablinks" onclick="tab(event, 'Languages')">
                 <i class="fas fa-fw fa-globe"></i> Languages</button>
@@ -601,6 +601,8 @@
       evt.currentTarget.className += " active";
     }
     document.getElementById("default_open").click();
+  </script>
+  <script type="text/javascript">
     function tab(evt, name) {
       var i, tabcontent, tablinks;
       tabcontent = document.getElementsByClassName("tabcontent");
@@ -614,7 +616,9 @@
       document.getElementById(name).style.display = "block";
       evt.currentTarget.className += " active";
     }
-    document.getElementById("default_open").click();
+    document.getElementById("default_open_tab").click();
+  </script>
+  <script type="text/javascript">
     $(function () {
       $("#year").text((new Date).getFullYear());
       var things = ["Patron", "Backer", "Booster", "Supporter", "Big Fan"];
@@ -636,7 +640,7 @@
     }
     document.getElementById('age').innerHTML = getAge(birth);
   </script>
-  <script>
+  <script type="text/javascript">
   var modal = document.getElementById('Contact');
   var btn = document.getElementById("Contact-Button");
   var span = document.getElementsByClassName("close")[0];
@@ -653,8 +657,8 @@
     }
   }
   </script>
-  <script src='js/modernizr.js'></script>
-  <script>
+  <script type="text/javascript" src='js/modernizr.js'></script>
+  <script type="text/javascript">
     $(function() {
       if (Modernizr.history) {
         $("nav-link").delegate("a", "click", function() {
