@@ -34,14 +34,8 @@
   margin: 0;
   margin-left: -5px;
 
-  &:hover {
+  &:hover,&.active {
     border-bottom: 3px solid rgba($button-info, .75);
-    background-color: rgba($card, 0.5);
-    transition: .2s cubic-bezier(0.46, 0.03, 0.52, 0.96);
-  }
-
-  &.active {
-    border-bottom: 3px solid rgba($card-action, .75);
     background-color: rgba($card, 0.5);
     transition: .2s cubic-bezier(0.46, 0.03, 0.52, 0.96);
   }
