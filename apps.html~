@@ -296,22 +296,6 @@
       return age;
   });
   </script>
-  <script type="text/javascript">
-  function navtab(evt, name) {
-    var i, nav-content, nav-link;
-    nav-content = document.getElementsById("guts");
-    for (i = 0; i < nav-content.length; i++) {
-      nav-content[i].style.display = "none";
-    }
-    nav-link = document.getElementsByClassName("nav-icon");
-    for (i = 0; i < nav-link.length; i++) {
-      nav-link[i].className = nav-link[i].className.replace(" active", "");
-    }
-    document.getElementById(name).style.display = "block";
-    evt.currentTarget.className += " active";
-  }
-  document.getElementById("default_open").click();
-  </script>
   <script>
   var modal = document.getElementById('Contact');
   var btn = document.getElementById("Contact-Button");

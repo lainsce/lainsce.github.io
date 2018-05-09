@@ -615,8 +615,6 @@
       evt.currentTarget.className += " active";
     }
     document.getElementById("default_open").click();
-  </script>
-  <script>
     $(function () {
       $("#year").text((new Date).getFullYear());
       var things = ["Patron", "Backer", "Booster", "Supporter", "Big Fan"];
