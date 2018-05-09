@@ -28,7 +28,7 @@
   <nav class="nav fixed-top" tabindex="-1">
         <div class="nav-bar">
           <p class="nav-icon"><a class="waves-effect waves-light nav-link" href="/"> <img class="logo" height="32" width="32" src="icons/me.svg" alt="My Icon"> </a></p>
-          <p class="nav-icon"><a class="waves-effect waves-light nav-link" href="/apps"> APPS </a></p>
+          <p class="nav-icon active"><a class="waves-effect waves-light nav-link" href="/apps"> APPS </a></p>
           <p class="nav-icon"><a class="waves-effect waves-light nav-link" href="/ideas"> IDEAS </a></p>
           <p class="nav-icon"><a class="waves-effect waves-light nav-link" href="/about"> ABOUT </a></p>
           <div class="right">
@@ -36,7 +36,9 @@
           </div>
         </div>
   </nav>
+<div id="page-wrap">
   <main>
+  <div id="guts">
     <div class="hero hero-apps parallax">
       <div class="container-fluid">
         <div class="row">
@@ -228,25 +230,27 @@
             </div>
       </div>
     </div>
+    <footer class="footer">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-xs-12">
+            <ul class="footer-space">
+              <li><a class="waves-effect waves-light button ghost" href="https://github.com/lainsce/lainsce.github.io/issues/new" target="_blank" class="ghost"><i class="fas fa-fw fa-sm fa-bug"></i>Report Issue</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-xs-12">
+            <p>© 2017-<span id="year">2017</span> Paulo Galardi. Made in São Paulo.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
   </main>
-  <footer class="footer">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-xs-12">
-          <ul class="footer-space">
-            <li><a class="waves-effect waves-light button ghost" href="https://github.com/lainsce/lainsce.github.io/issues/new" target="_blank" class="ghost"><i class="fas fa-fw fa-sm fa-bug"></i> Report an Issue</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-xs-12">
-          <p>© 2017-<span id="year">2017</span> Paulo Galardi. Made in São Paulo.</p>
-        </div>
-      </div>
-    </div>
-  </footer>
+</div>
   <div id="Contact" class="modal">
     <div class="modal-content">
       <div class="modal-header">
@@ -308,6 +312,50 @@
       modal.style.display = "none";
     }
   }
+  </script>
+  <script src='js/modernizr.js'></script>
+  <script>
+    $(function() {
+      if (Modernizr.history) {
+        $("nav-link").delegate("a", "click", function() {
+          _href = $(this).attr("href");
+          history.pushState(null, null, _href);
+          loadContent(_href);
+        });
+      } else {
+      }
+    });
+
+    var $mainContent = $("#main-content"),
+        $pageWrap    = $("#page-wrap"),
+        baseHeight   = 0,
+        $el;
+
+    $pageWrap.height($pageWrap.height());
+    baseHeight = $pageWrap.height() - $mainContent.height();
+
+    function loadContent(href) {
+      $mainContent
+        .find("#guts")
+        .fadeOut(200, function() {
+          $mainContent
+            .hide()
+            .load(href + " #guts", function() {
+              $mainContent.fadeIn(200, function() {
+                $pageWrap.animate({
+                  height: baseHeight + $mainContent.height() + &quot;px&quot;
+                });
+             });
+          $("nav-link a").removeClass("current");
+          $("nav-link a[href$='" + href + "']").addClass("current");
+        });
+      });
+    }
+
+    $(window).bind("popstate", function() {
+        link = location.pathname.replace(/^.*[\\/]/, "");
+        loadContent(link);
+    });
   </script>
   </body>
 </html>

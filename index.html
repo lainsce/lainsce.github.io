@@ -22,12 +22,11 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/brands.css" integrity="sha384-IiIL1/ODJBRTrDTFk/pW8j0DUI5/z9m1KYsTm/RjZTNV8RHLGZXkUDwgRRbbQ+Jh" crossorigin="anonymous" media="none" onload="if(media!='all')media='all'">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/fontawesome.css" integrity="sha384-q3jl8XQu1OpdLgGFvNRnPdj5VIlCvgsDQTQB6owSOHWlAurxul7f+JpUOVdAiJ5P" crossorigin="anonymous" media="none" onload="if(media!='all')media='all'">
   <link type="text/css" rel="stylesheet" href="scss/main.css">
-
 </head>
 <body>
   <nav class="nav fixed-top" tabindex="-1">
         <div class="nav-bar">
-          <p class="nav-icon"><a class="waves-effect waves-light nav-link" href="/"> <img class="logo" height="32" width="32" src="icons/me.svg" alt="My Icon"> </a></p>
+          <p class="nav-icon active"><a class="waves-effect waves-light nav-link" href="/"> <img class="logo" height="32" width="32" src="icons/me.svg" alt="My Icon"> </a></p>
           <p class="nav-icon"><a class="waves-effect waves-light nav-link" href="/apps"> APPS </a></p>
           <p class="nav-icon"><a class="waves-effect waves-light nav-link" href="/ideas"> IDEAS </a></p>
           <p class="nav-icon"><a class="waves-effect waves-light nav-link" href="/about"> ABOUT </a></p>
@@ -36,7 +35,9 @@
           </div>
         </div>
   </nav>
-  <main>
+<div id="page-wrap">
+  <main id="main-content">
+  <div id="guts>">
     <div class="hero parallax">
       <div class="container-fluid">
         <div class="row">
@@ -156,7 +157,6 @@
           </div>
         </div>
       </div>
-
       <div class="title">
         <p>My other projects:</p>
       </div>
@@ -180,38 +180,40 @@
           </div>
       </div>
     </div>
+    <footer class="footer">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-xs-12">
+            <ul class="footer-space">
+              <li class="waves-effect waves-light faba mail tooltip" data-tooltip="Mail Me"><a href="mailto:lainsce@airmail.cc/" target="_blank"><i class="fas fa-fw fa-lg fa-envelope"></i></a></li>
+              <li class="waves-effect waves-light faba telegram tooltip" data-tooltip="Telegram"><a href="https://t.me/lainsce/" target="_blank"><i class="fab fa-fw fa-lg fa-telegram"></i></a></li>
+              <li class="waves-effect waves-light faba twitter tooltip" data-tooltip="Twitter"><a href="https://twitter.com/@lainscereal/" target="_blank"><i class="fab fa-fw fa-lg fa-twitter"></i></a></li>
+              <li class="waves-effect waves-light faba github tooltip" data-tooltip="GitHub"><a href="https://github.com/lainsce/" target="_blank"><i class="fab fa-fw fa-lg fa-github-alt"></i></a></li>
+              <li class="waves-effect waves-light faba patreon tooltip" data-tooltip="Patreon"><a href="https://www.patreon.com/lainsce/" target="_blank"><i class="fab fa-fw fa-lg fa-patreon"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-xs-12">
+            <ul class="footer-space">
+              <li><a class="waves-effect waves-light button ghost" href="https://github.com/lainsce/lainsce.github.io/issues/new" target="_blank" class="ghost"><i class="fas fa-fw fa-sm fa-bug"></i>Report Issue</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-xs-12">
+            <p>© 2017-<span id="year">2017</span> Paulo Galardi. Made in São Paulo.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
   </main>
-  <footer class="footer">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-xs-12">
-          <ul class="footer-space">
-            <li class="waves-effect waves-light faba mail tooltip" data-tooltip="Mail Me"><a href="mailto:lainsce@airmail.cc/" target="_blank"><i class="fas fa-fw fa-lg fa-envelope"></i></a></li>
-            <li class="waves-effect waves-light faba telegram tooltip" data-tooltip="Telegram"><a href="https://t.me/lainsce/" target="_blank"><i class="fab fa-fw fa-lg fa-telegram"></i></a></li>
-            <li class="waves-effect waves-light faba twitter tooltip" data-tooltip="Twitter"><a href="https://twitter.com/@lainscereal/" target="_blank"><i class="fab fa-fw fa-lg fa-twitter"></i></a></li>
-            <li class="waves-effect waves-light faba github tooltip" data-tooltip="GitHub"><a href="https://github.com/lainsce/" target="_blank"><i class="fab fa-fw fa-lg fa-github-alt"></i></a></li>
-            <li class="waves-effect waves-light faba patreon tooltip" data-tooltip="Patreon"><a href="https://www.patreon.com/lainsce/" target="_blank"><i class="fab fa-fw fa-lg fa-patreon"></i></a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-xs-12">
-          <ul class="footer-space">
-            <li><a class="waves-effect waves-light button ghost" href="https://github.com/lainsce/lainsce.github.io/issues/new" target="_blank" class="ghost"><i class="fas fa-fw fa-sm fa-bug"></i> Report an Issue</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-xs-12">
-          <p>© 2017-<span id="year">2017</span> Paulo Galardi. Made in São Paulo.</p>
-        </div>
-      </div>
-    </div>
-  </footer>
+</div>
   <div id="Contact" class="modal">
     <div class="modal-content">
       <div class="modal-header">
@@ -273,6 +275,50 @@
       modal.style.display = "none";
     }
   }
+  </script>
+  <script src='js/modernizr.js'></script>
+  <script>
+    $(function() {
+      if (Modernizr.history) {
+        $("nav-link").delegate("a", "click", function() {
+          _href = $(this).attr("href");
+          history.pushState(null, null, _href);
+          loadContent(_href);
+        });
+      } else {
+      }
+    });
+
+    var $mainContent = $("#main-content"),
+        $pageWrap    = $("#page-wrap"),
+        baseHeight   = 0,
+        $el;
+
+    $pageWrap.height($pageWrap.height());
+    baseHeight = $pageWrap.height() - $mainContent.height();
+
+    function loadContent(href) {
+      $mainContent
+        .find("#guts")
+        .fadeOut(200, function() {
+          $mainContent
+            .hide()
+            .load(href + " #guts", function() {
+              $mainContent.fadeIn(200, function() {
+                $pageWrap.animate({
+                  height: baseHeight + $mainContent.height() + &quot;px&quot;
+                });
+             });
+          $("nav-link a").removeClass("current");
+          $("nav-link a[href$='" + href + "']").addClass("current");
+        });
+      });
+    }
+
+    $(window).bind("popstate", function() {
+        link = location.pathname.replace(/^.*[\\/]/, "");
+        loadContent(link);
+    });
   </script>
   </body>
 </html>

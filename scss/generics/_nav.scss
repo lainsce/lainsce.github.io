@@ -3,8 +3,7 @@
 ******************/
 
 .nav {
-  @include font($size: 1.1rem, $weight: 500, $lh: 1.1rem);
-  @include box_shadow(1, rgba($fg, 0.2));
+  @include font($size: 1.1rem, $weight: 500, $lh: 2.8rem);
   background-color: $nav;
   display: inline-block;
   height: 3.25rem;
@@ -21,6 +20,7 @@
     right: 0;
     top: 0;
     z-index: 2;
+    border-bottom: 3px solid rgba($chip, .75);
   }
 
   &:focus {
@@ -29,12 +29,13 @@
 }
 
 .nav-icon {
-  @include font($size: .875rem, $weight: 500, $color: $fg, $lh: 2.8rem);
+  @include font($size: .875rem, $weight: 500, $color: $fg, $lh: 3rem);
   display: inline-block;
-  margin: auto;
+  margin: 0;
+  margin-left: -5px;
 
-  &:hover {
-    border-bottom: 3px solid rgba($fg, .75);
+  &:hover,&.active {
+    border-bottom: 3px solid rgba($button-info, .75);
     background-color: rgba($card, 0.5);
     transition: .2s cubic-bezier(0.46, 0.03, 0.52, 0.96);
   }
@@ -49,4 +50,10 @@
 .nav-link {
   @include font($color: $fg);
   padding: .13rem 1.3rem;
+}
+
+#page-wrap {
+}
+
+#main-content {
 }
