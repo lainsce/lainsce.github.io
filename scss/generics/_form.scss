@@ -69,6 +69,7 @@ textarea {
   box-sizing: border-box;
   font-size: 1.1rem;
   margin-bottom: 25px;
+  color: $fg;
   margin-top: 6px;
   outline: none;
   padding: 12px;
@@ -112,7 +113,7 @@ input[type=reset] {
   background-color: transparent;
   border: 2px solid $hero;
   border-radius: 160px;
-  color: white;
+  color: $fg;
   cursor: pointer;
   float: right;
   font-size: 0.888rem;
