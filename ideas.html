@@ -149,21 +149,26 @@
       <div class="modal-body">
         <form action="https://getsimpleform.com/messages?form_api_token=070eab839ac87b9cf362a3553a508213" id="form1" method="post">
           <div class="group">
-            <input type="text" name="name" required>
+            <i class="material-icons prefix">account_circle</i>
+            <input type="text" name="name" id="name" required>
             <span class="bar"></span>
             <label>Name</label>
-          </div>
+        </div>
 
-          <div class="group">
-            <input type="text" name="email" required>
+        <div class="group">
+            <i class="material-icons prefix">email</i>
+            <input type="text" name="email" id="email" required>
             <span class="bar"></span>
             <label>Email</label>
-          </div>
+        </div>
 
-          <textarea name="message" required placeholder="Message..." rows="20" cols="20" id="message"></textarea>
+        <div class="input-field">
+            <i class="material-icons prefix">mode_edit</i>
+            <textarea name="message" required rows="10" cols="20" id="message"></textarea>
+        </div>
 
-          <input type="submit" name="submit" form="form1" value="submit" />
-          <input type="reset" name="cancel" form="form1" value="reset" />
+        <input type="submit" name="submit" form="form1" value="submit" />
+        <input type="reset" name="cancel" form="form1" value="cancel" />
         </form>
       </div>
       <div class="modal-footer">
