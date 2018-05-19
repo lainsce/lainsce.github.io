@@ -6,7 +6,7 @@
   display: grid;
   grid-gap: 25px;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  align-items: self-start;
+  align-items: stretch;
   grid-template-rows: repeat(auto-fit, 480px);
   margin-left: 25px;
   margin-right: 25px;
@@ -17,7 +17,7 @@
   display: grid;
   grid-gap: 25px;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  align-items: self-start;
+  align-items: stretch;
   grid-template-rows: repeat(auto-fit, minmax(1fr, auto));
   margin-left: auto;
   margin-right: auto;
@@ -28,7 +28,7 @@
   display: grid;
   grid-gap: 25px;
   grid-template-columns: [col1-start] 500px [col1-end col2-start] 500px [col2-end];
-  align-items: self-start;
+  align-items: stretch;
   grid-template-rows: repeat(auto-fit, minmax(1fr, auto));
   margin-left: auto;
   margin-right: auto;
@@ -39,7 +39,7 @@
   display: grid;
   grid-gap: 25px;
   grid-template-columns: [col1-start] 1fr [col1-end col2-start] 1fr [col2-end];
-  align-items: self-start;
+  align-items: stretch;
   grid-template-rows: repeat(auto-fit, minmax(1fr, auto));
   margin-left: auto;
   margin-right: auto;
