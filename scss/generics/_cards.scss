@@ -238,6 +238,30 @@
   right: 0;
   text-align: center;
   top: 0;
+
+  &.card-flair-notejot {
+    border-top: 8px solid $notejot;
+  }
+
+  &.card-flair-quilter {
+    border-top: 8px solid $quilter;
+  }
+
+  &.card-flair-coin {
+    border-top: 8px solid $coin;
+  }
+
+  &.card-flair-palaura {
+    border-top: 8px solid $palaura;
+  }
+
+  &.card-flair-yishu {
+    border-top: 8px solid $yishu;
+  }
+
+  &.card-flair-rccar {
+    border-top: 8px solid $rccar;
+  }
 }
 
 .card-inside-img {
