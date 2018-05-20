@@ -3,6 +3,7 @@
 
 <!DOCTYPE html>
 <html lang="en-us">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,59 +20,87 @@
   <meta name="msapplication-TileColor" content="#406794">
   <meta name="theme-color" content="#406794">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css" integrity="sha384-v2Tw72dyUXeU3y4aM2Y0tBJQkGfplr39mxZqlTBDUZAb9BGoC40+rdFCG0m10lXk" crossorigin="anonymous" media="none" onload="if(media!='all')media='all'">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/regular.css" integrity="sha384-A/oR8MwZKeyJS+Y0tLZ16QIyje/AmPduwrvjeH6NLiLsp4cdE4uRJl8zobWXBm4u" crossorigin="anonymous" media="none" onload="if(media!='all')media='all'">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/brands.css" integrity="sha384-IiIL1/ODJBRTrDTFk/pW8j0DUI5/z9m1KYsTm/RjZTNV8RHLGZXkUDwgRRbbQ+Jh" crossorigin="anonymous" media="none" onload="if(media!='all')media='all'">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/fontawesome.css" integrity="sha384-q3jl8XQu1OpdLgGFvNRnPdj5VIlCvgsDQTQB6owSOHWlAurxul7f+JpUOVdAiJ5P" crossorigin="anonymous" media="none" onload="if(media!='all')media='all'">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css" integrity="sha384-v2Tw72dyUXeU3y4aM2Y0tBJQkGfplr39mxZqlTBDUZAb9BGoC40+rdFCG0m10lXk"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/regular.css" integrity="sha384-A/oR8MwZKeyJS+Y0tLZ16QIyje/AmPduwrvjeH6NLiLsp4cdE4uRJl8zobWXBm4u"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/brands.css" integrity="sha384-IiIL1/ODJBRTrDTFk/pW8j0DUI5/z9m1KYsTm/RjZTNV8RHLGZXkUDwgRRbbQ+Jh"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/fontawesome.css" integrity="sha384-q3jl8XQu1OpdLgGFvNRnPdj5VIlCvgsDQTQB6owSOHWlAurxul7f+JpUOVdAiJ5P"
+    crossorigin="anonymous">
   <link type="text/css" rel="stylesheet" href="scss/main.css">
+
+
+  <!-- Avoid FOUC -->
+  <script type="text/javascript">
+  </script>
 </head>
-<body>
-<nav class="nav fixed-top" tabindex="-1">
-      <div class="nav-bar">
-        <p class="nav-icon" onclick="tab(event, 'HOME')"><a class="waves-effect nav-link" href="/"> <img class="logo" height="32" width="32" src="icons/me.svg" alt="My Icon"> HOME</a></p>
-        <p class="nav-icon active" onclick="tab(event, 'APPS')" id="default_open"><a class="waves-effect nav-link" href="/apps"> APPS </a></p>
-        <p class="nav-icon" onclick="tab(event, 'IDEAS')"><a class="waves-effect nav-link" href="/ideas"> IDEAS </a></p>
-        <p class="nav-icon" onclick="tab(event, 'ABOUT')" ><a class="waves-effect nav-link" href="/about"> ABOUT </a></p>
-        <div class="right">
-          <p class="nav-icon"><a id="Contact-Button" class="waves-effect nav-link"> CONTACT </a></p>
-        </div>
-      </div>
-</nav>
-<div id="page-wrap">
-  <main>
-  <div id="guts">
-    <div class="hero hero-apps parallax">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-xs-12 form-group">
-              <div class="card-title" align=center>
-                <p><i class="fas fa-fw fa-rocket"></i> My Apps</p>
-              </div>
-              <div class="card-subtitle" align=center>
-                <p>Here you'll learn about each of my apps and what they do.</p>
-              </div>
-              <div class="card-text" align=center>
-                <p>Feel free to also visit their GitHub repo and leave your bug reports, star them or even watch development magic happen!</p>
-              </div>
-          </div>
-        </div>
+
+<body class="m-scene" id="main">
+  <nav class="nav fixed-top" tabindex="-1">
+    <div class="nav-bar">
+      <p class="nav-icon" onclick="tab(event, 'HOME')">
+        <a class="waves-effect nav-link" href="/">
+          <img class="logo" height="32" width="32" src="icons/me.svg" alt="My Icon"> HOME</a>
+      </p>
+      <p class="nav-icon active" onclick="tab(event, 'APPS')" id="default_open">
+        <a class="waves-effect nav-link" href="/apps"> APPS </a>
+      </p>
+      <p class="nav-icon" onclick="tab(event, 'IDEAS')">
+        <a class="waves-effect nav-link" href="/ideas"> IDEAS </a>
+      </p>
+      <p class="nav-icon" onclick="tab(event, 'ABOUT')">
+        <a class="waves-effect nav-link" href="/about"> ABOUT </a>
+      </p>
+      <div class="right">
+        <p class="nav-icon">
+          <a id="Contact-Button" class="waves-effect nav-link"> CONTACT </a>
+        </p>
       </div>
     </div>
-    <div class="bg">
-      <div class="title">
-        <p>Apps for elementary OS:</p>
-      </div>
-      <div class="container-bigger">
-            <div class="card">
+  </nav>
+  <div id="page-wrap">
+    <main>
+      <div id="guts">
+        <div class="hero hero-apps parallax">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-xs-12 form-group m-header scene_element scene_element--fadeinup">
+                <div class="card-title" align=center>
+                  <p>
+                    <i class="fas fa-fw fa-rocket"></i> My Apps</p>
+                </div>
+                <div class="card-subtitle" align=center>
+                  <p>Here you'll learn about each of my apps and what they do.</p>
+                </div>
+                <div class="card-text" align=center>
+                  <p>Feel free to also visit their GitHub repo and leave your bug reports, star them or even watch development
+                    magic happen!</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="bg">
+          <div class="title">
+            <p>Apps for elementary OS:</p>
+          </div>
+          <div class="container-bigger">
+            <div class="card m-header scene_element scene_element--fadeinleft">
               <div class="card-image-big card-flair-coin">
-                <p><img class="card-inside-img" src="img/coin-shot.png" alt="Coin"></p>
+                <p>
+                  <img class="card-inside-img" src="img/coin-shot.png" alt="Coin">
+                </p>
               </div>
               <div class="card-body">
                 <div class="card-subtitle">
-                  <p>Coin <span class="badge badge-info animated">1.2.2</span></p>
+                  <p>Coin
+                    <span class="badge badge-info animated">1.2.2</span>
+                  </p>
                 </div>
                 <div class="card-chip">
-                  <p class="chip chip-vala"><img width="30" height="30" src="img/vala.png" alt="Built with Vala"> Vala</p>
+                  <p class="chip chip-vala">
+                    <img width="30" height="30" src="img/vala.png" alt="Built with Vala"> Vala</p>
                   <p class="chip">Cryptocurrency</p>
                   <p class="chip">Tracking</p>
                 </div>
@@ -79,7 +108,10 @@
                   <p>Never miss out on the value of a virtual currency with this applet</p>
                   <ul>
                     <li>Choose which currencies to track</li>
-                    <li>Quit anytime with <kbd>⌘</kbd> <kbd>Q</kbd></li>
+                    <li>Quit anytime with
+                      <kbd>⌘</kbd>
+                      <kbd>Q</kbd>
+                    </li>
                     <li>Move the applet by dragging it from anywhere in the window</li>
                     <li>Stays out of your way in the desktop</li>
                   </ul>
@@ -93,28 +125,38 @@
                 </div>
               </div>
               <div class="card-action">
-                <a href="https://github.com/lainsce/coin" target="_blank" class="link animated"><i class="fas fa-fw fa-code-branch"></i> Get it on github</a>
+                <a href="https://github.com/lainsce/coin" target="_blank" class="link animated">
+                  <i class="fas fa-fw fa-code-branch"></i> Get it on github</a>
               </div>
             </div>
-            <div class="card">
+            <div class="card m-header scene_element scene_element--fadeinright">
               <div class="card-image-big card-flair-notejot">
-                <p><img class="card-inside-img" src="img/notejot-shot.png" alt="Notejot"></p>
+                <p>
+                  <img class="card-inside-img" src="img/notejot-shot.png" alt="Notejot">
+                </p>
               </div>
               <div class="card-body">
                 <div class="card-subtitle">
-                  <p>Notejot <span class="badge badge-info animated">1.4.0<span></p>
+                  <p>Notejot
+                    <span class="badge badge-info animated">1.4.0
+                      <span>
+                  </p>
                 </div>
                 <div class="card-badge">
                 </div>
                 <div class="card-chip">
-                  <p class="chip chip-vala"><img width="30" height="30" src="img/vala.png" alt="Built with Vala"> Vala</p>
+                  <p class="chip chip-vala">
+                    <img width="30" height="30" src="img/vala.png" alt="Built with Vala"> Vala</p>
                   <p class="chip">Post-It</p>
                   <p class="chip">Sticky Notes</p>
                 </div>
                 <div class="card-text">
                   <p>A stupidly-simple sticky notes app for any type of short term notes.</p>
                   <ul>
-                    <li>Quit anytime with <kbd>⌘</kbd> <kbd>Q</kbd></li>
+                    <li>Quit anytime with
+                      <kbd>⌘</kbd>
+                      <kbd>Q</kbd>
+                    </li>
                   </ul>
                   <p>Itching for an adventure? Well, clone the repo, then compile it locally:</p>
                   <pre><code>
@@ -126,19 +168,25 @@
                 </div>
               </div>
               <div class="card-action">
-                <a href="https://github.com/lainsce/notejot" target="_blank" class="link animated"><i class="fas fa-fw fa-code-branch"></i> Get it on github</a>
+                <a href="https://github.com/lainsce/notejot" target="_blank" class="link animated">
+                  <i class="fas fa-fw fa-code-branch"></i> Get it on github</a>
               </div>
             </div>
-            <div class="card">
+            <div class="card m-header scene_element scene_element--fadeinleft">
               <div class="card-image-big card-flair-quilter">
-                <p><img class="card-inside-img" src="img/quilter-shot.png" alt="Quilter"></p>
+                <p>
+                  <img class="card-inside-img" src="img/quilter-shot.png" alt="Quilter">
+                </p>
               </div>
               <div class="card-body">
                 <div class="card-subtitle">
-                  <p>Quilter <span class="badge badge-info animated">1.5.6</span></p>
+                  <p>Quilter
+                    <span class="badge badge-info animated">1.5.6</span>
+                  </p>
                 </div>
                 <div class="card-chip">
-                  <p class="chip chip-vala"><img width="30" height="30" src="img/vala.png" alt="Built with Vala"> Vala</p>
+                  <p class="chip chip-vala">
+                    <img width="30" height="30" src="img/vala.png" alt="Built with Vala"> Vala</p>
                   <p class="chip">Focus</p>
                   <p class="chip">Writing</p>
                   <p class="chip">Minimal</p>
@@ -150,8 +198,13 @@
                     <li>Preview your story in the Preview Mode.</li>
                     <li>Configure whether to have Focus Mode or not.</li>
                     <li>Configure whether to have Dark Mode or not.</li>
-                    <li>Fullscreen your writing area with <kbd>F11</kbd></li>
-                    <li>Quit anytime with <kbd>⌘</kbd> <kbd>Q</kbd></li>
+                    <li>Fullscreen your writing area with
+                      <kbd>F11</kbd>
+                    </li>
+                    <li>Quit anytime with
+                      <kbd>⌘</kbd>
+                      <kbd>Q</kbd>
+                    </li>
                   </ul>
                   <p>You know what you're doing? Then, clone the repo, and compile it locally:</p>
                   <pre><code>
@@ -163,26 +216,35 @@
                 </div>
               </div>
               <div class="card-action">
-                <a href="https://github.com/lainsce/quilter" target="_blank" class="link animated"><i class="fas fa-fw fa-code-branch"></i> Get it on github</a>
+                <a href="https://github.com/lainsce/quilter" target="_blank" class="link animated">
+                  <i class="fas fa-fw fa-code-branch"></i> Get it on github</a>
               </div>
             </div>
-            <div class="card">
+            <div class="card m-header scene_element scene_element--fadeinright">
               <div class="card-image-big card-flair-palaura">
-                <p><img class="card-inside-img" src="img/palaura-shot.png" alt="Palaura"></p>
+                <p>
+                  <img class="card-inside-img" src="img/palaura-shot.png" alt="Palaura">
+                </p>
               </div>
               <div class="card-body">
                 <div class="card-subtitle">
-                  <p>Palaura <span class="badge badge-info animated">1.0.1</span></p>
+                  <p>Palaura
+                    <span class="badge badge-info animated">1.0.1</span>
+                  </p>
                 </div>
                 <div class="card-chip">
-                  <p class="chip chip-vala"><img width="30" height="30" src="img/vala.png" alt="Built with Vala"> Vala</p>
+                  <p class="chip chip-vala">
+                    <img width="30" height="30" src="img/vala.png" alt="Built with Vala"> Vala</p>
                   <p class="chip">Dictionary</p>
                   <p class="chip">Word</p>
                 </div>
                 <div class="card-text">
                   <p>Find any word's definition with this handy dictionary</p>
                   <ul>
-                    <li>Quit anytime with <kbd>⌘</kbd> <kbd>Q</kbd></li>
+                    <li>Quit anytime with
+                      <kbd>⌘</kbd>
+                      <kbd>Q</kbd>
+                    </li>
                   </ul>
                   <p>Feeling that adventure spirit calling? Start by cloning the repo, then compiling it locally:</p>
                   <pre><code>
@@ -194,26 +256,35 @@
                 </div>
               </div>
               <div class="card-action">
-                <a href="https://github.com/lainsce/palaura" target="_blank" class="link animated"><i class="fas fa-fw fa-code-branch"></i> Get it on github</a>
+                <a href="https://github.com/lainsce/palaura" target="_blank" class="link animated">
+                  <i class="fas fa-fw fa-code-branch"></i> Get it on github</a>
               </div>
             </div>
-            <div class="card">
+            <div class="card m-header scene_element scene_element--fadeinleft">
               <div class="card-image-big card-flair-yishu">
-                <p><img class="card-inside-img" src="img/yishu-shot.png" alt="Yishu"></p>
+                <p>
+                  <img class="card-inside-img" src="img/yishu-shot.png" alt="Yishu">
+                </p>
               </div>
               <div class="card-body">
                 <div class="card-subtitle">
-                  <p>Yishu <span class="badge badge-info animated">1.0.5</span></p>
+                  <p>Yishu
+                    <span class="badge badge-info animated">1.0.5</span>
+                  </p>
                 </div>
                 <div class="card-chip">
-                  <p class="chip chip-vala"><img width="30" height="30" src="img/vala.png" alt="Built with Vala"> Vala</p>
+                  <p class="chip chip-vala">
+                    <img width="30" height="30" src="img/vala.png" alt="Built with Vala"> Vala</p>
                   <p class="chip">Dictionary</p>
                   <p class="chip">Word</p>
                 </div>
                 <div class="card-text">
                   <p>Write a to-do list that will be easy to sync with most known Todo.txt clients</p>
                   <ul>
-                    <li>Quit anytime with <kbd>⌘</kbd> <kbd>Q</kbd></li>
+                    <li>Quit anytime with
+                      <kbd>⌘</kbd>
+                      <kbd>Q</kbd>
+                    </li>
                     <li>Easily shareable with other Todo.txt clients on other platforms</li>
                   </ul>
                   <p>Feeling the zen of code calling? Start by cloning the repo, then compiling it locally:</p>
@@ -226,32 +297,37 @@
                 </div>
               </div>
               <div class="card-action">
-                <a href="https://github.com/lainsce/yishu" target="_blank" class="link animated"><i class="fas fa-fw fa-code-branch"></i> Get it on github</a>
+                <a href="https://github.com/lainsce/yishu" target="_blank" class="link animated">
+                  <i class="fas fa-fw fa-code-branch"></i> Get it on github</a>
               </div>
             </div>
-      </div>
-    </div>
-    <footer class="footer">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-xs-12">
-            <ul class="footer-space">
-              <li><a class="waves-effect  button ghost" href="https://github.com/lainsce/lainsce.github.io/issues/new" target="_blank" class="ghost"><i class="fas fa-fw fa-sm fa-bug"></i>Report Issue</a></li>
-            </ul>
           </div>
         </div>
-      </div>
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-xs-12">
-            <p>© 2017-<span id="year">2017</span> Paulo Galardi. Made in São Paulo.</p>
+        <footer class="footer">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-xs-12">
+                <ul class="footer-space">
+                  <li>
+                    <a class="waves-effect  button ghost" href="https://github.com/lainsce/lainsce.github.io/issues/new" target="_blank" class="ghost">
+                      <i class="fas fa-fw fa-sm fa-bug"></i>Report Issue</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
-        </div>
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-xs-12">
+                <p>© 2017-
+                  <span id="year">2017</span> Paulo Galardi. Made in São Paulo.</p>
+              </div>
+            </div>
+          </div>
+        </footer>
       </div>
-    </footer>
+    </main>
   </div>
-  </main>
-</div>
   <div id="Contact" class="modal">
     <div class="modal-content">
       <div class="modal-header">
@@ -265,22 +341,22 @@
             <input type="text" name="name" id="name" required>
             <span class="bar"></span>
             <label>Name</label>
-        </div>
+          </div>
 
-        <div class="group">
+          <div class="group">
             <i class="material-icons prefix">email</i>
             <input type="text" name="email" id="email" required>
             <span class="bar"></span>
             <label>Email</label>
-        </div>
+          </div>
 
-        <div class="input-field">
+          <div class="input-field">
             <i class="material-icons prefix">mode_edit</i>
             <textarea name="message" required rows="10" cols="20" id="message"></textarea>
-        </div>
+          </div>
 
-        <input type="submit" name="submit" form="form1" value="submit" />
-        <input type="reset" name="cancel" form="form1" value="cancel" />
+          <input type="submit" name="submit" form="form1" value="submit" />
+          <input type="reset" name="cancel" form="form1" value="cancel" />
         </form>
       </div>
       <div class="modal-footer">
@@ -290,94 +366,83 @@
   </div>
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script type="text/javascript" src="js/waves.js"></script>
+  <script type="text/javascript" src="js/smooth.js"></script>
   <script type="text/javascript">
-  $(function () {
+    $(function () {
       $("#year").text((new Date).getFullYear());
       var things = ["Patron", "Backer", "Booster", "Supporter", "Big Fan"];
       $("#thing").text(things[Math.floor(Math.random() * things.length)]);
-  });
-  $(function yearsSince(epoch) {
+    });
+    $(function yearsSince(epoch) {
       var diff = new Date() - new Date(epoch);
       var age = Math.floor(diff / 311236000000);
       return age;
-  });
+    });
   </script>
   <script type="text/javascript">
-  function navtab(evt, name) {
-    var i, nav-content, nav-link;
-    nav-content = document.getElementsById("guts");
-    for (i = 0; i < nav-content.length; i++) {
-      nav-content[i].style.display = "none";
+    function navtab(evt, name) {
+      var i, nav - content, nav - link;
+      nav - content = document.getElementsById("guts");
+      for (i = 0; i < nav - content.length; i++) {
+        nav - content[i].style.display = "none";
+      }
+      nav - link = document.getElementsByClassName("nav-icon");
+      for (i = 0; i < nav - link.length; i++) {
+        nav - link[i].className = nav - link[i].className.replace(" active", "");
+      }
+      document.getElementById(name).style.display = "block";
+      evt.currentTarget.className += " active";
     }
-    nav-link = document.getElementsByClassName("nav-icon");
-    for (i = 0; i < nav-link.length; i++) {
-      nav-link[i].className = nav-link[i].className.replace(" active", "");
-    }
-    document.getElementById(name).style.display = "block";
-    evt.currentTarget.className += " active";
-  }
-  document.getElementById("default_open").click();
+    document.getElementById("default_open").click();
   </script>
   <script type="text/javascript">
-  var modal = document.getElementById('Contact');
-  var btn = document.getElementById("Contact-Button");
-  var span = document.getElementsByClassName("close")[0];
-  btn.onclick = function() {
-    modal.style.display = "block";
-  }
-  span.onclick = function() {
-    modal.style.display = "none";
-  }
-
-  window.onclick = function(event) {
-    if (event.target == modal) {
+    var modal = document.getElementById('Contact');
+    var btn = document.getElementById("Contact-Button");
+    var span = document.getElementsByClassName("close")[0];
+    btn.onclick = function () {
+      modal.style.display = "block";
+    }
+    span.onclick = function () {
       modal.style.display = "none";
     }
-  }
-  </script>
-  <script type="text/javascript" src='js/modernizr.js'></script>
-  <script type="text/javascript">
-    $(function() {
-      if (Modernizr.history) {
-        $("nav-link").delegate("a", "click", function() {
-          _href = $(this).attr("href");
-          history.pushState(null, null, _href);
-          loadContent(_href);
-        });
-      } else {
+
+    window.onclick = function (event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
       }
-    });
-
-    var $mainContent = $("#main-content"),
-        $pageWrap    = $("#page-wrap"),
-        baseHeight   = 0,
-        $el;
-
-    $pageWrap.height($pageWrap.height());
-    baseHeight = $pageWrap.height() - $mainContent.height();
-
-    function loadContent(href) {
-      $mainContent
-        .find("#guts")
-        .fadeOut(200, function() {
-          $mainContent
-            .hide()
-            .load(href + " #guts", function() {
-              $mainContent.fadeIn(200, function() {
-                $pageWrap.animate({
-                  height: baseHeight + $mainContent.height() + &quot;px&quot;
-                });
-             });
-          $("nav-link a").removeClass("current");
-          $("nav-link a[href$='" + href + "']").addClass("current");
-        });
-      });
     }
-
-    $(window).bind("popstate", function() {
-        link = location.pathname.replace(/^.*[\\/]/, "");
-        loadContent(link);
-    });
   </script>
-  </body>
+<script type="text/javascript">
+  $(function () {
+    'use strict';
+    var options = {
+        prefetch: true,
+        cacheLength: 2,
+        onStart: {
+          duration: 300, // Duration of our animation
+          render: function ($container) {
+            // Add your CSS animation reversing class
+            $container.addClass('is-exiting');
+
+            // Restart your animation
+            smoothState.restartCSSAnimations();
+          }
+        },
+        onReady: {
+          duration: 0,
+          render: function ($container, $newContent) {
+            // Remove your CSS animation reversing class
+            $container.removeClass('is-exiting');
+
+            // Inject the new content
+            $container.html($newContent);
+
+          }
+        }
+      },
+      smoothState = $('#main').smoothState(options).data('smoothState');
+  });
+</script>
+</body>
+
 </html>
