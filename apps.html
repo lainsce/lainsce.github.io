@@ -64,7 +64,7 @@
                 <a href="/apps" class="waves-effect nav-link"><li>APPS</li></a>
                 <a href="/ideas" class="waves-effect nav-link"><li>IDEAS</li></a>
                 <a href="/about" class="waves-effect nav-link"><li>ABOUT</li></a>
-                <a id="Contact-Button" class="waves-effect nav-link"><li>CONTACT</li></a>
+                <a id="Contact-Button-Mobile" class="waves-effect nav-link"><li>CONTACT</li></a>
               </ul>
       </div>
       <div>
@@ -429,9 +429,12 @@
   </script>
   <script type="text/javascript">
     var modal = document.getElementById('Contact');
-    var btn = document.getElementById("Contact-Button");
+    var btn2 = document.getElementById("Contact-Button-Mobile");
     var span = document.getElementsByClassName("close")[0];
     btn.onclick = function () {
+      modal.style.display = "block";
+    }
+    btn2.onclick = function () {
       modal.style.display = "block";
     }
     span.onclick = function () {
