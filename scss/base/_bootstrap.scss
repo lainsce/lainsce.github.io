@@ -1,60 +1,118 @@
 /*******************
 *    BOOTSTRAP     *
 ********************/
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .container {
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: 1fr;
+    align-items: self-start;
+    grid-template-rows: repeat(auto-fit, 1fr);
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+  }
 
-.container {
-  display: grid;
-  grid-gap: 25px;
-  grid-template-columns: repeat(auto-fit, minmax(10px, 1fr));
-  align-items: self-start;
-  grid-template-rows: repeat(auto-fit, 1fr);
-  margin-left: 25px;
-  margin-right: 25px;
-  margin-top: 25px;
+  .container-big {
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: 1fr;
+    align-items: self-start;
+    grid-template-rows: repeat(auto-fit, minmax(1fr, auto));
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+  }
+
+  .container-bigger {
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: 1fr;
+    align-items: self-start;
+    grid-template-rows: repeat(auto-fit, minmax(1fr, auto));
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+  }
+
+  .container-biggerest {
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: 1fr;
+    align-items: self-start;
+    grid-template-rows: repeat(auto-fit, minmax(1fr, auto));
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+  }
+
+  .container-huge {
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: [col1-start] 2fr [col1-end];
+    align-items: self-start;
+    grid-template-rows: repeat(auto-fit, 1fr);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+  }
 }
 
-.container-big {
-  display: grid;
-  grid-gap: 25px;
-  grid-template-columns: repeat(auto-fit, minmax(10px, 1fr));
-  align-items: self-start;
-  grid-template-rows: repeat(auto-fit, minmax(1fr, auto));
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 25px;
-}
+@media (min-width: 1200px) {
+  .container {
+    display: grid;
+    grid-gap: 25px;
+    grid-template-columns: repeat(auto-fit, minmax(10px, 1fr));
+    align-items: self-start;
+    grid-template-rows: repeat(auto-fit, 1fr);
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-top: 25px;
+  }
 
-.container-bigger {
-  display: grid;
-  grid-gap: 25px;
-  grid-template-columns: [col1-start] 500px [col1-end col2-start] 500px [col2-end];
-  align-items: self-start;
-  grid-template-rows: repeat(auto-fit, minmax(1fr, auto));
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 25px;
-}
+  .container-big {
+    display: grid;
+    grid-gap: 25px;
+    grid-template-columns: repeat(auto-fit, minmax(10px, 1fr));
+    align-items: self-start;
+    grid-template-rows: repeat(auto-fit, minmax(1fr, auto));
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+  }
 
-.container-biggerest {
-  display: grid;
-  grid-gap: 25px;
-  grid-template-columns: [col1-start] 1fr [col1-end col2-start] 1fr [col2-end];
-  align-items: self-start;
-  grid-template-rows: repeat(auto-fit, minmax(1fr, auto));
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 25px;
-}
+  .container-bigger {
+    display: grid;
+    grid-gap: 25px;
+    grid-template-columns: [col1-start] 500px [col1-end col2-start] 500px [col2-end];
+    align-items: self-start;
+    grid-template-rows: repeat(auto-fit, minmax(1fr, auto));
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+  }
 
-.container-huge {
-  display: grid;
-  grid-gap: 25px;
-  grid-template-columns: [col1-start] 2fr [col1-end];
-  align-items: self-start;
-  grid-template-rows: repeat(auto-fit, 1fr);
-  margin-left: 9rem;
-  margin-right: 9rem;
-  margin-top: 25px;
+  .container-biggerest {
+    display: grid;
+    grid-gap: 25px;
+    grid-template-columns: [col1-start] 1fr [col1-end col2-start] 1fr [col2-end];
+    align-items: self-start;
+    grid-template-rows: repeat(auto-fit, minmax(1fr, auto));
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+  }
+
+  .container-huge {
+    display: grid;
+    grid-gap: 25px;
+    grid-template-columns: [col1-start] 2fr [col1-end];
+    align-items: self-start;
+    grid-template-rows: repeat(auto-fit, 1fr);
+    margin-left: 9rem;
+    margin-right: 9rem;
+    margin-top: 25px;
+  }
 }
 
 .container-fluid {

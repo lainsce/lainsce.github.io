@@ -110,7 +110,6 @@
 
 .card-text {
   @include font($size: 1rem, $color: $fg, $weight: 400);
-  text-align: left;
 
   & p {
     margin-bottom: 10px;

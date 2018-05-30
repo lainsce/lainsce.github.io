@@ -75,6 +75,11 @@ img {
   vertical-align: middle;
 }
 
+.logo-mobile {
+  margin: -45px 10px 0;
+  vertical-align: middle;
+}
+
 .left {
   float: left;
   text-align:left;
@@ -83,6 +88,129 @@ img {
 .right {
   float: right;
   text-align:right;
+}
+
+#menuToggle
+{
+  display: block;
+  position: relative;
+  top: 20px;
+  left: 50px;
+  
+  z-index: 1;
+  
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuToggle input
+{
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  
+  cursor: pointer;
+  
+  opacity: 0; /* hide this */
+  z-index: 2; /* and place it over the hamburger */
+  
+  -webkit-touch-callout: none;
+}
+
+#menuToggle span
+{
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  
+  background: #cdcdcd;
+  border-radius: 3px;
+  
+  z-index: 1;
+  
+  transform-origin: 4px 0px;
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+#menuToggle span:first-child
+{
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2)
+{
+  transform-origin: 0% 100%;
+}
+
+#menuToggle input:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #232323;
+}
+
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+#menu
+{
+  position: absolute;
+  width: 315px;
+  margin: -100px 0 0 -50px;
+  padding: 55px;
+  padding-top: 125px;
+  
+  background: #ededed;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#menu li
+{
+  padding: 10px 0;
+  font-size: 22px;
+}
+
+#menuToggle input:checked ~ ul
+{
+  transform: none;
+}
+
+.open {
+  visibility: hidden;
+}
+.closed {
+  visibility: visible;
+}
+
+@media screen and (max-width: 425px) {
+  .open {
+    visibility: visible;
+  }
+  .closed {
+    visibility: hidden;
+  }
 }
 
 .value-00 { width: 0; }
@@ -130,35 +258,35 @@ img {
   transition-property: opacity, -webkit-transform;
   transition-property: transform, opacity;
   transition-property: transform, opacity, -webkit-transform;
-  width: 20px
+  width: 20px;
 }
 
 .waves-effect.waves-light .waves-ripple {
-  background-color: rgba(255,255,255,0.45)
+  background-color: #ffffff73;
 }
 
 .waves-effect.waves-red .waves-ripple {
-  background-color: rgba(244,67,54,0.7)
+  background-color: #f44336b3;
 }
 
 .waves-effect.waves-yellow .waves-ripple {
-  background-color: rgba(255,235,59,0.7)
+  background-color: #ffeb3bb3;
 }
 
 .waves-effect.waves-orange .waves-ripple {
-  background-color: rgba(255,152,0,0.7)
+  background-color: #ff9800b3;
 }
 
 .waves-effect.waves-purple .waves-ripple {
-  background-color: rgba(156,39,176,0.7)
+  background-color: #9c27b0b3;
 }
 
 .waves-effect.waves-green .waves-ripple {
-  background-color: rgba(76,175,80,0.7)
+  background-color: #4caf50b3;
 }
 
 .waves-effect.waves-teal .waves-ripple {
-  background-color: rgba(0,150,136,0.7)
+  background-color: #009688b3;
 }
 
 .waves-effect input[type="button"],.waves-effect input[type="reset"],.waves-effect input[type="submit"] {
@@ -181,6 +309,7 @@ img {
 
 .waves-circle {
   -webkit-mask-image: -webkit-radial-gradient(circle, white 100%, black 100%);
+  mask-image: none;
   -webkit-transform: translateZ(0);
   transform: translateZ(0)
 }
@@ -199,6 +328,7 @@ img {
 
 .waves-circle {
   -webkit-mask-image: none;
+  mask-image: none;
   border-radius: 50%;
   height: 2.5em;
   line-height: 2.5em;

@@ -47,7 +47,9 @@
 }
 
 .nav-bar {
+  position: absolute;
   list-style: none;
+  top: 0;
   margin: 0;
   padding: 0;
 }
@@ -55,10 +57,4 @@
 .nav-link {
   @include font($color: $fg);
   padding: .13rem 1.3rem;
-}
-
-#page-wrap {
-}
-
-#main-content {
 }
