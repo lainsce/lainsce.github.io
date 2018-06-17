@@ -179,6 +179,11 @@
   text-align: center;
   top: 0;
 
+  &.card-flair-aesop {
+    border-top: 8px solid $aesop;
+    background-color: rgba($aesop,0.3);
+  }
+
   &.card-flair-notejot {
     border-top: 8px solid $notejot;
     background-color: rgba($notejot,0.3);
@@ -244,6 +249,11 @@
   right: 0;
   text-align: center;
   top: 0;
+
+  &.card-flair-aesop {
+    border-top: 8px solid $aesop;
+    background-color: rgba($aesop,0.3);
+  }
 
   &.card-flair-notejot {
     border-top: 8px solid $notejot;
