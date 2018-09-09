@@ -59,4 +59,9 @@
   & p {
     color: $card;
   }
+
+  &.hero-mini {
+    height: 37vh;
+    padding-top: 17px;
+  }
 }
