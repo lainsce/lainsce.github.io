@@ -209,6 +209,11 @@
     background-color: rgba($yishu,0.3);
   }
 
+  &.card-flair-beemy {
+    border-top: 8px solid $beemy;
+    background-color: rgba($beemy,0.3);
+  }
+
   &.card-flair-rccar {
     border-top: 8px solid $rccar;
     background-color: rgba($rccar,0.3);
@@ -278,6 +283,11 @@
   &.card-flair-yishu {
     border-top: 8px solid $yishu;
     background-color: rgba($yishu,0.3);
+  }
+
+  &.card-flair-beemy {
+    border-top: 8px solid $beemy;
+    background-color: rgba($beemy,0.3);
   }
 
   &.card-flair-rccar {
