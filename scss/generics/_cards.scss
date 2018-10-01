@@ -237,9 +237,14 @@
       text-align: center;
   }
 
-  &.card-flair-hack {
-    border-left: 8px solid $hack;
-    background-color: rgba($hack,0.3);
+  &.card-flair-hack-17 {
+    border-left: 8px solid $hack-2017;
+    background-color: rgba($hack-2017,0.3);
+  }
+
+  &.card-flair-hack-18 {
+    border-left: 8px solid $hack-2018;
+    background-color: rgba($hack-2018,0.3);
   }
 }
 
