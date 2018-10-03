@@ -11,8 +11,7 @@
   display: grid;
   grid-column: 1;
   padding: 1rem 0;
-  position: absolute;
-  bottom: 0;
+  position: relative;
   text-align: center;
   width: 100%;
 }
@@ -24,8 +23,7 @@
   display: grid;
   grid-column: 1;
   padding: 1.1rem 0;
-  position: absolute;
-  bottom: 0;
+  position: relative;
   text-align: center;
   width: 100%;
 }
