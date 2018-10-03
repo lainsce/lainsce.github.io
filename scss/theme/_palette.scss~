@@ -3,26 +3,26 @@
  *****************/
 
 // Swatches
-$fg: #1E2541;
-$bg: #EEFFFF;
-$bg-tab: #DEE6E7;
+$fg: #3C4043;
+$bg: #F1F3F4;
+$bg-tab: #F1F3F4;
 $nav: #FFFFFF;
 $card-body: #FFFFFF;
-$hero: #DEE6E7;
-$link: #1DA0E2;
-$button-success: #2CE592;
-$button-info: #1DA0E2;
-$button-error: #F02E6E;
-$button-ghost: #354274;
-$badge: #354274;
+$hero: #BDC1C6;
+$link: #304ffe;
+$button-success: #30fe75;
+$button-info: #304ffe;
+$button-error: #d13e2b;
+$button-ghost: #3C4043;
+$badge: #263238;
 $badge-success: #30fe75;
-$card-skillbar: #A742EA;
-$card-stars: #FF8537;
-$tooltip: #1E2541;
-$fab-icon: #EEFFFF;
+$card-skillbar: #b9589c;
+$card-stars: #ebbd6a;
+$tooltip: #3C4043;
+$fab-icon: #FAFAFA;
 
 // Brands
-$chip-vala: #4c158a;
+$chip-vala: #7a36b1;
 $fab-twitter: #2196f3;
 $fab-telegram: #0d8aee;
 $fab-gplus: #df4035;
