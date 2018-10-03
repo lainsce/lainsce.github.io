@@ -8,11 +8,13 @@
   border-top: 3px solid rgba($chip, .75);
   box-sizing: border-box;
   color: $fg;
-  padding: 1.1rem;
+  display: grid;
+  grid-column: 1;
+  padding: 1rem 0;
   position: absolute;
-  right: 0;
-  bottom: 0;
-  left: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
   text-align: center;
   width: 100%;
 }
@@ -21,11 +23,13 @@
   @include font($size: .8rem, $weight: 400, $lh: .8rem);
   box-sizing: border-box;
   color: $bg;
-  padding: 1.1rem;
+  display: grid;
+  grid-column: 1;
+  padding: 1.1rem 0;
   position: absolute;
-  right: 0;
-  bottom: 0;
-  left: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
   text-align: center;
   width: 100%;
 }
