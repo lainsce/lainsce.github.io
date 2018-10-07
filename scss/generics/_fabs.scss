@@ -7,7 +7,7 @@
   background-image: none;
   border-radius: 100%;
   box-shadow: none;
-  color: $fg;
+  color: $bg;
   display: inline-block;
   height: 38px;
   line-height: 38px;
@@ -70,7 +70,7 @@
   }
 
   &>a {
-    color: $fg;
+    color: $bg;
     display: block;
     height: 100%;
     width: 100%;
@@ -102,7 +102,7 @@
    }
 
    & a {
-      color: $fg;
+      color: $bg;
       margin: auto;
    }
 
