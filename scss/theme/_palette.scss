@@ -46,7 +46,7 @@ $card: darken($card-body, 5%);
 $card-action: darken($card-body, 10%);
 $badge-text: darken($bg, 5%);
 $button-ghost-night: darken($bg, 5%);
-$chip: darken($bg, 15%);
+$chip: darken($fg, 5%);
 $hero-apps: mix($hero, $link, 50%);
 $hero-ideas: mix($hero, $button-success, 50%);
 $hero-about: mix($hero, $button-error, 50%);
