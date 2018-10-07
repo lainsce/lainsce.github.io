@@ -107,14 +107,14 @@
     &:hover {
       background-color: $button-ghost-night;
       background-image: none;
-      color: $bg;
-      @include box-shadow(3, rgba($bg,0.2));
+      color: $fg;
+      @include box-shadow(3, rgba($fg,0.2));
     }
 
     &:active {
       background-color: $button-ghost-night-active;
       background-image: none;
-      color: $bg;
+      color: $fg;
     }
   }
 
