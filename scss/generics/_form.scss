@@ -14,7 +14,7 @@ input[type=text] {
 
 .prefix {
   position: absolute;
-  color: $hero;
+  color: $button-success;
   width: 3rem;
   left: -45px;
   font-size: 2rem;
@@ -157,7 +157,7 @@ input {
   width:300px;
 }
 
-input:focus { 
+input:focus {
   outline:none;
 }
 
@@ -167,7 +167,7 @@ input:focus ~ label, input:valid ~ label 		{
   top:-10px;
 }
 
-.bar 	{ 
+.bar 	{
   display:block;
   position:relative;
   width:100%;

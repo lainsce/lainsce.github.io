@@ -102,19 +102,19 @@
     background-image: none;
     border: 2px solid rgba($bg, .5);
     box-shadow: none;
-    color: $fg;
+    color: $bg;
 
     &:hover {
       background-color: $button-ghost-night;
       background-image: none;
-      color: $fg;
-      @include box-shadow(3, rgba($fg,0.2));
+      color: $bg;
+      @include box-shadow(3, rgba($bg,0.2));
     }
 
     &:active {
       background-color: $button-ghost-night-active;
       background-image: none;
-      color: $fg;
+      color: $bg;
     }
   }
 
