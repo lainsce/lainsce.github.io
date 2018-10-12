@@ -214,6 +214,11 @@
     background-color: rgba($beemy,0.3);
   }
 
+  &.card-flair-timetable {
+    border-top: 8px solid $timetable;
+    background-color: rgba($timetable,0.3);
+  }
+
   &.card-flair-rccar {
     border-top: 8px solid $rccar;
     background-color: rgba($rccar,0.3);
@@ -293,6 +298,11 @@
   &.card-flair-beemy {
     border-top: 8px solid $beemy;
     background-color: rgba($beemy,0.3);
+  }
+
+  &.card-flair-timetable {
+    border-top: 8px solid $timetable;
+    background-color: rgba($timetable,0.3);
   }
 
   &.card-flair-rccar {
