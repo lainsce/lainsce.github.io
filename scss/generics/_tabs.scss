@@ -12,12 +12,16 @@
         outline: none;
         padding: 14px 16px;
         transition: color .2s ease;
-        border-bottom: 3px solid $chip;
         width: 33.333%;
 
-        &:hover {
-            border-bottom: 3px solid $badge;
-            background-color: rgba($card, 0.766);
+        &::after {
+            border-bottom: 3px solid $bg-tab;
+            border-radius: 3px;
+        }
+
+        &:hover::after  {
+            border-bottom: 3px solid $button-ghost;
+            border-radius: 3px;
         }
 
         &.active {
