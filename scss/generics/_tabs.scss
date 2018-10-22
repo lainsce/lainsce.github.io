@@ -15,34 +15,6 @@
         width: 33.333%;
 
         &::before {
-            background-color: none;
-            border-top-left-radius: 3px;
-            border-top-right-radius: 3px;
-            bottom: 0;
-            content: '';
-            display: block;
-            height: 3px;
-            left: 0;
-            margin: 0 8px;
-            position: absolute;
-            right: 0;
-        }
-
-        &:hover::before  {
-            background-color: $bg-tab;
-            border-top-left-radius: 3px;
-            border-top-right-radius: 3px;
-            bottom: 0;
-            content: '';
-            display: block;
-            height: 3px;
-            left: 0;
-            margin: 0 8px;
-            position: absolute;
-            right: 0;
-        }
-
-        &:active::before {
             background-color: $button-info;
             border-top-left-radius: 3px;
             border-top-right-radius: 3px;
