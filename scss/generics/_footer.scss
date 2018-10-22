@@ -8,7 +8,8 @@
   border-top: 3px solid rgba($chip, .75);
   box-sizing: border-box;
   color: $bg;
-  padding: 1.1rem;
+  padding: 0.98rem;
+  max-height: fit-content;
   position: relative;
   text-align: center;
   width: 100%;
