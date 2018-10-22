@@ -42,7 +42,7 @@
             right: 0;
         }
 
-        &::before.active {
+        &:active::before {
             background-color: $button-info;
             border-top-left-radius: 3px;
             border-top-right-radius: 3px;

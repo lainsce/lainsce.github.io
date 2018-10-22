@@ -32,7 +32,7 @@
   margin: 0;
   margin-left: -5px;
 
-  &::after:hover {
+  &::before:hover {
     background-color: $bg-tab;
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
@@ -47,7 +47,7 @@
     transition: .2s cubic-bezier(0.46, 0.03, 0.52, 0.96);
   }
 
-  &::after.active {
+  &::before:active {
     background-color: $button-info;
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
