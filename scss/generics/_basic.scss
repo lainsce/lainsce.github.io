@@ -262,19 +262,19 @@ img {
 }
 
 .waves-effect.waves-light .waves-ripple {
-  background-color: #ffffff73;
+  background-color: $button-ghost-night-active;
 }
 
 .waves-effect.waves-red .waves-ripple {
-  background-color: #f44336b3;
+  background-color: $fab-gplus;
 }
 
 .waves-effect.waves-yellow .waves-ripple {
-  background-color: #ffeb3bb3;
+  background-color: $fab-mail;
 }
 
 .waves-effect.waves-orange .waves-ripple {
-  background-color: #ff9800b3;
+  background-color: $fab-patreon;
 }
 
 .waves-effect.waves-purple .waves-ripple {
@@ -282,11 +282,11 @@ img {
 }
 
 .waves-effect.waves-green .waves-ripple {
-  background-color: #4caf50b3;
+  background-color: $button-success;
 }
 
 .waves-effect.waves-teal .waves-ripple {
-  background-color: #009688b3;
+  background-color: $button-info;
 }
 
 .waves-effect input[type="button"],.waves-effect input[type="reset"],.waves-effect input[type="submit"] {
