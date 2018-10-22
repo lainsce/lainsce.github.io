@@ -14,19 +14,46 @@
         transition: color .2s ease;
         width: 33.333%;
 
-        &::after {
-            border-bottom: 3px solid $bg-tab;
-            border-radius: 3px;
+        &::before {
+            background-color: none;
+            border-top-left-radius: 3px;
+            border-top-right-radius: 3px;
+            bottom: 0;
+            content: '';
+            display: block;
+            height: 3px;
+            left: 0;
+            margin: 0 8px;
+            position: absolute;
+            right: 0;
         }
 
-        &:hover::after  {
-            border-bottom: 3px solid $button-ghost;
-            border-radius: 3px;
+        &:hover::before  {
+            background-color: $bg-tab;
+            border-top-left-radius: 3px;
+            border-top-right-radius: 3px;
+            bottom: 0;
+            content: '';
+            display: block;
+            height: 3px;
+            left: 0;
+            margin: 0 8px;
+            position: absolute;
+            right: 0;
         }
 
-        &::after.active {
-            border-bottom: 3px solid $button-info;
-            border-radius: 3px;
+        &::before.active {
+            background-color: $button-info;
+            border-top-left-radius: 3px;
+            border-top-right-radius: 3px;
+            bottom: 0;
+            content: '';
+            display: block;
+            height: 3px;
+            left: 0;
+            margin: 0 8px;
+            position: absolute;
+            right: 0;
         }
 
         & .fas,.fab {
