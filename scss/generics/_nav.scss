@@ -32,22 +32,11 @@
   margin: 0;
   margin-left: -5px;
 
-  &::before {
-      background-color: $button-ghost-night-active;
-      border-top-left-radius: 3px;
-      border-top-right-radius: 3px;
-      bottom: 0;
-      content: '';
-      display: block;
-      height: 3px;
-      left: 0;
-      margin: 0 8px;
-      position: absolute;
-      right: 0;
+  &:hover {
+    background: $bg-tab;
   }
 
-  &::before:hover,
-  &::before:active {
+  &.active::before {
     background-color: $button-info;
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
