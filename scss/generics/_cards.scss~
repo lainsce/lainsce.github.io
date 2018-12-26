@@ -55,7 +55,7 @@
 .book {
   background-color: $badge;
   border: 1px solid $badge;
-  border-radius: 4px;
+  border-radius: 8px;
   bottom: -100%;
   height: 90px;
   left: -100%;
@@ -69,8 +69,8 @@
 
 .card-title {
   @include font($size: 2.25rem, $color: $fg, $weight: 400);
-  margin-bottom: 1.66rem;
-  margin-top: 1.66rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
 
   & p.card-title-text {
     margin-bottom: 0px;
