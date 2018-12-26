@@ -215,7 +215,10 @@
                   </div>
                   <div class="card-body">
                     <div class="card-subtitle">
-                      <p>Palaura</p>
+                      <p>Palaura
+                        <span class="badge badge-neutral animated tooltip" data-tooltip="Not Yet">
+                          <i class="fas fa-fw fa-cubes"></i> Flatpak</span>
+                      </p>
                     </div>
                     <div class="card-text">
                       <p>Find any word's definition with this handy simple dictionary.</p>
@@ -292,10 +295,6 @@
                     <p>
                       <a href="https://appcenter.elementary.io/com.github.lainsce.timetable" class="link animated" target="_blank">
                         <i class="fas fa-fw fa-shopping-bag"></i> Get It On Appcenter</a>
-                    </p>
-                    <p>
-                      <a href="https://flathub.org/repo/appstream/com.github.lainsce.timetable.flatpakref" class="link animated" target="_blank">
-                        <i class="fas fa-fw fa-cubes"></i> Get It On Flathub</a>
                     </p>
                   </div>
                 </div>
