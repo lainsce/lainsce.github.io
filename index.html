@@ -19,20 +19,10 @@
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#406794">
     <meta name="msapplication-TileColor" content="#406794">
     <meta name="theme-color" content="#406794">
-    <link rel="stylesheet"
-      href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css"
-      integrity="sha384-v2Tw72dyUXeU3y4aM2Y0tBJQkGfplr39mxZqlTBDUZAb9BGoC40+rdFCG0m10lXk"
-      crossorigin="anonymous">
-    <link rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.0.8/css/brands.css"
-      integrity="sha384-IiIL1/ODJBRTrDTFk/pW8j0DUI5/z9m1KYsTm/RjZTNV8RHLGZXkUDwgRRbbQ+Jh"
-      crossorigin="anonymous">
-    <link rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.0.8/css/fontawesome.css"
-      integrity="sha384-q3jl8XQu1OpdLgGFvNRnPdj5VIlCvgsDQTQB6owSOHWlAurxul7f+JpUOVdAiJ5P"
-      crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono&amp;subset=latin-ext" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/solid.css" integrity="sha384-r/k8YTFqmlOaqRkZuSiE9trsrDXkh07mRaoGBMoDcmA58OHILZPsk29i2BsFng1B" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/brands.css" integrity="sha384-BKw0P+CQz9xmby+uplDwp82Py8x1xtYPK3ORn/ZSoe6Dk3ETP59WCDnX+fI1XCKK" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/fontawesome.css" integrity="sha384-4aon80D8rXCGx9ayDt85LbyUHeMWd3UiBaWliBlJ53yzm9hqN21A+o1pqoyK04h+" crossorigin="anonymous">
     <link type="text/css" rel="stylesheet" href="scss/main.css">
 
     <!-- Avoid FOUC -->
@@ -41,11 +31,14 @@
   <body>
     <nav class="nav fixed-top" tabindex="-1">
       <div class="nav-bar">
-        <p class="nav-icon" onclick="tab(event, 'HOME')" id="default_open">
+        <p class="nav-icon">
           <a class="link" href="/">
             <img class="logo" height="32" width="32" src="icons/me.svg" alt="My
               Icon">
           </a>
+          <p class="right time">
+            <i class="fas fa-fw fa-clock"></i><i class="fas fa-fw fa-calendar"></i> <span id=time></span> <span id=date></span>
+          </p>
         </p>
       </div>
     </nav>
@@ -315,7 +308,6 @@
     </footer>
     <script type="text/javascript"
       src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script type="text/javascript" src="js/waves.js"></script>
     <script type="text/javascript">
       $(function () {
         $("#year").text((new Date).getFullYear());
@@ -336,6 +328,30 @@
         return ageYear;
       }
       document.getElementById('age').innerHTML = getAge(birth);
+
+      function arvelie (date = new Date()) {
+        const start = new Date(date.getFullYear(), 0, 0)
+        const diff = (date - start) + ((start.getTimezoneOffset() - date.getTimezoneOffset()) * 60 * 1000)
+        const doty = Math.floor(diff / 86400000) - 1
+        const l = Math.floor(((doty) / 364) * 26)
+        const y = date.getFullYear().toString().substr(2, 2)
+        const m = doty === 364 || doty === 365 ? '+' : String.fromCharCode(97 + l).toUpperCase()
+        const d = `${(doty === 365 ? 1 : doty === 366 ? 2 : (doty % 14)) + 1}`.padStart(2, '0')
+        return `${y}${m}${d}`
+      }
+      function neralie (d = new Date(), e = new Date(d)) {
+        const ms = e - d.setHours(0, 0, 0, 0)
+        const val = (ms / 8640 / 10000).toFixed(6)
+        return `${val.substr(2, 3)}:${val.substr(5, 3)}`
+      }
+
+      function arne(){
+        today = new Date();
+        document.getElementById('time').innerHTML = arvelie(today);
+        document.getElementById('date').innerHTML = neralie(today);
+      };
+
+      window.setInterval(arne, 1000);
     </script>
   </body>
 </html>

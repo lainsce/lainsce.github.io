@@ -106,7 +106,7 @@ samp {
 }
 
 .info {
-  margin: 1rem auto;
+  margin: 4rem auto;
   text-align: left;
   padding-right: .6em;
   padding-left: 41rem;
@@ -115,6 +115,11 @@ samp {
 .info ol {
   list-style-type: circle[];
   list-style-position: inside;
+}
+
+.time {
+  margin-right: 15px;
+  margin-top: 20px;
 }
 
 .dim-label {

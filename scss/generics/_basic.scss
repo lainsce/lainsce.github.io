@@ -51,8 +51,8 @@ html {
 }
 
 .button {
-  border: 1px $outline solid;
-  color: $link;
+  border: 3px $outline solid;
+  color: $fg;
   border-radius: 8px;
   padding: 10px;
   margin-right: 5px;
@@ -129,8 +129,7 @@ html {
   box-shadow: 0 1px 3px rgba(60,64,67,0.2), 0 1px 2px rgba(60,64,67,0.2);
   background-color: darken($bg, 5%);
   z-index: 2;
-  position: fixed; /* Make it stick, even on scroll */
-  overflow: auto; /* Enable scrolling if the sidenav has too much content */
+  overflow: auto;
 }
 
 .nav-icon {
@@ -147,8 +146,27 @@ html {
 }
 
 .hero {
-  height: 25vh;
-  margin-top: 5rem;
+  height: calc(55vh - 135px);
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+
+
+  &:before {
+    background-attachment: fixed;
+    background-color: #fff;
+    background-image: linear-gradient(rgba($bg,.6),rgba($bg,.6)), url(https://images.unsplash.com/photo-1521334729279-b178069c8157?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=048d4c4fa407c6788f08d965735f60f3&auto=format&fit=crop&w=1347&q=80);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    content: "";
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    will-change: transform;
+    z-index: -1;
+  }
 }
 
 .link {
