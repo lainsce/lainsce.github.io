@@ -101,8 +101,20 @@ samp {
 
 .title {
   @include font($size: 1.64rem, $weight: 400, $color: $fg);
-  margin: 0 auto;
+  margin: 2em 0 auto;
   text-align: center;
+}
+
+.info {
+  margin: 1rem auto;
+  text-align: left;
+  padding-right: .6em;
+  padding-left: 41rem;
+}
+
+.info ol {
+  list-style-type: circle;
+  list-style-position: inside;
 }
 
 .dim-label {
