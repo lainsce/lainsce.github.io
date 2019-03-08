@@ -73,6 +73,15 @@ html {
 
     &:hover {
       background: lighten($patreon, 5%);
+      border: 3px lighten($patreon, 5%) solid;
+      color: $bg;
+    }
+  }
+
+  &.twitter {
+    &:hover {
+      background: lighten($twitter, 5%);
+      border: 3px lighten($twitter, 5%) solid;
       color: $bg;
     }
   }
