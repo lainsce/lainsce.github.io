@@ -1,4 +1,11 @@
 /*****************
+ *     RESET     *
+ *****************/
+
+*           { margin:0;padding:0;border:0;outline:0;border-spacing:0;text-decoration:none;font-weight:inherit;font-style:inherit;color:inherit;font-size:100%;font-family:inherit;vertical-align:baseline;list-style:none;border-collapse:collapse;-webkit-font-smoothing: antialiased;-moz-osx-font-smoothing: grayscale;}
+*:focus     { outline: none}
+
+/*****************
  * GENERAL STUFF *
  *****************/
 * {
@@ -48,6 +55,22 @@ html {
 .card-body,
 .card-action {
   padding: 15px;
+}
+
+.card-text {
+  display: block;
+  height: 75px;
+  padding: 24px 0;
+}
+
+.card-action p {
+  margin: 15px 0;
+  position: relative;
+}
+
+.card-subtitle {
+  @include font($size: 1rem, $weight: 700, $color: $fg);
+  padding: 15px 0;
 }
 
 .button {
