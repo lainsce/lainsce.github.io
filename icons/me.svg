@@ -38,20 +38,51 @@
      inkscape:window-width="1920"
      inkscape:window-height="962"
      id="namedview12"
-     showgrid="false"
-     inkscape:zoom="2.36"
-     inkscape:cx="50"
-     inkscape:cy="46.610169"
+     showgrid="true"
+     inkscape:zoom="6.675088"
+     inkscape:cx="36.976603"
+     inkscape:cy="51.271813"
      inkscape:window-x="0"
      inkscape:window-y="30"
      inkscape:window-maximized="1"
-     inkscape:current-layer="svg10" />
+     inkscape:current-layer="svg10">
+    <inkscape:grid
+       type="xygrid"
+       id="grid848" />
+  </sodipodi:namedview>
+  <rect
+     style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     id="rect871"
+     width="100"
+     height="100"
+     x="0"
+     y="0" />
+  <rect
+     style="fill:#fafafa;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     id="rect850"
+     width="5"
+     height="60"
+     x="20"
+     y="20"
+     rx="0"
+     ry="0" />
+  <rect
+     style="fill:#fafafa;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     id="rect867"
+     width="60"
+     height="5"
+     x="20"
+     y="75" />
+  <rect
+     style="fill:#fafafa;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     id="rect869"
+     width="5"
+     height="45"
+     x="75"
+     y="20" />
   <path
-     style="fill:#6699ff"
-     d="M 5 5 L 5 95 L 95 95 L 95 65 L 80 65 L 80 80 L 20 80 L 20 26.271484 L 19.916016 26.271484 L 19.916016 5 L 5 5 z "
-     id="path2" />
-  <path
-     style="fill:#99cc33"
-     d="M 78.800781 5 L 25 60 L 25 75 L 41.199219 75 L 80 35.333984 L 80 38 L 80 60 L 95 60 L 95 36 L 95 20 L 95 5 L 78.800781 5 z "
-     id="path4" />
+     style="fill:#fafafa;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1"
+     d="m 75,20 c 0,0 -40,2.958894 -40,45 h 5 c 0,0 0,-40 35,-40 z"
+     id="path873"
+     inkscape:connector-curvature="0" />
 </svg>

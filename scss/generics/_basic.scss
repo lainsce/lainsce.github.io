@@ -32,10 +32,10 @@ html {
   box-shadow: 0 -1px 3px rgba(60,64,67,0.2), 0 -1px 2px rgba(60,64,67,0.2);
   display: grid;
   grid-column: 1;
-  grid-template-columns: auto auto auto auto auto;
-  grid-gap: 20px;
-  padding: 5rem 0;
-  width: 100%;
+  grid-template-columns: repeat(auto-fill, minmax(300px, auto));
+  grid-gap: 1rem;
+  padding: 1.66rem 1rem;
+  max-width: 100vw;
   z-index: 1;
 }
 
@@ -54,13 +54,28 @@ html {
   border: 3px $outline solid;
   color: $fg;
   border-radius: 8px;
-  padding: 10px;
-  margin-right: 5px;
-}
+  padding: 8px;
+  margin: 0 0 0 5px;
 
-.button:hover {
-  background: $outline;
-  color: $bg;
+  & i {
+    margin-right: 8px;
+  }
+
+  &:hover {
+    background: $outline;
+    color: $bg;
+  }
+
+  &.patreon {
+    background-color: $patreon;
+    border: 3px $patreon solid;
+    color: $bg;
+
+    &:hover {
+      background: lighten($patreon, 5%);
+      color: $bg;
+    }
+  }
 }
 
 .card-image {
@@ -121,15 +136,13 @@ html {
   }
 }
 
-
 .nav-bar {
   margin: 0;
   padding: 0;
-  width: 100%;
+  max-width: 100vw;
   box-shadow: 0 1px 3px rgba(60,64,67,0.2), 0 1px 2px rgba(60,64,67,0.2);
   background-color: darken($bg, 5%);
   z-index: 2;
-  overflow: auto;
 }
 
 .nav-icon {
@@ -146,24 +159,22 @@ html {
 }
 
 .hero {
-  height: calc(55vh - 135px);
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-
+  height: 50vh;
+  max-width: 100vw;
 
   &:before {
     background-attachment: fixed;
     background-color: #fff;
-    background-image: linear-gradient(rgba($bg,.6),rgba($bg,.6)), url(https://images.unsplash.com/photo-1521334729279-b178069c8157?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=048d4c4fa407c6788f08d965735f60f3&auto=format&fit=crop&w=1347&q=80);
+    background-image: linear-gradient(rgba($bg,.7),rgba($bg,.5s),rgba($bg,1)), url(https://images.unsplash.com/photo-1521334729279-b178069c8157?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=048d4c4fa407c6788f08d965735f60f3&auto=format&fit=crop&w=1347&q=80);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
     content: "";
-    height: 100%;
+    height: 100vh;
     left: 0;
     position: fixed;
     top: 0;
-    width: 100%;
+    width: 100vw;
     will-change: transform;
     z-index: -1;
   }
@@ -186,7 +197,7 @@ html {
 }
 
 img {
-  max-width: 100%;
+  max-width: 100vw;
 }
 
 .shadow {
@@ -203,7 +214,7 @@ img {
   max-height: fit-content;
   position: relative;
   text-align: center;
-  width: 100%;
+  max-width: 100vw;
 }
 
 .footer-shadow {
@@ -219,14 +230,14 @@ img {
   vertical-align: middle;
 }
 
-.logo-mobile {
-  margin: -45px 10px 0;
-  vertical-align: middle;
-}
-
 .left {
   float: left;
   text-align:left;
+}
+
+.center {
+  float: center;
+  text-align:center;
 }
 
 .right {
