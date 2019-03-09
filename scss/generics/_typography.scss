@@ -39,11 +39,11 @@ h4 {
 }
 
 h5 {
-  @include font($size: 1.66rem, $weight: 400);
+  @include font($size: 1.66rem);
 }
 
 h6 {
-  @include font($size: 1rem, $weight: 400);
+  @include font($size: 1rem);
 }
 
 .medium-icon-new {
@@ -116,10 +116,9 @@ samp {
 }
 
 .info {
-  margin: 5rem auto;
+  margin: 3rem auto;
   text-align: justify;
   position: relative;
-  display: table;
 }
 
 .time {
