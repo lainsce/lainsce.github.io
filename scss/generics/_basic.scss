@@ -205,6 +205,11 @@ html {
     border-top: 8px solid $dotmatrix;
     background-color: rgba($dotmatrix,0.3);
   }
+
+  &.card-flair-reganam {
+    border-top: 8px solid $reganam;
+    background-color: rgba($reganam,0.3);
+  }
 }
 
 .nav-bar {
