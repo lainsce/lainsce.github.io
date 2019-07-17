@@ -212,28 +212,28 @@ html {
 
   &.card-flair-beemy {
     border-top: 8px solid $beemy;
-    background-image: linear-gradient(0deg, lighten($beemy, 10%), rgba(lighten($beemy, 10%), 0.3)), url(https://github.com/lainsce/beemy/raw/master/data/shot.png);
+    background-image: linear-gradient(0deg, lighten($beemy, 30%), rgba(lighten($beemy, 30%), 0.3)), url(https://github.com/lainsce/beemy/raw/master/data/shot.png);
     background-position: top;
     background-size: cover;
   }
 
   &.card-flair-timetable {
     border-top: 8px solid $timetable;
-    background-image: linear-gradient(0deg, lighten($timetable, 10%), rgba(lighten($timetable, 10%), 0.3)), url(https://github.com/lainsce/timetable/raw/master/data/shot.png);
+    background-image: linear-gradient(0deg, lighten($timetable, 30%), rgba(lighten($timetable, 30%), 0.3)), url(https://github.com/lainsce/timetable/raw/master/data/shot.png);
     background-position: top;
     background-size: cover;
   }
 
   &.card-flair-dotmatrix {
     border-top: 8px solid $dotmatrix;
-    background-image: linear-gradient(0deg, lighten($dotmatrix, 10%), rgba(lighten($dotmatrix, 10%), 0.3)), url(https://github.com/lainsce/dot-matrix/raw/master/data/shot.png);
+    background-image: linear-gradient(0deg, lighten($dotmatrix, 30%), rgba(lighten($dotmatrix, 30%), 0.3)), url(https://github.com/lainsce/dot-matrix/raw/master/data/shot.png);
     background-position: top;
     background-size: cover;
   }
 
   &.card-flair-reganam {
     border-top: 8px solid $reganam;
-    background-image: linear-gradient(0deg, lighten($reganam, 10%), rgba(lighten($reganam, 10%), 0.3)), url(https://github.com/lainsce/reganam/raw/master/data/shot.png);
+    background-image: linear-gradient(0deg, lighten($reganam, 30%), rgba(lighten($reganam, 30%), 0.3)), url(https://github.com/lainsce/reganam/raw/master/data/shot.png);
     background-position: top;
     background-size: cover;
   }
