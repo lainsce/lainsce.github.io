@@ -58,9 +58,10 @@ html {
     border-radius: 8px;
     text-align: center;
     grid-row: 1;
-    grid-column: 1 / 5;
+    grid-column: 1 / 6;
     padding-top: 50px;
     padding-bottom: 50px;
+    margin: auto 50px;
 
   & h5 {
     color: $fg;
