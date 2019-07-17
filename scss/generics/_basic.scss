@@ -96,6 +96,13 @@ html {
   padding: 24px 0;
 }
 
+.card-action {
+  background-color: darken($bg, 5%);
+  border-radius: 0px 0px 8px 8px;
+  height: 95px;
+  border-top: 1px $outline solid;
+}
+
 .card-action p {
   margin: 15px 0;
   position: relative;
@@ -163,52 +170,72 @@ html {
 
   &.card-flair-aesop {
     border-top: 8px solid $aesop;
-    background-color: rgba($aesop,0.3);
+    background-image: linear-gradient(0deg, $aesop, rgba($aesop, 0.3)), url(https://github.com/lainsce/aesop/raw/master/data/shot.png);
+    background-position: top;
+    background-size: cover;
   }
 
   &.card-flair-notejot {
     border-top: 8px solid $notejot;
-    background-color: rgba($notejot,0.3);
+    background-image: linear-gradient(0deg, $notejot, rgba($notejot, 0.3)), url(https://github.com/lainsce/notejot/raw/master/data/shot.png);
+    background-position: top;
+    background-size: cover;
   }
 
   &.card-flair-quilter {
     border-top: 8px solid $quilter;
-    background-color: rgba($quilter,0.3);
+    background-image: linear-gradient(0deg, $quilter, rgba($quilter, 0.3)), url(https://github.com/lainsce/quilter/raw/master/data/shot.png);
+    background-position: top;
+    background-size: cover;
   }
 
   &.card-flair-coin {
     border-top: 8px solid $coin;
-    background-color: rgba($coin,0.3);
+    background-image: linear-gradient(0deg, $coin, rgba($coin, 0.3)), url(https://github.com/lainsce/coin/raw/master/data/shot.png);
+    background-position: top;
+    background-size: cover;
   }
 
   &.card-flair-palaura {
     border-top: 8px solid $palaura;
-    background-color: rgba($palaura,0.3);
+    background-image: linear-gradient(0deg, $palaura, rgba($palaura, 0.3)), url(https://github.com/lainsce/palaura/raw/master/data/shot.png);
+    background-position: top;
+    background-size: cover;
   }
 
   &.card-flair-yishu {
     border-top: 8px solid $yishu;
-    background-color: rgba($yishu,0.3);
+    background-image: linear-gradient(0deg, $yishu, rgba($yishu, 0.3)), url(https://github.com/lainsce/yishu/raw/master/data/shot.png);
+    background-position: top;
+    background-size: cover;
   }
 
   &.card-flair-beemy {
     border-top: 8px solid $beemy;
-    background-color: rgba($beemy,0.3);
+    background-image: linear-gradient(0deg, $beemy, rgba($beemy, 0.3)), url(https://github.com/lainsce/beemy/raw/master/data/shot.png);
+    background-position: top;
+    background-size: cover;
   }
 
   &.card-flair-timetable {
     border-top: 8px solid $timetable;
-    background-color: rgba($timetable,0.3);
+    background-image: linear-gradient(0deg, $timetable, rgba($timetable, 0.3)), url(https://github.com/lainsce/timetable/raw/master/data/shot.png);
+    background-position: top;
+    background-size: cover;
   }
 
   &.card-flair-dotmatrix {
     border-top: 8px solid $dotmatrix;
-    background-color: rgba($dotmatrix,0.3);
+    background-image: linear-gradient(0deg, $dotmatrix, rgba($dotmatrix, 0.3)), url(https://github.com/lainsce/dotmatrix/raw/master/data/shot.png);
+    background-position: top;
+    background-size: cover;
   }
 
   &.card-flair-reganam {
     border-top: 8px solid $reganam;
-    background-color: rgba($reganam,0.3);
+    background-image: linear-gradient(0deg, $reganam, rgba($reganam, 0.3)), url(https://github.com/lainsce/reganam/raw/master/data/shot.png);
+    background-position: top;
+    background-size: cover;
   }
 }
 
