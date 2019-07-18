@@ -98,7 +98,7 @@ html {
 }
 
 .card-header {
-    background-color: darken($card-body, 30%);
+    background-color: darken($card-body, 20%);
     border-radius: 8px;
     text-align: center;
     grid-row: 1;
@@ -409,10 +409,10 @@ img {
 
 .footer {
   @include font($size: .8rem, $weight: 400, $lh: .8rem);
-  background-color: $fg;
+  background-color: $bg;
   box-shadow: 0 -1px 3px rgba(60,64,67,0.2), 0 -1px 2px rgba(60,64,67,0.2);
   box-sizing: border-box;
-  color: $bg;
+  color: $fg;
   padding: 2rem;
   position: relative;
   max-width: 100vw;
@@ -430,6 +430,22 @@ img {
 .logo {
   display: inline-block;
   vertical-align: middle;
+}
+
+.icon-link {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 1.66rem;
+
+  &.github:hover {
+      color: $github;
+  }
+  &.patreon:hover {
+      color: $patreon;
+  }
+  &.twitter:hover {
+      color: $twitter;
+  }
 }
 
 .left {
