@@ -10,6 +10,15 @@ $outline: #888888;
 $link: #0DAC87;
 $badge: #444444;
 
+@media (prefers-color-scheme: dark) {
+  $fg: #FFFFFF;
+  $bg: #333333;
+  $card-body: #333333;
+  $outline: #888888;
+  $link: #0fc49a;
+  $badge: #CCCCCC;
+}
+
 // Brands
 $aesop: #ccbbaa;
 $notejot: #FCEE9B;
@@ -29,3 +38,8 @@ $twitter: #1da1f2;
 // Mixes
 $link-hover: lighten($link, 10%);
 $link-active: lighten($link, 15%);
+
+@media (prefers-color-scheme: dark) {
+  $link-hover: darken($link, 10%);
+  $link-active: darken($link, 15%);
+}
