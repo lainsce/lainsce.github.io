@@ -41,6 +41,14 @@ html {
   z-index: 1;
 }
 
+.start-letter {
+  @include font($size: 1.66rem, $weight: 700, $color: $fg);
+  background-color: $link;
+  border-radius: 8px;
+  padding: 5px;
+  display: inline-block;
+}
+
 .tooltip {
   position: relative;
   display: inline-block;
@@ -49,6 +57,14 @@ html {
 
 .tooltip .link {
     color: $bg;
+
+    &::after {
+      content: "";
+      color: black;
+      padding-left: 3px;
+      line-height: 90%;
+      transition: all 250ms;
+    }
 
     &:hover {
         color: darken($bg, 10%);
@@ -87,6 +103,18 @@ html {
   visibility: visible;
 }
 
+.badge {
+    @include font($size: .9rem, $weight: 700, $color: $fg, $lh: .8rem);
+    border-radius: 8px;
+    background-color: #000;
+    color: #fff;
+    display: inline-block;
+    padding: 10px;
+    text-align: center;
+    margin-left: 20px;
+    vertical-align: middle;
+}
+
 .bg {
   background-color: darken($bg, 5%);
   box-shadow: 0 -1px 3px rgba(60,64,67,0.2), 0 -1px 2px rgba(60,64,67,0.2);
@@ -99,6 +127,10 @@ html {
   border: 1px $outline solid;
   border-radius: 8px;
   background: $card-body;
+
+    &.flair-nx {
+        border-top: 8px solid $link;
+    }
 }
 
 .card-header {
@@ -153,20 +185,37 @@ html {
 }
 
 .card-body {
+  display: block;
   height: 200px;
+}
+
+.card-body-nx {
+  display: block;
+  padding: 15px;
 }
 
 .card-text {
   display: block;
-  height: 75px;
   padding: 24px 0;
+}
+
+.card-text-long {
+  display: block;
+  padding: 24px 0;
+  margin-bottom: 20px;
+  border-bottom: 2px dashed $fg;
+  width: 44ch;
 }
 
 .card-action {
   background-color: darken($bg, 2%);
   border-radius: 0px 0px 8px 8px;
-  height: 100px;
   border-top: 1px $outline solid;
+  height: 100px;
+}
+
+.card-action-nx {
+  margin-bottom: 10px;
 }
 
 .card-action p {
@@ -175,13 +224,14 @@ html {
 }
 
 .card-title {
-  @include medium-font($size: 1rem, $weight: 400, $color: $fg);
-  padding: 240px 40px;
+  @include font($size: 1.66rem, $weight: 700, $color: $fg, $lh: .6rem);
   vertical-align: middle;
+  padding: 15px 0;
+  border-bottom: 2px dashed $fg;
 }
 
 .card-subtitle {
-  @include font($size: 1rem, $weight: 700, $color: $fg);
+  @include font($size: 1rem, $weight: 700, $color: $fg, $lh: .8rem);
   padding: 15px 0;
 }
 
@@ -327,6 +377,17 @@ html {
   color: $bg;
 }
 
+.nav-link {
+  float: left;
+  margin: 15px;
+  padding: 8px;
+}
+
+.nav-link:hover {
+  background: $outline;
+  color: $bg;
+}
+
 .hero {
   height: 55vh;
   max-width: 100vw;
@@ -349,6 +410,28 @@ html {
   }
 }
 
+.hero-small {
+  height: 23vh;
+  max-width: 100vw;
+
+  &:before {
+    background-attachment: fixed;
+    background-color: #fff;
+    background-image: linear-gradient(rgba($bg,.7),rgba($bg,.5),rgba($bg,1)), url(https://images.unsplash.com/photo-1521334729279-b178069c8157?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=048d4c4fa407c6788f08d965735f60f3&auto=format&fit=crop&w=1347&q=80);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    content: "";
+    height: 40vh;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    will-change: transform;
+    z-index: -1;
+  }
+}
+
 .hero-content {
   display: grid;
   grid-column: 1;
@@ -361,13 +444,26 @@ html {
 }
 
 .link {
-  color: $link;
+  line-height: 90%;
+  border-bottom: 1px solid transparent;
 
   &:hover {
+      border-bottom: 1px solid $fg;
+  }
+
+  &::after {
+    content: "⋄";
+    color: black;
+    padding-left: 3px;
+    line-height: 90%;
+    transition: all 250ms;
+  }
+
+  &:hover::after {
     color: $link-hover;
   }
 
-  &:active {
+  &:active::after {
     color: $link-active;
   }
 }
@@ -413,6 +509,14 @@ img {
   display: inline-block;
   vertical-align: middle;
   font-size: 1.66rem;
+
+  &::after {
+    content: "";
+    color: black;
+    padding-left: 3px;
+    line-height: 90%;
+    transition: all 250ms;
+  }
 
   &.github:hover {
       color: $github;
