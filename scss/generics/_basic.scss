@@ -20,11 +20,11 @@
   }
 }
 
-*:selection {
-  background: $link; /* WebKit/Blink Browsers */
+::selection {
+  background-color: $link; /* WebKit/Blink Browsers */
 }
-*:-moz-selection {
-  background: $link; /* Gecko Browsers */
+::-moz-selection {
+  background-color: $link; /* Gecko Browsers */
 }
 
 body,
