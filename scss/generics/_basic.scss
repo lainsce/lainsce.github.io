@@ -20,6 +20,13 @@
   }
 }
 
+::selection {
+  background: $link; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: $link; /* Gecko Browsers */
+}
+
 body,
 html {
   @include font($size: 1.1rem, $weight: 400);
