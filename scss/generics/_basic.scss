@@ -164,10 +164,10 @@ html {
 
 .card-holder-nx {
   display: grid;
-  grid-column: 1;
-  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
   grid-auto-rows: auto;
   grid-gap: 1rem;
+  grid-column: 1;
   padding-top: 50px;
   padding-bottom: 50px;
   margin: auto 25px;
@@ -202,8 +202,10 @@ html {
 }
 
 .card-body-nx {
-  display: block;
+  display: grid;
   padding: 15px;
+  grid-row-start: 2;
+  grid-column-start: 1;
 }
 
 .card-text {
@@ -214,7 +216,6 @@ html {
 .card-text-long {
   display: block;
   padding: 24px 0;
-  margin-bottom: 20px;
 }
 
 .card-action {
@@ -225,10 +226,9 @@ html {
 }
 
 .card-action-nx {
-  margin-bottom: 10px;
-  position: absolute;
-  bottom: 0;
-  left: 0;
+  grid-row-start: 3;
+  grid-column-start: 1;
+  padding: 15px 25px;
   border-top: 2px dashed $fg;
 }
 
@@ -242,6 +242,8 @@ html {
   vertical-align: middle;
   padding: 15px 0;
   border-bottom: 2px dashed $fg;
+  grid-row-start: 1;
+  grid-column-start: 1;
 }
 
 .card-subtitle {
