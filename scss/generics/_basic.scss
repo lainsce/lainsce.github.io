@@ -161,6 +161,17 @@ html {
   margin: auto 25px;
 }
 
+.card-holder-nx {
+  display: grid;
+  grid-column: 1;
+  grid-template-columns: repeat(auto-fill, minmax(350px, auto));
+  grid-auto-rows: auto;
+  grid-gap: 1rem;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin: auto 25px;
+}
+
 @media screen and (max-width:500px) {
   .card-header {
     grid-row: 1;
