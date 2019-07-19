@@ -163,50 +163,10 @@ html {
 }
 
 .card-action {
-  background-color: darken($bg, 5%);
+  background-color: darken($bg, 2%);
   border-radius: 0px 0px 8px 8px;
   height: 100px;
   border-top: 1px $outline solid;
-
-  &.card-flair-aesop {
-    background-color: lighten($aesop, 20%);
-  }
-
-  &.card-flair-notejot {
-    background-color: lighten($notejot, 15%);
-  }
-
-  &.card-flair-quilter {
-    background-color: lighten($quilter, 20%);
-  }
-
-  &.card-flair-coin {
-    background-color: lighten($coin, 20%);
-  }
-
-  &.card-flair-palaura {
-    background-color: lighten($palaura, 20%);
-  }
-
-  &.card-flair-yishu {
-    background-color: lighten($yishu, 15%);
-  }
-
-  &.card-flair-beemy {
-    background-color: lighten($beemy, 50%);
-  }
-
-  &.card-flair-timetable {
-    background-color: lighten($timetable, 50%);
-  }
-
-  &.card-flair-dotmatrix {
-    background-color: lighten($dotmatrix, 30%);
-  }
-
-  &.card-flair-reganam {
-    background-color: lighten($reganam, 60%);
-  }
 }
 
 .card-action p {
