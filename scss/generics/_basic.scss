@@ -130,6 +130,7 @@ html {
 
     &.flair-nx {
         border-top: 8px solid $link;
+        position: relative;
     }
 }
 
@@ -214,7 +215,6 @@ html {
   display: block;
   padding: 24px 0;
   margin-bottom: 20px;
-  border-bottom: 2px dashed $fg;
 }
 
 .card-action {
@@ -226,6 +226,10 @@ html {
 
 .card-action-nx {
   margin-bottom: 10px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-top: 2px dashed $fg;
 }
 
 .card-action p {
