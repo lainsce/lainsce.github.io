@@ -52,19 +52,23 @@ h6 {
 }
 
 pre {
-  background-color: #FDF6E3;
-  border: 3px solid #eee8d5;
-  border-radius: 8px;
-  font-size: 90%;
-  padding-bottom: 20px;
+  background-color: darken($bg, 5%);
+  border: 3px dashed darken($bg, 30%);
+  padding: 10px;
+  margin: 5px;
+  overflow: auto;
+  min-width: 50%;
+  line-height: 20px;
 
   & code {
+    display: inline;
     border-radius: 0;
-    color: #657B83;
+    color: $fg;
     font-size: .85rem;
-    left: 30px;
     position: relative;
-    white-space: pre-line;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    text-align: justify;
 
     & p {
       display: inline;
@@ -103,11 +107,11 @@ kbd,
 pre,
 samp {
   font-family: Hack, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-  font-size: 1em;
+  font-size: 0.8em;
 }
 
 .title {
-  @include font($size: 1.66rem, $weight: 400, $color: $fg);
+  @include font($size: 1.5rem, $weight: 400, $color: $fg);
   margin: 1rem 0 1rem 0;
   text-align: center;
   position: relative;
@@ -119,13 +123,68 @@ samp {
   margin: 3rem auto;
   text-align: justify;
   position: relative;
+  display: inline-block;
+}
+
+@media screen and (max-width:500px) {
+  .info {
+      margin: .5rem auto;
+      text-align: justify;
+      position: relative;
+      width: 35ch;
+      height: 20vh;
+      display: inline-block;
+    }
+}
+
+@media screen and (min-width:501px) and (max-width:1023px) {
+  .info {
+      margin: 2rem auto;
+      text-align: justify;
+      position: relative;
+      display: inline-block;
+    }
 }
 
 .time {
-  margin-right: 15px;
-  margin-top: 20px;
+  margin-right: 40px;
+  margin-top: 23px;
+  background: $bg;
+  padding: 8px;
+  border-radius: 8px;
 }
 
 .dim-label {
   opacity: .8;
 }
+
+table {
+  background-color: $bg;
+  color: $fg;
+  margin: 10px auto;
+  font-size: 1em;
+  overflow: hidden;
+  border-collapse: separate;
+  min-width: 50%;
+  line-height: 20px;
+  margin-bottom: 30px;
+
+    & th {
+      padding: 5px;
+      background-color: $link;
+      border: 2px solid $bg;
+    }
+
+    & td {
+      padding: 5px;
+      background-color: darken($bg, 5%);
+      border: 2px solid $bg;
+    }
+}
+
+@media screen and (max-width:500px) {
+  table {
+      font-size: 0.8em;
+  }
+}
+
