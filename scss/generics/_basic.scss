@@ -41,6 +41,42 @@ html {
   z-index: 1;
 }
 
+.quote {
+  @include medium-font($size: 1.4rem, $weight: 700, $color: $fg);
+  quotes: "“"”"""";
+  padding: 5px 10px;
+  line-height: 1.2;
+  width: 25ch;
+
+  &:before {
+    content: open-quote;
+    display: inline;
+    height: 0;
+    line-height: 0;
+    left: -5px;
+    position: relative;
+    top: 5px;
+    color: $fg;
+    font-size: 1.2em;
+  }
+
+  &:after {
+    content: close-quote;
+    display: inline;
+    height: 0;
+    line-height: 0;
+    left: 5px;
+    position: relative;
+    top: 5px;
+    color: $fg;
+    font-size: 1.2em;
+  }
+
+  & footer {
+    margin-right: 10px;
+  }
+}
+
 .start-letter {
   @include font($size: 1.4rem, $weight: 700, $color: $fg);
   background-color: $link;
