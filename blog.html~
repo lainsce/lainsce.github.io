@@ -1,0 +1,178 @@
+---
+---
+
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Lains">
+    <meta property="og:description" content="The personal site for Lains">
+    <meta property='og:title' content='Lains'>
+    <meta property='og:image' content='icons/me.png'>
+    <title>Lains</title>
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#406794">
+    <meta name="theme-color" content="#FFFFFF">
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono&amp;subset=latin-ext" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/solid.css" integrity="sha384-r/k8YTFqmlOaqRkZuSiE9trsrDXkh07mRaoGBMoDcmA58OHILZPsk29i2BsFng1B" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/brands.css" integrity="sha384-BKw0P+CQz9xmby+uplDwp82Py8x1xtYPK3ORn/ZSoe6Dk3ETP59WCDnX+fI1XCKK" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/fontawesome.css" integrity="sha384-4aon80D8rXCGx9ayDt85LbyUHeMWd3UiBaWliBlJ53yzm9hqN21A+o1pqoyK04h+" crossorigin="anonymous">
+    <link type="text/css" rel="stylesheet" href="scss/main.css">
+
+    <!-- Avoid FOUC -->
+
+  </head>
+  <body>
+    <nav class="nav fixed-top" tabindex="-1">
+      <div class="nav-icon">
+          <a href="/">
+            <img class="logo" height="32" width="32" src="icons/me.svg" alt="My
+              Icon">
+          </a>
+      </div>
+      <div class="left" style="margin-top: 23px;">
+        <a href="/blog">NAXASERO</a>
+      </div>
+      <div class="right time tooltip">
+        <span id=time></span> <span id=date></span>
+        <span class="tooltiptext"><a class="link" href="https://wiki.xxiivv.com/#time">Learn about this</a></span>
+      </div>
+    </nav>
+    <main>
+      <div class="hero-small" align=center>
+        <div class="hero-content">
+          <div>
+            <h3>NAXASERO</h3>
+          </div>
+          <div class="info center">
+            <p>Pronounced as (IPA): /naʃaserɔ/</p>
+            <p><em>n. small piece of text, possibly containing photos</em></p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <div class="bg">
+      <div class="card-holder-nx">
+        <div class="card flair-nx">
+          <div class="card-body-nx">
+              <div class="card-title">
+                <p>Workflow for the Day <span class="badge">19O04</span></p>
+              </div>
+              <div class="left card-text-long">
+                <p><span class="start-letter">E</span>very day, I try to follow a strict program almost like a robot,
+                    but this programming is good for what I do, which is code at home. I always try to do at least
+                    one thing, and I have done so since 19O01. It's been a strange yet fulfilling journey. I also
+                    make sure to log it into a (big by now) text file which is structured like a Markdown table, with
+                    the task code for the day, the day task, and how many pulses were used for that task.
+                    An example:
+                    <pre><code>DATE  CODE  DESC                  PS
+19O04 1A    Logged a naxasero     7
+  *   1B    Clark New Album       2
+  *   2A    Write parser for this 15
+  *   1A    Logged a naxasero     7</code></pre>
+                    As you can see, every task has a code. To understand my codes, you need to understand that I divide
+                    things into three sections: Leisure, Work, and Research.
+                    Each of those is a number; respectively, 1, 2, and 3.
+                    A Table for each level and code follows:
+                    </p>
+                    <table class=".table">
+                      <tr>
+                        <th>Leisure (1)</th>
+                        <th>Work (2)</th>
+                        <th>Research (3)</th>
+                      </tr>
+                      <tr>
+                        <td>A - Text</td>
+                        <td>A - Code</td>
+                        <td>A - Read</td>
+                      </tr>
+                      <tr>
+                        <td>B - Audio</td>
+                        <td>B - Build</td>
+                        <td>B - Listen</td>
+                      </tr>
+                      <tr>
+                        <td>C - Video</td>
+                        <td>C - Design</td>
+                        <td>C - Explore</td>
+                      </tr>
+                      <tr>
+                        <td>D - Idle</td>
+                        <td>D - Idle</td>
+                        <td>D - Idle</td>
+                      </tr>
+                    </table>
+                    That's it. So, a 1A code corresponds to a leisure activity about text. I also make sure to diversify
+                    tasks so that no task takes all the day, even if it should. The amount of pulses also is a deciding
+                    factor about whether I should move on, as if a task exceeds 30 pulses on the day, it's time to take
+                    a breath.
+              </div>
+          </div>
+        </div>
+        <div class="card flair-nx">
+          <div class="card-body-nx">
+              <div class="card-title">
+                <p>Guess I'll start this <span class="badge">19O04</span></p>
+              </div>
+              <div class="left card-text-long">
+                <p><span class="start-letter">I</span> will begin sharing thoughts about stuff in here chronologically.
+                   As you can see, these naxaserom about anything will be in little cards like these. As an introductory
+                   naxasero, this one will have nothing in it, per usual. It should start being interesting by the next one.
+                   Hope you'll gather anything by these. Since the page is in a static platform, these naxaserom will not
+                   contain personal things such as addresses or personal photos.
+                   Naxasero is a word that comes from my constructed language Sayala, and its definition is in the header.
+                   It's basically a blog, but there's a rule: at most 15 lines of content and a marked initial letter.
+                   That is what defines a naxasero from anything else. Also, you may think, what even is that time tag on
+                   this? That's by another person's idea, Devine, my friend. The Horarie System, more specifically, the
+                   Arvelie calendar. I'll leave a link to it on this naxasero. Until the next one~</p>
+              </div>
+              <div class="card-action-nx">
+                <a href="https://wiki.xxiivv.com/#time" class="link" target="_blank">Horarie System</a>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+        <div class="left">
+            <p><img class="logo" height="32" width="32" src="icons/me.svg" alt="My Icon" style="margin-right: 20px;"> Lains © 2017-<span id="year">20xx</span></p>
+        </div>
+        <div class="right">
+            <a class="icon-link patreon" href="https://www.patreon.com/lainsce"><i class="fab fa-fw fa-patreon"></i></a>
+            <a class="icon-link github" href="https://github.com/lainsce"><i class="fab fa-fw fa-github"></i></a>
+            <a class="icon-link twitter" href="https://twitter.com/lainsdev"><i class="fab fa-fw fa-twitter"></i></a>
+        </div>
+    </footer>
+    <script type="text/javascript"
+      src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript">
+      $(function () {
+        $("#year").text((new Date).getFullYear());
+      });
+
+      function arvelie (date = new Date()) {
+        const start = new Date(date.getFullYear(), 0, 0)
+        const diff = (date - start) + ((start.getTimezoneOffset() - date.getTimezoneOffset()) * 60 * 1000)
+        const doty = Math.floor(diff / 86400000) - 1
+        const l = Math.floor(((doty) / 364) * 26)
+        const y = date.getFullYear().toString().substr(2, 2)
+        const m = doty === 364 || doty === 365 ? '+' : String.fromCharCode(97 + l).toUpperCase()
+        const d = `${(doty === 365 ? 1 : doty === 366 ? 2 : (doty % 14)) + 1}`.padStart(2, '0')
+        return `${y}${m}${d}`
+      }
+      function neralie (d = new Date(), e = new Date(d)) {
+        const ms = e - d.setHours(0, 0, 0, 0)
+        const val = (ms / 8640 / 10000).toFixed(6)
+        return `${val.substr(2, 3)}:${val.substr(5, 3)}`
+      }
+      function arne(){
+        today = new Date();
+        document.getElementById('time').innerHTML = arvelie(today);
+        document.getElementById('date').innerHTML = neralie(today);
+      };
+      window.setInterval(arne, 1000);
+    </script>
+  </body>
+</html>
