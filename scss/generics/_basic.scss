@@ -427,6 +427,13 @@ html {
     background-position: top;
     background-size: cover;
   }
+
+  &.card-flair-niu {
+    border-top: 8px solid $niu;
+    background-image: linear-gradient(0deg, lighten($niu, 40%), rgba(lighten($niu, 40%), 0.3)), url(https://github.com/lainsce/niu/raw/master/data/shot.png);
+    background-position: top;
+    background-size: cover;
+  }
 }
 
 .nav {
