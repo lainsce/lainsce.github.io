@@ -29,15 +29,14 @@
 
 body,
 html {
-  @include font($size: 1.1rem, $weight: 400);
+  @include font($size: 1.1rem, $weight: 400, $color: $fg, $lh: 1.66rem);
   -webkit-font-smoothing: antialiased;
-  color: $fg;
   display: grid;
   grid-column: 1;
   margin: 0;
   padding: 0;
   overflow-x: hidden;
-  text-rendering: optimizeSpeed;
+  text-rendering: optimizeLegibility;
   z-index: 1;
 }
 
