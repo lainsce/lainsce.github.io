@@ -29,7 +29,7 @@
 
 body,
 html {
-  @include font($size: 1.1rem, $weight: 400, $color: $fg, $lh: 1.66rem);
+  @include font($size: 1.1rem, $weight: inherit, $color: $fg, $lh: 1.66rem);
   -webkit-font-smoothing: antialiased;
   display: grid;
   grid-column: 1;
@@ -406,77 +406,77 @@ html {
 
   &.card-flair-aesop {
     border-top: 8px solid $aesop;
-    background-image: linear-gradient(0deg, $aesop, rgba($aesop, 0.3)), url(https://github.com/lainsce/aesop/raw/master/data/shot.png);
+    background-image: linear-gradient(0deg, $aesop, rgba($aesop, 0.3)), url('../images/projects/aesop.png');
     background-position: top;
     background-size: cover;
   }
 
   &.card-flair-notejot {
     border-top: 8px solid $notejot;
-    background-image: linear-gradient(0deg, $notejot, rgba($notejot, 0.3)), url(https://github.com/lainsce/notejot/raw/master/data/shot.png);
+    background-image: linear-gradient(0deg, $notejot, rgba($notejot, 0.3)), url('../images/projects/notejot.png');
     background-position: top;
     background-size: cover;
   }
 
   &.card-flair-quilter {
     border-top: 8px solid $quilter;
-    background-image: linear-gradient(0deg, $quilter, rgba($quilter, 0.3)), url(https://github.com/lainsce/quilter/raw/master/data/images/shot.png);
+    background-image: linear-gradient(0deg, $quilter, rgba($quilter, 0.3)), url('../images/projects/quilter.png');
     background-position: top;
     background-size: cover;
   }
 
   &.card-flair-coin {
     border-top: 8px solid $coin;
-    background-image: linear-gradient(0deg, $coin, rgba($coin, 0.3)), url(https://github.com/lainsce/coin/raw/master/data/shot.png);
+    background-image: linear-gradient(0deg, $coin, rgba($coin, 0.3)), url('../images/projects/coin.png');
     background-position: top;
     background-size: cover;
   }
 
   &.card-flair-palaura {
     border-top: 8px solid $palaura;
-    background-image: linear-gradient(0deg, $palaura, rgba($palaura, 0.3)), url(https://github.com/lainsce/palaura/raw/master/data/shot.png);
+    background-image: linear-gradient(0deg, $palaura, rgba($palaura, 0.3)), url('../images/projects/palaura.png');
     background-position: top;
     background-size: cover;
   }
 
   &.card-flair-yishu {
     border-top: 8px solid $yishu;
-    background-image: linear-gradient(0deg, $yishu, rgba($yishu, 0.3)), url(https://github.com/lainsce/yishu/raw/master/data/shot.png);
+    background-image: linear-gradient(0deg, $yishu, rgba($yishu, 0.3)), url('../images/projects/yishu.png');
     background-position: top;
     background-size: cover;
   }
 
   &.card-flair-beemy {
     border-top: 8px solid $beemy;
-    background-image: linear-gradient(0deg, lighten($beemy, 40%), rgba(lighten($beemy, 40%), 0.3)), url(https://github.com/lainsce/beemy/raw/master/data/shot.png);
+    background-image: linear-gradient(0deg, lighten($beemy, 40%), rgba(lighten($beemy, 40%), 0.3)), url('../images/projects/beemy.png');
     background-position: top;
     background-size: cover;
   }
 
   &.card-flair-timetable {
     border-top: 8px solid $timetable;
-    background-image: linear-gradient(0deg, lighten($timetable, 40%), rgba(lighten($timetable, 40%), 0.3)), url(https://github.com/lainsce/timetable/raw/master/data/shot.png);
+    background-image: linear-gradient(0deg, lighten($timetable, 40%), rgba(lighten($timetable, 40%), 0.3)), url('../images/projects/timetable.png');
     background-position: top;
     background-size: cover;
   }
 
   &.card-flair-dotmatrix {
     border-top: 8px solid $dotmatrix;
-    background-image: linear-gradient(0deg, lighten($dotmatrix, 25%), rgba(lighten($dotmatrix, 25%), 0.3)), url(https://github.com/lainsce/dot-matrix/raw/master/data/shot.png);
+    background-image: linear-gradient(0deg, lighten($dotmatrix, 25%), rgba(lighten($dotmatrix, 25%), 0.3)), url('../images/projects/dotmatrix.png');
     background-position: top;
     background-size: cover;
   }
 
   &.card-flair-reganam {
     border-top: 8px solid $reganam;
-    background-image: linear-gradient(0deg, lighten($reganam, 40%), rgba(lighten($reganam, 40%), 0.3)), url(https://github.com/lainsce/reganam/raw/master/data/shot.png);
+    background-image: linear-gradient(0deg, lighten($reganam, 40%), rgba(lighten($reganam, 40%), 0.3)), url('../images/projects/reganam.png');
     background-position: top;
     background-size: cover;
   }
 
   &.card-flair-niu {
     border-top: 8px solid $niu;
-    background-image: linear-gradient(0deg, lighten($niu, 40%), rgba(lighten($niu, 40%), 0.3)), url(https://github.com/lainsce/niu/raw/master/data/shot.png);
+    background-image: linear-gradient(0deg, lighten($niu, 40%), rgba(lighten($niu, 40%), 0.3)), url('../images/projects/niu.png');
     background-position: top;
     background-size: cover;
   }
@@ -517,7 +517,7 @@ html {
   &:before {
     background-attachment: fixed;
     background-color: #fff;
-    background-image: linear-gradient(rgba($bg,.2),rgba($bg,.5),rgba($bg,1)), url(https://images.unsplash.com/photo-1523002010469-ea85cb48674b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9);
+    background-image: linear-gradient(rgba($bg,.2),rgba($bg,.5),rgba($bg,1)), url('../images/photo.jpeg');
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -539,7 +539,7 @@ html {
   &:before {
     background-attachment: fixed;
     background-color: #fff;
-    background-image: linear-gradient(rgba($bg,.2),rgba($bg,.5),rgba($bg,1)), url(https://images.unsplash.com/photo-1523002010469-ea85cb48674b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9);
+    background-image: linear-gradient(rgba($bg,.2),rgba($bg,.5),rgba($bg,1)), url('../images/photo.jpeg');
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
