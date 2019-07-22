@@ -240,11 +240,10 @@ DATE  CODE  DESC                  BEATS
       }
       function arne(){
         today = new Date();
-        document.getElementById('date').innerHTML = arvelie(today);
-        document.getElementById('time').innerHTML = neralie(today);
+        document.getElementById('time').innerHTML = arvelie(today);
+        document.getElementById('date').innerHTML = neralie(today);
       };
       window.setInterval(arne, 1000);
-
       const gridClass = 'card-holder-nx';
       const itemClass = 'card';
       const grid = document.getElementsByClassName(gridClass);
@@ -271,7 +270,7 @@ DATE  CODE  DESC                  BEATS
       }
       window.addEventListener('resize', recalc);
       window.addEventListener('load', recalc);
-      recalc();
+      recalc()
     </script>
   </body>
 </html>
