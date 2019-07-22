@@ -85,10 +85,6 @@ html {
   display: inline-block;
 }
 
-.tooltip {
-  margin-top: 10px;
-}
-
 .tooltip .link {
     color: $bg;
 
@@ -486,31 +482,55 @@ html {
 }
 
 .nav {
-  float: left;
+    position: fixed;
+    top: 30px;
+    left: 30px;
+    width: calc(100% - 60px);
+    padding-bottom: 30px;
+    border-bottom: 2px solid rgba($fg, 0.5);
+    height: 30px;
+    transition: border 500ms;
+    vertical-align: middle;
 }
 
 .nav-icon {
+  display: inline-block;
   float: left;
-  margin: 15px;
   width: 32px;
   height: 32px;
   padding: 5px;
+
+  border: 1px solid transparent;
 }
 
 .nav-icon:hover {
-  background: $outline;
-  color: $bg;
+  border: 1px solid transparent;
+  color: $fg;
 }
 
 .nav-link {
-  float: left;
-  vertical-align: middle;
-  padding: 8px;
+    display: inline-block;
+    margin-left: 5px;
+    margin-top: 6px;
+    padding-left: 35px;
+    background-size: 30px;
+    background-position: left top;
+    background-repeat: no-repeat;
+    transition: all 250ms;
+    padding-right: 8px;
+    border-radius: 8px;
+    border: 1px solid transparent;
+
+    background-image: url("data:image/svg+xml,%3Csvg class='vector' width='300px' height='300px' xmlns='http://www.w3.org/2000/svg' baseProfile='full' version='1.1'%3E%3Cpath id='layer_1' d='M60,90 L60,90 L240,90 M60,120 L60,120 L240,120 M60,180 L60,180 L135,180 M60,150 L60,150 L180,150 M210,150 L210,150 L240,150 M170,180 L240,180' style='stroke: rgb(0, 0, 0); stroke-width: 15; stroke-linecap: round; stroke-linejoin: round; fill: none;'%3E%3C/path%3E%3C/svg%3E");
+
+    &.inside {
+        border: 1px solid $fg;
+    }
 }
 
 .nav-link:hover {
-  background: $outline;
-  color: $bg;
+  border: 1px solid $outline;
+  color: $fg;
 }
 
 .hero {
@@ -741,19 +761,4 @@ a.icon {
   &.twitter:hover {
       color: $twitter;
   }
-}
-
-.left {
-  float: left;
-  text-align:left;
-}
-
-.center {
-  float: center;
-  text-align:center;
-}
-
-.right {
-  float: right;
-  text-align:right;
 }

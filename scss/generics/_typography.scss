@@ -1,13 +1,16 @@
-.right {
-  float: right;
-}
-
 .left {
   float: left;
+  text-align:left;
 }
 
-.middle {
+.center {
   float: center;
+  text-align:center;
+}
+
+.right {
+  float: right;
+  text-align:right;
 }
 
 ol li,
@@ -22,11 +25,11 @@ a {
 }
 
 h1 {
-  @include font($size: 3.66rem, $weight: 700);
+  @include medium-font($size: 3.66rem, $weight: 300);
 }
 
 h2 {
-  @include font($size: 3rem, $weight: 400);
+  @include medium-font($size: 3rem, $weight: 300);
 }
 
 h3 {
@@ -146,11 +149,15 @@ samp {
 }
 
 .time {
-  margin-right: 40px;
-  margin-top: 23px;
-  background: $bg;
-  padding: 8px;
-  border-radius: 8px;
+  display: inline-block;
+    margin-left: 5px;
+    margin-top: 6px;
+    padding-left: 8px;
+    transition: all 250ms;
+    padding-right: 8px;
+    border-radius: 8px;
+    border: 1px solid transparent;
+    background-color: $bg;
 }
 
 .dim-label {
