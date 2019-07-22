@@ -137,9 +137,9 @@ html {
 }
 
 .badge {
-    @include font($size: .9rem, $weight: 700, $color: $badge, $lh: .8rem);
+    @include font($size: .9rem, $weight: 700, $lh: .8rem);
     border-radius: 8px;
-    background-color: #000;
+    background-color: $badge;
     color: $bg;
     display: inline-block;
     padding: 10px;
