@@ -35,7 +35,7 @@
         <a href="/blog">Naxasero</a>
       </div>
       <div class="right time tooltip">
-        <span id=time></span> <span id=date></span>
+        <span id=date></span> <span id=time></span>
         <span class="tooltiptext"><a class="link" href="https://wiki.xxiivv.com/#time">Learn about this</a></span>
       </div>
     </nav>
@@ -222,23 +222,7 @@ DATE  CODE  DESC                  BEATS
       $(function () {
         today = new Date();
         $("#year").text(arvelie(today));
-        var things = ["Patron", "Backer", "Booster", "Supporter", "Big Fan"];
-        $("#thing").text(things[Math.floor(Math.random() * things.length)]);
       });
-      $(function yearsSince(epoch) {
-        var diff = new Date() - new Date(epoch);
-        var age = Math.floor(diff / 311236000000);
-        return age;
-      });
-      var birth = new Date('1993-06-06');
-      function getAge(birth) {
-        ageMS = Date.parse(Date()) - Date.parse(birth);
-        age = new Date();
-        age.setTime(ageMS);
-        ageYear = age.getFullYear() - 1970;
-        return ageYear;
-      }
-      document.getElementById('age').innerHTML = getAge(birth);
       function arvelie (date = new Date()) {
         const start = new Date(date.getFullYear(), 0, 0)
         const diff = (date - start) + ((start.getTimezoneOffset() - date.getTimezoneOffset()) * 60 * 1000)
@@ -263,9 +247,7 @@ DATE  CODE  DESC                  BEATS
 
       const gridClass = 'card-holder-nx';
       const itemClass = 'card';
-
       const grid = document.getElementsByClassName(gridClass);
-
       const recalc = () => {
         Array.from(grid).forEach(gr => {
           // const items = gr.querySelectorAll(`:scope > .${itemClass}`);
@@ -284,12 +266,9 @@ DATE  CODE  DESC                  BEATS
               span = parseInt(Math.ceil(h + gap));
             }
             it.style.setProperty('grid-row-end', `span ${span}`);
-
           })
         })
       }
-
-
       window.addEventListener('resize', recalc);
       window.addEventListener('load', recalc);
       recalc()
