@@ -202,16 +202,24 @@ html {
     padding-top: 25px;
     padding-bottom: 25px;
     margin: auto 25px;
+}
 
-  & h5 {
-    color: $fg;
-  }
+.card-header-small {
+    background-color: darken($bg, 10%);
+    border: 1px $outline solid;
+    border-radius: 8px;
+    text-align: center;
+    grid-row: 1;
+    grid-column: 1 / 5;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    margin: 25px;
 }
 
 .card-holder {
   display: grid;
   grid-column: 1;
-  grid-template-columns: repeat(auto-fill, minmax(300px, auto));
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   grid-auto-rows: auto;
   grid-gap: 1rem;
   padding-top: 50px;
