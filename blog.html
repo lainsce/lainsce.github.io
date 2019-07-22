@@ -208,7 +208,7 @@ DATE  CODE  DESC                  BEATS
     </div>
     <footer class="footer">
         <div class="left">
-            <p><img class="logo" height="32" width="32" src="icons/me.svg" alt="My Icon" style="margin-right: 20px;"> Lains © 2017-<span id="year">20xx</span></p>
+            <p><img class="logo" height="32" width="32" src="icons/me.svg" alt="My Icon" style="margin-right: 20px;"> Lains © 17M05—<span id="year">xxxxxx</span></p>
         </div>
         <div class="right">
             <a class="icon-link patreon" href="https://www.patreon.com/lainsce"><i class="fab fa-fw fa-patreon"></i></a>
@@ -220,9 +220,25 @@ DATE  CODE  DESC                  BEATS
       src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript">
       $(function () {
-        $("#year").text((new Date).getFullYear());
+        today = new Date();
+        $("#year").text(arvelie(today));
+        var things = ["Patron", "Backer", "Booster", "Supporter", "Big Fan"];
+        $("#thing").text(things[Math.floor(Math.random() * things.length)]);
       });
-
+      $(function yearsSince(epoch) {
+        var diff = new Date() - new Date(epoch);
+        var age = Math.floor(diff / 311236000000);
+        return age;
+      });
+      var birth = new Date('1993-06-06');
+      function getAge(birth) {
+        ageMS = Date.parse(Date()) - Date.parse(birth);
+        age = new Date();
+        age.setTime(ageMS);
+        ageYear = age.getFullYear() - 1970;
+        return ageYear;
+      }
+      document.getElementById('age').innerHTML = getAge(birth);
       function arvelie (date = new Date()) {
         const start = new Date(date.getFullYear(), 0, 0)
         const diff = (date - start) + ((start.getTimezoneOffset() - date.getTimezoneOffset()) * 60 * 1000)
@@ -240,8 +256,8 @@ DATE  CODE  DESC                  BEATS
       }
       function arne(){
         today = new Date();
-        document.getElementById('time').innerHTML = arvelie(today);
-        document.getElementById('date').innerHTML = neralie(today);
+        document.getElementById('date').innerHTML = arvelie(today);
+        document.getElementById('time').innerHTML = neralie(today);
       };
       window.setInterval(arne, 1000);
 
