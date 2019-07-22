@@ -181,13 +181,7 @@ html {
     &.flair-nx {
         border-top: 8px solid $link;
         position: relative;
-
-        &.left-pane {
-            grid-column: 1;
-        }
-        &.right-pane {
-            grid-column: 2;
-        }
+	    display: inline-block;
     }
 }
 
@@ -219,30 +213,36 @@ html {
 }
 
 .card-holder-nx {
+  --cols: 12;
+  --gap: 16;
+  --raster: 1;
+  margin: 1rem;
   display: grid;
-  grid: auto-flow / 1fr 1fr 1fr;
-  grid-gap: 1rem;
-  padding-top: 50px;
-  padding-bottom: 50px;
-  margin: auto 25px;
-}
+  grid-template-columns: repeat(var(--cols, 12), calc((100% - 1px * var(--gap, 20) * (var(--cols, 12) - 1)) / var(--cols, 12)));
+  grid-auto-rows: 1px;
+  grid-gap: 0px calc(1px * var(--gap, 20));
 
-@media screen and (max-width:500px) {
-  .card-holder-nx {
-    grid: max-content / 340px;
-    grid-gap: 1em;
-    padding: 0;
-    margin: 0;
-    width: 100vh;
+  @media screen and (max-width: 900px) and (min-width: 600px) {
+    --cols: 8;
+  }
+  @media screen and (max-width: 599px) {
+    --cols: 4;
+  }
+
+  margin-top: calc(1px * var(--gap, 20));
+
+  & > .card {
+    grid-column-end: span 4;
+    grid-row-end: span 400;
+    margin-top: calc(1px * var(--gap, 20));
+    display: flex;
+    flex-direction: column;
+    justify-items: stretch;
   }
 }
 
-@media screen and (min-width:501px) and (max-width:1023px) {
-  .card-holder-nx {
-    grid: auto-flow / 1fr;
-    padding: 0;
-    margin: 20px;
-  }
+.card-holder-nx > .card > div {
+  flex-basis: 100%;
 }
 
 @media screen and (max-width:500px) {
@@ -309,7 +309,7 @@ html {
 }
 
 .card-title {
-  @include font($size: 1.4rem, $weight: 700, $color: $fg, $lh: .6rem);
+  @include font($size: 1.5rem, $weight: 700, $color: $fg, $lh: .6rem);
   vertical-align: middle;
   padding: 15px 0;
   border-bottom: 2px dashed $fg;
