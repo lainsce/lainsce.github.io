@@ -53,7 +53,7 @@ h6 {
 
 pre {
   background-color: darken($bg, 5%);
-  border: 3px dashed darken($bg, 30%);
+  border-radius: 8px;
   padding: 10px;
   margin: 5px;
   overflow: auto;
