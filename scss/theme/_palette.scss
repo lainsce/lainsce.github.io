@@ -3,17 +3,17 @@
  *****************/
 
 // Swatches
-$fg: #000000;
-$bg: #FFFFFF;
+$fg: #333333;
+$bg: #F4F4F4;
 $card-body: #FFFFFF;
 $outline: #888888;
 $link: #00DAC7;
 $badge: #444444;
 
 @media (prefers-color-scheme: dark) {
-  $fg: #FFFFFF;
-  $bg: #000000;
-  $card-body: #000000;
+  $fg: #F4F4F4;
+  $bg: #333333;
+  $card-body: #333333;
   $outline: #888888;
   $link: #00B8A5;
   $badge: #CCCCCC;
