@@ -3,7 +3,6 @@
 
 <!DOCTYPE html>
 <html lang="en-us">
-
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,25 +14,21 @@
     <link rel="manifest" href="/site.webmanifest">
     <meta name="msapplication-TileColor" content="#406794">
     <meta name="theme-color" content="#FFFFFF">
-    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono&amp;subset=latin-ext" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/solid.css" integrity="sha384-r/k8YTFqmlOaqRkZuSiE9trsrDXkh07mRaoGBMoDcmA58OHILZPsk29i2BsFng1B" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/brands.css" integrity="sha384-BKw0P+CQz9xmby+uplDwp82Py8x1xtYPK3ORn/ZSoe6Dk3ETP59WCDnX+fI1XCKK" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/fontawesome.css" integrity="sha384-4aon80D8rXCGx9ayDt85LbyUHeMWd3UiBaWliBlJ53yzm9hqN21A+o1pqoyK04h+" crossorigin="anonymous">
     <link type="text/css" rel="stylesheet" href="scss/main.css">
-
     <!-- Avoid FOUC -->
-
   </head>
   <body>
     <nav class="nav fixed-top" tabindex="-1">
       <div class="nav-icon">
           <a href="/">
-            <img class="logo" height="32" width="32" src="icons/me.svg" alt="My
-              Icon">
+            <img class="logo" height="32" width="32" src="icons/me.svg" alt="My Icon">
           </a>
       </div>
       <div class="left" style="margin-top: 23px;">
-        <a href="/blog">NAXASERO</a>
+        <a href="/blog">Naxasero</a>
       </div>
       <div class="right time tooltip">
         <span id=time></span> <span id=date></span>
@@ -383,7 +378,6 @@
         return ageYear;
       }
       document.getElementById('age').innerHTML = getAge(birth);
-
       function arvelie (date = new Date()) {
         const start = new Date(date.getFullYear(), 0, 0)
         const diff = (date - start) + ((start.getTimezoneOffset() - date.getTimezoneOffset()) * 60 * 1000)

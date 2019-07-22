@@ -80,7 +80,8 @@ html {
   @include font($size: 1.4rem, $weight: 700, $color: $fg);
   background-color: $link;
   border-radius: 8px;
-  padding: 5px;
+  padding: 0 8px;
+  margin-right: 6px;
   display: inline-block;
 }
 
@@ -184,9 +185,19 @@ html {
 	    display: inline-block;
     }
 }
+.four-card {
+    background-color: lighten($fg, 5%);
+    color: #FFF;
+    border-top: 8px darken($link, 15%) solid;
+    border-radius: 8px;
+    margin: 5rem auto;
+    width: 50%;
+    line-height: 3rem;
+    padding: 4rem;
+}
 
 .card-header {
-    background-color: darker($bg, 15%);
+    background-color: darken($bg, 15%);
     border: 1px $outline solid;
     border-radius: 8px;
     text-align: center;
@@ -279,12 +290,12 @@ html {
 }
 
 .card-text {
-  display: block;
+  display: inline-block;
   padding: 24px 0;
 }
 
 .card-text-long {
-  display: block;
+  display: inline-block;
   height:100%;
   padding: 24px 0;
 }
@@ -500,13 +511,13 @@ html {
 }
 
 .hero {
-  height: 55vh;
+  height: calc(100vh - 220px);
   max-width: 100vw;
 
   &:before {
     background-attachment: fixed;
     background-color: #fff;
-    background-image: linear-gradient(rgba($bg,.7),rgba($bg,.5),rgba($bg,1)), url(https://images.unsplash.com/photo-1521334729279-b178069c8157?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=048d4c4fa407c6788f08d965735f60f3&auto=format&fit=crop&w=1347&q=80);
+    background-image: linear-gradient(rgba($bg,.2),rgba($bg,.5),rgba($bg,1)), url(https://images.unsplash.com/photo-1523002010469-ea85cb48674b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -528,12 +539,12 @@ html {
   &:before {
     background-attachment: fixed;
     background-color: #fff;
-    background-image: linear-gradient(rgba($bg,.7),rgba($bg,.5),rgba($bg,1)), url(https://images.unsplash.com/photo-1521334729279-b178069c8157?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=048d4c4fa407c6788f08d965735f60f3&auto=format&fit=crop&w=1347&q=80);
+    background-image: linear-gradient(rgba($bg,.2),rgba($bg,.5),rgba($bg,1)), url(https://images.unsplash.com/photo-1523002010469-ea85cb48674b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
     content: "";
-    height: 40vh;
+    height: 30vh;
     left: 0;
     position: fixed;
     top: 0;
@@ -544,14 +555,17 @@ html {
 }
 
 .hero-content {
-  display: grid;
-  grid-column: 1;
-  grid-template-columns: auto;
-  grid-template-rows: auto;
-  grid-gap: 0.5rem;
-  max-width: 100vw;
-  margin-top: 1rem;
-  z-index: 1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -75%);
+}
+
+.hero-content-small {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -200%);
 }
 
 .link {
