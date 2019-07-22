@@ -221,6 +221,7 @@ html {
   padding-top: 50px;
   padding-bottom: 50px;
   margin: auto 25px;
+  align-items: start;
 }
 
 .card-holder-nx {
@@ -278,8 +279,10 @@ html {
 }
 
 .card-body {
-  display: block;
-  height: 200px;
+  display: grid;
+  padding: 15px;
+  grid-row-start: 2;
+  grid-column-start: 1;
 }
 
 .card-body-nx {
@@ -301,10 +304,8 @@ html {
 }
 
 .card-action {
-  background-color: darken($bg, 2%);
-  border-radius: 0px 0px 8px 8px;
-  border-top: 1px $outline solid;
-  height: 100px;
+  grid-row-start: 3;
+  grid-column-start: 1;
 }
 
 .card-action-nx {
@@ -353,6 +354,8 @@ html {
 .card-subtitle {
   @include font($size: 1rem, $weight: 700, $color: $fg, $lh: .8rem);
   padding: 15px 0;
+  grid-row-start: 1;
+  grid-column-start: 1;
 }
 
 .button {
@@ -593,6 +596,58 @@ html {
   }
 }
 
+.appcenter {
+    background-position: center center;
+    background-size: cover;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin: 20px;
+    margin-left: 0px;
+    margin-right: 100px;
+    float: left;
+    opacity: 1.0;
+    background-image: url('../images/brands/appcenter.png');
+
+      &:hover {
+          filter: invert(48%) sepia(13%) saturate(3207%) hue-rotate(250deg) brightness(60%) contrast(70%);
+      }
+
+      &::before {
+        content: "AppCenter";
+        color: black;
+        padding: 33px;
+        line-height: 85%;
+        transition: all 250ms;
+      }
+}
+
+.flathub {
+    background-position: center center;
+    background-size: cover;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin: 20px;
+    margin-left: 15px;
+    margin-right: 100px;
+    float: left;
+    opacity: 1.0;
+    background-image: url('../images/brands/flathub.png');
+
+      &:hover {
+          filter: invert(48%) sepia(13%) saturate(3207%) hue-rotate(170deg) brightness(80%) contrast(70%);
+      }
+
+      &::before {
+        content: "FlatHub";
+        color: black;
+        padding: 33px;
+        line-height: 85%;
+        transition: all 250ms;
+      }
+}
+
 .animated {
   transition: .2s cubic-bezier(0.46, 0.03, 0.52, 0.96);
 }
@@ -615,6 +670,40 @@ img {
   position: relative;
   max-width: 100vw;
   z-index: 2;
+}
+
+a.icon {
+    background-position: center center;
+    background-size: cover;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    float: right;
+    margin-left: 10px;
+    margin-top: 5px;
+    opacity: 1.0;
+
+    &.github {
+      background-image: url('../images/brands/github.png');
+
+      &:hover {
+          opacity: 0.7;
+      }
+    }
+    &.patreon {
+      background-image: url('../images/brands/patreon.png');
+
+      &:hover {
+          opacity: 0.7;
+      }
+    }
+    &.twitter {
+      background-image: url('../images/brands/twitter.png');
+
+      &:hover {
+          opacity: 0.7;
+      }
+    }
 }
 
 .footer-shadow {
