@@ -3,7 +3,7 @@
 
 <!DOCTYPE html>
 <html lang="en-us">
-  <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Lains">
@@ -11,267 +11,209 @@
     <meta property='og:title' content='Lains'>
     <meta property='og:image' content='icons/me.png'>
     <title>Lains</title>
-    <link rel="manifest" href="/site.webmanifest">
-    <meta name="msapplication-TileColor" content="#406794">
-    <meta name="theme-color" content="#FFFFFF">
     <link async type="text/css" rel="stylesheet" href="scss/main.css">
     <!-- Avoid FOUC -->
-  </head>
-  <body>
+</head>
+<body>
     <nav class="nav">
-      <div class="nav-icon">
-          <a href="/">
-            <img class="logo" height="32" width="32" src="icons/me.svg" alt="My Icon">
-          </a>
-      </div>
-      <div class="nav-link left inside">
-        <a href="/blog">Naxasero</a>
-      </div>
-      <div class="right time">
-        <span id=date></span> <span id=time></span>
-      </div>
+        <div class="nav-icon">
+            <a href="/">
+                <img class="logo" height="32" width="32" src="icons/me.svg" alt="My Icon">
+            </a>
+        </div>
+        <div class="nav-link left inside">
+            <a href="/blog">Naxasero</a>
+        </div>
+        <div class="right time">
+            <span id=date></span> <span id=time></span>
+        </div>
     </nav>
     <main>
-      <div class="hero-small" align=center>
-      </div>
+        <div class="hero-small" align=center>
+        </div>
     </main>
     <div class="bg">
-      <h2>Naxasero</h2><br>
-      <p>Small blurbs of text almost each day</p><br>
-      <h4>19O01 ~ 19O14</h4>
-      <div class="card-holder-nx">
-        <div class="card flair-nx">
-          <div class="card-body-nx">
-              <div class="card-title">
-                <p>Website Redesign<span class="badge">19O07</span></p>
-              </div>
-              <div class="left card-text-long">
-                <p><span class="start-letter">T</span>he website has evolved. I've made some changes to accomodate for
-                the rain of naxaserom that will happen eventually. Someday, I will make a sidebar for these things. Maybe
-                when the O Month ends? Anyhow, I'll have to fit a sidebar. And with CSS and HTML, it's going to get tougher.
-                Mayhaps I'll look at templated sidebars. Or maybe I'll finally take courage, and implement this site as a
-                Riven database. Who knows? I've also reduced this site's size by almost 64%! It's incredible how fat
-                FontAwesome is! Almost 35MB just for icons to put on the site! It's too much for the new life I'm tracing,
-                of efficiency and KISS principle in every corner. I also, for some ungodly reason, was using links to images,
-                instead of saving them locally and linking via CSS. Such a waste! And also, if there's no good internet
-                connection, the site would look unfinished. All remedied!
-              </div>
-          </div>
-        </div>
-        <div class="card flair-nx">
-          <div class="card-body-nx">
-              <div class="card-title">
-                <p>Nataniev Way of Thinking<span class="badge">19O06</span></p>
-              </div>
-              <div class="left card-text-long">
-                <p><span class="start-letter">I</span> have been using the Nataniev systems for almost a week now
-                extensively, hiding Old World clocks and calendars whenever possible. It has shifted my perception
-                of time quite considerably. I feel like days take longer to complete, and cramming tasks in them is
-                quite easier. I dunno about the psychological effects of a longer day each day, but I'm thankful about
-                it. The old me would procastinate quite frequently, leaving days of my life without purpose or reason.
-                Now, after using it, I can only recommend it for fixing a procastination heavy brain, if you have one.
-                What I mainly feel, is that an amazing journey is ahead of me. With Niu assisting me, I don't have need
-                for the default time and date indicator in elementary OS. I can just ditch that. Mayhaps, I'll end the O
-                Month by figuring out a way to do notifications to rest or to stand every 15 and 30 pulses and add that
-                to Niu...
-              </div>
-          </div>
-        </div>
-        <div class="card flair-nx">
-          <div class="card-body-nx">
-              <div class="card-title">
-                <p>Clocks, and Calendars<span class="badge">19O05</span></p>
-              </div>
-              <div class="left card-text-long">
-                <p><span class="start-letter">T</span>oday, I've finished another app, called Niu. This app does one
-                    thing for me, and that is, it helps me use the Nataniev system in elementary OS. I've talked about
-                    the system, but never got to show how it works. It's composed of two concepts: Arvelie and
-                    Neralie. Both deal with timekeeping in a different way.
-                    <br><br>For Arvelie,<br>
-                    Each month has 2 weeks of 7 days, and each month is a letter of the alphabet.
-                    The 365th day of the year is the Year Day(+01), preceded by the Leap Day(+02) on leap years.<br>
-                    <pre><code>
-Jan/1 - A
-Jan/2 - B
-...
-Dec/2 - Z
-                    </code></pre><br>
-                    For example, now as of writing, it is 19O05. And my birthday was 93L03.
-                    (Mark that on your Arvelie calendar!)
-                    <br><br>For Neralie,<br>
-                    There is the concept of Beats and Pulses, and each of those custom measurements have values
-                    fixed on the second and are quite easy to understand:<br>
-                    <pre><code>
-1 s = 1.157 bs
-1 min = 69.42 bs
-1 bs = 86.4 s
-1 ps = 8.64 min
-1000 bs = 1 ps
-1000 ps = 1 day
-                    </code></pre><br>
-                    Neralie's notation is also quite simple:<br>
-                    <pre><code>
-[ps]:[bs]
-example: 945:127
-                    </code></pre><br>
-                    And here's cardinal points of interest for Neralie:<br>
-                    000:000 = 12 AM<br>
-                    250:000 = 6 AM<br>
-                    500:000 = 12 PM<br>
-                    750:000 = 6 PM<br>
-                    Anyhoo, hope you enjoyed learning about this system as much as I like it!
-              </div>
-          </div>
-        </div>
-        <div class="card flair-nx">
-          <div class="card-body-nx">
-              <div class="card-title">
-                <p>Workflow for the Day <span class="badge">19O04</span></p>
-              </div>
-              <div class="left card-text-long">
-                <p><span class="start-letter">E</span>very day, I try to follow a strict program almost like a robot,
-                    but this programming is good for what I do, which is code at home. I always try to do at least
-                    one thing, and I have done so since 19O01 (after restarting due to backup failures). It's been a
-                    strange yet fulfilling journey. I also make sure to log it into a (big by now) text file which is
-                    structured like a Markdown table, with the task code for the day, the day task, and how many beats
-                    were used for that task.
-                    <br><br>An example:<br>
-                    <pre><code>
-
-DATE  CODE  DESC                  BEATS
-19O04 1A    Logged a naxasero     7
-  *   1B    Clark New Album       2
-  *   2A    Write parser for this 15
-  *   1A    Logged a naxasero     7
-
-                    </code></pre><br>
-                    As you can see, every task has a code. To understand my codes, you need to understand that I
-                    divide things into three sections: Leisure, Work, and Research.
-                    Each of those is a number; respectively, 1, 2, and 3.
-                    A Table for each level and code follows:<br>
-                    </p>
-                    <table class=".table">
-                      <tr>
-                        <th>Leisure (1)</th>
-                        <th>Work (2)</th>
-                        <th>Research (3)</th>
-                      </tr>
-                      <tr>
-                        <td>A - Text</td>
-                        <td>A - Code</td>
-                        <td>A - Read</td>
-                      </tr>
-                      <tr>
-                        <td>B - Audio</td>
-                        <td>B - Build</td>
-                        <td>B - Listen</td>
-                      </tr>
-                      <tr>
-                        <td>C - Video</td>
-                        <td>C - Design</td>
-                        <td>C - Explore</td>
-                      </tr>
-                      <tr>
-                        <td>D - Idle</td>
-                        <td>D - Idle</td>
-                        <td>D - Idle</td>
-                      </tr>
-                    </table><br>
-                    That's it. So, a 1A code corresponds to a leisure activity about text. I also make sure to diversify
-                    tasks so that no task takes all the day, even if it should. The amount of beats also is a deciding
-                    factor about whether I should move on, as if a task exceeds 30 beats on the day, it's time to take
-                    a break.
-              </div>
-          </div>
-        </div>
-        <div class="card flair-nx">
-          <div class="card-body-nx">
-              <div class="card-title">
-                <p>Guess I'll start this <span class="badge">19O04</span></p>
-              </div>
-              <div class="left card-text-long">
-                <p><span class="start-letter">I</span> will begin sharing thoughts about stuff in here chronologically.
-                   As you can see, these naxaserom about anything will be in little cards like these. As an introductory
-                   naxasero, this one will have nothing in it, per usual. It should start being interesting by the next one.
-                   Hope you'll gather anything by these. Since the page is in a static platform, these naxaserom will not
-                   contain personal things such as addresses or personal photos.
-                   Naxasero is a word that comes from my constructed language Sayala, and its definition is in the header.
-                   It's basically a blog, but there's a rule: at most 15 lines of content and a marked initial letter.
-                   That is what defines a naxasero from anything else. Also, you may think, what even is that time tag on
-                   this? That's by another person's idea, Devine, my friend. The Horarie System, more specifically, the
-                   Arvelie calendar. I'll leave a link to it on this naxasero. Until the next one~</p>
-              </div>
-              <div class="card-action-nx">
-                <a href="https://wiki.xxiivv.com/#time" class="link" target="_blank">Horarie System</a>
-              </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <footer class="footer">
-        <div class="left">
-            <p><img class="logo" height="32" width="32" src="icons/me.svg" alt="My Icon" style="margin-right: 20px;"> Lains © 17M05—<span id="year">xxxxxx</span></p>
-        </div>
-        <div class="right">
-            <a class="icon patreon" href="https://www.patreon.com/lainsce"></a>
-            <a class="icon github" href="https://github.com/lainsce"></a>
-            <a class="icon twitter" href="https://twitter.com/lainsdev"></a>
-        </div>
-    </footer>
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script type="text/javascript">
-      $(function () {
-        today = new Date();
-        $("#year").text(arvelie(today));
-      });
-      function arvelie (date = new Date()) {
-        const start = new Date(date.getFullYear(), 0, 0)
-        const diff = (date - start) + ((start.getTimezoneOffset() - date.getTimezoneOffset()) * 60 * 1000)
-        const doty = Math.floor(diff / 86400000) - 1
-        const l = Math.floor(((doty) / 364) * 26)
-        const y = date.getFullYear().toString().substr(2, 2)
-        const m = doty === 364 || doty === 365 ? '+' : String.fromCharCode(97 + l).toUpperCase()
-        const d = `${(doty === 365 ? 1 : doty === 366 ? 2 : (doty % 14)) + 1}`.padStart(2, '0')
-        return `${y}${m}${d}`
-      }
-      function neralie (d = new Date(), e = new Date(d)) {
-        const ms = e - d.setHours(0, 0, 0, 0)
-        const val = (ms / 8640 / 10000).toFixed(6)
-        return `${val.substr(2, 3)}:${val.substr(5, 3)}`
-      }
-      function arne(){
-        today = new Date();
-        document.getElementById('time').innerHTML = arvelie(today);
-        document.getElementById('date').innerHTML = neralie(today);
-      };
-      window.setInterval(arne, 1000);
-      const gridClass = 'card-holder-nx';
-      const itemClass = 'card';
-      const grid = document.getElementsByClassName(gridClass);
-      const recalc = () => {
-        Array.from(grid).forEach(gr => {
-          // const items = gr.querySelectorAll(`:scope > .${itemClass}`);
-          const items = gr.getElementsByClassName(itemClass);
-          Array.from(items)
-            .filter(el => el.parentElement === gr)
-            .forEach(it => {
-            it.style.setProperty('grid-row-end', 'span 1');
-            const h = parseInt(Math.ceil(it.children[0].getBoundingClientRect().height));
-            const gap = parseInt(getComputedStyle(it).getPropertyValue('--gap'));
-            const raster = !!parseInt(getComputedStyle(it).getPropertyValue('--raster'), 10)
-            let span;
-            if (raster) {
-              span = parseInt(Math.ceil((h + gap) / gap) * gap);
-            } else {
-              span = parseInt(Math.ceil(h + gap));
-            }
-            it.style.setProperty('grid-row-end', `span ${span}`);
-          })
-        })
-      }
-      window.addEventListener('resize', recalc);
-      window.addEventListener('load', recalc);
-      recalc()
-    </script>
-  </body>
-</html>
+        <h2>Naxasero</h2><br>
+        <p>Small blurbs of text almost each day</p><br>
+        <h4>19O01 ~ 19O14</h4>
+        <div class="card-holder-nx">
+            <div class="card flair-nx">
+                <div class="card-body-nx">
+                    <div class="card-title">
+                        <p>Website Redesign<span class="badge">19O07</span></p>
+                    </div>
+                    <div class="left card-text-long">
+                        <p><span class="start-letter">T</span>he website has evolved. I've made some changes to accomodate for
+                            the rain of naxaserom that will happen eventually. Someday, I will make a sidebar for these things. Maybe
+                            when the O Month ends? Anyhow, I'll have to fit a sidebar. And with CSS and HTML, it's going to get tougher.
+                            Mayhaps I'll look at templated sidebars. Or maybe I'll finally take courage, and implement this site as a
+                            Riven database. Who knows? I've also reduced this site's size by almost 64%! It's incredible how fat
+                            FontAwesome is! Almost 35MB just for icons to put on the site! It's too much for the new life I'm tracing,
+                            of efficiency and KISS principle in every corner. I also, for some ungodly reason, was using links to images,
+                            instead of saving them locally and linking via CSS. Such a waste! And also, if there's no good internet
+                            connection, the site would look unfinished. All remedied!
+                        </div>
+                    </div>
+                </div>
+                <div class="card flair-nx">
+                    <div class="card-body-nx">
+                        <div class="card-title">
+                            <p>Nataniev Way of Thinking<span class="badge">19O06</span></p>
+                        </div>
+                        <div class="left card-text-long">
+                            <p><span class="start-letter">I</span> have been using the Nataniev systems for almost a week now
+                                extensively, hiding Old World clocks and calendars whenever possible. It has shifted my perception
+                                of time quite considerably. I feel like days take longer to complete, and cramming tasks in them is
+                                quite easier. I dunno about the psychological effects of a longer day each day, but I'm thankful about
+                                it. The old me would procastinate quite frequently, leaving days of my life without purpose or reason.
+                                Now, after using it, I can only recommend it for fixing a procastination heavy brain, if you have one.
+                                What I mainly feel, is that an amazing journey is ahead of me. With Niu assisting me, I don't have need
+                                for the default time and date indicator in elementary OS. I can just ditch that. Mayhaps, I'll end the O
+                                Month by figuring out a way to do notifications to rest or to stand every 15 and 30 pulses and add that
+                                to Niu...
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card flair-nx">
+                        <div class="card-body-nx">
+                            <div class="card-title">
+                                <p>Clocks, and Calendars<span class="badge">19O05</span></p>
+                            </div>
+                            <div class="left card-text-long">
+                                <p><span class="start-letter">T</span>oday, I've finished another app, called Niu. This app does one
+                                    thing for me, and that is, it helps me use the Nataniev system in elementary OS. I've talked about
+                                    the system, but never got to show how it works. It's composed of two concepts: Arvelie and
+                                    Neralie. Both deal with timekeeping in a different way.
+                                    <br><br>For Arvelie,<br>
+                                    Each month has 2 weeks of 7 days, and each month is a letter of the alphabet.
+                                    The 365th day of the year is the Year Day(+01), preceded by the Leap Day(+02) on leap years.<br>
+                                    <pre><code>
+                                        Jan/1 - A
+                                        Jan/2 - B
+                                        ...
+                                        Dec/2 - Z
+                                    </code></pre><br>
+                                    For example, now as of writing, it is 19O05. And my birthday was 93L03.
+                                    (Mark that on your Arvelie calendar!)
+                                    <br><br>For Neralie,<br>
+                                    There is the concept of Beats and Pulses, and each of those custom measurements have values
+                                    fixed on the second and are quite easy to understand:<br>
+                                    <pre><code>
+                                        1 s = 1.157 bs
+                                        1 min = 69.42 bs
+                                        1 bs = 86.4 s
+                                        1 ps = 8.64 min
+                                        1000 bs = 1 ps
+                                        1000 ps = 1 day
+                                    </code></pre><br>
+                                    Neralie's notation is also quite simple:<br>
+                                    <pre><code>
+                                        [ps]:[bs]
+                                        example: 945:127
+                                    </code></pre><br>
+                                    And here's cardinal points of interest for Neralie:<br>
+                                    000:000 = 12 AM<br>
+                                    250:000 = 6 AM<br>
+                                    500:000 = 12 PM<br>
+                                    750:000 = 6 PM<br>
+                                    Anyhoo, hope you enjoyed learning about this system as much as I like it!
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card flair-nx">
+                            <div class="card-body-nx">
+                                <div class="card-title">
+                                    <p>Workflow for the Day <span class="badge">19O04</span></p>
+                                </div>
+                                <div class="left card-text-long">
+                                    <p><span class="start-letter">E</span>very day, I try to follow a strict program almost like a robot,
+                                        but this programming is good for what I do, which is code at home. I always try to do at least
+                                        one thing, and I have done so since 19O01 (after restarting due to backup failures). It's been a
+                                        strange yet fulfilling journey. I also make sure to log it into a (big by now) text file which is
+                                        structured like a Markdown table, with the task code for the day, the day task, and how many beats
+                                        were used for that task.
+                                        <br><br>An example:<br>
+                                        <pre><code>
+                                            DATE  CODE  DESC                  BEATS
+                                            19O04 1A    Logged a naxasero     7
+                                            *     1B    Clark New Album       2
+                                            *     2A    Write parser for this 15
+                                            *     1A    Logged a naxasero     7
+                                        </code></pre><br>
+                                        As you can see, every task has a code. To understand my codes, you need to understand that I
+                                        divide things into three sections: Leisure, Work, and Research.
+                                        Each of those is a number; respectively, 1, 2, and 3.
+                                        A Table for each level and code follows:<br>
+                                    </p>
+                                    <table class=".table">
+                                        <tr>
+                                            <th>Leisure (1)</th>
+                                            <th>Work (2)</th>
+                                            <th>Research (3)</th>
+                                        </tr>
+                                        <tr>
+                                            <td>A - Text</td>
+                                            <td>A - Code</td>
+                                            <td>A - Read</td>
+                                        </tr>
+                                        <tr>
+                                            <td>B - Audio</td>
+                                            <td>B - Build</td>
+                                            <td>B - Listen</td>
+                                        </tr>
+                                        <tr>
+                                            <td>C - Video</td>
+                                            <td>C - Design</td>
+                                            <td>C - Explore</td>
+                                        </tr>
+                                        <tr>
+                                            <td>D - Idle</td>
+                                            <td>D - Idle</td>
+                                            <td>D - Idle</td>
+                                        </tr>
+                                    </table><br>
+                                    That's it. So, a 1A code corresponds to a leisure activity about text. I also make sure to diversify
+                                    tasks so that no task takes all the day, even if it should. The amount of beats also is a deciding
+                                    factor about whether I should move on, as if a task exceeds 30 beats on the day, it's time to take
+                                    a break.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card flair-nx">
+                            <div class="card-body-nx">
+                                <div class="card-title">
+                                    <p>Guess I'll start this <span class="badge">19O04</span></p>
+                                </div>
+                                <div class="left card-text-long">
+                                    <p><span class="start-letter">I</span> will begin sharing thoughts about stuff in here chronologically.
+                                        As you can see, these naxaserom about anything will be in little cards like these. As an introductory
+                                        naxasero, this one will have nothing in it, per usual. It should start being interesting by the next one.
+                                        Hope you'll gather anything by these. Since the page is in a static platform, these naxaserom will not
+                                        contain personal things such as addresses or personal photos.
+                                        Naxasero is a word that comes from my constructed language Sayala, and its definition is in the header.
+                                        It's basically a blog, but there's a rule: at most 15 lines of content and a marked initial letter.
+                                        That is what defines a naxasero from anything else. Also, you may think, what even is that time tag on
+                                        this? That's by another person's idea, Devine, my friend. The Horarie System, more specifically, the
+                                        Arvelie calendar. I'll leave a link to it on this naxasero. Until the next one~</p>
+                                    </div>
+                                    <div class="card-action-nx">
+                                        <a href="https://wiki.xxiivv.com/#time" class="link" target="_blank">Horarie System</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <footer class="footer">
+                        <div class="left">
+                            <p><img class="logo" height="32" width="32" src="icons/me.svg" alt="My Icon" style="margin-right: 20px;"> Lains © 17M05—<span id="year">xxxxxx</span></p>
+                        </div>
+                        <div class="right">
+                            <a class="icon patreon" href="https://www.patreon.com/lainsce"></a>
+                            <a class="icon github" href="https://github.com/lainsce"></a>
+                            <a class="icon twitter" href="https://twitter.com/lainsdev"></a>
+                        </div>
+                    </footer>
+                    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+                    <script type="text/javascript" src="/js/main.js"></script>
+                </body>
+                </html>

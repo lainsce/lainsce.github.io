@@ -1,98 +1,95 @@
 /*****************
- *     RESET     *
- *****************/
+*     RESET     *
+*****************/
 
-*           { margin:0;padding:0;border:0;outline:0;border-spacing:0;text-decoration:none;font-weight:inherit;font-style:inherit;color:inherit;font-size:100%;font-family:inherit;vertical-align:baseline;list-style:none;border-collapse:collapse;-webkit-font-smoothing: antialiased;-moz-osx-font-smoothing: grayscale;}
-*:focus     { outline: none}
+* { margin:0;padding:0;border:0;outline:0;border-spacing:0;text-decoration:none;font-weight:inherit;font-style:inherit;color:inherit;font-size:100%;font-family:inherit;vertical-align:baseline;list-style:none;border-collapse:collapse;-webkit-font-smoothing: antialiased;-moz-osx-font-smoothing: grayscale;}
+*:focus { outline: none}
 
 /*****************
- * GENERAL STUFF *
- *****************/
+* GENERAL STUFF *
+*****************/
 * {
-  box-sizing: inherit;
-
-  &:after {
-    @include box-sizing(border-box);
-  }
-
-  &:before {
-    @include box-sizing(border-box);
-  }
+    box-sizing: inherit;
+    &:after {
+        @include box-sizing(border-box);
+    }
+    &:before {
+        @include box-sizing(border-box);
+    }
 }
-
 ::selection {
-  background-color: $link; /* WebKit/Blink Browsers */
+    background-color: $link; /* WebKit/Blink Browsers */
 }
 ::-moz-selection {
-  background-color: $link; /* Gecko Browsers */
+    background-color: $link; /* Gecko Browsers */
 }
 
 body,
 html {
-  @include font($size: 1.1rem, $weight: inherit, $color: $fg, $lh: 1.66rem);
-  -webkit-font-smoothing: antialiased;
-  display: grid;
-  grid-column: 1;
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden;
-  text-rendering: optimizeLegibility;
-  z-index: 1;
+    @include font($size: 1.1rem, $weight: inherit, $color: $fg, $lh: 1.66rem);
+    -webkit-font-smoothing: antialiased;
+    display: grid;
+    grid-column: 1;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    text-rendering: optimizeLegibility;
+    z-index: 1;
 }
 
 .quote {
-  @include medium-font($size: 1.4rem, $weight: 700, $color: $fg);
-  quotes: "“"”"""";
-  padding: 5px 10px;
-  line-height: 1.2;
-  width: 25ch;
+    @include medium-font($size: 1.4rem, $weight: 700, $color: $fg);
+    quotes: "“"”"""";
+    padding: 5px 10px;
+    line-height: 1.2;
+    width: 25ch;
 
-  &:before {
-    content: open-quote;
-    display: inline;
-    height: 0;
-    line-height: 0;
-    left: -5px;
-    position: relative;
-    top: 5px;
-    color: $fg;
-    font-size: 1.2em;
-  }
+    &:before {
+        content: open-quote;
+        display: inline;
+        height: 0;
+        line-height: 0;
+        left: -5px;
+        position: relative;
+        top: 5px;
+        color: $fg;
+        font-size: 1.2em;
+    }
 
-  &:after {
-    content: close-quote;
-    display: inline;
-    height: 0;
-    line-height: 0;
-    left: 5px;
-    position: relative;
-    top: 5px;
-    color: $fg;
-    font-size: 1.2em;
-  }
+    &:after {
+        content: close-quote;
+        display: inline;
+        height: 0;
+        line-height: 0;
+        left: 5px;
+        position: relative;
+        top: 5px;
+        color: $fg;
+        font-size: 1.2em;
+    }
 
-  & footer {
-    margin-right: 10px;
-  }
+    & footer {
+        margin-right: 10px;
+    }
 }
 
 .start-letter {
-  @include font($size: 1.4rem, $weight: 700, $color: $fg);
-  background-color: $link;
-  border-radius: 8px;
-  padding: 0 8px;
-  margin-right: 6px;
-  display: inline-block;
+    @include font($size: 1.4rem, $weight: 700, $color: $fg);
+    background-color: $link;
+    border-radius: 8px;
+    padding: 0 8px;
+    margin-right: 6px;
+    display: inline-block;
 }
 
 .tooltip .link {
     color: $bg;
 
     &::after {
-      content: "";
-      color: black;
-      padding-left: 3px;
-      transition: all 250ms;
+        content: "";
+        color: black;
+        padding-left: 3px;
+        transition: all 250ms;
     }
 
     &:hover {
@@ -118,18 +115,18 @@ html {
 }
 
 .tooltip .tooltiptext::after {
-  content: "";
-  position: absolute;
-  bottom: 100%;
-  left: 50%;
-  margin-left: -5px;
-  border-width: 5px;
-  border-style: solid;
-  border-color: transparent transparent $fg transparent;
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent $fg transparent;
 }
 
 .tooltip:hover .tooltiptext {
-  visibility: visible;
+    visibility: visible;
 }
 
 .badge {
@@ -145,40 +142,40 @@ html {
 }
 
 @media screen and (max-width:500px) {
-  .badge {
-    margin-left: 0px;
-    @include font($size: .6rem, $weight: 700, $color: $fg, $lh: 1rem);
-    color: #fff;
-    padding: 6px;
-  }
+    .badge {
+        margin-left: 0px;
+        @include font($size: .6rem, $weight: 700, $color: $fg, $lh: 1rem);
+        color: #fff;
+        padding: 6px;
+    }
 }
 
 @media screen and (min-width:501px) and (max-width:1023px) {
-  .badge {
-    margin-left: 10px;
-    @include font($size: .9rem, $weight: 700, $color: $fg, $lh: .8rem);
-    color: #fff;
-  }
+    .badge {
+        margin-left: 10px;
+        @include font($size: .9rem, $weight: 700, $color: $fg, $lh: .8rem);
+        color: #fff;
+    }
 }
 
 
 .bg {
-  background-color: darken($bg, 5%);
-  box-shadow: 0 -1px 3px rgba(60,64,67,0.2), 0 -1px 2px rgba(60,64,67,0.2);
-  padding: 2rem 0.5rem;
-  max-width: 100vw;
-  z-index: 1;
+    background-color: darken($bg, 5%);
+    box-shadow: 0 -1px 3px rgba(60,64,67,0.2), 0 -1px 2px rgba(60,64,67,0.2);
+    padding: 2rem 0.5rem;
+    max-width: 100vw;
+    z-index: 1;
 }
 
 .card {
-  border: 1px $outline solid;
-  border-radius: 8px;
-  background: $card-body;
+    border: 1px $outline solid;
+    border-radius: 8px;
+    background: $card-body;
 
     &.flair-nx {
         border-top: 8px solid $link;
         position: relative;
-	    display: inline-block;
+        display: inline-block;
     }
 }
 .four-card {
@@ -217,276 +214,276 @@ html {
 }
 
 .card-holder {
-  display: grid;
-  grid-column: 1;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  grid-auto-rows: auto;
-  grid-gap: 1rem;
-  padding-top: 50px;
-  padding-bottom: 50px;
-  margin: auto 25px;
-  align-items: start;
+    display: grid;
+    grid-column: 1;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-auto-rows: auto;
+    grid-gap: 1rem;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin: auto 25px;
+    align-items: start;
 }
 
 .card-holder-nx {
-  --cols: 12;
-  --gap: 16;
-  --raster: 1;
-  margin: 1rem;
-  display: grid;
-  grid-template-columns: repeat(var(--cols, 12), calc((100% - 1px * var(--gap, 20) * (var(--cols, 12) - 1)) / var(--cols, 12)));
-  grid-auto-rows: 1px;
-  grid-gap: 0px calc(1px * var(--gap, 20));
+    --cols: 12;
+    --gap: 16;
+    --raster: 1;
+    margin: 1rem;
+    display: grid;
+    grid-template-columns: repeat(var(--cols, 12), calc((100% - 1px * var(--gap, 20) * (var(--cols, 12) - 1)) / var(--cols, 12)));
+    grid-auto-rows: 1px;
+    grid-gap: 0px calc(1px * var(--gap, 20));
 
-  @media screen and (max-width: 900px) and (min-width: 600px) {
-    --cols: 8;
-  }
-  @media screen and (max-width: 599px) {
-    --cols: 4;
-  }
+    @media screen and (max-width: 900px) and (min-width: 600px) {
+        --cols: 8;
+    }
+    @media screen and (max-width: 599px) {
+        --cols: 4;
+    }
 
-  margin-top: calc(1px * var(--gap, 20));
-
-  & > .card {
-    grid-column-end: span 4;
-    grid-row-end: span 400;
     margin-top: calc(1px * var(--gap, 20));
-    display: flex;
-    flex-direction: column;
-    justify-items: stretch;
-  }
+
+    & > .card {
+        grid-column-end: span 4;
+        grid-row-end: span 400;
+        margin-top: calc(1px * var(--gap, 20));
+        display: flex;
+        flex-direction: column;
+        justify-items: stretch;
+    }
 }
 
 .card-holder-nx > .card > div {
-  flex-basis: 100%;
+    flex-basis: 100%;
 }
 
 @media screen and (max-width:500px) {
-  .card-header {
-    grid-row: 1;
-    grid-column: 1;
-    max-height: 10vh;
-  }
+    .card-header {
+        grid-row: 1;
+        grid-column: 1;
+        max-height: 10vh;
+    }
 }
 
 @media screen and (min-width:501px) and (max-width:1023px) {
-  .card-header {
-    grid-row: 1;
-    grid-column: 1 / 3;
-    max-height: 30vh;
-  }
+    .card-header {
+        grid-row: 1;
+        grid-column: 1 / 3;
+        max-height: 30vh;
+    }
 }
 
 .card-body,
 .card-action {
-  padding: 15px;
+    padding: 15px;
 }
 
 .card-body {
-  display: grid;
-  padding: 15px;
-  grid-row-start: 2;
-  grid-column-start: 1;
+    display: grid;
+    padding: 15px;
+    grid-row-start: 2;
+    grid-column-start: 1;
 }
 
 .card-body-nx {
-  display: grid;
-  padding: 15px;
-  grid-row-start: 2;
-  grid-column-start: 1;
+    display: grid;
+    padding: 15px;
+    grid-row-start: 2;
+    grid-column-start: 1;
 }
 
 .card-text {
-  display: inline-block;
-  padding: 24px 0;
+    display: inline-block;
+    padding: 24px 0;
 }
 
 .card-text-long {
-  display: inline-block;
-  height:100%;
-  padding: 24px 0;
+    display: inline-block;
+    height:100%;
+    padding: 24px 0;
 }
 
 .card-action {
-  grid-row-start: 3;
-  grid-column-start: 1;
+    grid-row-start: 3;
+    grid-column-start: 1;
 }
 
 .card-action-nx {
-  grid-row-start: 3;
-  grid-column-start: 1;
-  padding: 15px 25px;
-  border-top: 2px dashed $fg;
+    grid-row-start: 3;
+    grid-column-start: 1;
+    padding: 15px 25px;
+    border-top: 2px dashed $fg;
 }
 
 .card-action p {
-  margin: 15px 0;
-  position: relative;
+    margin: 15px 0;
+    position: relative;
 }
 
 .card-title {
-  @include font($size: 1.5rem, $weight: 700, $color: $fg, $lh: .6rem);
-  vertical-align: middle;
-  padding: 15px 0;
-  border-bottom: 2px dashed $fg;
-  grid-row-start: 1;
-  grid-column-start: 1;
+    @include font($size: 1.5rem, $weight: 700, $color: $fg, $lh: .6rem);
+    vertical-align: middle;
+    padding: 15px 0;
+    border-bottom: 2px dashed $fg;
+    grid-row-start: 1;
+    grid-column-start: 1;
 }
 
 @media screen and (max-width:500px) {
-  .card-title {
-      @include font($size: 1rem, $weight: 700, $color: $fg, $lh: .6rem);
-      vertical-align: middle;
-      padding: 15px 0;
-      border-bottom: 2px dashed $fg;
-      grid-row-start: 1;
-      grid-column-start: 1;
+    .card-title {
+        @include font($size: 1rem, $weight: 700, $color: $fg, $lh: .6rem);
+        vertical-align: middle;
+        padding: 15px 0;
+        border-bottom: 2px dashed $fg;
+        grid-row-start: 1;
+        grid-column-start: 1;
     }
 }
 
 @media screen and (min-width:501px) and (max-width:1023px) {
-  .card-title {
-      @include font($size: 1.2rem, $weight: 700, $color: $fg, $lh: .6rem);
-      vertical-align: middle;
-      padding: 15px 0;
-      border-bottom: 2px dashed $fg;
-      grid-row-start: 1;
-      grid-column-start: 1;
+    .card-title {
+        @include font($size: 1.2rem, $weight: 700, $color: $fg, $lh: .6rem);
+        vertical-align: middle;
+        padding: 15px 0;
+        border-bottom: 2px dashed $fg;
+        grid-row-start: 1;
+        grid-column-start: 1;
     }
 }
 
 .card-subtitle {
-  @include font($size: 1rem, $weight: 700, $color: $fg, $lh: .8rem);
-  padding: 15px 0;
-  grid-row-start: 1;
-  grid-column-start: 1;
+    @include font($size: 1rem, $weight: 700, $color: $fg, $lh: .8rem);
+    padding: 15px 0;
+    grid-row-start: 1;
+    grid-column-start: 1;
 }
 
 .button {
-  border: 3px $outline solid;
-  color: $fg;
-  border-radius: 8px;
-  padding: 8px;
-  margin: 0 0 0 5px;
+    border: 3px $outline solid;
+    color: $fg;
+    border-radius: 8px;
+    padding: 8px;
+    margin: 0 0 0 5px;
 
-  & i {
-    margin-right: 8px;
-  }
-
-  &:hover {
-    background: $outline;
-    color: $bg;
-  }
-
-  &.patreon {
-    background-color: $patreon;
-    border: 3px $patreon solid;
-    color: $bg;
+    & i {
+        margin-right: 8px;
+    }
 
     &:hover {
-      background: lighten($patreon, 5%);
-      border: 3px lighten($patreon, 5%) solid;
-      color: $bg;
+        background: $outline;
+        color: $bg;
     }
-  }
 
-  &.twitter {
-    &:hover {
-      background: lighten($twitter, 5%);
-      border: 3px lighten($twitter, 5%) solid;
-      color: $bg;
+    &.patreon {
+        background-color: $patreon;
+        border: 3px $patreon solid;
+        color: $bg;
+
+        &:hover {
+            background: lighten($patreon, 5%);
+            border: 3px lighten($patreon, 5%) solid;
+            color: $bg;
+        }
     }
-  }
+
+    &.twitter {
+        &:hover {
+            background: lighten($twitter, 5%);
+            border: 3px lighten($twitter, 5%) solid;
+            color: $bg;
+        }
+    }
 }
 
 .card-image {
-  border-radius: 8px 8px 0 0;
-  bottom: 0;
-  display: block;
-  border-bottom: 1px solid $outline;
-  left: 0;
-  padding: 1.8rem 0;
-  position: relative;
-  right: 0;
-  text-align: center;
-  top: 0;
+    border-radius: 8px 8px 0 0;
+    bottom: 0;
+    display: block;
+    border-bottom: 1px solid $outline;
+    left: 0;
+    padding: 1.8rem 0;
+    position: relative;
+    right: 0;
+    text-align: center;
+    top: 0;
 
-  &.card-flair-aesop {
-    border-top: 8px solid $aesop;
-    background-image: linear-gradient(0deg, $aesop, rgba($aesop, 0.3)), url('../images/projects/aesop.webp');
-    background-position: top;
-    background-size: cover;
-  }
+    &.card-flair-aesop {
+        border-top: 8px solid $aesop;
+        background-image: linear-gradient(0deg, $aesop, rgba($aesop, 0.3)), url('../images/projects/aesop.webp');
+        background-position: top;
+        background-size: cover;
+    }
 
-  &.card-flair-notejot {
-    border-top: 8px solid $notejot;
-    background-image: linear-gradient(0deg, $notejot, rgba($notejot, 0.3)), url('../images/projects/notejot.webp');
-    background-position: top;
-    background-size: cover;
-  }
+    &.card-flair-notejot {
+        border-top: 8px solid $notejot;
+        background-image: linear-gradient(0deg, $notejot, rgba($notejot, 0.3)), url('../images/projects/notejot.webp');
+        background-position: top;
+        background-size: cover;
+    }
 
-  &.card-flair-quilter {
-    border-top: 8px solid $quilter;
-    background-image: linear-gradient(0deg, $quilter, rgba($quilter, 0.3)), url('../images/projects/quilter.webp');
-    background-position: top;
-    background-size: cover;
-  }
+    &.card-flair-quilter {
+        border-top: 8px solid $quilter;
+        background-image: linear-gradient(0deg, $quilter, rgba($quilter, 0.3)), url('../images/projects/quilter.webp');
+        background-position: top;
+        background-size: cover;
+    }
 
-  &.card-flair-coin {
-    border-top: 8px solid $coin;
-    background-image: linear-gradient(0deg, $coin, rgba($coin, 0.3)), url('../images/projects/coin.webp');
-    background-position: top;
-    background-size: cover;
-  }
+    &.card-flair-coin {
+        border-top: 8px solid $coin;
+        background-image: linear-gradient(0deg, $coin, rgba($coin, 0.3)), url('../images/projects/coin.webp');
+        background-position: top;
+        background-size: cover;
+    }
 
-  &.card-flair-palaura {
-    border-top: 8px solid $palaura;
-    background-image: linear-gradient(0deg, $palaura, rgba($palaura, 0.3)), url('../images/projects/palaura.webp');
-    background-position: top;
-    background-size: cover;
-  }
+    &.card-flair-palaura {
+        border-top: 8px solid $palaura;
+        background-image: linear-gradient(0deg, $palaura, rgba($palaura, 0.3)), url('../images/projects/palaura.webp');
+        background-position: top;
+        background-size: cover;
+    }
 
-  &.card-flair-yishu {
-    border-top: 8px solid $yishu;
-    background-image: linear-gradient(0deg, $yishu, rgba($yishu, 0.3)), url('../images/projects/yishu.webp');
-    background-position: top;
-    background-size: cover;
-  }
+    &.card-flair-yishu {
+        border-top: 8px solid $yishu;
+        background-image: linear-gradient(0deg, $yishu, rgba($yishu, 0.3)), url('../images/projects/yishu.webp');
+        background-position: top;
+        background-size: cover;
+    }
 
-  &.card-flair-beemy {
-    border-top: 8px solid $beemy;
-    background-image: linear-gradient(0deg, lighten($beemy, 40%), rgba(lighten($beemy, 40%), 0.3)), url('../images/projects/beemy.webp');
-    background-position: top;
-    background-size: cover;
-  }
+    &.card-flair-beemy {
+        border-top: 8px solid $beemy;
+        background-image: linear-gradient(0deg, lighten($beemy, 40%), rgba(lighten($beemy, 40%), 0.3)), url('../images/projects/beemy.webp');
+        background-position: top;
+        background-size: cover;
+    }
 
-  &.card-flair-timetable {
-    border-top: 8px solid $timetable;
-    background-image: linear-gradient(0deg, lighten($timetable, 40%), rgba(lighten($timetable, 40%), 0.3)), url('../images/projects/timetable.webp');
-    background-position: top;
-    background-size: cover;
-  }
+    &.card-flair-timetable {
+        border-top: 8px solid $timetable;
+        background-image: linear-gradient(0deg, lighten($timetable, 40%), rgba(lighten($timetable, 40%), 0.3)), url('../images/projects/timetable.webp');
+        background-position: top;
+        background-size: cover;
+    }
 
-  &.card-flair-dotmatrix {
-    border-top: 8px solid $dotmatrix;
-    background-image: linear-gradient(0deg, lighten($dotmatrix, 25%), rgba(lighten($dotmatrix, 25%), 0.3)), url('../images/projects/dotmatrix.webp');
-    background-position: top;
-    background-size: cover;
-  }
+    &.card-flair-dotmatrix {
+        border-top: 8px solid $dotmatrix;
+        background-image: linear-gradient(0deg, lighten($dotmatrix, 25%), rgba(lighten($dotmatrix, 25%), 0.3)), url('../images/projects/dotmatrix.webp');
+        background-position: top;
+        background-size: cover;
+    }
 
-  &.card-flair-reganam {
-    border-top: 8px solid $reganam;
-    background-image: linear-gradient(0deg, lighten($reganam, 40%), rgba(lighten($reganam, 40%), 0.3)), url('../images/projects/reganam.webp');
-    background-position: top;
-    background-size: cover;
-  }
+    &.card-flair-reganam {
+        border-top: 8px solid $reganam;
+        background-image: linear-gradient(0deg, lighten($reganam, 40%), rgba(lighten($reganam, 40%), 0.3)), url('../images/projects/reganam.webp');
+        background-position: top;
+        background-size: cover;
+    }
 
-  &.card-flair-niu {
-    border-top: 8px solid $niu;
-    background-image: linear-gradient(0deg, lighten($niu, 40%), rgba(lighten($niu, 40%), 0.3)), url('../images/projects/niu.webp');
-    background-position: top;
-    background-size: cover;
-  }
+    &.card-flair-niu {
+        border-top: 8px solid $niu;
+        background-image: linear-gradient(0deg, lighten($niu, 40%), rgba(lighten($niu, 40%), 0.3)), url('../images/projects/niu.webp');
+        background-position: top;
+        background-size: cover;
+    }
 }
 
 .nav {
@@ -502,18 +499,18 @@ html {
 }
 
 .nav-icon {
-  display: inline-block;
-  float: left;
-  width: 32px;
-  height: 32px;
-  padding: 5px;
+    display: inline-block;
+    float: left;
+    width: 32px;
+    height: 32px;
+    padding: 5px;
 
-  border: 1px solid transparent;
+    border: 1px solid transparent;
 }
 
 .nav-icon:hover {
-  border: 1px solid transparent;
-  color: $fg;
+    border: 1px solid transparent;
+    color: $fg;
 }
 
 .nav-link {
@@ -537,91 +534,91 @@ html {
 }
 
 .nav-link:hover {
-  border: 1px solid $outline;
-  color: $fg;
+    border: 1px solid $outline;
+    color: $fg;
 }
 
 .hero {
-  height: calc(100vh - 220px);
-  max-width: 100vw;
+    height: calc(100vh - 220px);
+    max-width: 100vw;
 
-  &:before {
-    background-attachment: fixed;
-    background-color: #fff;
-    background-image: linear-gradient(rgba($bg,.2),rgba($bg,.5),rgba($bg,1)), url('../images/photo.webp');
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    content: "";
-    height: 100vh;
-    left: 0;
-    position: fixed;
-    top: 0;
-    width: 100vw;
-    will-change: transform;
-    z-index: -1;
-  }
+    &:before {
+        background-attachment: fixed;
+        background-color: #fff;
+        background-image: linear-gradient(rgba($bg,.2),rgba($bg,.5),rgba($bg,1)), url('../images/photo.webp');
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        content: "";
+        height: 100vh;
+        left: 0;
+        position: fixed;
+        top: 0;
+        width: 100vw;
+        will-change: transform;
+        z-index: -1;
+    }
 }
 
 .hero-small {
-  height: 23vh;
-  max-width: 100vw;
+    height: 23vh;
+    max-width: 100vw;
 
-  &:before {
-    background-attachment: fixed;
-    background-color: #fff;
-    background-image: linear-gradient(rgba($bg,.2),rgba($bg,.5),rgba($bg,1)), url('../images/photo.webp');
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    content: "";
-    height: 30vh;
-    left: 0;
-    position: fixed;
-    top: 0;
-    width: 100vw;
-    will-change: transform;
-    z-index: -1;
-  }
+    &:before {
+        background-attachment: fixed;
+        background-color: #fff;
+        background-image: linear-gradient(rgba($bg,.2),rgba($bg,.5),rgba($bg,1)), url('../images/photo.webp');
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        content: "";
+        height: 30vh;
+        left: 0;
+        position: fixed;
+        top: 0;
+        width: 100vw;
+        will-change: transform;
+        z-index: -1;
+    }
 }
 
 .hero-content {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -75%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -75%);
 }
 
 .hero-content-small {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -200%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -200%);
 }
 
 .link {
-  line-height: 90%;
-  border-bottom: 1px solid transparent;
-
-  &:hover {
-      border-bottom: 1px solid $fg;
-  }
-
-  &::after {
-    content: "⋄";
-    color: black;
-    padding-left: 3px;
     line-height: 90%;
-    transition: all 250ms;
-  }
+    border-bottom: 1px solid transparent;
 
-  &:hover::after {
-    color: $link-hover;
-  }
+    &:hover {
+        border-bottom: 1px solid $fg;
+    }
 
-  &:active::after {
-    color: $link-active;
-  }
+    &::after {
+        content: "⋄";
+        color: black;
+        padding-left: 3px;
+        line-height: 90%;
+        transition: all 250ms;
+    }
+
+    &:hover::after {
+        color: $link-hover;
+    }
+
+    &:active::after {
+        color: $link-active;
+    }
 }
 
 .appcenter {
@@ -637,17 +634,17 @@ html {
     opacity: 1.0;
     background-image: url('../images/brands/appcenter.png');
 
-      &:hover {
-          filter: invert(48%) sepia(13%) saturate(3207%) hue-rotate(250deg) brightness(60%) contrast(70%);
-      }
+    &:hover {
+        filter: invert(48%) sepia(13%) saturate(3207%) hue-rotate(250deg) brightness(60%) contrast(70%);
+    }
 
-      &::before {
+    &::before {
         content: "AppCenter";
         color: black;
         padding: 33px;
         line-height: 85%;
         transition: all 250ms;
-      }
+    }
 }
 
 .flathub {
@@ -663,41 +660,41 @@ html {
     opacity: 1.0;
     background-image: url('../images/brands/flathub.png');
 
-      &:hover {
-          filter: invert(48%) sepia(13%) saturate(3207%) hue-rotate(170deg) brightness(80%) contrast(70%);
-      }
+    &:hover {
+        filter: invert(48%) sepia(13%) saturate(3207%) hue-rotate(170deg) brightness(80%) contrast(70%);
+    }
 
-      &::before {
+    &::before {
         content: "FlatHub";
         color: black;
         padding: 33px;
         line-height: 85%;
         transition: all 250ms;
-      }
+    }
 }
 
 .animated {
-  transition: .2s cubic-bezier(0.46, 0.03, 0.52, 0.96);
+    transition: .2s cubic-bezier(0.46, 0.03, 0.52, 0.96);
 }
 
 img {
-  max-width: 100vw;
+    max-width: 100vw;
 }
 
 .shadow {
-  @include box-shadow(1, rgba($fg,0.2));
+    @include box-shadow(1, rgba($fg,0.2));
 }
 
 .footer {
-  @include font($size: .8rem, $weight: 400, $lh: .8rem);
-  background-color: $bg;
-  box-shadow: 0 -1px 3px rgba(60,64,67,0.2), 0 -1px 2px rgba(60,64,67,0.2);
-  box-sizing: border-box;
-  color: $fg;
-  padding: 2rem;
-  position: relative;
-  max-width: 100vw;
-  z-index: 2;
+    @include font($size: .8rem, $weight: 400, $lh: .8rem);
+    background-color: $bg;
+    box-shadow: 0 -1px 3px rgba(60,64,67,0.2), 0 -1px 2px rgba(60,64,67,0.2);
+    box-sizing: border-box;
+    color: $fg;
+    padding: 2rem;
+    position: relative;
+    max-width: 100vw;
+    z-index: 2;
 }
 
 a.icon {
@@ -712,61 +709,61 @@ a.icon {
     opacity: 1.0;
 
     &.github {
-      background-image: url('../images/brands/github.png');
+        background-image: url('../images/brands/github.png');
 
-      &:hover {
-          opacity: 0.7;
-      }
+        &:hover {
+            opacity: 0.7;
+        }
     }
     &.patreon {
-      background-image: url('../images/brands/patreon.png');
+        background-image: url('../images/brands/patreon.png');
 
-      &:hover {
-          opacity: 0.7;
-      }
+        &:hover {
+            opacity: 0.7;
+        }
     }
     &.twitter {
-      background-image: url('../images/brands/twitter.png');
+        background-image: url('../images/brands/twitter.png');
 
-      &:hover {
-          opacity: 0.7;
-      }
+        &:hover {
+            opacity: 0.7;
+        }
     }
 }
 
 .footer-shadow {
-  @include box-shadow(-2, rgba($fg,0.2));
+    @include box-shadow(-2, rgba($fg,0.2));
 }
 
 .header {
-  @include font($size: 2.28rem, $weight: 700, $lh: 2rem);
+    @include font($size: 2.28rem, $weight: 700, $lh: 2rem);
 }
 
 .logo {
-  display: inline-block;
-  vertical-align: middle;
+    display: inline-block;
+    vertical-align: middle;
 }
 
 .icon-link {
-  display: inline-block;
-  vertical-align: middle;
-  font-size: 1.66rem;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 1.66rem;
 
-  &::after {
-    content: "";
-    color: black;
-    padding-left: 3px;
-    line-height: 90%;
-    transition: all 250ms;
-  }
+    &::after {
+        content: "";
+        color: black;
+        padding-left: 3px;
+        line-height: 90%;
+        transition: all 250ms;
+    }
 
-  &.github:hover {
-      color: $github;
-  }
-  &.patreon:hover {
-      color: $patreon;
-  }
-  &.twitter:hover {
-      color: $twitter;
-  }
+    &.github:hover {
+        color: $github;
+    }
+    &.patreon:hover {
+        color: $patreon;
+    }
+    &.twitter:hover {
+        color: $twitter;
+    }
 }

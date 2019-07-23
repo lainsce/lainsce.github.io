@@ -1,6 +1,6 @@
 /*****************
- * COLOR PALETTE *
- *****************/
+* COLOR PALETTE *
+*****************/
 
 // Swatches
 $fg: #333333;
@@ -11,12 +11,12 @@ $link: #00DAC7;
 $badge: #444444;
 
 @media (prefers-color-scheme: dark) {
-  $fg: #F4F4F4;
-  $bg: #333333;
-  $card-body: #333333;
-  $outline: #888888;
-  $link: #00B8A5;
-  $badge: #CCCCCC;
+    $fg: #F4F4F4;
+    $bg: #333333;
+    $card-body: #333333;
+    $outline: #888888;
+    $link: #00B8A5;
+    $badge: #CCCCCC;
 }
 
 // Brands
@@ -35,12 +35,11 @@ $patreon: #E85B46;
 $github: #888888;
 $twitter: #1da1f2;
 
-
 // Mixes
 $link-hover: lighten($link, 10%);
 $link-active: lighten($link, 15%);
 
 @media (prefers-color-scheme: dark) {
-  $link-hover: darken($link, 10%);
-  $link-active: darken($link, 15%);
+    $link-hover: darken($link, 10%);
+    $link-active: darken($link, 15%);
 }
