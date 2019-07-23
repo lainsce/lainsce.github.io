@@ -11,9 +11,44 @@
     text-align:right;
 }
 
+.start-letter {
+    @include font($size: 1.4rem, $weight: 700, $color: $fg);
+    background-color: $link;
+    border-radius: 8px;
+    padding: 0 8px;
+    margin-right: 6px;
+    display: inline-block;
+}
+.badge {
+    @include font($size: .88rem, $weight: 700, $lh: 1rem);
+    border-radius: 8px;
+    background-color: lighten($badge, 60%);
+    color: $fg;
+    display: inline-block;
+    padding: 10px;
+    text-align: center;
+    margin-left: 20px;
+    vertical-align: baseline;
+}
+@media screen and (max-width:500px) {
+    .badge {
+        margin-left: 0px;
+        @include font($size: .88rem, $weight: 700, $color: $fg, $lh: 1rem);
+        color: #fff;
+        padding: 6px;
+    }
+}
+@media screen and (min-width:501px) and (max-width:1023px) {
+    .badge {
+        margin-left: 10px;
+        @include font($size: .88rem, $weight: 700, $color: $fg, $lh: 1rem);
+        color: #fff;
+    }
+}
+
 ol li,
 ul li {
-    list-style-type: circle[];
+    list-style-type: square;
     list-style-position: inside;
 }
 
@@ -40,32 +75,25 @@ h6 {
     @include font($size: 1rem);
 }
 
-.medium-icon-new {
-    @include medium-font($size: 1.1rem, $weight: 700, $lh: .768);
-    vertical-align: -15%;
-}
-
 pre {
-    background-color: darken($bg, 5%);
-    border-radius: 8px;
+    background-color: $bg;
+    border-radius: 4px;
     padding: 10px;
-    margin: 5px;
+    margin: 5px auto;
     overflow: auto;
     min-width: 50%;
     line-height: 20px;
+    text-align: left;
 
     & code {
-        display: inline;
+        display: inline-block;
         border-radius: 0;
         color: $fg;
         font-size: .85rem;
         position: relative;
-        white-space: pre-wrap;
-        word-wrap: break-word;
-        text-align: justify;
 
         & p {
-            display: inline;
+            display: inline-block;
 
             &.symbol {
                 color: #859900;
@@ -99,15 +127,6 @@ pre,
 samp {
     font-family: Hack, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
     font-size: 0.8em;
-}
-
-.title {
-    @include font($size: 1.5rem, $weight: 400, $color: $fg);
-    margin: 1rem 0 1rem 0;
-    text-align: center;
-    position: relative;
-    display: inline-block;
-    max-width: 100vw;
 }
 
 .info {
@@ -144,11 +163,7 @@ samp {
     padding-right: 8px;
     border-radius: 8px;
     border: 1px solid transparent;
-    background-color: $bg;
-}
-
-.dim-label {
-    opacity: .8;
+    background-color: lighten($bg, 5%);
 }
 
 table {
@@ -160,7 +175,6 @@ table {
     border-collapse: separate;
     min-width: 50%;
     line-height: 20px;
-    margin-bottom: 30px;
 
     & th {
         padding: 5px;

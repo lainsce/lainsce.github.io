@@ -23,7 +23,6 @@
 ::-moz-selection {
     background-color: $link; /* Gecko Browsers */
 }
-
 body,
 html {
     @include font($size: 1.1rem, $weight: inherit, $color: $fg, $lh: 1.66rem);
@@ -36,667 +35,9 @@ html {
     text-rendering: optimizeLegibility;
     z-index: 1;
 }
-
-.quote {
-    @include medium-font($size: 1.4rem, $weight: 700, $color: $fg);
-    quotes: "“"”"""";
-    padding: 5px 10px;
-    line-height: 1.2;
-    width: 25ch;
-
-    &:before {
-        content: open-quote;
-        display: inline;
-        height: 0;
-        line-height: 0;
-        left: -5px;
-        position: relative;
-        top: 5px;
-        color: $fg;
-        font-size: 1.2em;
-    }
-
-    &:after {
-        content: close-quote;
-        display: inline;
-        height: 0;
-        line-height: 0;
-        left: 5px;
-        position: relative;
-        top: 5px;
-        color: $fg;
-        font-size: 1.2em;
-    }
-
-    & footer {
-        margin-right: 10px;
-    }
-}
-
-.start-letter {
-    @include font($size: 1.4rem, $weight: 700, $color: $fg);
-    background-color: $link;
-    border-radius: 8px;
-    padding: 0 8px;
-    margin-right: 6px;
-    display: inline-block;
-}
-
-.tooltip .link {
-    color: $bg;
-
-    &::after {
-        content: "";
-        color: black;
-        padding-left: 3px;
-        transition: all 250ms;
-    }
-
-    &:hover {
-        color: darken($bg, 10%);
-    }
-}
-
-.tooltip .tooltiptext {
-    visibility: hidden;
-    width: 200px;
-    background-color: $fg;
-    color: $bg;
-    text-align: center;
-    border-radius: 8px;
-    padding: 5px;
-    position: absolute;
-    z-index: 1;
-    top: 150%;
-    left: 50%;
-    margin-left: -105px;
-    transition-property:visibility;
-    transition-delay:0.2s;
-}
-
-.tooltip .tooltiptext::after {
-    content: "";
-    position: absolute;
-    bottom: 100%;
-    left: 50%;
-    margin-left: -5px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: transparent transparent $fg transparent;
-}
-
-.tooltip:hover .tooltiptext {
-    visibility: visible;
-}
-
-.badge {
-    @include font($size: .9rem, $weight: 700, $lh: .8rem);
-    border-radius: 8px;
-    background-color: $badge;
-    color: $bg;
-    display: inline-block;
-    padding: 10px;
-    text-align: center;
-    margin-left: 20px;
-    vertical-align: middle;
-}
-
-@media screen and (max-width:500px) {
-    .badge {
-        margin-left: 0px;
-        @include font($size: .6rem, $weight: 700, $color: $fg, $lh: 1rem);
-        color: #fff;
-        padding: 6px;
-    }
-}
-
-@media screen and (min-width:501px) and (max-width:1023px) {
-    .badge {
-        margin-left: 10px;
-        @include font($size: .9rem, $weight: 700, $color: $fg, $lh: .8rem);
-        color: #fff;
-    }
-}
-
-
-.bg {
-    background-color: darken($bg, 5%);
-    box-shadow: 0 -1px 3px rgba(60,64,67,0.2), 0 -1px 2px rgba(60,64,67,0.2);
-    padding: 2rem 0.5rem;
-    max-width: 100vw;
-    z-index: 1;
-}
-
-.card {
-    border: 1px $outline solid;
-    border-radius: 8px;
-    background: $card-body;
-
-    &.flair-nx {
-        border-top: 8px solid $link;
-        position: relative;
-        display: inline-block;
-    }
-}
-.four-card {
-    background-color: lighten($fg, 5%);
-    color: #FFF;
-    border-top: 8px darken($link, 15%) solid;
-    border-radius: 8px;
-    margin: 5rem auto;
-    width: 50%;
-    line-height: 3rem;
-    padding: 4rem;
-}
-
-.card-header {
-    background-color: darken($bg, 15%);
-    border: 1px $outline solid;
-    border-radius: 8px;
-    text-align: center;
-    grid-row: 1;
-    grid-column: 1 / 5;
-    padding-top: 25px;
-    padding-bottom: 25px;
-    margin: auto 25px;
-}
-
-.card-header-small {
-    background-color: darken($bg, 10%);
-    border: 1px $outline solid;
-    border-radius: 8px;
-    text-align: center;
-    grid-row: 1;
-    grid-column: 1 / 5;
-    padding-top: 25px;
-    padding-bottom: 25px;
-    margin: 25px;
-}
-
-.card-holder {
-    display: grid;
-    grid-column: 1;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    grid-auto-rows: auto;
-    grid-gap: 1rem;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    margin: auto 25px;
-    align-items: start;
-}
-
-.card-holder-nx {
-    --cols: 12;
-    --gap: 16;
-    --raster: 1;
-    margin: 1rem;
-    display: grid;
-    grid-template-columns: repeat(var(--cols, 12), calc((100% - 1px * var(--gap, 20) * (var(--cols, 12) - 1)) / var(--cols, 12)));
-    grid-auto-rows: 1px;
-    grid-gap: 0px calc(1px * var(--gap, 20));
-
-    @media screen and (max-width: 900px) and (min-width: 600px) {
-        --cols: 8;
-    }
-    @media screen and (max-width: 599px) {
-        --cols: 4;
-    }
-
-    margin-top: calc(1px * var(--gap, 20));
-
-    & > .card {
-        grid-column-end: span 4;
-        grid-row-end: span 400;
-        margin-top: calc(1px * var(--gap, 20));
-        display: flex;
-        flex-direction: column;
-        justify-items: stretch;
-    }
-}
-
-.card-holder-nx > .card > div {
-    flex-basis: 100%;
-}
-
-@media screen and (max-width:500px) {
-    .card-header {
-        grid-row: 1;
-        grid-column: 1;
-        max-height: 10vh;
-    }
-}
-
-@media screen and (min-width:501px) and (max-width:1023px) {
-    .card-header {
-        grid-row: 1;
-        grid-column: 1 / 3;
-        max-height: 30vh;
-    }
-}
-
-.card-body,
-.card-action {
-    padding: 15px;
-}
-
-.card-body {
-    display: grid;
-    padding: 15px;
-    grid-row-start: 2;
-    grid-column-start: 1;
-}
-
-.card-body-nx {
-    display: grid;
-    padding: 15px;
-    grid-row-start: 2;
-    grid-column-start: 1;
-}
-
-.card-text {
-    display: inline-block;
-    padding: 24px 0;
-}
-
-.card-text-long {
-    display: inline-block;
-    height:100%;
-    padding: 24px 0;
-}
-
-.card-action {
-    grid-row-start: 3;
-    grid-column-start: 1;
-}
-
-.card-action-nx {
-    grid-row-start: 3;
-    grid-column-start: 1;
-    padding: 15px 25px;
-    border-top: 2px dashed $fg;
-}
-
-.card-action p {
-    margin: 15px 0;
-    position: relative;
-}
-
-.card-title {
-    @include font($size: 1.5rem, $weight: 700, $color: $fg, $lh: .6rem);
-    vertical-align: middle;
-    padding: 15px 0;
-    border-bottom: 2px dashed $fg;
-    grid-row-start: 1;
-    grid-column-start: 1;
-}
-
-@media screen and (max-width:500px) {
-    .card-title {
-        @include font($size: 1rem, $weight: 700, $color: $fg, $lh: .6rem);
-        vertical-align: middle;
-        padding: 15px 0;
-        border-bottom: 2px dashed $fg;
-        grid-row-start: 1;
-        grid-column-start: 1;
-    }
-}
-
-@media screen and (min-width:501px) and (max-width:1023px) {
-    .card-title {
-        @include font($size: 1.2rem, $weight: 700, $color: $fg, $lh: .6rem);
-        vertical-align: middle;
-        padding: 15px 0;
-        border-bottom: 2px dashed $fg;
-        grid-row-start: 1;
-        grid-column-start: 1;
-    }
-}
-
-.card-subtitle {
-    @include font($size: 1rem, $weight: 700, $color: $fg, $lh: .8rem);
-    padding: 15px 0;
-    grid-row-start: 1;
-    grid-column-start: 1;
-}
-
-.button {
-    border: 3px $outline solid;
-    color: $fg;
-    border-radius: 8px;
-    padding: 8px;
-    margin: 0 0 0 5px;
-
-    & i {
-        margin-right: 8px;
-    }
-
-    &:hover {
-        background: $outline;
-        color: $bg;
-    }
-
-    &.patreon {
-        background-color: $patreon;
-        border: 3px $patreon solid;
-        color: $bg;
-
-        &:hover {
-            background: lighten($patreon, 5%);
-            border: 3px lighten($patreon, 5%) solid;
-            color: $bg;
-        }
-    }
-
-    &.twitter {
-        &:hover {
-            background: lighten($twitter, 5%);
-            border: 3px lighten($twitter, 5%) solid;
-            color: $bg;
-        }
-    }
-}
-
-.card-image {
-    border-radius: 8px 8px 0 0;
-    bottom: 0;
-    display: block;
-    border-bottom: 1px solid $outline;
-    left: 0;
-    padding: 1.8rem 0;
-    position: relative;
-    right: 0;
-    text-align: center;
-    top: 0;
-
-    &.card-flair-aesop {
-        border-top: 8px solid $aesop;
-        background-image: linear-gradient(0deg, $aesop, rgba($aesop, 0.3)), url('../images/projects/aesop.webp');
-        background-position: top;
-        background-size: cover;
-    }
-
-    &.card-flair-notejot {
-        border-top: 8px solid $notejot;
-        background-image: linear-gradient(0deg, $notejot, rgba($notejot, 0.3)), url('../images/projects/notejot.webp');
-        background-position: top;
-        background-size: cover;
-    }
-
-    &.card-flair-quilter {
-        border-top: 8px solid $quilter;
-        background-image: linear-gradient(0deg, $quilter, rgba($quilter, 0.3)), url('../images/projects/quilter.webp');
-        background-position: top;
-        background-size: cover;
-    }
-
-    &.card-flair-coin {
-        border-top: 8px solid $coin;
-        background-image: linear-gradient(0deg, $coin, rgba($coin, 0.3)), url('../images/projects/coin.webp');
-        background-position: top;
-        background-size: cover;
-    }
-
-    &.card-flair-palaura {
-        border-top: 8px solid $palaura;
-        background-image: linear-gradient(0deg, $palaura, rgba($palaura, 0.3)), url('../images/projects/palaura.webp');
-        background-position: top;
-        background-size: cover;
-    }
-
-    &.card-flair-yishu {
-        border-top: 8px solid $yishu;
-        background-image: linear-gradient(0deg, $yishu, rgba($yishu, 0.3)), url('../images/projects/yishu.webp');
-        background-position: top;
-        background-size: cover;
-    }
-
-    &.card-flair-beemy {
-        border-top: 8px solid $beemy;
-        background-image: linear-gradient(0deg, lighten($beemy, 40%), rgba(lighten($beemy, 40%), 0.3)), url('../images/projects/beemy.webp');
-        background-position: top;
-        background-size: cover;
-    }
-
-    &.card-flair-timetable {
-        border-top: 8px solid $timetable;
-        background-image: linear-gradient(0deg, lighten($timetable, 40%), rgba(lighten($timetable, 40%), 0.3)), url('../images/projects/timetable.webp');
-        background-position: top;
-        background-size: cover;
-    }
-
-    &.card-flair-dotmatrix {
-        border-top: 8px solid $dotmatrix;
-        background-image: linear-gradient(0deg, lighten($dotmatrix, 25%), rgba(lighten($dotmatrix, 25%), 0.3)), url('../images/projects/dotmatrix.webp');
-        background-position: top;
-        background-size: cover;
-    }
-
-    &.card-flair-reganam {
-        border-top: 8px solid $reganam;
-        background-image: linear-gradient(0deg, lighten($reganam, 40%), rgba(lighten($reganam, 40%), 0.3)), url('../images/projects/reganam.webp');
-        background-position: top;
-        background-size: cover;
-    }
-
-    &.card-flair-niu {
-        border-top: 8px solid $niu;
-        background-image: linear-gradient(0deg, lighten($niu, 40%), rgba(lighten($niu, 40%), 0.3)), url('../images/projects/niu.webp');
-        background-position: top;
-        background-size: cover;
-    }
-}
-
-.nav {
-    position: fixed;
-    top: 30px;
-    left: 30px;
-    width: calc(100% - 60px);
-    padding-bottom: 30px;
-    border-bottom: 2px solid rgba($fg, 0.5);
-    height: 30px;
-    transition: border 500ms;
-    vertical-align: middle;
-}
-
-.nav-icon {
-    display: inline-block;
-    float: left;
-    width: 32px;
-    height: 32px;
-    padding: 5px;
-
-    border: 1px solid transparent;
-}
-
-.nav-icon:hover {
-    border: 1px solid transparent;
-    color: $fg;
-}
-
-.nav-link {
-    display: inline-block;
-    margin-left: 5px;
-    margin-top: 6px;
-    padding-left: 35px;
-    background-size: 30px;
-    background-position: left top;
-    background-repeat: no-repeat;
-    transition: all 250ms;
-    padding-right: 8px;
-    border-radius: 8px;
-    border: 1px solid transparent;
-
-    background-image: url("data:image/svg+xml,%3Csvg class='vector' width='300px' height='300px' xmlns='http://www.w3.org/2000/svg' baseProfile='full' version='1.1'%3E%3Cpath id='layer_1' d='M60,90 L60,90 L240,90 M60,120 L60,120 L240,120 M60,180 L60,180 L135,180 M60,150 L60,150 L180,150 M210,150 L210,150 L240,150 M170,180 L240,180' style='stroke: rgb(0, 0, 0); stroke-width: 15; stroke-linecap: round; stroke-linejoin: round; fill: none;'%3E%3C/path%3E%3C/svg%3E");
-
-    &.inside {
-        border: 1px solid $fg;
-    }
-}
-
-.nav-link:hover {
-    border: 1px solid $outline;
-    color: $fg;
-}
-
-.hero {
-    height: calc(100vh - 220px);
-    max-width: 100vw;
-
-    &:before {
-        background-attachment: fixed;
-        background-color: #fff;
-        background-image: linear-gradient(rgba($bg,.2),rgba($bg,.5),rgba($bg,1)), url('../images/photo.webp');
-        background-position: center center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        content: "";
-        height: 100vh;
-        left: 0;
-        position: fixed;
-        top: 0;
-        width: 100vw;
-        will-change: transform;
-        z-index: -1;
-    }
-}
-
-.hero-small {
-    height: 23vh;
-    max-width: 100vw;
-
-    &:before {
-        background-attachment: fixed;
-        background-color: #fff;
-        background-image: linear-gradient(rgba($bg,.2),rgba($bg,.5),rgba($bg,1)), url('../images/photo.webp');
-        background-position: center center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        content: "";
-        height: 30vh;
-        left: 0;
-        position: fixed;
-        top: 0;
-        width: 100vw;
-        will-change: transform;
-        z-index: -1;
-    }
-}
-
-.hero-content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -75%);
-}
-
-.hero-content-small {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -200%);
-}
-
-.link {
-    line-height: 90%;
-    border-bottom: 1px solid transparent;
-
-    &:hover {
-        border-bottom: 1px solid $fg;
-    }
-
-    &::after {
-        content: "⋄";
-        color: black;
-        padding-left: 3px;
-        line-height: 90%;
-        transition: all 250ms;
-    }
-
-    &:hover::after {
-        color: $link-hover;
-    }
-
-    &:active::after {
-        color: $link-active;
-    }
-}
-
-.appcenter {
-    background-position: center center;
-    background-size: cover;
-    display: inline-block;
-    width: 24px;
-    height: 24px;
-    margin: 20px;
-    margin-left: 0px;
-    margin-right: 100px;
-    float: left;
-    opacity: 1.0;
-    background-image: url('../images/brands/appcenter.png');
-
-    &:hover {
-        filter: invert(48%) sepia(13%) saturate(3207%) hue-rotate(250deg) brightness(60%) contrast(70%);
-    }
-
-    &::before {
-        content: "AppCenter";
-        color: black;
-        padding: 33px;
-        line-height: 85%;
-        transition: all 250ms;
-    }
-}
-
-.flathub {
-    background-position: center center;
-    background-size: cover;
-    display: inline-block;
-    width: 24px;
-    height: 24px;
-    margin: 20px;
-    margin-left: 15px;
-    margin-right: 100px;
-    float: left;
-    opacity: 1.0;
-    background-image: url('../images/brands/flathub.png');
-
-    &:hover {
-        filter: invert(48%) sepia(13%) saturate(3207%) hue-rotate(170deg) brightness(80%) contrast(70%);
-    }
-
-    &::before {
-        content: "FlatHub";
-        color: black;
-        padding: 33px;
-        line-height: 85%;
-        transition: all 250ms;
-    }
-}
-
-.animated {
-    transition: .2s cubic-bezier(0.46, 0.03, 0.52, 0.96);
-}
-
 img {
     max-width: 100vw;
 }
-
-.shadow {
-    @include box-shadow(1, rgba($fg,0.2));
-}
-
-.footer {
-    @include font($size: .8rem, $weight: 400, $lh: .8rem);
-    background-color: $bg;
-    box-shadow: 0 -1px 3px rgba(60,64,67,0.2), 0 -1px 2px rgba(60,64,67,0.2);
-    box-sizing: border-box;
-    color: $fg;
-    padding: 2rem;
-    position: relative;
-    max-width: 100vw;
-    z-index: 2;
-}
-
 a.icon {
     background-position: center center;
     background-size: cover;
@@ -731,19 +72,442 @@ a.icon {
     }
 }
 
-.footer-shadow {
-    @include box-shadow(-2, rgba($fg,0.2));
+.bg {
+    background-color: $bg;
+    box-shadow: 0 -1px 3px rgba(60,64,67,0.2), 0 -1px 2px rgba(60,64,67,0.2);
+    padding: 2rem 0.5rem;
+    max-width: 100vw;
+    z-index: 1;
 }
 
-.header {
-    @include font($size: 2.28rem, $weight: 700, $lh: 2rem);
+.card {
+    border: 1px $outline solid;
+    border-radius: 8px;
+    background: $card-body;
+
+    &.flair-nx {
+        border-top: 8px solid $link;
+        position: relative;
+        display: inline-block;
+    }
+}
+.card-header {
+    background-color: darken($bg, 15%);
+    border: 1px $outline solid;
+    border-radius: 8px;
+    text-align: center;
+    grid-row: 1;
+    grid-column: 1 / 5;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    margin: auto 25px;
+}
+.card-header-small {
+    background-color: darken($bg, 10%);
+    border: 1px $outline solid;
+    border-radius: 8px;
+    text-align: center;
+    grid-row: 1;
+    grid-column: 1 / 5;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    margin: 25px;
+}
+.card-holder {
+    display: grid;
+    grid-column: 1;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-auto-rows: auto;
+    grid-gap: 1rem;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin: auto 25px;
+    align-items: start;
+}
+.card-holder-nx {
+    --cols: 12;
+    --gap: 16;
+    --raster: 1;
+    margin: 1rem;
+    display: grid;
+    grid-template-columns: repeat(var(--cols, 12), calc((100% - 1px * var(--gap, 20) * (var(--cols, 12) - 1)) / var(--cols, 12)));
+    grid-auto-rows: 1px;
+    grid-gap: 0px calc(1px * var(--gap, 20));
+    @media screen and (max-width: 900px) and (min-width: 600px) {
+        --cols: 8;
+    }
+    @media screen and (max-width: 599px) {
+        --cols: 4;
+    }
+    margin-top: calc(1px * var(--gap, 20));
+    & > .card {
+        grid-column-end: span 4;
+        grid-row-end: span 400;
+        margin-top: calc(1px * var(--gap, 20));
+        display: flex;
+        flex-direction: column;
+        justify-items: stretch;
+    }
+    & > .card > div {
+        flex-basis: 100%;
+    }
+}
+@media screen and (max-width:500px) {
+    .card-header {
+        grid-row: 1;
+        grid-column: 1;
+        max-height: 10vh;
+    }
+}
+@media screen and (min-width:501px) and (max-width:1023px) {
+    .card-header {
+        grid-row: 1;
+        grid-column: 1 / 3;
+        max-height: 30vh;
+    }
+}
+.card-body {
+    display: grid;
+    padding: 15px;
+    grid-row-start: 2;
+    grid-column-start: 1;
+}
+.card-body-nx {
+    display: grid;
+    padding: 15px;
+    grid-row-start: 2;
+    grid-column-start: 1;
+}
+.card-text {
+    display: inline-block;
+    padding: 24px 0;
+}
+.card-text-long {
+    display: inline-block;
+    height:100%;
+    padding: 24px 0;
+}
+.card-action {
+    padding: 15px;
+    grid-row-start: 3;
+    grid-column-start: 1;
+
+    & p {
+        margin: 15px 0;
+        position: relative;
+    }
+}
+.card-action-nx {
+    grid-row-start: 3;
+    grid-column-start: 1;
+    padding: 15px 25px;
+    border-top: 2px dashed $fg;
+}
+.card-title {
+    @include font($size: 1.5rem, $weight: 700, $color: $fg, $lh: .6rem);
+    vertical-align: middle;
+    padding: 15px 0;
+    border-bottom: 2px dashed $fg;
+    grid-row-start: 1;
+    grid-column-start: 1;
+}
+@media screen and (max-width:500px) {
+    .card-title {
+        @include font($size: 1rem, $weight: 700, $color: $fg, $lh: .6rem);
+        vertical-align: middle;
+        padding: 15px 0;
+        border-bottom: 2px dashed $fg;
+        grid-row-start: 1;
+        grid-column-start: 1;
+    }
+}
+@media screen and (min-width:501px) and (max-width:1023px) {
+    .card-title {
+        @include font($size: 1.2rem, $weight: 700, $color: $fg, $lh: .6rem);
+        vertical-align: middle;
+        padding: 15px 0;
+        border-bottom: 2px dashed $fg;
+        grid-row-start: 1;
+        grid-column-start: 1;
+    }
+}
+.card-subtitle {
+    @include font($size: 1rem, $weight: 700, $color: $fg, $lh: .8rem);
+    padding: 15px 0;
+    grid-row-start: 1;
+    grid-column-start: 1;
+}
+.card-image {
+    border-radius: 8px 8px 0 0;
+    bottom: 0;
+    display: block;
+    border-bottom: 1px solid $outline;
+    left: 0;
+    padding: 1.8rem 0;
+    position: relative;
+    right: 0;
+    text-align: center;
+    top: 0;
+
+    &.card-flair-aesop {
+        border-top: 8px solid $aesop;
+        background-image: linear-gradient(0deg, $aesop, rgba($aesop, 0.3)), url('../images/projects/aesop.webp');
+        background-position: top;
+        background-size: cover;
+    }
+    &.card-flair-notejot {
+        border-top: 8px solid $notejot;
+        background-image: linear-gradient(0deg, $notejot, rgba($notejot, 0.3)), url('../images/projects/notejot.webp');
+        background-position: top;
+        background-size: cover;
+    }
+    &.card-flair-quilter {
+        border-top: 8px solid $quilter;
+        background-image: linear-gradient(0deg, $quilter, rgba($quilter, 0.3)), url('../images/projects/quilter.webp');
+        background-position: top;
+        background-size: cover;
+    }
+    &.card-flair-coin {
+        border-top: 8px solid $coin;
+        background-image: linear-gradient(0deg, $coin, rgba($coin, 0.3)), url('../images/projects/coin.webp');
+        background-position: top;
+        background-size: cover;
+    }
+    &.card-flair-palaura {
+        border-top: 8px solid $palaura;
+        background-image: linear-gradient(0deg, $palaura, rgba($palaura, 0.3)), url('../images/projects/palaura.webp');
+        background-position: top;
+        background-size: cover;
+    }
+    &.card-flair-yishu {
+        border-top: 8px solid $yishu;
+        background-image: linear-gradient(0deg, $yishu, rgba($yishu, 0.3)), url('../images/projects/yishu.webp');
+        background-position: top;
+        background-size: cover;
+    }
+    &.card-flair-beemy {
+        border-top: 8px solid $beemy;
+        background-image: linear-gradient(0deg, lighten($beemy, 40%), rgba(lighten($beemy, 40%), 0.3)), url('../images/projects/beemy.webp');
+        background-position: top;
+        background-size: cover;
+    }
+    &.card-flair-timetable {
+        border-top: 8px solid $timetable;
+        background-image: linear-gradient(0deg, lighten($timetable, 40%), rgba(lighten($timetable, 40%), 0.3)), url('../images/projects/timetable.webp');
+        background-position: top;
+        background-size: cover;
+    }
+    &.card-flair-dotmatrix {
+        border-top: 8px solid $dotmatrix;
+        background-image: linear-gradient(0deg, lighten($dotmatrix, 25%), rgba(lighten($dotmatrix, 25%), 0.3)), url('../images/projects/dotmatrix.webp');
+        background-position: top;
+        background-size: cover;
+    }
+    &.card-flair-reganam {
+        border-top: 8px solid $reganam;
+        background-image: linear-gradient(0deg, lighten($reganam, 40%), rgba(lighten($reganam, 40%), 0.3)), url('../images/projects/reganam.webp');
+        background-position: top;
+        background-size: cover;
+    }
+    &.card-flair-niu {
+        border-top: 8px solid $niu;
+        background-image: linear-gradient(0deg, lighten($niu, 40%), rgba(lighten($niu, 40%), 0.3)), url('../images/projects/niu.webp');
+        background-position: top;
+        background-size: cover;
+    }
 }
 
+.nav {
+    position: fixed;
+    top: 30px;
+    left: 30px;
+    width: calc(100% - 60px);
+    padding-bottom: 30px;
+    border-bottom: 2px solid rgba($fg, 0.5);
+    height: 30px;
+    transition: border 500ms;
+    vertical-align: middle;
+}
+.nav-icon {
+    display: inline-block;
+    float: left;
+    width: 32px;
+    height: 32px;
+    padding: 5px;
+    border: 1px solid transparent;
+
+    &:hover {
+        border: 1px solid transparent;
+        color: $fg;
+    }
+}
+.nav-link {
+    display: inline-block;
+    margin-left: 5px;
+    margin-top: 6px;
+    padding-left: 35px;
+    background-size: 30px;
+    background-position: left top;
+    background-repeat: no-repeat;
+    transition: all 250ms;
+    padding-right: 8px;
+    border-radius: 8px;
+    border: 1px solid transparent;
+
+    &.inside {
+        border: 1px solid $fg;
+    }
+    &.naxasero {
+        background-image: url("data:image/svg+xml,%3Csvg class='vector' width='300px' height='300px' xmlns='http://www.w3.org/2000/svg' baseProfile='full' version='1.1'%3E%3Cpath id='layer_1' d='M60,90 L60,90 L240,90 M60,120 L60,120 L240,120 M60,180 L60,180 L135,180 M60,150 L60,150 L180,150 M210,150 L210,150 L240,150 M170,180 L240,180' style='stroke: rgb(0, 0, 0); stroke-width: 15; stroke-linecap: round; stroke-linejoin: round; fill: none;'%3E%3C/path%3E%3C/svg%3E");
+    }
+    &:hover {
+        border: 1px solid $outline;
+        color: $fg;
+    }
+}
+
+.hero {
+    height: calc(100vh - 220px);
+    max-width: 100vw;
+
+    &:before {
+        background-attachment: fixed;
+        background-color: #fff;
+        background-image: linear-gradient(rgba($bg,.2),rgba($bg,.5),rgba($bg,1)), url('../images/photo.webp');
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        content: "";
+        height: 100vh;
+        left: 0;
+        position: fixed;
+        top: 0;
+        width: 100vw;
+        will-change: transform;
+        z-index: -1;
+    }
+}
+.hero-small {
+    height: 12vh;
+    max-width: 100vw;
+
+    &:before {
+        background-attachment: fixed;
+        background-color: $bg;
+        background-image: linear-gradient(rgba($bg,.2),rgba($bg,.5),rgba($bg,1)), url('../images/photo.webp');
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        content: "";
+        height: 12vh;
+        left: 0;
+        position: fixed;
+        top: 0;
+        width: 100vw;
+        will-change: transform;
+        z-index: -1;
+    }
+}
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -75%);
+}
+.hero-content-small {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -200%);
+}
+
+.link {
+    line-height: 90%;
+    border-bottom: 1px solid transparent;
+
+    &:hover {
+        border-bottom: 1px solid $fg;
+    }
+    &::after {
+        content: "⋄";
+        color: black;
+        padding-left: 3px;
+        line-height: 90%;
+        transition: all 250ms;
+    }
+    &:hover::after {
+        color: $link-hover;
+    }
+    &:active::after {
+        color: $link-active;
+    }
+}
+
+.appcenter {
+    background-position: center center;
+    background-size: cover;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin: 20px;
+    margin-left: 0px;
+    margin-right: 100px;
+    float: left;
+    opacity: 1.0;
+    background-image: url('../images/brands/appcenter.png');
+
+    &:hover {
+        filter: invert(48%) sepia(13%) saturate(3207%) hue-rotate(250deg) brightness(60%) contrast(70%);
+    }
+    &::before {
+        content: "AppCenter";
+        color: black;
+        padding: 33px;
+        line-height: 85%;
+        transition: all 250ms;
+    }
+}
+
+.flathub {
+    background-position: center center;
+    background-size: cover;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin: 20px;
+    margin-left: 15px;
+    margin-right: 100px;
+    float: left;
+    opacity: 1.0;
+    background-image: url('../images/brands/flathub.png');
+
+    &:hover {
+        filter: invert(48%) sepia(13%) saturate(3207%) hue-rotate(170deg) brightness(80%) contrast(70%);
+    }
+    &::before {
+        content: "FlatHub";
+        color: black;
+        padding: 33px;
+        line-height: 85%;
+        transition: all 250ms;
+    }
+}
+
+.footer {
+    @include font($size: .8rem, $weight: 400, $lh: .8rem);
+    background-color: lighten($bg, 100%);
+    box-shadow: 0 -1px 3px rgba(60,64,67,0.2), 0 -1px 2px rgba(60,64,67,0.2);
+    box-sizing: border-box;
+    color: $fg;
+    padding: 2rem;
+    position: relative;
+    max-width: 100vw;
+    z-index: 2;
+}
 .logo {
     display: inline-block;
     vertical-align: middle;
 }
-
 .icon-link {
     display: inline-block;
     vertical-align: middle;
@@ -756,7 +520,6 @@ a.icon {
         line-height: 90%;
         transition: all 250ms;
     }
-
     &.github:hover {
         color: $github;
     }
