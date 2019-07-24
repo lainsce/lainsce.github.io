@@ -215,7 +215,7 @@ HORAIRE
 
 LEISURE
   UNDE : Home
-  ICON : M75,210 L75,210 L225,210 M135.5,55 L135.5,55 L60.5,185 M239.5,185 L239.5,185 L164.5,55
+  ICON : M60,240 a30,-30 0 0,1 30,-30 l150,0 M90,195 a30,-30 0 0,1 30,-30 l90,0 M120,150 a30,-30 0 0,1 30,-30 l30,0 M195,120 l45,0 M225,165 l15,0 M150,105 a30,-30 0 0,1 30,-30 l60,0
   LOOK : Noir
   BREF : {(link)} holds the interests Lains has been doing outside coding.
   BODY
@@ -264,30 +264,4 @@ RESEARCH
   BODY
     & The {(bold "Research")} archive is a collection of assorted projects.
     λ (echo (template :children INDEX))
-    
-CONLANGS
-  UNDE : Research
-  ICON : M60,240 a30,-30 0 0,1 30,-30 l150,0 M90,195 a30,-30 0 0,1 30,-30 l90,0 M120,150 a30,-30 0 0,1 30,-30 l30,0 M195,120 l45,0 M225,165 l15,0 M150,105 a30,-30 0 0,1 30,-30 l60,0
-  LOOK : Noir
-  BREF : {(link)}, holds the constructed languages by Lains.
-  BODY
-    & This is a collection of pieces of text.
-    λ (echo (template :children INDEX))
-
-NAXASERO
-  UNDE : Research
-  ICON : M60,240 a30,-30 0 0,1 30,-30 l150,0 M90,195 a30,-30 0 0,1 30,-30 l90,0 M120,150 a30,-30 0 0,1 30,-30 l30,0 M195,120 l45,0 M225,165 l15,0 M150,105 a30,-30 0 0,1 30,-30 l60,0
-  LOOK : Noir
-  BREF : {(link)}, holds the naxaserom Lains has been writing.
-  BODY
-    & This is a collection of pieces of text.
-    λ (echo (template :children INDEX))
-
-NAXASERO 1
-  UNDE : Naxasero
-  LOOK : Noir
-  BREF : {(link)} is the first Naxasero.
-  BODY
-    & Guess I'll start this
-    & I will begin sharing thoughts about stuff in here chronologically. As you can see, these naxaserom about anything will be in little cards like these. As an introductory naxasero, this one will have nothing in it, per usual. It should start being interesting by the next one. Hope you'll gather anything by these. Since the page is in a static platform, these naxaserom will not contain personal things such as addresses or personal photos. Naxasero is a word that comes from my constructed language Sayala, and its definition is in the header. It's basically a blog, but there's a rule: at most 15 lines of content and a marked initial letter. That is what defines a naxasero from anything else. Also, you may think, what even is that time tag on this? That's by another person's idea, Devine, my friend. The Nataniev System, more specifically, the Arvelie calendar. I'll leave a link to it on this naxasero. Until the next one.
 `;

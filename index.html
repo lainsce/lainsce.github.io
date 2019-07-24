@@ -1,66 +1,43 @@
 <!DOCTYPE html>
-<html lang="en-us">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Lains">
-    <meta property="og:description" content="The personal site for Lains">
-    <meta property='og:title' content='Lains'>
-    <meta property='og:image' content='icons/me.png'>
-    <title>Lains</title>
-    <link async type="text/css" rel="stylesheet" href="scss/main.css">
-    <!-- Avoid FOUC -->
-  </head>
-  <body>
-    <nav class="nav">
-      <div class="nav-icon">
-          <a href="/">
-            <img class="logo" height="32" width="32" src="icons/me.svg" alt="My Icon">
-          </a>
-      </div>
-      <div class="nav-link naxasero left">
-        <a href="/blog">Naxasero</a>
-      </div>
-      <div class="nav-link tluxu left">
-        <a href="/projects">Projects</a>
-      </div>
-      <div class="nav-link tracker left">
-        <a href="riven/index">Tracker</a>
-      </div>
-      <div class="right time">
-        <span id=date></span> <span id=time></span>
-      </div>
-    </nav>
-    <main>
-      <div class="hero">
-        <div class="hero-content">
-          <div>
-            <h3>Heyo, I'm Lains!</h3>
-          </div>
-          <div class="info center">
-            <ol>
-              <li>App Developer @ elementary OS</li>
-              <li>Has <span id=age>00</span> orbits around star Sol</li>
-              <li>Enthusiast about Vala</li>
-              <li>Creator of languages</li>
-              <li>Uses Nataniev Time System</li>
-              <li>Computer Scientist in the making</li>
-            </ol>
-          </div>
-        </div>
-      </div>
-    </main>
-    <footer class="footer">
-        <div class="left">
-            <p><img class="logo" height="32" width="32" src="icons/me.svg" alt="My Icon" style="margin-right: 20px;"> Lains © 17M05—<span id="year">xxxxxx</span></p>
-        </div>
-        <div class="right">
-            <a class="icon patreon" href="https://www.patreon.com/lainsce"></a>
-            <a class="icon github" href="https://github.com/lainsce"></a>
-            <a class="icon twitter" href="https://twitter.com/lainsdev"></a>
-        </div>
-    </footer>
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script type="text/javascript" src="/js/main.js"></script>
-  </body>
+<html lang='en'>
+<head>
+    <script type='text/javascript' src='scripts/lib/helpers.js'></script>
+    <script type='text/javascript' src='scripts/lib/runic.js'></script>
+    <script type='text/javascript' src='scripts/lib/indental.js'></script>
+    <script type='text/javascript' src='scripts/lib/tablatal.js'></script>
+    <script type='text/javascript' src='scripts/lib/neralie.js'></script>
+    <script type='text/javascript' src='scripts/lib/arvelie.js'></script>
+    <script type='text/javascript' src='scripts/lib/lisp.js'></script>
+    <script type='text/javascript' src='scripts/lib/heol.js'></script>
+
+    <script type='text/javascript' src='scripts/types/entry.js'></script>
+    <script type='text/javascript' src='scripts/types/term.js'></script>
+    <script type='text/javascript' src='scripts/types/list.js'></script>
+    <script type='text/javascript' src='scripts/types/log.js'></script>
+    <script type='text/javascript' src='scripts/types/issue.js'></script>
+    <script type='text/javascript' src='scripts/types/horaire.js'></script>
+    <script type='text/javascript' src='scripts/types/forecast.js'></script>
+    <script type='text/javascript' src='scripts/types/viz.js'></script>
+
+    <script type='text/javascript' src='scripts/riven.js'></script>
+    <script type='text/javascript' src='scripts/library.js'></script>
+    <script type='text/javascript' src='scripts/graph.js'></script>
+
+    <script type='text/javascript' src='scripts/database/lexicon.ndtl'></script>
+    <script type='text/javascript' src='scripts/database/issues.ndtl'></script>
+    <script type='text/javascript' src='scripts/database/horaire.tbtl'></script>
+
+    <link rel='stylesheet' type='text/css' href='links/reset.css'/>
+    <link rel='stylesheet' type='text/css' href='links/fonts.css'/>
+    <link rel='stylesheet' type='text/css' href='links/main.css'/>
+    <title>Lains's Tracker</title>
+</head>
+<body>
+  <script>
+    RIVEN.create(true);
+  </script>
+  <noscript>
+    Go enable JS, jerk!<br />
+  </noscript>
+</body>
 </html>
