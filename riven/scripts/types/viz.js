@@ -28,15 +28,15 @@ function Viz (logs, from, to, showDetails = true) {
   function _legend (logs) {
     if (!showDetails) { return '' }
     const horaire = new Horaire(logs)
-    const sum = horaire.sectors.audio + horaire.sectors.visual + horaire.sectors.research
+    const sum = horaire.sectors.leisure + horaire.sectors.research + horaire.sectors.programming
 
     return `
-    <rect class="audio" x="${cell * 0}" y="115" width="13" height="13" rx="2" ry="2" title="17O11"></rect>
-    <text x='${(cell + 1) * 2}' y='125' style='text-anchor:start'>Audio ${_perc(horaire.sectors.audio, sum)}%</text>
-    <rect class="visual" x="${(cell + 1) * 8}" y="115" width="13" height="13" rx="2" ry="2" title="17O11"></rect>
-    <text x='${(cell + 1) * 10}' y='125' style='text-anchor:start'>Visual ${_perc(horaire.sectors.visual, sum)}%</text>
-    <rect class="research" x="${(cell + 1) * 16}" y="115" width="13" height="13" rx="2" ry="2" title="17O11"></rect>
-    <text x='${(cell + 1) * 18}' y='125' style='text-anchor:start'>Research ${_perc(horaire.sectors.research, sum)}%</text>
+    <rect class="leisure" x="${cell * 0}" y="115" width="13" height="13" rx="2" ry="2" title="17O11"></rect>
+    <text x='${(cell + 1) * 2}' y='125' style='text-anchor:start'>Leisure ${_perc(horaire.sectors.leisure, sum)}%</text>
+    <rect class="research" x="${(cell + 1) * 9}" y="115" width="13" height="13" rx="2" ry="2" title="17O11"></rect>
+    <text x='${(cell + 1) * 11}' y='125' style='text-anchor:start'>Research ${_perc(horaire.sectors.research, sum)}%</text>
+    <rect class="programming" x="${(cell + 1) * 20}" y="115" width="13" height="13" rx="2" ry="2" title="17O11"></rect>
+    <text x='${(cell + 1) * 22}' y='125' style='text-anchor:start'>Programming ${_perc(horaire.sectors.programming, sum)}%</text>
     <text x='725' y='125' style='text-anchor:end'>${horaire.fhs.toFixed(0)} Hours</text>`
   }
 
@@ -142,8 +142,8 @@ function BarViz (logs) {
       const pos = parts - (((offset * -1) / limit) * parts)
       const share = (pos - Math.floor(pos))
 
-      if (!h[Math.floor(pos)]) { h[Math.floor(pos)] = { audio: 0, visual: 0, research: 0 } }
-      if (!h[Math.ceil(pos)]) { h[Math.ceil(pos)] = { audio: 0, visual: 0, research: 0 } }
+      if (!h[Math.floor(pos)]) { h[Math.floor(pos)] = { leisure: 0, research: 0, programming: 0 } }
+      if (!h[Math.ceil(pos)]) { h[Math.ceil(pos)] = { leisure: 0, research: 0, programming: 0 } }
       if (!h[Math.floor(pos)][log.sector]) { h[Math.floor(pos)][log.sector] = 0 }
       if (!h[Math.ceil(pos)][log.sector]) { h[Math.ceil(pos)][log.sector] = 0 }
 
@@ -160,16 +160,16 @@ function BarViz (logs) {
     return Object.keys(segments).reduce((acc, val, id) => {
       const seg = segments[val]
       const x = parseInt(id) * (cell + 1)
-      const audio_h = clamp(seg.audio * mod, 4, 100)
-      const audio_y = audio_h + 30
-      const visual_h = clamp(seg.visual * mod, 4, 100)
-      const visual_y = (visual_h + audio_y) + 0.5
-      const research_h = clamp(seg.visual * mod, 4, 100)
-      const research_y = (research_h + visual_y) + 0.5
+      const leisure_h = clamp(seg.leisure * mod, 4, 100)
+      const leisure_y = leisure_h + 30
+      const research_h = clamp(seg.research * mod, 4, 100)
+      const research_y = (research_h + leisure_y) + 0.5
+      const programming_h = clamp(seg.programming * mod, 4, 100)
+      const programming_y = (programming_h + research_y) + 0.5
       return `${acc}
-      <rect class='audio' x='${x}' y='${125 - audio_y}' width='${cell}' height='${audio_h}' rx="2" ry="2"></rect>
-      <rect class='visual' x='${x}' y='${125 - visual_y}' width='${cell}' height='${visual_h}' rx="2" ry="2"></rect>
-      <rect class='research' x='${x}' y='${125 - research_y}' width='${cell}' height='${research_h}' rx="2" ry="2"></rect>`
+      <rect class='leisure' x='${x}' y='${125 - leisure_y}' width='${cell}' height='${leisure_h}' rx="2" ry="2"></rect>
+      <rect class='research' x='${x}' y='${125 - research_y}' width='${cell}' height='${research_h}' rx="2" ry="2"></rect>
+      <rect class='programming' x='${x}' y='${125 - programming_y}' width='${cell}' height='${programming_h}' rx="2" ry="2"></rect>`
     }, '')
   }
 
@@ -192,7 +192,7 @@ function BalanceViz (logs) {
 
   function make_balance (logs, offset) {
     const sliced_logs = slice(logs, offset - 52, offset)
-    const sectors = { audio: 0, visual: 0, research: 0, sum: 0 }
+    const sectors = { leisure: 0, research: 0, programming: 0, sum: 0 }
 
     for (const id in sliced_logs) {
       const log = sliced_logs[id]
@@ -202,9 +202,9 @@ function BalanceViz (logs) {
     }
 
     return {
-      audio: sectors.audio > 0 ? (sectors.audio / sectors.sum) : 0,
-      visual: sectors.visual > 0 ? (sectors.visual / sectors.sum) : 0,
-      research: sectors.research ? (sectors.research / sectors.sum) : 0
+      leisure: sectors.leisure > 0 ? (sectors.leisure / sectors.sum) : 0,
+      research: sectors.research > 0 ? (sectors.research / sectors.sum) : 0,
+      programming: sectors.programming ? (sectors.programming / sectors.sum) : 0
     }
   }
 
@@ -229,12 +229,12 @@ function BalanceViz (logs) {
     while (day > 0) {
       const x = parseInt(day * (cell + 1) - (cell))
       const bal = data[day]
+      const h_programming = parseInt(100 * bal.programming)
       const h_research = parseInt(100 * bal.research)
-      const h_visual = parseInt(100 * bal.visual)
-      const h_audio = height - h_visual - h_research
-      html += `<rect class='research' x='${x}' y='${y}' width='${cell}' height='${clamp(h_research, 0)}' rx="2" ry="2"></rect>`
-      html += `<rect class='visual' x='${x}' y='${h_research + 1}' width='${cell}' height='${clamp(h_visual, 0)}' rx="2" ry="2"></rect>`
-      html += `<rect class='audio' x='${x}' y='${h_research + h_visual + 2}' width='${cell}' height='${clamp(h_audio, 0)}' rx="2" ry="2"></rect>`
+      const h_leisure = height - h_research - h_programming
+      html += `<rect class='programming' x='${x}' y='${y}' width='${cell}' height='${clamp(h_programming, 0)}' rx="2" ry="2"></rect>`
+      html += `<rect class='research' x='${x}' y='${h_programming + 1}' width='${cell}' height='${clamp(h_research, 0)}' rx="2" ry="2"></rect>`
+      html += `<rect class='leisure' x='${x}' y='${h_programming + h_research + 2}' width='${cell}' height='${clamp(h_leisure, 0)}' rx="2" ry="2"></rect>`
       day -= 1
     }
 

@@ -4,15 +4,15 @@ function Forecast (logs) {
   function predict (logs) {
     const section = trim(logs)
     const offset = {
-      audio: section.habit.sectors.audio - section.recent.sectors.audio,
-      visual: section.habit.sectors.visual - section.recent.sectors.visual,
-      research: section.habit.sectors.research - section.recent.sectors.research
+      leisure: section.habit.sectors.leisure - section.recent.sectors.leisure,
+      research: section.habit.sectors.research - section.recent.sectors.research,
+      programming: section.habit.sectors.programming - section.recent.sectors.programming
     }
 
     const sectors = sortHash(offset)
     const normalized = normalize(sectors)
     const sector = normalized[0]
-    const sector_code = ['audio', 'visual', 'research'].indexOf(sector[0]) + 1
+    const sector_code = ['leisure', 'research', 'programming'].indexOf(sector[0]) + 1
     const sector_value = 1 - normalized[1][1]
     const code = `-${sector_code}${parseInt(section.recent.ch)}${parseInt(sector_value * 10)}`
     return new Log({ code: code })

@@ -18,13 +18,13 @@ function Log (data = { code: '-400' }) {
   this.ch = data.code.length > 2 ? parseInt(data.code.substr(2, 1)) : 0
   this.fh = data.code.length > 3 ? parseInt(data.code.substr(3, 1)) : 0
 
-  this.sector = ['misc', 'audio', 'visual', 'research', 'misc'][this.sc]
+  this.sector = ['misc', 'leisure', 'research', 'programming', 'misc'][this.sc]
   this.isFeatured = this.pict && (this.rune === '!' || this.rune === '+')
   this.isEvent = this.rune === '+'
 
   this.tasks = [
-    ['idle', 'session', 'audio experiment', 'rehersal', 'draft', 'composition', 'sound design', 'mastering', 'audio release', 'performance' ],
-    ['idle', 'screening', 'visual experiment', 'storyboard', 'sketch', 'editing', 'graphic design', 'rendering', 'visual release', 'showcase' ],
+    ['idle', 'session', 'experiment', 'rehersal', 'draft', 'composition', 'design', 'mastering', 'release', 'performance' ],
+    ['idle', 'screening', 'experiment', 'storyboard', 'sketch', 'editing', 'design', 'rendering', 'release', 'showcase' ],
     ['idle', 'exploration', 'code experiment', 'maintenance', 'prototype', 'planning', 'interaction design', 'updating', 'software release', 'talk' ]
   ]
   this.task = this.tasks[this.sc - 1] ? this.tasks[this.sc - 1][this.ch] : 'travel'

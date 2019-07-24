@@ -22,11 +22,23 @@ RIVEN.create = (append = true) => {
     Ø(':default').create({ x: 0, y: 4 }, lib.DefaultTemplate),
     Ø(':journal').create({ x: 3, y: 4 }, lib.JournalTemplate),
     Ø(':calendar').create({ x: 6, y: 4 }, lib.CalendarTemplate),
-    Ø(':tracker').create({ x: 9, y: 4 }, lib.TrackerTemplate)
+    Ø(':tracker').create({ x: 9, y: 4 }, lib.TrackerTemplate),
+    Ø('rss').create({ x: 0, y: 8 }, lib.RssService),
+    Ø('static').create({ x: 3, y: 8 }, lib.StaticService)
   ])
 
   Ø('view').create({ x: 49, y: 4 }, lib.Mesh, [
     Ø('document').create({ x: 0, y: 0 }, lib.Document, append),
+    Ø('terminal').create({ x: 6, y: 4 }, lib.Terminal),
+    Ø('header').create({ x: 0, y: 4 }, lib.Dom),
+    Ø('photo').create({ x: 0, y: 8 }, lib.Photo, 'photo'),
+    Ø('menu').create({ x: 3, y: 8 }, lib.Dom),
+    Ø('logo').create({ x: 6, y: 12 }, lib.Dom, 'a', null, { 'data-goto': 'home', href: '#home', class: 'sprite_logo' }),
+    Ø('search').create({ x: 9, y: 12 }, lib.Input),
+    Ø('activity').create({ x: 3, y: 12 }, lib.Dom, 'ul'),
+    Ø('info').create({ x: 0, y: 12 }, lib.Dom),
+    Ø('glyph').create({ x: 3, y: 16 }, lib.Path),
+    Ø('title').create({ x: 0, y: 16 }, lib.Dom),
     Ø('core').create({ x: 12, y: 4 }, lib.Dom),
     Ø('content').create({ x: 15, y: 8 }, lib.Dom),
     Ø('main').create({ x: 12, y: 12 }, lib.Dom),
@@ -34,10 +46,11 @@ RIVEN.create = (append = true) => {
     Ø('calendar').create({ x: 18, y: 12 }, lib.Dom),
     Ø('journal').create({ x: 21, y: 12 }, lib.Dom),
     Ø('sidebar').create({ x: 12, y: 8 }, lib.Dom),
+    Ø('navi').create({ x: 18, y: 8 }, lib.Dom),
     Ø('footer').create({ x: 21, y: 4 }, lib.Dom),
     Ø('credits').create({ x: 21, y: 8 }, lib.Dom, 'div', `
-      <img class='icon' style="vertical-align: middle; margin-right: 20px;" width="32" height="32" src="../icons/me.svg" alt="My Icon" >
-      <a href='/'>Lains</a> © ${new Arvelie('17M05').toString(true)}—${arvelie()}<hr>
+    <img class='icon' style="vertical-align: middle; margin-right: 20px;" width="32" height="32" src="../icons/me.svg" alt="My Icon" >
+    <a href='/'>Lains</a> © ${new Arvelie('17M05').toString(true)}—${arvelie()}<hr>
     `)
   ])
 
@@ -48,7 +61,7 @@ RIVEN.create = (append = true) => {
   // Model
   Ø('router').syphon('database')
   Ø('router').connect('template')
-  Ø('database').syphon(['issues', 'horaire', 'lexicon'])
+  Ø('database').syphon(['asulodeta', 'issues', 'horaire', 'glossary', 'lexicon'])
   Ø('query').connect('router')
   Ø('database').connect('map')
   Ø('template').connect('document')
@@ -57,9 +70,13 @@ RIVEN.create = (append = true) => {
   Ø('template').syphon([':default', ':calendar', ':journal', ':tracker'])
 
   // Dom
-  Ø('document').bind(['core', 'footer'])
-  Ø('core').bind(['sidebar', 'content'])
+  Ø('header').bind(['photo', 'menu'])
+  Ø('menu').bind(['info', 'activity'])
+  Ø('info').bind(['glyph', 'title'])
+  Ø('document').bind(['terminal', 'header', 'core', 'footer'])
+  Ø('core').bind(['sidebar', 'content', 'navi'])
   Ø('content').bind(['main', 'journal', 'tracker', 'calendar'])
+
   Ø('footer').bind(['credits'])
 
   // Start

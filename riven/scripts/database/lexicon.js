@@ -7,6 +7,7 @@ HOME
   BODY
     & Welcome to the homepage of Lains's Tracker.
     & This page provides a link into his tracker, journal and calendar. It's made simple due to being only for tracking purposes.
+    λ (wrap (echo (template (match (table "lexicon") (uniq (attribute (table "horaire") "term"))) SPAN)) "ul" "tidy col3")
 
 TRACKER
   UNDE : Home
@@ -39,8 +40,8 @@ CALENDAR
     & Welcome to the homepage of Lains's Calendar.
 
 ELEMENTARY OS
-  UNDE : Home
-  ICON : M60,240 a30,-30 0 0,1 30,-30 l150,0 M90,195 a30,-30 0 0,1 30,-30 l90,0 M120,150 a30,-30 0 0,1 30,-30 l30,0 M195,120 l45,0 M225,165 l15,0 M150,105 a30,-30 0 0,1 30,-30 l60,0
+  UNDE : Horaire
+  ICON : M150,90 A45,45 0 0,1 195,135 A-45,45 0 0,1 150,180 A-45,-45 0 0,1 105,135 A45,-45 0 0,1 150,90 M180,135 A45,45 0 0,1 225,180 A-45,45 0 0,1 180,225 A-45,-45 0 0,1 135,180 A45,-45 0 0,1 180,135 M120,135 A45,45 0 0,1 165,180 A-45,45 0 0,1 120,225 A-45,-45 0 0,1 75,180 A45,-45 0 0,1 120,135
   LOOK : Noir
   BREF : {(link)} is an operating system used by Lains.
   BODY
@@ -55,7 +56,7 @@ DATETIME
     & This is the Date & Time indicator for elementary OS.
 
 PROJECTS
-  UNDE : Home
+  UNDE : Horaire
   ICON : M60,240 a30,-30 0 0,1 30,-30 l150,0 M90,195 a30,-30 0 0,1 30,-30 l90,0 M120,150 a30,-30 0 0,1 30,-30 l30,0 M195,120 l45,0 M225,165 l15,0 M150,105 a30,-30 0 0,1 30,-30 l60,0
   LOOK : Noir
   BREF : {(link)} is a list of apps developed for elementary OS.
@@ -71,7 +72,7 @@ NIU
     & This is a clock for Nataniev time system developed for elementary OS.
 
 LEISURE
-  UNDE : Home
+  UNDE : Horaire
   ICON : M60,240 a30,-30 0 0,1 30,-30 l150,0 M90,195 a30,-30 0 0,1 30,-30 l90,0 M120,150 a30,-30 0 0,1 30,-30 l30,0 M195,120 l45,0 M225,165 l15,0 M150,105 a30,-30 0 0,1 30,-30 l60,0
   LOOK : Noir
   BREF : {(link)} holds the interests Lains has been doing outside coding.
