@@ -36,6 +36,7 @@ RIVEN.create = (append = true) => {
     Ø('sidebar').create({ x: 12, y: 8 }, lib.Dom),
     Ø('footer').create({ x: 21, y: 4 }, lib.Dom),
     Ø('credits').create({ x: 21, y: 8 }, lib.Dom, 'div', `
+      <img class='icon' style="vertical-align: middle; margin-right: 20px;" width="32" height="32" src="../icons/me.svg" alt="My Icon" >
       <a href='/'>Lains</a> © ${new Arvelie('17M05').toString(true)}—${arvelie()}<hr>
     `)
   ])
