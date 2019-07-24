@@ -23,15 +23,12 @@ RIVEN.create = (append = true) => {
     Ø(':journal').create({ x: 3, y: 4 }, lib.JournalTemplate),
     Ø(':calendar').create({ x: 6, y: 4 }, lib.CalendarTemplate),
     Ø(':tracker').create({ x: 9, y: 4 }, lib.TrackerTemplate),
-    Ø('rss').create({ x: 0, y: 8 }, lib.RssService),
     Ø('static').create({ x: 3, y: 8 }, lib.StaticService)
   ])
 
   Ø('view').create({ x: 49, y: 4 }, lib.Mesh, [
     Ø('document').create({ x: 0, y: 0 }, lib.Document, append),
-    Ø('terminal').create({ x: 6, y: 4 }, lib.Terminal),
     Ø('header').create({ x: 0, y: 4 }, lib.Dom),
-    Ø('photo').create({ x: 0, y: 8 }, lib.Photo, 'photo'),
     Ø('menu').create({ x: 3, y: 8 }, lib.Dom),
     Ø('logo').create({ x: 6, y: 12 }, lib.Dom, 'a', null, { 'data-goto': 'home', href: '#home', class: 'sprite_logo' }),
     Ø('search').create({ x: 9, y: 12 }, lib.Input),
