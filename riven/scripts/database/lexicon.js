@@ -3,7 +3,7 @@ HOME
   UNDE : Home
   ICON : M150,60 A90,90 0 0,1 240,150 A-90,90 0 0,1 150,240 A-90,-90 0 0,1 60,150 A90,-90 0 0,1 150,60 Z
   LOOK : Noir
-  BREF : The {(link)} shows the starting point.
+  BREF : {(link)} is the starting point.
   BODY
     & Welcome to the homepage of Lains's Tracker.
     & This page provides a link into his tracker, journal and calendar. It's made simple due to being only for tracking purposes.
@@ -14,7 +14,7 @@ TRACKER
   VIEW : Tracker
   LOOK : Noir
   ALTS : issues
-  BREF : The {(link)} shows {(bold "issues and balance")}.
+  BREF : {(link)} shows {(bold "issues and balance")}.
   BODY
     & Welcome to the homepage of Lains's Tracker.
 
@@ -24,7 +24,7 @@ JOURNAL
   VIEW : Journal
   LOOK : Noir
   ALTS : Now Blog Diary
-  BREF : The {(link)} shows {(bold "recent activity")}.
+  BREF : {(link)} shows {(bold "recent activity")}.
   BODY
     & Welcome to the homepage of Lains's Journal.
 
@@ -34,7 +34,7 @@ CALENDAR
   ICON : M60,60 L60,60 L240,60 L240,240 L60,240 Z M60,120 L60,120 L240,120 M120,120 L120,120 L120,240 M120,180 L120,180 L240,180 M180,180 L180,180 L180,240
   VIEW : Calendar
   LOOK : Noir
-  BREF : The {(link)} shows {(bold "upcoming events")}.
+  BREF : {(link)} shows {(bold "upcoming events")}.
   BODY
     & Welcome to the homepage of Lains's Calendar.
 
@@ -42,7 +42,7 @@ ELEMENTARY OS
   UNDE : Home
   ICON : M60,240 a30,-30 0 0,1 30,-30 l150,0 M90,195 a30,-30 0 0,1 30,-30 l90,0 M120,150 a30,-30 0 0,1 30,-30 l30,0 M195,120 l45,0 M225,165 l15,0 M150,105 a30,-30 0 0,1 30,-30 l60,0
   LOOK : Noir
-  BREF : The {(link)} is an operating system used by Lains.
+  BREF : {(link)} is an operating system used by Lains.
   BODY
     & elementary OS, Lains's OS of choice.
 
@@ -50,7 +50,7 @@ DATETIME
   UNDE : Elementary OS
   ICON : M60,60 L60,60 L240,60 L240,240 L60,240 Z M60,120 L60,120 L240,120 M120,120 L120,120 L120,240 M120,180 L120,180 L240,180 M180,180 L180,180 L180,240
   LOOK : Noir
-  BREF : The {(link)} is the Date & Time indicator for elementary OS.
+  BREF : {(link)} is the Date & Time indicator for elementary OS.
   BODY
     & This is the Date & Time indicator for elementary OS.
 
@@ -58,7 +58,7 @@ PROJECTS
   UNDE : Home
   ICON : M60,240 a30,-30 0 0,1 30,-30 l150,0 M90,195 a30,-30 0 0,1 30,-30 l90,0 M120,150 a30,-30 0 0,1 30,-30 l30,0 M195,120 l45,0 M225,165 l15,0 M150,105 a30,-30 0 0,1 30,-30 l60,0
   LOOK : Noir
-  BREF : The {(link)} is a list of apps developed for elementary OS.
+  BREF : {(link)} is a list of apps developed for elementary OS.
   BODY
     & This is a list of apps developed for elementary OS.
 
@@ -66,7 +66,7 @@ NIU
   UNDE : Projects
   ICON : M60,60 L60,60 L240,60 L240,240 L60,240 Z M60,120 L60,120 L240,120 M120,120 L120,120 L120,240 M120,180 L120,180 L240,180 M180,180 L180,180 L180,240
   LOOK : Noir
-  BREF : The {(link)} is a clock for Nataniev System developed for elementary OS.
+  BREF : {(link)} is a clock for Nataniev System developed for elementary OS.
   BODY
     & This is a clock for Nataniev time system developed for elementary OS.
 
@@ -74,7 +74,7 @@ LEISURE
   UNDE : Home
   ICON : M60,240 a30,-30 0 0,1 30,-30 l150,0 M90,195 a30,-30 0 0,1 30,-30 l90,0 M120,150 a30,-30 0 0,1 30,-30 l30,0 M195,120 l45,0 M225,165 l15,0 M150,105 a30,-30 0 0,1 30,-30 l60,0
   LOOK : Noir
-  BREF : The {(link)} are the interests Lains has been doing outside coding.
+  BREF : {(link)} holds the interests Lains has been doing outside coding.
   BODY
     & These are the interests Lains has been doing outside coding.
 
@@ -82,7 +82,7 @@ TWITCH
   UNDE : Leisure
   ICON : M60,240 a30,-30 0 0,1 30,-30 l150,0 M90,195 a30,-30 0 0,1 30,-30 l90,0 M120,150 a30,-30 0 0,1 30,-30 l30,0 M195,120 l45,0 M225,165 l15,0 M150,105 a30,-30 0 0,1 30,-30 l60,0
   LOOK : Noir
-  BREF : The {(link)} is the popular streaming platform.
+  BREF : {(link)} is the popular streaming platform.
   BODY
     & The popular streaming platform.
 `;
