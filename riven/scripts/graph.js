@@ -36,8 +36,7 @@ RIVEN.create = (append = true) => {
     Ø('sidebar').create({ x: 12, y: 8 }, lib.Dom),
     Ø('footer').create({ x: 21, y: 4 }, lib.Dom),
     Ø('credits').create({ x: 21, y: 8 }, lib.Dom, 'div', `
-      <a data-goto='lains' href='https://lainsce.us/'>Lains</a> © ${new Arvelie('17M05').toString(true)}—${arvelie()}
-      <hr>
+      <a href='/'>Lains</a> © ${new Arvelie('17M05').toString(true)}—${arvelie()}<hr>
     `)
   ])
 
@@ -58,7 +57,7 @@ RIVEN.create = (append = true) => {
 
   // Dom
   Ø('document').bind(['core', 'footer'])
-  Ø('core').bind(['sidebar', 'content', 'navi'])
+  Ø('core').bind(['sidebar', 'content'])
   Ø('content').bind(['main', 'journal', 'tracker', 'calendar'])
   Ø('footer').bind(['credits'])
 
