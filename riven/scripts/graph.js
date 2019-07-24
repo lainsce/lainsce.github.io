@@ -30,8 +30,6 @@ RIVEN.create = (append = true) => {
     Ø('document').create({ x: 0, y: 0 }, lib.Document, append),
     Ø('header').create({ x: 0, y: 4 }, lib.Dom),
     Ø('menu').create({ x: 3, y: 8 }, lib.Dom),
-    Ø('logo').create({ x: 6, y: 12 }, lib.Dom, 'a', null, { 'data-goto': 'home', href: '#home', class: 'sprite_logo' }),
-    Ø('search').create({ x: 9, y: 12 }, lib.Input),
     Ø('activity').create({ x: 3, y: 12 }, lib.Dom, 'ul'),
     Ø('info').create({ x: 0, y: 12 }, lib.Dom),
     Ø('glyph').create({ x: 3, y: 16 }, lib.Path),
