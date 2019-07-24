@@ -351,6 +351,9 @@ a.icon {
     &.tluxu {
         background-image: url("data:image/svg+xml,%3Csvg class='vector' width='300px' height='300px' xmlns='http://www.w3.org/2000/svg' baseProfile='full' version='1.1'%3E%3Cpath id='layer_1' d='M60,90 L60,90 L240,90 M60,90 L60,120 L60,180 M90,120 L90,120 L240,120 M90,120 L90,120 L90,180 M240,120 L240,120 L240,180 M90,180 L90,180 L240,180' style='stroke: rgb(0, 0, 0); stroke-width: 15; stroke-linecap: round; stroke-linejoin: round; fill: none;'%3E%3C/path%3E%3C/svg%3E");
     }
+    &.tracker {
+      background-image: url("data:image/svg+xml,%3Csvg class='vector' width='300px' height='300px' xmlns='http://www.w3.org/2000/svg' baseProfile='full' version='1.1'%3E%3Cpath id='layer_1' d='M60,150 L60,150 L90,150 L120,90 L180,210 L210,150 L240,150 ' style='stroke: rgb(255, 255, 255); stroke-width: 15; stroke-linecap: round; stroke-linejoin: round; fill: none;'%3E%3C/path%3E%3C/svg%3E");
+    }
     &:hover {
         border: 1px solid $outline;
         color: $fg;
