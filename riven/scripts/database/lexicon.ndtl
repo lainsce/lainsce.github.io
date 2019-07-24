@@ -86,4 +86,13 @@ TWITCH
   BREF : {(link)} is the popular streaming platform.
   BODY
     & The popular streaming platform.
+
+CLARK
+  UNDE : Leisure
+  ICON : M60,240 a30,-30 0 0,1 30,-30 l150,0 M90,195 a30,-30 0 0,1 30,-30 l90,0 M120,150 a30,-30 0 0,1 30,-30 l30,0 M195,120 l45,0 M225,165 l15,0 M150,105 a30,-30 0 0,1 30,-30 l60,0
+  LOOK : Noir
+  BREF : {(link)}, one of the musicians that does IDM-type music.
+  BODY
+    & {(link)} is an experimental IDM musician from the UK.
+    & They are a source of music taste development for Lains.
 `;
