@@ -58,7 +58,7 @@ RIVEN.create = (append = true) => {
   // Model
   Ø('router').syphon('database')
   Ø('router').connect('template')
-  Ø('database').syphon(['asulodeta', 'issues', 'horaire', 'glossary', 'lexicon'])
+  Ø('database').syphon(['issues', 'horaire', 'lexicon'])
   Ø('query').connect('router')
   Ø('database').connect('map')
   Ø('template').connect('document')
@@ -67,10 +67,10 @@ RIVEN.create = (append = true) => {
   Ø('template').syphon([':default', ':calendar', ':journal', ':tracker'])
 
   // Dom
-  Ø('header').bind(['photo', 'menu'])
+  Ø('header').bind(['menu'])
   Ø('menu').bind(['info', 'activity'])
   Ø('info').bind(['glyph', 'title'])
-  Ø('document').bind(['terminal', 'header', 'core', 'footer'])
+  Ø('document').bind(['header', 'core', 'footer'])
   Ø('core').bind(['sidebar', 'content', 'navi'])
   Ø('content').bind(['main', 'journal', 'tracker', 'calendar'])
 
