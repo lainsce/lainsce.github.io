@@ -3,10 +3,9 @@ HOME
   UNDE : Home
   ICON : M150,60 A90,90 0 0,1 240,150 A-90,90 0 0,1 150,240 A-90,-90 0 0,1 60,150 A90,-90 0 0,1 150,60 Z
   LOOK : Noir
-  BODY
+  BODY 
     & Welcome to the homepage of Lains's Tracker.
     & This page provides a link into his tracker, journal and calendar. It's made simple due to being only for tracking purposes.
-    λ (wrap (echo (template (match (table "lexicon") (uniq (attribute (table "horaire") "term"))) SPAN)) "ul" "tidy col3")
 
 TRACKER
   UNDE : Home
