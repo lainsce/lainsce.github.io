@@ -184,7 +184,7 @@ RIVEN.lib.Template = function TemplateNode (id, rect) {
     const content = this.request(q)
 
     const template = {
-      title: `TCKR—${q.target.toUpperCase()}`,
+      title: `LAINS—${q.target.toUpperCase()}`,
       view: this._view(q),
       theme: this._theme(q),
       document: {

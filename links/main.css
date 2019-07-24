@@ -45,7 +45,7 @@ hr { clear:both; }
 code { display: block; var(--grey_4)-space: pre }
 svg { stroke-width: 10;stroke: var(--grey_4);stroke-linecap: round; }
 
-::selection { background: #72dec2; opacity:1.0; color:#000; padding:10px; /* Safari */ }
+::selection { background: var(--color_1); opacity:1.0; color:var(--grey_4); padding:10px; /* Safari */ }
 
 media { display: block; width:100%; height:100%; background-size:cover; background-position: center }
 
@@ -149,12 +149,12 @@ media { display: block; width:100%; height:100%; background-size:cover; backgrou
 #document #core #content ul.bullet li:before { content:"•"; position:absolute; left:10px;}
 #document #core #content div.quote { display: block;margin-bottom: 30px; position: relative;}
 #document #core #content div.quote p.text { max-width: 400px;padding-left: 30px;margin-left: -30px;margin-bottom: 15px;font-size: 30px;line-height: 40px;font-family: var(--serif);letter-spacing: -0.5px}
-#document #core #content div.quote p.text:before { content:"\""; color:var(--grey_2); position: absolute; left:-10px; }
-#document #core #content div.quote p.text:after { content:" \""; color:var(--grey_2); }
+#document #core #content div.quote p.text:before { content:"\""; color:var(--grey_3); position: absolute; left:-10px; }
+#document #core #content div.quote p.text:after { content:" \""; color:var(--grey_3); }
 #document #core #content div.quote p.text b { font-family: var(--serif_b); font-weight: normal; }
 #document #core #content div.quote p.text a { font-family: var(--serif_b); text-decoration: none; transition: all 250ms }
 #document #core #content div.quote p.text a:hover { border-bottom-color: var(--grey_4) }
-#document #core #content div.quote p.attrib { font-size: 12px;line-height: 20px;font-family: var(--mono); color: var(--grey_2); }
+#document #core #content div.quote p.attrib { font-size: 12px;line-height: 20px;font-family: var(--mono); color: var(--grey_3); }
 #document #core #content div.quote p.attrib a { font-family: var(--mono_m); text-decoration: none; background: var(--grey_4);color: var(--grey_4);padding: 0px 10px;display: inline-block;line-height: 25px;border-radius:var(--rounded); border-bottom:0px !important; }
 #document #core #content div.quote p.attrib b { font-family: var(--mono_m); text-decoration: none; }
 #document #core #content div.quote p.attrib a:hover { background: var(--grey_4); color:var(--grey_4); }
@@ -168,7 +168,7 @@ media { display: block; width:100%; height:100%; background-size:cover; backgrou
 #document #core #content .entry { line-height: 30px;color: var(--grey_4);font-family: var(--font_m);border-bottom: 1.5px solid var(--grey_3);display: block;padding: 15px 0px 15px 70px;margin-bottom: 1px;vertical-align: top;position: relative;font-size: 14px;min-height: 50px}
 #document #core #content .entry:last-child { border-top: 0px; border-bottom: 0px }
 #document #core #content .entry svg:hover { opacity: 1.0}
-#document #core #content .entry svg.icon { cursor: pointer; background:var(--grey_2); width:50px; height:50px; border-radius:var(--rounded); display:inline-block; position:absolute; left:0px }
+#document #core #content .entry svg.icon { cursor: pointer; background:var(--grey_3); width:50px; height:50px; border-radius:var(--rounded); display:inline-block; position:absolute; left:0px }
 #document #core #content .entry svg.icon path { fill:none; stroke-width:10;stroke:var(--grey_4); stroke-linejoin: round  }
 #document #core #content .entry .head { display: block; font-size:14px; line-height: 25px; }
 #document #core #content .entry .head .div.details {  }
