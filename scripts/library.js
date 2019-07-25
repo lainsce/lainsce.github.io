@@ -184,7 +184,7 @@ RIVEN.lib.Template = function TemplateNode (id, rect) {
     const content = this.request(q)
 
     const template = {
-      title: `LAINS—${q.target.toUpperCase()}`,
+      title: `LAINS — ${q.target.toTitleCase()}`,
       view: this._view(q),
       theme: this._theme(q),
       document: {
@@ -230,7 +230,7 @@ RIVEN.lib.Template = function TemplateNode (id, rect) {
 
     if (q.result.name === 'HOME' || q.result.name === 'JOURNAL' || q.result.name === 'CALENDAR' || q.result.name === 'TRACKER') {
       return `
-      <li>${'calendar'.toLink('Calendar', 'calendar sprite_calendar')}</li>
+      <li>${'calendar'.toLink('Calendar', 'calendar sprite_calendar')}</li> 
       <li>${'journal'.toLink('Journal', 'journal sprite_journal')}</li>
       <li>${'tracker'.toLink('Tracker', 'tracker sprite_tracker')}</li>`
     }
@@ -269,7 +269,7 @@ RIVEN.lib.Template = function TemplateNode (id, rect) {
   this._sidebar = function (q) {
     if (!q.result) { return `<h1>The ${'Nataniev'.toLink()} Services Desk</h1><h2>${'Home'.toLink()}</h2>` }
     return `
-    ${q.result.logs.length > 2 ? `<h2>${q.result.logs[q.result.logs.length - 1].time}—${q.result.logs[0].time}</h2>` : `<h2>${q.tables.horaire[q.tables.horaire.length - 1].time}—${q.tables.horaire[0].time}</h2>`}
+    ${q.result.logs.length > 2 ? `<h2>${q.result.logs[q.result.logs.length - 1].time} — ${q.result.logs[0].time}</h2>` : `<h2>${q.tables.horaire[q.tables.horaire.length - 1].time} — ${q.tables.horaire[0].time}</h2>`}
     ${_links(q.result)}
     ${_directory(q.result)}`
   }
@@ -391,10 +391,80 @@ RIVEN.lib.CalendarTemplate = function TemplateNode (id, rect) {
 }
 
 // Services
+
+RIVEN.lib.RssService = function RssNode (id, rect) {
+  RIVEN.Node.call(this, id, rect)
+
+  this.glyph = 'M65,65 L65,65 L245,65 L245,245 L65,245 Z M65,125 L65,125 L245,125 M95,95 L95,95 L95,95 '
+
+  this.receive = function () {
+    const logs = Ø('database').cache.horaire
+    const selection = []
+    for (const id in logs) {
+      const log = logs[id]
+      if (selection.length >= 60) { break }
+      if (log.time.offset > 0) { continue }
+      if (!log.pict) { continue }
+      selection.push(log)
+    }
+
+    return this.render(selection)
+  }
+
+  this.items = function (logs) {
+    let html = ''
+    for (const id in logs) {
+      const log = logs[id]
+      html += `
+  <item>
+    <title>${log.term} — ${log.name}</title>
+    <link>https://lainsce.us/${log.term.toUrl()}</link>
+    <guid isPermaLink='false'>IV${log.pict}</guid>
+    <pubDate>${log.time.toDate().toUTCString()}</pubDate>
+    <dc:creator><![CDATA[Lains]]></dc:creator>
+    <description>
+      &lt;img src="https://lainsce.us/media/diary/${log.pict}.jpg"/&gt;
+      &lt;br/&gt;
+      ${log.host.data.BREF.toHeol(log.host).stripHTML()}
+    </description>
+  </item>
+`
+    }
+    return html
+  }
+
+  this.render = function (logs) {
+    return `
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/">
+
+<channel>
+  <title>LAINS — Journal</title>
+  <link>https://lainsce.us/</link>
+  <description>Lains's Journal</description>
+  <image>
+    <url>https://lainsce.us/media/services/rss.jpg</url>
+    <title>LAINS — Journal</title>
+    <link>https://lainsce.us/</link>
+  </image>
+  <pubDate>${logs[0].time.toDate().toUTCString()}</pubDate>
+  <generator>Oscean - Riven</generator>
+  ${this.items(logs)}
+</channel>
+
+</rss>`.toEntities()
+  }
+}
+
 RIVEN.lib.StaticService = function StaticNode (id, rect) {
   RIVEN.Node.call(this, id, rect)
 
   this.glyph = 'M65,65 L65,65 L245,65 L245,245 L65,245 Z M65,125 L65,125 L245,125 M95,95 L95,95 L95,95 '
+
+  function _header () {
+    const lastLog = Ø('database').cache.horaire[0]
+    return `\n\nUpdated ${lastLog.time} — ${lastLog.time.toGregorian()}\n\n`
+  }
 
   function _item (term) {
     return `${term.name.toTitleCase()}\n  ${term.bref.toHeol(term).stripHTML()}\n${term.links ? Object.keys(term.links).reduce((acc, val) => { return `${acc}  - ${term.links[val]}\n` }, '') : ''}\n`
@@ -728,171 +798,65 @@ RIVEN.lib.Path = function PathNode (id, rect, ...params) {
       this.path.setAttribute('d', content)
     }
   }
+}
 
-RIVEN.lib.Terminal = function TerminalNode (id, rect, ...params) {
-    RIVEN.lib.Dom.call(this, id, rect, 'div')
+RIVEN.lib.Photo = function PhotoNode (id, rect, ...params) {
+  RIVEN.lib.Dom.call(this, id, rect)
 
-    this.glyph = 'M65,65 L65,65 L245,65 M65,125 L65,125 L245,125 M65,185 L65,185 L245,185 M65,245 L65,245 L245,245 '
+  this.media = document.createElement('media')
+  this.glyph = 'M60,90 L60,90 L60,60 L90,60 M210,60 L210,60 L240,60 L240,90 M240,210 L240,210 L240,240 L210,240 M90,240 L90,240 L60,240 L60,210 '
 
-    this.isBooted = false
+  this.install = function (elements) {
+    this.isInstalled = true
+    this.el.appendChild(this.media)
 
-    this.bang = function (q) {
-      if (q.indexOf('~') < 0) { return }
-
-      const words = q.substr(1).split('+')
-      const cmd = words[0]
-      const par = words.splice(1).join(' ')
-
-      if (!cmd) { return }
-
-      this.boot()
-
-      this.push('guest', `${cmd}${par ? '(' + par + ')' : ''}`, 125)
-      this.push('maeve', `${this.services[cmd] ? this.services[cmd](par) : this.services['unknown'](cmd)}`, 250)
-
-      Ø('search').el.value = '~'
-      Ø('terminal').addClass('active')
+    for (const id in elements) {
+      this.el.appendChild(elements[id])
     }
+  }
 
-    this.boot = function () {
-      if (this.isBooted === true) { return }
-      this.push('maeve', `The local time is ${arvelie()} ${neralie()}.
-  Today's forecast is <b>${this.services.forecast()}</b>.
-  This is presently <b>${this.services.progress().toFixed(2)}% Completed</b>.
-  Lains is now <b>${this.services.age().toFixed(4)} years</b> old.`, 0)
-      this.isBooted = true
+  this.update = function (content) {
+    if (parseInt(content, 16) > 0) {
+      isDark(`media/diary/${content}.jpg`, this.update_header)
+      this.media.style.backgroundImage = `url(media/diary/${content}.jpg)`
+      this.el.className = ''
+    } else {
+      this.el.className = 'empty'
+      Ø('header').el.className = 'no_photo'
     }
+  }
 
-    this.push = function (author, txt, delay = 0) {
-      setTimeout(() => {
-        this.el.innerHTML = `
-        <div class='line ${author}'>
-          <span class='time'>${neralie()}</span>
-          <span class='author'>${author}</span>
-          <span class='body'>${txt}</span>
-        </div>\n${this.el.innerHTML}`
-      }, delay)
+  this.update_header = function (v = true) {
+    Ø('header').el.className = v ? 'dark' : 'light'
+  }
+
+  function diff (data, width, height) {
+    let fuzzy = -0.4
+    let r, g, b, max_rgb
+    let light = 0; let dark = 0
+    for (let x = 0, len = data.length; x < len; x += 4) {
+      r = data[x]
+      g = data[x + 1]
+      b = data[x + 2]
+      max_rgb = Math.max(Math.max(r, g), b)
+      if (max_rgb < 128) { dark++ } else { light++ }
     }
+    let dl_diff = ((light - dark) / (width * height))
+    return dl_diff + fuzzy < 0
+  }
 
-    // Services
-
-    this.services =
-    {
-      help: (q) => {
-        return 'Available commands:\n<ul>' + Object.keys(this.services).reduce((acc, val) => { return acc + `<li><i>${val}</i></li>` }, '') + '</ul>'
-      },
-
-      atog: (q) => {
-        return `${new Arvelie(q).toGregorian()}`
-      },
-
-      gtoa: (q) => {
-        return !isNaN(new Date(q)) ? `${new Date(q).toArvelie()}` : 'Invalid Date'
-      },
-
-      litoen: (q) => {
-        const res = Ø('asulodeta').find(q, 'name')
-        return res ? `The English translation of "${res.childspeak.toLink(res.adultspeak.toTitleCase())}" is "<b>${res.english.toTitleCase()}</b>".` : 'Unknown'
-      },
-
-      entoli: (q) => {
-        const res = Ø('asulodeta').find(q, 'english')
-        return res ? `The Lietal translation of "<b>${q.toTitleCase()}</b>" is "${res.childspeak.toLink(res.adultspeak.toTitleCase())}".` : 'Unknown'
-      },
-
-      task: (q) => {
-        return `${new Log({ code: '-' + q }).task}`
-      },
-
-      yleta: (q) => {
-        return new Yleta({ name: q }).body()
-      },
-
-      next: (q) => {
-        const used = []
-        for (const id in Ø('database').cache.horaire) {
-          const log = Ø('database').cache.horaire[id]
-          if (!log.pict) { continue }
-          used.push(log.pict)
-        }
-        let available = 1
-        while (available < 999) {
-          const target = available.toString(16).toUpperCase()
-          if (used.indexOf(target) < 0) { return `The next available diary ID is <b>${target}</b>.` }
-          available += 1
-        }
-        return `There are no available diary IDs under 999.`
-      },
-
-      walk: (q) => {
-        const time = performance.now()
-        for (const id in Ø('database').index) {
-          Ø('database').index[id].toString()
-        }
-        return `Walked ${Object.keys(Ø('database').index).length} indexes, in ${(performance.now() - time).toFixed(2)}ms.`
-      },
-
-      rss: (q) => {
-        return `<textarea>${Ø('rss').receive(q)}</textarea>`
-      },
-
-      static: (q) => {
-        return `<textarea>${Ø('static').receive(q)}</textarea>`
-      },
-
-      heol: (q) => {
-        return `${new Heol(q, null)}`
-      },
-
-      age: (q) => {
-        return ((new Date() - new Date('1986-03-22')) / 31557600000)
-      },
-
-      progress: (q) => {
-        const score = { ratings: 0, entries: 0 }
-        for (const id in Ø('database').cache.lexicon) {
-          score.ratings += Ø('database').cache.lexicon[id].rating()
-          score.entries += 1
-        }
-        return ((score.ratings / score.entries) * 100)
-      },
-
-      forecast: (q) => {
-        const forecast = new Forecast(Ø('database').cache.horaire)
-        return `${forecast.fh}fh of ${forecast.sector} ${forecast.task}`
-      },
-
-      otd: (q) => {
-        const today = new Date().toArvelie()
-        const a = []
-        const logs = Ø('database').cache.horaire.filter(__onlyEvents).filter(__onlyThisDay)
-        if (logs.length < 1) { return `There are no events on this day.` }
-        return `<b>On This Day</b>, on ${timeAgo(logs[0].time, 14)}, ${logs[0].host.name.toTitleCase()} — ${logs[0].name}.`
-      },
-
-      orphans: (q) => {
-        let html = ''
-        for (const id in Ø('database').cache.lexicon) {
-          const term = Ø('database').cache.lexicon[id]
-          if (term.incoming.length < 2) { html += `${term.name}\n` }
-        }
-        return `<ul>${html}</ul>`
-      },
-
-      iso: (q) => {
-        const d = new Date()
-        function pad (n) { return n < 10 ? '0' + n : n }
-        return d.getUTCFullYear() + '-' + pad(d.getUTCMonth() + 1) + '-' + pad(d.getUTCDate()) + 'T' + pad(d.getUTCHours()) + ':' + pad(d.getUTCMinutes()) + ':' + pad(d.getUTCSeconds()) + 'Z'
-      },
-
-      clear: (q) => {
-        this.el.innerHTML = ''
-        return ``
-      },
-
-      unknown: (q) => {
-        return `Unknown command <i>${q}</i>, type <i>help</i> to see available commands.`
-      }
+  function isDark (imageSrc, callback, w = 200, h = 200) {
+    const fuzzy = -0.4
+    const img = document.createElement('img')
+    img.src = imageSrc
+    img.onload = function () {
+      const canvas = document.createElement('canvas')
+      canvas.width = w
+      canvas.height = h
+      canvas.getContext('2d').drawImage(this, 0, 0, canvas.width, canvas.height)
+      try {
+        callback(diff(canvas.getContext('2d').getImageData(0, 0, canvas.width, canvas.height).data, canvas.width, canvas.height))
+      } catch (err) { console.warn('Could not get photo data'); callback() }
     }
   }
 }
