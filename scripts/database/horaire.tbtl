@@ -1,6 +1,6 @@
 DATABASE.horaire = `
 DATE  CODE PICT TERM                 NAME                                       
-19O10 +381      Dot Matrix           Release
+19O10 +381      Dot Matrix           Dot Matrix - Release
 19O10 -347      Dot Matrix           Made curves better
 19O10 -344      Dot Matrix           Use Ecosystem colors correctly
 19O09 -343      Home                 Site - Port whole site to Riven                          
@@ -24,13 +24,13 @@ DATE  CODE PICT TERM                 NAME
 19E11 +338      Timetable            Fix weekend visibility on launch
 19E11 -332      Dot Matrix           Added French translation
 19E10 -367      Home                 Make it responsive
-19E10 -367      Home                 Redesign
-19E10 +381      Dot Matrix           Release
+19E10 -367      Home                 Home - Redesign
+19E10 +381      Dot Matrix           Dot Matrix - Release
 19E09 -179      Fysi                 Worked at
 19E08 -346      Dot Matrix           Implement Show/Hide grid
 19E08 -346      Dot Matrix           Implement Linecap change
 19E08 -345      Dot Matrix           Implement cursor guide
-19E07 +386      Dot Matrix           Release
+19E07 +386      Dot Matrix           Dot Matrix - Release
 19E07 -345      Dot Matrix           Implement line coloring
 19E07 -345      Dot Matrix           Implement line thickness
 19E06 -346      Dot Matrix           Implement curves
@@ -42,15 +42,15 @@ DATE  CODE PICT TERM                 NAME
 19E04 -356      Dot Matrix           Research GTK drawing area
 19E04 -346      Dot Matrix           Rewrite into Cairo
 19E04 -356      Dot Matrix           Research Cairo
-19E03 +384      Quilter              Release
+19E03 +384      Quilter              Quilter - Release
 19E03 -326      Dot Matrix           Try making it in GTK only
 19E03 -311      Dot Matrix           Started Project
 19E02 -192      Twitch               Played twitch stocks game
-19E01 +384      Quilter              Release
+19E01 +384      Quilter              Quilter - Release
 19E01 -337      Quilter              Fix opening files
 19E01 -192      Twitch               Played twitch stocks game
 19D14 -332      Yishu                Added German translation
-19D14 +384      Timetable            Release
+19D14 +384      Timetable            Timetable - Release
 19D14 -192      Twitch               Played twitch stocks game
 19D13 -192      Twitch               Played twitch stocks game
 19D13 -316      Timetable            Opening .org files
