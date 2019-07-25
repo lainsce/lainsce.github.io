@@ -16,5 +16,41 @@ DATE  CODE PICT TERM                 NAME
 19O01 -338      DateTime             DateTime - Coding
 19O01 -328      DateTime             DateTime - Coding
 19O01 -122      Tidal                Listened to Clark
-19O01 !365      Home                 Begin journaling
+19O01 !365      Home                 Begin journaling again
+19E12 -342      Dot Matrix           Implement filled shapes
+19E11 +338      Timetable            Fix weekend visibility on launch
+19E11 -332      Dot Matrix           Added French translation
+19E10 -367      Home                 Make it responsive
+19E10 -367      Home                 Redesign
+19E10 +381      Dot Matrix           Release
+19E09 -179      Fysi                 Worked at
+19E08 -346      Dot Matrix           Implement Show/Hide grid
+19E08 -346      Dot Matrix           Implement Linecap change
+19E08 -345      Dot Matrix           Implement cursor guide
+19E07 +386      Dot Matrix           Release
+19E07 -345      Dot Matrix           Implement line coloring
+19E07 -345      Dot Matrix           Implement line thickness
+19E06 -346      Dot Matrix           Implement curves
+19E06 -346      Dot Matrix           Implement reverse curves
+19E06 -345      Dot Matrix           Implement drawing lines
+19E05 -365      Dot Matrix           Draw app icon
+19E05 -326      Dot Matrix           Freeform drawing
+19E05 -346      Dot Matrix           Implement Cairo grid
+19E04 -356      Dot Matrix           Research GTK drawing area
+19E04 -346      Dot Matrix           Rewrite into Cairo
+19E04 -356      Dot Matrix           Research Cairo
+19E03 +384      Quilter              Release
+19E03 -326      Dot Matrix           Try making it in GTK only
+19E03 -311      Dot Matrix           Started Project
+19E02 -192      Twitch               Played twitch stocks game
+19E01 +384      Quilter              Release
+19E01 -337      Quilter              Fix opening files
+19E01 -192      Twitch               Played twitch stocks game
+19D14 -332      Yishu                Added German translation
+19D14 +384      Timetable            Release
+19D14 -192      Twitch               Played twitch stocks game
+19D13 -192      Twitch               Played twitch stocks game
+19D13 -316      Timetable            Opening .org files
+19D13 -336      Timetable            Fix loading color from files
+19D12 +364      Home                 Start journaling
 `;
