@@ -283,6 +283,27 @@ NAXASERO
     & This is a collection of pieces of text.
     λ (echo (template :children INDEX))
 
+NAXASERO 4
+  UNDE : Naxasero
+  LOOK : Noir
+  BREF : {(link)}: New Site on the effects of Riven
+  BODY
+    & The website has evolved yet again, now being a Riven databased site. This made the site more logical, and things are being tracked now. I feel like the site as is is leaner than it was before, surprisingly. Anyways, I've worked on Dot Matrix, to dust off the mites on it, and it is now a better app than it was before, while not adding any features. It's mainly a backend change in some parts, making it more reliable. Also, I'm thinking of tackling a rewrite of Yishu next, to make it less confusing in-code, and inject new life onto it.. Perhaps that'll be the P Months' main task to tackle.
+
+NAXASERO 3
+  UNDE : Naxasero
+  LOOK : Noir
+  BREF : {(link)}: Nataniev Way of Thinking
+  BODY
+    & The website has evolved. I've made some changes to accomodate forthe rain of naxaserom that will happen eventually. Someday, I will make a sidebar for these things. Maybewhen the O Month ends? Anyhow, I'll have to fit a sidebar. And with CSS and HTML, it's going to get tougher.Mayhaps I'll look at templated sidebars. Or maybe I'll finally take courage, and implement this site as a Riven database. Who knows? I've also reduced this site's size by almost 64%! It's incredible how fat FontAwesome is! Almost 35MB just for icons to put on the site! It's too much for the new life I'm tracing, of efficiency and KISS principle in every corner. I also, for some ungodly reason, was using links to images, instead of saving them locally and linking via CSS. Such a waste! And also, if there's no good internet connection, the site would look unfinished. All remedied!
+
+NAXASERO 2
+  UNDE : Naxasero
+  LOOK : Noir
+  BREF : {(link)}: Nataniev Way of Thinking
+  BODY
+    & I have been using the Nataniev systems for almost a week nowextensively, hiding Old World clocks and calendars whenever possible. It has shifted my perception of time quite considerably. I feel like days take longer to complete, and cramming tasks in them is quite easier. I dunno about the psychological effects of a longer day each day, but I'm thankful about it. The old me would procastinate quite frequently, leaving days of my life without purpose or reason. Now, after using it, I can only recommend it for fixing a procastination heavy brain, if you have one. What I mainly feel, is that an amazing journey is ahead of me. With Niu assisting me, I don't have need for the default time and date indicator in elementary OS. I can just ditch that. Mayhaps, I'll end the O Month by figuring out a way to do notifications to rest or to stand every 15 and 30 pulses and add that to Niu...
+
 NAXASERO 1
   UNDE : Naxasero
   LOOK : Noir
