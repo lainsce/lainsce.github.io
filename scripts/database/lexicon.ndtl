@@ -2,7 +2,6 @@ DATABASE.lexicon = `
 HOME
   UNDE : Home
   ICON : M150,60 A90,90 0 0,1 240,150 A-90,90 0 0,1 150,240 A-90,-90 0 0,1 60,150 A90,-90 0 0,1 150,60 Z
-  LOOK : Noir
   BREF : {(link)} is the starting point. All other places come back to it.
   BODY
     & Welcome to the homepage of Lains.
@@ -14,7 +13,6 @@ TRACKER
   UNDE : Horaire
   ICON : M150,90 A45,45 0 0,1 195,135 A-45,45 0 0,1 150,180 A-45,-45 0 0,1 105,135 A45,-45 0 0,1 150,90 M180,135 A45,45 0 0,1 225,180 A-45,45 0 0,1 180,225 A-45,-45 0 0,1 135,180 A45,-45 0 0,1 180,135 M120,135 A45,45 0 0,1 165,180 A-45,45 0 0,1 120,225 A-45,-45 0 0,1 75,180 A45,-45 0 0,1 120,135
   VIEW : Tracker
-  LOOK : Noir
   ALTS : issues
   BREF : {(link)} shows {(bold "issues and balance")}.
   BODY
@@ -24,7 +22,6 @@ JOURNAL
   UNDE : Horaire
   ICON : M60,90 L60,90 L210,90 M60,120 L60,120 L180,120 M210,120 L210,120 L240,120 M60,150 L60,150 L150,150 M180,150 L180,150 L240,150 M60,180 L60,180 L120,180 M150,180 L150,180 L240,180 M60,210 L60,210 L90,210 M120,210 L120,210 L240,210 M90,240 L90,240 L240,240
   VIEW : Journal
-  LOOK : Noir
   ALTS : Now Blog Diary
   BREF : {(link)} shows {(bold "recent activity")}.
   BODY
@@ -35,7 +32,6 @@ CALENDAR
   ALTS : 2012 2013 2014 2015 2016 2017 2018 2019
   ICON : M60,60 L60,60 L240,60 L240,240 L60,240 Z M60,120 L60,120 L240,120 M120,120 L120,120 L120,240 M120,180 L120,180 L240,180 M180,180 L180,180 L180,240
   VIEW : Calendar
-  LOOK : Noir
   BREF : {(link)} shows {(bold "upcoming events")}.
   BODY
     & Welcome to the homepage of Lains's Calendar.
@@ -43,7 +39,6 @@ CALENDAR
 ELEMENTARY OS
   UNDE : Software
   ICON : M150,90 A45,45 0 0,1 195,135 A-45,45 0 0,1 150,180 A-45,-45 0 0,1 105,135 A45,-45 0 0,1 150,90 M180,135 A45,45 0 0,1 225,180 A-45,45 0 0,1 180,225 A-45,-45 0 0,1 135,180 A45,-45 0 0,1 180,135 M120,135 A45,45 0 0,1 165,180 A-45,45 0 0,1 120,225 A-45,-45 0 0,1 75,180 A45,-45 0 0,1 120,135
-  LOOK : Noir
   BREF : {(link)} is an operating system used by Lains.
   BODY
     & elementary OS, Lains's OS of choice.
@@ -51,7 +46,6 @@ ELEMENTARY OS
 DATETIME
   UNDE : Elementary OS
   ICON : M60,60 L60,60 L240,60 L240,240 L60,240 Z M60,120 L60,120 L240,120 M120,120 L120,120 L120,240 M120,180 L120,180 L240,180 M180,180 L180,180 L180,240
-  LOOK : Noir
   BREF : {(link)} is the Date & Time indicator for elementary OS.
   BODY
     & This is the Date & Time indicator for elementary OS.
@@ -59,7 +53,6 @@ DATETIME
 PROGRAMMING
   UNDE : Home
   ICON : M90.0,90.0 L90.0,90.0 L150.0,150.0 L90.0,210.0 M210.0,90.0 L210.0,90.0 L210.0,210.0
-  LOOK : Noir
   BREF : {(link)} holds the interests Lains has been doing in coding.
   BODY
     & This is a list of things Lains has been doing in coding.
@@ -69,7 +62,6 @@ PROGRAMMING
 NOTEJOT
   UNDE : Programming
   ICON : M60,60 l180,0 M60,150 l120,0 M60,240 l180,0 M60,195 l60,0 M60,105 l60,0
-  LOOK : Noir
   BREF : {(link)} is a sticky notes application developed for elementary OS.
   BODY
     & This is a sticky notes application developed for elementary OS.
@@ -78,7 +70,6 @@ NOTEJOT
 QUILTER
   UNDE : Programming
   ICON : M60,60 l180,0 M60,150 l120,0 M60,240 l180,0 M60,195 l60,0 M60,105 l60,0
-  LOOK : Noir
   BREF : {(link)} is a Markdown minimal application developed for elementary OS.
   BODY
     & This is a Markdown minimal application developed for elementary OS.
@@ -87,7 +78,6 @@ QUILTER
 COIN
   UNDE : Programming
   ICON : M60,60 L60,60 L240,60 L240,240 L60,240 Z M60,120 L60,120 L240,120 M120,120 L120,120 L120,240 M120,180 L120,180 L240,180 M180,180 L180,180 L180,240
-  LOOK : Noir
   BREF : {(link)} is a cryptocurrency tracker developed for elementary OS.
   BODY
     & This is a cryptocurrency tracker  developed for elementary OS.
@@ -96,7 +86,6 @@ COIN
 PALAURA
   UNDE : Programming
   ICON : M60,60 L60,60 L240,60 L240,240 L60,240 Z M60,120 L60,120 L240,120 M120,120 L120,120 L120,240 M120,180 L120,180 L240,180 M180,180 L180,180 L180,240
-  LOOK : Noir
   BREF : {(link)} is a dictionary searcher developed for elementary OS.
   BODY
     & This is  a dictionary searcher developed for elementary OS.
@@ -105,7 +94,6 @@ PALAURA
 YISHU
   UNDE : Programming
   ICON : M60,60 L60,60 L240,60 L240,240 L60,240 Z M60,120 L60,120 L240,120 M120,120 L120,120 L120,240 M120,180 L120,180 L240,180 M180,180 L180,180 L180,240
-  LOOK : Noir
   BREF : {(link)} is a task tracker for todo.txt developed for elementary OS.
   BODY
     & This is a task tracker for todo.txt developed for elementary OS.
@@ -114,7 +102,6 @@ YISHU
 AESOP
   UNDE : Programming
   ICON : M60,60 L60,60 L240,60 L240,240 L60,240 Z M60,120 L60,120 L240,120 M120,120 L120,120 L120,240 M120,180 L120,180 L240,180 M180,180 L180,180 L180,240
-  LOOK : Noir
   BREF : {(link)} is a pdf viewer developed for elementary OS.
   BODY
     & This is a pdf viewer developed for elementary OS.
@@ -123,7 +110,6 @@ AESOP
 BEEMY
   UNDE : Programming
   ICON : M60,60 L60,60 L240,60 L240,240 L60,240 Z M60,120 L60,120 L240,120 M120,120 L120,120 L120,240 M120,180 L120,180 L240,180 M180,180 L180,180 L180,240
-  LOOK : Noir
   BREF : {(link)} is a Body Mass Index calculator developed for elementary OS.
   BODY
     & This is a Body Mass Index calculator developed for elementary OS.
@@ -132,7 +118,6 @@ BEEMY
 TIMETABLE
   UNDE : Programming
   ICON : M60,60 L60,60 L240,60 L240,240 L60,240 Z M60,120 L60,120 L240,120 M120,120 L120,120 L120,240 M120,180 L120,180 L240,180 M180,180 L180,180 L180,240
-  LOOK : Noir
   BREF : {(link)} is a virtual week timetable developed for elementary OS.
   BODY
     & This is a virtual week timetable developed for elementary OS.
@@ -141,7 +126,6 @@ TIMETABLE
 DOT MATRIX
   UNDE : Programming
   ICON : M60,60 L60,60 L240,60 L240,240 L60,240 Z M60,120 L60,120 L240,120 M120,120 L120,120 L120,240 M120,180 L120,180 L240,180 M180,180 L180,180 L180,240
-  LOOK : Noir
   BREF : {(link)} is a minimal vector drawing app developed for elementary OS.
   BODY
     & This is a minimal vector drawing app developed for elementary OS.
@@ -150,7 +134,6 @@ DOT MATRIX
 REGANAM
   UNDE : Programming
   ICON : M60,60 L60,60 L240,60 L240,240 L60,240 Z M60,120 L60,120 L240,120 M120,120 L120,120 L120,240 M120,180 L120,180 L240,180 M180,180 L180,180 L180,240
-  LOOK : Noir
   BREF : {(link)} is a text-only resource management game developed for elementary OS.
   BODY
     & This is a text-only resource management game developed for elementary OS.
@@ -159,7 +142,6 @@ REGANAM
 NIU
   UNDE : Programming
   ICON : M60,60 L60,60 L240,60 L240,240 L60,240 Z M60,120 L60,120 L240,120 M120,120 L120,120 L120,240 M120,180 L120,180 L240,180 M180,180 L180,180 L180,240
-  LOOK : Noir
   BREF : {(link)} is a clock for Nataniev System developed for elementary OS.
   BODY
     & This is a clock for Nataniev time system developed for elementary OS.
@@ -168,7 +150,6 @@ NIU
 SOFTWARE
   UNDE : Programming
   TAGS : portal
-  LOOK : Noir
   BREF : The {(link)} portal is a collection of {(bold "Free & Open-source")} interactive applications and systems.
   ICON : M90.0,90.0 L90.0,90.0 L150.0,150.0 L90.0,210.0 M210.0,90.0 L210.0,90.0 L210.0,210.0
   BODY
@@ -179,7 +160,6 @@ SOFTWARE
 NATANIEV
   UNDE : Software
   TAGS : portal host
-  LOOK : Noir
   BREF : The {(link)} ecosystem is a collection of {(link "https://en.wiktionary.org/wiki/exocortex" "exocortex")} {(bold "tools")}.
   ICON : M240,240 l0,-90 a-90,-90 0 0,0 -90,-90 l-90,0 l0,90 a90,90 0 0,0 90,90 l60,0 l0,-90 a-60,-60 0 0,0 -60,-60 l-60,0 l0,60 a60,60 0 0,0 60,60 l30,0 l0,-60 a-30,-30 0 0,0 -30,-30 l-30,0 l0,30 a30,30 0 0,0 30,30
   BODY
@@ -188,7 +168,6 @@ NATANIEV
     
 HORAIRE
   UNDE : Nataniev
-  LOOK : Noir
   BREF : {(link)} is a {(bold "time-tracking tool")}.
   ICON : M60,60 L60,60 L240,60 L240,240 L60,240 Z M60,120 L60,120 L240,120 M120,120 L120,120 L120,240 M120,180 L120,180 L240,180 M180,180 L180,180 L180,240
   BODY
@@ -216,7 +195,6 @@ HORAIRE
 LEISURE
   UNDE : Home
   ICON : M75,210 L75,210 L225,210 M135.5,55 L135.5,55 L60.5,185 M239.5,185 L239.5,185 L164.5,55
-  LOOK : Noir
   BREF : {(link)} holds the interests Lains has been doing outside coding.
   BODY
     & These are the interests Lains has been doing outside coding.
@@ -225,7 +203,6 @@ LEISURE
 TWITCH
   UNDE : Leisure
   ICON : M60,240 a30,-30 0 0,1 30,-30 l150,0 M90,195 a30,-30 0 0,1 30,-30 l90,0 M120,150 a30,-30 0 0,1 30,-30 l30,0 M195,120 l45,0 M225,165 l15,0 M150,105 a30,-30 0 0,1 30,-30 l60,0
-  LOOK : Noir
   BREF : {(link)} is the popular streaming platform.
   BODY
     & The popular streaming platform.
@@ -233,7 +210,6 @@ TWITCH
 TIDAL
   UNDE : Leisure
   ICON : M60,240 a30,-30 0 0,1 30,-30 l150,0 M90,195 a30,-30 0 0,1 30,-30 l90,0 M120,150 a30,-30 0 0,1 30,-30 l30,0 M195,120 l45,0 M225,165 l15,0 M150,105 a30,-30 0 0,1 30,-30 l60,0
-  LOOK : Noir
   BREF : {(link)} is the popular music streaming platform.
   BODY
     & The popular music streaming platform.
@@ -241,7 +217,6 @@ TIDAL
 BLACK MOTH SUPER RAINBOW
   UNDE : Leisure
   ICON : M60,240 a30,-30 0 0,1 30,-30 l150,0 M90,195 a30,-30 0 0,1 30,-30 l90,0 M120,150 a30,-30 0 0,1 30,-30 l30,0 M195,120 l45,0 M225,165 l15,0 M150,105 a30,-30 0 0,1 30,-30 l60,0
-  LOOK : Noir
   BREF : {(link)}, a strange music experience.
   BODY
     & {(link)} is an experimental indie psychedelic electronic band hailing from Pennsylvania, US.
@@ -250,7 +225,6 @@ BLACK MOTH SUPER RAINBOW
 CLARK
   UNDE : Leisure
   ICON : M60,240 a30,-30 0 0,1 30,-30 l150,0 M90,195 a30,-30 0 0,1 30,-30 l90,0 M120,150 a30,-30 0 0,1 30,-30 l30,0 M195,120 l45,0 M225,165 l15,0 M150,105 a30,-30 0 0,1 30,-30 l60,0
-  LOOK : Noir
   BREF : {(link)}, one of the musicians that does IDM-type music.
   BODY
     & {(link)} is an experimental IDM musician from the UK.
@@ -259,7 +233,6 @@ CLARK
 RESEARCH
   UNDE : Home
   ICON : M60,240 a30,-30 0 0,1 30,-30 l150,0 M90,195 a30,-30 0 0,1 30,-30 l90,0 M120,150 a30,-30 0 0,1 30,-30 l30,0 M195,120 l45,0 M225,165 l15,0 M150,105 a30,-30 0 0,1 30,-30 l60,0
-  LOOK : Noir
   BREF : {(link)}, holds the research-type things Lains has been doing outside coding.
   BODY
     & The {(bold "Research")} archive is a collection of assorted projects.
@@ -268,7 +241,6 @@ RESEARCH
 CONLANGS
   UNDE : Research
   ICON : M60,240 a30,-30 0 0,1 30,-30 l150,0 M90,195 a30,-30 0 0,1 30,-30 l90,0 M120,150 a30,-30 0 0,1 30,-30 l30,0 M195,120 l45,0 M225,165 l15,0 M150,105 a30,-30 0 0,1 30,-30 l60,0
-  LOOK : Noir
   BREF : {(link)}, holds the constructed languages by Lains.
   BODY
     & This is a collection of pieces of text.
@@ -277,7 +249,6 @@ CONLANGS
 NAXASERO
   UNDE : Research
   ICON : M60,240 a30,-30 0 0,1 30,-30 l150,0 M90,195 a30,-30 0 0,1 30,-30 l90,0 M120,150 a30,-30 0 0,1 30,-30 l30,0 M195,120 l45,0 M225,165 l15,0 M150,105 a30,-30 0 0,1 30,-30 l60,0
-  LOOK : Noir
   BREF : {(link)}, holds the naxaserom Lains has been writing.
   BODY
     & This is a collection of pieces of text.
@@ -285,28 +256,24 @@ NAXASERO
 
 NAXASERO 4
   UNDE : Naxasero
-  LOOK : Noir
   BREF : {(link)}: New Site on the effects of Riven
   BODY
     & The website has evolved yet again, now being a Riven databased site. This made the site more logical, and things are being tracked now. I feel like the site as is is leaner than it was before, surprisingly. Anyways, I've worked on Dot Matrix, to dust off the mites on it, and it is now a better app than it was before, while not adding any features. It's mainly a backend change in some parts, making it more reliable. Also, I'm thinking of tackling a rewrite of Yishu next, to make it less confusing in-code, and inject new life onto it.. Perhaps that'll be the P Months' main task to tackle.
 
 NAXASERO 3
   UNDE : Naxasero
-  LOOK : Noir
   BREF : {(link)}: Nataniev Way of Thinking
   BODY
     & The website has evolved. I've made some changes to accomodate forthe rain of naxaserom that will happen eventually. Someday, I will make a sidebar for these things. Maybewhen the O Month ends? Anyhow, I'll have to fit a sidebar. And with CSS and HTML, it's going to get tougher.Mayhaps I'll look at templated sidebars. Or maybe I'll finally take courage, and implement this site as a Riven database. Who knows? I've also reduced this site's size by almost 64%! It's incredible how fat FontAwesome is! Almost 35MB just for icons to put on the site! It's too much for the new life I'm tracing, of efficiency and KISS principle in every corner. I also, for some ungodly reason, was using links to images, instead of saving them locally and linking via CSS. Such a waste! And also, if there's no good internet connection, the site would look unfinished. All remedied!
 
 NAXASERO 2
   UNDE : Naxasero
-  LOOK : Noir
   BREF : {(link)}: Nataniev Way of Thinking
   BODY
     & I have been using the Nataniev systems for almost a week nowextensively, hiding Old World clocks and calendars whenever possible. It has shifted my perception of time quite considerably. I feel like days take longer to complete, and cramming tasks in them is quite easier. I dunno about the psychological effects of a longer day each day, but I'm thankful about it. The old me would procastinate quite frequently, leaving days of my life without purpose or reason. Now, after using it, I can only recommend it for fixing a procastination heavy brain, if you have one. What I mainly feel, is that an amazing journey is ahead of me. With Niu assisting me, I don't have need for the default time and date indicator in elementary OS. I can just ditch that. Mayhaps, I'll end the O Month by figuring out a way to do notifications to rest or to stand every 15 and 30 pulses and add that to Niu...
 
 NAXASERO 1
   UNDE : Naxasero
-  LOOK : Noir
   BREF : {(link)}: Guess I'll start this
   BODY
     & I will begin sharing thoughts about stuff in here chronologically. As you can see, these naxaserom about anything will be in little cards like these. As an introductory naxasero, this one will have nothing in it, per usual. It should start being interesting by the next one. Hope you'll gather anything by these. Since the page is in a static platform, these naxaserom will not contain personal things such as addresses or personal photos. Naxasero is a word that comes from my constructed language Sayala, and its definition is in the header. It's basically a blog, but there's a rule: at most 15 lines of content and a marked initial letter. That is what defines a naxasero from anything else. Also, you may think, what even is that time tag on this? That's by another person's idea, Devine, my friend. The Nataniev System, more specifically, the Arvelie calendar. I'll leave a link to it on this naxasero. Until the next one.
