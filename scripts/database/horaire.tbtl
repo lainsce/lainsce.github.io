@@ -1,5 +1,5 @@
 DATABASE.horaire = `
-DATE  CODE PICT TERM                 NAME                                            
+DATE  CODE PICT TERM                 NAME                                                                      
 19O10 !381    2 Dot Matrix           Dot Matrix - Release
 19O10 -347      Dot Matrix           Made curves better
 19O10 -344      Dot Matrix           Use Ecosystem colors correctly
@@ -63,9 +63,21 @@ DATE  CODE PICT TERM                 NAME
 19D12 +364      Home                 Start journaling
 18U01 -314      Timetable            Timetable - Start coding
 18S01 -314      Beemy                Beemy - Start coding
+17N13 +384      Notejot              Notejot - Release
+18N12 -344      Notejot              Notejot - Fix destroyed content when closed
 18L14 -314      Aesop                Aesop - Start coding
 18I06 -314      RC Car               RC Car - Start implementation of init
+18F07 -344      Notejot              Notejot - Create new note from dock
+18B08 -344      Notejot              Notejot - New color buttons
 17X02 -314      Yishu                Yishu - Start coding
+17W01 +384      Notejot              Notejot - Release
+17V14 -344      Notejot              Notejot - Fix saving
+17V14 -344      Notejot              Notejot - Editable titles
+17V08 -344      Notejot              Notejot - Fix opening duplicate windows
+17V07 -344      Notejot              Notejot - Move options to Appmenu
+17U07 +384      Notejot              Notejot - Release
+17U06 -374      Notejot              Notejot - Many improvements
+17S07 -324      Notejot              Notejot - GResource the CSS
 17S04 -314      Palaura              Palaura - Start coding
 17R11 -324      Notejot              Notejot - Translations are open
 17N06 -324      Notejot              Notejot - Fix app colors for contrast
