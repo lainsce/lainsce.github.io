@@ -63,7 +63,7 @@ DATE  CODE PICT TERM                 NAME
 19D12 +364      Home                 Start journaling
 18U01 -314      Timetable            Timetable - Start coding
 18S01 -314      Beemy                Beemy - Start coding
-17N13 +384      Notejot              Notejot - Release
+18N13 +384      Notejot              Notejot - Release
 18N12 -344      Notejot              Notejot - Fix destroyed content when closed
 18L14 -314      Aesop                Aesop - Start coding
 18I06 -314      RC Car               RC Car - Start implementation of init
