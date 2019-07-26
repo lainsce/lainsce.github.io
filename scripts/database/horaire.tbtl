@@ -63,10 +63,22 @@ DATE  CODE PICT TERM                 NAME
 19D13 -316      Timetable            Timetable - Opening .org files
 19D13 -336      Timetable            Timetable - Fix loading color from files
 19D12 +364      Home                 Start journaling
+18X03 -376      Quilter              Quilter - Fix pdf exporting
+18X03 -366      Quilter              Quilter - Moon Theme
+18U12 +383      Quilter              Quilter - Release
+18U11 -326      Quilter              Quilter - Sidebar: fix show/hide
+18U10 -326      Quilter              Quilter - Sidebar workings
 18U01 -314      Timetable            Timetable - Start coding
+18T08 -346      Quilter              Quilter - Track better: W/L/C
+18T08 -346      Quilter              Quilter - Show choices of Preview font
+18S07 +383      Quilter              Quilter - Release
+18S06 -346      Quilter              Quilter - Words/Lines/Chars tracker
 18S01 -314      Beemy                Beemy - Start coding
+18Q02 -346      Quilter              Quilter - Add settings for font size
 18N13 +384      Notejot              Notejot - Release
 18N12 -348      Notejot              Notejot - Fix destroyed content when closed
+18N03 -346      Quilter              Quilter - Add search jump buttons
+18N02 -346      Quilter              Quilter - Start work on searchbar
 18M06 +383      Quilter              Quilter - Release
 18L14 -314      Aesop                Aesop - Start coding
 18L06 -376      Quilter              Quilter - Typewriter Mode fixes
