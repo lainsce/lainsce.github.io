@@ -59,4 +59,5 @@ DATE  CODE PICT TERM                 NAME
 19D13 -316      Timetable            Opening .org files
 19D13 -336      Timetable            Fix loading color from files
 19D12 +364      Home                 Start journaling
+17M05 -314      Home                 Start a personal site
 `;
