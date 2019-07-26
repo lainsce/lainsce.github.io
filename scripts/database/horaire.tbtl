@@ -15,11 +15,13 @@ DATE  CODE PICT TERM                 NAME
 19O02 -122      Tidal                Listened to Black Moth Super Rainbow
 19O01 -245      Tracker              LOG to TBTL
 19O01 -118      Twitch               Watched MoonMoon2
-19O01 +388      DateTime             DateTime - Release (PR)
-19O01 -338      DateTime             DateTime - Coding
-19O01 -328      DateTime             DateTime - Coding
+19O01 +388      elementary OS        DateTime - Release (PR)
+19O01 -338      elementary OS        DateTime - Coding
+19O01 -328      elementary OS        DateTime - Coding
 19O01 -122      Tidal                Listened to Clark
 19O01 +365      Home                 Begin journaling again
+19M07 -396      elementary OS        Joined the UX team
+19J09 -314      Reganam              Reganam - Start coding
 19E14 -118      Twitch               Watched AdmiralBahroo
 19E13 +381      Timetable            Timetable - Release
 19E13 +381      Dot Matrix           Dot Matrix - Release
@@ -59,5 +61,14 @@ DATE  CODE PICT TERM                 NAME
 19D13 -316      Timetable            Opening .org files
 19D13 -336      Timetable            Fix loading color from files
 19D12 +364      Home                 Start journaling
+18U01 -314      Timetable            Timetable - Start coding
+18S01 -314      Beemy                Beemy - Start coding
+18L14 -314      Aesop                Aesop - Start coding
+18I06 -314      RC Car               RC Car - Start implementation of init
+17X02 -314      Yishu                Yishu - Start coding
+17S04 -314      Palaura              Palaura - Start coding
 17M05 -314      Home                 Start a personal site
+17L12 -314      Coin                 Coin - Start coding
+17K13 -314      Quilter              Quilter - Start coding
+17K02 -314      Notejot              Notejot - Start coding
 `;
