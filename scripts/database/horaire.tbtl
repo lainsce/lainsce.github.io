@@ -66,37 +66,68 @@ DATE  CODE PICT TERM                 NAME
 18U01 -314      Timetable            Timetable - Start coding
 18S01 -314      Beemy                Beemy - Start coding
 18N13 +384      Notejot              Notejot - Release
-18N12 -344      Notejot              Notejot - Fix destroyed content when closed
+18N12 -348      Notejot              Notejot - Fix destroyed content when closed
+18M06 +383      Quilter              Quilter - Release
 18L14 -314      Aesop                Aesop - Start coding
-18I06 -314      RC Car               RC Car - Start implementation of init
-18F07 -344      Notejot              Notejot - Create new note from dock
+18L06 -376      Quilter              Quilter - Typewriter Mode fixes
+18L06 -346      Quilter              Quilter - Typewriter Mode
+18L05 -346      Quilter              Quilter - Dynamic margins in Editor
+18L04 -346      Quilter              Quilter - Fix PDF margins
+18L03 -337      Quilter              Quilter - Start work on Sidebar
+18L02 -364      Quilter              Quilter - Headerbar to own file
+18L01 -334      Quilter              Quilter - Exporting to HTML
+18K14 -346      Quilter              Quilter - Deprecate custom fonts other than default
+18K12 -364      Quilter              Quilter - Mode switch look in Prefs.
+18K07 -364      Quilter              Quilter - New colors for Modes
+18K07 -366      Quilter              Quilter - Update font
+18K05 -364      Quilter              Quilter - Styling of Mode buttons
+18K05 -366      Quilter              Quilter - Sepia Mode
+18K05 -344      Quilter              Quilter - Extensions page
+18K04 -369      Quilter              Quilter - New font
+18I10 +383      Quilter              Quilter - Release
+18I06 -319      RC Car               RC Car - Start implementation of init
+18I04 -374      Quilter              Quilter - Fix preview mode refresh
+18F07 -347      Notejot              Notejot - Create new note from dock
+18F06 +383      Quilter              Quilter - Release
+18C12 -374      Quilter              Quilter - Fix new file button
 18B08 -344      Notejot              Notejot - New color buttons
+18B08 +383      Quilter              Quilter - Release
+18B07 -374      Quilter              Quilter - Reorganize main menu
+18A12 +383      Quilter              Quilter - Release
+18A12 -374      Quilter              Quilter - Focus mode config options
 17X02 -314      Yishu                Yishu - Start coding
+17W08 -374      Quilter              Quilter - Fix preview mode html
 17W01 +384      Notejot              Notejot - Release
-17V14 -344      Notejot              Notejot - Fix saving
-17V14 -344      Notejot              Notejot - Editable titles
-17V08 -344      Notejot              Notejot - Fix opening duplicate windows
+17V14 -349      Notejot              Notejot - Fix saving
+17V14 -347      Notejot              Notejot - Editable titles
+17V08 -346      Notejot              Notejot - Fix opening duplicate windows
 17V07 -347      Notejot              Notejot - Move options to Appmenu
+17V05 +383      Quilter              Quilter - Release
+17V04 -374      Quilter              Quilter - Fix many minor bugs
+17U12 +383      Quilter              Quilter - Release
+17U09 -374      Quilter              Quilter - Fix Focus Mode
 17U07 +384      Notejot              Notejot - Release
-17U06 -374      Notejot              Notejot - Many improvements
-17T06 +384      Quilter              Quilter - Release
+17U06 -377      Notejot              Notejot - Many improvements
+17T10 -374      Quilter              Quilter - Focus Mode
+17T09 -374      Quilter              Quilter - Statusbar
+17T06 +383      Quilter              Quilter - Release
 17T03 -374      Quilter              Quilter - Preview Mode
-17S07 -324      Notejot              Notejot - GResource the CSS
+17S07 -325      Notejot              Notejot - GResource the CSS
 17S04 -314      Palaura              Palaura - Start coding
-17R11 -324      Notejot              Notejot - Translations are open
+17R11 -323      Notejot              Notejot - Translations are open
 17R10 +384      Quilter              Quilter - Release
 17R08 -364      Quilter              Quilter - New palette
 17R07 +384      Quilter              Quilter - Release
-17P03 -344      Quilter              Quilter - Show which file is open
-17N06 -324      Notejot              Notejot - Fix app colors for contrast
+17P03 -347      Quilter              Quilter - Show which file is open
+17N06 -325      Notejot              Notejot - Fix app colors for contrast
 17N01 +384      Quilter              Quilter - Release
-17M13 -344      Quilter              Quilter - Open external files
-17M07 -344      Quilter              Quilter - Speed up save
-17M05 -344      Quilter              Quilter - Watch changes and save files
+17M13 -347      Quilter              Quilter - Open external files
+17M07 -345      Quilter              Quilter - Speed up save
+17M05 -346      Quilter              Quilter - Watch changes and save files
 17M05 -314      Home                 Start a personal site
 17L14 -344      Quilter              Quilter - Focus Mode and Preferences
 17L12 -314      Coin                 Coin - Start coding
-17L10 -344      Quilter              Quilter - Save before opening new files
+17L10 -347      Quilter              Quilter - Save before opening new files
 17L10 -324      Notejot              Notejot - Remove colors for now
 17L09 -364      Notejot              Notejot - elementary OS palette
 17L08 -334      Quilter              Quilter - Start Preview Mode
@@ -108,7 +139,7 @@ DATE  CODE PICT TERM                 NAME
 17K14 -342      Quilter              Quilter - Remove Dark Mode (for now)
 17K14 -344      Quilter              Quilter - Markdown support
 17K14 -346      Quilter              Quilter - Dark Mode
-17K13 -344      Quilter              Quilter - Improve document handling
+17K13 -348      Quilter              Quilter - Improve document handling
 17K13 -314      Quilter              Quilter - Start coding
 17K12 +384      Notejot              Notejot - Release
 17K11 -344      Notejot              Notejot - Multicolor notes
