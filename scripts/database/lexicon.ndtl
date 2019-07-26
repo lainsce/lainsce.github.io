@@ -38,10 +38,11 @@ CALENDAR
 
 ELEMENTARY OS
   UNDE : Software
-  ICON : M150,90 A45,45 0 0,1 195,135 A-45,45 0 0,1 150,180 A-45,-45 0 0,1 105,135 A45,-45 0 0,1 150,90 M180,135 A45,45 0 0,1 225,180 A-45,45 0 0,1 180,225 A-45,-45 0 0,1 135,180 A45,-45 0 0,1 180,135 M120,135 A45,45 0 0,1 165,180 A-45,45 0 0,1 120,225 A-45,-45 0 0,1 75,180 A45,-45 0 0,1 120,135
+  ICON : M150,60 A90,90 0 0,0 60,150 A90,90 0 0,0 150,240 A90,90 0 0,0 240,150 A90,90 0 0,0 150,60 M75,195 A105,60 0 0,0 180,135 A30,45 0 0,0 150,90 A45,60 0 0,0 105,150 A45,60 0 0,0 150,210 A90,60 0 0,0 240,150
   BREF : {(link)} is an operating system used by Lains.
   BODY
     & elementary OS, Lains's OS of choice.
+    & The fast, open, and privacy-respecting replacement for Windows and macOS.
 
 DATETIME
   UNDE : Elementary OS
