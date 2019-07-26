@@ -28,10 +28,12 @@ RIVEN.create = (append = true) => {
 
   Ø('view').create({ x: 49, y: 4 }, lib.Mesh, [
     Ø('document').create({ x: 0, y: 0 }, lib.Document, append),
+    Ø('terminal').create({ x: 6, y: 4 }, lib.Terminal),
     Ø('header').create({ x: 0, y: 4 }, lib.Dom),
     Ø('photo').create({ x: 0, y: 8 }, lib.Photo, 'photo'),
     Ø('menu').create({ x: 3, y: 8 }, lib.Dom),
     Ø('logo').create({ x: 6, y: 12 }, lib.Dom, 'a', null, { 'data-goto': 'home', href: '#home', class: 'sprite_logo' }),
+    Ø('search').create({ x: 9, y: 12 }, lib.Input),
     Ø('activity').create({ x: 3, y: 12 }, lib.Dom, 'ul'),
     Ø('info').create({ x: 0, y: 12 }, lib.Dom),
     Ø('glyph').create({ x: 3, y: 16 }, lib.Path),
@@ -70,9 +72,9 @@ RIVEN.create = (append = true) => {
 
   // Dom
   Ø('header').bind(['photo', 'menu'])
-  Ø('menu').bind(['info', 'logo', 'activity'])
+  Ø('menu').bind(['info', 'logo', 'search', 'activity'])
   Ø('info').bind(['glyph', 'title'])
-  Ø('document').bind(['header', 'core', 'footer'])
+  Ø('document').bind(['terminal', 'header', 'core', 'footer'])
   Ø('core').bind(['sidebar', 'content', 'navi'])
   Ø('content').bind(['main', 'journal', 'tracker', 'calendar'])
 
