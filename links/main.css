@@ -6,7 +6,8 @@
   --background: #111111;
   --color_1: #00DAC7; 
   --color_2: #00a798; 
-  --color_3: #00746a; 
+  --color_3: #00746a;
+  --color_4:  #CC6677;
   --grey_1: #F5F5F5; 
   --grey_2: #cccccc;
   --grey_3: #333333;
@@ -24,7 +25,7 @@
 .bg_programming { background-color:var(--color_3) !important; }
 .bg_misc { background-color:var(--grey_3) !important; }
 
-.redlink { color:#CC6677 !important; }
+.redlink { color:var(--color_4) !important; }
 /* Sprites */
 
 .sprite_logo { background-image: url("data:image/svg+xml,%3Csvg class='vector' width='300px' height='300px' xmlns='http://www.w3.org/2000/svg' baseProfile='full' version='1.1'%3E%3Cpath id='layer_1' d='M30,30 L30,30 L30,240 M30,240 L30,240 L240,240 Z M70,200 C70,200 70,30 240,30 L240,30 L240,200' style='stroke: rgb(255, 255, 255); stroke-width: 17.5; stroke-linecap: round; stroke-linejoin: round; fill: none;'%3E%3C/path%3E%3C/svg%3E");  }
@@ -290,7 +291,7 @@ media { display: block; width:100%; height:100%; background-size:cover; backgrou
 #document #core svg.viz rect.programming { fill:var(--color_3) }
 #document #core svg.viz rect.missing { fill:var(--grey_2) }
 #document #core svg.viz rect.misc { fill:var(--grey_1) !important }
-#document #core svg.viz rect.today { fill:var(--grey_2);}
+#document #core svg.viz rect.today { fill:var(--color_4);}
 #document #core svg.viz circle.photo { fill:var(--grey_1); stroke:none }
 #document #core svg.viz circle.event { fill:none; stroke:var(--grey_1); stroke-width:1.5px }
 #document #core svg.viz path { stroke-linecap:butt; stroke-dasharray:1,1; fill:none;stroke:var(--grey_3);stroke-width:13px }
