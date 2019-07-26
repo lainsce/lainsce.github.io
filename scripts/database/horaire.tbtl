@@ -20,6 +20,8 @@ DATE  CODE PICT TERM                 NAME
 19O01 -328      DateTime             DateTime - Coding
 19O01 -122      Tidal                Listened to Clark
 19O01 +365      Home                 Begin journaling again
+19E13 +381      Timetable            Timetable - Release
+19E13 +381      Dot Matrix           Dot Matrix - Release
 19E12 -342      Dot Matrix           Implement filled shapes
 19E11 +338      Timetable            Fix weekend visibility on launch
 19E11 -332      Dot Matrix           Added French translation
