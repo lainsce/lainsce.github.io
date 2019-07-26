@@ -8,8 +8,8 @@ DATE  CODE PICT TERM                 NAME
 19O09 -343      Home                 Site - Fix tracker page
 19O08 !382    1 Niu                  Niu - Release
 19O07 -343      Home                 Site - Made a tracker page
-19O06 -358      Niu                  Niu - Coding
-19O05 +368      Niu                  Niu - Design
+19O06 -368      Niu                  Niu - Design icon
+19O05 +328      Niu                  Niu - Start coding
 19O04 -118      Twitch               Watched MoonMoon2
 19O03 -118      Twitch               Watched AdmiralBahroo
 19O02 -341      Tracker              Rearranged Log
@@ -23,12 +23,12 @@ DATE  CODE PICT TERM                 NAME
 19O01 +365      Home                 Begin journaling again
 19M07 -396      elementary OS        Joined the UX team
 19M05 +384      Notejot              Notejot - Release
-19J09 -314      Reganam              Reganam - Start coding
+19J09 +314      Reganam              Reganam - Start coding
 19E14 -118      Twitch               Watched AdmiralBahroo
 19E13 +381      Timetable            Timetable - Release
 19E13 +381      Dot Matrix           Dot Matrix - Release
 19E12 -342      Dot Matrix           Dot Matrix - Implement filled shapes
-19E11 +338      Timetable            Fix weekend visibility on launch
+19E11 -338      Timetable            Timetable - Fix weekend visibility on launch
 19E11 -332      Dot Matrix           Dot Matrix - Added French translation
 19E10 -367      Home                 Make it responsive
 19E10 -367      Home                 Home - Redesign
@@ -50,8 +50,8 @@ DATE  CODE PICT TERM                 NAME
 19E04 -346      Dot Matrix           Dot Matrix - Rewrite into Cairo
 19E04 -356      Dot Matrix           Dot Matrix - Research Cairo
 19E03 +384      Quilter              Quilter - Release
-19E03 -326      Dot Matrix           Try making it in GTK only
-19E03 -311      Dot Matrix           Dot Matrix - Started Project
+19E03 -326      Dot Matrix           Dot Matrix - Try making it in GTK only
+19E03 +311      Dot Matrix           Dot Matrix - Start coding
 19E02 -192      Twitch               Played twitch stocks game
 19E01 +384      Quilter              Quilter - Release
 19E01 -337      Quilter              Quilter - Fix opening files
@@ -68,19 +68,19 @@ DATE  CODE PICT TERM                 NAME
 18U12 +383      Quilter              Quilter - Release
 18U11 -326      Quilter              Quilter - Sidebar: fix show/hide
 18U10 -326      Quilter              Quilter - Sidebar workings
-18U01 -314      Timetable            Timetable - Start coding
+18U01 +314      Timetable            Timetable - Start coding
 18T08 -346      Quilter              Quilter - Track better: W/L/C
 18T08 -346      Quilter              Quilter - Show choices of Preview font
 18S07 +383      Quilter              Quilter - Release
 18S06 -346      Quilter              Quilter - Words/Lines/Chars tracker
-18S01 -314      Beemy                Beemy - Start coding
+18S01 +314      Beemy                Beemy - Start coding
 18Q02 -346      Quilter              Quilter - Add settings for font size
 18N13 +384      Notejot              Notejot - Release
 18N12 -348      Notejot              Notejot - Fix destroyed content when closed
 18N03 -346      Quilter              Quilter - Add search jump buttons
 18N02 -346      Quilter              Quilter - Start work on searchbar
 18M06 +383      Quilter              Quilter - Release
-18L14 -314      Aesop                Aesop - Start coding
+18L14 +314      Aesop                Aesop - Start coding
 18L06 -376      Quilter              Quilter - Typewriter Mode fixes
 18L06 -346      Quilter              Quilter - Typewriter Mode
 18L05 -346      Quilter              Quilter - Dynamic margins in Editor
@@ -97,7 +97,7 @@ DATE  CODE PICT TERM                 NAME
 18K05 -344      Quilter              Quilter - Extensions page
 18K04 -369      Quilter              Quilter - New font
 18I10 +383      Quilter              Quilter - Release
-18I06 -319      RC Car               RC Car - Start implementation of init
+18I06 +319      RC Car               RC Car - Start implementation of init
 18I04 -374      Quilter              Quilter - Fix preview mode refresh
 18F07 -347      Notejot              Notejot - Create new note from dock
 18F06 +383      Quilter              Quilter - Release
@@ -107,7 +107,7 @@ DATE  CODE PICT TERM                 NAME
 18B07 -374      Quilter              Quilter - Reorganize main menu
 18A12 +383      Quilter              Quilter - Release
 18A12 -374      Quilter              Quilter - Focus mode config options
-17X02 -314      Yishu                Yishu - Start coding
+17X02 +314      Yishu                Yishu - Start coding
 17W08 -374      Quilter              Quilter - Fix preview mode html
 17W01 +384      Notejot              Notejot - Release
 17V14 -349      Notejot              Notejot - Fix saving
@@ -125,7 +125,7 @@ DATE  CODE PICT TERM                 NAME
 17T06 +383      Quilter              Quilter - Release
 17T03 -374      Quilter              Quilter - Preview Mode
 17S07 -325      Notejot              Notejot - GResource the CSS
-17S04 -314      Palaura              Palaura - Start coding
+17S04 +314      Palaura              Palaura - Start coding
 17R11 -323      Notejot              Notejot - Translations are open
 17R10 +384      Quilter              Quilter - Release
 17R08 -364      Quilter              Quilter - New palette
@@ -136,9 +136,11 @@ DATE  CODE PICT TERM                 NAME
 17M13 -347      Quilter              Quilter - Open external files
 17M07 -345      Quilter              Quilter - Speed up save
 17M05 -346      Quilter              Quilter - Watch changes and save files
-17M05 -314      Home                 Start a personal site
+17M05 +314      Home                 Start a personal site
 17L14 -344      Quilter              Quilter - Focus Mode and Preferences
-17L12 -314      Coin                 Coin - Start coding
+17L13 -364      Coin                 Coin - Relayout app
+17L12 -344      Coin                 Coin - Fix value ticker
+17L12 +314      Coin                 Coin - Start coding
 17L10 -347      Quilter              Quilter - Save before opening new files
 17L10 -324      Notejot              Notejot - Remove colors for now
 17L09 -364      Notejot              Notejot - elementary OS palette
@@ -152,7 +154,7 @@ DATE  CODE PICT TERM                 NAME
 17K14 -344      Quilter              Quilter - Markdown support
 17K14 -346      Quilter              Quilter - Dark Mode
 17K13 -348      Quilter              Quilter - Improve document handling
-17K13 -314      Quilter              Quilter - Start coding
+17K13 +314      Quilter              Quilter - Start coding
 17K12 +384      Notejot              Notejot - Release
 17K11 -344      Notejot              Notejot - Multicolor notes
 17K10 -345      Notejot              Notejot - Meson
@@ -169,6 +171,6 @@ DATE  CODE PICT TERM                 NAME
 17K03 -344      Notejot              Notejot - Implement saving
 17K02 -364      Notejot              Notejot - Add Screenshot
 17K03 -329      Notejot              Notejot - Make it GObject
-17K02 -314      Notejot              Notejot - Start coding
+17K02 +314      Notejot              Notejot - Start coding
 17K01 -314      elementary OS        Started using the OS
 `;
