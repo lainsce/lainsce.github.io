@@ -249,7 +249,7 @@ CONLANGS
 
 SAYALA
   UNDE : Conlangs
-  ICON : M60,240 a30,-30 0 0,1 30,-30 l150,0 M90,195 a30,-30 0 0,1 30,-30 l90,0 M120,150 a30,-30 0 0,1 30,-30 l30,0 M195,120 l45,0 M225,165 l15,0 M150,105 a30,-30 0 0,1 30,-30 l60,0
+  ICON : M60,240 L60,240 L240,240 M120,60 L120,60 L60,60 L60,180 L120,180 L120,240 M180,60 L180,60 L180,240
   BREF : {(link)}, the language of the people on Sayakuxa.
   BODY
     & Sayala is the constructed language of the people of Sayakuxa.
