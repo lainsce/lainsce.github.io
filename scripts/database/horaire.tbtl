@@ -75,35 +75,51 @@ DATE  CODE PICT TERM                 NAME
 17V14 -344      Notejot              Notejot - Fix saving
 17V14 -344      Notejot              Notejot - Editable titles
 17V08 -344      Notejot              Notejot - Fix opening duplicate windows
-17V07 -344      Notejot              Notejot - Move options to Appmenu
+17V07 -347      Notejot              Notejot - Move options to Appmenu
 17U07 +384      Notejot              Notejot - Release
 17U06 -374      Notejot              Notejot - Many improvements
 17S07 -324      Notejot              Notejot - GResource the CSS
 17S04 -314      Palaura              Palaura - Start coding
 17R11 -324      Notejot              Notejot - Translations are open
+17P03 -344      Quilter              Quilter - Show which file is open
 17N06 -324      Notejot              Notejot - Fix app colors for contrast
+17N01 +384      Quilter              Quilter - Release
+17M13 -344      Quilter              Quilter - Open external files
+17M07 -344      Quilter              Quilter - Speed up save
+17M05 -344      Quilter              Quilter - Watch changes and save files
 17M05 -314      Home                 Start a personal site
+17L14 -344      Quilter              Quilter - Focus Mode and Preferences
 17L12 -314      Coin                 Coin - Start coding
+17L10 -344      Quilter              Quilter - Save before opening new files
 17L10 -324      Notejot              Notejot - Remove colors for now
 17L09 -364      Notejot              Notejot - elementary OS palette
-17L01 -364      Notejot              Notejot - Rearranged toolbar
+17L08 -334      Quilter              Quilter - Start Preview Mode
+17L04 -348      Quilter              Quilter - Dark Mode completed
+17L02 +384      Quilter              Quilter - Release
+17L01 -366      Notejot              Notejot - Rearranged toolbar
+17L01 -364      Quilter              Quilter - Minor icon redesign
+17L01 -344      Quilter              Quilter - Fix I/O files
+17K14 -342      Quilter              Quilter - Remove Dark Mode (for now)
+17K14 -344      Quilter              Quilter - Markdown support
+17K14 -346      Quilter              Quilter - Dark Mode
+17K13 -344      Quilter              Quilter - Improve document handling
 17K13 -314      Quilter              Quilter - Start coding
 17K12 +384      Notejot              Notejot - Release
 17K11 -344      Notejot              Notejot - Multicolor notes
-17K10 -344      Notejot              Notejot - Meson
+17K10 -345      Notejot              Notejot - Meson
 17K09 -344      Notejot              Notejot - Fix About dialog
-17K08 -344      Notejot              Notejot - Save Window position
+17K08 -348      Notejot              Notejot - Save Window position
 17K07 -344      Notejot              Notejot - About dialog
 17K07 -344      Notejot              Notejot - Open Notes
-17K06 -344      Notejot              Notejot - Clear Notes and One-Window App
+17K06 -348      Notejot              Notejot - Clear Notes and One-Window App
 17K05 +384      Notejot              Notejot - Release
 17K04 -354      Notejot              Notejot - Small Fixes
 17K04 +384      Notejot              Notejot - Release
-17K03 -344      Notejot              Notejot - SourceView out of MainWindow
-17K03 -364      Notejot              Notejot - Icon
+17K03 -345      Notejot              Notejot - SourceView out of MainWindow
+17K03 -366      Notejot              Notejot - Icon
 17K03 -344      Notejot              Notejot - Implement saving
 17K02 -364      Notejot              Notejot - Add Screenshot
-17K03 -324      Notejot              Notejot - Make it GObject
+17K03 -329      Notejot              Notejot - Make it GObject
 17K02 -314      Notejot              Notejot - Start coding
 17K01 -314      elementary OS        Started using the OS
 `;
