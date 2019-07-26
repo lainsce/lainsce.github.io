@@ -1,5 +1,5 @@
 DATABASE.horaire = `
-DATE  CODE PICT TERM                 NAME                                       
+DATE  CODE PICT TERM                 NAME                                            
 19O10 !381    2 Dot Matrix           Dot Matrix - Release
 19O10 -347      Dot Matrix           Made curves better
 19O10 -344      Dot Matrix           Use Ecosystem colors correctly
@@ -67,8 +67,30 @@ DATE  CODE PICT TERM                 NAME
 18I06 -314      RC Car               RC Car - Start implementation of init
 17X02 -314      Yishu                Yishu - Start coding
 17S04 -314      Palaura              Palaura - Start coding
+17R11 -324      Notejot              Notejot - Translations are open
+17N06 -324      Notejot              Notejot - Fix app colors for contrast
 17M05 -314      Home                 Start a personal site
 17L12 -314      Coin                 Coin - Start coding
+17L10 -324      Notejot              Notejot - Remove colors for now
+17L09 -364      Notejot              Notejot - elementary OS palette
+17L01 -364      Notejot              Notejot - Rearranged toolbar
 17K13 -314      Quilter              Quilter - Start coding
+17K12 +384      Notejot              Notejot - Release
+17K11 -344      Notejot              Notejot - Multicolor notes
+17K10 -344      Notejot              Notejot - Meson
+17K09 -344      Notejot              Notejot - Fix About dialog
+17K08 -344      Notejot              Notejot - Save Window position
+17K07 -344      Notejot              Notejot - About dialog
+17K07 -344      Notejot              Notejot - Open Notes
+17K06 -344      Notejot              Notejot - Clear Notes and One-Window App
+17K05 +384      Notejot              Notejot - Release
+17K04 -354      Notejot              Notejot - Small Fixes
+17K04 +384      Notejot              Notejot - Release
+17K03 -344      Notejot              Notejot - SourceView out of MainWindow
+17K03 -364      Notejot              Notejot - Icon
+17K03 -344      Notejot              Notejot - Implement saving
+17K02 -364      Notejot              Notejot - Add Screenshot
+17K03 -324      Notejot              Notejot - Make it GObject
 17K02 -314      Notejot              Notejot - Start coding
+17K01 -314      elementary OS        Started using the OS
 `;
