@@ -7,7 +7,7 @@ HOME
     & Welcome to the homepage of Lains.
     & This page provides a link into his world. It's made simple due to his love for minimalism.
     λ (wrap (echo (template (match (table "lexicon") (uniq (attribute (table "horaire") "term"))) SPAN)) "ul" "tidy col3")
-    @ Walk down this path, and you'll find the <b>old remains</b> of the planet. | Saltan Panomisi | 3+3485+03
+    @ Walk down this path, and you'll find the <b>old remains</b> of the planet. | Saltan Panomisi | 3/18Y02
 
 TRACKER
   UNDE : Horaire
@@ -239,16 +239,29 @@ RESEARCH
     & The {(bold "Research")} archive is a collection of assorted projects.
     λ (echo (template :children INDEX))
     
-CONLANGS
+PORTALS
   UNDE : Research
+  ICON : M60,240 a30,-30 0 0,1 30,-30 l150,0 M90,195 a30,-30 0 0,1 30,-30 l90,0 M120,150 a30,-30 0 0,1 30,-30 l30,0 M195,120 l45,0 M225,165 l15,0 M150,105 a30,-30 0 0,1 30,-30 l60,0
+  BREF : {(link)}, holds the constructed languages and their worlds by Lains.
+  BODY
+    & This is a collection of worlds.
+    λ (echo (template :children INDEX))
+
+SAYAKUXA
+  UNDE : Portals
   ICON : M60,240 a30,-30 0 0,1 30,-30 l150,0 M90,195 a30,-30 0 0,1 30,-30 l90,0 M120,150 a30,-30 0 0,1 30,-30 l30,0 M195,120 l45,0 M225,165 l15,0 M150,105 a30,-30 0 0,1 30,-30 l60,0
   BREF : {(link)}, holds the constructed languages by Lains.
   BODY
-    & This is a collection of conlangs.
-    λ (echo (template :children INDEX))
+    & Sayakuxa is a nation on the planet Iktis
+    - Its area is roughly {(bold "140.000")} kilometers sq.
+    - It houses {(bold "36.000.000")} inhabitants, mostly in the capital Palatisu.
+    - The official language is {(link "Sayala" "Sayala")}, with 3 minor languages not officially recognized.
+    - A huge river crosses Sayakuxa horizontally, naturally diving the country into {(bold "2 provinces")}.
+    % conlang/sayakuxa_map.png
+    @ The flag of Sayakuxa still stands proud on the many roads of Palatisu | Isil Hemikas | 3/78Y02
 
 SAYALA
-  UNDE : Conlangs
+  UNDE : Sayala
   ICON : M60,240 L60,240 L240,240 M120,60 L120,60 L60,60 L60,180 L120,180 L120,240 M180,60 L180,60 L180,240
   BREF : {(link)}, the language of the people on Sayakuxa.
   BODY
