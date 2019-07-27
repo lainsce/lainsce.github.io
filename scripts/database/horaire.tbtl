@@ -2,7 +2,6 @@ DATABASE.horaire = `
 DATE  CODE PICT TERM                 NAME                                                  
 19P03 +381      Dot Matrix           Dot Matrix - Release
 19P01 +351      Yishu                Yishu - Release
-19O12 -356      Yishu                Yishu - Fix Del keybind, it was legacy code
 19O12 -366      Yishu                Yishu - Redesign the app
 19O12 -356      Yishu                Yishu - Fix Del keybind, it was legacy code
 19O12 -368      Dot Matrix           Dot Matrix - Use ecosystem colors in UI correctly
