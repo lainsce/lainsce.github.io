@@ -1,5 +1,7 @@
 DATABASE.horaire = `
-DATE  CODE PICT TERM                 NAME                                                                      
+DATE  CODE PICT TERM                 NAME                                                  
+19P03 +381      Dot Matrix           Dot Matrix - Release
+19O12 -368      Dot Matrix           Dot Matrix - Use ecosystem colors in UI correctly
 19O11 -182      Portals              Portals - Added the country Sayakuxa
 19O11 +188      Portals              Portals - Added the conlang Sayala
 19O11 -365      Home                 Porting old logs
