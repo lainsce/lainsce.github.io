@@ -267,7 +267,7 @@ RIVEN.lib.Template = function TemplateNode (id, rect) {
   }
 
   this._sidebar = function (q) {
-    if (!q.result) { return `<h1>The ${'Nataniev'.toLink()} Services Desk</h1><h2>${'Home'.toLink()}</h2>` }
+    if (!q.result) { return `<h1>The ${'Riven'.toLink()} Services Desk</h1><h2>${'Home'.toLink()}</h2>` }
     return `
     ${q.result.logs.length > 2 ? `<h2>${q.result.logs[q.result.logs.length - 1].time} — ${q.result.logs[0].time}</h2>` : `<h2>${q.tables.horaire[q.tables.horaire.length - 1].time} — ${q.tables.horaire[0].time}</h2>`}
     ${_links(q.result)}
@@ -310,7 +310,7 @@ RIVEN.lib.DefaultTemplate = function TemplateNode (id, rect) {
 
     return `
     <p>Sorry, there are no pages for <b>${q.target.toTitleCase()}</b>, did you mean ${similar[0].word.toTitleCase().toLink()} or ${similar[1].word.toTitleCase().toLink()}?</p>
-    <p><b>Create this page</b> by submitting a ${'https://github.com/XXIIVV/oscean'.toLink('Pull Request', true)}, or if you believe this to be an error, please contact ${'https://twitter.com/neauoire'.toLink('@neauoire', true)}. Alternatively, you locate missing pages from within the ${'Tracker'.toLink('progress tracker')}.</p>`
+    <p><b>Create this page</b> by submitting a ${'https://github.com/lainsce/lainsce.github.io'.toLink('Pull Request', true)}, or if you believe this to be an error, please contact ${'https://twitter.com/lainsdev'.toLink('@lainsdev', true)}. Alternatively, you locate missing pages from within the ${'Tracker'.toLink('progress tracker')}.</p>`
   }
 
   function _redirected (q) {
