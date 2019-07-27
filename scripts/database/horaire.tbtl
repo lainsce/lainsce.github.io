@@ -91,6 +91,8 @@ DATE  CODE PICT TERM                 NAME
 18X03 -366      Quilter              Quilter - Moon Theme
 18W11 +384      Beemy                Beemy - Release
 18U14 -333      Beemy                Beemy - Fix calculation of results
+18U14 +384      Yishu                Yishu - Release
+18U13 -384      Yishu                Yishu - Fix searching
 18U12 +383      Quilter              Quilter - Release
 18U11 -326      Quilter              Quilter - Sidebar: fix show/hide
 18U10 -326      Quilter              Quilter - Sidebar workings
@@ -163,9 +165,21 @@ DATE  CODE PICT TERM                 NAME
 18B08 -344      Notejot              Notejot - New color buttons
 18B08 +383      Quilter              Quilter - Release
 18B07 -374      Quilter              Quilter - Reorganize main menu
+18B04 +384      Yishu                Yishu - Release
+18B03 -384      Yishu                Yishu - Remove most GTK deprecations
 18A12 +383      Quilter              Quilter - Release
 18A12 -374      Quilter              Quilter - Focus mode config options
+18A01 -364      Yishu                Yishu - Add Preferences
+17Y07 +384      Yishu                Yishu - Release
+17Y03 -358      Yishu                Yishu - Improve task dialog
+17X11 -344      Yishu                Yishu - Fix creating files from Welcome
 17X08 +384      Palaura              Palaura - Release
+17X08 -368      Yishu                Yishu - Welcome screen
+17X07 +384      Yishu                Yishu - Release
+17X05 -368      Yishu                Yishu - Icon design
+17X05 -344      Yishu                Yishu - Implement window settings
+17X04 -344      Yishu                Yishu - Implement window settings
+17X03 -344      Yishu                Yishu - Implement window settings
 17X02 +314      Yishu                Yishu - Start coding
 17W11 -365      Palaura              Palaura - Redesign UI
 17W09 -355      Palaura              Palaura - Add spanish dictionary
