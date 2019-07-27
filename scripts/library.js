@@ -994,6 +994,12 @@ Lains is now <b>${this.services.age().toFixed(4)} years</b> old.`, 0)
       return d.getUTCFullYear() + '-' + pad(d.getUTCMonth() + 1) + '-' + pad(d.getUTCDate()) + 'T' + pad(d.getUTCHours()) + ':' + pad(d.getUTCMinutes()) + ':' + pad(d.getUTCSeconds()) + 'Z'
     },
 
+    local: (q) => {
+      const d = new Date()
+      function pad (n) { return n < 10 ? '0' + n : n }
+      return d.getFullYear() + '-' + pad(d.getMonth() + 1) + '-' + pad(d.getDate()) + 'T' + pad(d.getHours()) + ':' + pad(d.getMinutes()) + ':' + pad(d.getSeconds()) + 'Z'
+    },
+
     clear: (q) => {
       this.el.innerHTML = ''
       return ``
