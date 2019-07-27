@@ -154,7 +154,10 @@ DATE  CODE PICT TERM                 NAME
 18B07 -374      Quilter              Quilter - Reorganize main menu
 18A12 +383      Quilter              Quilter - Release
 18A12 -374      Quilter              Quilter - Focus mode config options
+17X08 +384      Palaura              Palaura - Release
 17X02 +314      Yishu                Yishu - Start coding
+17W11 -365      Palaura              Palaura - Redesign UI
+17W09 -355      Palaura              Palaura - Add spanish dictionary
 17W08 -374      Quilter              Quilter - Fix preview mode html
 17W01 +384      Notejot              Notejot - Release
 17V14 -349      Notejot              Notejot - Fix saving
@@ -170,12 +173,18 @@ DATE  CODE PICT TERM                 NAME
 17U07 +384      Notejot              Notejot - Release
 17U06 -377      Notejot              Notejot - Many improvements
 17U04 -363      Coin                 Coin -  Full currency/coin name design
+17U04 +384      Palaura              Palaura - Release
+17U03 -355      Palaura              Palaura - Fix lookups
 17U01 -343      Coin                 Coin -  Remember last used pair of coin/currency
 17T10 -374      Quilter              Quilter - Focus Mode
+17T10 -355      Palaura              Palaura - Remember window position
 17T09 -374      Quilter              Quilter - Statusbar
+17T07 -355      Palaura              Palaura - Move to new API
 17T06 +383      Quilter              Quilter - Release
+17T05 -365      Palaura              Palaura - Fix text shadow
 17T03 -374      Quilter              Quilter - Preview Mode
 17S07 -325      Notejot              Notejot - GResource the CSS
+17S05 -365      Palaura              Palaura - First implementation
 17S04 +314      Palaura              Palaura - Start coding
 17R11 -323      Notejot              Notejot - Translations are open
 17R10 +384      Quilter              Quilter - Release
