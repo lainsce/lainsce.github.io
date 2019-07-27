@@ -148,6 +148,14 @@ NIU
     & This is a clock for Nataniev time system developed for elementary OS.
     % generic/niu.webp
 
+RC CAR
+  UNDE : Programming
+  TAGS : portal
+  BREF : A Linux init system that is just like a toy.
+  ICON : M90.0,90.0 L90.0,90.0 L150.0,150.0 L90.0,210.0 M210.0,90.0 L210.0,90.0 L210.0,210.0
+  BODY
+    & This is a Linux init system designed to be modular, easy to configure, and light on resources.
+
 SOFTWARE
   UNDE : Programming
   TAGS : portal
