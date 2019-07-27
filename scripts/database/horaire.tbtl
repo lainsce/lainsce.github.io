@@ -123,6 +123,7 @@ DATE  CODE PICT TERM                 NAME
 18R11 -363      Coin                 Coin -  New change ticker
 18Q02 -346      Quilter              Quilter - Add settings for font size
 18Q02 -346      Aesop                Aesop - Fix jumper buttons
+18O04 +384      Palaura              Palaura - Release
 18N13 +384      Notejot              Notejot - Release
 18N12 -348      Notejot              Notejot - Fix destroyed content when closed
 18N03 -346      Quilter              Quilter - Add search jump buttons
