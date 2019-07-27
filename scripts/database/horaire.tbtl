@@ -1,7 +1,7 @@
 DATABASE.horaire = `
 DATE  CODE PICT TERM                 NAME                                                                      
-19O11 -182      Portals               Added the country Sayakuxa
-19O11 +188      Portals               Added the conlang Sayala
+19O11 -182      Portals              Added the country Sayakuxa
+19O11 +188      Portals              Added the conlang Sayala
 19O11 -365      Home                 Porting old logs
 19O10 !381    2 Dot Matrix           Dot Matrix - Release
 19O10 -347      Dot Matrix           Made curves better
@@ -88,6 +88,9 @@ DATE  CODE PICT TERM                 NAME
 18S07 +383      Quilter              Quilter - Release
 18S06 -346      Quilter              Quilter - Words/Lines/Chars tracker
 18S01 +314      Beemy                Beemy - Start coding
+18R12 +383      Coin                 Coin -  Release
+18R11 -343      Coin                 Coin -  Add BitCash option
+18R11 -363      Coin                 Coin -  New change ticker
 18Q02 -346      Quilter              Quilter - Add settings for font size
 18N13 +384      Notejot              Notejot - Release
 18N12 -348      Notejot              Notejot - Fix destroyed content when closed
@@ -113,6 +116,8 @@ DATE  CODE PICT TERM                 NAME
 18I10 +383      Quilter              Quilter - Release
 18I06 +319      RC Car               RC Car - Start implementation of init
 18I04 -374      Quilter              Quilter - Fix preview mode refresh
+18G14 +383      Coin                 Coin -  Release
+18G12 -363      Coin                 Coin -  Enable translations
 18F07 -347      Notejot              Notejot - Create new note from dock
 18F06 +383      Quilter              Quilter - Release
 18C12 -374      Quilter              Quilter - Fix new file button
@@ -131,9 +136,13 @@ DATE  CODE PICT TERM                 NAME
 17V05 +383      Quilter              Quilter - Release
 17V04 -374      Quilter              Quilter - Fix many minor bugs
 17U12 +383      Quilter              Quilter - Release
+17U11 -363      Coin                 Coin -  Fix width of app
 17U09 -374      Quilter              Quilter - Fix Focus Mode
+17U09 -363      Coin                 Coin -  Fix currency name not loading
 17U07 +384      Notejot              Notejot - Release
 17U06 -377      Notejot              Notejot - Many improvements
+17U04 -363      Coin                 Coin -  Full currency/coin name design
+17U01 -343      Coin                 Coin -  Remember last used pair of coin/currency
 17T10 -374      Quilter              Quilter - Focus Mode
 17T09 -374      Quilter              Quilter - Statusbar
 17T06 +383      Quilter              Quilter - Release
@@ -144,15 +153,22 @@ DATE  CODE PICT TERM                 NAME
 17R10 +384      Quilter              Quilter - Release
 17R08 -364      Quilter              Quilter - New palette
 17R07 +384      Quilter              Quilter - Release
+17P11 +314      Coin                 Coin - Release
+17P08 -341      Coin                 Coin - Add XAR and SAR coins
 17P03 -347      Quilter              Quilter - Show which file is open
 17N06 -325      Notejot              Notejot - Fix app colors for contrast
+17N06 -344      Coin                 Coin - Fix coin symbol switch
 17N01 +384      Quilter              Quilter - Release
 17M13 -347      Quilter              Quilter - Open external files
 17M07 -345      Quilter              Quilter - Speed up save
 17M05 -346      Quilter              Quilter - Watch changes and save files
 17M05 +314      Home                 Start a personal site
+17M04 +312      Coin                 Coin - Release
+17M01 -364      Coin                 Coin - Update labels periodically
 17L14 -344      Quilter              Quilter - Focus Mode and Preferences
-17L13 -364      Coin                 Coin - Relayout app
+17L14 -366      Coin                 Coin - Add the currencies symbols
+17L14 -344      Coin                 Coin - Add more currencies to track
+17L13 -368      Coin                 Coin - Relayout app
 17L12 -344      Coin                 Coin - Fix value ticker
 17L12 +314      Coin                 Coin - Start coding
 17L10 -347      Quilter              Quilter - Save before opening new files
