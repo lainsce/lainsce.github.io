@@ -30,6 +30,7 @@ DATE  CODE PICT TERM                 NAME
 19M04 -342      Reganam              Reganam - Fix price bug
 19M03 +381      Reganam              Reganam - Release
 19M01 -342      Reganam              Reganam - Fix research level reporting
+19L07 -373      Beemy                Beemy - Fix action button
 19K02 +381      Reganam              Reganam - Release
 19J13 -367      Reganam              Reganam - Add help tooltips
 19J13 -377      Reganam              Reganam - Fixed game backend
@@ -38,6 +39,8 @@ DATE  CODE PICT TERM                 NAME
 19J11 -327      Reganam              Reganam - Add planetary types
 19J11 -327      Reganam              Reganam - Add planetary diameter
 19J09 +314      Reganam              Reganam - Start coding
+19F11 -188      Sayala               Sayala - Make a script for the language
+19F11 -188      Sayala               Sayakuxa - Develop country idea
 19F08 -188      Sayala               Sayala - Lexicon building #2
 19F04 -188      Sayala               Sayala - Lexicon building #1
 19F03 -188      Sayala               Sayala - Syntax relations
@@ -86,6 +89,7 @@ DATE  CODE PICT TERM                 NAME
 19D12 +364      Home                 Start journaling
 18X03 -376      Quilter              Quilter - Fix pdf exporting
 18X03 -366      Quilter              Quilter - Moon Theme
+18W11 +384      Beemy                Beemy - Release
 18U14 -333      Beemy                Beemy - Fix calculation of results
 18U12 +383      Quilter              Quilter - Release
 18U11 -326      Quilter              Quilter - Sidebar: fix show/hide
