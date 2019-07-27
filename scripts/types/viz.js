@@ -36,7 +36,7 @@ function Viz (logs, from, to, showDetails = true) {
     <rect class="research" x="${(cell + 1) * 9}" y="115" width="13" height="13" rx="2" ry="2" title="17O11"></rect>
     <text x='${(cell + 1) * 11}' y='125' style='text-anchor:start'>Research ${_perc(horaire.sectors.research, sum)}%</text>
     <rect class="programming" x="${(cell + 1) * 20}" y="115" width="13" height="13" rx="2" ry="2" title="17O11"></rect>
-    <text x='${(cell + 1) * 22}' y='125' style='text-anchor:start'>Programming ${_perc(horaire.sectors.programming, sum)}%</text>
+    <text x='${(cell + 1) * 21}' y='125' style='text-anchor:start'>Programming ${_perc(horaire.sectors.programming, sum)}%</text>
     <text x='725' y='125' style='text-anchor:end'>${horaire.fhs.toFixed(0)} Hours</text>`
   }
 
