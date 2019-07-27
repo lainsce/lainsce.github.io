@@ -95,8 +95,11 @@ DATE  CODE PICT TERM                 NAME
 18U11 -326      Quilter              Quilter - Sidebar: fix show/hide
 18U10 -326      Quilter              Quilter - Sidebar workings
 18U01 +314      Timetable            Timetable - Start coding
+18T11 +383      Aesop                Aesop - Release
 18T08 -346      Quilter              Quilter - Track better: W/L/C
 18T08 -346      Quilter              Quilter - Show choices of Preview font
+18T08 -346      Aesop                Aesop - Zoom keybinds
+18T08 -346      Aesop                Aesop - Live mode
 18T01 -333      Beemy                Beemy - Centimeter units
 18T01 -343      Beemy                Beemy - Button sensitiy based on entries
 18S07 +383      Quilter              Quilter - Release
@@ -109,11 +112,19 @@ DATE  CODE PICT TERM                 NAME
 18R11 -343      Coin                 Coin -  Add BitCash option
 18R11 -363      Coin                 Coin -  New change ticker
 18Q02 -346      Quilter              Quilter - Add settings for font size
+18Q02 -346      Aesop                Aesop - Fix jumper buttons
 18N13 +384      Notejot              Notejot - Release
 18N12 -348      Notejot              Notejot - Fix destroyed content when closed
 18N03 -346      Quilter              Quilter - Add search jump buttons
 18N02 -346      Quilter              Quilter - Start work on searchbar
 18M06 +383      Quilter              Quilter - Release
+18M06 +383      Aesop                Aesop - Release
+18M04 -346      Aesop                Aesop - Print properly
+18M04 -346      Aesop                Aesop - Open external files
+18M04 -346      Aesop                Aesop - Zooming functions
+18M03 -346      Aesop                Aesop - Start work on print pdf function
+18M02 -346      Aesop                Aesop - Inverting PDFs
+18M01 -346      Aesop                Aesop - Added page set button
 18L14 +314      Aesop                Aesop - Start coding
 18L06 -376      Quilter              Quilter - Typewriter Mode fixes
 18L06 -346      Quilter              Quilter - Typewriter Mode
