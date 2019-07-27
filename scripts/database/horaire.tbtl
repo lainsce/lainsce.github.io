@@ -1,30 +1,30 @@
 DATABASE.horaire = `
 DATE  CODE PICT TERM                 NAME                                                                      
-19O11 -182      Portals              Added the country Sayakuxa
-19O11 +188      Portals              Added the conlang Sayala
+19O11 -182      Portals              Portals - Added the country Sayakuxa
+19O11 +188      Portals              Portals - Added the conlang Sayala
 19O11 -365      Home                 Porting old logs
 19O10 !381    2 Dot Matrix           Dot Matrix - Release
-19O10 -347      Dot Matrix           Made curves better
-19O10 -344      Dot Matrix           Use Ecosystem colors correctly
+19O10 -347      Dot Matrix           Dot Matrix - Made curves better
+19O10 -344      Dot Matrix           Dot Matrix - Use Ecosystem colors correctly
 19O09 -343      Home                 Site - Port whole site to Riven                          
 19O09 -343      Home                 Site - Fix tracker page
 19O08 !382    1 Niu                  Niu - Release
 19O07 -343      Home                 Site - Made a tracker page
 19O06 -368      Niu                  Niu - Design icon
 19O05 +328      Niu                  Niu - Start coding
-19O04 -118      Twitch               Watched MoonMoon2
-19O03 -118      Twitch               Watched AdmiralBahroo
-19O02 -341      Tracker              Rearranged Log
-19O02 -122      Tidal                Listened to Black Moth Super Rainbow
-19O01 -245      Tracker              LOG to TBTL
-19O01 -118      Twitch               Watched MoonMoon2
+19O04 -118      Twitch               Twitch - Watched MoonMoon2
+19O03 -118      Twitch               Twitch - Watched AdmiralBahroo
+19O02 -341      Tracker              Tracker - Rearranged Log
+19O02 -122      Tidal                Tidal - Listened to Black Moth Super Rainbow
+19O01 -245      Tracker              Tracker - LOG to TBTL
+19O01 -118      Twitch               Twitch - Watched MoonMoon2
 19O01 +388      elementary OS        DateTime - Release (PR)
 19O01 -338      elementary OS        DateTime - Coding
 19O01 -328      elementary OS        DateTime - Coding
-19O01 -122      Tidal                Listened to Clark
-19O01 +365      Home                 Begin journaling again
+19O01 -122      Tidal                Tidal - Listened to Clark
+19O01 +365      Home                 Home - Begin journaling again
 19N04 +381      Reganam              Reganam - Release
-19M07 -396      elementary OS        Joined the UX team
+19M07 -396      elementary OS        elementary OS - Joined the UX team
 19M06 -342      Reganam              Reganam - Add planet buster
 19M05 +384      Notejot              Notejot - Release
 19M04 -342      Reganam              Reganam - Fix price bug
@@ -48,16 +48,16 @@ DATE  CODE PICT TERM                 NAME
 19F02 -188      Sayala               Sayala - Verbs
 19F02 -188      Sayala               Sayala - Nouns
 19F01 -188      Sayala               Sayala - Started conlang
-19E14 -118      Twitch               Watched AdmiralBahroo
+19E14 -118      Twitch               Twitch - Watched AdmiralBahroo
 19E13 +381      Timetable            Timetable - Release
 19E13 +381      Dot Matrix           Dot Matrix - Release
 19E12 -342      Dot Matrix           Dot Matrix - Implement filled shapes
 19E11 -338      Timetable            Timetable - Fix weekend visibility on launch
 19E11 -332      Dot Matrix           Dot Matrix - Added French translation
-19E10 -367      Home                 Make it responsive
+19E10 -367      Home                 Home - Make it responsive
 19E10 -367      Home                 Home - Redesign
 19E10 +381      Dot Matrix           Dot Matrix - Release
-19E09 -179      Fysi                 Worked at
+19E09 -179      Fysi                 Fysi - Worked at
 19E08 -346      Dot Matrix           Dot Matrix - Implement Show/Hide grid
 19E08 -346      Dot Matrix           Dot Matrix - Implement Linecap change
 19E08 -345      Dot Matrix           Dot Matrix - Implement cursor guide
@@ -76,17 +76,17 @@ DATE  CODE PICT TERM                 NAME
 19E03 +384      Quilter              Quilter - Release
 19E03 -326      Dot Matrix           Dot Matrix - Try making it in GTK only
 19E03 +311      Dot Matrix           Dot Matrix - Start coding
-19E02 -192      Twitch               Played twitch stocks game
+19E02 -192      Twitch               Twitch - Played twitch stocks game
 19E01 +384      Quilter              Quilter - Release
 19E01 -337      Quilter              Quilter - Fix opening files
-19E01 -192      Twitch               Played twitch stocks game
+19E01 -192      Twitch               Twitch - Played twitch stocks game
 19D14 -332      Yishu                Yishu - Added German translation
 19D14 +384      Timetable            Timetable - Release
-19D14 -192      Twitch               Played twitch stocks game
-19D13 -192      Twitch               Played twitch stocks game
+19D14 -192      Twitch               Twitch - Played twitch stocks game
+19D13 -192      Twitch               Twitch - Played twitch stocks game
 19D13 -316      Timetable            Timetable - Opening .org files
 19D13 -336      Timetable            Timetable - Fix loading color from files
-19D12 +364      Home                 Start journaling
+19D12 +364      Home                 Home - Start journaling
 18X03 -376      Quilter              Quilter - Fix pdf exporting
 18X03 -366      Quilter              Quilter - Moon Theme
 18W11 +384      Beemy                Beemy - Release
@@ -226,7 +226,7 @@ DATE  CODE PICT TERM                 NAME
 17M13 -347      Quilter              Quilter - Open external files
 17M07 -345      Quilter              Quilter - Speed up save
 17M05 -346      Quilter              Quilter - Watch changes and save files
-17M05 +314      Home                 Start a personal site
+17M05 +314      Home                 Home - Start a personal site
 17M04 +312      Coin                 Coin - Release
 17M01 -364      Coin                 Coin - Update labels periodically
 17L14 -344      Quilter              Quilter - Focus Mode and Preferences
@@ -266,5 +266,5 @@ DATE  CODE PICT TERM                 NAME
 17K02 -364      Notejot              Notejot - Add Screenshot
 17K03 -329      Notejot              Notejot - Make it GObject
 17K02 +314      Notejot              Notejot - Start coding
-17K01 -314      elementary OS        Started using the OS
+17K01 -314      elementary OS        elementary OS - Started using the OS
 `;
