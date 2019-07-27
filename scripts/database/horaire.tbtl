@@ -94,6 +94,16 @@ DATE  CODE PICT TERM                 NAME
 18U12 +383      Quilter              Quilter - Release
 18U11 -326      Quilter              Quilter - Sidebar: fix show/hide
 18U10 -326      Quilter              Quilter - Sidebar workings
+18U10 +383      Timetable            Timetable - Release
+18U09 -343      Timetable            Timetable - Save weekend tasks
+18U08 -342      Timetable            Timetable - Set tasks colors and times
+18U07 -349      Timetable            Timetable - Finish save algorithm
+18U06 -364      Timetable            Timetable - Make tasks design
+18U06 -349      Timetable            Timetable - Deserialize for better save algorithm
+18U05 -338      Timetable            Timetable - Start implementation of saving
+18U05 -344      Timetable            Timetable - Reset if not saved
+18U03 -343      Timetable            Timetable - Implement adding tasks to each day
+18U01 -364      Timetable            Timetable - Implement design
 18U01 +314      Timetable            Timetable - Start coding
 18T11 +383      Aesop                Aesop - Release
 18T08 -346      Quilter              Quilter - Track better: W/L/C
