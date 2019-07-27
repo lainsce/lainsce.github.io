@@ -38,6 +38,13 @@ DATE  CODE PICT TERM                 NAME
 19J11 -327      Reganam              Reganam - Add planetary types
 19J11 -327      Reganam              Reganam - Add planetary diameter
 19J09 +314      Reganam              Reganam - Start coding
+19F08 -188      Sayala               Sayala - Lexicon building #2
+19F04 -188      Sayala               Sayala - Lexicon building #1
+19F03 -188      Sayala               Sayala - Syntax relations
+19F03 -188      Sayala               Sayala - Particle system
+19F02 -188      Sayala               Sayala - Verbs
+19F02 -188      Sayala               Sayala - Nouns
+19F01 -188      Sayala               Sayala - Started conlang
 19E14 -118      Twitch               Watched AdmiralBahroo
 19E13 +381      Timetable            Timetable - Release
 19E13 +381      Dot Matrix           Dot Matrix - Release
@@ -79,14 +86,20 @@ DATE  CODE PICT TERM                 NAME
 19D12 +364      Home                 Start journaling
 18X03 -376      Quilter              Quilter - Fix pdf exporting
 18X03 -366      Quilter              Quilter - Moon Theme
+18U14 -333      Beemy                Beemy - Fix calculation of results
 18U12 +383      Quilter              Quilter - Release
 18U11 -326      Quilter              Quilter - Sidebar: fix show/hide
 18U10 -326      Quilter              Quilter - Sidebar workings
 18U01 +314      Timetable            Timetable - Start coding
 18T08 -346      Quilter              Quilter - Track better: W/L/C
 18T08 -346      Quilter              Quilter - Show choices of Preview font
+18T01 -333      Beemy                Beemy - Centimeter units
+18T01 -343      Beemy                Beemy - Button sensitiy based on entries
 18S07 +383      Quilter              Quilter - Release
 18S06 -346      Quilter              Quilter - Words/Lines/Chars tracker
+18S05 +384      Beemy                Beemy - Release
+18S03 -348      Beemy                Beemy - Fix getting data
+18S03 -364      Beemy                Beemy - Implement design
 18S01 +314      Beemy                Beemy - Start coding
 18R12 +383      Coin                 Coin -  Release
 18R11 -343      Coin                 Coin -  Add BitCash option
