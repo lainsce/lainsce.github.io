@@ -251,6 +251,16 @@ RESEARCH
   BODY
     & The {(bold "Research")} archive is a collection of assorted projects.
     λ (echo (template :children INDEX))
+
+UNIVERSITY
+  UNDE : Research
+  ICON : M60,240 a30,-30 0 0,1 30,-30 l150,0 M90,195 a30,-30 0 0,1 30,-30 l90,0 M120,150 a30,-30 0 0,1 30,-30 l30,0 M195,120 l45,0 M225,165 l15,0 M150,105 a30,-30 0 0,1 30,-30 l60,0
+  BREF : Lains's academic life.
+  BODY
+    & Lains is currently attending a Computer Science University, but his academic life doesn't end there.
+    - 09C07∼11V14 Attended College in UX Design
+    - 12C06∼16V14 BS in Law
+    - 18C07∼19O12 BS in Computer Science (ongoing)
     
 PORTALS
   UNDE : Research
