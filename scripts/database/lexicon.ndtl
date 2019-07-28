@@ -292,6 +292,15 @@ SAYAKUXAN MUSIC
     & Music on Sayakuxa follows a 8-note system called Ayakaxu ({(ital "lit.")} pretty box) which uses lozenges along vertical lines, painted over or not on the sides.
     & Our notes, if converted to Ayakaxu, look like follows:
     % conlang/music_notation_our_notes.png
+    & The frequencies associated with each note in the Brass Scale:
+    | {(bold "A")} | 453.7 Hz
+    | B            | 494.8 Hz
+    | C            | 269.8 Hz
+    | D            | 294.2 Hz
+    | E (Eb)       | 320.8 Hz
+    | F            | 349.9 Hz
+    | F#           | 381.5 Hz
+    | G            | 416.0 Hz
     & And an example song, in {(code "4/4")} bars,
     % conlang/music_notation.png
     @ They say, when music happens, one cannot just stay in place. | Sitki Malayos | 2/65F12
