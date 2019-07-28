@@ -47,6 +47,11 @@ DATE  CODE PICT TERM                 NAME
 19M03 +381      Reganam              Reganam - Release
 19M01 -342      Reganam              Reganam - Fix research level reporting
 19L07 -373      Beemy                Beemy - Fix action button
+19K10 -283      University           Finals (5/5)
+19K09 -283      University           Finals (4/5)
+19K08 -283      University           Finals (3/5)
+19K07 -283      University           Finals (2/5)
+19K06 -283      University           Finals (1/5)
 19K02 +381      Reganam              Reganam - Release
 19J13 -367      Reganam              Reganam - Add help tooltips
 19J13 -377      Reganam              Reganam - Fixed game backend
@@ -55,8 +60,14 @@ DATE  CODE PICT TERM                 NAME
 19J11 -327      Reganam              Reganam - Add planetary types
 19J11 -327      Reganam              Reganam - Add planetary diameter
 19J09 +314      Reganam              Reganam - Start coding
+19I10 -283      University           Change campi
+19G01 -283      University           Midterms (5/5)
+19F14 -283      University           Midterms (4/5)
+19F13 -283      University           Midterms (3/5)
 19F11 -188      Sayala               Sayala - Make a script for the language
 19F11 -188      Sayala               Sayakuxa - Develop country idea
+19F10 -283      University           Midterms (2/5)
+19F09 -283      University           Midterms (1/5)
 19F08 -188      Sayala               Sayala - Lexicon building #2
 19F04 -188      Sayala               Sayala - Lexicon building #1
 19F03 -188      Sayala               Sayala - Syntax relations
@@ -103,6 +114,7 @@ DATE  CODE PICT TERM                 NAME
 19D13 -316      Timetable            Timetable - Opening .org files
 19D13 -336      Timetable            Timetable - Fix loading color from files
 19D12 +364      Home                 Home - Start journaling
+19C07 +283      University           Start of 3rd Semester
 18X03 -376      Quilter              Quilter - Fix pdf exporting
 18X03 -366      Quilter              Quilter - Moon Theme
 18W11 +384      Beemy                Beemy - Release
