@@ -331,7 +331,7 @@ SAYALA
     & There is a limited set of syllables, of the type CV (consonant-vowel). The phonotactics does not typically allow the onsets of adjacent syllables to be identical, nor both to be labialized or palatalized. Syllables beginning with {(code "/l/")} do not occur as the first syllable of a headword (except in loanwords and toponyms).
     * Syllables
     & It is typically made up of open syllables of the type CV (consonant-vowel) with most lexemes having syllables exclusively of this type. The exception to this rule are the endings {(code "-m")} (indicating general plural), and {(code "-ka")} (indicating negative mood). These endings all are word final. In detail a syllable can be analyzed thusly:
-    # (n)C([b])V([a, o])
+    # (n)C([b])V([a, o, i])
     & where {(code "(n)")} indicates nasalization, and {(code "b")} indicates labialization.
     * Stress
     & Stress generally falls on the penultimate syllable, which means that stress is {(ital "de facto")} initial in most lemma given that stems are most often {(code "(CVCV)")}. Monosyllabic words are not stressed.
