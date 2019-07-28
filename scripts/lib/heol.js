@@ -196,29 +196,6 @@ function Heol (input, host) {
       return item.logs.length > 10 && item.span.from && item.span.to ? `<li>${item.name.toTitleCase().toLink()} ${item.span.from}—${item.span.to}</li>` : ''
     },
     // -----------------------
-    // Lietal
-    // -----------------------
-    adultspeak: (item) => {
-      return new Yleta({ name: item }).adultspeak
-    },
-    yletaodeta: (item, w, h, thickness = 9, color = 'black', guide = false) => {
-      return new Yletaodeta(item).toSVG(w, h, thickness, color, guide)
-    },
-    lien: (...items) => {
-      return items.reduce((acc, val) => { const res = Ø('asulodeta').find(val, 'name'); return `${acc}${res ? res.english : val} ` }, '').trim()
-    },
-    enli: (...items) => {
-      return items.reduce((acc, val) => { const res = Ø('asulodeta').find(val, 'english'); return `${acc}${res ? res.adultspeak : val} ` }, '').replace(/ \. /g, '. ').replace(/ \, /g, ', ').replace(/ \' /g, '\'').replace(/ \! /g, '! ').replace(/ {2}/g, ' ').trim()
-    },
-    deconstruct: (item) => {
-      const res = Ø('asulodeta').find(item, 'name')
-      if (!res) { return 'Unknown Yleta: ' + item }
-      return `<table><tr>${res.parts().reduce((acc, childspeak) => {
-        const l = Ø('asulodeta').find(childspeak, 'name')
-        return l ? `${acc}<td>${l.yletaodeta}<br />${l.adultspeak}<br />${item === l.childspeak ? '<b>' + l.english + '</b>' : l.english}</td>` : item
-      }, '')}</tr></table>`
-    },
-    // -----------------------
     // Horaire
     // -----------------------
     task: (code) => {

@@ -68,7 +68,7 @@ NOTEJOT
   BREF : {(link)} is a sticky notes application developed for elementary OS.
   BODY
     & This is a sticky notes application developed for elementary OS.
-    % generic/notejot.webp
+    % generic/notejot.png
 
 QUILTER
   UNDE : Programming
@@ -76,7 +76,7 @@ QUILTER
   BREF : {(link)} is a Markdown minimal application developed for elementary OS.
   BODY
     & This is a Markdown minimal application developed for elementary OS.
-    % generic/quilter.webp
+    % generic/quilter.png
 
 COIN
   UNDE : Programming
@@ -84,7 +84,7 @@ COIN
   BREF : {(link)} is a cryptocurrency tracker developed for elementary OS.
   BODY
     & This is a cryptocurrency tracker  developed for elementary OS.
-    % generic/coin.webp
+    % generic/coin.png
  
 PALAURA
   UNDE : Programming
@@ -92,7 +92,7 @@ PALAURA
   BREF : {(link)} is a dictionary searcher developed for elementary OS.
   BODY
     & This is  a dictionary searcher developed for elementary OS.
-    % generic/palaura.webp
+    % generic/palaura.png
     
 YISHU
   UNDE : Programming
@@ -100,7 +100,7 @@ YISHU
   BREF : {(link)} is a task tracker for todo.txt developed for elementary OS.
   BODY
     & This is a task tracker for todo.txt developed for elementary OS.
-    % generic/yishu.webp
+    % generic/yishu.png
 
 AESOP
   UNDE : Programming
@@ -108,7 +108,7 @@ AESOP
   BREF : {(link)} is a pdf viewer developed for elementary OS.
   BODY
     & This is a pdf viewer developed for elementary OS.
-    % generic/aesop.webp
+    % generic/aesop.png
 
 BEEMY
   UNDE : Programming
@@ -116,7 +116,7 @@ BEEMY
   BREF : {(link)} is a Body Mass Index calculator developed for elementary OS.
   BODY
     & This is a Body Mass Index calculator developed for elementary OS.
-    % generic/beemy.webp
+    % generic/beemy.png
 
 TIMETABLE
   UNDE : Programming
@@ -124,7 +124,7 @@ TIMETABLE
   BREF : {(link)} is a virtual week timetable developed for elementary OS.
   BODY
     & This is a virtual week timetable developed for elementary OS.
-    % generic/timetable.webp
+    % generic/timetable.png
     
 DOT MATRIX
   UNDE : Programming
@@ -132,7 +132,7 @@ DOT MATRIX
   BREF : {(link)} is a minimal vector drawing app developed for elementary OS.
   BODY
     & This is a minimal vector drawing app developed for elementary OS.
-    % generic/dotmatrix.webp
+    % generic/dotmatrix.png
 
 REGANAM
   UNDE : Programming
@@ -140,7 +140,7 @@ REGANAM
   BREF : {(link)} is a text-only resource management game developed for elementary OS.
   BODY
     & This is a text-only resource management game developed for elementary OS.
-    % generic/reganam.webp
+    % generic/reganam.png
 
 NIU
   UNDE : Programming
@@ -148,7 +148,7 @@ NIU
   BREF : {(link)} is a clock for Nataniev System developed for elementary OS.
   BODY
     & This is a clock for Nataniev time system developed for elementary OS.
-    % generic/niu.webp
+    % generic/niu.png
 
 RC CAR
   UNDE : Programming
@@ -226,7 +226,7 @@ TIDAL
     & The popular music streaming platform.
 
 BLACK MOTH SUPER RAINBOW
-  UNDE : Leisure
+  UNDE : Tidal
   ICON : M90,180 A30,30 0 0,0 60,210 A30,30 0 0,0 90,240 A30,30 0 0,0 120,210 A30,30 0 0,0 90,180 M210,180 A30,30 0 0,0 180,210 A30,30 0 0,0 210,240 A30,30 0 0,0 240,210 A30,30 0 0,0 210,180 M240,210 L240,210 L240,60 L120,60 L120,210
   BREF : {(link)}, a strange music experience.
   BODY
@@ -234,7 +234,7 @@ BLACK MOTH SUPER RAINBOW
     & They are a source of music taste development for Lains.
 
 CLARK
-  UNDE : Leisure
+  UNDE : Tidal
   ICON : M90,180 A30,30 0 0,0 60,210 A30,30 0 0,0 90,240 A30,30 0 0,0 120,210 A30,30 0 0,0 90,180 M210,180 A30,30 0 0,0 180,210 A30,30 0 0,0 210,240 A30,30 0 0,0 240,210 A30,30 0 0,0 210,180 M240,210 L240,210 L240,60 L120,60 L120,210
   BREF : {(link)}, one of the musicians that does IDM-type music.
   BODY
@@ -269,6 +269,18 @@ SAYAKUXA
     - A huge river crosses Sayakuxa horizontally, naturally diving the country into {(bold "2 provinces")}.
     % conlang/sayakuxa_map.png
     @ The flag of Sayakuxa still stands proud on the many roads of Palatisu | Isil Hemikas | 3/78Y02
+
+MON THU
+  UNDE : Portals
+  ICON : M150,60 A90,90 0 0,0 60,150 A90,90 0 0,0 150,240 A90,90 0 0,0 240,150 A90,90 0 0,0 150,60 M195,75 L195,75 L165,105 L180,135 L150,150 L135,180 L165,165 L165,195 L195,180 L195,225 M90,90 L90,90 L105,105 L105,135 L120,165 L105,195 L135,210 L135,240 
+  BREF : {(link)}, holds the constructed languages by Lains.
+  BODY
+    & Mon Thu is a nation on the planet Iktis
+    - Its area is roughly {(bold "5.000")} kilometers sq.
+    - It houses {(bold "300.000")} inhabitants, mostly in the capital Dąñ Su.
+    - The official language is {(link "Món Tų" "Món Tų")}.
+    - A small nation with a religion-based government, there are many temples around the country.
+    @ They say strange energy dissipates from the temples in Mon Thu. It is of cyan color. | Isil Hemikas | 3/78Y02
 
 SAYALA
   UNDE : Sayala
@@ -390,6 +402,131 @@ SAYALA
     - naheru touu – into bed
     - uaheru ke uana tayo – onto your head
     & The locative/allative pair works like English on/onto, in/into, but in Sayala this distinction is made for all locatives, you must distinguish between them
+
+MÓN TŲ
+  UNDE : Mon Thu
+  ICON : M105,60 A45,60 0 0,0 60,120 A60,60 0 0,0 120,180 A60,60 0 0,0 180,240 L180,180 A60,60 0 0,0 240,120 A45,60 0 0,0 195,60 L105,60 M90,105 L90,105 L120,135 L150,105 L180,135 L210,105
+  BREF : {(link)}, the language of the people on Mon Thu.
+  BODY
+    & Món Tų is the constructed language of the people of Mon Thu.
+    * {(bold "Phonology")}
+    & These following charts specify which phonemes are in Món Tų [sajalɑ~sajɑla], and how their romanisation looks.
+    & The Consonants:
+    | {(bold "Consonants")} | Bilabial | Alveolar    | Postalveolar | Retroflex | Palatal | Velar   | Glottal 
+    | Nasal                 | m (m)    | n (n)       |              |           |         | ɲ (ny)  | ⠀      
+    | Stop                  | p∼b (p)  | t (t)       |              | ʈ (d)     |         | k∼g(k)  | ʔ (ḧ)
+    | Fricative             |          | s (s)       | ʃ (x)        |           | ç (ç)   |         | h∼ɦ (h)
+    | Approximant           |          |             |              |           |         | j (y)   | ⠀
+    | Lateral Approximant   |          | ɹ (r) l (l) | ⠀            |           |         | ⠀       | ⠀
+    | Semivowel             |          |             |              |           |         | w (ù)   | ⠀
+    & The Vowels:
+    | {(bold "Vowels")} | Front   | Central  | Back
+    | Close            | i (i) ɪ (ı) |          | u (u)
+    | Close-Mid        | e (e) ɛ (é) |          | o (o) ɔ (ó)
+    | Mid              |             | ə (ų)    | ⠀
+    | Open             | a (a) ɑ (ą) | ⠀       | ⠀
+    * Phonotactics
+    & There is a limited set of syllables, of the type CV (consonant-vowel). The phonotactics does not typically allow the onsets of adjacent syllables to be identical, nor both to be labialized or palatalized. Syllables beginning with {(code "/l/")} do not occur as the first syllable of a headword (except in loanwords and toponyms).
+    * Syllables
+    & It is typically made up of open syllables of the type CV (consonant-vowel) with most lexemes having syllables exclusively of this type. The exception to this rule are the endings {(code "-m")} (indicating general plural), and {(code "-ka")} (indicating negative mood). These endings all are word final. In detail a syllable can be analyzed thusly:
+    # (N)(C 1 )(w)V(G|C 2 )(V)
+    - N = initial nasal
+    - C1 = initial consonant onset
+    - w = labiovelar on-glide /w/
+    - V = vowel nucleus
+    - G = off-glide coda (/j/ or /w/)
+    - C2 = final consonant coda
+    - V = final vowel
+    * Stress
+    & Stress generally falls on the penultimate syllable, which means that stress is {(ital "de facto")} initial in most lemma given that stems are most often {(code "(CVCVN)")}. Monosyllabic words are not stressed.
+    * {(bold "Morphology")}
+    & Món Tų is a mostly agglutinative language that makes extensive use of compounding, incorporation and derivation. That is, it can add many different prefixes and suffixes to a root until very long words are formed, and a single word can sometimes constitute an entire sentence. The words of Món Tų can be divided into two basic functional classes: verbs and nouns as content words, and particles and others as functional. Adjectives exist, but they generally behave like verbs and there are very few adjectives that are not derived from either verbal pronominal roots. The few adverbs that exist fall into the class of particles or are derived from verbs. The most important element of Món Tų lexemes to keep in mind is that they may function as a verb, noun, adjective, or an adverb based on where they fall in the phrase, and any various endings that may be affixed.
+    * Nouns
+    & When pluralizing words that end in a {(code "m")}, {(code "mp")} or {(code "p")} syllable, you use the ending {(code "-lo")}
+    | {(bold "Nouns")} | Singular                | Plural   
+    | Number           |  ⠀                      | dáy
+    | Gender           | na (masc) / ta (fem)  |
+    | Honorific        | mon                      | ⠀
+    & Noun Cases:
+    | {(bold "Cases")}                   | Suffixes
+    | Genitive                           | yo
+    | Instrumental                       | ha
+    | Nominative (form verbs into nouns) | ko / lo
+    * Pronouns
+    & The 3rd person plural is irregular, all other pronouns decline regularly. Pronouns do not inflect for gender.
+    | {(bold "Pronouns")} | Agent | Patient | Reflexive | Possesive | Reciprocal
+    | 1st Person Singular | na | hena | nam | nay |  ⠀
+    | 2nd Person Singular | ta | heta | tam | tay |  ⠀
+    | 3rd Person Singular | ha | hea | kam | kay |  ⠀
+    | 1st Person Plural   | na dáy | hena dáy | nam dáy | nay dáy | nanu dáy
+    | 2nd Person Plural   | ta dáy | heta dáy | tam dáy | tay dáy | tanu dáy
+    | 3rd Person Plural   | ka dáy | heka dáy | kam dáy | kay dáy | kanu dáy
+    * Verbs
+    & Verbs rely on analytic serial constructions, and can therefore get by with very little verbal morphology. Each verb has at most two possible forms: the active and the stative. Passivity is marked on the subject thus verbs are unmarked and must be analyzed based on surrounding morphology. Active verbs solely denote actions and occurrences and never states. Stative verbs are the words that modify nouns in an attributive and often adjectival way. They often express a state like a quality or result. Verbs can be marked with several suffixes to add or change meaning. The modals and tense affixes can be added in different order to a verb to create a new meaning; their placement is not always fixed. The negative and adverbial endings are always final, while other affixes can be varied, but in general they should be ordered:
+    # STEM-(SIZE)-(MOOD)-(ASPECT)-(TENSE)-(NEGATIVE)
+    | {(bold "Verbs")} | Affix
+    | Size           | lóy (Diminutive) / máy (Augmentative)
+    | Mood           | tay (Abilitative) / me (Propositive)
+    | Aspect         | ko (Progress) / pu (Perfect) / kó (Inchoative) / lay (Frequentative)
+    | Tense          | eḧe (Past) / oḧi (Future)
+    | Negative       | ka
+    * Compound Sentences
+    & Two sentences may be joined together to form a longer compound sentence. Both sentences must be able to stand alone as properly formed sentences. When combined, they simply come one after the other, joined by a conjunction.
+    | {(bold "Conjunction")} | Meaning
+    | pa                     | although, despite, even
+    | po                     | so, thus
+    | ku                     | and, also, too
+    | ùa                     | or, either
+    | keke                  | neither X or Y
+    | ma                   | both X and Y
+    | hoy                     | if X then Y, therefore
+    | suy                     | but, however
+    | ro                     | between X and Y
+    * Particles
+    & Particles in Món Tų exist to build up concepts inside the sentences, or to enrich nouns. They cover many semantic purposes.
+    | {(bold "Particle")} | Meaning
+    | ke   | Object
+    | no   | Adjectival
+    | ka   | Question
+    | áy    | Topic / Copula
+    | ùay | Adverbial
+    | la   | Verbializer
+    * Numerals
+    & Numerals in Món Tų follow their normal forms in ordinal, and then, by adding the prefix ki- (from kiyate meaning order), one gets the ordinal form.
+    & The prefix ti- (from tiyata meaning bundle) handles the semantic meaning of a multiple type number.
+    & The prefix i- (from iyata meaning division) handles the semantic meaning of a fraction type number.
+    | {(bold "Numeral")} | Ordinal | Cardinal | Multiple | Fraction
+    | 0                  | oho     |          |          |  ⠀
+    | 1                  | na    | ki na   | ti na   | i na
+    | 2                  | ta    | ki ta   | ti ta   | i ta
+    | 3                  | ha    | ki ha   | ti ha   | i ha
+    | 4                  | ma    | ki ma   | ti ma   | i ma
+    | 5                  | ya    | ki ya   | ti ya   | i ya
+    | 6                  | da   | ki da  | ti da  | i da
+    | 7                  | ka    | ki ka   | ti ka   | i ka
+    | 8                  | pa    | ki pa   | ti pa   | i pa
+    | 9                  | sa    | ki sa   | ti sa   | i sa
+    | 10                 | ùa    | ki ùa   | ti ùa   | i ùa
+    | 11                 | ùa na  | ki ùa na  |          | i ùa na
+    | 20                 | ta ùa  | ki ta ùa |          | i ta ùa
+    | 100                | nay   | ki nay  | ti nay  | i nay / pasenda
+    | 1000               | de   | ki de  | ti de  | i de
+    * Prepositions
+    & Món Tų does not have prepositions (or postpositions) as a distinct part of speech. Instead, many locative verbs can be used as adpositionals, in which case they precede the noun they modify. There is one general locative {( code "-he"}) which is affixed to nouns (and occasionally verbs) to indicate the sense of “at; in; on”. Here are some common verbs used as adpositions:
+    - {(bold "he")} = in, at, on (general locative)
+    - {(bold "na he")} = within, inside
+    - {(bold "ña he")} = out, outside
+    - {(bold "ma he")} = before, in front of
+    - {(bold "pu he")} = behind, after
+    - {(bold "ùa he")} = above, over, on
+    - {(bold "ta he")} = below, under, beneath
+    - {(bold "ya he")} = near, close
+    - {(bold "ùa yo he")} = away (from)
+    - {(bold "ma yo he")} = between, among
+    & The suffix ru (from arų “go; walk; travel”) forms an allative (or motive) preposition, expressing movement in the indicated direction, stopping at the position indicated by the locative:
+    - na he ru toto – into bed
+    - ùa he ru ke ùana tay – onto your head
+    & The locative/allative pair works like English on/onto, in/into, but in Món Tų this distinction is made for all locatives, you must distinguish between them
 
 NAXASERO
   UNDE : Research
