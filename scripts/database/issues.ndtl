@@ -2,11 +2,6 @@ DATABASE.issues = `
 NIU
   POMODORO
     Revisit workings.
-YISHU
-  STYLE
-    Revisit styling of app.
-  FLATPAK
-    Storage issues on Flatpak
 QUILTER
   SPELLCHECK
     Fix not working
