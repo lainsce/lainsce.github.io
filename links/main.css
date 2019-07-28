@@ -38,7 +38,7 @@
 
 /* Main */
 
-body { background:var(--mono_1); padding-top:5px; overflow-x: hidden; transition: opacity 150ms; opacity: 1 !important; font-family: sans-serif;}
+body { background:var(--mono_4); padding-top:5px; overflow-x: hidden; transition: opacity 150ms; opacity: 1 !important; font-family: sans-serif;}
 b { font-weight:bold; }
 i { font-style:italic }
 a { cursor: pointer; }
