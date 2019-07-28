@@ -3,9 +3,12 @@
 /-------------------*/
 
 :root {
-  --color_1: #C6E48B; 
-  --color_2: #7BC96F; 
-  --color_3: #239A3B;
+  /* get colors by the lightest color */
+  --color:80, 65%;
+  --l:70%;
+  --color_1: hsl(var(--color),var(--l)); 
+  --color_2: hsl(var(--color),calc(var(--l) - 25%)); 
+  --color_3: hsl(var(--color),calc(var(--l) - 40%));
   --accent_0: #CC6677;
   --mono_0: #FFFFFF;
   --mono_1: #EEEEEE; 
