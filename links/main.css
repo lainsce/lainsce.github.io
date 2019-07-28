@@ -7,8 +7,8 @@
   --color:170.1,60.3%;
   --l:54.5%;
   --color_1: hsl(var(--color),var(--l)); 
-  --color_2: hsl(var(--color),calc(var(--l) - 25%)); 
-  --color_3: hsl(var(--color),calc(var(--l) - 40%));
+  --color_2: hsl(var(--color),calc(var(--l) - 10%)); 
+  --color_3: hsl(var(--color),calc(var(--l) - 20%));
   --accent_0: #CC6677;
   --mono_0: #FFFFFF;
   --mono_1: #EEEEEE; 
