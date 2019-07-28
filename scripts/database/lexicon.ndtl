@@ -260,7 +260,7 @@ PORTALS
 SAYAKUXA
   UNDE : Portals
   ICON : M150,60 A90,90 0 0,0 60,150 A90,90 0 0,0 150,240 A90,90 0 0,0 240,150 A90,90 0 0,0 150,60 M195,75 L195,75 L165,105 L180,135 L150,150 L135,180 L165,165 L165,195 L195,180 L195,225 M90,90 L90,90 L105,105 L105,135 L120,165 L105,195 L135,210 L135,240 
-  BREF : {(link)}, holds the constructed languages by Lains.
+  BREF : {(link)}, a constructed language
   BODY
     & Sayakuxa is a nation on the planet Iktis
     - Its area is roughly {(bold "140.000")} kilometers sq.
@@ -273,7 +273,7 @@ SAYAKUXA
 MON THU
   UNDE : Portals
   ICON : M150,60 A90,90 0 0,0 60,150 A90,90 0 0,0 150,240 A90,90 0 0,0 240,150 A90,90 0 0,0 150,60 M195,75 L195,75 L165,105 L180,135 L150,150 L135,180 L165,165 L165,195 L195,180 L195,225 M90,90 L90,90 L105,105 L105,135 L120,165 L105,195 L135,210 L135,240 
-  BREF : {(link)}, holds the constructed languages by Lains.
+  BREF : {(link)}, a constructed language
   BODY
     & Mon Thu is a nation on the planet Iktis
     - Its area is roughly {(bold "5.000")} kilometers sq.
@@ -410,7 +410,7 @@ MON TU
   BODY
     & Món Tų is the constructed language of the people of Mon Thu.
     * {(bold "Phonology")}
-    & These following charts specify which phonemes are in Món Tų [sajalɑ~sajɑla], and how their romanisation looks.
+    & These following charts specify which phonemes are in Món Tų [mɔn tə], and how their romanisation looks.
     & The Consonants:
     | {(bold "Consonants")} | Bilabial | Alveolar    | Postalveolar | Retroflex | Palatal | Velar   | Glottal 
     | Nasal                 | m (m)    | n (n)       |              |           |         | ɲ (ny)  | ⠀      
