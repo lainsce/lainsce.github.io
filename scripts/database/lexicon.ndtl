@@ -281,19 +281,20 @@ SAYAKUXA
     - The official language is {(link "Sayala" "Sayala")}, with 3 minor languages not officially recognized.
     - A huge river crosses Sayakuxa horizontally, naturally diving the country into {(bold "2 provinces")}.
     % conlang/sayakuxa_map.png
+    λ (echo (template :children INDEX))
     @ The flag of Sayakuxa still stands proud on the many roads of Palatisu | Isil Hemikas | 3/78Y02
 
-MON THU
-  UNDE : Portals
+SAYAKUXAN MUSIC
+  UNDE : Sayakuxa
   ICON : M150,60 A90,90 0 0,0 60,150 A90,90 0 0,0 150,240 A90,90 0 0,0 240,150 A90,90 0 0,0 150,60 M195,75 L195,75 L165,105 L180,135 L150,150 L135,180 L165,165 L165,195 L195,180 L195,225 M90,90 L90,90 L105,105 L105,135 L120,165 L105,195 L135,210 L135,240 
-  BREF : {(link)}, a constructed world nation
+  BREF : {(link)}: its geometric notes notation.
   BODY
-    & Mon Thu is a nation on the planet Iktis
-    - Its area is roughly {(bold "5.000")} kilometers sq.
-    - It houses {(bold "300.000")} inhabitants, mostly in the capital Dąñ Su.
-    - The official language is {(link "Mon Tu" "Món Tų")}.
-    - A small nation with a religion-based government, there are many temples around the country.
-    @ They say strange energy dissipates from the temples in Mon Thu. It is of cyan color. | Isil Hemikas | 3/78Y02
+    & Music on Sayakuxa follows a 8-note system called Ayakaxu ({(ital "lit.")} pretty box) which uses lozenges along vertical lines, painted over or not on the sides.
+    & Our notes, if converted to Ayakaxu, look like follows:
+    % conlang/music_notation_our_notes.png
+    & And an example song, in {(code "4/4")} bars,
+    % conlang/music_notation.png
+    @ They say, when music happens, one cannot just stay in place. | Sitki Malayos | 2/65F12
 
 SAYALA
   UNDE : Sayakuxa
@@ -415,6 +416,19 @@ SAYALA
     - naheru touu – into bed
     - uaheru ke uana tayo – onto your head
     & The locative/allative pair works like English on/onto, in/into, but in Sayala this distinction is made for all locatives, you must distinguish between them
+
+MON THU
+  UNDE : Portals
+  ICON : M150,60 A90,90 0 0,0 60,150 A90,90 0 0,0 150,240 A90,90 0 0,0 240,150 A90,90 0 0,0 150,60 M195,75 L195,75 L165,105 L180,135 L150,150 L135,180 L165,165 L165,195 L195,180 L195,225 M90,90 L90,90 L105,105 L105,135 L120,165 L105,195 L135,210 L135,240 
+  BREF : {(link)}, a constructed world nation
+  BODY
+    & Mon Thu is a nation on the planet Iktis
+    - Its area is roughly {(bold "5.000")} kilometers sq.
+    - It houses {(bold "300.000")} inhabitants, mostly in the capital Dąñ Su.
+    - The official language is {(link "Mon Tu" "Món Tų")}.
+    - A small nation with a religion-based government, there are many temples around the country.
+    λ (echo (template :children INDEX))
+    @ They say strange energy dissipates from the temples in Mon Thu. It is of cyan color. | Isil Hemikas | 3/78Y02
 
 MON TU
   UNDE : Mon Thu
