@@ -172,7 +172,7 @@ media { display: block; width:100%; height:100%; background-size:cover; backgrou
 #document #core #content .entry:last-child { border-top: 0px; border-bottom: 0px }
 #document #core #content .entry svg:hover { opacity: 1.0}
 #document #core #content .entry svg.icon { cursor: pointer; background:var(--mono_2); width:50px; height:50px; border-radius:var(--rounded); display:inline-block; position:absolute; left:0px }
-#document #core #content .entry svg.icon path { fill:none; stroke-width:10;stroke:var(--mono_1); stroke-linejoin: round  }
+#document #core #content .entry svg.icon path { fill:none; stroke-width:10;stroke:var(--mono_4); stroke-linejoin: round  }
 #document #core #content .entry .head { display: block; font-size:14px; line-height: 25px; }
 #document #core #content .entry .head .div.details { opacity: 1.0 }
 #document #core #content .entry .head .details a { font-family: var(--font_b) }
