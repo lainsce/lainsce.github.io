@@ -114,7 +114,7 @@ DATE  CODE PICT TERM                 NAME
 19D13 -316      Timetable            Timetable - Opening .org files
 19D13 -336      Timetable            Timetable - Fix loading color from files
 19D12 +364      Home                 Home - Start journaling
-19C07 +283      University           Start of 3rd Semester
+19C07 -283      University           University - Start of 3rd Semester
 18X03 -376      Quilter              Quilter - Fix pdf exporting
 18X03 -366      Quilter              Quilter - Moon Theme
 18W11 +384      Beemy                Beemy - Release
