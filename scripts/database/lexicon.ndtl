@@ -278,7 +278,7 @@ MON THU
     & Mon Thu is a nation on the planet Iktis
     - Its area is roughly {(bold "5.000")} kilometers sq.
     - It houses {(bold "300.000")} inhabitants, mostly in the capital Dąñ Su.
-    - The official language is {(link "Món Tų" "Món Tų")}.
+    - The official language is {(link "Mon Tu" "Món Tų")}.
     - A small nation with a religion-based government, there are many temples around the country.
     @ They say strange energy dissipates from the temples in Mon Thu. It is of cyan color. | Isil Hemikas | 3/78Y02
 
@@ -403,7 +403,7 @@ SAYALA
     - uaheru ke uana tayo – onto your head
     & The locative/allative pair works like English on/onto, in/into, but in Sayala this distinction is made for all locatives, you must distinguish between them
 
-MÓN TŲ
+MON TU
   UNDE : Mon Thu
   ICON : M105,60 A45,60 0 0,0 60,120 A60,60 0 0,0 120,180 A60,60 0 0,0 180,240 L180,180 A60,60 0 0,0 240,120 A45,60 0 0,0 195,60 L105,60 M90,105 L90,105 L120,135 L150,105 L180,135 L210,105
   BREF : {(link)}, the language of the people on Mon Thu.
