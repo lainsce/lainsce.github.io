@@ -283,7 +283,7 @@ MON THU
     @ They say strange energy dissipates from the temples in Mon Thu. It is of cyan color. | Isil Hemikas | 3/78Y02
 
 SAYALA
-  UNDE : Sayala
+  UNDE : Sayakuxa
   ICON : M105,60 A45,60 0 0,0 60,120 A60,60 0 0,0 120,180 A60,60 0 0,0 180,240 L180,180 A60,60 0 0,0 240,120 A45,60 0 0,0 195,60 L105,60 M90,105 L90,105 L120,135 L150,105 L180,135 L210,105
   BREF : {(link)}, the language of the people on Sayakuxa.
   BODY
