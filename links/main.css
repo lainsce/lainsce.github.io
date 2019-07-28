@@ -4,7 +4,6 @@
 
 :root { 
   --background: #111111;
-  --color_0: #2cffe9;
   --color_1: #00DAC7; 
   --color_2: #00a798; 
   --color_3: #00746a;
@@ -13,7 +12,7 @@
   --mono_1: #F5F5F5; 
   --mono_2: #cccccc;
   --mono_3: #333333;
-  --mono_4: #111111;
+  --mono_4: #000000;
   --rounded: 2px; 
 }
 
