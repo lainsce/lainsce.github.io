@@ -1,7 +1,12 @@
 DATABASE.horaire = `
 DATE  CODE PICT TERM                 NAME                                                  
 19P03 +381      Dot Matrix           Dot Matrix - Release
+19P02 +382      Niu                  Niu - Release
 19P01 +351      Yishu                Yishu - Release
+19O14 -349      Niu                  Niu - Fix pomodoro
+19O14 -348      Niu                  Niu - Fix Arvelie & Neralie reporting
+19O14 -118      Twitch               Twitch - Watched AdmiralBahroo
+19O13 -118      Twitch               Twitch - Watched AdmiralBahroo
 19O13 -188      Sayakuxa             Sayakuxa - Music notation system
 19O12 -182      Portals              Portals - Added the country Mon Thu
 19O12 +188      Portals              Portals - Added the conlang Món Tų
