@@ -1,10 +1,2 @@
 DATABASE.issues = `
-NIU
-  POMODORO
-    Revisit workings.
-QUILTER
-  SPELLCHECK
-    Fix not working
-  SIDEBAR
-    Fix geometry issues
 `;
