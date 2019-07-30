@@ -4,6 +4,7 @@ DATE  CODE PICT TERM                 NAME
 19P02 +382      Niu                  Niu - Release
 19P02 +382      Quilter              Quilter - Release
 19P01 +351      Yishu                Yishu - Release
+19P01 -335      Home                 Home - Backport fixes on Riven and Friends
 19O14 -349      Quilter              Quilter - Fix spellchecking, sidebar geometry
 19O14 -349      Niu                  Niu - Fix pomodoro
 19O14 -348      Niu                  Niu - Fix Arvelie & Neralie reporting
