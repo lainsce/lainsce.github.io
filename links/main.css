@@ -36,6 +36,7 @@
 .sprite_calendar { background-image: url("data:image/svg+xml,%3Csvg class='vector' width='300px' height='300px' xmlns='http://www.w3.org/2000/svg' baseProfile='full' version='1.1'%3E%3Cpath id='layer_1' d='M60,150 L60,150 L90,150 L120,90 L180,210 L210,150 L240,150 ' style='stroke: rgb(255, 255, 255); stroke-width: 15; stroke-linecap: round; stroke-linejoin: round; fill: none;'%3E%3C/path%3E%3C/svg%3E"); }
 .sprite_journal { background-image: url("data:image/svg+xml,%3Csvg class='vector' width='300px' height='300px' xmlns='http://www.w3.org/2000/svg' baseProfile='full' version='1.1'%3E%3Cpath id='layer_1' d='M60,90 L60,90 L240,90 M60,120 L60,120 L240,120 M60,180 L60,180 L135,180 M60,150 L60,150 L180,150 M210,150 L210,150 L240,150 ' style='stroke: rgb(255, 255, 255); stroke-width: 15; stroke-linecap: round; stroke-linejoin: round; fill: none;'%3E%3C/path%3E%3C/svg%3E"); }
 .sprite_tracker { background-image: url("data:image/svg+xml,%3Csvg class='vector' width='300px' height='300px' xmlns='http://www.w3.org/2000/svg' baseProfile='full' version='1.1'%3E%3Cpath id='layer_1' d='M60,150 L60,150 L240,150 M150,90 A60,60 0 0,1 210,150 A60,60 0 0,1 150,210 A60,60 0 0,1 90,150 A60,60 0 0,1 150,90 ' style='stroke: rgb(255, 255, 255); stroke-width: 15; stroke-linecap: round; stroke-linejoin: round; fill: none;'%3E%3C/path%3E%3C/svg%3E"); }
+.sprite_merveilles { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' baseProfile='full' version='1.1' width='310px' height='310px' style='stroke:none; fill: %23000'%3E%3Cpath d='M185,65 A60,60 0 0,0 125,125 L185,125 Z M125,245 A60,60 0 0,0 185,185 L125,185 Z M95,125 A30,30 0 0,1 125,155 A30,30 0 0,1 95,185 A30,30 0 0,1 65,155 A30,30 0 0,1 95,125 Z M155,125 A30,30 0 0,1 185,155 A30,30 0 0,1 155,185 A30,30 0 0,1 125,155 A30,30 0 0,1 155,125 Z M215,125 A30,30 0 0,1 245,155 A30,30 0 0,1 215,185 A30,30 0 0,1 185,155 A30,30 0 0,1 215,125 '/%3E%3Cpath d='M125,65 A60,60 0 0,1 185,125 L125,125 Z M185,245 A60,60 0 0,1 125,185 L185,185 Z M65,65 A60,60 0 0,1 125,125 L65,125 Z M65,245 A60,60 0 0,0 125,185 L65,185 Z M245,65 A60,60 0 0,0 185,125 L245,125 Z M245,245 A60,60 0 0,1 185,185 L245,185 Z'/%3E%3C/svg%3E"); }
 
 /* Main */
 
@@ -221,6 +222,7 @@ media { display: block; width:100%; height:100%; background-size:cover; backgrou
 #document #footer #credits a.icon:hover { opacity: 0.7 }
 #document #footer #credits a.icon.twitter { background-image:url(../media/icon/twitter.png); filter: invert(); }
 #document #footer #credits a.icon.github { background-image:url(../media/icon/github.png); filter: invert(); }
+#document #footer #credits a.icon.merveilles { background-size:40px }
 
 /* Mode:View */
 

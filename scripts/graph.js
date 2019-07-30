@@ -49,6 +49,7 @@ RIVEN.create = (append = true) => {
     Ø('footer').create({ x: 21, y: 4 }, lib.Dom),
     Ø('credits').create({ x: 21, y: 8 }, lib.Dom, 'div', `
     <a target='_blank' rel='noreferrer' href='https://twitter.com/lainsdev' class='icon twitter sprite_twitter external'></a>
+    <a target='_blank' rel='noreferrer' href='https://merveilles.town/@lains' class='icon merveilles sprite_merveilles external'></a>
     <a target='_blank' rel='noreferrer' href='https://github.com/lainsce' class='icon github sprite_github external'></a>
     <img class='icon' style="vertical-align: middle; margin-right: 20px;" width="32" height="32" src="/media/generic/me.svg" alt="My Icon" >
     <a href='/'>Lains</a> © ${new Arvelie('17M05').toString(true)}—${arvelie()}<hr>
