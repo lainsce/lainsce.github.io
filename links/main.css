@@ -187,8 +187,8 @@ media { display: block; width:100%; height:100%; background-size:cover; backgrou
 #document #core #content .entry.event svg.icon { background:var(--mono_1); }
 #document #core #content .entry.event svg.icon path { stroke:var(--mono_4); }
 #document #core #content .entry ul { color:var(--mono_1); font-size:12px; margin-top:10px; border-radius:var(--rounded); margin-bottom:10px; font-family: var(--font_b);}
-#document #core #content .entry ul li { padding: 2.5px 10px;background: var(--mono_2);margin-bottom: 1.5px;border-radius: var(--rounded);color: var(--mono_1)}
-#document #core #content .entry ul li:last-child { border-bottom:0px; background: var(--mono_3);}
+#document #core #content .entry ul li { padding: 2.5px 10px;background: var(--mono_3);margin-bottom: 1.5px;border-radius: var(--rounded);color: var(--mono_1)}
+#document #core #content .entry ul li:last-child { border-bottom:0px; background: var(--mono_4);}
 #document #core #content .entry ul li:hover { background: var(--mono_3); color: var(--mono_1)}
 #document #core #content .entry ul li:before { content:'•'; font-size:16px; margin-right: 10px; display: inline-block; color:var(--mono_1); }
 #document #core #content center { display: block; max-width: 600px;}
