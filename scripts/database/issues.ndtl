@@ -1,12 +1,12 @@
 DATABASE.issues = `
 AESOP
-    UI
-        Zoom bug
-        Paging bug
+  UI
+    Zoom bug.
+    Paging bug.
 TIMETABLE
-    UI
-        Drag tasks around
+  UI
+    Drag tasks around.
 PALAURA
-    BACKEND
-        Change to offline dictionary API
+  BACKEND
+    Change to offline dictionary API.
 `;
