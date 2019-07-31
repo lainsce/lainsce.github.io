@@ -3,6 +3,11 @@ DATE  CODE PICT TERM                 NAME
 19P03 +381      Dot Matrix           Dot Matrix - Release
 19P02 +382      Niu                  Niu - Release
 19P02 +382      Quilter              Quilter - Release
+19P01 -329      Timetable            Timetable - Begin implementation of drag stuff
+19P01 -118      Twitch               Twitch - Watched Zero
+19P01 -112      Twitch               Twitch - Watched Cirno
+19P01 -118      Twitch               Twitch - Watched AdmiralBahroo
+19P01 -319      Timetable            Timetable - Start work on dragging stuff
 19P01 +351      Yishu                Yishu - Release
 19P01 -335      Home                 Home - Backport fixes on Riven and Friends
 19O14 -349      Quilter              Quilter - Fix spellchecking, sidebar geometry
