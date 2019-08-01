@@ -1,8 +1,12 @@
 DATABASE.horaire = `
 DATE  CODE PICT TERM                 NAME                                                  
+19P06 +381      Timetable            Timetable - Release
+19P03 -329      Timetable            Timetable - Finish drag and drop
 19P03 +381      Dot Matrix           Dot Matrix - Release
+19P03 -118      Twitch               Twitch - Watched AdmiralBahroo
 19P02 +382      Niu                  Niu - Release
 19P02 +382      Quilter              Quilter - Release
+19P02 -349      Timetable            Timetable - Implement drag and drop
 19P01 -329      Timetable            Timetable - Begin implementation of drag stuff
 19P01 -118      Twitch               Twitch - Watched Zero
 19P01 -112      Twitch               Twitch - Watched Cirno
