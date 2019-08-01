@@ -3,9 +3,6 @@ AESOP
   UI
     Zoom bug.
     Paging bug.
-TIMETABLE
-  UI
-    Drag tasks around.
 PALAURA
   BACKEND
     Change to offline dictionary API.
