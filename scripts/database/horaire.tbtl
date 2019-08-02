@@ -1,6 +1,8 @@
 DATABASE.horaire = `
 DATE  CODE PICT TERM                 NAME                                                  
 19P06 +381      Timetable            Timetable - Release
+19P06 +381      Aesop                Aesop - Release
+19P04 -347      Aesop                Aesop - Fix page zoom and page jumper number
 19P03 -329      Timetable            Timetable - Finish drag and drop
 19P03 +381      Dot Matrix           Dot Matrix - Release
 19P03 -118      Twitch               Twitch - Watched AdmiralBahroo
