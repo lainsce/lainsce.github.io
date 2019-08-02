@@ -1,8 +1,4 @@
 DATABASE.issues = `
-AESOP
-  UI
-    Zoom bug.
-    Paging bug.
 PALAURA
   BACKEND
     Change to offline dictionary API.
