@@ -268,7 +268,7 @@ media { display: block; width:100%; height:100%; background-size:cover; backgrou
 #document.theme_noir #footer #credits a:hover { color: var(--mono_3);}
 #document.theme_noir #footer #credits a.icon.twitter { background-image:url(../media/icon/twitter.png); filter: initial; }
 #document.theme_noir #footer #credits a.icon.github { background-image:url(../media/icon/github.png); filter: initial; }
-#document.theme_noir #footer #credits a.icon.github { filter: initial; }
+#document.theme_noir #footer #credits a.icon.merveilles { filter: initial; }
 
 /* Terminal */
 
