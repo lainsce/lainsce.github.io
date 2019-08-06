@@ -4,17 +4,17 @@
 
 :root {
   /* get colors by the lightest color */
-  --color:170, 75%;
-  --l:50%;
+  --color:136, 25%;
+  --l:85%;
   --color_1: hsl(var(--color),var(--l)); 
   --color_2: hsl(var(--color),calc(var(--l) - 10%)); 
   --color_3: hsl(var(--color),calc(var(--l) - 20%));
   --accent_0: #CC6677;
-  --mono_0: #FFFFFF;
-  --mono_1: #EEEEEE; 
-  --mono_2: #CCCCCC;
-  --mono_3: #444444;
-  --mono_4: #111111;
+  --mono_0: #F2F1B9;
+  --mono_1: #F6F6C9; 
+  --mono_2: #C8BFB6;
+  --mono_3: #065F73;
+  --mono_4: #021B21;
   --rounded: 2px; 
 }
 
