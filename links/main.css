@@ -5,7 +5,7 @@
 :root {
   /* get colors by the lightest color */
   --color:210, 80%;
-  --l:70%;
+  --l:50%;
   --color_1: hsl(var(--color),var(--l)); 
   --color_2: hsl(var(--color),calc(var(--l) - 10%)); 
   --color_3: hsl(var(--color),calc(var(--l) - 20%));
