@@ -4,17 +4,16 @@
 
 :root {
   /* get colors by the lightest color */
-  --color:140, 25%;
+  --color:210, 80%;
   --l:70%;
   --color_1: hsl(var(--color),var(--l)); 
   --color_2: hsl(var(--color),calc(var(--l) - 10%)); 
   --color_3: hsl(var(--color),calc(var(--l) - 20%));
-  --accent_0: rgb(207, 104, 97);
-  --mono_0: #F2F1B9;
-  --mono_1: #F6F6C9; 
-  --mono_2: #C8BFB6;
-  --mono_3: #065F73;
-  --mono_4: #021B21;
+  --accent_0: hsl(0, 81%, 51%);
+  --mono_1: #FFFFFF; 
+  --mono_2: #CCCCCC;
+  --mono_3: #222222;
+  --mono_4: #111111;
   --rounded: 2px; 
 }
 
@@ -136,7 +135,7 @@ media { display: block; width:100%; height:100%; background-size:cover; backgrou
 #document #core #content ul li b { font-family: var(--font_b);font-weight: normal; }
 #document #core #content ul li a.external:after { content: "°";color: var(--mono_4); font-family: var(--font_b); padding-left:1px; transition: all 250ms}
 #document #core #content ul li a.external:hover:after { color:var(--color_1); }
-#document #core #content code { font-family: var(--mono);font-size: 12px;padding: 20px 30px;max-width: 670px;margin-bottom: 30px;line-height: 18px;overflow-x: auto;overflow-y: hidden;background: var(--mono_0);color: var(--mono_4);border-radius: var(--rounded);}
+#document #core #content code { font-family: var(--mono);font-size: 12px;padding: 20px 30px;max-width: 670px;margin-bottom: 30px;line-height: 18px;overflow-x: auto;overflow-y: hidden;background: var(--mono_1);color: var(--mono_4);border-radius: var(--rounded);}
 #document #core #content code b { font-family: var(--mono_m); font-weight: normal;   }
 #document #core #content code li { display: block; line-height: 20px }
 #document #core #content code li a { font-family: var(--mono_m); text-decoration: underline;}
@@ -272,7 +271,7 @@ media { display: block; width:100%; height:100%; background-size:cover; backgrou
 
 /* Terminal */
 
-#document #terminal { background: var(--mono_4);padding: 30px !important;line-height: 15px;display: block;color: var(--mono_0);font-size: 12px;font-family: var(--mono);transition: top 250ms;overflow-y: scroll;position: fixed;top: -600px;z-index: 9002;width: 600px;left: calc(50% - 300px);height: 300px;border-radius: var(--rounded); box-shadow: 10px 10px #0002}
+#document #terminal { background: var(--mono_4);padding: 30px !important;line-height: 15px;display: block;color: var(--mono_1);font-size: 12px;font-family: var(--mono);transition: top 250ms;overflow-y: scroll;position: fixed;top: -600px;z-index: 9002;width: 600px;left: calc(50% - 300px);height: 300px;border-radius: var(--rounded); box-shadow: 10px 10px #0002}
 #document #terminal.active { top:120px; }
 #document #terminal div.line { line-height: 20px }
 #document #terminal div.line.guest { color:var(--color_1); }
@@ -284,7 +283,7 @@ media { display: block; width:100%; height:100%; background-size:cover; backgrou
 #document #terminal div.line b { font-weight: normal; font-family: var(--mono_m) }
 #document #terminal div.line i { text-decoration: underline; }
 #document #terminal div.line a { text-decoration: underline; }
-#document #terminal div.line textarea { background: var(--mono_0);display: block;margin: 15px 0px;padding: 15px;border-radius:var(--rounded);width: calc(100% - 30px);height: 150px;color: var(--mono_4);}
+#document #terminal div.line textarea { background: var(--mono_1);display: block;margin: 15px 0px;padding: 15px;border-radius:var(--rounded);width: calc(100% - 30px);height: 150px;color: var(--mono_4);}
 #document #terminal div.line ul { display: block;margin: 0px;width: calc(100% - 30px);color: var(--mono_1);columns: 4;}
 
 /* Viz */
@@ -302,7 +301,7 @@ media { display: block; width:100%; height:100%; background-size:cover; backgrou
 #document #core svg.viz rect.programming { fill:var(--color_3) }
 #document #core svg.viz rect.missing { fill:var(--mono_2) }
 #document #core svg.viz rect.misc { fill:var(--mono_1) !important }
-#document #core svg.viz rect.today { fill:var(--mono_0);}
+#document #core svg.viz rect.today { fill:var(--mono_1);}
 #document #core svg.viz circle.photo { fill:var(--mono_1); stroke:none }
 #document #core svg.viz circle.event { fill:none; stroke:var(--mono_1); stroke-width:1.5px }
 #document #core svg.viz path { stroke-linecap:butt; stroke-dasharray:1,1; fill:none;stroke:var(--mono_3);stroke-width:13px }
