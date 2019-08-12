@@ -128,7 +128,7 @@ TIMETABLE
   BODY
     & This is a virtual week timetable developed for elementary OS.
     % generic/timetable.png
-    
+
 DOT MATRIX
   UNDE : Programming
   ICON : M60,60 L60,60 L60,240 L240,240 L240,60 L60,60 M105,135 L105,135 L195,165 L210,90 L90,210 L105,135
@@ -179,7 +179,7 @@ NATANIEV
   BODY
     & {(bold "Nataniev")} is a collection of free and open-source software following a singular design philosophy, and aesthetic by {(link "https://twitter.com/@neauoire" "Devine Lu Linvega")}.
     λ (echo (template :children INDEX))
-    
+
 HORAIRE
   UNDE : Nataniev
   BREF : {(link)} is a {(bold "time-tracking tool")}.
@@ -257,9 +257,9 @@ DESKTOP
   ICON : M60,240 a30,-30 0 0,1 30,-30 l150,0 M90,195 a30,-30 0 0,1 30,-30 l90,0 M120,150 a30,-30 0 0,1 30,-30 l30,0 M195,120 l45,0 M225,165 l15,0 M150,105 a30,-30 0 0,1 30,-30 l60,0
   BREF : Technical details on my current {(link)} setup, with favourite hardware and software.
   BODY
-    & My desktop Personal Computer, is powered by {(link "elementary OS" "elementary OS")}
+    & My Personal Computer, is powered by {(link "elementary OS" "elementary OS")}
     & My software stack:
-    - {(bold "Browser")}: Chrome
+    - {(bold "Browser")}: Firefox
     - {(bold "Chats")}: Telegram, Slack, Discord
     - {(bold "IDE")}: VS Code
     - {(bold "WM/DE")}: Pantheon
@@ -269,7 +269,7 @@ DESKTOP
     - {(bold "Graphical Interface")}: Dot Matrix
     - {(bold "Tasking Interface")}: Timetable
     & And as for hardware, it is a custom Personal Computer with:
-    - AMD A5 CPU
+    - AMD A7 CPU
     - AMD Radeon R7 360 GPU
     - 8 GB of RAM
     - 1 TB of HDD
