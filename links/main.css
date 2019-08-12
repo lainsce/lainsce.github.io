@@ -4,16 +4,16 @@
 
 :root {
   /* get colors by the lightest color */
-  --color:210, 80%;
-  --l:50%;
+  --color:160, 80%;
+  --l:60%;
   --color_1: hsl(var(--color),var(--l)); 
-  --color_2: hsl(var(--color),calc(var(--l) - 10%)); 
-  --color_3: hsl(var(--color),calc(var(--l) - 20%));
+  --color_2: hsl(var(--color),calc(var(--l) - 20%)); 
+  --color_3: hsl(var(--color),calc(var(--l) - 40%));
   --accent_0: hsl(0, 81%, 51%);
   --mono_1: #FFFFFF; 
   --mono_2: #CCCCCC;
-  --mono_3: #222222;
-  --mono_4: #111111;
+  --mono_3: #333333;
+  --mono_4: #000000;
   --rounded: 2px; 
 }
 
