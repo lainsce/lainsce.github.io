@@ -252,6 +252,33 @@ RESEARCH
     & The {(bold "Research")} archive is a collection of assorted projects.
     λ (echo (template :children INDEX))
 
+DESKTOP
+  UNDE : Research
+  ICON : M60,240 a30,-30 0 0,1 30,-30 l150,0 M90,195 a30,-30 0 0,1 30,-30 l90,0 M120,150 a30,-30 0 0,1 30,-30 l30,0 M195,120 l45,0 M225,165 l15,0 M150,105 a30,-30 0 0,1 30,-30 l60,0
+  BREF : Technical details on my current {(link)} setup, with favourite hardware and software.
+  BODY
+    & My desktop Personal Computer, is powered by {(link "elementary OS" "elementary OS")}
+    & My software stack:
+    - {(bold "Browser")}: Chrome
+    - {(bold "Chats")}: Telegram, Slack, Discord
+    - {(bold "IDE")}: VS Code
+    - {(bold "WM/DE")}: Pantheon
+    & My own software stack:
+    - {(bold "Clock & Calendar Interface")}: Niu
+    - {(bold "Writing Interface")}: Quilter
+    - {(bold "Graphical Interface")}: Dot Matrix
+    - {(bold "Tasking Interface")}: Timetable
+    & And as for hardware, it is a custom Personal Computer with:
+    - AMD A5 CPU
+    - AMD Radeon R7 360 GPU
+    - 8 GB of RAM
+    - 1 TB of HDD
+    & For peripherals, it uses:
+    - Customized 65% Mechanical Keyboard with DSA profile keycaps and MX Blue switches
+    - Some generic wired Logitech mouse
+    - Samsung 1920x1080 LED display
+    & It may not seem like much for the current year, but I do not care for chasing the current mighty components as that's a waste of resources and literally a eco-waste race.
+
 UNIVERSITY
   UNDE : Research
   ICON : M60,240 a30,-30 0 0,1 30,-30 l150,0 M90,195 a30,-30 0 0,1 30,-30 l90,0 M120,150 a30,-30 0 0,1 30,-30 l30,0 M195,120 l45,0 M225,165 l15,0 M150,105 a30,-30 0 0,1 30,-30 l60,0

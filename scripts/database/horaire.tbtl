@@ -1,7 +1,8 @@
 DATABASE.horaire = `
 DATE  CODE PICT TERM                 NAME                                                  
-19P14 -111                           Recharge
-19P13 -111                           Recharge
+19P14 -101                           Recharge
+19P13 !101    3 Desktop              Desktop - Made page about my desktop and the machine
+19P13 -101                           Recharge
 19P12 -118      Twitch               Twitch - Watched AdmiralBahroo
 19P11 -118      Twitch               Twitch - Watched AdmiralBahroo
 19P10 -348      Niu                  Niu - Fix crash when 000:000, or variants, is the time
