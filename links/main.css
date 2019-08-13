@@ -119,7 +119,7 @@ media { display: block; width:100%; height:100%; background-size:cover; backgrou
 #document #core #content h4 a:hover { text-decoration: underline; }
 #document #core #content h4 b { font-weight: normal; font-family: var(--font_b) }
 #document #core #content iframe { margin-bottom: 45px;border-radius: var(--rounded);overflow: hidden;max-width: 700px;display: block;width:100%; }
-#document #core #content table { overflow: hidden;border-collapse: separate;font-family: var(--mono);min-width: 50%;font-size:12px; line-height:20px; margin-bottom:30px}
+#document #core #content table { overflow: hidden;border-collapse: separate;font-family: var(--mono);min-width: 50%;font-size:14px; line-height:20px; margin-bottom:30px}
 #document #core #content table tr th { font-family:var(--mono_m); text-align:left; padding-top:10px; padding-bottom:10px;}
 #document #core #content table tr > * { padding-right:20px; padding-left:20px; border-right:1.5px solid var(--mono_4);}
 #document #core #content table tr > *:first-child { padding-left:0px; }
@@ -135,7 +135,7 @@ media { display: block; width:100%; height:100%; background-size:cover; backgrou
 #document #core #content ul li b { font-family: var(--font_b);font-weight: normal; }
 #document #core #content ul li a.external:after { content: "°";color: var(--mono_4); font-family: var(--font_b); padding-left:1px; transition: all 250ms}
 #document #core #content ul li a.external:hover:after { color:var(--color_1); }
-#document #core #content code { font-family: var(--mono);font-size: 12px;padding: 20px 30px;max-width: 670px;margin-bottom: 30px;line-height: 18px;overflow-x: auto;overflow-y: hidden;background: var(--mono_1);color: var(--mono_4);border-radius: var(--rounded);}
+#document #core #content code { font-family: var(--mono);font-size: 14px;padding: 20px 30px;max-width: 670px;margin-bottom: 30px;line-height: 18px;overflow-x: auto;overflow-y: hidden;background: var(--mono_1);color: var(--mono_4);border-radius: var(--rounded);}
 #document #core #content code b { font-family: var(--mono_m); font-weight: normal;   }
 #document #core #content code li { display: block; line-height: 20px }
 #document #core #content code li a { font-family: var(--mono_m); text-decoration: underline;}
