@@ -1,6 +1,6 @@
 DATABASE.horaire = `
-DATE  CODE PICT TERM                 NAME                                                  
-19Q04 -283      University           University - Start of 4th Semester
+DATE  CODE PICT TERM                 NAME                                                             
+19Q04 -283      University           University - Start of 4th Semester (real 2nd Semester, EAD now)
 19Q03 +381      Timetable            Timetable - Release
 19Q02 -118      Twitch               Twitch - Watched AdmiralBahroo
 19Q01 -348      Timetable            Timetable - Fix tasks preferences being set
