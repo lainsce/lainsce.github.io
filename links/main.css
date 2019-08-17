@@ -1,16 +1,16 @@
 /* here dwells the one who wished to design deliberately */
 :root {
-  --background: #f7f8f8;
+  --background: #f8f8ff;
   /* get colors by the lightest color */
-  --color:160, 62%;
+  --color:150, 66%;
   --l:66%;
   --color_1: hsl(var(--color),var(--l));
   --color_2: hsl(var(--color),calc(var(--l) - 25%));
   --color_3: hsl(var(--color),calc(var(--l) - 45%));
   --grey_1: #ffffff;
-  --grey_2: #b3bec1;
-  --grey_3: #323b3e;
-  --grey_4: #051519;
+  --grey_2: #b8b8c8;
+  --grey_3: #353540;
+  --grey_4: #09090d;
   --rounded: 2px;
 }
 .fg_leisure { color:var(--color_1) }
@@ -21,7 +21,7 @@
 .bg_research { background-color:var(--color_2) !important }
 .bg_programming { background-color:var(--color_3) !important }
 .bg_misc { background-color:var(--grey_3) !important }
-.redlink { color:red !important }
+.redlink { color:#b26f7a !important }
 .hidden { display: none }
 .visible { display: block }
 /* Sprites */
@@ -54,7 +54,7 @@ body.ready #core { opacity: 1; transition: opacity 50ms}
 /* */
 a.repl:before { content:"λ " }
 /* Header */
-#header { position: relative; min-height: 85px; transition: all 250ms; color: white }
+#header { position: relative; min-height: 85px; transition: all 250ms; color: var(--grey_1) }
 #header #photo { position: relative; top: 0px; left: 0px; width: 100%; max-height: calc(100vh - 135px); background-position: center; background-size: cover; transition: opacity 1000ms; min-height: 115px; margin: 0px auto; overflow: hidden }
 #header #photo #media { display: block; width:100%; height:100%; background-size:cover; background-position: center; min-height:calc(100vh - 135px) }
 #header #photo.hide { opacity: 0; transition: opacity 50ms }
@@ -86,7 +86,7 @@ a.repl:before { content:"λ " }
 #core #sidebar ul.links { margin-top:30px }
 #core #sidebar ul.links li { font-size: 12px; margin-bottom: 2px; font-family: var(--font_b); line-height: 20px; display: block; text-transform: uppercase; position: relative }
 #core #sidebar ul.links li:hover { text-decoration: underline }
-#core #sidebar ul.directory { font-family: var(--mono); border-top: 1.5px solid var(--grey_4); padding-top: 30px }
+#core #sidebar ul.directory { font-family: var(--mono); border-top: 1.5px solid var(--grey_3); padding-top: 30px }
 #core #sidebar ul.directory li { text-transform: uppercase; font-size: 14px; line-height: 20px; position: relative }
 #core #sidebar ul.directory li.parent { font-family: var(--mono_m); margin-bottom:15px; padding-right: 15px }
 #core #sidebar ul.directory li.parent:after { content: '<'; font-family: var(--mono); color:var(--grey_2); position: absolute; right:0px }
@@ -179,17 +179,17 @@ a.repl:before { content:"λ " }
 #core #content .entry .head .bref b { font-family: var(--font_b); font-weight: normal }
 #core #content .entry img { cursor: pointer; margin-top: 15px; width: 100%; margin-left:0px}
 #core #content .entry.event .bref { font-size:24px; line-height: 30px }
-#core #content .entry.event svg.icon { background:white }
+#core #content .entry.event svg.icon { background:var(--grey_1) }
 #core #content .entry.event svg.icon path { stroke:var(--grey_4) }
 #core #content .entry ul { color:var(--grey_1); font-size:12px; margin-top:10px; border-radius:var(--rounded); margin-bottom:10px; font-family: var(--font_b) }
-#core #content .entry ul li { padding: 2.5px 10px; background: var(--grey_3); margin-bottom: 1.5px; border-radius: var(--rounded); color: white}
+#core #content .entry ul li { padding: 2.5px 10px; background: var(--grey_3); margin-bottom: 1.5px; border-radius: var(--rounded); color: var(--grey_1)}
 #core #content .entry ul li:last-child { border-bottom:0px }
 #core #content .entry ul li:hover { background: var(--grey_3) }
 #core #content .entry ul li:before { content:'•'; font-size:16px; margin-right: 10px; display: inline-block; color:var(--grey_1) }
 #core #content center { display: block; max-width: 600px }
 #core #content center img { display: block; max-height: 200px; width: initial; margin:45px 0px }
 /* Portal */
-#core #portal { margin-left: 30px; font-size: 14px; width: calc(100% - 60px); border-top: 1.5px solid var(--grey_4); padding-top: 30px; position: relative; overflow: hidden; color:var(--grey_1) }
+#core #portal { margin-left: 30px; font-size: 14px; width: calc(100% - 60px); border-top: 1.5px solid var(--grey_2); padding-top: 30px; position: relative; overflow: hidden; color:var(--grey_1) }
 #core #portal.empty { display: none }
 #core #portal svg { stroke: var(--grey_4); fill: none; padding: 15px; width: 40px; height: 40px; display: block; left: -20px; position: absolute; top:15px }
 #core #portal ul { font-size: 12px; font-family: var(--font_m) }
@@ -198,25 +198,22 @@ a.repl:before { content:"λ " }
 #core #portal ul li.selected a { font-family: var(--font_b) }
 #core #portal > ul { margin-left:60px; margin-bottom:30px }
 #core #portal > ul > ul { display: inline-block; width: calc((100% - 700px)/2); vertical-align: top }
-#core #portal > ul > ul > li { font-family: var(--font_b); line-height: 30px; border-bottom: 1.5px solid var(--grey_1); margin-right:2px; margin-bottom:10px }
+#core #portal > ul > ul > li { font-family: var(--font_b); line-height: 30px; border-bottom: 1.5px solid var(--grey_2); margin-right:2px; margin-bottom:10px }
 #core #portal > ul > ul > ul { line-height: 20px; margin-bottom: 30px }
 #core #portal > ul > ul > ul > ul > ul { padding-left:15px }
 #core #portal > ul > ul > ul > ul > ul li { font-family: var(--font) }
 /* Footer */
-#footer { background: var(--grey_1); color: var(--grey_4); padding: 0px 30px; clear:both; position: relative }
-#footer .wr { padding: 30px 0px; font-size: 12px; line-height: 40px; color: var(--grey_4); margin: 0px; max-width: 100%; vertical-align: middle}
+#footer { background: var(--grey_4); color: var(--grey_1); padding: 0px 30px; clear:both; position: relative }
+#footer .wr { padding: 30px 0px; font-size: 12px; line-height: 40px; color: var(--grey_1); margin: 0px; max-width: 100%; vertical-align: middle}
 #footer .wr center { display: inline-block; position: absolute; left:calc(50% - 75px); font-family: var(--mono); font-size:12px }
 #footer .wr a { font-family: var(--font_b);  }
 #footer .wr a:hover { color:var(--grey_4); opacity: 1; text-decoration: underline }
 #footer .wr a:hover { cursor: pointer }
 #footer .wr a.icon { background-position: center center; background-size: cover ; display: inline-block; width: 30px; height: 30px; float: right; margin-left: 10px; margin-top:5px; opacity: 1.0; overflow: hidden; text-indent: -9999px}
 #footer .wr a.icon:hover { opacity: 0.7 }
-#footer .wr a.icon.twitter { background-image:url(../media/icon/twitter.png) }
-#footer .wr a.icon.github { background-image:url(../media/icon/github.png) }
-#footer .wr a.icon.merveilles { background-size:40px }
-#footer .wr a.icon.hundredrabbits { float:left; margin-left:0px; margin-right:20px }
-#footer .wr a.icon.cc { background-size:90%; background-repeat: no-repeat }
-#footer .wr a.icon.rotonde { }
+#footer .wr a.icon.twitter { background-image:url(../media/icon/twitter.png); filter: invert(1) }
+#footer .wr a.icon.github { background-image:url(../media/icon/github.png); filter: invert(1) }
+#footer .wr a.icon.merveilles { background-size:40px; filter: invert(1) }
 /* Mode:Theme */
 body.noir { background:var(--grey_4) }
 body.noir #core #content > p:first-child { display: none }
@@ -229,7 +226,7 @@ body.noir #content p code { background:var(--grey_1); color:var(--grey_4) }
 body.noir p code { border-color:var(--grey_1) !important; color:var(--grey_1) !important }
 body.noir table { background: none; font-family: var(--font_m); border-collapse: separate; border-spacing: 1px; padding:0px; border-radius: var(--rounded)}
 body.noir table tr { }
-body.noir table tr td { margin-bottom: 2px; border-right-color: white !important }
+body.noir table tr td { margin-bottom: 2px; border-right-color: var(--grey_1) !important }
 body.noir table tr td a { text-decoration: none }
 body.noir table tr td a:hover { text-decoration: underline }
 body.noir table tr td i { color:var(--grey_2) }
@@ -240,11 +237,11 @@ body.noir #core svg.viz rect.missing { fill:var(--grey_3) }
 body.noir #core svg.viz circle.photo { fill:var(--grey_1); stroke:none }
 body.noir #core svg.viz circle.event { fill:none; stroke:var(--grey_1); stroke-width:1.5px }
 body.noir #core #content table.cells tr td { color:var(--grey_1); font-family: var(--font_m); font-size:12px; padding-right:0px }
-body.noir #core #content table.cells tr td:hover { color:var(--grey_1); border-bottom-color: white !important }
+body.noir #core #content table.cells tr td:hover { color:var(--grey_1); border-bottom-color: var(--grey_1) !important }
 body.noir #core #content table.cells tr td:hover span.date { color:var(--grey_1) }
 body.noir #core #content .entry { color:var(--grey_1) }
-body.noir #core #sidebar ul.directory { border-top:1.5px solid white }
-body.noir #core .tracker svg.horaire { stroke:#aaa; margin-bottom: -30px }
+body.noir #core #sidebar ul.directory { border-top:1.5px solid var(--grey_3) }
+body.noir #core .tracker svg.horaire { stroke:var(--grey_1); margin-bottom: -30px }
 /* Terminal */
 #terminal { background: var(--grey_4); padding: 30px !important; line-height: 15px; display: block; color: var(--grey_1); font-size: 12px; font-family: var(--mono); transition: top 250ms; overflow-y: scroll; position: fixed; top: -600px; z-index: 9002; width: 600px; left: calc(50% - 300px - 30px); max-width: calc(100vw - 60px) ; height: 300px; border-radius: var(--rounded); box-shadow: 10px 10px var(--grey_4)2}
 #terminal.active { top:120px }
@@ -265,18 +262,18 @@ body.noir #core .tracker svg.horaire { stroke:#aaa; margin-bottom: -30px }
 #core div.horaire a { display: inline-block; line-height: 30px; height:30px }
 #core div.horaire span { display: inline-block; line-height: 30px; height: 30px; font-size: 11px; vertical-align: top; margin-top: 5px; margin-left: 15px; font-family: var(--font_b); color: var(--grey_4) }
 /* Viz */
-#core svg.viz { display: block; width: 675px; height: 120px; margin-bottom: 15px; border-bottom: 1.5px solid var(--grey_3); padding-bottom:15px }
+#core svg.viz { display: block; width: 675px; height: 120px; margin-bottom: 15px; border-bottom: 1.5px solid var(--grey_2); padding-bottom:15px }
 #core svg.viz.no_status { height: 140px; padding-bottom:5px }
 #core svg.viz text { stroke:none; fill:var(--grey_1); font-size:12px; text-anchor: start; font-family:var(--font_b); fill:var(--grey_4); text-transform:capitalize }
 #core svg.viz text.display { font-family: var(--font_t); font-size: 40px; letter-spacing: -2px; text-anchor:start }
 #core svg.viz text.display.small { font-family: var(--mono_m); font-size: 12px; letter-spacing: 0px }
-#core svg.viz line { stroke-width:1.5px; stroke:var(--grey_3) }
+#core svg.viz line { stroke-width:1.5px; stroke:var(--grey_2) }
 #core svg.viz rect { stroke:none }
 #core svg.viz rect:hover { fill:var(--grey_2) !important; cursor:pointer}
 #core svg.viz rect.leisure { fill:var(--color_1) }
 #core svg.viz rect.research { fill:var(--color_2) }
 #core svg.viz rect.programming { fill:var(--color_3) }
-#core svg.viz rect.missing { fill:#ddd }
+#core svg.viz rect.missing { fill:var(--grey_3) }
 #core svg.viz rect.misc { fill:var(--grey_4) !important }
 #core svg.viz rect.today { fill:var(--grey_1) }
 #core svg.viz circle.photo { fill:var(--grey_1); stroke:none }
