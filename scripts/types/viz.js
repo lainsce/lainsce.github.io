@@ -3,7 +3,7 @@
 function Viz (logs, from, to, showDetails = true) {
   this.logs = slice(logs, from, to)
 
-  const cell = 13
+  const cell = 12
 
   function slice (logs, from, to) {
     const a = []
@@ -31,39 +31,13 @@ function Viz (logs, from, to, showDetails = true) {
     const sum = horaire.sectors.leisure + horaire.sectors.research + horaire.sectors.programming
 
     return `
-    <rect class="leisure" x="${cell * 0}" y="115" width="13" height="13" rx="2" ry="2" title="17O11"></rect>
-    <text x='${(cell + 1) * 2}' y='125' style='text-anchor:start'>Leisure ${_perc(horaire.sectors.leisure, sum)}%</text>
-    <rect class="research" x="${(cell + 1) * 9}" y="115" width="13" height="13" rx="2" ry="2" title="17O11"></rect>
-    <text x='${(cell + 1) * 11}' y='125' style='text-anchor:start'>Research ${_perc(horaire.sectors.research, sum)}%</text>
-    <rect class="programming" x="${(cell + 1) * 18}" y="115" width="13" height="13" rx="2" ry="2" title="17O11"></rect>
-    <text x='${(cell + 1) * 20}' y='125' style='text-anchor:start'>Programming ${_perc(horaire.sectors.programming, sum)}%</text>
-    <text x='725' y='125' style='text-anchor:end'>${horaire.fhs.toFixed(0)} Hours</text>`
-  }
-
-  function _status (data) {
-    if (!showDetails || data.recent.length < 2 || data.before.length < 2) { return '' }
-
-    const recent = new Horaire(data.recent)
-    const before = new Horaire(data.before)
-
-    return `
-    <line x1='0' y1='${cell * 11.5}' x2='730' y2='${cell * 11.5}'/>
-    <text class='display' x='${0}' y='${cell * 16.5}'>${recent.ch.toFixed(2)}</text>
-    <text class='display small' x='${cell * 7}' y='${cell * 15.1}'>${offset(recent.ch, before.ch)}</text>
-    <text class='display small' x='${cell * 7}' y='${cell * 16.5}' style='font-family: var(--mono);'>ch/day</text>
-
-    <text class='display' x='${180}' y='${cell * 16.5}'>${recent.fh.toFixed(2)}</text>
-    <text class='display small' x='${180 + (cell * 7)}' y='${cell * 15.1}'>${offset(recent.fh, before.fh)}</text>
-    <text class='display small' x='${180 + (cell * 7)}' y='${cell * 16.5}' style='font-family: var(--mono);'>fh/day</text>
-
-    <text class='display' x='${360}' y='${cell * 16.5}'>${recent.os.toFixed(2).substr(0, 4)}</text>
-    <text class='display small' x='${360 + (cell * 7)}' y='${cell * 15.1}'>${offset(recent.os, before.os)}</text>
-    <text class='display small' x='${360 + (cell * 7)}' y='${cell * 16.5}' style='font-family: var(--mono);'>focus</text>
-
-    <text class='display' x='${550}' y='${cell * 16.5}'>${recent.balance.toFixed(2).substr(0, 4)}</text>
-    <text class='display small' x='${550 + (cell * 7)}' y='${cell * 15.1}'>${offset(recent.balance, before.balance)}</text>
-    <text class='display small' x='${550 + (cell * 7)}' y='${cell * 16.5}' style='font-family: var(--mono);'>balance</text>
-    `
+    <rect class="leisure" x="${cell * 0}" y="105" width="13" height="13" rx="2" ry="2" title="17O11"></rect>
+    <text x='${(cell + 1) * 2}' y='115' style='text-anchor:start'>leisure ${_perc(horaire.sectors.leisure, sum)}%</text>
+    <rect class="research" x="${(cell + 1) * 9}" y="105" width="13" height="13" rx="2" ry="2" title="17O11"></rect>
+    <text x='${(cell + 1) * 11}' y='115' style='text-anchor:start'>research ${_perc(horaire.sectors.research, sum)}%</text>
+    <rect class="programming" x="${(cell + 1) * 18}" y="105" width="13" height="13" rx="2" ry="2" title="17O11"></rect>
+    <text x='${(cell + 1) * 20}' y='115' style='text-anchor:start'>programming ${_perc(horaire.sectors.programming, sum)}%</text>
+    <text x='675' y='115' style='text-anchor:end'>${horaire.fhs.toFixed(0)} Hours</text>`
   }
 
   this.draw = function () {
@@ -83,9 +57,8 @@ function Viz (logs, from, to, showDetails = true) {
     }
 
     return `
-    <svg class='viz ${data.recent.length < 2 || data.before.length < 2 ? 'no_status' : ''}'>
+    <svg class='viz'>
       ${_legend(this.logs)}
-      ${_status(data)}
       ${this.draw()}
     </svg>`
   }
@@ -108,7 +81,7 @@ function ActivityViz (logs) {
 
   this.draw = function () {
     const data = parse(this.logs)
-    const cell = parseInt(700 / 52)
+    const cell = 12
     let html = ''
     let week = 0
     while (week < 52) {
@@ -119,8 +92,6 @@ function ActivityViz (logs) {
         const offset = (365 - (week * 7) - (day + 1)) * -1
         const log = data[offset + 1]
         html += log && log.sector ? `<rect class='${log.sector} ${log.time.offset === 0 ? 'today' : ''}' x='${x}' y='${y}' width='${cell}' height='${cell}' rx="2" ry="2" title='${log.time}' data-goto='${log.term}'></rect>` : `<rect class='missing ${day === 6 && week === 51 ? 'today' : ''}' x='${x}' y='${y}' width='${cell}' height='${cell}' rx="2" ry="2"></rect>`
-        html += log && log.pict ? `<circle cx='${x + (cell / 2)}' cy='${y + (cell / 2)}' r='2.5' class='photo'></circle>` : ''
-        html += log && log.isEvent ? `<circle cx='${x + (cell / 2)}' cy='${y + (cell / 2)}' r='2' class='event'></circle>` : ''
         day += 1
       }
       week += 1
@@ -133,7 +104,7 @@ function ActivityViz (logs) {
 function BarViz (logs) {
   Viz.call(this, logs, -365 * 10, 0)
 
-  function parse (logs, parts = 51) {
+  function distribute (logs, parts = 51) {
     const limit = logs[logs.length - 1].time.offset * -1
     const h = {}
     for (const id in logs) {
@@ -154,17 +125,17 @@ function BarViz (logs) {
   }
 
   this.draw = function () {
-    const segments = parse(this.logs)
-    const cell = 13
-    const mod = 0.18
+    const segments = distribute(this.logs)
+    const cell = 12
+    const mod = 0.16
     return Object.keys(segments).reduce((acc, val, id) => {
       const seg = segments[val]
       const x = parseInt(id) * (cell + 1)
       const leisure_h = clamp(seg.leisure * mod, 4, 100)
-      const leisure_y = leisure_h + 30
+      const leisure_y = leisure_h + 35
       const research_h = clamp(seg.research * mod, 4, 100)
       const research_y = (research_h + leisure_y) + 0.5
-      const programming_h = clamp(seg.programming * mod, 4, 100)
+      const programming_h = clamp(seg.research * mod, 4, 100)
       const programming_y = (programming_h + research_y) + 0.5
       return `${acc}
       <rect class='leisure' x='${x}' y='${125 - leisure_y}' width='${cell}' height='${leisure_h}' rx="2" ry="2"></rect>
@@ -223,8 +194,8 @@ function BalanceViz (logs) {
 
     let html = ''
     let day = 52
-    const cell = 13
-    const height = 95
+    const cell = 12
+    const height = 85
     const y = 0
     while (day > 0) {
       const x = parseInt(day * (cell + 1) - (cell))
@@ -242,4 +213,51 @@ function BalanceViz (logs) {
   }
 
   function clamp (v, min, max) { return v < min ? min : v > max ? max : v }
+}
+
+function HoraireViz (logs) {
+  const w = 160
+  const end = new Date() // 5 years ago
+  const start = new Date(new Date() - (31536000 * 1000 * 5)) // 5 years ago
+  const offset = Math.ceil((new Date(2009) - new Date()) / 86400000)
+  function distribute (logs, parts) {
+    const limit = logs[logs.length - 1].time.offset * -1
+    const h = {}
+    for (const id in logs) {
+      const log = logs[id]
+      const ratio = (log.time.date - start) / (end - start)
+      if (ratio < 0) { continue }
+      const pos = ratio * parts
+      const share = (pos - Math.floor(pos))
+      const low = Math.floor(pos)
+      const high = Math.ceil(pos)
+      const value = log.ch / log.fh
+      if (!h[low]) { h[low] = 0 }
+      if (!h[high]) { h[high] = 0 }
+      h[low] += value * (1 - share)
+      h[high] += value * share
+    }
+    return h
+  }
+
+  this.toString = function (parts = 28, height = 20) {
+    const segments = distribute(logs, parts)
+    let html = ''
+    let prev = 0
+    let max = Math.max(...Object.values(segments))
+    const real = []
+    for (let i = 0; i < parts; i++) {
+      const v = !isNaN(segments[i]) ? segments[i] : 0
+      real.push((1 - (v / max)) * height)
+    }
+    for (const i in real) {
+      const x = (parseInt(i) * 3) + 2
+      const y = real[i]
+      const before = !isNaN(real[i - 1]) ? real[i - 1] : height
+      const after = !isNaN(real[i + 1]) ? real[i + 1] : height
+      const soften = ((y + before + after) / 3)
+      html += `M${x},${height} L${x},${parseInt(soften)} `
+    }
+    return `<svg class='horaire' style='width:${parts * 3}px; height: ${height + 4}px'><path d="${html}"/></svg>`
+  }
 }

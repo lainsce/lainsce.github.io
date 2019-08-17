@@ -6,38 +6,40 @@ HOME
   BODY
     & Welcome to the homepage of Lains.
     & This page provides a link into his world. It's made simple due to his love for minimalism.
-    λ (wrap (echo (template (match (table "lexicon") (uniq (attribute (table "horaire") "term"))) SPAN)) "ul" "tidy col3")
+    λ (wrap (template (match (database:select "lexicon") (uniq (pry (database:select "horaire") "term"))) SPAN) "ul" "tidy col3")
     @ Walk down this path, and you'll find the <b>old remains</b> of the planet. | Saltan Panomisi | 3/18Y02
 
 TRACKER
   UNDE : Horaire
   ICON : M150,90 A45,45 0 0,1 195,135 A-45,45 0 0,1 150,180 A-45,-45 0 0,1 105,135 A45,-45 0 0,1 150,90 M180,135 A45,45 0 0,1 225,180 A-45,45 0 0,1 180,225 A-45,-45 0 0,1 135,180 A45,-45 0 0,1 180,135 M120,135 A45,45 0 0,1 165,180 A-45,45 0 0,1 120,225 A-45,-45 0 0,1 75,180 A45,-45 0 0,1 120,135
   VIEW : Tracker
-  ALTS : issues
   LOOK : Noir
-  BREF : {(link)} shows {(bold "issues and balance")}.
+  ALTS : issues
+  BREF : The {(link)} shows {(bold "issues and balance")}.
   BODY
-    & Welcome to the homepage of Lains's Tracker.
+    λ (services:balance-viz (filter (database:select "horaire") "__onlyPast365"))
+    λ (services:tracker (filter (values (database:select "lexicon")) "__onlyProjects"))
 
 JOURNAL
   UNDE : Horaire
   ICON : M60,90 L60,90 L210,90 M60,120 L60,120 L180,120 M210,120 L210,120 L240,120 M60,150 L60,150 L150,150 M180,150 L180,150 L240,150 M60,180 L60,180 L120,180 M150,180 L150,180 L240,180 M60,210 L60,210 L90,210 M120,210 L120,210 L240,210 M90,240 L90,240 L240,240
   VIEW : Journal
-  ALTS : Now Blog Diary
   LOOK : Noir
-  BREF : {(link)} shows {(bold "recent activity")}.
+  ALTS : Now Blog Diary
+  BREF : The {(link)} shows {(bold "recent activity")}.
   BODY
-    & Welcome to the homepage of Lains's Journal.
+    λ (services:activity-viz (filter (database:select "horaire") "__onlyPast365"))
+    λ (join (slice (filter (slice (database:select "horaire") 0 (mul 4 14)) "__onlyOnce") 0 20))
 
 CALENDAR
   UNDE : Horaire
-  ALTS : 2012 2013 2014 2015 2016 2017 2018 2019
   ICON : M60,60 L60,60 L240,60 L240,240 L60,240 Z M60,120 L60,120 L240,120 M120,120 L120,120 L120,240 M120,180 L120,180 L240,180 M180,180 L180,180 L180,240
   VIEW : Calendar
   LOOK : Noir
-  BREF : {(link)} shows {(bold "upcoming events")}.
+  BREF : The {(link)} shows {(bold "upcoming events")}.
   BODY
-    & Welcome to the homepage of Lains's Calendar.
+    λ (services:bar-viz (database:select "horaire"))
+    λ (wrap (template (filter (database:select "horaire") "__onlyEvents") DATE) "ul" "tidy col3")
 
 ELEMENTARY OS
   UNDE : Software
@@ -46,7 +48,7 @@ ELEMENTARY OS
   BODY
     & elementary OS, Lains's OS of choice.
     & The fast, open, and privacy-respecting replacement for Windows and macOS.
-    % extimg https://elementary.io/images/screenshots/desktop.jpg
+    % custom https://elementary.io/images/screenshots/desktop.jpg
     - The default desktop
 
 DATETIME
@@ -63,7 +65,7 @@ PROGRAMMING
   BODY
     & This is a list of things Lains has been doing in coding.
     & It also houses other projects Lains has been a part of.
-    λ (echo (template :children INDEX))
+    λ (template host:children INDEX)
 
 NOTEJOT
   UNDE : Programming
@@ -88,7 +90,7 @@ COIN
   BODY
     & This is a cryptocurrency tracker  developed for elementary OS.
     % generic/coin.png
- 
+
 PALAURA
   UNDE : Programming
   ICON : M60,120 L60,120 L105,60 L150,120 M75,90 L75,90 L135,90 M90,150 L90,150 L210,150 M90,180 L90,180 L165,180 M90,210 L90,210 L195,210 M90,240 L90,240 L210,240
@@ -96,7 +98,7 @@ PALAURA
   BODY
     & This is  a dictionary searcher developed for elementary OS.
     % generic/palaura.png
-    
+
 YISHU
   UNDE : Programming
   ICON : M60,60 L60,60 L60,240 L240,240 L240,60 L60,60 M75,165 L75,165 L120,210 L210,120 L195,105 L120,180 L90,150 L75,165
@@ -169,7 +171,7 @@ SOFTWARE
   BODY
     & The {(bold "Software")} archive is a collection of {(bold "Free & Open-source")} projects.
     & These projects were made possible by the help of countless developers who fixed issues, submitted pull requests and spent time improving the code.
-    λ (echo (template :children INDEX))
+    λ (template host:children INDEX)
 
 NATANIEV
   UNDE : Software
@@ -178,7 +180,7 @@ NATANIEV
   ICON : M240,240 l0,-90 a-90,-90 0 0,0 -90,-90 l-90,0 l0,90 a90,90 0 0,0 90,90 l60,0 l0,-90 a-60,-60 0 0,0 -60,-60 l-60,0 l0,60 a60,60 0 0,0 60,60 l30,0 l0,-60 a-30,-30 0 0,0 -30,-30 l-30,0 l0,30 a30,30 0 0,0 30,30
   BODY
     & {(bold "Nataniev")} is a collection of free and open-source software following a singular design philosophy, and aesthetic by {(link "https://twitter.com/@neauoire" "Devine Lu Linvega")}.
-    λ (echo (template :children INDEX))
+    λ (template host:children INDEX)
 
 HORAIRE
   UNDE : Nataniev
@@ -192,16 +194,16 @@ HORAIRE
     - The {(bold "Focus Hour")}({(ital "Fh")}) is an index of attention for the day's task — where 1 indicates that no time was invested in the task, and 9 indicates that all available time was invested in the task.
     & A {(bold "task name")} can be generated from the intersection of the {(bold "Sector")}({(ital "Sh")}), and of the {(bold "Concrete Hour")}({(ital "Ch")}). For instance, the {(code "238")} encode, can be converted into the {(code (task 238))} task.
     | 1* | {(bold "Leisure")}    | 2* | {(bold "Research")}   | 3* | {(bold "Programming")}
-    | 10 | {(task 10)} | 20 | {(task 20)} | 30 | {(task 30)} 
-    | 11 | {(task 11)} | 21 | {(task 21)} | 31 | {(task 31)} 
-    | 12 | {(task 12)} | 22 | {(task 22)} | 32 | {(task 32)} 
-    | 13 | {(task 13)} | 23 | {(task 23)} | 33 | {(task 33)} 
-    | 14 | {(task 14)} | 24 | {(task 24)} | 34 | {(task 34)} 
-    | 15 | {(task 15)} | 25 | {(task 25)} | 35 | {(task 35)} 
-    | 16 | {(task 16)} | 26 | {(task 26)} | 36 | {(task 36)} 
-    | 17 | {(task 17)} | 27 | {(task 27)} | 37 | {(task 37)} 
-    | 18 | {(task 18)} | 28 | {(task 28)} | 38 | {(task 38)} 
-    | 19 | {(task 19)} | 29 | {(task 29)} | 39 | {(task 39)} 
+    | 10 | {(task 10)} | 20 | {(task 20)} | 30 | {(task 30)}
+    | 11 | {(task 11)} | 21 | {(task 21)} | 31 | {(task 31)}
+    | 12 | {(task 12)} | 22 | {(task 22)} | 32 | {(task 32)}
+    | 13 | {(task 13)} | 23 | {(task 23)} | 33 | {(task 33)}
+    | 14 | {(task 14)} | 24 | {(task 24)} | 34 | {(task 34)}
+    | 15 | {(task 15)} | 25 | {(task 25)} | 35 | {(task 35)}
+    | 16 | {(task 16)} | 26 | {(task 26)} | 36 | {(task 36)}
+    | 17 | {(task 17)} | 27 | {(task 27)} | 37 | {(task 37)}
+    | 18 | {(task 18)} | 28 | {(task 28)} | 38 | {(task 38)}
+    | 19 | {(task 19)} | 29 | {(task 29)} | 39 | {(task 39)}
     @ <b>Effectiveness</b>, is doing the right thing.<br><b>Efficiency</b>, is doing it the right way.
   LINK
     View Database : https://github.com/lainsce/lainsce.github.io/blob/master/riven/scripts/database/horaire.tbtl
@@ -212,7 +214,7 @@ LEISURE
   BREF : {(link)} holds the interests Lains has been doing outside coding.
   BODY
     & These are the interests Lains has been doing outside coding.
-    λ (echo (template :children INDEX))
+    λ (template host:children INDEX)
 
 TWITCH
   UNDE : Leisure
@@ -250,7 +252,7 @@ RESEARCH
   BREF : {(link)}, holds the research-type things Lains has been doing outside coding.
   BODY
     & The {(bold "Research")} archive is a collection of assorted projects.
-    λ (echo (template :children INDEX))
+    λ (template host:children INDEX)
 
 DESKTOP
   UNDE : Research
@@ -288,18 +290,18 @@ UNIVERSITY
     - 09C07∼11V14 Attended College in UX Design
     - 12C06∼16V14 BS in Law
     - 18C07∼19O12 BS in Computer Science (ongoing)
-    
+
 PORTALS
   UNDE : Research
   ICON : M90,60 L90,60 L210,60 L210,240 L90,240 L90,60 M150,210 L150,210 L180,180 M120,195 L120,195 L180,135
   BREF : {(link)}, holds the constructed languages and their worlds by Lains.
   BODY
     & This is a collection of worlds.
-    λ (echo (template :children INDEX))
+    λ (template host:children INDEX)
 
 SAYAKUXA
   UNDE : Portals
-  ICON : M150,60 A90,90 0 0,0 60,150 A90,90 0 0,0 150,240 A90,90 0 0,0 240,150 A90,90 0 0,0 150,60 M195,75 L195,75 L165,105 L180,135 L150,150 L135,180 L165,165 L165,195 L195,180 L195,225 M90,90 L90,90 L105,105 L105,135 L120,165 L105,195 L135,210 L135,240 
+  ICON : M150,60 A90,90 0 0,0 60,150 A90,90 0 0,0 150,240 A90,90 0 0,0 240,150 A90,90 0 0,0 150,60 M195,75 L195,75 L165,105 L180,135 L150,150 L135,180 L165,165 L165,195 L195,180 L195,225 M90,90 L90,90 L105,105 L105,135 L120,165 L105,195 L135,210 L135,240
   BREF : {(link)}, a constructed world nation
   BODY
     & Sayakuxa is a nation on the planet Iktis
@@ -308,12 +310,12 @@ SAYAKUXA
     - The official language is {(link "Sayala" "Sayala")}, with 3 minor languages not officially recognized.
     - A huge river crosses Sayakuxa horizontally, naturally diving the country into {(bold "2 provinces")}.
     % conlang/sayakuxa_map.png
-    λ (echo (template :children INDEX))
+    λ (template host:children INDEX)
     @ The flag of Sayakuxa still stands proud on the many roads of Palatisu | Isil Hemikas | 3/78Y02
 
 SAYAKUXAN MUSIC
   UNDE : Sayakuxa
-  ICON : M150,60 A90,90 0 0,0 60,150 A90,90 0 0,0 150,240 A90,90 0 0,0 240,150 A90,90 0 0,0 150,60 M195,75 L195,75 L165,105 L180,135 L150,150 L135,180 L165,165 L165,195 L195,180 L195,225 M90,90 L90,90 L105,105 L105,135 L120,165 L105,195 L135,210 L135,240 
+  ICON : M150,60 A90,90 0 0,0 60,150 A90,90 0 0,0 150,240 A90,90 0 0,0 240,150 A90,90 0 0,0 150,60 M195,75 L195,75 L165,105 L180,135 L150,150 L135,180 L165,165 L165,195 L195,180 L195,225 M90,90 L90,90 L105,105 L105,135 L120,165 L105,195 L135,210 L135,240
   BREF : {(link)}: its geometric notes notation.
   BODY
     & Music on Sayakuxa follows a 8-note system called Ayakaxu ({(ital "lit.")} pretty box) which uses lozenges along vertical lines, painted over or not on the sides.
@@ -341,8 +343,8 @@ SAYALA
     * {(bold "Phonology")}
     & These following charts specify which phonemes are in Sayala [sajalɑ~sajɑla], and how their romanisation looks.
     & The Consonants:
-    | {(bold "Consonants")} | Bilabial | Alveolar    | Postalveolar | Velar   | Glottal 
-    | Nasal                 | m (m)    | n (n)       |              | ɲ (ny)  | ⠀      
+    | {(bold "Consonants")} | Bilabial | Alveolar    | Postalveolar | Velar   | Glottal
+    | Nasal                 | m (m)    | n (n)       |              | ɲ (ny)  | ⠀
     | Stop                  | p∼b (p)  | t∼d (t)     |              | k∼g(k)  | ʔ (◌)
     | Fricative             |          | s∼z (s)     | ʃ∼ʒ (x)      |         | h∼ɦ (h)
     | Approximant           |          | tɬ/tl (tl)  |              | j (y)   | ⠀
@@ -455,7 +457,7 @@ SAYALA
 
 MON THU
   UNDE : Portals
-  ICON : M150,60 A90,90 0 0,0 60,150 A90,90 0 0,0 150,240 A90,90 0 0,0 240,150 A90,90 0 0,0 150,60 M195,75 L195,75 L165,105 L180,135 L150,150 L135,180 L165,165 L165,195 L195,180 L195,225 M90,90 L90,90 L105,105 L105,135 L120,165 L105,195 L135,210 L135,240 
+  ICON : M150,60 A90,90 0 0,0 60,150 A90,90 0 0,0 150,240 A90,90 0 0,0 240,150 A90,90 0 0,0 150,60 M195,75 L195,75 L165,105 L180,135 L150,150 L135,180 L165,165 L165,195 L195,180 L195,225 M90,90 L90,90 L105,105 L105,135 L120,165 L105,195 L135,210 L135,240
   BREF : {(link)}, a constructed world nation
   BODY
     & Mon Thu is a nation on the planet Iktis
@@ -463,7 +465,7 @@ MON THU
     - It houses {(bold "300.000")} inhabitants, mostly in the capital Dąñ Su.
     - The official language is {(link "Mon Tu" "Món Tų")}.
     - A small nation with a religion-based government, there are many temples around the country.
-    λ (echo (template :children INDEX))
+    λ (template host:children INDEX)
     @ They say strange energy dissipates from the temples in Mon Thu. It is of cyan color. | Isil Hemikas | 3/78Y02
 
 MON TU
@@ -475,8 +477,8 @@ MON TU
     * {(bold "Phonology")}
     & These following charts specify which phonemes are in Món Tų [mɔn tə], and how their romanisation looks.
     & The Consonants:
-    | {(bold "Consonants")} | Bilabial | Alveolar    | Postalveolar | Retroflex | Palatal | Velar   | Glottal 
-    | Nasal                 | m (m)    | n (n)       |              |           |         | ɲ (ny)  | ⠀      
+    | {(bold "Consonants")} | Bilabial | Alveolar    | Postalveolar | Retroflex | Palatal | Velar   | Glottal
+    | Nasal                 | m (m)    | n (n)       |              |           |         | ɲ (ny)  | ⠀
     | Stop                  | p∼b (p)  | t (t)       |              | ʈ (d)     |         | k∼g(k)  | ʔ (ḧ)
     | Fricative             |          | s (s)       | ʃ (x)        |           | ç (ç)   |         | h∼ɦ (h)
     | Approximant           |          |             |              |           |         | j (y)   | ⠀
@@ -506,7 +508,7 @@ MON TU
     & Món Tų is a mostly agglutinative language that makes extensive use of compounding, incorporation and derivation. That is, it can add many different prefixes and suffixes to a root until very long words are formed, and a single word can sometimes constitute an entire sentence. The words of Món Tų can be divided into two basic functional classes: verbs and nouns as content words, and particles and others as functional. Adjectives exist, but they generally behave like verbs and there are very few adjectives that are not derived from either verbal pronominal roots. The few adverbs that exist fall into the class of particles or are derived from verbs. The most important element of Món Tų lexemes to keep in mind is that they may function as a verb, noun, adjective, or an adverb based on where they fall in the phrase, and any various endings that may be affixed.
     * Nouns
     & When pluralizing words that end in a {(code "m")}, {(code "mp")} or {(code "p")} syllable, you use the ending {(code "-lo")}
-    | {(bold "Nouns")} | Singular                | Plural   
+    | {(bold "Nouns")} | Singular                | Plural
     | Number           |  ⠀                      | dáy
     | Gender           | na (masc) / ta (fem)  |
     | Honorific        | mon                      | ⠀
@@ -597,7 +599,7 @@ NAXASERO
   BREF : {(link)}, holds the naxaserom Lains has been writing.
   BODY
     & This is a collection of pieces of text.
-    λ (echo (template :children INDEX))
+    λ (template host:children INDEX)
 
 NAXASERO 4
   UNDE : Naxasero

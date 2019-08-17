@@ -3,7 +3,7 @@
 function Log (data = { code: '-400' }) {
   Entry.call(this, data.name, data)
 
-  this.host = null // From Ø('map')
+  this.host = null
 
   this.term = data.term ? data.term.toTitleCase() : ''
   this.text = data.text
@@ -19,7 +19,7 @@ function Log (data = { code: '-400' }) {
   this.fh = data.code.length > 3 ? parseInt(data.code.substr(3, 1)) : 0
 
   this.sector = ['misc', 'leisure', 'research', 'programming', 'misc'][this.sc]
-  this.isFeatured = this.pict && (this.rune === '!' || this.rune === '+')
+  this.featured = this.pict && (this.rune === '!' || this.rune === '+')
   this.isEvent = this.rune === '+'
 
   this.tasks = [
@@ -29,23 +29,23 @@ function Log (data = { code: '-400' }) {
   ]
   this.task = this.tasks[this.sc - 1] ? this.tasks[this.sc - 1][this.ch] : 'travel'
 
-  this.photo = function () {
+  this.photo = () => {
     return this
   }
 
-  this.body = function () {
+  this.body = () => {
     return this.host ? `
     <div class='entry log ${this.isEvent ? 'event' : ''}'>
       <svg data-goto='${this.host.name}' class='icon'><path transform="scale(0.15) translate(20,20)" d="${this.host ? this.host.glyph() : ''}"></path></svg>
       <div class='head'>
-        <div class='details'>${this.term.toLink(this.term, 'topic')} ${this.name && !this.isEvent ? ` — <span class='name' data-goto='${this.name}'>${this.name}</span>` : ''} <span class='time' data-goto='${this.time}'>${timeAgo(this.time, 14)}</span></div>
-        <div class='bref'>${this.isEvent ? this.name : this.host ? this.host.bref.toHeol(this.host) : ''}</div>
+        <div class='details'>${this.term.toLink(this.term, 'topic')} ${this.name && !this.isEvent ? ` — <span class='name' data-goto='${this.name}'>${this.name}</span>` : ''} <span class='time' data-goto='${this.time}'><b>${this.task}</b>, ${timeAgo(this.time, 14)}</span></div>
+        <div class='bref'>${this.isEvent ? this.name : this.host ? this.host.bref : ''}</div>
       </div>
       ${this.pict ? `<img src='media/diary/${this.pict}.jpg' data-goto='${this.term}'/>` : ''}
     </div>` : ''
   }
 
-  this.toText = function () {
+  this.toText = () => {
     if (this.isEvent && this.name !== '') {
       return `${this.name}`
     }
@@ -55,12 +55,14 @@ function Log (data = { code: '-400' }) {
     return `${this.term} ${this.host.parent.name.toTitleCase()} ${this.fh}fh ${this.task}`
   }
 
-  this.toString = function () {
+  this.toString = () => {
     return this.body()
   }
 
   // Checks
 
+  if (this.ch >= 8 && (!this.name || !this.isEvent)) { console.warn('Log', `Incomplete event: ${this.time}`) }
+  if (this.ch !== 8 && this.name.toLowerCase().indexOf('release') > -1) { console.warn('Log', `Error release event: ${this.time}`) }
   if (this.pict !== null && !this.name) { console.warn('Log', `Missing caption: ${this.time}`) }
   if (this.pict === null && this.rune === '!') { console.warn('Log', `Feature without picture: ${this.time}`) }
   if (['+', '-', '!'].indexOf(this.rune) < 0) { console.warn('Log', `Unknown rune: ${data.code}, on ${this.time}.`, data) }

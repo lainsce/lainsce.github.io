@@ -4,18 +4,18 @@ function Entry (name, data) {
   this.name = name
   this.data = data
   this.unde = 'Home'
-  this.bref = '-'
+  this.bref = null
 
   this.view = 'main'
   this.theme = 'noir'
 
   this.indexes = [this.name]
-  this.outgoing = [] // From Ø('map')
-  this.incoming = [] // From Ø('map')
 
   this.span = { from: null, to: null }
   this.issues = []
+  this.links = []
   this.logs = []
+  this.children = []
   this.diaries = []
   this.events = []
   this.tags = []
@@ -24,12 +24,13 @@ function Entry (name, data) {
     return []
   }
 
-  this.head = function () {
-    return this.bref ? `<p>${this.bref.toHeol(this)}</p>` : ''
+  this.head = () => {
+    if (name === 'HOME') { return '' }
+    return this.bref ? `<p>${this.bref}</p>`.template() : `<p>The term {(bold "${name}")} could not be found.</p>`.template(this)
   }
 
-  this.body = function () {
-    return `Unformatted Entry: ${name}`
+  this.body = () => {
+    return 'Unformatted entry.'
   }
 
   this.indexes = function () {
@@ -44,12 +45,34 @@ function Entry (name, data) {
     return null
   }
 
+  this._portal = function () {
+    return null
+  }
+
   this.hasTag = function () {
     return false
   }
 
   this.photo = function () {
     return null
+  }
+
+  this.horaire = (parts = 28) => {
+    if (!this.span.to) { return '' }
+    const h = new Horaire(this.logs)
+    const v = new HoraireViz(this.activity()).toString(parts)
+    return this.span.to ? `<div class='horaire'>${'Horaire'.toLink(v)}<span>${h.ph.toFixed(2)}</span></div>` : ''
+  }
+
+  this.status = () => {
+    if (!this.span.from || !this.span.to) { return 'Unknown' }
+    if (this.span.to.offset < -365) {
+      return this.span.release ? 'complete' : 'inactive'
+    }
+    if (this.span.to.offset > -365) {
+      return this.span.release ? `maintenance` : `development`
+    }
+    return 'unknown'
   }
 
   this.hasTag = function (str) {

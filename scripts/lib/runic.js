@@ -11,8 +11,8 @@ function runic (lines = [], host = null) {
     '@': { tag: 'div', class: 'quote', fn: quote },
     '|': { tag: 'tr', wrapper: 'table', fn: table },
     '%': { fn: media },
-    'λ': { fn: heol },
-    '>': {},
+    'λ': { fn: interpret },
+    '>': { },
     ';': { }
   }
 
@@ -37,11 +37,10 @@ function runic (lines = [], host = null) {
     const wrClass = runes[stash.rune].wrapperClass
     const html = stash.a.reduce((acc, val, id) => {
       const r = runes[stash.rune]
-      const txt = r.fn ? r.fn(stash.a[id]) : stash.a[id]
-      const htm = txt.toHeol(host)
-      return `${acc}${r.tag ? `<${r.tag} class='${r.class ? r.class : ''}'>${htm}</${r.tag}>` : `${htm}`}`
+      const text = r.fn ? r.fn(stash.a[id]) : stash.a[id]
+      return `${acc}${r.tag ? `<${r.tag} class='${r.class ? r.class : ''}'>${text.template(host)}</${r.tag}>` : `${text}`}`
     }, '')
-    return wr ? `${acc}<${wr} class='${wrClass || ''}'>${html}</${wr}>` : `${acc}${html}`
+    return wr ? `${acc}<${wr} class='${wrClass || ''}'>${html.template(host)}</${wr}>` : `${acc}${html}`
   }
 
   // Templates
@@ -53,7 +52,7 @@ function runic (lines = [], host = null) {
     const source = parts[2]
     const link = parts[3]
     return `
-      ${text.length > 1 ? `<p class='text'>${text}</p>` : ''}
+      ${text.length > 1 ? `<p class='text'>${text.template(host)}</p>` : ''}
       ${author ? `<p class='attrib'>${author}${source && link ? `, ${link.toLink(source)}` : source ? `, <b>${source}</b>` : ''}</p>` : ''}`
   }
 
@@ -63,7 +62,6 @@ function runic (lines = [], host = null) {
     if (service === 'itchio') { return `<iframe frameborder="0" src="https://itch.io/embed/${id}?link_color=000000" width="600" height="167"></iframe>` }
     if (service === 'bandcamp') { return `<iframe style="border: 0; width: 600px; height: 274px;" src="https://bandcamp.com/EmbeddedPlayer/album=${id}/size=large/bgcol=ffffff/linkcol=333333/artwork=small/transparent=true/" seamless></iframe>` }
     if (service === 'youtube') { return `<iframe width="100%" height="380" src="https://www.youtube.com/embed/${id}?rel=0" style="max-width:700px" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>` }
-    if (service === 'extimg') { return `<img src='${id}'></img>` }
     if (service === 'custom') { return `<iframe src='${id}' style='width:100%;height:350px;'></iframe>` }
     return `<img src='media/${service}' class='${id}'/>`
   }
@@ -72,8 +70,8 @@ function runic (lines = [], host = null) {
     return `<td>${content.trim().replace(/ \| /g, '</td><td>')}</td>`
   }
 
-  function heol (content) {
-    return `${new Heol(content, host)}`
+  function interpret (content) {
+    return `${interpreter.run(content, host)}`
   }
 
   return lines.filter(isRunic).reduce(stash, []).reduce(_html, '')

@@ -1,5 +1,0 @@
-DATABASE.issues = `
-PALAURA
-  BACKEND
-    Change to offline dictionary API.
-`;

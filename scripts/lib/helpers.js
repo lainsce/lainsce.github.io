@@ -3,13 +3,15 @@
 // Transforms
 
 String.prototype.toTitleCase = function () { return this.toLowerCase().split(' ').map((s) => s.charAt(0).toUpperCase() + s.substring(1)).join(' ') }
-String.prototype.toUrl = function () { return this.toLowerCase().replace(/ /g, '+').replace(/[^0-9a-z\+\:\-\.\/\~]/gi, '').trim() }
+String.prototype.toUrl = function () { return this.toLowerCase().replace(/ /g, '+').replace(/[^0-9a-z\(\)\+\:\-\.\/\~]/gi, '').trim() }
 String.prototype.toEntities = function () { return this.replace(/[\u00A0-\u9999<>\&]/gim, function (i) { return `&#${i.charCodeAt(0)}` }) }
 String.prototype.toAlpha = function () { return this.replace(/[^a-z ]/gi, '').trim() }
 String.prototype.toAlphanum = function () { return this.replace(/[^0-9a-z ]/gi, '') }
-String.prototype.toLink = function (name, cl) { return this.indexOf('//') > -1 ? this.toExternalLink(name, cl) : this.toLocalLink(name, cl) }
-String.prototype.toLocalLink = function (name, cl = '') { return `<a href='${this.toUrl()}' data-goto='${this.toUrl()}' target='_self' class='local ${cl} ${redLink(this)}'>${name || this}</a>` }
+String.prototype.isAlphanum = function () { return !!this.match(/^[A-Za-z0-9 ]+$/) }
+String.prototype.toLink = function (name, cl) { return this.indexOf('(') === 0 ? this.toReplLink(name, cl) : this.indexOf('//') > -1 ? this.toExternalLink(name, cl) : this.toLocalLink(name, cl) }
+String.prototype.toLocalLink = function (name, cl = '') { return `<a href='#${this.toUrl()}' data-goto='${this.toUrl()}' target='_self' class='local ${cl} ${redLink(this)}'>${name || this}</a>` }
 String.prototype.toExternalLink = function (name, cl = '') { return `<a href='${this}' target='_blank' rel='noreferrer' class='external ${cl}'>${name || this}</a>` }
+String.prototype.toReplLink = function (name, cl = '') { return `<a href='#${this}' data-goto='${this}' class='repl ${cl}'>${name || this}</a>` }
 String.prototype.stripHTML = function () { return this.replace(/<(?:.|\n)*?>/gm, '') }
 String.prototype.replaceAll = function (search, replacement) { return `${this}`.split(search).join(replacement) }
 String.prototype.isUrl = function () { return this.substr(0, 4) === 'http' }
@@ -18,7 +20,7 @@ String.prototype.insert = function (s, i) { return [this.slice(0, i), s, this.sl
 // Redlinks
 
 function redLink (index) {
-  if (Ø('database').cache && !Ø('database').find(index)) { console.warn(`Redlink! ${index}.`); return 'redlink' }
+  // if (Ø('database').cache && !Ø('database').find(index)) { console.warn(`Redlink! ${index}.`); return 'redlink' }
   return ''
 }
 
@@ -54,10 +56,22 @@ function sortLogs (arr) {
   }).reverse()
 }
 
+function plainTable (arr, pad = 2, cols = 4) {
+  const length = Math.max(...(arr.map(el => el.length))) + pad
+  let html = ''
+  for (let i = 0; i <= arr.length; i += cols) {
+    for (let c = 0; c < cols; c += 1) {
+      html += arr[i + c] ? arr[i + c].padEnd(length, ' ') : ''
+    }
+    html += '\n'
+  }
+  return html
+}
+
 // Horaire Filters
 
 function __onlyPast (log) {
-  return log.time.offset < 0
+  return log.time.offset <= 0
 }
 
 function __onlyFuture (log) {
@@ -68,8 +82,12 @@ function __onlyPast14 (log) {
   return log.time.offset <= 0 && log.time.offset > -14
 }
 
+function __onlyPast60 (log) {
+  return log.time.offset <= 0 && log.time.offset > -60
+}
+
 function __onlyPast365 (log) {
-  return log.time.offset < 0 && log.time.offset > -365
+  return log.time.offset <= 0 && log.time.offset > -365
 }
 
 function __onlyLast (log) {
@@ -96,6 +114,14 @@ function __onlyPhotos (log) {
   return log.pict !== null
 }
 
+function __onlyProjects (term) {
+  return term.logs.length > 6
+}
+
+function __onlyReleasedProjects (term) {
+  return __onlyProjects(term) && (term.span.to.offset - term.span.from.offset) > 100 && term.span.release
+}
+
 function __onlyOnce (log, id, logs) {
   for (const i in logs) {
     if (log.pict || log.isEvent) { return true }
@@ -104,6 +130,12 @@ function __onlyOnce (log, id, logs) {
     }
   }
   return true
+}
+
+// Sorters
+
+function __byRecentLog (a, b) {
+  return a.span.to.offset - b.span.to.offset
 }
 
 // Compare strings

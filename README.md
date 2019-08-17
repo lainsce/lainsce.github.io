@@ -4,10 +4,9 @@
 
 This is a simple personal website I built with modern tools...
 
-- Riven Database
+- Lain Lisp
 - Tablatal
 - Indental
-- Heol
 - Runic
 
 All licensed as MIT
