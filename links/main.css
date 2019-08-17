@@ -1,6 +1,6 @@
 /* here dwells the one who wished to design deliberately */
 :root {
-  --background: #f4f4f4;
+  --background: #f7f8f8;
   /* get colors by the lightest color */
   --color:160, 62%;
   --l:66%;
@@ -8,9 +8,9 @@
   --color_2: hsl(var(--color),calc(var(--l) - 25%));
   --color_3: hsl(var(--color),calc(var(--l) - 45%));
   --grey_1: #ffffff;
-  --grey_2: #cccccc;
-  --grey_3: #333333;
-  --grey_4: #000000;
+  --grey_2: #b3bec1;
+  --grey_3: #323b3e;
+  --grey_4: #051519;
   --rounded: 2px;
 }
 .fg_leisure { color:var(--color_1) }
