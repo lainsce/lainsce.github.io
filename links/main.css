@@ -2,10 +2,10 @@
 :root {
   --background: #f8f8ff;
   /* get colors by the lightest color */
-  --color:21, 100%;
-  --l:60%;
+  --color:16.43, 66%;
+  --l:54%;
   --color_1: hsl(var(--color),var(--l));
-  --color_2: hsl(var(--color),calc(var(--l) - 20%));
+  --color_2: hsl(var(--color),calc(var(--l) - 15%));
   --color_3: hsl(var(--color),calc(var(--l) - 30%));
   --grey_1: #ffffff;
   --grey_2: #b8b8c8;

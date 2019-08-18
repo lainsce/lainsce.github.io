@@ -1,5 +1,6 @@
 DATABASE.horaire = `
 DATE  CODE PICT TERM                 NAME                                                             
+19Q05 -118                           Twitch - Watched AdmiralBahroo
 19Q05 -335      Home                 Home - Remove Riven, use Lain Lisp
 19Q04 -283      University           University - Start of 4th Semester (real 2nd Semester, EAD now)
 19Q03 +381      Timetable            Timetable - Release
@@ -257,6 +258,7 @@ DATE  CODE PICT TERM                 NAME
 17V08 -346      Notejot              Notejot - Fix opening duplicate windows
 17V07 -347      Notejot              Notejot - Move options to Appmenu
 17V05 +383      Quilter              Quilter - Release
+17V05 -118                           Twitch - Watched AdmiralBahroo
 17V04 -374      Quilter              Quilter - Fix many minor bugs
 17U12 +383      Quilter              Quilter - Release
 17U11 -363      Coin                 Coin -  Fix width of app
@@ -282,6 +284,7 @@ DATE  CODE PICT TERM                 NAME
 17R10 +384      Quilter              Quilter - Release
 17R08 -364      Quilter              Quilter - New palette
 17R07 +384      Quilter              Quilter - Release
+17Q05 -118                           Twitch - Watched AdmiralBahroo
 17P11 +314      Coin                 Coin - Release
 17P08 -341      Coin                 Coin - Add XAR and SAR coins
 17P03 -347      Quilter              Quilter - Show which file is open
