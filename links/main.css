@@ -1,13 +1,13 @@
 /* here dwells the one who wished to design deliberately */
 :root {
-  --background: #f8ffef;
+  --background: #fff;
   /* get colors by the lightest color */
   --color:16.43, 66%;
   --l:54%;
   --color_1: hsl(var(--color),var(--l));
   --color_2: hsl(var(--color),calc(var(--l) - 15%));
   --color_3: hsl(var(--color),calc(var(--l) - 30%));
-  --grey_1: #ffffff;
+  --grey_1: #f7fff8;
   --grey_2: #D7E8DB;
   --grey_3: #20313E;
   --grey_4: #0E161A;
