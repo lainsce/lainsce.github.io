@@ -3,7 +3,7 @@
   --background: #f8f8ff;
   /* get colors by the lightest color */
   --color:151, 100%;
-  --l:90%;
+  --l:60%;
   --color_1: hsl(var(--color),var(--l));
   --color_2: hsl(var(--color),calc(var(--l) - 30%));
   --color_3: hsl(var(--color),calc(var(--l) - 60%));
