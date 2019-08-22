@@ -90,6 +90,10 @@ function __onlyPast365 (log) {
   return log.time.offset <= 0 && log.time.offset > -365
 }
 
+function __onlyPast5Years (log) {
+  return log.time.offset <= 0 && log.time.offset > -365 * 5
+}
+
 function __onlyLast (log) {
   return log.host.logs[0].time.offset === log.time.offset
 }
@@ -115,11 +119,19 @@ function __onlyPhotos (log) {
 }
 
 function __onlyProjects (term) {
-  return term.logs.length > 6
+  return term.logs.length > 20
+}
+
+function __onlyActiveProjects (term) {
+  return __onlyProjects(term) && term.span.to.offset > -365 * 5
 }
 
 function __onlyReleasedProjects (term) {
   return __onlyProjects(term) && (term.span.to.offset - term.span.from.offset) > 100 && term.span.release
+}
+
+function __onlyNotSpecial (term) {
+  return !term.hasTag('special')
 }
 
 function __onlyOnce (log, id, logs) {
