@@ -1,5 +1,10 @@
 DATABASE.horaire = `
 DATE  CODE PICT TERM                 NAME                                                             
+19Q09 -111                           Desktop - New Monitor Recieved
+19Q08 -111                           Desktop - New Monitor Bought
+19Q08 -117                           Fysi - Worked there
+19Q07 -118                           Twitch - Watched MoonMoon2
+19Q06 -118                           Twitch - Watched AdmiralBahroo
 19Q05 -118                           Twitch - Watched AdmiralBahroo
 19Q05 -335      Home                 Home - Remove Riven, use Lain Lisp
 19Q04 -283      University           University - Start of 4th Semester (real 2nd Semester, EAD now)
