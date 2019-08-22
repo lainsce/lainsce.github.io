@@ -1,5 +1,6 @@
 DATABASE.horaire = `
 DATE  CODE PICT TERM                 NAME                                                             
+19Q10 -101                           Recharge
 19Q09 -111                           Desktop - New Monitor Recieved
 19Q08 -111                           Desktop - New Monitor Bought
 19Q08 -117                           Fysi - Worked there
