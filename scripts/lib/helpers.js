@@ -119,7 +119,7 @@ function __onlyPhotos (log) {
 }
 
 function __onlyProjects (term) {
-  return term.logs.length > 20
+  return term.logs.length > 7
 }
 
 function __onlyActiveProjects (term) {

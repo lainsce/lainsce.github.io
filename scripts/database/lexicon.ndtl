@@ -18,7 +18,7 @@ TRACKER
   BREF : The {(link)} shows {(bold "issues and balance")}.
   BODY
     λ (services:balance-viz (filter (database:select "horaire") "__onlyPast5Years"))
-    λ (wrap (join (pry-method (reverse (sort (filter (values (database:select "lexicon")) "__onlyActiveProjects") "__byRecentLog")) "toEntry")) "ul" "tracker")
+    λ (services:tracker (filter (values (database:select "lexicon")) "__onlyProjects"))
 
 JOURNAL
   UNDE : Horaire

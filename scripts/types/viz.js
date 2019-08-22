@@ -31,12 +31,12 @@ function Viz (logs, from, to, showDetails = true) {
     const sum = horaire.sectors.leisure + horaire.sectors.research + horaire.sectors.programming
 
     return `
-    <rect class="Leisure" x="${cell * 0}" y="105" width="13" height="13" rx="2" ry="2" title="17O11"></rect>
-    <text x='${(cell + 1) * 2}' y='115' style='text-anchor:start'>Leisure ${_perc(horaire.sectors.Leisure, sum)}%</text>
-    <rect class="Research" x="${(cell + 1) * 9}" y="105" width="13" height="13" rx="2" ry="2" title="17O11"></rect>
-    <text x='${(cell + 1) * 11}' y='115' style='text-anchor:start'>Research ${_perc(horaire.sectors.Research, sum)}%</text>
-    <rect class="Programming" x="${(cell + 1) * 18}" y="105" width="13" height="13" rx="2" ry="2" title="17O11"></rect>
-    <text x='${(cell + 1) * 20}' y='115' style='text-anchor:start'>Programming ${_perc(horaire.sectors.Programming, sum)}%</text>
+    <rect class="leisure" x="${cell * 0}" y="105" width="13" height="13" rx="2" ry="2" title="17O11"></rect>
+    <text x='${(cell + 1) * 2}' y='115' style='text-anchor:start'>Leisure ${_perc(horaire.sectors.leisure, sum)}%</text>
+    <rect class="research" x="${(cell + 1) * 9}" y="105" width="13" height="13" rx="2" ry="2" title="17O11"></rect>
+    <text x='${(cell + 1) * 11}' y='115' style='text-anchor:start'>Research ${_perc(horaire.sectors.research, sum)}%</text>
+    <rect class="programming" x="${(cell + 1) * 18}" y="105" width="13" height="13" rx="2" ry="2" title="17O11"></rect>
+    <text x='${(cell + 1) * 20}' y='115' style='text-anchor:start'>Programming ${_perc(horaire.sectors.programming, sum)}%</text>
     <text x='675' y='115' style='text-anchor:end'>${horaire.fhs.toFixed(0)} Hours</text>`
   }
 
@@ -132,7 +132,7 @@ function BarViz (logs) {
       const seg = segments[val]
       const x = parseInt(id) * (cell + 1)
       const leisure_h = clamp(seg.leisure * mod, 4, 100)
-      const leisure_y = Leisure_h + 35
+      const leisure_y = leisure_h + 35
       const research_h = clamp(seg.research * mod, 4, 100)
       const research_y = (research_h + leisure_y) + 0.5
       const programming_h = clamp(seg.research * mod, 4, 100)

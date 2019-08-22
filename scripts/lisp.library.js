@@ -7,6 +7,10 @@ function Library (host) {
 
   // Custom
 
+  this.require = (name) => {
+    return window[name]
+  }
+
   this.on = {
     click: (fn) => {
       BINDINGS.click = fn
@@ -111,6 +115,10 @@ function Library (host) {
 
   // arr
 
+  this.sort = (arr, name) => {
+    return arr.sort(window[name])
+  }
+
   this.map = (arr, fn) => {
     return arr.map((val, id, arr) => fn)
   }
@@ -141,10 +149,6 @@ function Library (host) {
 
   this.reverse = (arr) => {
     return arr.reverse()
-  }
-
-  this.sort = (arr) => {
-    return arr.sort()
   }
 
   this.for = (arr, fn) => {
