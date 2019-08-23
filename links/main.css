@@ -86,10 +86,10 @@ a.repl:before { content:"λ " }
 #core #sidebar ul.links { margin-top:30px }
 #core #sidebar ul.links li { font-size: 12px; margin-bottom: 2px; font-family: var(--font_b); line-height: 20px; display: block; text-transform: uppercase; position: relative }
 #core #sidebar ul.links li:hover { text-decoration: underline }
-#core #sidebar ul.directory { font-family: var(--mono); border-top: 1.5px solid var(--grey_3); padding-top: 30px }
-#core #sidebar ul.directory li { text-transform: uppercase; font-size: 14px; line-height: 20px; position: relative }
+#core #sidebar ul.directory { font-family: var(--font); border-top: 1.5px solid var(--grey_3); padding-top: 30px }
+#core #sidebar ul.directory li { text-transform: uppercase; font-family: var(--font); font-size: 14px; line-height: 20px; position: relative }
 #core #sidebar ul.directory li.parent { font-family: var(--mono_m); margin-bottom:15px; padding-right: 15px }
-#core #sidebar ul.directory li.parent:after { content: '<'; font-family: var(--mono); color:var(--grey_2); position: absolute; right:0px }
+#core #sidebar ul.directory li.parent:after { content: '<'; font-family: var(--font); color:var(--grey_2); position: absolute; right:0px }
 #core #sidebar ul.directory li:hover:before { content:'•'; position: absolute; left:-15px }
 #core #sidebar ul.directory li.active:before { content:'•'; position: absolute; left:-15px; color:var(--grey_2) }
 /* Content */
@@ -114,7 +114,7 @@ a.repl:before { content:"λ " }
 #core #content h4 a:hover { text-decoration: underline }
 #core #content h4 b { font-weight: normal; font-family: var(--font_b) }
 #core #content iframe { margin-bottom: 45px; border-radius: var(--rounded); overflow: hidden; max-width: 675px; display: block; width:100% }
-#core #content table { overflow: hidden; border-collapse: separate; font-family: var(--mono); min-width: 50%; font-size:12px; line-height:20px; margin-bottom:30px}
+#core #content table { overflow: hidden; border-collapse: separate; font-family: var(--font); min-width: 50%; font-size:12px; line-height:20px; margin-bottom:30px}
 #core #content table tr th { font-family:var(--mono_m); text-align:left; padding-top:10px; padding-bottom:10px }
 #core #content table tr > * { padding-right:20px; padding-left:20px; border-right:1.5px solid var(--grey_4) }
 #core #content table tr > *:first-child { padding-left:0px }
@@ -130,7 +130,7 @@ a.repl:before { content:"λ " }
 #core #content ul li b { font-family: var(--font_b); font-weight: normal }
 #core #content ul li a.external:after { content: "°"; color: var(--grey_4); font-family: var(--font_b); padding-left:1px; transition: all 250ms}
 #core #content ul li a.external:hover:after { color:var(--color_1) }
-#core #content code { font-family: var(--mono); font-size: 12px; padding: 20px 30px; max-width: 670px; margin-bottom: 30px; line-height: 18px; overflow-x: auto; overflow-y: hidden; background: var(--grey_1); color: var(--grey_4); border-radius: var(--rounded) }
+#core #content code { font-family: var(--font); font-size: 12px; padding: 20px 30px; max-width: 670px; margin-bottom: 30px; line-height: 18px; overflow-x: auto; overflow-y: hidden; background: var(--grey_1); color: var(--grey_4); border-radius: var(--rounded) }
 #core #content code b { font-family: var(--mono_m); font-weight: normal;  }
 #core #content code li { display: block; line-height: 20px }
 #core #content code li a { font-family: var(--mono_m); text-decoration: underline }
@@ -153,7 +153,7 @@ a.repl:before { content:"λ " }
 #core #content div.quote p.text b { font-family: var(--serif_b); font-weight: normal }
 #core #content div.quote p.text a { font-family: var(--serif_b); text-decoration: none; transition: all 250ms }
 #core #content div.quote p.text a:hover { border-bottom-color: var(--grey_4) }
-#core #content div.quote p.attrib { font-size: 12px; line-height: 20px; font-family: var(--mono); color: var(--grey_3) }
+#core #content div.quote p.attrib { font-size: 12px; line-height: 20px; font-family: var(--font); color: var(--grey_3) }
 #core #content div.quote p.attrib a { font-family: var(--mono_m); text-decoration: none; background: var(--grey_1); color: var(--grey_3); padding: 0px 10px; display: inline-block; line-height: 25px; border-radius:var(--rounded); border-bottom:0px !important }
 #core #content div.quote p.attrib b { font-family: var(--mono_m); text-decoration: none }
 #core #content div.quote p.attrib a:hover { background: var(--grey_4); color:var(--grey_1) }
@@ -205,7 +205,7 @@ a.repl:before { content:"λ " }
 /* Footer */
 #footer { background: var(--grey_4); color: var(--grey_1); padding: 0px 30px; clear:both; position: relative }
 #footer .wr { padding: 30px 0px; font-size: 12px; line-height: 40px; color: var(--grey_1); margin: 0px; max-width: 100%; vertical-align: middle}
-#footer .wr center { display: inline-block; position: absolute; left:calc(50% - 75px); font-family: var(--mono); font-size:12px }
+#footer .wr center { display: inline-block; position: absolute; left:calc(50% - 75px); font-family: var(--font); font-size:12px }
 #footer .wr a { font-family: var(--font_b);  }
 #footer .wr a:hover { color:var(--grey_4); opacity: 1; text-decoration: underline }
 #footer .wr a:hover { cursor: pointer }
@@ -243,7 +243,7 @@ body.noir #core #content .entry { color:var(--grey_1) }
 body.noir #core #sidebar ul.directory { border-top:1.5px solid var(--grey_3) }
 body.noir #core .tracker svg.horaire { stroke:var(--grey_1); margin-bottom: -30px }
 /* Terminal */
-#terminal { background: var(--grey_4); padding: 30px !important; line-height: 15px; display: block; color: var(--grey_1); font-size: 12px; font-family: var(--mono); transition: top 250ms; overflow-y: scroll; position: fixed; top: -600px; z-index: 9002; width: 600px; left: calc(50% - 300px - 30px); max-width: calc(100vw - 60px) ; height: 300px; border-radius: var(--rounded); box-shadow: 10px 10px var(--grey_4)2}
+#terminal { background: var(--grey_4); padding: 30px !important; line-height: 15px; display: block; color: var(--grey_1); font-size: 12px; font-family: var(--font); transition: top 250ms; overflow-y: scroll; position: fixed; top: -600px; z-index: 9002; width: 600px; left: calc(50% - 300px - 30px); max-width: calc(100vw - 60px) ; height: 300px; border-radius: var(--rounded); box-shadow: 10px 10px var(--grey_4)2}
 #terminal.active { top:120px }
 #terminal { line-height: 20px }
 #terminal span.time { color:var(--grey_2); position: absolute }
