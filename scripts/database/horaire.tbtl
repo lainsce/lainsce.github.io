@@ -1,59 +1,59 @@
 DATABASE.horaire = `
 DATE  CODE PICT TERM                 NAME                                                             
 19Q11 -335      Home                 Home - Fix Styling
-19Q10 -101                           Recharge
-19Q09 -111                           Desktop - New Monitor Recieved
-19Q08 -111                           Desktop - New Monitor Bought
-19Q08 -117                           Fysi - Worked there
-19Q07 -118                           Twitch - Watched MoonMoon2
-19Q06 -118                           Twitch - Watched AdmiralBahroo
-19Q05 -118                           Twitch - Watched AdmiralBahroo
+19Q10 -101      Home                 Recharge
+19Q09 -111      Desktop              Desktop - New Monitor Recieved
+19Q08 -111      Desktop              Desktop - New Monitor Bought
+19Q08 -117      Fysi                 Fysi - Worked there
+19Q07 -118      Twitch               Twitch - Watched MoonMoon2
+19Q06 -118      Twitch               Twitch - Watched AdmiralBahroo
+19Q05 -118      Twitch               Twitch - Watched AdmiralBahroo
 19Q05 -335      Home                 Home - Remove Riven, use Lain Lisp
 19Q04 -283      University           University - Start of 4th Semester (real 2nd Semester, EAD now)
 19Q03 +381      Timetable            Timetable - Release
-19Q02 -118                           Twitch - Watched AdmiralBahroo
+19Q02 -118      Twitch               Twitch - Watched AdmiralBahroo
 19Q01 -348      Timetable            Timetable - Fix tasks preferences being set
-19P14 -101                           Recharge
+19P14 -101      Home                 Recharge
 19P13 !101    3 Desktop              Desktop - Made page about my desktop and the machine
-19P13 -101                           Recharge
-19P12 -118                           Twitch - Watched AdmiralBahroo
-19P11 -118                           Twitch - Watched AdmiralBahroo
+19P13 -101      Home                 Recharge
+19P12 -118      Twitch               Twitch - Watched AdmiralBahroo
+19P11 -118      Twitch               Twitch - Watched AdmiralBahroo
 19P11 -348      Niu                  Niu - Release
 19P10 -348      Niu                  Niu - Fix crash when 000:000, or variants, is the time
 19P09 -179      Fysi                 Fysi - Worked at
-19P08 -118                           Twitch - Watched AdmiralBahroo
+19P08 -118      Twitch               Twitch - Watched AdmiralBahroo
 19P07 +381      Quilter              Quilter - Release
 19P07 -374      Quilter              Quilter - Maintenance, removed errors and stuff
 19P06 +381      Timetable            Timetable - Release
 19P06 +381      Aesop                Aesop - Release
-19P05 -118                           Twitch - Watched AdmiralBahroo
+19P05 -118      Twitch               Twitch - Watched AdmiralBahroo
 19P04 -347      Aesop                Aesop - Fix page zoom and page jumper number
 19P03 -329      Timetable            Timetable - Finish drag and drop
 19P03 +381      Dot Matrix           Dot Matrix - Release
-19P03 -118                           Twitch - Watched AdmiralBahroo
+19P03 -118      Twitch               Twitch - Watched AdmiralBahroo
 19P02 +382      Niu                  Niu - Release
 19P02 +382      Quilter              Quilter - Release
 19P02 -349      Timetable            Timetable - Implement drag and drop
 19P01 -329      Timetable            Timetable - Begin implementation of drag stuff
-19P01 -118                           Twitch - Watched Zero
-19P01 -112                           Twitch - Watched Cirno
-19P01 -118                           Twitch - Watched AdmiralBahroo
+19P01 -118      Twitch               Twitch - Watched Zero
+19P01 -112      Twitch               Twitch - Watched Cirno
+19P01 -118      Twitch               Twitch - Watched AdmiralBahroo
 19P01 -319      Timetable            Timetable - Start work on dragging stuff
 19P01 +351      Yishu                Yishu - Release
 19P01 -335      Home                 Home - Backport fixes on Riven and Friends
 19O14 -349      Quilter              Quilter - Fix spellchecking, sidebar geometry
 19O14 -349      Niu                  Niu - Fix pomodoro
 19O14 -348      Niu                  Niu - Fix Arvelie & Neralie reporting
-19O14 -118                           Twitch - Watched AdmiralBahroo
-19O13 -118                           Twitch - Watched AdmiralBahroo
+19O14 -118      Twitch               Twitch - Watched AdmiralBahroo
+19O13 -118      Twitch               Twitch - Watched AdmiralBahroo
 19O13 -188      Sayakuxa             Sayakuxa - Music notation system
-19O12 -182                           Portals - Added the country Mon Thu
-19O12 +188                           Portals - Added the conlang Món Tų
+19O12 -182      Mon Tu               Portals - Added the country Mon Thu
+19O12 +188      Mon Tu               Portals - Added the conlang Món Tų
 19O12 -366      Yishu                Yishu - Redesign the app
 19O12 -356      Yishu                Yishu - Fix Del keybind, it was legacy code
 19O12 -368      Dot Matrix           Dot Matrix - Use ecosystem colors in UI correctly
-19O11 -182                           Portals - Added the country Sayakuxa
-19O11 +188                           Portals - Added the conlang Sayala
+19O11 -182      Sayakuxa             Portals - Added the country Sayakuxa
+19O11 +188      Sayakuxa             Portals - Added the conlang Sayala
 19O11 -365      Home                 Porting old logs
 19O10 !381    2 Dot Matrix           Dot Matrix - Release
 19O10 -347      Dot Matrix           Dot Matrix - Made curves better
@@ -64,16 +64,16 @@ DATE  CODE PICT TERM                 NAME
 19O07 -343      Home                 Site - Made a tracker page
 19O06 -368      Niu                  Niu - Design icon
 19O05 +328      Niu                  Niu - Start coding
-19O04 -118                           Twitch - Watched MoonMoon2
-19O03 -118                           Twitch - Watched AdmiralBahroo
-19O02 -341                           Tracker - Rearranged Log
-19O02 -122                           Tidal - Listened to Black Moth Super Rainbow
-19O01 -245                           Tracker - LOG to TBTL
-19O01 -118                           Twitch - Watched MoonMoon2
-19O01 +388                           elementary DateTime - Release (PR)
-19O01 -338                           elementary DateTime - Coding
-19O01 -328                           elementary DateTime - Coding
-19O01 -122                           Tidal - Listened to Clark
+19O04 -118      Twitch               Twitch - Watched MoonMoon2
+19O03 -118      Twitch               Twitch - Watched AdmiralBahroo
+19O02 -341      Home                 Tracker - Rearranged Log
+19O02 -122      Tidal                Tidal - Listened to Black Moth Super Rainbow
+19O01 -245      Home                 Tracker - LOG to TBTL
+19O01 -118      Twitch               Twitch - Watched MoonMoon2
+19O01 +388      elementary OS        elementary DateTime - Release (PR)
+19O01 -338      elementary OS        elementary DateTime - Coding
+19O01 -328      elementary OS        elementary DateTime - Coding
+19O01 -122      Tidal                Tidal - Listened to Clark
 19O01 +365      Home                 Home - Begin journaling again
 19N14 -188      Mon Tu               Mon Tu - Make a script for the language
 19N12 -188      Mon Thu               Mon Thu - Develop country idea
@@ -85,7 +85,7 @@ DATE  CODE PICT TERM                 NAME
 19N06 -188      Mon Tu               Mon Tu - Nouns
 19N05 -188      Mon Tu               Mon Tu - Started conlang
 19N04 +381      Reganam              Reganam - Release
-19M07 -396                           elementary OS - Joined the UX team
+19M07 -396      elementary OS        elementary OS - Joined the UX team
 19M06 -342      Reganam              Reganam - Add planet buster
 19M05 +384      Notejot              Notejot - Release
 19M04 -342      Reganam              Reganam - Fix price bug
@@ -120,7 +120,7 @@ DATE  CODE PICT TERM                 NAME
 19F02 -188      Sayala               Sayala - Verbs
 19F02 -188      Sayala               Sayala - Nouns
 19F01 -188      Sayala               Sayala - Started conlang
-19E14 -118                           Twitch - Watched AdmiralBahroo
+19E14 -118      Twitch               Twitch - Watched AdmiralBahroo
 19E13 +381      Timetable            Timetable - Release
 19E13 +381      Dot Matrix           Dot Matrix - Release
 19E12 -342      Dot Matrix           Dot Matrix - Implement filled shapes
@@ -129,7 +129,7 @@ DATE  CODE PICT TERM                 NAME
 19E10 -367      Home                 Home - Make it responsive
 19E10 -367      Home                 Home - Redesign
 19E10 +381      Dot Matrix           Dot Matrix - Release
-19E09 -179                           Fysi - Worked at
+19E09 -179      Fysi                 Fysi - Worked at
 19E08 -346      Dot Matrix           Dot Matrix - Implement Show/Hide grid
 19E08 -346      Dot Matrix           Dot Matrix - Implement Linecap change
 19E08 -345      Dot Matrix           Dot Matrix - Implement cursor guide
@@ -148,18 +148,18 @@ DATE  CODE PICT TERM                 NAME
 19E03 +384      Quilter              Quilter - Release
 19E03 -326      Dot Matrix           Dot Matrix - Try making it in GTK only
 19E03 +311      Dot Matrix           Dot Matrix - Start coding
-19E02 -192                           Twitch - Played twitch stocks game
+19E02 -192      Twitch               Twitch - Played twitch stocks game
 19E01 +384      Quilter              Quilter - Release
 19E01 -337      Quilter              Quilter - Fix opening files
-19E01 -192                           Twitch - Played twitch stocks game
+19E01 -192      Twitch               Twitch - Played twitch stocks game
 19D14 -332      Yishu                Yishu - Added German translation
 19D14 +384      Timetable            Timetable - Release
-19D14 -192                           Twitch - Played twitch stocks game
-19D13 -192                           Twitch - Played twitch stocks game
+19D14 -192      Twitch               Twitch - Played twitch stocks game
+19D13 -192      Twitch               Twitch - Played twitch stocks game
 19D13 -316      Timetable            Timetable - Opening .org files
 19D13 -336      Timetable            Timetable - Fix loading color from files
 19D12 +364      Home                 Home - Start journaling
-19C07 -283                           University - Start of 3rd Semester
+19C07 -283      University           University - Start of 3rd Semester
 18X03 -376      Quilter              Quilter - Fix pdf exporting
 18X03 -366      Quilter              Quilter - Moon Theme
 18W11 +384      Beemy                Beemy - Release
@@ -265,7 +265,7 @@ DATE  CODE PICT TERM                 NAME
 17V08 -346      Notejot              Notejot - Fix opening duplicate windows
 17V07 -347      Notejot              Notejot - Move options to Appmenu
 17V05 +383      Quilter              Quilter - Release
-17V05 -118                           Twitch - Watched AdmiralBahroo
+17V05 -118      Twitch               Twitch - Watched AdmiralBahroo
 17V04 -374      Quilter              Quilter - Fix many minor bugs
 17U12 +383      Quilter              Quilter - Release
 17U11 -363      Coin                 Coin -  Fix width of app
@@ -291,7 +291,7 @@ DATE  CODE PICT TERM                 NAME
 17R10 +384      Quilter              Quilter - Release
 17R08 -364      Quilter              Quilter - New palette
 17R07 +384      Quilter              Quilter - Release
-17Q05 -118                           Twitch - Watched AdmiralBahroo
+17Q05 -118      Twitch               Twitch - Watched AdmiralBahroo
 17P11 +314      Coin                 Coin - Release
 17P08 -341      Coin                 Coin - Add XAR and SAR coins
 17P03 -347      Quilter              Quilter - Show which file is open
