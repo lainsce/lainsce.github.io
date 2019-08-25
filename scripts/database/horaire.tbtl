@@ -1,5 +1,6 @@
 DATABASE.horaire = `
 DATE  CODE PICT TERM                 NAME                                                             
+19Q12 -346      elementary OS        elementary OS - new PR for a plug
 19Q11 -335      Home                 Home - Fix Styling
 19Q10 -101      Home                 Recharge
 19Q09 -111      Desktop              Desktop - New Monitor Recieved
@@ -76,7 +77,7 @@ DATE  CODE PICT TERM                 NAME
 19O01 -122      Tidal                Tidal - Listened to Clark
 19O01 +365      Home                 Home - Begin journaling again
 19N14 -188      Mon Tu               Mon Tu - Make a script for the language
-19N12 -188      Mon Thu               Mon Thu - Develop country idea
+19N12 -188      Mon Tu               Mon Tu - Develop country idea
 19N12 -188      Mon Tu               Mon Tu - Lexicon building #2
 19N08 -188      Mon Tu               Mon Tu - Lexicon building #1
 19N07 -188      Mon Tu               Mon Tu - Syntax relations
