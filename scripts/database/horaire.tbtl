@@ -1,6 +1,8 @@
 DATABASE.horaire = `
 DATE  CODE PICT TERM                 NAME                                                             
 19R04 +381      Quilter              Quilter - Release
+19R03 -118      Twitch               Twitch - Watched AdmiralBahroo
+19R02 -118      Twitch               Twitch - Watched MrWilsonWilson
 19R01 -374      Quilter              Quilter - Finish work on Layouts
 19Q14 -334      Quilter              Quilter - Work on Layouts
 19Q13 -324      Quilter              Quilter - Start work on Layouts
