@@ -273,7 +273,7 @@ body.noir #core .tracker svg.horaire { stroke:var(--grey_1); margin-bottom: -30p
 #core svg.viz rect.leisure { fill:var(--color_1) }
 #core svg.viz rect.research { fill:var(--color_2) }
 #core svg.viz rect.programming { fill:var(--color_3) }
-#core svg.viz rect.missing { fill:var(--grey_3) }
+#core svg.viz rect.missing { fill:var(--grey_1) }
 #core svg.viz rect.misc { fill:var(--grey_4) !important }
 #core svg.viz rect.today { fill:var(--grey_1) }
 #core svg.viz circle.photo { fill:var(--grey_1); stroke:none }
