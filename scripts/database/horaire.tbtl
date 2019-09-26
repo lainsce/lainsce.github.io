@@ -1,5 +1,23 @@
 DATABASE.horaire = `
 DATE  CODE PICT TERM                 NAME                                                             
+19T03 -101      Home                 Recharge
+19T02 -101      Home                 Recharge
+19T01 -101      Home                 Recharge
+19S14 -101      Home                 Recharge
+19S13 -101      Home                 Recharge
+19S12 -101      Home                 Recharge
+19S11 -101      Home                 Recharge
+19S10 -101      Home                 Recharge
+19S09 -101      Home                 Recharge
+19S08 -101      Home                 Recharge
+19S07 -101      Home                 Recharge
+19S06 -101      Home                 Recharge
+19S05 -101      Home                 Recharge
+19S04 -101      Home                 Recharge
+19S03 -101      Home                 Recharge
+19S02 -101      Home                 Recharge
+19S01 -101      Home                 Recharge
+19R14 -101      Home                 Recharge
 19R13 -118      Twitch               Twitch - Watched AdmiralBahroo
 19R12 -118      Twitch               Twitch - Watched AdmiralBahroo
 19R11 -118      Twitch               Twitch - Watched MoonMoon2

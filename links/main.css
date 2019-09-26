@@ -1,16 +1,16 @@
 /* here dwells the one who wished to design deliberately */
 :root {
-  --background: #f7fff8;
+  --background: #fff;
   /* get colors by the lightest color */
   --color:148.1, 67.2%;
   --l:54.5%;
   --color_1: hsl(var(--color),var(--l));
   --color_2: hsl(var(--color),calc(var(--l) - 15%));
   --color_3: hsl(var(--color),calc(var(--l) - 30%));
-  --grey_1: #e6eee7;
-  --grey_2: #D7E8DB;
-  --grey_3: #20313E;
-  --grey_4: #0E161A;
+  --grey_1: #eee;
+  --grey_2: #ddd;
+  --grey_3: #222;
+  --grey_4: #000;
   --rounded: 2px;
 }
 .fg_leisure { color:var(--color_1) }
@@ -21,7 +21,7 @@
 .bg_research { background-color:var(--color_2) !important }
 .bg_programming { background-color:var(--color_3) !important }
 .bg_misc { background-color:var(--grey_3) !important }
-.redlink { color:#cc2222 !important }
+.redlink { color:#ff0000 !important }
 .hidden { display: none }
 .visible { display: block }
 /* Sprites */
