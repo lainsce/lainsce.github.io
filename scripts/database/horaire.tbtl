@@ -1,8 +1,8 @@
 DATABASE.horaire = `
 DATE  CODE PICT TERM                 NAME
-19V13 -101      Home                 Recharge
-19T12 -101      Home                 Recharge
-19T11 -101      Home                 Recharge
+19W03 +381      Quilter              Quilter - Release
+19T12 -374      Quilter              Quilter - Maintenance, removed errors and stuff
+19T11 -374      Quilter              Quilter - Maintenance, removed errors and stuff
 19V10 -283      University           University - Midterms (3/3)
 19V09 -283      University           University - Midterms (2/3)
 19V08 -283      University           University - Midterms (1/3)
