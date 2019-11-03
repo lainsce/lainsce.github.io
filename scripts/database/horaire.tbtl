@@ -1,5 +1,43 @@
 DATABASE.horaire = `
-DATE  CODE PICT TERM                 NAME                                                             
+DATE  CODE PICT TERM                 NAME
+19V13 -101      Home                 Recharge
+19T12 -101      Home                 Recharge
+19T11 -101      Home                 Recharge
+19V10 -283      University           University - Midterms (3/3)
+19V09 -283      University           University - Midterms (2/3)
+19V08 -283      University           University - Midterms (1/3)
+19V07 -182      Anglesian            Do art #4
+19V06 -182      Anglesian            Do art #3
+19V05 -182      Anglesian            Do art #2
+19V04 -182      Anglesian            Do art #1
+19V03 -182      Anglesian            Start discord server
+19V02 -182      Anglesian            Start subreddit
+19V01 -182      Anglesian            Start vertical cypher
+19U14 -251      University           Studying
+19U13 -251      University           Studying
+19U12 -251      University           Studying
+19U11 -251      University           Studying
+19U10 -251      University           Studying
+19U09 -251      University           Studying
+19U08 -251      University           Studying
+19U07 -251      University           Studying
+19U06 -251      University           Studying
+19U05 -251      University           Studying
+19U04 -251      University           Studying
+19U03 -251      University           Studying
+19U02 -251      University           Studying
+19U01 -251      University           Studying
+19T14 -101      Home                 Recharge
+19T13 -101      Home                 Recharge
+19T12 -101      Home                 Recharge
+19T11 -101      Home                 Recharge
+19T10 -101      Home                 Recharge
+19T09 -101      Home                 Recharge
+19T08 -101      Home                 Recharge
+19T07 -101      Home                 Recharge
+19T06 -101      Home                 Recharge
+19T05 -101      Home                 Recharge
+19T04 -101      Home                 Recharge
 19T03 -101      Home                 Recharge
 19T02 -101      Home                 Recharge
 19T01 -101      Home                 Recharge
@@ -92,7 +130,7 @@ DATE  CODE PICT TERM                 NAME
 19O10 !381    2 Dot Matrix           Dot Matrix - Release
 19O10 -347      Dot Matrix           Dot Matrix - Made curves better
 19O10 -344      Dot Matrix           Dot Matrix - Use Ecosystem colors correctly
-19O09 -343      Home                 Site - Port whole site to Riven                          
+19O09 -343      Home                 Site - Port whole site to Riven
 19O09 -343      Home                 Site - Fix tracker page
 19O08 !382    1 Niu                  Niu - Release
 19O07 -343      Home                 Site - Made a tracker page
