@@ -1,37 +1,7 @@
 DATABASE.horaire = `
 DATE  CODE PICT TERM                 NAME
-19Y02 -101      Home                 Recharge
-19Y01 -101      Home                 Recharge
-19X14 -101      Home                 Recharge
 19X13 -188      Sayala               Sayala - Some fixes
-19X12 -101      Home                 Recharge
-19X11 -101      Home                 Recharge
-19X10 -101      Home                 Recharge
-19X09 -101      Home                 Recharge
-19X08 -101      Home                 Recharge
-19X07 -101      Home                 Recharge
-19X06 -101      Home                 Recharge
-19X05 -101      Home                 Recharge
-19X04 -101      Home                 Recharge
-19X03 -101      Home                 Recharge
-19X02 -101      Home                 Recharge
-19X01 -101      Home                 Recharge
-19W14 -101      Home                 Recharge
-19W13 -101      Home                 Recharge
-19W12 -101      Home                 Recharge
-19W11 -101      Home                 Recharge
-19W10 -101      Home                 Recharge
-19W09 -101      Home                 Recharge
-19W08 -101      Home                 Recharge
-19W07 -101      Home                 Recharge
-19W06 -101      Home                 Recharge
-19W05 -101      Home                 Recharge
-19W04 -101      Home                 Recharge
 19W03 +381      Quilter              Quilter - Release
-19W02 -101      Home                 Recharge
-19W01 -101      Home                 Recharge
-19V14 -101      Home                 Recharge
-19V13 -101      Home                 Recharge
 19V12 -374      Quilter              Quilter - Maintenance, removed errors and stuff
 19V11 -374      Quilter              Quilter - Maintenance, removed errors and stuff
 19V10 -283      University           University - Midterms (3/3)
@@ -58,44 +28,9 @@ DATE  CODE PICT TERM                 NAME
 19U03 -251      University           Studying
 19U02 -251      University           Studying
 19U01 -251      University           Studying
-19T14 -101      Home                 Recharge
-19T13 -101      Home                 Recharge
-19T12 -101      Home                 Recharge
-19T11 -101      Home                 Recharge
-19T10 -101      Home                 Recharge
-19T09 -101      Home                 Recharge
-19T08 -101      Home                 Recharge
-19T07 -101      Home                 Recharge
-19T06 -101      Home                 Recharge
-19T05 -101      Home                 Recharge
-19T04 -101      Home                 Recharge
-19T03 -101      Home                 Recharge
-19T02 -101      Home                 Recharge
-19T01 -101      Home                 Recharge
-19S14 -101      Home                 Recharge
-19S13 -101      Home                 Recharge
-19S12 -101      Home                 Recharge
-19S11 -101      Home                 Recharge
-19S10 -101      Home                 Recharge
-19S09 -101      Home                 Recharge
-19S08 -101      Home                 Recharge
-19S07 -101      Home                 Recharge
-19S06 -101      Home                 Recharge
-19S05 -101      Home                 Recharge
-19S04 -101      Home                 Recharge
-19S03 -101      Home                 Recharge
-19S02 -101      Home                 Recharge
-19S01 -101      Home                 Recharge
-19R14 -101      Home                 Recharge
 19R13 -118      Twitch               Twitch - Watched AdmiralBahroo
 19R12 -118      Twitch               Twitch - Watched AdmiralBahroo
 19R11 -118      Twitch               Twitch - Watched MoonMoon2
-19R10 -101      Home                 Recharge
-19R09 -101      Home                 Recharge
-19R08 -101      Home                 Recharge
-19R07 -101      Home                 Recharge
-19R06 -101      Home                 Recharge
-19R05 -101      Home                 Recharge
 19R04 +381      Quilter              Quilter - Release
 19R03 -118      Twitch               Twitch - Watched AdmiralBahroo
 19R02 -118      Twitch               Twitch - Watched MrWilsonWilson
