@@ -1,8 +1,39 @@
 DATABASE.horaire = `
 DATE  CODE PICT TERM                 NAME
+19Y02 -101      Home                 Recharge
+19Y01 -101      Home                 Recharge
+19X14 -101      Home                 Recharge
+19X13 -188      Sayala               Sayala - Some fixes
+19X12 -101      Home                 Recharge
+19X11 -101      Home                 Recharge
+19X10 -101      Home                 Recharge
+19X09 -101      Home                 Recharge
+19X08 -101      Home                 Recharge
+19X07 -101      Home                 Recharge
+19X06 -101      Home                 Recharge
+19X05 -101      Home                 Recharge
+19X04 -101      Home                 Recharge
+19X03 -101      Home                 Recharge
+19X02 -101      Home                 Recharge
+19X01 -101      Home                 Recharge
+19W14 -101      Home                 Recharge
+19W13 -101      Home                 Recharge
+19W12 -101      Home                 Recharge
+19W11 -101      Home                 Recharge
+19W10 -101      Home                 Recharge
+19W09 -101      Home                 Recharge
+19W08 -101      Home                 Recharge
+19W07 -101      Home                 Recharge
+19W06 -101      Home                 Recharge
+19W05 -101      Home                 Recharge
+19W04 -101      Home                 Recharge
 19W03 +381      Quilter              Quilter - Release
-19T12 -374      Quilter              Quilter - Maintenance, removed errors and stuff
-19T11 -374      Quilter              Quilter - Maintenance, removed errors and stuff
+19W02 -101      Home                 Recharge
+19W01 -101      Home                 Recharge
+19V14 -101      Home                 Recharge
+19V13 -101      Home                 Recharge
+19V12 -374      Quilter              Quilter - Maintenance, removed errors and stuff
+19V11 -374      Quilter              Quilter - Maintenance, removed errors and stuff
 19V10 -283      University           University - Midterms (3/3)
 19V09 -283      University           University - Midterms (2/3)
 19V08 -283      University           University - Midterms (1/3)

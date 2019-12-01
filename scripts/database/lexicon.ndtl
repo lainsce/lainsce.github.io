@@ -351,8 +351,7 @@ SAYALA
     | {(bold "Vowels")} | Front   | Central  | Back
     | Close            | i∼ɪ (i) |          | ɯ∼u (u)
     | Close-Mid        | e∼ɛ (e) |          | o~ɔ (o)
-    | Mid              |         | ə (a)    | ⠀
-    | Open             | a∼ɑ (a) | ⠀       | ⠀
+    | Open             | a∼ɑ (a) | ⠀               | ⠀
     * Phonotactics
     & There is a limited set of syllables, of the type CV (consonant-vowel). The phonotactics does not typically allow the onsets of adjacent syllables to be identical, nor both to be labialized or palatalized. Syllables beginning with {(code "/l/")} do not occur as the first syllable of a headword (except in loanwords and toponyms).
     * Syllables
@@ -364,16 +363,16 @@ SAYALA
     * {(bold "Morphology")}
     & Sayala is a mostly agglutinative language that makes extensive use of compounding, incorporation and derivation. That is, it can add many different prefixes and suffixes to a root until very long words are formed, and a single word can sometimes constitute an entire sentence. The words of Sayala can be divided into two basic functional classes: verbs and nouns as content words, and particles and others as functional. Adjectives exist, but they generally behave like verbs and there are very few adjectives that are not derived from either verbal pronominal roots. The few adverbs that exist fall into the class of particles or are derived from verbs. The most important element of Sayala lexemes to keep in mind is that they may function as a verb, noun, adjective, or an adverb based on where they fall in the phrase, and any various endings that may be affixed.
     * Nouns
-    & When pluralizing words that end in a {(code "m")}, {(code "mp")} or {(code "p")} syllable, you use the ending {(code "-lo")}
-    | {(bold "Nouns")} | Singular                | Plural   | Collective
-    | Number           |  ⠀                      | -m / -lo | -xa
-    | Gender           | -na (masc) / -ta (fem)  |  ⠀       |  ⠀
-    | Honorific        | o-                      |  ⠀       |  ⠀
+    & When pluralizing words that end in a {(code "m")}, {(code "mp")} or {(code "p")} syllable, you use the ending {(code "-lo")} and {(code "-tlo")}.
+    | {(bold "Nouns")} | Singular      | Plural   | Collective
+    | Number           | -Ø            | -m / -lo | -xa⠀ ⠀
+    | Size             | -li (Diminutive) / -mai (Augmentative) |⠀|⠀
     & Noun Cases:
     | {(bold "Cases")}                   | Suffixes
     | Genitive                           | -yo
     | Instrumental                       | -ha
     | Nominative (form verbs into nouns) | -ko / -tlo
+    | Vocative                           | o-
     * Pronouns
     & Pronouns are often omitted when the person is obvious from context. There are four persons in Sayala. The 4th being inanimate, or indefinite. The 3rd person plural is irregular, all other pronouns decline regularly. Pronouns do not inflect for gender.
     | {(bold "Pronouns")} | Agent | Patient | Reflexive | Possesive | Reciprocal
