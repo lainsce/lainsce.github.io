@@ -1,5 +1,6 @@
 DATABASE.horaire = `
 DATE  CODE PICT TERM                 NAME
+19Z10 -188      Sayala               Sayala - Added phoneme & letter "c" /ts/
 19Z03 +381      Quilter              Quilter - Release
 19Z02 -374      Quilter              Quilter - Maintenance, removed errors and stuff
 19Z01 -374      Quilter              Quilter - Maintenance, removed errors and stuff
