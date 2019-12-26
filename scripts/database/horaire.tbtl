@@ -1,5 +1,11 @@
 DATABASE.horaire = `
 DATE  CODE PICT TERM                 NAME
+19Z03 +381      Quilter              Quilter - Release
+19Z02 -374      Quilter              Quilter - Maintenance, removed errors and stuff
+19Z01 -374      Quilter              Quilter - Maintenance, removed errors and stuff
+19Y14 +381      Quilter              Quilter - Release
+19Y13 -374      Quilter              Quilter - Maintenance, removed errors and stuff
+19Y12 -374      Quilter              Quilter - Maintenance, removed errors and stuff
 19X13 -188      Sayala               Sayala - Some fixes
 19W03 +381      Quilter              Quilter - Release
 19V12 -374      Quilter              Quilter - Maintenance, removed errors and stuff
