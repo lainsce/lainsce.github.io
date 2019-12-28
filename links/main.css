@@ -2,8 +2,8 @@
 :root {
   --background: #fff;
   /* get colors by the lightest color */
-  --color:148.1, 67.2%;
-  --l:54.5%;
+  --color:150, 100%;
+  --l:50%;
   --color_1: hsl(var(--color),var(--l));
   --color_2: hsl(var(--color),calc(var(--l) - 15%));
   --color_3: hsl(var(--color),calc(var(--l) - 30%));
