@@ -7,7 +7,7 @@ HOME
     & Welcome to the homepage of Lains.
     & This page provides a link into his world. It's made simple due to his love for minimalism.
     λ (wrap (template (match (database:select "lexicon") (uniq (pry (database:select "horaire") "term"))) SPAN) "ul" "tidy col3")
-    @ Walk down this path, and you'll find the <b>old remains</b> of the planet. | Saltan Panomisi | 3/18Y02
+    @ Walk down this path, and you'll find the <b>old remains</b> of the planet. | Saltan Panomisi | 30/18Y02
 
 TRACKER
   UNDE : Horaire
@@ -311,7 +311,7 @@ SAYAKUXA
     - A huge river crosses Sayakuxa horizontally, naturally diving the country into {(bold "2 provinces")}.
     % conlang/sayakuxa_map.png
     λ (template host:children INDEX)
-    @ The flag of Sayakuxa still stands proud on the many roads of Palatisu | Isil Hemikas | 3/78Y02
+    @ The flag of Sayakuxa still stands proud on the many roads of Palatisu | Isil Hemikas | 30/78Y02
 
 SAYAKUXAN MUSIC
   UNDE : Sayakuxa
@@ -459,4 +459,13 @@ SAYALA
     - {(bold "ni")} = this
     - {(bold "na")} = that
     & The use of the demonstrative requires the noun to be affixed with the locative, as seen above.
+
+NEW NAXA
+  UNDE : Sayala
+  ICON : M105,60 A45,60 0 0,0 60,120 A60,60 0 0,0 120,180 A60,60 0 0,0 180,240 L180,180 A60,60 0 0,0 240,120 A45,60 0 0,0 195,60 L105,60 M90,105 L90,105 L120,135 L150,105 L180,135 L210,105
+  BREF : {(link)}, the unified script of the people in Sayakuxa.
+  BODY
+    & New Naxa is the constructed script made for the people of Sayakuxa for use in their personal holopads in writing, reading, and generally anything written since the date of 13 of Month K, 2320 (Stylized as 23/20K13).
+    % conlang/new_naxa.png
+    @ After the advent of personal holopads in the society of Sayakuxa, they decided to uniform a new standard for writing the Sayala language that would be of easy access for texts. Thus was born New Naxa. | Saltan Panomisi | 23/20K13
 `;
