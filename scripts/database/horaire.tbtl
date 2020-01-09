@@ -1,5 +1,9 @@
 DATABASE.horaire = `
 DATE  CODE PICT TERM                 NAME
+20A10 +381      Rakugaki             Rakugaki - Release
+20A08 -373      Rakugaki             Rakugaki - Implementation of halftone pen
+20A07 -371      Rakugaki             Rakugaki - Started work on new app
+20A07 +381      Quilter              Quilter - Release
 20A07 -374      Quilter              Quilter - Maintenance, removed errors and stuff
 20A02 !188    5 Sayala               Sayala - New Naxa script
 20A01 !101    4 Home                 New Year

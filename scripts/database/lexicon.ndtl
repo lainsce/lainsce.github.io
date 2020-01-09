@@ -83,6 +83,14 @@ QUILTER
     & This is a Markdown minimal application developed for elementary OS.
     % generic/quilter.png
 
+RAKUGAKI
+  UNDE : Programming
+  ICON : M180,180 L180,180 L120,120 L120,90 L120,120 L90,90 L120,120 L90,120 M60,180 L60,180 L60,60 L180,60 L180,120 M60,180 L60,180 L120,180
+  BREF : {(link)} is a Markdown minimal application developed for elementary OS.
+  BODY
+    & This is a minimal raster drawing app developed for elementary OS.
+    % generic/rakugaki.png
+
 COIN
   UNDE : Programming
   ICON : M150,60 A45,90 0 0,0 105,150 L105,150 A45,90 0 0,0 150,240 L150,240 A45,90 0 0,0 195,150 L195,150 A45,90 0 0,0 150,60 L150,60 L195,60 M150,240 L150,240 L195,240 A45,90 0 0,0 240,150 L240,150 A45,90 0 0,0 195,60 M150,105 L150,105 L150,195
