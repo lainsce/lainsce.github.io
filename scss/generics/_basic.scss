@@ -69,6 +69,18 @@ html {
         filter: invert(1);
     }
 
+    ::selection {
+        -webkit-filter: invert(1);
+        filter: invert(1);
+        /* WebKit/Blink Browsers */
+    }
+    
+    ::-moz-selection {
+        -webkit-filter: invert(1);
+        filter: invert(1);
+        /* Gecko Browsers */
+    }
+
     .appcenter {
         -webkit-filter: invert(1);
         filter: invert(1);
