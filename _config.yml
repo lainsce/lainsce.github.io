@@ -9,3 +9,5 @@ compress_html:
   blanklines: true
   ignore:
     envs: []
+
+theme: jekyll-theme-tactile
