@@ -8,17 +8,9 @@ $bg: #F4F4F4;
 $card-body: #FFFFFF;
 $outline: #888888;
 $link: #00DAC7;
+$linkv: #FF2437;
 $badge: #444444;
 $hero: #7f7f7f;
-
-@media (prefers-color-scheme: dark) {
-    $fg: #F4F4F4;
-    $bg: #333333;
-    $card-body: #333333;
-    $outline: #888888;
-    $link: #00B8A5;
-    $badge: #CCCCCC;
-}
 
 // Brands
 $aesop: #ccbbaa;

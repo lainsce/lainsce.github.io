@@ -64,20 +64,20 @@ html {
 }
 
 @media (prefers-color-scheme: dark) {
-    body {
+    html {
         -webkit-filter: invert(1);
         filter: invert(1);
     }
 
     ::selection {
-        -webkit-filter: invert(1);
-        filter: invert(1);
+        background-color: $linkv;
+        color: $bg;
         /* WebKit/Blink Browsers */
     }
     
     ::-moz-selection {
-        -webkit-filter: invert(1);
-        filter: invert(1);
+        background-color: $linkv;
+        color: $bg;
         /* Gecko Browsers */
     }
 
