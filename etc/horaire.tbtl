@@ -1,0 +1,396 @@
+DATE  CODE PICT TERM                 NAME
+20A10 +381      Rakugaki             Rakugaki - Release
+20A08 -373      Rakugaki             Rakugaki - Implementation of halftone pen
+20A07 -371      Rakugaki             Rakugaki - Started work on new app
+20A07 +381      Quilter              Quilter - Release
+20A07 -374      Quilter              Quilter - Maintenance, removed errors and stuff
+20A02 !188    5 Sayala               Sayala - New Naxa script
+20A01 !101    4 Home                 New Year
+19Z14 -101      Home                 New Year Eve
+19Z10 -188      Sayala               Sayala - Added phoneme & letter "c" /ts/
+19Z03 +381      Quilter              Quilter - Release
+19Z02 -374      Quilter              Quilter - Maintenance, removed errors and stuff
+19Z01 -374      Quilter              Quilter - Maintenance, removed errors and stuff
+19Y14 +381      Quilter              Quilter - Release
+19Y13 -374      Quilter              Quilter - Maintenance, removed errors and stuff
+19Y12 -374      Quilter              Quilter - Maintenance, removed errors and stuff
+19X13 -188      Sayala               Sayala - Some fixes
+19W03 +381      Quilter              Quilter - Release
+19V12 -374      Quilter              Quilter - Maintenance, removed errors and stuff
+19V11 -374      Quilter              Quilter - Maintenance, removed errors and stuff
+19V10 -283      University           University - Midterms (3/3)
+19V09 -283      University           University - Midterms (2/3)
+19V08 -283      University           University - Midterms (1/3)
+19V07 -182      Anglesian            Do art #4
+19V06 -182      Anglesian            Do art #3
+19V05 -182      Anglesian            Do art #2
+19V04 -182      Anglesian            Do art #1
+19V03 -182      Anglesian            Start discord server
+19V02 -182      Anglesian            Start subreddit
+19V01 -182      Anglesian            Start vertical cypher
+19U14 -251      University           Studying
+19U13 -251      University           Studying
+19U12 -251      University           Studying
+19U11 -251      University           Studying
+19U10 -251      University           Studying
+19U09 -251      University           Studying
+19U08 -251      University           Studying
+19U07 -251      University           Studying
+19U06 -251      University           Studying
+19U05 -251      University           Studying
+19U04 -251      University           Studying
+19U03 -251      University           Studying
+19U02 -251      University           Studying
+19U01 -251      University           Studying
+19R13 -118      Twitch               Twitch - Watched AdmiralBahroo
+19R12 -118      Twitch               Twitch - Watched AdmiralBahroo
+19R11 -118      Twitch               Twitch - Watched MoonMoon2
+19R04 +381      Quilter              Quilter - Release
+19R03 -118      Twitch               Twitch - Watched AdmiralBahroo
+19R02 -118      Twitch               Twitch - Watched MrWilsonWilson
+19R01 -374      Quilter              Quilter - Finish work on Layouts
+19Q14 -334      Quilter              Quilter - Work on Layouts
+19Q13 -324      Quilter              Quilter - Start work on Layouts
+19Q12 -346      elementary OS        elementary OS - new PR for a plug
+19Q11 -335      Home                 Home - Fix Styling
+19Q10 -101      Home                 Recharge
+19Q09 -111      Desktop              Desktop - New Monitor Recieved
+19Q08 -111      Desktop              Desktop - New Monitor Bought
+19Q08 -117      Fysi                 Fysi - Worked there
+19Q07 -118      Twitch               Twitch - Watched MoonMoon2
+19Q06 -118      Twitch               Twitch - Watched AdmiralBahroo
+19Q05 -118      Twitch               Twitch - Watched AdmiralBahroo
+19Q05 -335      Home                 Home - Remove Riven, use Lain Lisp
+19Q04 -283      University           University - Start of 4th Semester (real 2nd Semester, EAD now)
+19Q03 +381      Timetable            Timetable - Release
+19Q02 -118      Twitch               Twitch - Watched AdmiralBahroo
+19Q01 -348      Timetable            Timetable - Fix tasks preferences being set
+19P14 -101      Home                 Recharge
+19P13 !101    3 Desktop              Desktop - Made page about my desktop and the machine
+19P13 -101      Home                 Recharge
+19P12 -118      Twitch               Twitch - Watched AdmiralBahroo
+19P11 -118      Twitch               Twitch - Watched AdmiralBahroo
+19P11 -348      Niu                  Niu - Release
+19P10 -348      Niu                  Niu - Fix crash when 000:000, or variants, is the time
+19P09 -179      Fysi                 Fysi - Worked at
+19P08 -118      Twitch               Twitch - Watched AdmiralBahroo
+19P07 +381      Quilter              Quilter - Release
+19P07 -374      Quilter              Quilter - Maintenance, removed errors and stuff
+19P06 +381      Timetable            Timetable - Release
+19P06 +381      Aesop                Aesop - Release
+19P05 -118      Twitch               Twitch - Watched AdmiralBahroo
+19P04 -347      Aesop                Aesop - Fix page zoom and page jumper number
+19P03 -329      Timetable            Timetable - Finish drag and drop
+19P03 +381      Dot Matrix           Dot Matrix - Release
+19P03 -118      Twitch               Twitch - Watched AdmiralBahroo
+19P02 +382      Niu                  Niu - Release
+19P02 +382      Quilter              Quilter - Release
+19P02 -349      Timetable            Timetable - Implement drag and drop
+19P01 -329      Timetable            Timetable - Begin implementation of drag stuff
+19P01 -118      Twitch               Twitch - Watched Zero
+19P01 -112      Twitch               Twitch - Watched Cirno
+19P01 -118      Twitch               Twitch - Watched AdmiralBahroo
+19P01 -319      Timetable            Timetable - Start work on dragging stuff
+19P01 +351      Yishu                Yishu - Release
+19P01 -335      Home                 Home - Backport fixes on Riven and Friends
+19O14 -349      Quilter              Quilter - Fix spellchecking, sidebar geometry
+19O14 -349      Niu                  Niu - Fix pomodoro
+19O14 -348      Niu                  Niu - Fix Arvelie & Neralie reporting
+19O14 -118      Twitch               Twitch - Watched AdmiralBahroo
+19O13 -118      Twitch               Twitch - Watched AdmiralBahroo
+19O13 -188      Sayakuxa             Sayakuxa - Music notation system
+19O12 -182      Mon Tu               Portals - Added the country Mon Thu
+19O12 +188      Mon Tu               Portals - Added the conlang Món Tų
+19O12 -366      Yishu                Yishu - Redesign the app
+19O12 -356      Yishu                Yishu - Fix Del keybind, it was legacy code
+19O12 -368      Dot Matrix           Dot Matrix - Use ecosystem colors in UI correctly
+19O11 -182      Sayakuxa             Portals - Added the country Sayakuxa
+19O11 +188      Sayakuxa             Portals - Added the conlang Sayala
+19O11 -365      Home                 Porting old logs
+19O10 !381    2 Dot Matrix           Dot Matrix - Release
+19O10 -347      Dot Matrix           Dot Matrix - Made curves better
+19O10 -344      Dot Matrix           Dot Matrix - Use Ecosystem colors correctly
+19O09 -343      Home                 Site - Port whole site to Riven
+19O09 -343      Home                 Site - Fix tracker page
+19O08 !382    1 Niu                  Niu - Release
+19O07 -343      Home                 Site - Made a tracker page
+19O06 -368      Niu                  Niu - Design icon
+19O05 +328      Niu                  Niu - Start coding
+19O04 -118      Twitch               Twitch - Watched MoonMoon2
+19O03 -118      Twitch               Twitch - Watched AdmiralBahroo
+19O02 -341      Home                 Tracker - Rearranged Log
+19O02 -122      Tidal                Tidal - Listened to Black Moth Super Rainbow
+19O01 -245      Home                 Tracker - LOG to TBTL
+19O01 -118      Twitch               Twitch - Watched MoonMoon2
+19O01 +388      elementary OS        elementary DateTime - Release (PR)
+19O01 -338      elementary OS        elementary DateTime - Coding
+19O01 -328      elementary OS        elementary DateTime - Coding
+19O01 -122      Tidal                Tidal - Listened to Clark
+19O01 +365      Home                 Home - Begin journaling again
+19N14 -188      Mon Tu               Mon Tu - Make a script for the language
+19N12 -188      Mon Tu               Mon Tu - Develop country idea
+19N12 -188      Mon Tu               Mon Tu - Lexicon building #2
+19N08 -188      Mon Tu               Mon Tu - Lexicon building #1
+19N07 -188      Mon Tu               Mon Tu - Syntax relations
+19N07 -188      Mon Tu               Mon Tu - Particle system
+19N06 -188      Mon Tu               Mon Tu - Verbs
+19N06 -188      Mon Tu               Mon Tu - Nouns
+19N05 -188      Mon Tu               Mon Tu - Started conlang
+19N04 +381      Reganam              Reganam - Release
+19M07 -396      elementary OS        elementary OS - Joined the UX team
+19M06 -342      Reganam              Reganam - Add planet buster
+19M05 +384      Notejot              Notejot - Release
+19M04 -342      Reganam              Reganam - Fix price bug
+19M03 +381      Reganam              Reganam - Release
+19M01 -342      Reganam              Reganam - Fix research level reporting
+19L07 -373      Beemy                Beemy - Fix action button
+19K10 -283      University           University - Finals (5/5)
+19K09 -283      University           University - Finals (4/5)
+19K08 -283      University           University - Finals (3/5)
+19K07 -283      University           University - Finals (2/5)
+19K06 -283      University           University - Finals (1/5)
+19K02 +381      Reganam              Reganam - Release
+19J13 -367      Reganam              Reganam - Add help tooltips
+19J13 -377      Reganam              Reganam - Fixed game backend
+19J12 -327      Reganam              Reganam - Add synthesizer types
+19J11 -367      Reganam              Reganam - Set background design
+19J11 -327      Reganam              Reganam - Add planetary types
+19J11 -327      Reganam              Reganam - Add planetary diameter
+19J09 +314      Reganam              Reganam - Start coding
+19I10 -283      University           University - Change campi
+19G01 -283      University           University - Midterms (5/5)
+19F14 -283      University           University - Midterms (4/5)
+19F13 -283      University           University - Midterms (3/5)
+19F11 -188      Sayala               Sayala - Make a script for the language
+19F11 -188      Sayala               Sayakuxa - Develop country idea
+19F10 -283      University           University - Midterms (2/5)
+19F09 -283      University           University - Midterms (1/5)
+19F08 -188      Sayala               Sayala - Lexicon building #2
+19F04 -188      Sayala               Sayala - Lexicon building #1
+19F03 -188      Sayala               Sayala - Syntax relations
+19F03 -188      Sayala               Sayala - Particle system
+19F02 -188      Sayala               Sayala - Verbs
+19F02 -188      Sayala               Sayala - Nouns
+19F01 -188      Sayala               Sayala - Started conlang
+19E14 -118      Twitch               Twitch - Watched AdmiralBahroo
+19E13 +381      Timetable            Timetable - Release
+19E13 +381      Dot Matrix           Dot Matrix - Release
+19E12 -342      Dot Matrix           Dot Matrix - Implement filled shapes
+19E11 -338      Timetable            Timetable - Fix weekend visibility on launch
+19E11 -332      Dot Matrix           Dot Matrix - Added French translation
+19E10 -367      Home                 Home - Make it responsive
+19E10 -367      Home                 Home - Redesign
+19E10 +381      Dot Matrix           Dot Matrix - Release
+19E09 -179      Fysi                 Fysi - Worked at
+19E08 -346      Dot Matrix           Dot Matrix - Implement Show/Hide grid
+19E08 -346      Dot Matrix           Dot Matrix - Implement Linecap change
+19E08 -345      Dot Matrix           Dot Matrix - Implement cursor guide
+19E07 +386      Dot Matrix           Dot Matrix - Release
+19E07 -345      Dot Matrix           Dot Matrix - Implement line coloring
+19E07 -345      Dot Matrix           Dot Matrix - Implement line thickness
+19E06 -346      Dot Matrix           Dot Matrix - Implement curves
+19E06 -346      Dot Matrix           Dot Matrix - Implement reverse curves
+19E06 -345      Dot Matrix           Dot Matrix - Implement drawing lines
+19E05 -365      Dot Matrix           Dot Matrix - Draw app icon
+19E05 -326      Dot Matrix           Dot Matrix - Freeform drawing
+19E05 -346      Dot Matrix           Dot Matrix - Implement Cairo grid
+19E04 -356      Dot Matrix           Dot Matrix - Research GTK drawing area
+19E04 -346      Dot Matrix           Dot Matrix - Rewrite into Cairo
+19E04 -356      Dot Matrix           Dot Matrix - Research Cairo
+19E03 +384      Quilter              Quilter - Release
+19E03 -326      Dot Matrix           Dot Matrix - Try making it in GTK only
+19E03 +311      Dot Matrix           Dot Matrix - Start coding
+19E02 -192      Twitch               Twitch - Played twitch stocks game
+19E01 +384      Quilter              Quilter - Release
+19E01 -337      Quilter              Quilter - Fix opening files
+19E01 -192      Twitch               Twitch - Played twitch stocks game
+19D14 -332      Yishu                Yishu - Added German translation
+19D14 +384      Timetable            Timetable - Release
+19D14 -192      Twitch               Twitch - Played twitch stocks game
+19D13 -192      Twitch               Twitch - Played twitch stocks game
+19D13 -316      Timetable            Timetable - Opening .org files
+19D13 -336      Timetable            Timetable - Fix loading color from files
+19D12 +364      Home                 Home - Start journaling
+19C07 -283      University           University - Start of 3rd Semester
+18X03 -376      Quilter              Quilter - Fix pdf exporting
+18X03 -366      Quilter              Quilter - Moon Theme
+18W11 +384      Beemy                Beemy - Release
+18U14 -333      Beemy                Beemy - Fix calculation of results
+18U14 +384      Yishu                Yishu - Release
+18U13 -384      Yishu                Yishu - Fix searching
+18U12 +383      Quilter              Quilter - Release
+18U11 -326      Quilter              Quilter - Sidebar: fix show/hide
+18U10 -326      Quilter              Quilter - Sidebar workings
+18U10 +383      Timetable            Timetable - Release
+18U09 -343      Timetable            Timetable - Save weekend tasks
+18U08 -342      Timetable            Timetable - Set tasks colors and times
+18U07 -349      Timetable            Timetable - Finish save algorithm
+18U06 -364      Timetable            Timetable - Make tasks design
+18U06 -349      Timetable            Timetable - Deserialize for better save algorithm
+18U05 -338      Timetable            Timetable - Start implementation of saving
+18U05 -344      Timetable            Timetable - Reset if not saved
+18U03 -343      Timetable            Timetable - Implement adding tasks to each day
+18U01 -364      Timetable            Timetable - Implement design
+18U01 +314      Timetable            Timetable - Start coding
+18T12 +384      Beemy                Beemy - Release
+18T11 +383      Aesop                Aesop - Release
+18T10 -333      Beemy                Beemy - Imperial units
+18T08 -346      Quilter              Quilter - Track better: W/L/C
+18T08 -346      Quilter              Quilter - Show choices of Preview font
+18T08 -346      Aesop                Aesop - Zoom keybinds
+18T08 -346      Aesop                Aesop - Live mode
+18T01 -333      Beemy                Beemy - Centimeter units
+18T01 -343      Beemy                Beemy - Button sensitiy based on entries
+18S07 +383      Quilter              Quilter - Release
+18S06 -346      Quilter              Quilter - Words/Lines/Chars tracker
+18S05 +384      Beemy                Beemy - Release
+18S03 -348      Beemy                Beemy - Fix getting data
+18S03 -364      Beemy                Beemy - Implement design
+18S01 +314      Beemy                Beemy - Start coding
+18R12 +383      Coin                 Coin -  Release
+18R11 -343      Coin                 Coin -  Add BitCash option
+18R11 -363      Coin                 Coin -  New change ticker
+18Q02 -346      Quilter              Quilter - Add settings for font size
+18Q02 -346      Aesop                Aesop - Fix jumper buttons
+18O04 +384      Palaura              Palaura - Release
+18N13 +384      Notejot              Notejot - Release
+18N12 -348      Notejot              Notejot - Fix destroyed content when closed
+18N03 -346      Quilter              Quilter - Add search jump buttons
+18N02 -346      Quilter              Quilter - Start work on searchbar
+18M06 +383      Quilter              Quilter - Release
+18M06 +383      Aesop                Aesop - Release
+18M04 -346      Aesop                Aesop - Print properly
+18M04 -346      Aesop                Aesop - Open external files
+18M04 -346      Aesop                Aesop - Zooming functions
+18M03 -346      Aesop                Aesop - Start work on print pdf function
+18M02 -346      Aesop                Aesop - Inverting PDFs
+18M01 -346      Aesop                Aesop - Added page set button
+18L14 +314      Aesop                Aesop - Start coding
+18L06 -376      Quilter              Quilter - Typewriter Mode fixes
+18L06 -346      Quilter              Quilter - Typewriter Mode
+18L05 -346      Quilter              Quilter - Dynamic margins in Editor
+18L04 -346      Quilter              Quilter - Fix PDF margins
+18L03 -337      Quilter              Quilter - Start work on Sidebar
+18L02 -364      Quilter              Quilter - Headerbar to own file
+18L01 -334      Quilter              Quilter - Exporting to HTML
+18K14 -346      Quilter              Quilter - Deprecate custom fonts other than default
+18K12 -364      Quilter              Quilter - Mode switch look in Prefs.
+18K07 -364      Quilter              Quilter - New colors for Modes
+18K07 -366      Quilter              Quilter - Update font
+18K05 -364      Quilter              Quilter - Styling of Mode buttons
+18K05 -366      Quilter              Quilter - Sepia Mode
+18K05 -344      Quilter              Quilter - Extensions page
+18K04 -369      Quilter              Quilter - New font
+18I10 +383      Quilter              Quilter - Release
+18I06 +319      RC Car               RC Car - Start implementation of init
+18I04 -374      Quilter              Quilter - Fix preview mode refresh
+18G14 +383      Coin                 Coin -  Release
+18G12 -363      Coin                 Coin -  Enable translations
+18F07 -347      Notejot              Notejot - Create new note from dock
+18F06 +383      Quilter              Quilter - Release
+18C12 -374      Quilter              Quilter - Fix new file button
+18B08 -344      Notejot              Notejot - New color buttons
+18B08 +383      Quilter              Quilter - Release
+18B07 -374      Quilter              Quilter - Reorganize main menu
+18B04 +384      Yishu                Yishu - Release
+18B03 -384      Yishu                Yishu - Remove most GTK deprecations
+18A12 +383      Quilter              Quilter - Release
+18A12 -374      Quilter              Quilter - Focus mode config options
+18A01 -364      Yishu                Yishu - Add Preferences
+17Y07 +384      Yishu                Yishu - Release
+17Y03 -358      Yishu                Yishu - Improve task dialog
+17X11 -344      Yishu                Yishu - Fix creating files from Welcome
+17X08 +384      Palaura              Palaura - Release
+17X08 -368      Yishu                Yishu - Welcome screen
+17X07 +384      Yishu                Yishu - Release
+17X05 -368      Yishu                Yishu - Icon design
+17X05 -344      Yishu                Yishu - Implement window settings
+17X04 -344      Yishu                Yishu - Implement window settings
+17X03 -344      Yishu                Yishu - Implement window settings
+17X02 +314      Yishu                Yishu - Start coding
+17W11 -365      Palaura              Palaura - Redesign UI
+17W09 -355      Palaura              Palaura - Add spanish dictionary
+17W08 -374      Quilter              Quilter - Fix preview mode html
+17W01 +384      Notejot              Notejot - Release
+17V14 -349      Notejot              Notejot - Fix saving
+17V14 -347      Notejot              Notejot - Editable titles
+17V08 -346      Notejot              Notejot - Fix opening duplicate windows
+17V07 -347      Notejot              Notejot - Move options to Appmenu
+17V05 +383      Quilter              Quilter - Release
+17V05 -118      Twitch               Twitch - Watched AdmiralBahroo
+17V04 -374      Quilter              Quilter - Fix many minor bugs
+17U12 +383      Quilter              Quilter - Release
+17U11 -363      Coin                 Coin -  Fix width of app
+17U09 -374      Quilter              Quilter - Fix Focus Mode
+17U09 -363      Coin                 Coin -  Fix currency name not loading
+17U07 +384      Notejot              Notejot - Release
+17U06 -377      Notejot              Notejot - Many improvements
+17U04 -363      Coin                 Coin -  Full currency/coin name design
+17U04 +384      Palaura              Palaura - Release
+17U03 -355      Palaura              Palaura - Fix lookups
+17U01 -343      Coin                 Coin -  Remember last used pair of coin/currency
+17T10 -374      Quilter              Quilter - Focus Mode
+17T10 -355      Palaura              Palaura - Remember window position
+17T09 -374      Quilter              Quilter - Statusbar
+17T07 -355      Palaura              Palaura - Move to new API
+17T06 +383      Quilter              Quilter - Release
+17T05 -365      Palaura              Palaura - Fix text shadow
+17T03 -374      Quilter              Quilter - Preview Mode
+17S07 -325      Notejot              Notejot - GResource the CSS
+17S05 -365      Palaura              Palaura - First implementation
+17S04 +314      Palaura              Palaura - Start coding
+17R11 -323      Notejot              Notejot - Translations are open
+17R10 +384      Quilter              Quilter - Release
+17R08 -364      Quilter              Quilter - New palette
+17R07 +384      Quilter              Quilter - Release
+17Q05 -118      Twitch               Twitch - Watched AdmiralBahroo
+17P11 +314      Coin                 Coin - Release
+17P08 -341      Coin                 Coin - Add XAR and SAR coins
+17P03 -347      Quilter              Quilter - Show which file is open
+17N06 -325      Notejot              Notejot - Fix app colors for contrast
+17N06 -344      Coin                 Coin - Fix coin symbol switch
+17N01 +384      Quilter              Quilter - Release
+17M13 -347      Quilter              Quilter - Open external files
+17M07 -345      Quilter              Quilter - Speed up save
+17M05 -346      Quilter              Quilter - Watch changes and save files
+17M05 +314      Home                 Home - Start a personal site
+17M04 +312      Coin                 Coin - Release
+17M01 -364      Coin                 Coin - Update labels periodically
+17L14 -344      Quilter              Quilter - Focus Mode and Preferences
+17L14 -366      Coin                 Coin - Add the currencies symbols
+17L14 -344      Coin                 Coin - Add more currencies to track
+17L13 -368      Coin                 Coin - Relayout app
+17L12 -344      Coin                 Coin - Fix value ticker
+17L12 +314      Coin                 Coin - Start coding
+17L10 -347      Quilter              Quilter - Save before opening new files
+17L10 -324      Notejot              Notejot - Remove colors for now
+17L09 -364      Notejot              Notejot - elementary OS palette
+17L08 -334      Quilter              Quilter - Start Preview Mode
+17L04 -348      Quilter              Quilter - Dark Mode completed
+17L02 +384      Quilter              Quilter - Release
+17L01 -366      Notejot              Notejot - Rearranged toolbar
+17L01 -364      Quilter              Quilter - Minor icon redesign
+17L01 -344      Quilter              Quilter - Fix I/O files
+17K14 -342      Quilter              Quilter - Remove Dark Mode (for now)
+17K14 -344      Quilter              Quilter - Markdown support
+17K14 -346      Quilter              Quilter - Dark Mode
+17K13 -348      Quilter              Quilter - Improve document handling
+17K13 +314      Quilter              Quilter - Start coding
+17K12 +384      Notejot              Notejot - Release
+17K11 -344      Notejot              Notejot - Multicolor notes
+17K10 -345      Notejot              Notejot - Meson
+17K09 -344      Notejot              Notejot - Fix About dialog
+17K08 -348      Notejot              Notejot - Save Window position
+17K07 -344      Notejot              Notejot - About dialog
+17K07 -344      Notejot              Notejot - Open Notes
+17K06 -348      Notejot              Notejot - Clear Notes and One-Window App
+17K05 +384      Notejot              Notejot - Release
+17K04 -354      Notejot              Notejot - Small Fixes
+17K04 +384      Notejot              Notejot - Release
+17K03 -345      Notejot              Notejot - SourceView out of MainWindow
+17K03 -366      Notejot              Notejot - Icon
+17K03 -344      Notejot              Notejot - Implement saving
+17K02 -364      Notejot              Notejot - Add Screenshot
+17K03 -329      Notejot              Notejot - Make it GObject
+17K02 +314      Notejot              Notejot - Start coding
+17K01 -314                           elementary OS - Started using the OS

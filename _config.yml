@@ -1,0 +1,11 @@
+sass:
+  style: compressed
+  sass_dir: scss
+compress_html:
+  clippings: all
+  comments: [""]
+  endings: [html, head, body, li, div, dt, dd, rt, rp, optgroup, option, colgroup, caption, thead, tbody, tfoot, tr, td, th]
+  profile: true
+  blanklines: true
+  ignore:
+    envs: []
