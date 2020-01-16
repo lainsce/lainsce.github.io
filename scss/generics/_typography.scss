@@ -178,12 +178,12 @@ table {
 
     & th {
         padding: 5px;
-        background-color: $link;
+        background-color: $badge;
+        color: $bg;
         border: 2px solid $bg;
     }
     & td {
         padding: 5px;
-        background-color: darken($bg, 5%);
         border: 2px solid $bg;
     }
 }

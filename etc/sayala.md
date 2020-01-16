@@ -1,8 +1,3 @@
----
-layout: default
-title: Sayala
----
-
 # Sayala is the constructed language of the people of Sayakuxa
 
 ## Phonology
