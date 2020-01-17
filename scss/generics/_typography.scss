@@ -169,12 +169,11 @@ samp {
 table {
     background-color: $bg;
     color: $fg;
-    margin: 10px auto;
+    margin: 10px 150px;
     font-size: 1em;
     overflow: hidden;
     border-collapse: separate;
     min-width: 50%;
-    line-height: 20px;
 
     & th {
         padding: 5px;
