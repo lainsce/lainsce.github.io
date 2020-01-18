@@ -7,7 +7,12 @@ $sa: #888;
 $ac: #75DEC2;
 
 @media (prefers-color-scheme: dark) {
-    html {
+    body {
+        -webkit-filter: invert(1);
+        filter: invert(1);
+    }
+
+    img {
         -webkit-filter: invert(1);
         filter: invert(1);
     }
@@ -102,7 +107,7 @@ nav {
 main {
     max-width: 120ch;
     min-width: 120ch;
-    min-height: calc(70vh - 80px);
+    min-height: calc(70vh - 95px);
     margin:50px auto;
     color: $fg;
     background-color: $bg;
