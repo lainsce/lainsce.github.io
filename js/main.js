@@ -25,34 +25,6 @@ function arne(){
 };
 window.setInterval(arne, 2000);
 
-const gridClass = 'card-holder-nx';
-const itemClass = 'card';
-const grid = document.getElementsByClassName(gridClass);
-const recalc = () => {
-    Array.from(grid).forEach(gr => {
-        // const items = gr.querySelectorAll(`:scope > .${itemClass}`);
-        const items = gr.getElementsByClassName(itemClass);
-        Array.from(items)
-        .filter(el => el.parentElement === gr)
-        .forEach(it => {
-            it.style.setProperty('grid-row-end', 'span 1');
-            const h = parseInt(Math.ceil(it.children[0].getBoundingClientRect().height));
-            const gap = parseInt(getComputedStyle(it).getPropertyValue('--gap'));
-            const raster = !!parseInt(getComputedStyle(it).getPropertyValue('--raster'), 10)
-            let span;
-            if (raster) {
-                span = parseInt(Math.ceil((h + gap) / gap) * gap);
-            } else {
-                span = parseInt(Math.ceil(h + gap));
-            }
-            it.style.setProperty('grid-row-end', `span ${span}`);
-        })
-    })
-}
-window.addEventListener('resize', recalc);
-window.addEventListener('load', recalc);
-recalc()
-
 var birth = new Date('1993-06-06');
 function getAge(birth) {
   ageMS = Date.parse(Date()) - Date.parse(birth);
