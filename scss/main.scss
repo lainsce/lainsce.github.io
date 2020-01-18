@@ -3,7 +3,8 @@
 
 $fg: #000;
 $bg: #FFF;
-$ac: #888;
+$sa: #888;
+$ac: #75DEC2;
 
 @media (prefers-color-scheme: dark) {
     html {
@@ -181,7 +182,7 @@ table {
 }
 
 .badge {
-    background-color: $ac;
+    background-color: $sa;
     color: $bg;
     clear: right;
     margin-left: 10px;
