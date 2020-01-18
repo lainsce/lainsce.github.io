@@ -7,8 +7,8 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="100"
-   height="100"
+   width="32"
+   height="32"
    version="1.1"
    id="svg10"
    sodipodi:docname="me.svg"
@@ -21,6 +21,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -35,12 +36,12 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="1920"
+     inkscape:window-width="2560"
      inkscape:window-height="962"
      id="namedview12"
-     showgrid="true"
+     showgrid="false"
      inkscape:zoom="6.675088"
-     inkscape:cx="36.976603"
+     inkscape:cx="11.658585"
      inkscape:cy="51.271813"
      inkscape:window-x="0"
      inkscape:window-y="30"
@@ -53,36 +54,36 @@
   <rect
      style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      id="rect871"
-     width="100"
-     height="100"
+     width="32"
+     height="32"
      x="0"
      y="0" />
   <rect
      style="fill:#fafafa;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      id="rect850"
-     width="5"
-     height="60"
-     x="20"
-     y="20"
+     width="1.6"
+     height="19.200001"
+     x="6.4000001"
+     y="6.4000015"
      rx="0"
      ry="0" />
   <rect
      style="fill:#fafafa;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      id="rect867"
-     width="60"
-     height="5"
-     x="20"
-     y="75" />
+     width="19.200001"
+     height="1.6"
+     x="6.4000001"
+     y="24" />
   <rect
      style="fill:#fafafa;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      id="rect869"
-     width="5"
-     height="45"
-     x="75"
-     y="20" />
+     width="1.6"
+     height="14.4"
+     x="24"
+     y="6.4000015" />
   <path
-     style="fill:#fafafa;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1"
-     d="m 75,20 c 0,0 -40,2.958894 -40,45 h 5 c 0,0 0,-40 35,-40 z"
+     style="fill:#fafafa;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     d="m 24,6.4 c 0,0 -12.8,0.946846 -12.8,14.4 h 1.6 C 12.8,20.8 12.8,8 24,8 Z"
      id="path873"
      inkscape:connector-curvature="0" />
 </svg>
