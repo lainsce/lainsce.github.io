@@ -4,6 +4,7 @@
 $fg: #000;
 $bg: #FFF;
 $sa: #888;
+$sb: #CCC;
 $ac: #75DEC2;
 
 @media (prefers-color-scheme: dark) {
@@ -193,11 +194,11 @@ table {
 }
 
 .badge {
-    background-color: $sa;
+    background-color: $sb;
     color: $fg;
     clear: right;
     margin-left: 10px;
-    padding: 5px;
+    padding: 10px;
     display: inline-block;
 }
 
