@@ -7,6 +7,14 @@ $sa: #888;
 $sb: #CCC;
 $ac: #75DEC2;
 
+@function tint($color, $percentage) {
+    @return mix(white, $color, $percentage);
+}
+
+@function shade($color, $percentage) {
+  @return mix(black, $color, $percentage);
+}
+
 @media (prefers-color-scheme: dark) {
     body {
         -webkit-filter: invert(1);
@@ -29,15 +37,15 @@ $ac: #75DEC2;
     }
 
     ::selection {
-        background-color: $ac;
-        color: $bg;
+        background-color: tint($ac, 66%);
+        color: shade($ac, 66%);
         /* WebKit/Blink Browsers */
     }
     
     ::-moz-selection {
-        background-color: $ac;
-        color: $bg;
-        /* Gecko Browsers */
+        background-color: tint($ac, 66%);
+        color: shade($ac, 66%);
+        /* *fox Browsers */
     }
 
     .logo {
@@ -52,13 +60,15 @@ $ac: #75DEC2;
 }
 
 ::selection {
-    background-color: $ac;
+    background-color: tint($ac, 66%);
+    color: shade($ac, 66%);
     /* WebKit/Blink Browsers */
 }
 
 ::-moz-selection {
-    background-color: $ac;
-    /* Gecko Browsers */
+    background-color: tint($ac, 66%);
+    color: shade($ac, 66%);
+    /* *fox Browsers */
 }
 
 body {
