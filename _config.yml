@@ -11,3 +11,4 @@ compress_html:
     envs: []
 
 theme: jekyll-theme-tactile
+include: [".well-known"]
