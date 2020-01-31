@@ -1,4 +1,0 @@
-This is a Brave Rewards publisher verification file.
-
-Domain: lainsce.us
-Token: f59801e77f7fbf63ca84798d5730686d1fc2bc52d16c7fa3b2fb8c7ae591c381
