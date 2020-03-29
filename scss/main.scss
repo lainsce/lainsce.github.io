@@ -102,7 +102,8 @@ nav {
     margin: 0px 0px 30px;
     color: $fg;
     padding: 30px;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23000000' fill-opacity='0.15' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
+    border-bottom: 1.5px solid $fg;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23000000' fill-opacity='0.2' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
 
     & ul {
         padding: 20px;
@@ -126,10 +127,10 @@ nav {
 }
 
 main {
-    max-width: 120ch;
-    min-width: 120ch;
+    max-width: 80ch;
+    min-width: 80ch;
     min-height: calc(70vh - 95px);
-    margin: 0 0 0 35px;
+    margin: 35px auto;
     color: $fg;
 
     & h1 {
@@ -169,7 +170,7 @@ footer {
     padding: 30px;
     font-family: monospace;
     color: $fg;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23000000' fill-opacity='0.15' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23000000' fill-opacity='0.2' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
 
     & img {
         margin: 0px 0px -10px 0px;
