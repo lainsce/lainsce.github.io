@@ -73,7 +73,7 @@ $ac: #75DEC2;
 
 body {
     font-family: sans-serif;
-    padding: 30px;
+    overflow-x: hidden;
 
     & a {
         color: $fg;
@@ -85,7 +85,7 @@ body {
 }
 
 header {
-    margin: 0px 0px 35px;
+    margin: 35px 0 0 35px;
     float: left;
     color: $fg;
 
@@ -99,6 +99,7 @@ header {
 nav {
     margin: 0px 0px 30px;
     color: $fg;
+    padding: 30px;
 
     & ul {
         padding: 0px;
@@ -122,7 +123,7 @@ main {
     max-width: 120ch;
     min-width: 120ch;
     min-height: calc(70vh - 95px);
-    margin:50px auto;
+    margin: 0 0 0 35px;
     color: $fg;
 
     & h1 {
@@ -158,9 +159,9 @@ main {
 footer {
     max-width: 100%;
     height: 40px;
-    margin:0 auto;
+    margin: 0 35px 0 35px;
     border-top: 1.5px solid $fg;
-    padding-top: 30px;
+    padding: 30px;
     font-family: monospace;
     color: $fg;
 
@@ -199,14 +200,16 @@ table {
 }
 
 .logo {
-    margin-right: 50px;
+    margin-right: 35px;
 }
 
 .badge {
-    background-color: $sb;
+    background-color: rgba($sb, 0.5);
+    backdrop-filter: blur(30px);
     color: $fg;
     clear: right;
     margin-left: 10px;
     padding: 10px;
     display: inline-block;
+    border-radius: 4px;
 }
