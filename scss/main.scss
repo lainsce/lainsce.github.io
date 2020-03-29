@@ -210,7 +210,7 @@ table {
 
 .badge {
     background-color: rgba($sb, 0.3);
-    backdrop-filter: blur(20px) staurate(125%);
+    backdrop-filter: blur(20px) saturate(125%);
     color: $fg;
     clear: right;
     margin-left: 10px;
