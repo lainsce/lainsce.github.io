@@ -109,7 +109,7 @@ nav {
         margin: 0px 35px 0 0px;
         float: left;
         border-radius: 4px;
-        background-color: rgba($sb, 0.5);
+        background-color: rgba($sb, 0.3);
         backdrop-filter: blur(20px) saturate(125%);
     }
     & ul li {
@@ -209,7 +209,7 @@ table {
 }
 
 .badge {
-    background-color: rgba($sb, 0.5);
+    background-color: rgba($sb, 0.3);
     backdrop-filter: blur(20px) staurate(125%);
     color: $fg;
     clear: right;
