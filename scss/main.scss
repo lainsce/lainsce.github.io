@@ -177,6 +177,12 @@ footer {
         font-weight: bold;
         text-decoration: none;
     }
+
+    & div > a {
+        padding: 16px;
+        height: 0px;
+        width: 0px;
+    }
 }
 
 hr {
