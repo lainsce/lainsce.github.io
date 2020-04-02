@@ -183,6 +183,12 @@ footer {
         padding: 16px;
         height: 0px;
         width: 0px;
+
+        &.lp {
+            height: 32px;
+            width: 32px;
+            padding: 0px;
+        }
     }
 }
 
