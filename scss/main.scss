@@ -178,7 +178,8 @@ footer {
         text-decoration: none;
     }
 
-    & div > a {
+    // Horrible hack to remove outline in browsers
+    & div > a > img {
         padding: 16px;
         height: 0px;
         width: 0px;
