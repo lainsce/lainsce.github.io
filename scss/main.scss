@@ -117,6 +117,7 @@ nav {
         $bg-space: pre;
     }
     & ul li a {
+    	color: $bg;
         text-decoration: none;
     }
     & ul li a:hover {
