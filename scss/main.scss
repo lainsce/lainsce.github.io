@@ -105,6 +105,7 @@ nav {
     background: $fg;
 
     & ul {
+    	color: $bg;
         padding: 20px;
         margin: 0px 35px 0 0px;
         float: left;
@@ -119,8 +120,8 @@ nav {
         text-decoration: none;
     }
     & ul li a:hover {
-        background: $fg;
-        color: $bg;
+        background: $ac;
+        color: $fg;
     }
 }
 
