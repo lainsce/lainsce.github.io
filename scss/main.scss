@@ -221,8 +221,7 @@ table {
 }
 
 .badge {
-    background-color: rgba($sb, 0.3);
-    backdrop-filter: blur(10px) saturate(200%);
+    background-color: rgba($sb, 0.5);
     color: $fg;
     clear: right;
     margin-left: 10px;
