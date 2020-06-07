@@ -5,7 +5,7 @@ $fg: #000;
 $bg: #FFF;
 $sa: #888;
 $sb: #CCC;
-$ac: #75DEC2;
+$ac: #00ABA9;
 
 @function tint($color, $percentage) {
     @return mix(white, $color, $percentage);
@@ -102,15 +102,13 @@ nav {
     margin: 0px 0px 30px;
     color: $fg;
     padding: 30px;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%2375DAC2' fill-opacity='0.9' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
 
     & ul {
         padding: 20px;
         margin: 0px 35px 0 0px;
         float: left;
         border-radius: 4px;
-        background-color: rgba($sb, 0.3);
-        backdrop-filter: blur(10px) saturate(200%);
+        background-color: rgba($sb, 0.5);
     }
     & ul li {
         list-style-type: none;
@@ -168,7 +166,6 @@ footer {
     padding: 30px;
     font-family: monospace;
     color: $fg;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%2375DAC2' fill-opacity='0.9' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
 
     & img {
         margin: 0px 0px -10px 0px;
