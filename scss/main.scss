@@ -125,14 +125,14 @@ nav {
         color: $fg;
     }
     
-    &.badge {
-	    background-color: rgba($sb, 0.5);
-	    color: $bg;
-	    clear: right;
-	    margin-left: 10px;
-	    padding: 10px;
-	    display: inline-block;
-	    border-radius: 4px;
+    & .badge {
+	background-color: rgba($sb, 0.5);
+	color: $bg;
+	clear: right;
+	margin-left: 10px;
+	padding: 10px;
+	display: inline-block;
+	border-radius: 4px;
     }
 }
 
@@ -179,6 +179,7 @@ footer {
     padding: 30px;
     font-family: monospace;
     color: $fg;
+    border-top: 1px solid $fg;
 
     & img {
         margin: 0px 0px -10px 0px;
