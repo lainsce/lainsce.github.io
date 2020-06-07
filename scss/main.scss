@@ -187,6 +187,7 @@ footer {
     & a {
         font-weight: bold;
         text-decoration: none;
+        color: $fg;
     }
 
     // Horrible hack to remove outline in browsers
