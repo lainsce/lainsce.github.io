@@ -2,155 +2,23 @@
 ---
 
 $fg: #000;
-$bg: #FFF;
-$sa: #888;
-$sb: #CCC;
+$bg: #F7F7F7;
 $ac: #00ABA9;
 
-@function tint($color, $percentage) {
-    @return mix(white, $color, $percentage);
-}
-
-@function shade($color, $percentage) {
-  @return mix(black, $color, $percentage);
-}
-
-@media (prefers-color-scheme: dark) {
-    body {
-        -webkit-filter: invert(1);
-        filter: invert(1);
-    }
-
-    img {
-        -webkit-filter: invert(1);
-        filter: invert(1);
-    }
-
-    footer > div > a > img {
-        -webkit-filter: invert(0);
-        filter: invert(0);
-    }
-
-    body {
-        color: $bg;
-        background-color: $fg;
-    }
-
-    ::selection {
-        background-color: tint($ac, 66%);
-        color: shade($ac, 66%);
-        /* WebKit/Blink Browsers */
-    }
-    
-    ::-moz-selection {
-        background-color: tint($ac, 66%);
-        color: shade($ac, 66%);
-        /* *fox Browsers */
-    }
-
-    .logo {
-        -webkit-filter: invert(1);
-        filter: invert(1);
-    }
-
-    .id-square {
-        -webkit-filter: invert(1);
-        filter: invert(1);
-    }
-}
-
-::selection {
-    background-color: tint($ac, 66%);
-    color: shade($ac, 66%);
-    /* WebKit/Blink Browsers */
-}
-
-::-moz-selection {
-    background-color: tint($ac, 66%);
-    color: shade($ac, 66%);
-    /* *fox Browsers */
-}
-
 body {
-    font-family: sans-serif;
-    overflow-x: hidden;
-    margin: 0px;
-    min-height: calc(100vh - 70px);
-
-    & a {
-        color: $ac;
-    }
-
-    & a:hover {
-        text-decoration: none;
-    }
-}
-
-header {
-    margin: 35px 0 0 35px;
-    float: left;
-    color: $fg;
-
-    & a {
-        & img {
-            margin-right: 50px;
-        }
-    }
-}
-
-nav {
-    margin: 0px 0px 30px;
-    color: $bg;
-    padding: 30px;
-    background: $fg;
-    border-top: 5px solid $ac;
-
-    & ul {
-    	color: $bg;
-        padding: 20px;
-        margin: 0px 35px 0 0px;
-        float: left;
-        border-radius: 4px;
-        background-color: rgba($sb, 0.5);
-    }
-    & ul li {
-        list-style-type: none;
-        $bg-space: pre;
-    }
-    & ul li a {
-    	color: $bg;
-        text-decoration: none;
-    }
-    & ul li a:hover {
-        background: $ac;
-        color: $fg;
-    }
-    
-    & .badge {
-	background-color: rgba($sb, 0.5);
-	color: $bg;
-	clear: right;
-	margin-left: 10px;
-	padding: 10px;
-	display: inline-block;
-	border-radius: 4px;
-    }
-}
-
-main {
-    max-width: 100ch;
-    min-width: 100ch;
-    min-height: calc(70vh - 95px);
-    margin: 35px auto;
-    color: $fg;
+  width: 100%;
+  height: 100%;
+  font-size: 1.22rem;
+  margin: 0;
+  font-family: sans-serif;
+  color: $fg;
+  background: $bg;
 
     & h1 {
         font-size: 2.66rem;
-        max-width: 400px;
         margin-top: 0px;
     }
     & h2 {
-        max-width: 400px;
         margin-top: 0px;
     }
     & h4 {
@@ -174,72 +42,145 @@ main {
     }
 }
 
-footer {
-    max-width: 100%;
-    height: 38px;
-    padding: 30px;
-    font-family: monospace;
+a {
+  color: $ac;
+  text-decoration: none;
+  
+  &:visited {
+    color: $ac;
+  }
+}
+
+ul {
+  list-style-type: none;
+  margin: 1rem 0;
+}
+
+.grid-container {
+  display: grid;
+  width: 100%;
+  height: 100vh;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 8fr 1fr;
+  grid-template-areas: "nav" "body" "footer";
+}
+
+.nav {
+  display: grid;
+  height: 15vh;
+  grid-template-columns: 0.1fr 1fr 0.1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "logo header clock";
+  grid-area: nav;
+  background: $fg;
+  color: $bg;
+  padding: 0 1rem;
+  
+  & img {
+    filter: invert(100%);
+    border-radius: 50%;
+  }
+  
+  & ul {
+    display: inline-block;
+    float: left;
+  }
+  
+  & ul li a {
+    color: $bg;
+  }
+  
+  & .nvcl {
+    float:right;
+    border-radius: 8px;
+    grid-area: clock;
+    position: absolute;
+    top: 1.1rem;
+    right: 1.2rem;
+    background: $bg;
     color: $fg;
-    border-top: 1px solid $fg;
-
-    & img {
-        margin: 0px 0px -10px 0px;
+    padding: 1rem;
+    
+    &:last-child {
+      padding-right: 1rem;
     }
-    & a {
-        font-weight: bold;
-        text-decoration: none;
-        color: $fg;
-    }
-
-    // Horrible hack to remove outline in browsers
-    & div > a > img {
-        padding: 16px;
-        height: 0px;
-        width: 0px;
-
-        &.lp {
-            height: 32px;
-            width: 32px;
-            padding: 0px;
-        }
-    }
+  }
 }
 
-hr {
-    border: 0;
-    clear: both;
+.logo { 
+  grid-area: logo;
+  margin: 1rem auto;
 }
 
-table {
-    background-color: $bg;
-    color: $fg;
-    margin: 10px auto;
-    font-size: 1em;
-    overflow: hidden;
-    border-collapse: separate;
-    min-width: 80%;
-    padding-bottom: 30px;
-
-    & th {
-        padding: 5px;
-        background-color: $ac;
-        color: $bg;
-    }
-    & td {
-        padding: 5px;
-    }
+.header {
+  grid-area: header;
+  float: left;
 }
 
-.logo {
-    margin-right: 35px;
+.body { 
+  grid-area: body;
+  padding: 2rem;
+  background: $bg;
+  color: $fg;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: 0.1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "logo2 info";
+  grid-area: footer;
+  background: $bg;
+  color: $fg;
+  padding: 2rem 1rem;
+  border-top: 1px solid $fg;
+  
+  font-size: 0.88rem;
+}
+
+.info {
+  grid-area: info;
+  
+  & .copyright {
+    margin-top: 2.45rem;
+  }
+  
+  & .favs {
+    float: right;
+    position: absolute;
+    bottom: 4rem;
+    right: 1.2rem;
+  }
+  
+  & img {
+    color: $bg;
+  }
+  
+  // Horrible hack to remove outline in browsers
+  & div > a > img {
+    padding: 16px;
+    height: 0px;
+    width: 0px;
+
+    &.lp {
+      height: 32px;
+      width: 32px;
+      padding: 0px;
+    }
+  }
+}
+
+.logo2 { 
+  grid-area: logo2;
+  margin: 1rem auto;
+    
+  & img {
+    border-radius: 50%;
+  }
 }
 
 .badge {
-    background-color: rgba($sb, 0.5);
-    color: $fg;
-    clear: right;
-    margin-left: 10px;
-    padding: 10px;
-    display: inline-block;
-    border-radius: 4px;
+  padding: 0 1rem;
+  border-left: 2px dotted $fg;
+  margin-left: 1rem;
 }
