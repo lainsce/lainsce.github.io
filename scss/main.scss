@@ -2,7 +2,7 @@
 ---
 
 $fg: #000;
-$bg: #F7F7F7;
+$bg: $bg;
 $ac: #00ABA9;
 
 body {
@@ -183,4 +183,31 @@ ul {
   padding: 0 1rem;
   border-left: 2px dotted $fg;
   margin-left: 1rem;
+}
+
+table {
+  border: 1px solid $bg;
+  background-color: $bg;
+  text-align: center;
+  border-collapse: collapse;
+
+  & td, & th {
+    border: 1px solid $bg;
+    padding: 3px 2px;
+  }
+  & thead {
+    background: $fg;
+    border-bottom: 2px solid $bg;
+
+	  & th {
+	    font-weight: bold;
+	    color: $bg;
+	    text-align: center;
+	    border-left: 2px solid $bg;
+	  }
+
+	  & th:first-child {
+	    border-left: none;
+	  }
+  }
 }
