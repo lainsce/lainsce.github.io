@@ -159,10 +159,7 @@ ul {
 
   & .favs {
     float: right;
-    position: absolute;
-    bottom: 4rem;
-    right: 1.2rem;
-    filter: invert(1);
+    display: inline-block;
   }
 
   // Horrible hack to remove outline in browsers
@@ -170,6 +167,7 @@ ul {
     padding: 16px;
     height: 0px;
     width: 0px;
+    filter: invert(1);
 
     &.lp {
       height: 32px;
