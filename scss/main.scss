@@ -162,10 +162,7 @@ ul {
     position: absolute;
     bottom: 4rem;
     right: 1.2rem;
-  }
-
-  & img {
-    color: $bg;
+    filter: invert(1);
   }
 
   // Horrible hack to remove outline in browsers
