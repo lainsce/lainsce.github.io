@@ -3,7 +3,6 @@
 
 $fg: #000000;
 $bg: #F7F7F7;
-$base: #242424;
 $ac: #EBFF00;
 
 @media (prefers-color-scheme: dark) {
@@ -18,8 +17,8 @@ body {
   font-size: 1.22rem;
   margin: 0;
   font-family: sans-serif;
-  color: $bg;
-  background: $base;
+  color: $fg;
+  background: $bg;
 
     & h1 {
         font-size: 2.66rem;
@@ -130,8 +129,8 @@ ul {
 .body {
   grid-area: body;
   padding: 2rem;
-  background: $base;
-  color: $bg;
+  background: $bg;
+  color: $fg;
   margin: 1rem auto;
   width: 80ch;
 }
@@ -142,10 +141,10 @@ ul {
   grid-template-rows: 1fr;
   grid-template-areas: "logo2 info";
   grid-area: footer;
-  background: $base;
-  color: $bg;
+  background: $bg;
+  color: $fg;
   padding: 2rem 1rem;
-  border-top: 2px solid $bg;
+  border-top: 1px solid $fg;
 
   font-size: 0.88rem;
 }
