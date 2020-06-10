@@ -1,9 +1,15 @@
 ---
 ---
 
-$fg: #000;
+$fg: #000000;
 $bg: #F7F7F7;
-$ac: #00ABA9;
+$ac: #EBFF00;
+
+@media (prefers-color-scheme: dark) {
+  $fg: #F7F7F7;
+  $bg: #000000;
+  $ac: #EBFF00;
+}
 
 body {
   width: 100%;
@@ -47,7 +53,7 @@ body {
 a {
   color: $ac;
   text-decoration: none;
-  
+
   &:visited {
     color: $ac;
   }
@@ -70,29 +76,29 @@ ul {
 .nav {
   display: grid;
   height: 15vh;
-  grid-template-columns: 0.1fr 1fr 0.1fr;
+  grid-template-columns: 0.07fr 1fr 0.07fr;
   grid-template-rows: 1fr;
   grid-template-areas: "logo header clock";
   grid-area: nav;
   background: $fg;
   color: $bg;
   padding: 0 1rem;
-  
+
   & img {
     filter: invert(100%);
     border-radius: 50%;
   }
-  
+
   & ul {
     display: inline-block;
     float: left;
     font-size: 0.8rem;
   }
-  
+
   & ul li a {
     color: $bg;
   }
-  
+
   & .nvcl {
     float:right;
     border-radius: 8px;
@@ -103,14 +109,14 @@ ul {
     background: $bg;
     color: $fg;
     padding: 1rem;
-    
+
     &:last-child {
       padding-right: 1rem;
     }
   }
 }
 
-.logo { 
+.logo {
   grid-area: logo;
   margin: 1rem auto;
 }
@@ -120,7 +126,7 @@ ul {
   float: left;
 }
 
-.body { 
+.body {
   grid-area: body;
   padding: 2rem;
   background: $bg;
@@ -131,7 +137,7 @@ ul {
 
 .footer {
   display: grid;
-  grid-template-columns: 0.1fr 1fr;
+  grid-template-columns: 0.07fr 1fr;
   grid-template-rows: 1fr;
   grid-template-areas: "logo2 info";
   grid-area: footer;
@@ -139,28 +145,28 @@ ul {
   color: $fg;
   padding: 2rem 1rem;
   border-top: 1px solid $fg;
-  
+
   font-size: 0.88rem;
 }
 
 .info {
   grid-area: info;
-  
+
   & .copyright {
     margin-top: 2.45rem;
   }
-  
+
   & .favs {
     float: right;
     position: absolute;
     bottom: 4rem;
     right: 1.2rem;
   }
-  
+
   & img {
     color: $bg;
   }
-  
+
   // Horrible hack to remove outline in browsers
   & div > a > img {
     padding: 16px;
@@ -175,10 +181,10 @@ ul {
   }
 }
 
-.logo2 { 
+.logo2 {
   grid-area: logo2;
   margin: 1rem auto;
-    
+
   & img {
     border-radius: 50%;
   }
