@@ -2,13 +2,13 @@
 ---
 
 body {
-  width: 100%;
   height: 100%;
-  font-size: 1.12rem;
+  font-size: 1rem;
   margin: 0;
   font-family: sans-serif;
   color: #242424;
   background: #f7f7f7;
+  width: 100%;
 
   h1 {
     font-size: 24pt;
@@ -42,16 +42,20 @@ body {
   }
 
   p {
+    font-size: 14pt;
     line-height: 25px;
     margin: 1rem auto;
   }
 
   q {
     font-family: serif;
-    font-size: 18px;
+    font-size: 18pt;
     font-style: italic;
-    display: block;
-    margin-bottom: 30px;
+    display: inline-block;
+  }
+
+  Q + h5 {
+    display: inline-block;
   }
 
   img {
@@ -60,6 +64,10 @@ body {
 
   a.external:after {
     content: "↗";
+  }
+
+  hr {
+      width: 100%;
   }
 }
 
@@ -80,17 +88,26 @@ a {
 
 .palette {
     border-radius: 8px;
-    width: 105px;
-    height: 105px;
+    width: 75px;
+    height: 75px;
     color: #F7F7F7;
     text-align: center;
     vertical-align: middle;
-    line-height: 105px;
+    line-height: 75px;
     font-family: monospace;
 }
 
 .palette-dark {
     color: #151515;
+}
+
+.palcart {
+    display: grid;
+    grid-template-columns: repeat(10, 75px);
+    grid-template-rows: repeat(5, 75px) min-content;
+    grid-gap: 0;
+    margin: 50px auto;
+    width: max-content;
 }
 
 ul {
@@ -102,14 +119,14 @@ ul {
   display: grid;
   width: 100%;
   height: 100vh;
-  grid-template-columns: 300px 1fr;
+  grid-template-columns: 280px 1fr;
   grid-template-rows: 1fr;
   grid-template-areas: "nav body";
 }
 
 .nav {
   display: grid;
-  position:fixed;
+  position: fixed;
   height: 100%;
   grid-template-columns: 1fr;
   grid-template-rows: 6.5rem 0.88fr 0.01fr 6.5rem;
@@ -138,8 +155,9 @@ ul {
     flex-direction: column;
 
     li {
-      padding: 8px;
-      margin: 8px;
+      padding: 16px 8px;
+      margin-right: 5px;
+      margin-top: 5px;
       border-radius: 8px;
       border: 1px solid #B0E9E2;
     }
@@ -150,7 +168,8 @@ ul {
 
     li a {
       color: #151515;
-      font-size: 1rem;
+      font-size: 0.88rem;
+      text-transform: uppercase;
     }
   }
 
@@ -175,7 +194,7 @@ ul {
 
 .body {
   grid-area: body;
-  padding: 3rem;
+  padding-top: 1.5rem;
   background: #f7f7f7;
   color: #242424;
   margin: auto;
