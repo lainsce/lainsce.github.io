@@ -11,22 +11,34 @@ body {
   background: #f7f7f7;
 
   h1 {
-    font-size: 2.66rem;
+    font-size: 24pt;
     font-weight: 700;
-    margin-top: 0;
-    border-bottom: 1px solid #242424;
+    letter-spacing: -0.04em;
   }
 
   h2 {
-    font-weight: 700;
-    width: 100%;
-    margin-top: 0;
-    padding-bottom: 1rem;
-    border-bottom: 1px solid #242424;
+    font-weight: 300;
+    font-size: 18pt;
+    letter-spacing: -0.05em;
+  }
+
+  h3 {
+    font-size: 1.17em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
   }
 
   h4 {
-    font-family: monospace;
+    font-weight: 700;
+    padding-bottom: 0.5em;
+    padding-top: 0.5em;
+  }
+
+  h5 {
+    text-transform: uppercase;
   }
 
   p {
@@ -52,12 +64,33 @@ body {
 }
 
 a {
-  color: #668899;
+  color: #60C9C2;
   text-decoration: none;
+  font-weight: 700;
 
   &:visited {
-    color: #668899;
+    color: #60C9C2;
   }
+}
+
+.break {
+    flex-basis: 100%;
+    height: 0;
+}
+
+.palette {
+    border-radius: 8px;
+    width: 105px;
+    height: 105px;
+    color: #F7F7F7;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 105px;
+    font-family: monospace;
+}
+
+.palette-dark {
+    color: #151515;
 }
 
 ul {
@@ -76,26 +109,48 @@ ul {
 
 .nav {
   display: grid;
+  position:fixed;
   height: 100%;
   grid-template-columns: 1fr;
   grid-template-rows: 6.5rem 0.88fr 0.01fr 6.5rem;
   grid-template-areas: 'logo' 'header' 'clock' 'footer';
   grid-area: nav;
-  background: #242424;
-  color: #f7f7f7;
-  border-left: 5px solid #668899;
+  background: #F0F8F4;
+  color: #151515;
   padding: 0 1rem;
+  border-right: 1px solid rgba(black, 0.25);
+  z-index: 999;
 
-  img {
-    filter: invert(100%);
+  img.logo {
     border-radius: 50%;
+    border: 1px solid rgba(black, 0.35);
+    box-shadow: inset 1px 0 0 0 rgba(white, 0.07),
+                inset -1px 0 0 0 rgba(white, 0.07),
+                0 1px 3px rgba(black, 0.12),
+                0 1px 2px rgba(black, 0.24);
   }
 
   ul {
-    display: inline-block;
+    float: left;
+    width: 50%;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+
+    li {
+      padding: 8px;
+      margin: 8px;
+      border-radius: 8px;
+      border: 1px solid #B0E9E2;
+    }
+
+    li:hover {
+      background: #B0E9E2;
+    }
 
     li a {
-      color: #f7f7f7;
+      color: #151515;
+      font-size: 1rem;
     }
   }
 
@@ -103,7 +158,7 @@ ul {
     border-radius: 8px;
     grid-area: clock;
     text-align: center;
-    background: #f7f7f7;
+    background: #B0E9E2;
     color: #242424;
     padding: 1rem;
   }
@@ -145,7 +200,6 @@ ul {
     padding: 16px;
     height: 0;
     width: 0;
-    filter: invert(1);
 
     &.lp {
       height: 32px;
