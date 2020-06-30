@@ -69,6 +69,10 @@ body {
   hr {
       width: 100%;
   }
+
+  li:before {
+      content: "–";
+  }
 }
 
 a {
