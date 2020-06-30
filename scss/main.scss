@@ -70,8 +70,10 @@ body {
       width: 100%;
   }
 
-  li:before {
-      content: "–";
+  .body li:before {
+    content: "–";
+    margin-right: 6px;
+    padding: 6px;
   }
 }
 
