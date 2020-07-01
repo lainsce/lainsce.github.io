@@ -7,35 +7,153 @@
     grid-template-rows: 200px 1fr;
     grid-template-areas: 'nav' 'body';
   }
+  .logo {
+      margin: 6px;
+      margin-top: 0;
+  }
+  .copyright {
+      padding-bottom: 0rem;
+      padding-left: 12px;
+      transform: scale(0.8);
+  }
+  .favs {
+      transform: scale(0.75);
+  }
   .nav {
     position: fixed;
-    height: 26.4%;
     width: 100%;
     border-bottom: 1px solid rgba(black, 0.25);
-    padding: 0.7rem 0;
+    padding: 0.5rem 0;
     z-index: 999;
-    grid-template-columns: 6.5rem 0.88fr 0.01fr 6.5rem;
-    grid-template-rows: 7.5rem;
+    grid-template-columns: 6.5rem 0.88fr 0.01fr 4rem;
+    grid-template-rows: 8.5rem;
     grid-gap: 12px;
     grid-template-areas: 'logo header clock footer';
   }
   .body {
-    width: 60ch;
-    padding-top: 5.5rem;
+    width: 40ch;
+    padding-top: 0.5rem;
   }
   .palcart {
-    grid-template-columns: repeat(10, 50px);
-    grid-template-rows: repeat(5, 50px) min-content;
+    grid-template-columns: repeat(10, 35px);
+    grid-template-rows: repeat(5, 35px);
     grid-gap: 0;
 
     .palette {
-      width: 50px;
-      height: 50px;
+      width: 35px;
+      height: 35px;
       text-indent: 100%;
       white-space: nowrap;
       overflow: hidden;
     }
   }
+
+    .header {
+      background-color: #F0F8F4;
+      position: fixed;
+      max-width: 24rem;
+      margin-left: 100px;
+      z-index: 2;
+      border-radius: 8px;
+      border: 1px solid #B0E9E2;
+    }
+
+    .header ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      overflow: hidden;
+      background-color: #F0F8F4;
+    }
+
+    .header li a {
+      display: block;
+      padding: 6px 12px;
+      border: 1px solid #B0E9E2;
+      text-decoration: none;
+      color: #151515;
+      margin: 12px;
+    }
+
+    .header li a:hover {
+      background-color: #B0E9E2;
+    }
+
+    .header .menu {
+      clear: both;
+      max-height: 0;
+      transition: max-height .2s ease-out;
+    }
+
+    .header .menu hr {
+        border: 1px solid #15151500;
+        border-top: 2px solid #B0E9E2;
+        padding: 0;
+        margin: 0 auto;
+    }
+
+    .header .menu-icon {
+      cursor: pointer;
+      display: inline-block;
+      float: right;
+      padding: 28px 20px;
+      position: relative;
+      user-select: none;
+    }
+
+    .header .menu-icon .navicon {
+      background: #151515;
+      display: block;
+      height: 2px;
+      position: relative;
+      transition: background .2s ease-out;
+      width: 18px;
+    }
+
+    .header .menu-icon .navicon:before,
+    .header .menu-icon .navicon:after {
+      background: #151515;
+      content: '';
+      display: block;
+      height: 100%;
+      position: absolute;
+      transition: all .2s ease-out;
+      width: 100%;
+    }
+
+    .header .menu-icon .navicon:before {
+      top: 5px;
+    }
+
+    .header .menu-icon .navicon:after {
+      top: -5px;
+    }
+
+    .header .menu-btn {
+      display: none;
+    }
+
+    .header .menu-btn:checked ~ .menu {
+      max-height: max-content;
+      border-radius: 8px;
+    }
+
+    .header .menu-btn:checked ~ .menu-icon .navicon {
+      background: transparent;
+    }
+
+    .header .menu-btn:checked ~ .menu-icon .navicon:before {
+      transform: rotate(-45deg);
+    }
+
+    .header .menu-btn:checked ~ .menu-icon .navicon:after {
+      transform: rotate(45deg);
+    }
+
+    .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+    .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+      top: 0;
+    }
 }
 
 @media (min-width: 801px) {
@@ -43,6 +161,16 @@
     grid-template-columns: 280px 1fr;
     grid-template-rows: 1fr;
     grid-template-areas: 'nav body';
+  }
+  .logo {
+      margin: 1rem;
+  }
+  .favs {
+      transform: scale(1);
+  }
+  .copyright {
+      padding-bottom: 1.5rem;
+      transform: scale(1);
   }
   .nav {
     position: fixed;
@@ -52,8 +180,7 @@
     padding: 0 0.7rem;
     border-right: 1px solid rgba(black, 0.25);
     grid-template-columns: 1fr;
-    grid-template-rows: 6.5rem 0.95fr 0.03fr 6.5rem;
-    grid-gap: 0 10px;
+    grid-template-rows: 6.5rem 0.9fr 0.03fr 4rem;
     grid-template-areas: 'logo' 'header' 'clock' 'footer';
   }
   .body {
@@ -64,6 +191,52 @@
     grid-template-columns: repeat(10, 75px);
     grid-template-rows: repeat(5, 75px) min-content;
     grid-gap: 0;
+  }
+
+  .header .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+  .header .menu-icon {
+    display: none;
+  }
+  .header .menu-btn {
+    display: none;
+  }
+
+  .header .menu hr {
+    display: none;
+  }
+
+  .header  {
+    float: left;
+    width: 50%;
+    padding: 0;
+    margin: 0;
+    margin-left: 30px;
+
+    li {
+      padding: 12px;
+      margin-right: 5px;
+      margin-bottom: 5px;
+      border-radius: 8px;
+      border: 1px solid #B0E9E2;
+    }
+
+    li:hover {
+      background: #B0E9E2;
+    }
+
+    li a {
+      color: #151515;
+      font-size: 0.88rem;
+      text-transform: uppercase;
+    }
+
+    li:last-child {
+        margin-top: 30px;
+    }
   }
 }
 
@@ -101,6 +274,7 @@ body {
     font-weight: 700;
     padding-bottom: 0.5em;
     padding-top: 0.5em;
+    margin: 0;
   }
 
   h5 {
@@ -205,45 +379,20 @@ ul {
                 0 1px 2px rgba(black, 0.24);
   }
 
-  ul {
-    float: left;
-    width: 50%;
-    padding: 0;
-    margin: 0;
-
-    li {
-      padding: 8px;
-      margin-right: 5px;
-      margin-bottom: 5px;
-      border-radius: 8px;
-      border: 1px solid #B0E9E2;
-    }
-
-    li:hover {
-      background: #B0E9E2;
-    }
-
-    li a {
-      color: #151515;
-      font-size: 0.88rem;
-      text-transform: uppercase;
-    }
-  }
-
   .nvcl {
     grid-area: clock;
     border-radius: 8px;
     text-align: center;
     background: #B0E9E2;
-    color: #242424;
-    padding: 24px;
-    margin-bottom: 2rem;
+    color: #151515;
+    padding: 12px;
+    display: inline-grid;
+    margin-bottom: 3.2rem;
   }
 }
 
 .logo {
   grid-area: logo;
-  margin: auto;
 }
 
 .header {
@@ -262,8 +411,9 @@ ul {
 }
 
 .info {
-  .copyright {
-    padding-bottom: 2rem;
+  .favs {
+    display: inline-grid;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 
   div > a > img {
