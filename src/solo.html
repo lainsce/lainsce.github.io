@@ -8,6 +8,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lains</title>
     <link rel="stylesheet" href="../scss/main.css">
+    <style>
+      img {
+          box-shadow: 0 1px 14px 1px rgba(0,0,0, 0.25);
+          margin: 10px;
+      }
+    </style>
 </head>
 <body>
   <div class="grid-container">
@@ -177,7 +183,7 @@
           <li>Searchbars always as the first thing from left to right. They take the 3-action spaces, so move your primary action
                and secondary action to the right side, and subsequent actions go to the Cog.</li>
           <li>If the 3-actions on the left are important, put your search inside an icon.</li>
-          <li>At most 3 action buttons per side, and others tucked inside the cog.</li>
+          <li>At most 3 action buttons per side, and others tucked inside the Cog.</li>
           <li>Title should be extra bold and be of the app's name.</li>
           <li>This is where the maximize/fullscreen button should be.</li>
           <li>Ideally, all iconography should be monochromatic, and pixel-fitted.</li>
@@ -189,7 +195,7 @@
            instantly know what it is.</p>
         </div>
         <hr>
-        <div style="display: block;float:left; width: 50%; margin-top: 50px;"><img src="../images/solo/solo_main_pane.png"></div>
+        <div style="display: block;float:left; width: 40%; margin-top: 50px;"><img src="../images/solo/solo_main_pane.png"></div>
         <div style="display: block;float:right; width: 50%; margin-bottom: 50px">
         <h2>Main Pane</h2>
         <p>This is where you'll further layout your app's functionality, observing the use of h2 titles for sections and welcome
@@ -201,6 +207,15 @@
            the same as if the user minimized the app. Sidenote: Minimizing a solo app is useless due to this. Closing it should
            do the same, saving your user's life and becoming a frustration-less experience.</p>
         </div>
+        <hr>
+        <h2>Example App</h2>
+        <p>In this section I will show a barebones app called Enigma (not coded, just a mockup) that showcases all the patterns
+           of solo, applied to a code editor.</p>
+        <div style="display: block;margin: 0 auto;"><img src="../images/solo/solo_example_app.png"></div>
+        <p>There's the Sidebar, showing a pane switcher and a file box, this box with a title, a subtitle and its remove button.
+           The Titlebar, has new file, open file, run file as primary actions and the Cog on the right side. As you can see,
+           the contents of the sidebar are always centered, leaving margins on both sides. The pane switcher graciously blends
+           in with the Sidebar as well as the file box.</p>
     </div>
     <script type="text/javascript" src="../js/main.js"></script>
 </body>
