@@ -9,11 +9,45 @@
     <title>Lains</title>
     <link rel="stylesheet" href="../scss/main.css">
     <style>
+      @media (max-width: 800px) {
+        .toc {
+            visibility: hidden;
+        }
+      }
+
       .card {
-          box-shadow: 0 1px 14px 1px rgba(0,0,0, 0.25);
-          margin: 10px;
-          border-radius: 8px;
-          border: 1px solid rgba(0,0,0, 0.25);
+        box-shadow: 0 1px 14px 1px rgba(0,0,0, 0.25);
+        margin: 10px;
+        border-radius: 8px;
+        border: 1px solid rgba(0,0,0, 0.25);
+      }
+      .toc {
+        box-shadow: 0 1px 14px 1px rgba(0,0,0, 0.25);
+        background: #F7F7F7;
+        border: 1px solid rgba(0,0,0, 0.25);
+        border-radius: 8px;
+        display: table;
+        position: fixed;
+        right: 18px;
+        top: 13rem;
+        margin-bottom: 1rem;
+        width: auto;
+        float: right;
+      }
+      .toc-items {
+        display: flex;
+        flex-direction: column;
+        padding: 12px 1rem;
+      }
+      .toc-items a {
+        color: #151515;
+        padding: 5px 0;
+        font-weight: 500;
+      }
+      .toc hr {
+        width: 100%;
+        padding: 0;
+        margin: 0;
       }
     </style>
 </head>
@@ -58,9 +92,32 @@
         </div>
     </div>
     <div class="body">
-        <img class="card" src="../images/solo/solo_icon.png" width=256 height=256 style="display: block;margin-left: auto;margin-right: auto;">
+        <div class="toc">
+            <div class="toc-items">
+                <a href=#title><b>solo Design System</b></a>
+                <a href=#basics>Basics</a>
+                <a href=#color>Color</a>
+                <a href=#text>Text</a>
+                <a href=#spacing>Spacing</a>
+                <a href=#shapes>Shapes</a>
+            </div>
+            <hr>
+            <div class="toc-items">
+                <a><b>Widgets</b></a>
+                <a href=#window>Window</a>
+                <a href=#sidebar>Sidebar</a>
+                <a href=#titlebar>Titlebar</a>
+                <a href=#mainpane>Main Pane</a>
+            </div>
+            <hr>
+            <div class="toc-items">
+                <a href=#example>Example App</a>
+            </div>
+        </div>
+        <div id="title" style="display: block; margin: 1rem auto; width: 128px; height:128px"><img class="card" src="../images/solo/solo_icon.png"></div>
+        <br>
         <h1>SOLO DESIGN SYSTEM</h1>
-        <h2>Basics</h2>
+        <h2 id="basics">Basics</h2>
         <p>So, what <i>is</i> solo? solo /'so.lo/ is a Design System implemented by me to unify my projects to create a strong
            visual identity atop the laurels of elementary OS's golden design. So, what does solo do, that others don't?</p>
         <ul>
@@ -69,11 +126,11 @@
             <li>Reduces visual clutter</li>
             <li>Strong-arms an opinionated design</li>
         </ul>
-        <h2>Color</h2>
+        <h2 id="color">Color</h2>
         <p>Color in solo is used very, very sparingly to aid in accenting an app rather than making it a visual circus.
            Apps designed with solo also don't have more than one color. Different shades are accomplished with black or
            white mixing with the accent color chosen.</p>
-        <h2>Palette Cartouche</h2>
+        <h4>Palette Cartouche</h4>
         <p>Note: the below palette colors are just for show. You'll want to mix the base color in the middle with #151515
            to get darker tones and #F7F7F7 to get lighter tones.</p>
         <div class="palcart">
@@ -127,7 +184,7 @@
             <div class="palette palette-dark" style="background: #f0f8f4;">#F0F8F4</div>
             <div class="palette palette-dark" style="background: #f7f7f7;">#F7F7F7</div>
         </div>
-        <h2>Text</h2>
+        <h2 id="text">Text</h2>
         <p>For text sizes, you already are seeing solo in action on this website. The headers are just the way they should
            be in solo, and text also is following the design. But as a refresher, here they are.</p>
         <p>Note: In solo, rarely h1 and h3 are used.</p>
@@ -138,27 +195,26 @@
         <h5>h5 Header</h5>
         <p>Paragraph</p>
         <q>Quote</q>
-        <h2>Spacing</h2>
+        <h2 id="spacing">Spacing</h2>
         <p>In solo, Spacing is based on units of 6 (so, u = 6; u is roughly 6pt). The scaling system uses fractions and
            multiples of the base size (6u or u/6). The result is easy to understand. Here's a nifty image showcasing spacing.
            Spacing also should never exceed 30u from one element to another one (nested or otherwise.)</p>
-        <div style="display: block;margin: 0 auto;"><img class="card" src="../images/solo/solo_spacing.png"></div>
-        <h2>Shapes</h2>
+        <div style="display: block; margin: 0 auto;"><img class="card" src="../images/solo/solo_spacing.png"></div>
+        <h2 id="shapes">Shapes</h2>
         <p>In solo, there's only two shapes to choose from, the square with 8px corner radius, and the circle. Both are used
            in the same app, but the circle is reserved for avatars or account images only. Do not use triangles or other funky
            shapes.</p>
-        <div style="display: block;margin: 50px auto;"><img class="card" src="../images/solo/solo_shapes.png"></div>
+        <div style="display: block; margin: 50px auto;"><img class="card" src="../images/solo/solo_shapes.png"></div>
         <hr>
-        <h2>Window Design</h2>
+        <h2 id="window">Window</h2>
         <p>So, with all that out of the way, let's start detailing the main differences that solo brings. The first of which
            is a Window's design and layouting.</p>
         <div style="display: block;margin: 0 auto;"><img src="../images/solo/solo_window_composite.png"></div>
         <p>As you can see, in solo, the window layout is pretty standard, but it has some very unique design opinions.
            Corners are rounded to 8px, and the overall look feels airy. Now, let's see how it works.</p>
-        <hr>
-        <div style="display: block; float:left;width: 40%; margin-top: 50px;width: 50%;"><img src="../images/solo/solo_sidebar.png"></div>
-        <div style="float:right;display: block;width: 50%; margin-bottom: 50px">
-        <h2>Sidebar</h2>
+        <div style="display: inline-block; float:left; width: 50%; margin-top: 50px;"><img src="../images/solo/solo_sidebar.png"></div>
+        <div style="display: block; float:right; width: 45%; margin-bottom: 50px">
+        <h2 id="sidebar">Sidebar</h2>
         <p>In the sidebar, which is full-height and colored with the 100-tier color, you'll want only the close button to show via an empty titlebar, as well as
            make sure all items are fit snuggly inside the main part below this titlebar. All items in the main part should be
            accompanied by a header of what the items are in H5 styling. Be it listboxes or sourcelists or whatever.</p>
@@ -175,10 +231,9 @@
         <p>When an app has multiple spatially horizontal views, a back button is needed; add it to the sidebar titlebar, and not
            the main titlebar. This button has the same background color as the sidebar, with the 300-tier color as its border.</p>
         </div>
-        <hr>
-        <div style="display: inline-block;float:right; margin-top: 50px;"><img src="../images/solo/solo_titlebar.png"></div>
-        <div style="display: block;float:left; width: 60%; margin-bottom: 50px">
-        <h2>Titlebar</h2>
+        <div style="display: inline-block; float:right; margin-top: 50px;"><img src="../images/solo/solo_titlebar.png"></div>
+        <div style="display: block; float:left; width: 60%; margin-bottom: 50px;">
+        <h2 id="titlebar">Titlebar</h2>
         <p>The titlebar, the hallmark place where you'll put your app's actions in… But wait, in solo, you should follow some
            basic rules to make it work wonderfully for your user. The background color should be #FFF in light mode, and #000
            in dark mode.</p>
@@ -200,7 +255,7 @@
         <hr>
         <div style="display: block;float:left; width: 40%; margin-top: 50px;"><img src="../images/solo/solo_main_pane.png"></div>
         <div style="display: block;float:right; width: 50%; margin-bottom: 50px">
-        <h2>Main Pane</h2>
+        <h2 id="mainpane">Main Pane</h2>
         <p>This is where you'll further layout your app's functionality, observing the use of h2 titles for sections and welcome
            screen titles. Basically where your app's task becomes evident. Don't forget to make every entry have a corner radius
            of 8px, and to make sure to use titling correctly. As well as respect the system light/dark modes and style the background
@@ -211,7 +266,7 @@
            do the same, saving your user's life and becoming a frustration-less experience.</p>
         </div>
         <hr>
-        <h2>Example App</h2>
+        <h2 id="example">Example App</h2>
         <p>In this section I will show a barebones app called Enigma (not coded, just a mockup) that showcases all the patterns
            of solo, applied to a code editor.</p>
         <div style="display: block;margin: 0 auto;"><img class="card" src="../images/solo/solo_example_app.png"></div>
