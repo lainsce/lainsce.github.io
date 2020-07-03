@@ -78,6 +78,7 @@
         border-radius: 8px;
         border: 1px solid #B0E9E2;
         height: 64px;
+        width: 64px;
 
          ul {
             margin: 0;
@@ -138,6 +139,7 @@
             max-height: max-content;
             border-radius: 8px;
             border: 1px solid #B0E9E2;
+            width: max-content;
          }
 
          .menu-btn:checked ~ & {
