@@ -36,7 +36,7 @@
         border-bottom: 1px solid rgba(0,0,0,0.25);
         padding: 1rem 0;
         z-index: 999;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: 1fr 1fr min-content;
         grid-template-areas: 'logo header clock footer';
     }
 
@@ -77,74 +77,78 @@
         z-index: 2;
         border-radius: 8px;
         border: 1px solid #B0E9E2;
-        height: 64px;
-        width: 64px;
+        height: 48px;
+        width: 48px;
+        font-size: 2rem;
+        margin-top: 10px;
+        text-align: center;
+    }
 
-         ul {
-            margin: 0;
-            padding: 0;
-            list-style: none;
-            overflow: hidden;
-            background-color: #F0F8F4;
-         }
+    .header ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        overflow: hidden;
+        background-color: #F0F8F4
+    }
 
-         li a {
-            display: block;
-            padding: 6px 12px;
-            border: 1px solid #B0E9E2;
-            text-decoration: none;
-            color: #151515;
-            margin: 12px;
-         }
+    .header li a {
+        display: block;
+        padding: 6px 12px;
+        border: 1px solid #B0E9E2;
+        text-decoration: none;
+        color: #151515;
+        margin: 12px;
+    }
 
-         li a:hover {
-            background-color: #B0E9E2;
-         }
+    .header li a:hover {
+        background-color: #B0E9E2
+    }
 
-         .menu {
-            clear: both;
-            max-height: 0;
-            transition: max-height .2s ease-out;
-            border: 1px solid #00000000;
-            position: relative;
-         }
+    .header .menu {
+        clear: both;
+        max-height: 0;
+        transition: max-height .2s ease-out;
+        border: 1px solid #00000000;
+        margin-top: 8px;
+        position: relative;
+        font-size: 1rem;
+    }
 
-         .menu hr {
-            border: 1px solid #15151500;
-            border-top: 1px solid #B0E9E2;
-            padding: 0;
-            margin: 0 auto;
-         }
+    .header .menu hr {
+        border: 1px solid #15151500;
+        border-top: 1px solid #B0E9E2;
+        padding: 0;
+        margin: 0 auto;
+    }
 
-         .menu-icon {
-            cursor: pointer;
-            display: inline-block;
-            padding: 28px 8px;
-            position: relative;
-            user-select: none;
+    .header .menu-icon {
+        cursor: pointer;
+        display: inline-block;
+        padding: 4px;
+        position: relative;
+        user-select: none;
+    }
 
-          .navicon {
-            display: inline-block;
-            height: 2px;
-            transition: background .2s ease-out;
-            width: 100px;
-          }
-         }
+    .header .menu-icon .navicon {
+        display: inline-block;
+        height: 2px;
+        transition: background .2s ease-out;
+    }
 
-         .menu-btn {
-             display: none;
-         }
+    .header .menu-btn {
+        display: none;
+    }
 
-         .menu-btn:checked ~ .menu {
-            max-height: max-content;
-            border-radius: 8px;
-            border: 1px solid #B0E9E2;
-            width: max-content;
-         }
+    .header .menu-btn:checked ~ .menu {
+        max-height: max-content;
+        border-radius: 8px;
+        border: 1px solid #B0E9E2;
+        width: max-content;
+    }
 
-         .menu-btn:checked ~ & {
-            max-width: max-content;
-         }
+    .menu-btn:checked ~ .header {
+        max-width: max-content;
     }
 }
 
@@ -166,7 +170,7 @@
         padding: 0;
         list-style: none;
         overflow: hidden;
-     }
+    }
 
     .logo {
         margin: 1rem;
@@ -191,11 +195,11 @@
         grid-template-columns: 1fr;
         grid-template-rows: repeat(4, auto) max-content;
         grid-template-areas: 'logo' 'header' 'clock' 'footer';
+    }
 
-        ul {
-            list-style-type: none;
-            margin: 1rem 0;
-        }
+    .nav ul {
+        list-style-type: none;
+        margin: 1rem 0;
     }
 
     .nvcl {
@@ -275,7 +279,7 @@
 }
 
 html {
-    scroll-behavior: smooth
+    scroll-behavior: smooth;
 }
 
 body {
@@ -410,22 +414,26 @@ a:visited {
     display: grid;
     grid-area: nav;
     background: #F0F8F4;
-    color: #151515;
-    img.logo {
-        border-radius: 50%;
-        border: 1px solid rgba(0,0,0,0.35);
-        box-shadow: inset 1px 0 0 0 rgba(255,255,255,0.07),inset -1px 0 0 0 rgba(255,255,255,0.07),0 1px 3px rgba(0,0,0,0.12),0 1px 2px rgba(0,0,0,0.24);
-    }
+    color: #151515
+}
 
-    .nvcl {
-        grid-area: clock;
-        border-radius: 8px;
-        text-align: center;
-        background: #B0E9E2;
-        color: #151515;
-        padding: 12px;
-        display: inline-grid;
-    }
+.nav img.logo {
+    border-radius: 50%;
+    border: 1px solid rgba(0,0,0,0.35);
+    box-shadow: inset 1px 0 0 0 rgba(255,255,255,0.07),
+                inset -1px 0 0 0 rgba(255,255,255,0.07),
+                0 1px 3px rgba(0,0,0,0.12),
+                0 1px 2px rgba(0,0,0,0.24);
+}
+
+.nav .nvcl {
+    grid-area: clock;
+    border-radius: 8px;
+    text-align: center;
+    background: #B0E9E2;
+    color: #151515;
+    padding: 12px;
+    display: inline-grid;
 }
 
 .logo {
@@ -483,3 +491,4 @@ table thead th {
 table thead th:first-child {
     border-left: none;
 }
+
