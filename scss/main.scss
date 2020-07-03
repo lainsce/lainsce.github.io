@@ -31,21 +31,24 @@
     grid-template-areas: 'logo header clock footer';
   }
   .body {
-    width: 40ch;
+    width: 50ch;
     padding-top: 0.5rem;
   }
   .palcart {
-    grid-template-columns: repeat(10, 35px);
-    grid-template-rows: repeat(5, 35px);
+    grid-template-columns: repeat(10, 50px);
+    grid-template-rows: repeat(5, 50px);
     grid-gap: 0;
 
     .palette {
-      width: 35px;
-      height: 35px;
+      width: 50px;
+      height: 50px;
       text-indent: 100%;
       white-space: nowrap;
       overflow: hidden;
     }
+  }
+  .palette-name {
+      visibility: hidden;
   }
 
     .header {
@@ -184,13 +187,25 @@
     grid-template-areas: 'logo' 'header' 'clock' 'footer';
   }
   .body {
-    width: 90ch;
+    width: 80ch;
     padding-top: 1.5rem;
   }
   .palcart {
     grid-template-columns: repeat(10, 75px);
-    grid-template-rows: repeat(5, 75px) min-content;
+    grid-template-rows: repeat(6, 75px) min-content;
     grid-gap: 0;
+  }
+  .palette-name {
+    border-radius: 8px;
+    width: 75px;
+    height: 75px;
+    color: #151515;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 120px;
+    font-family: monospace;
+    font-weight: 700;
+    font-size: 1.1rem
   }
 
   .header .menu {

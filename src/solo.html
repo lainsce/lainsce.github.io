@@ -14,22 +14,31 @@
             visibility: hidden;
         }
       }
+      .tocbutton {
+        border-radius: 8px;
+        background: #F7F7F7;
+        border: 1px solid rgba(0,0,0, 0.25);
+        position: fixed;
+        right: 18px;
+        top: 1rem;
+        float: right;
+        padding: 12px;
+        font-size: 1.55rem;
+      }
 
       .card {
-        box-shadow: 0 1px 14px 1px rgba(0,0,0, 0.25);
         margin: 10px;
         border-radius: 8px;
         border: 1px solid rgba(0,0,0, 0.25);
       }
       .toc {
-        box-shadow: 0 1px 14px 1px rgba(0,0,0, 0.25);
         background: #F7F7F7;
         border: 1px solid rgba(0,0,0, 0.25);
         border-radius: 8px;
         display: table;
         position: fixed;
         right: 18px;
-        top: 13rem;
+        top: 5rem;
         margin-bottom: 1rem;
         width: auto;
         float: right;
@@ -95,7 +104,8 @@
         </div>
     </div>
     <div class="body">
-        <div class="toc">
+        <button class="tocbutton" onclick="show_toc()">≡</button>
+        <div id="toc" class="toc">
             <div class="toc-items">
                 <a href=#title><b>solo Design System</b></a>
                 <a href=#basics>Basics</a>
@@ -137,6 +147,16 @@
         <p>Note: the below palette colors are just for show. You'll want to mix the base color you chose that is roughly
            on the 500-tier, with #151515 to get darker tones and #F7F7F7 to get lighter tones.</p>
         <div class="palcart">
+            <h4></h4>
+            <div class="palette-name" >Sienne</div>
+            <div class="palette-name" >Fairway</div>
+            <div class="palette-name" >Rossi</div>
+            <div class="palette-name" >Chernov</div>
+            <div class="palette-name" >Durban</div>
+            <div class="palette-name" >Valle</div>
+            <div class="palette-name" >Jalisco</div>
+            <div class="palette-name" >Halley</div>
+            <div class="break"></div>
             <h4>900</h4>
             <div class="palette" style="background: #2c291e;">#2C291E</div>
             <div class="palette" style="background: #1e262c;">#1E262C</div>
@@ -159,10 +179,10 @@
             <div class="break"></div>
             <h4>500</h4>
             <div class="palette palette-dark" style="background: #FFE16B;">#FFE16B</div>
-            <div class="palette" style="background: #4792DE;">#70C0FF</div>
-            <div class="palette" style="background: #C85050;">#C85050</div>
+            <div class="palette palette-dark" style="background: #4792DE;">#70C0FF</div>
+            <div class="palette palette-dark" style="background: #D07070;">#D07070</div>
             <div class="palette palette-dark" style="background: #ff976b;">#FF976B</div>
-            <div class="palette" style="background: #74C02E;">#74C02E</div>
+            <div class="palette palette-dark" style="background: #74C02E;">#74C02E</div>
             <div class="palette" style="background: #6060C5;">#6060C5</div>
             <div class="palette palette-dark" style="background: #60c9c2;">#60C9C2</div>
             <div class="palette" style="background: #888888;">#888888</div>

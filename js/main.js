@@ -32,3 +32,12 @@ function getAge(birth) {
   return ageYear;
 }
 document.getElementById('age').innerHTML = getAge(birth);
+
+function show_toc() {
+  var x = document.getElementById("toc");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
