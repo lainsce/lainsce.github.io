@@ -323,6 +323,10 @@ body {
     max-width: 100%;
   }
 
+  a.external {
+      font-size: 1rem;
+  }
+
   a.external:after {
     content: "↗";
   }
@@ -336,6 +340,11 @@ body {
     margin-right: 6px;
     padding: 6px;
   }
+
+    .note {
+      font-size: 1rem;
+      color: #666;
+    }
 }
 
 a {
