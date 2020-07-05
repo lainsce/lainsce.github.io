@@ -37,7 +37,20 @@ function show_toc() {
   var x = document.getElementById("toc");
   if (x.style.display === "none") {
     x.style.display = "block";
+    localStorage.setItem('toc', 'open');
   } else {
     x.style.display = "none";
+    localStorage.setItem('toc', 'closed');
   }
+}
+const cur = localStorage.getItem('toc') ? localStorage.getItem('toc') : null;
+
+if (cur) {
+    if (cur === 'open') {
+      var x = document.getElementById("toc");
+      x.style.display = "block";
+    } else if (cur === 'closed') {
+      var x = document.getElementById("toc");
+      x.style.display = "none";
+    }
 }

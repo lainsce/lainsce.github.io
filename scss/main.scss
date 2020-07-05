@@ -1,11 +1,52 @@
 ---
 ---
 
+@media (prefers-color-scheme: dark) {
+    :root {
+        --accent-100: #102922;
+        --accent-300: #306962;
+        --accent-500: #60C9C2;
+        --accent-700: #B0E9E2;
+        --accent-700: #F0F8F4;
+        --fg-color: #f7f7f7;
+        --bg-1-level: #151515;
+        --bg-2-level: #333333;
+        --bg-3-level: #888888;
+        --border: rgba(255,255,255, 0.3);
+    }
+
+    .favs img {
+        filter: invert(1);
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+        --accent-100: #F0F8F4;
+        --accent-300: #B0E9E2;
+        --accent-500: #60C9C2;
+        --accent-700: #306962;
+        --accent-700: #102922;
+        --fg-color: #151515;
+        --bg-1-level: #f7f7f7;
+        --bg-2-level: #eeeeee;
+        --bg-3-level: #888888;
+        --border: rgba(0,0,0, 0.25);
+    }
+}
+
 @media (max-width: 800px) {
     .grid-container {
         grid-template-columns:1fr;
         grid-template-rows: 200px 1fr;
         grid-template-areas: 'nav' 'body';
+    }
+
+    .toc {
+        visibility: hidden;
+    }
+    html {
+        overflow-x: hidden;
     }
 
     body p {
@@ -33,7 +74,7 @@
         position: fixed;
         width: 100%;
         height: 64px;
-        border-bottom: 1px solid rgba(0,0,0,0.25);
+        border-bottom: 1px solid var(--border);
         padding: 1rem 0;
         z-index: 999;
         grid-template-columns: 1fr 1fr min-content;
@@ -73,10 +114,10 @@
     }
 
     .header {
-        background-color: #F0F8F4;
+        background-color: var(--accent-100);
         z-index: 2;
         border-radius: 8px;
-        border: 1px solid #B0E9E2;
+        border: 1px solid var(--accent-300);
         height: 48px;
         width: 48px;
         font-size: 2rem;
@@ -89,7 +130,7 @@
         padding: 0;
         list-style: none;
         overflow: hidden;
-        background-color: #F0F8F4
+        background-color: var(--accent-100);
     }
 
     .header li a {
@@ -101,7 +142,7 @@
     }
 
     .header li a:hover {
-        background-color: #B0E9E2
+        background-color: var(--accent-300);
     }
 
     .header .menu {
@@ -115,8 +156,8 @@
     }
 
     .header .menu hr {
-        border: 1px solid #15151500;
-        border-top: 1px solid #B0E9E2;
+        border: 1px solid #00000000;
+        border-top: 1px solid var(--accent-300);
         padding: 0;
         margin: 0 auto;
     }
@@ -142,7 +183,7 @@
     .header .menu-btn:checked ~ .menu {
         max-height: max-content;
         border-radius: 8px;
-        border: 1px solid #B0E9E2;
+        border: 1px solid var(--accent-300);
         width: max-content;
     }
 
@@ -190,7 +231,7 @@
         width: 200px;
         z-index: 999;
         padding: 0 1rem;
-        border-right: 1px solid rgba(0,0,0,0.25);
+        border-right: 1px solid var(--border);
         grid-template-columns: 1fr;
         grid-template-rows: repeat(4, auto) max-content;
         grid-template-areas: 'logo' 'header' 'clock' 'footer';
@@ -262,11 +303,11 @@
     }
 
     .header li:hover {
-        background: #B0E9E2;
+        background: var(--accent-300);
     }
 
     .header li a {
-        color: #151515;
+        color: var(--fg-color);
         font-size: 0.88rem;
         text-transform: uppercase;
     }
@@ -280,14 +321,13 @@ body {
     height: 100%;
     font-size: 1rem;
     font-weight: 400;
-    line-height: 24px;
     margin: 0;
     font-family: 'Inter', sans-serif;
     font-feature-settings: "liga" 0, "tnum";
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    color: #151515;
-    background: #f7f7f7;
+    color: var(--fg-color);
+    background: var(--bg-1-level);
     width: 100%;
 }
 
@@ -363,17 +403,65 @@ body .body li:before {
 
 body .note {
     font-size: 1rem;
-    color: #666;
+    color: var(--bg-3-level);
 }
 
 a {
-    color: #60C9C2;
+    color: var(--accent-500);
     text-decoration: none;
     font-weight: 700;
 }
 
 a:visited {
-    color: #60C9C2;
+    color: var(--accent-500);
+}
+
+.tocbutton {
+    border-radius: 8px;
+    background: var(--bg-1-level);
+    color: var(--fg-color);
+    border: 1px solid var(--border);
+    position: fixed;
+    right: 18px;
+    top: 1rem;
+    float: right;
+    padding: 6px 12px;
+    font-size: 1.55rem;
+}
+.card {
+    margin: 10px;
+    border-radius: 8px;
+    border: 1px solid var(--border);
+}
+.toc {
+    background: var(--bg-1-level);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    display: table;
+    position: fixed;
+    right: 18px;
+    top: 4rem;
+    margin-bottom: 1rem;
+    width: auto;
+    float: right;
+}
+.toc-items {
+    display: flex;
+    flex-direction: column;
+    padding: 12px 1rem;
+}
+.toc-items a {
+    color: var(--fg-color);
+    padding: 5px 0;
+    font-weight: 500;
+}
+.toc hr {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    border: none;
+    height: 1px;
+    background-color: var(--border);
 }
 
 .break {
@@ -390,7 +478,7 @@ a:visited {
     vertical-align: middle;
     line-height: 75px;
     font-family: monospace;
-    border: 1px solid #00000040;
+    border: 1px solid var(--border);
 }
 
 .palette-dark {
@@ -412,13 +500,12 @@ a:visited {
 .nav {
     display: grid;
     grid-area: nav;
-    background: #F0F8F4;
-    color: #151515
+    background: var(--accent-100);
+    color: var(--fg-color);
 }
 
 .nav img.logo {
     border-radius: 50%;
-    border: 1px solid rgba(0,0,0,0.35);
     box-shadow: inset 1px 0 0 0 rgba(255,255,255,0.07),
                 inset -1px 0 0 0 rgba(255,255,255,0.07),
                 0 1px 3px rgba(0,0,0,0.12),
@@ -429,8 +516,8 @@ a:visited {
     grid-area: clock;
     border-radius: 8px;
     text-align: center;
-    background: #B0E9E2;
-    color: #151515;
+    background: var(--accent-300);
+    color: var(--fg-color);
     padding: 12px;
     display: inline-grid;
 }
@@ -445,8 +532,8 @@ a:visited {
 
 .body {
     grid-area: body;
-    background: #f7f7f7;
-    color: #242424;
+    background: var(--bg-1-level);
+    color: var(--fg-color);
     margin: auto;
 }
 
@@ -455,17 +542,16 @@ a:visited {
     width: 32px;
     padding: 0;
     margin: 0;
-    border: 1px solid lightgray;
 }
 
 .badge {
     padding: 0 1rem;
-    border-left: 1px dashed #242424;
+    border-left: 1px dashed var(--bg-2-level);
     margin-left: 1rem;
 }
 
 table {
-    background-color: #f7f7f7;
+    background-color: var(--bg-1-level);
     text-align: center;
     border-collapse: collapse;
     width: max-content;
@@ -473,21 +559,20 @@ table {
 
 table td {
     padding: 8px 6px;
-    border-bottom: 1px solid #242424;
+    border-bottom: 1px solid var(--bg-2-level);
 }
 
 table thead {
-    border-bottom: 2px solid #242424;
+    border-bottom: 2px solid var(--bg-2-level);
 }
 
 table thead th {
     padding: 3px 5px;
     font-weight: 700;
-    color: #242424;
+    color: var(--bg-2-level);
     text-align: center;
 }
 
 table thead th:first-child {
     border-left: none;
 }
-
