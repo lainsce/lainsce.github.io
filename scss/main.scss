@@ -283,6 +283,7 @@ body {
     line-height: 24px;
     margin: 0;
     font-family: 'Inter', sans-serif;
+    font-feature-settings: "liga" 0, "tnum";
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     color: #151515;
