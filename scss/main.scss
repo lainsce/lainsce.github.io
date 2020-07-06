@@ -100,6 +100,7 @@
 
     .favs {
         transform: scale(0.6);
+        display: inline-flex;
     }
 
     .nav {
@@ -243,7 +244,8 @@
     }
 
     .favs {
-        transform: scale(1);
+        transform: scale(0.6);
+        display: inline-flex;
     }
 
     .copyright {
@@ -379,6 +381,11 @@ button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-
     border: 0;
     border-style: none;
     padding: 0;
+}
+
+@font-face {
+    font-family: "myFirstFont";
+    src: url("../fonts/Inter.otf");
 }
 
 body {
