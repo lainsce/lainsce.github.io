@@ -16,6 +16,7 @@
     <title>Lains</title>
     <link rel="stylesheet" href="../scss/main.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
   <div class="grid-container">
@@ -87,7 +88,7 @@
         <div style="display: block; margin: 1rem auto; width: 128px; height:128px"><img class="card" src="../images/solo/solo_icon.png"></div>
         <br>
         <h1>SOLO DESIGN SYSTEM</h1>
-        <div style="margin-top: 50px;" id="basics"></div>
+        <div style="margin-top: 30px;" id="basics"></div>
         <h2>Basics</h2>
         <p>So, what <i>is</i> solo? solo /'so.lo/ is a Design System implemented by me to unify my projects to create a strong
            visual identity atop the laurels of elementary OS's golden design. So, what does solo do, that others don't?</p>
@@ -97,14 +98,14 @@
             <li>Reduces visual clutter</li>
             <li>Strong-arms an opinionated design</li>
         </ul>
-        <div style="margin-top: 50px;" id="color"></div>
+        <div style="margin-top: 30px;" id="color"></div>
         <h2>Color</h2>
         <p>Color in solo is used very, very sparingly to aid in accenting an app rather than making it a visual circus.
            Apps designed with solo also don't have more than one color. Different shades are accomplished with black or
            white mixing with the accent color chosen.</p>
         <p class="note">Note: the below palette colors are just for show. You'll want to mix the base color you chose that is roughly
            on the 500-tier, with #151515 to get darker tones and #F7F7F7 to get lighter tones.</p>
-        <div class="palcart" style=" margin-bottom: 50px;">
+        <div class="palcart" style=" margin-bottom: 30px;">
             <h4></h4>
             <div class="palette-name" >Sienne</div>
             <div class="palette-name" >Fairway</div>
@@ -165,49 +166,55 @@
             <div class="palette palette-dark" style="background: #f0f8f4;">#F0F8F4</div>
             <div class="palette palette-dark" style="background: #f7f7f7;">#F7F7F7</div>
         </div>
-        <div style="margin-top: 50px;" id="text"></div>
+        <div style="margin-top: 30px;" id="text"></div>
         <h2>Text</h2>
         <p>For text sizes, you already are seeing solo in action on this website. The headers are just the way they should
            be in solo, and text also is following the design. But as a refresher, here they are.</p>
-        <p class="note">Note: In solo, rarely H1, H3, and H5 are used, they're here for legacy purposes from elementary OS's styling.</p>
-        <div style="display: block; margin: 0 auto; text-align: center;">
-            <h1>H1 Header</h1>
-            <h2>H2 Header</h2>
-            <h3>H3 Header</h3>
-            <h4>H4 Header</h4>
-            <h5>H5 Header</h5>
-            <p>Paragraph</p>
-            <q>Quote</q>
+        <p class="note">Note: In solo, rarely Large Title, Subtitle, and Callout are used, they're here for legacy purposes
+                        from elementary OS's styling.</p>
+        <div style="display: block; text-align: center;float:left;width: 50%;">
+            <h1>Large Title</h1><p class="note">24pt Bold</p>
+            <h2>Title</h2><p class="note">18pt Light</p>
+            <h3>Subtitle</h3><p class="note">14pt Bold</p>
+            <h4>Header</h4><p class="note">9pt Bold Small-Caps</p>
         </div>
-        <div style="margin-top: 50px;" id="spacing"></div>
+        <div style="display: block; text-align: center; float: right;width: 50%;">
+            <h5>Callout</h5><p class="note">10pt Bold</p>
+            <p>Body</p><p class="note">13pt Regular</p>
+            <p class="note">Footnote</p><p class="note">13pt Regular Dimmed</p>
+            <q>Quote</q><p class="note">18pt Italic Light</p>
+        </div>
+        <div style="clear: both;"></div>
+        <div style="margin-top: 30px;" id="spacing"></div>
         <h2>Spacing</h2>
         <p>In solo, Spacing is based on units (u) of 6. The scaling system uses fractions and multiples of the base size
            (6u or u/6). The result is easy to understand. Here's a nifty image showcasing spacing. Spacing also should
            never exceed 30u from one element to another one (nested or otherwise.)</p>
         <p class="note">Note: u is roughly the same as 1dp (device pixel).</p>
-        <div style="display: block; margin: 0 auto; margin-bottom: 50px;"><img class="card" src="../images/solo/solo_spacing.png"></div>
+        <div style="display: block; margin: 0 auto; margin-bottom: 30px;"><img class="card" src="../images/solo/solo_spacing.png"></div>
         <h2 id="shapes">Shapes</h2>
         <p>In solo, there's only two shapes to choose from, the square with 8px corner radius, and the circle. Both are used
            in the same app, but the circle is reserved for avatars or account images only. Do not use triangles or other funky
            shapes.</p>
         <p class="note">Note: circles when used as account pictures, are the only Widget that has shadow cast on it, besides
                         the Cog's menu popover.</p>
-        <div style="display: block; margin: 50px auto;"><img class="card" src="../images/solo/solo_shapes.png"></div>
+        <div style="display: block; margin: 30px auto;"><img class="card" src="../images/solo/solo_shapes.png"></div>
         <hr>
         <div id="window"></div>
-        <h2 style="margin-top: 50px; margin-bottom: 0;">Window</h2>
+        <h2 style="margin-top: 30px; margin-bottom: 0;">Window</h2>
         <div style="display: block; margin: 0 auto; margin-top: 20px; width: fit-content;"><img src="../images/solo/solo_window_composite.png"></div>
         <div>
         <p>So, with all that out of the way, let's start detailing the main differences that solo brings. The first of which
            is a Window's design and layouting. As you can see, in solo, the window layout is pretty standard, but it has
            some very unique design opinions. Corners are rounded to 8px, and the overall look feels airy.</p>
         </div>
-        <div style="display: inline-block; float:left; width: 50%; margin-top: 50px;"><img src="../images/solo/solo_sidebar.png"></div>
-        <div id="sidebar" style="display: block; float:right; width: 45%; margin-bottom: 50px;">
+        <div style="display: inline-block; float:left; width: 50%; margin-top: 30px;"><img src="../images/solo/solo_sidebar.png"></div>
+        <div id="sidebar" style="display: block; float:right; width: 45%; margin-bottom: 30px;">
         <h2>Sidebar</h2>
-        <p>In the sidebar, which is full-height and colored with the 100-tier color, you'll want only the close button to show via an empty titlebar, as well as
-           make sure all items are fit snuggly inside the main part below this titlebar. All items in the main part should be
-           accompanied by a header of what the items are in H5 styling. Be it listboxes or sourcelists or whatever.</p>
+        <p>In the sidebar, which is full-height and colored with the 100-tier color, you'll want only the close button to show
+           via an empty titlebar, as well as make sure all items are fit snuggly inside the main part below this titlebar. All
+           items in the main part should be accompanied by a header of what the items are in Header styling. Be it listboxes or
+           sourcelists or whatever.</p>
         <h4>Sidebar Listboxes</h4>
         <p>Listboxes in a sidebar should follow a design cue of using the 300-tier color as the border, or when hovered, both
            border and background; of the whole box, as well as 8px corner radius; This is to ensure they fit onto the System.</p>
@@ -222,8 +229,8 @@
            the main titlebar. This button has the same background color as the sidebar, with the 300-tier color as its border.</p>
         </div>
         <div id="titlebar" style="clear: both;"></div>
-        <div style="display: inline-block; float:right; margin-top: 50px;"><img src="../images/solo/solo_titlebar.png"></div>
-        <div style="display: block; float:left; width: 60%; margin-bottom: 50px;">
+        <div style="display: inline-block; float:right; margin-top: 30px;"><img src="../images/solo/solo_titlebar.png"></div>
+        <div style="display: block; float:left; width: 60%; margin-bottom: 30px;">
         <h2>Titlebar</h2>
         <p>The titlebar, the hallmark place where you'll put your app's actions in… But wait, in solo, you should follow some
            basic rules to make it work wonderfully for your user. The background color should be #FFF in light mode, and #000
@@ -249,8 +256,8 @@
            associated with the destructive action, requiring a confirmation of destruction.</p>
         </div>
         <div id="mainpane" style="clear: both;"></div>
-        <div style="display: block; float:left; width: 40%; margin-top: 50px;"><img src="../images/solo/solo_main_pane.png"></div>
-        <div style="display: block; float:right; width: 50%; margin-bottom: 50px">
+        <div style="display: block; float:left; width: 40%; margin-top: 30px;"><img src="../images/solo/solo_main_pane.png"></div>
+        <div style="display: block; float:right; width: 50%; margin-bottom: 30px">
         <h2>Main Pane</h2>
         <p>This is where you'll further layout your app's functionality, observing the use of h2 titles for sections and welcome
            screen titles. Basically where your app's task becomes evident. Don't forget to make every entry have a corner radius
@@ -265,27 +272,27 @@
         <div style="display: block;">
         <h2>Welcome View</h2>
         <p>This is where you'll welcome your users to your app. Show them how to start your program, by adding rows in a grid in
-           this way: A 48px sized icon followed by a dimmed H2-styled label, both pertaining to the main action in your titlebar
+           this way: A 48px sized icon followed by a dimmed Title-styled label, both pertaining to the main action in your titlebar
            (the one on the left). It's known Granite from elementary OS has a Welcome widget, but it imports non-solo styling, so
            it's best to avoid using it if designing your app with solo. The label should explain what that main action does in
            sentence-casing, ending in an ellipsis (…).</p>
         </div>
-        <div style="display: block; margin: 0 auto; margin-bottom: 50px; width: fit-content;"><img src="../images/solo/solo_welcome.png"></div>
+        <div style="display: block; margin: 0 auto; margin-bottom: 30px; width: fit-content;"><img src="../images/solo/solo_welcome.png"></div>
         <div style="clear: both;"></div>
         <hr>
         <div id="example"></div>
-        <h2 style="margin-top: 50px;">Example App</h2>
+        <h2 style="margin-top: 30px;">Example App</h2>
         <p>In this section I will show a barebones app called Enigma (not coded, just a mockup) that showcases all the patterns
            of solo, applied to a code editor.</p>
         <div style="display: block;margin: 0 auto;"><img class="card" src="../images/solo/solo_example_app1.png"></div>
         <p>When users open up Enigma, they are treated to the solo Welcome View. This view guides them to open a new file
-           previously saved, or to start a new one. Note the Sidebar's empty state which is a "No files…" H2 label. When
+           previously saved, or to start a new one. Note the Sidebar's empty state which is a "No files…" Title label. When
            we open a file, or add a new one…</p>
         <div style="display: block;margin: 0 auto;"><img class="card" src="../images/solo/solo_example_app2.png"></div>
-        <p>Then it all starts. There's the Sidebar, showing a pane switcher and a file box, this box with a title, a subtitle and its remove button.
-           The Titlebar, has new file, open file, run file as primary actions and the Cog on the right side. As you can see,
-           the contents of the sidebar are always centered, leaving margins on both sides. The pane switcher graciously blends
-           in with the Sidebar as well as the file box.</p>
+        <p>Then it all starts. There's the Sidebar, showing a pane switcher and a file box, this box with a title, a subtitle
+           and its remove button. The Titlebar, has new file, open file, run file as primary actions and the Cog on the right
+           side. As you can see, the contents of the sidebar are always centered, leaving margins on both sides. The pane
+           switcher graciously blends in with the Sidebar as well as the file box.</p>
     </div>
     <script type="text/javascript" src="../js/main.js"></script>
 </body>
