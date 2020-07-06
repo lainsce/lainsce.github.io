@@ -18,7 +18,7 @@ function arne(){
     document.getElementById('time').innerHTML = arvelie(today);
     document.getElementById('date').innerHTML = neralie(today);
 }
-window.setInterval(arne, 2000);
+window.setInterval(arne, 1000 / 60);
 
 today = new Date();
 document.getElementById('year').innerHTML = arvelie(today);
@@ -32,25 +32,3 @@ function getAge(birth) {
   return ageYear;
 }
 document.getElementById('age').innerHTML = getAge(birth);
-
-function show_toc() {
-  var x = document.getElementById("toc");
-  if (x.style.display === "none") {
-    x.style.display = "block";
-    localStorage.setItem('toc', 'open');
-  } else {
-    x.style.display = "none";
-    localStorage.setItem('toc', 'closed');
-  }
-}
-const cur = localStorage.getItem('toc') ? localStorage.getItem('toc') : null;
-
-if (cur) {
-    if (cur === 'open') {
-      var x = document.getElementById("toc");
-      x.style.display = "block";
-    } else if (cur === 'closed') {
-      var x = document.getElementById("toc");
-      x.style.display = "none";
-    }
-}
