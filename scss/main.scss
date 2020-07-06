@@ -35,6 +35,38 @@
     }
 }
 
+.light {
+    --accent-100: #102922;
+    --accent-300: #306962;
+    --accent-500: #60C9C2;
+    --accent-700: #B0E9E2;
+    --accent-700: #F0F8F4;
+    --fg-color: #f7f7f7;
+    --bg-1-level: #151515;
+    --bg-2-level: #333333;
+    --bg-3-level: #888888;
+    --border: rgba(255,255,255, 0.3);
+    
+    .favs img {
+        filter: invert(1);
+    }
+}
+
+.dark {
+    --accent-100: #F0F8F4;
+    --accent-300: #B0E9E2;
+    --accent-500: #60C9C2;
+    --accent-700: #306962;
+    --accent-700: #102922;
+    --fg-color: #151515;
+    --bg-1-level: #f7f7f7;
+    --bg-2-level: #eeeeee;
+    --bg-3-level: #888888;
+    --border: rgba(0,0,0, 0.25);
+
+    
+}
+
 @media (max-width: 800px) {
     .grid-container {
         grid-template-columns:1fr;
@@ -148,7 +180,7 @@
     .header .menu {
         clear: both;
         max-height: 0;
-        transition: max-height .2s ease-out;
+        transition: max-height .2s ease-in-out;
         border: 1px solid #00000000;
         margin-top: 8px;
         position: relative;
@@ -173,7 +205,7 @@
     .header .menu-icon .navicon {
         display: inline-block;
         height: 2px;
-        transition: background .2s ease-out;
+        transition: background .2s ease-in-out;
     }
 
     .header .menu-btn {
@@ -236,6 +268,12 @@
     .nav ul {
         list-style-type: none;
         margin: 1rem 0;
+        font-size: 9pt;
+        font-weight: 700;
+        padding-bottom: 0.5em;
+        padding-top: 0.5em;
+        margin: 0;
+        text-transform: uppercase;
     }
 
     .nvcl {
@@ -363,6 +401,7 @@ ul {
 
 body q {
     font-family: "Roboto Slab", serif;
+    font-feature-settings: "liga" 0, "tnum";
     font-size: 18pt;
     font-weight: 300;
     font-style: italic;
@@ -403,6 +442,18 @@ body .note {
     color: var(--bg-3-level);
 }
 
+::selection {
+    color: var(--accent-700);
+    background: var(--accent-300);
+    text-shadow: none
+}
+
+::-moz-selection {
+    color: var(--accent-700);
+    background: var(--accent-300);
+    text-shadow: none
+}
+
 a {
     color: var(--accent-500);
     text-decoration: none;
@@ -429,7 +480,7 @@ a:visited {
 .toc-icon .navicon {
     display: inline-block;
     height: 2px;
-    transition: background .2s ease-out;
+    transition: background .2s ease-in-out;
 }
 
 .toc-btn {
@@ -588,4 +639,28 @@ table thead th {
 
 table thead th:first-child {
     border-left: none;
+}
+
+.theme-toggle {
+    color: var(--fg-color);
+    background-color: var(--accent-300);
+    border: 1px solid transparent;
+    border-radius: 50%;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.theme-toggle .icon {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    right: .8rem;
+    top: .7rem;
+}
+
+.theme-toggle #icon-moon {
+    display: block;
 }
