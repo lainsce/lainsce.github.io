@@ -41,6 +41,14 @@
     .prj-info4 { grid-area: prj-info4; }
     .prj-info5 { grid-area: prj-info5; }
     .prj-info6 { grid-area: prj-info6; }
+
+    .prj2-grid-container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(1, 1fr);
+      grid-gap: 1rem 3rem;
+      grid-template-areas: "prj2-fig prj2-info"
+    }
   </style>
 </head>
 <body>
@@ -166,8 +174,20 @@
     </div>
     <p class="note">Note: $'s are pay what you want suggestions.</p>
     <h2>Personal Apps</h2>
-    <p><span class="id-square" style="color:#222222;">█</span> Niu <span class="badge">19O05</span></p>
-    <p>Track date and time in an innovative way with this handy applet.</p>
+    <div class="prj2-grid-container">
+      <div class="prj2-fig">
+        <img class="card" src="../images/apps/niu-shot.png" alt="Niu">
+      </div>
+      <div class="prj2-info">
+        <p><span class="id-square" style="color:#222222;">█</span> Niu <span class="badge">19O05</span></p>
+        <p>Track date and time in an innovative way with this handy applet.</p>
+        <ul>
+          <li>Sits on Wingpanel for easy lookup.</li>
+          <li>Convert dates to Arvelie format.</li>
+          <li>Convert times to Neralie format.</li>
+        </ul>
+      </div>
+    </div>
     <h2>Discontinued Apps</h2>
     <p><span class="id-square" style="color:#ccbbaa;">█</span> Aesop <span class="badge">18L13</span> <span class="badge">Deprecated</span></p>
     <p>The simplest PDF viewer around, with no extra fuss.</p>
