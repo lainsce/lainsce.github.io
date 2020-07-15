@@ -1,0 +1,180 @@
+---
+---
+
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <style>
+    html {
+      visibility: hidden;
+      opacity: 0;
+    }
+  </style>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f7f7f7">
+  <meta name="robots" content="noindex" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://lainsce.us/src/first-one" />
+  <meta property="og:title" content="Lains" />
+  <meta property="og:description" content="First One" />
+  <meta property="og:image" content="https://lainsce.us/images/me.png" />
+  <meta name="twitter:card" content="summary">
+  <meta property="twitter:url" content="https://lainsce.us/src/first-one" />
+  <meta property="twitter:title" content="Lains" />
+  <meta property="twitter:description" content="First One" />
+  <meta property="twitter:image" content="https://lainsce.us/images/me.png" />
+  <title>First One - Lains</title>
+</head>
+
+<body>
+  <div class="grid-container">
+    <div class="nav">
+      <div class="logo">
+        <a href="/"><img class="logo" src="../../images/me.png"></a>
+      </div>
+      <header class="header">
+        <input class="menu-btn" type="checkbox" id="menu-btn" />
+        <label class="menu-icon" for="menu-btn"><span class="navicon">⚙</span></label>
+        <ul class="menu">
+          <li><a href="/">Home</a></li>
+          <li><a href="/src/projects">Projects</a></li>
+          <li><a href="/src/sayakuxa">Sayakuxa</a></li>
+          <li><a href="/src/nataniev">Nataniev</a></li>
+          <li><a href="/src/blog">Logs▁</a></li>
+          <li><a href="/src/about">About</a></li>
+        </ul>
+      </header>
+      <div class="nvcl">
+        <span id=date></span> <span id=time></span>
+      </div>
+      <div class="footer">
+        <div class="info">
+          <div class="copyright"><b>Lains ©17M05</b>—<span id="year">xxxxxx</span></div>
+          <div class="favs">
+            <a href="https://www.patreon.com/lainsce"><img height="32" width="32"
+                style="background: url('../../images/css_sprites.png') -10px -62px;"></a>
+            <a href="https://github.com/lainsce"><img height="32" width="32"
+                style="background: url('../../images/css_sprites.png') -10px -10px;"></a>
+            <a href="https://twitter.com/lainsdev"><img height="32" width="32"
+                style="background: url('../../images/css_sprites.png') -62px -62px;"></a>
+            <a href="https://merveilles.town/web/accounts/35057"><img height="32" width="32"
+                style="background: url('../../images/css_sprites.png') -62px -10px;"></a>
+            <a href="https://en.liberapay.com/Lains/"><img class="lp" height="32" width="32"
+                src="../../images/lp.png"></a>
+          </div>
+        </div>
+      </div>
+      <button id="theme-toggle" class="theme-toggle" aria-label="toggle site theme">
+        <svg id="icon-moon" class="icon " fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"
+          height="16px" width="16px">
+          <title>Moon</title>
+          <path
+            d="M4.957 1.063C1.232 3.03.032 7.995 1.806 11.606l-.105-.181c.045.095.1.183.148.275.052.102.106.202.163.301.057.099.117.196.179.291.056.089.105.18.165.266l-.105-.18c2.24 3.341 7.141 4.784 10.706 2.542 1.598-.894 2.58-2.19 3.043-3.92.224-.387-.203-1.184-.64-.932l-.44.254a5 5 0 11-5-8.66l.44-.254c.437-.252.016-1.326-.43-1.326-1.784-.278-3.4.044-4.973.981zm.5.866c1.116-.702 2.38-.98 3.636-.928a6 6 0 105.986 10.369c-.583 1.112-1.456 2.069-2.622 2.684-3.001 1.808-7.19.906-9.182-1.974a6.204 6.204 0 01-.387-.584 6.205 6.205 0 01-.313-.628C1.077 7.703 2.391 3.625 5.457 1.93z">
+          </path>
+          <path d="M5.457 1.93a7 7 0 007 12.124 7 7 0 002.62-2.684A6 6 0 019.091 1.002a7 7 0 00-3.634.927z"
+            opacity=".2"></path>
+        </svg>
+      </button>
+    </div>
+    <div class="body">
+      <h2>TRANSLUCENCY</h2>
+      <h4>On Translucent Widgets - 760:430 20N14</h4>
+
+      <h2>Introduction</h2>>
+      <p>In this article, I want to expose and detail what the translucency effect can add to an existing user
+        interface, and demystify the preconcept that translucency is just used for "pretty UI" and "good looks".</p>
+
+      <h2>History</h2>
+      <p>Translucency has come from a series of user interface advancements, and research that was piled onto existing
+        paradigms; it is the most recent advancement in UI, and for a good cause; it has come from the idea that user
+        interfaces can do more for the user, in terms of guidance for the overall first state of an UI.
+        Back in the 70's, computers were able to just display text. That's it. Not a single drawn interface. Just
+        scrolled text, with no way to go back, unless printed on a roll of paper by the main frame. A basic interface
+        for the users, which were a small amount, as nobody almost knew what a computer even was, at this time.
+        Come the 80's, and computers have started to go toward a better user facing interface, with primitive buttons,
+        and forms, with windows; all in glorious 1-bit. This is where some companies have started to put the gears in
+        motion that the care for the user-computer connection had to be more than this. So, some set to make text look
+        positively stunning for that era, with fonts (a novelty for that era) and a care for interface to look inviting
+        to use, and some primitive ideas about layoutting.
+        At the tail end of the 80's interfaces were starting to shape for what's to come. Companies started making small
+        divisions all about design and development of interfaces, often paired with extensive, at the time, teams of
+        psychologists and also other fields as needed. Primitive paradigms of layoutting started to take shape here.
+        This is the crux point of user interfaces; as researchers started making advancements, interfaces were evolving
+        at a fast pace. Users started to have more tech at home, and with this growing demand for computing, there was
+        it, the 90's boom. Suddenly, almost every (medium income) home worldwide had a computer or had a center nearby
+        with computers for use (LAN houses, as they were called.)
+        This is where users started seeing that computers were easier to use than before, and a new generation started
+        their existence living inside a world filled with technology.
+        Then, the 2000's started. That was a time in which the design think-tank never stopped treading, however gaudy
+        the interface was, they wanted it done. Glossy button, cartoon helpers, you name it. Operating Systems were
+        teeming with almost all the interfaces you could ever think; the birth of skeuomorphism in computer interfaces.
+        That was it, the best way to introduce people to computers, is if they deal with things they see in real life.
+        Wooden windows, green felt panes, address book styled contacts app. It was in hindsight, the most gaudy of eras,
+        but in actuality, at the time, this was needed to impulse the availability of computers to even those
+        illiterate, to use.
+        It was at this point, that designers stepped back, and thought to themselves in a sort of zeitgeist phenomenon:
+        "Let's step back to the roots of our machine interactions, and use those Swiss Design patterns lauded in the
+        50's for text and diagramming; that'll surely be what advances us from this complexity." This was the birth of
+        Flat Design. Gone is the green felt, bubbly buttons, etc. and in comes the text driven interface; things are
+        meant to be form over function in the past now; we must value function now or perish our search for the best UI.
+        In Flat Design, chrome (or non-content) is eliminated wherever possible.
+        This is where another 90's boom happened, this time with research of User Experience and User Interfaces, and
+        how it should look and feel for a better experience. Gestalt principles were abided by, like golden rules (More
+        on that later.) Basically, all design of user interfacing was starting to be rebuilt for the best research yet
+        again.
+        And then comes the recent era of today. Companies' design divisions have built separate yet almost too closely
+        related interfaces, all built upon the flat interface, to make it more in tune with human brain functionality
+        and the perception of things, rather than just make it look as good as it can no matter what (gaudy 2000's UI).
+        One such recentish invention, is the use of shadows to imply that elements sit in a 3D space, also known as
+        spatial-aware design. The search for this same spatial-aware design, also has given us yet another recent
+        invention; frosted/translucent interfaces.</p>
+
+      <h2>Translucency</h2>
+      <p>So, what does translucency entail, and why does everybody use it in interface nowadays? It's very simple.
+        Remember back, when I mentioned the Gestalt Principles applied to design? Yeah, this is an invention in
+        interfaces, that uses the Figure-Background principle:</p>
+      <q>Figure–ground organization is a type of perceptual grouping that is a vital necessity for recognizing objects
+        through vision. In Gestalt psychology it is known as identifying a figure from the background. For example,
+        black words on a printed paper are seen as the "figure," and the white sheet as the "background".</q>
+      <p>This helps the user's perception of what is the flow of usage of that certain app. Designers have now started
+        using this to make sidebars, for example, fade on the attention level for users, and focus on the main content
+        of an app instead of having multiple layers of the same app competing for attention, and adding, shockingly,
+        mental overload. Humans weren't meant to focus on tonnes of many things at once, so the translucency helps
+        understate parts of the UI that aren't important to be glanced over as primary targets. As Apple puts it (Note:
+        they refer to objects with translucency as Materials),</p>
+      <q>The effect of a Material lets views and controls hint at background content without distracting from foreground
+        content. To produce this effect, Materials allow background color information to pass through foreground views,
+        while also blurring the background context to maintain legibility.</q>
+
+      <p>The key part here, is that the translucency shouldn't be too transparent while also not having a lack of a
+        strong blur either, both measures to avoid hurting legibility and contrast of text and background. Let's see how
+        Microsoft puts it (They refer to translucency as Acrylic):</p>
+      <q>The things that surround us in the real world are sensory and invigorating. They bend, stretch, bounce,
+        shatter, and glide. Those material qualities translate to digital environments, making people want to reach out
+        and touch our designs. Acrylic is one such material, that helps you create modern, bold UI that incorporates
+        light, depth, motion, material, and scale.</q>
+      <p>As you can infer from both quotes, translucency aims to make the UI that much closer to interactions that our
+        brain percieves the world with, and as bonus points, refreshes the interface with the utmost care and detail.
+      </p>
+
+      <h2>Conclusion</h2>
+      <p>And so, I hope that with this article, you may exit convinced of the usefulness of applying translucency to
+        your interfaces, upgrading the user interaction to what's the most modern, and reducing mental overload for your
+        users. Translucency is here to stay, as it's the most recent invention made by professional designers paired
+        with psychology in mind to help make the world of computing that much more easier to deal with, even if that
+        feels weird to read but you must understand that they poured years of research before applying this onto the end
+        user.</p>
+
+      <p><sub>Post written in Quilter. You can find it on elementary OS's AppCenter.</sub></p>
+
+      <a style="float:center" href="/src/blog">Go Back</a>
+    </div>
+    <script type="text/javascript" src="/js/theme.js"></script>
+    <script type="text/javascript" src="../../js/main.js"></script>
+    <link rel="stylesheet" href="../scss/main.css">
+</body>
+
+</html>
