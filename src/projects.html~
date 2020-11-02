@@ -36,7 +36,7 @@
       grid-template-columns: repeat(2, 1fr);
       grid-template-rows: repeat(6, 1fr);
       grid-gap: 1rem 3rem;
-      grid-template-areas: "prj-fig prj-info" "prj-info2 prj-fig2" "prj-fig3 prj-info3" "prj-info4 prj-fig4" "prj-fig5 prj-info5" "prj-info6 prj-fig6"
+      grid-template-areas: "prj-fig prj-info" "prj-info2 prj-fig2" "prj-fig3 prj-info3" "prj-info4 prj-fig4" "prj-fig5 prj-info5" "prj-info6 prj-fig6" "prj-fig7 prj-info7"
     }
     .prj-fig { grid-area: prj-fig; }
     .prj-fig2 { grid-area: prj-fig2; }
@@ -44,12 +44,14 @@
     .prj-fig4 { grid-area: prj-fig4; }
     .prj-fig5 { grid-area: prj-fig5; }
     .prj-fig6 { grid-area: prj-fig6; }
+    .prj-fig7 { grid-area: prj-fig7; }
     .prj-info { grid-area: prj-info; }
     .prj-info2 { grid-area: prj-info2; }
     .prj-info3 { grid-area: prj-info3; }
     .prj-info4 { grid-area: prj-info4; }
     .prj-info5 { grid-area: prj-info5; }
     .prj-info6 { grid-area: prj-info6; }
+    .prj-info7 { grid-area: prj-info7; }
 
     .prj2-grid-container {
       display: grid;
@@ -129,6 +131,9 @@
       <div class="prj-fig6">
         <img class="card" src="../images/apps/planitis-shot.png" alt="Planitis">
       </div>
+      <div class="prj-fig7">
+        <img class="card" src="../images/apps/rakugaki-shot.png" alt="Rakugaki">
+      </div>
       <div class="prj-info">
         <p><span class="id-square" style="color:#FFE16B;">█</span> Notejot<span class="badge">$3</span><span class="badge"><a class="external" href="https://appcenter.elementary.io/com.github.lainsce.notejot/">Get it on AppCenter</a></span></p>
         <p>A stupidly-simple sticky notes app for any short term notes.</p>
@@ -179,6 +184,17 @@
           <li>Research some tech to improve the mines or storage.</li>
         </ul>
       </div>
+      <div class="prj-info7">
+        <p><span class="id-square" style="color:#90898e;">█</span> Rakugaki <span class="badge">$6</span><span class="badge">20???</span> <a class="external" href="https://appcenter.elementary.io/com.github.lainsce.rakugaki/">Get it on AppCenter</a></p>
+        <p>Draw to your heart's content with this simple, no-friction, no excessive chrome, pad.</p>
+        <ul>
+            <li>Use half-toned strokes with Ctrl + 1</li>
+            <li>Quit anytime with the shortcut Ctrl + Q</li>
+            <li>Undo with the shortcut Ctrl + Z</li>
+            <li>Change line thickness by +5 or -5 with the respective shortcuts Ctrl + ) and Ctrl + (</li>
+            <li>Change the UI colors by using the special Ecosystem SVGs</li>
+        </ul>
+      </div>
     </div>
     <p class="note">Note: $'s are pay what you want suggestions.</p>
     <h2>Personal Apps</h2>
@@ -205,8 +221,6 @@
     <p>Track the virtual currencies in real world currency value.</p>
     <p><span class="id-square" style="color:#75DEC2;">█</span> Dot Matrix <span class="badge">19E03</span> <span class="badge">Deprecated</span></p>
     <p>Make out icons, or anything you can create with lines in this grid of dots.</p>
-    <p><span class="id-square" style="color:#1EFE89;">█</span> Rakugaki <span class="badge">20A06</span> <span class="badge">Deprecated</span></p>
-    <p>Want to just draw, sketch or doodle? This is the tool for you.</p>
     <p><span class="id-square" style="color:#267ec6;">█</span> Timetable <span class="badge">18W06</span> <span class="badge">Deprecated</span></p>
     <p>Plot out your own timetable for the week and organize it.</p>
     <div style="margin-bottom: 50px;"></div>
