@@ -32,7 +32,7 @@ function toggleTheme() {
     preferredTheme = sessionStorage.getItem('preferredTheme');
 
   if(preferredTheme === null) {
-    sessionStorage.setItem('preferredTheme', 'dark');
+    sessionStorage.setItem('preferredTheme', 'light');
     setPreferredTheme();
   } else if(preferredTheme === 'light') {
     sessionStorage.setItem('preferredTheme', 'dark');
