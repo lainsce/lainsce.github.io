@@ -48,9 +48,6 @@
           <li><a href="/src/nataniev">Nataniev▁</a></li>
           <li><a href="/src/blog">Logs</a></li>
           <li><a href="/src/about">About</a></li>
-          <hr>
-          <li><a href="/src/horaire">Horaire</a></li>
-          <li><a href="/src/arvelie_neralie">Arvelie & Neralie</a></li>
         </ul>
       </header>
       <div class="nvcl">
@@ -83,6 +80,76 @@
   <div class="body">
     <h1>NATANIEV</h1>
     <p><b>Nataniev</b> is a collection of free and open-source software following a singular design philosophy, and aesthetic by <a class="external" href=https://merveilles.town/@neauoire>Devine Lu Linvega</a>.</p>
+    <h1>Horaire—part of Nataniev System</h1>
+    <h4>Daily productivity logs are recorded at the end of each day, adding valuable data to projects.</h4>
+    <p>Horaire is the time-tracking engine, designed to record and host human-readable daily logs that can be easily parsed into Tracker. A log entry contains 3 values, effectively positioning the entry in a 3 dimensional graph.
+        <ul>
+            <li>The Sector(Sh), either Leisure, Research, or Programming, is the general sector of the task.</li>
+            <li>The Concrete Hour(Ch) represents a value of concrete output, or index of progress toward the release of a project. It is also a vague indicator of a log's task type ranging from an introverted task, to an extroverted one.</li>
+            <li>The Focus Hour(Fh) is an index of attention for the day's task — where 1 indicates that no time was invested in the task, and 9 indicates that all available time was invested in the task.</li>
+        </ul>
+    </p>
+    <p>A task name can be generated from the intersection of the Sector(Sh), and of the Concrete Hour(Ch). For instance, the 238 encode, can be converted into the Research task with 3 Ch used & with 8 Fh used.</p>
+    <a class="external" href="https://raw.githubusercontent.com/lainsce/lainsce.github.io/master/etc/horaire.tbtl">Database</a>
+    <h1>Arvelie & Neralie—part of Nataniev System</h1>
+    <h2>Neralie is a decimal time format.</h2>
+    <p>The <b>Neralie clock</b> has two groups of 3 digits, called the <i>beat</i> & the <i>pulse</i>.
+      A beat contains 1000 pulses, and equivalent to <b>86.4 seconds</b>. A day is 1000 beats, or a million pulses.
+      A pomodoro of 20 beats, is equivalent to 28 minutes 48 seconds.
+    </p>
+    <ul>
+      <li>
+        <b>00:00</b> 000:000
+      </li>
+      <li>
+        <b>06:00</b> 250:000
+      </li>
+      <li>
+        <b>12:00</b> 500:000
+      </li>
+      <li>
+        <b>18:00</b> 750:000
+      </li>
+    </ul>
+    <p>Neralie time is similar to the
+      <a href='https://en.wikipedia.org/wiki/Swatch_Internet_Time' class='external' target='_blank'>Swatch Internet Time</a> 
+      decimal clock, but uses 6 decimal points and a rectangular watchface.</p>
+      <h2>Arvelie is an alphabetic date format.</h2>
+      <p>The <b>Arvelie calendar</b> has <b>26 months</b> of <b>14 days</b> each.</p><p>Each month has
+      <b>2 weeks</b> of <b>7 days</b>, and each month's name is one of the 26 letters of the alphabet.
+      The 365th day of the year is the <i>Year Day</i>(+01), preceded by the <i>Leap Day</i>(+02) on
+      leap years.</p>
+      <ul>
+        <li>
+          <b>93L03</b> 1993-06-06
+        </li>
+        <li>
+          <b>01D07</b> 2001-02-18
+        </li>
+        <li>
+          <b>01S02</b> 2001-09-11
+        </li>
+        <li>
+          <b>02A01</b> 2002-01-01
+        </li>
+        <li>
+          <b>02E07</b> 2002-03-04
+        </li>
+        <li>
+          <b>03+01</b> 2003-12-31
+        </li>
+        <li>
+          <b>13B12</b> 2013-01-26
+        </li>
+        <li>
+          <b>24C01</b> 2024-01-29
+        </li>
+      </ul>
+      <p>To calculate the day of the year, convert the month's letter to a value, starting with 0 for A,
+        multiply by 14 and add the day of the month. For example, J05 is equal to <code>(+ 5 (* 9 14))</code>,
+        or 131.</p>
+
+      <p class="note">Note: Content mirrored from Neauoire's site-wiki</p>
   </div>
   <script type="text/javascript" src="/js/theme.js"></script>
   <script type="text/javascript" src="../js/main.js"></script>
