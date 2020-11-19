@@ -451,6 +451,11 @@ body p {
     font-size: 13pt;
 }
 
+body code {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 13pt;
+}
+
 body img {
     max-width: 100%;
 }
@@ -664,17 +669,17 @@ table {
 
 table td {
     padding: 8px 6px;
-    border-bottom: 1px solid var(--bg-2-level);
+    border-bottom: 1px solid var(--fg-color);
 }
 
 table thead {
-    border-bottom: 2px solid var(--bg-2-level);
+    border-bottom: 2px solid var(--fg-color);
 }
 
 table thead th {
     padding: 3px 5px;
     font-weight: 700;
-    color: var(--bg-2-level);
+    color: var(--fg-color);
     text-align: center;
 }
 
