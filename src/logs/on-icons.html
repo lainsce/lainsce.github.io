@@ -84,15 +84,15 @@
 <a name="Actuality"></a>
 <h3>Actuality</h3>
 
-<p>The current landscape of elementary OS is to guide developers via its human interface guidelines to task them to produce 6 different sized icons in an hierarchy of folders, mainly due to the Principle of Pixel Fitting imported from a design specification called Tango back in early 2000; which states that an icon should be made thinking about the constraints and geometry of its size to achieve maximum legibility and crisper edges, avoiding anti-alias from degrading it, in every context.<br/>
+<p>The current landscape of elementary OS is to guide developers via its human interface guidelines to task them to produce 6 different sized icons in an hierarchy of folders, mainly due to the Principle of Pixel Fitting imported from a design specification called Tango back in early 2000; which states that an icon should be made thinking about the constraints and geometry of its size to achieve maximum legibility and crisper edges, avoiding anti-alias from degrading it, in every context.<br/><br/>
 That situation demands a lot on the developers, and mantainability is costly, having to make not only one icon, but up to 6 different ones. This makes the task of developing an app from zero to finish, daunting.</p>
 
 <a name="Major-Issues"></a>
 <h3>Major Issues</h3>
 
-<p>Many of the sizes aren&rsquo;t being used anywhere in the OS, and haven&rsquo;t been for years. Since we use the larger sizes in most contexts, the pixel-hinted small sizes are rarely seen by anyone.<br/>
-Only a handful of people have the skills to draw icons in this style, and it can take multiple hours to do a single app iconset. This means that iterating on the style is very hard, which is one of the reasons why our icon style has been stagnant for years.<br/>
-As seen by some examples of published apps on AppCenter, some developers take shortcuts in this stage of development, shipping “not-quite-there” or wholly alien icons to be able to shiptheir apps faster to users and building their userbase, which is what matters more.<br/>
+<p>Many of the sizes aren&rsquo;t being used anywhere in the OS, and haven&rsquo;t been for years. Since we use the larger sizes in most contexts, the pixel-hinted small sizes are rarely seen by anyone.<br/><br/>
+Only a handful of people have the skills to draw icons in this style, and it can take multiple hours to do a single app iconset. This means that iterating on the style is very hard, which is one of the reasons why our icon style has been stagnant for years.<br/><br/>
+As seen by some examples of published apps on AppCenter, some developers take shortcuts in this stage of development, shipping “not-quite-there” or wholly alien icons to be able to shiptheir apps faster to users and building their userbase, which is what matters more.<br/><br/>
 Only around a third of third-party apps are following the guidelines. Our icons are simply too hard to abide by the rules for mere mortals, and as a result even the best third-party elementary OS apps often have bad icons or aren&rsquo;t following all the minutiae of our guidelines.</p>
 
 <a name="Data-Findings"></a>
@@ -116,10 +116,8 @@ elementary OS 6 Odin; totalling 205 apps)</p>
 64px (1⁄2 of 128px)<br/>
 128px</p></blockquote>
 
-<p>So, what can we find using math, for these sizes? We find that due to scales, some sizes are paired together.<br/>
-We find, that by providing a pixel-fit 128px icon, we can tackle the 32px and 64px ones, so the developer doesn’t need to do those sizes, only 128px.<br/>
-We also find, that if the app provides a 48px icon, it also covers the 24px icon.<br/>
-So about the remaining 16px icon. The guidelines state it is used in the OS in some parts. After some research, it was found that 16px was found in lists of apps such as the Defaults pane, inside comboboxes, in the Switchboard&rsquo;s Application plug.<br/>
+<p>So, what can we find using math, for these sizes? We find that due to scales, some sizes are paired together. We find, that by providing a pixel-fit 128px icon, we can tackle the 32px and 64px ones, so the developer doesn’t need to do those sizes, only 128px. We also find, that if the app provides a 48px icon, it also covers the 24px icon.<br/><br/>
+So about the remaining 16px icon. The guidelines state it is used in the OS in some parts. After some research, it was found that 16px was found in lists of apps such as the Defaults pane, inside comboboxes, in the Switchboard&rsquo;s Application plug.<br/><br/>
 This usage could very well be served with a symbolic of the App, because the guidelines state:</p>
 
 <blockquote><p>Symbolic icons are best used:<br/>
