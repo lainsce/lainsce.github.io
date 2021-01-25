@@ -383,7 +383,7 @@ button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-
 
 @font-face {
     font-family: "myFirstFont";
-    src: url("../fonts/Inter.otf");
+    src: url("../fonts/Cantarell.otf");
 }
 
 body {
@@ -391,7 +391,7 @@ body {
     font-size: 13pt;
     font-weight: 400;
     margin: 0;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Cantarell', sans-serif;
     font-feature-settings: "liga" 0, "tnum";
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
