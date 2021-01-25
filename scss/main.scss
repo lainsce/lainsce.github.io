@@ -345,7 +345,7 @@
 
     .header li a {
         color: var(--fg-color);
-        font-size: 0.88rem;
+        font-size: 1rem;
         text-transform: uppercase;
     }
 }
@@ -610,6 +610,7 @@ a:visited {
 
 .nav img.logo {
     border-radius: 50%;
+    opacity: 1;
     box-shadow: inset 1px 0 0 0 rgba(255,255,255,0.07),
                 inset -1px 0 0 0 rgba(255,255,255,0.07),
                 0 1px 3px rgba(0,0,0,0.12),
