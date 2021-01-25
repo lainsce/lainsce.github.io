@@ -18,7 +18,7 @@ function arne(){
     document.getElementById('time').innerHTML = arvelie(today);
     document.getElementById('date').innerHTML = neralie(today);
 }
-window.setInterval(arne, 1000 / 60);
+window.setInterval(arne, 1000 / 144);
 
 today = new Date();
 document.getElementById('year').innerHTML = arvelie(today);
