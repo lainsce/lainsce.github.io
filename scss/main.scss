@@ -484,7 +484,8 @@ body .note {
 }
 
 a {
-    color: var(--accent-500);
+    color: var(--fg-color);
+    opacity: 0.66;
     text-decoration: none;
     font-weight: 700;
 }
