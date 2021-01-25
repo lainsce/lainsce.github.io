@@ -3,16 +3,16 @@
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --accent-100: #181c1c;
-        --accent-300: #505F5E;
-        --accent-500: #60C9C2;
-        --accent-700: #BFE6E3;
-        --accent-900: #E8F7F6;
+        --accent-100: #77767b;
+        --accent-300: #9a9996;
+        --accent-500: #c0bfbc;
+        --accent-700: #deddda;
+        --accent-900: #f6f5f4;
         --fg-color: #ffffff;
-        --bg-1-level: #333333;
-        --bg-2-level: #555555;
-        --bg-3-level: #888888;
-        --border: rgba(255,255,255, 0.25);
+        --bg-1-level: #000000;
+        --bg-2-level: #241f31;
+        --bg-3-level: #3d3846;
+        --border: rgba(#ffffff, 0.25);
     }
 
     .favs img {
@@ -22,43 +22,43 @@
 
 @media (prefers-color-scheme: light) {
     :root {
-        --accent-100: #E8F7F6;
-        --accent-300: #BFE6E3;
-        --accent-500: #60C9C2;
-        --accent-700: #505F5E;
-        --accent-900: #181c1c;
+        --accent-100: #f6f5f4;
+        --accent-300: #deddda;
+        --accent-500: #c0bfbc;
+        --accent-700: #9a9996;
+        --accent-900: #77767b;
         --fg-color: #333333;
         --bg-1-level: #ffffff;
-        --bg-2-level: #eeeeee;
-        --bg-3-level: #888888;
-        --border: rgba(0,0,0, 0.25);
+        --bg-2-level: #f6f5f4;
+        --bg-3-level: #deddda;
+        --border: rgba(#000000, 0.25);
     }
 }
 
 .light {
-        --accent-100: #E8F7F6;
-        --accent-300: #BFE6E3;
-        --accent-500: #60C9C2;
-        --accent-700: #505F5E;
-        --accent-900: #181c1c;
+        --accent-100: #f6f5f4;
+        --accent-300: #deddda;
+        --accent-500: #c0bfbc;
+        --accent-700: #9a9996;
+        --accent-900: #77767b;
         --fg-color: #333333;
         --bg-1-level: #ffffff;
-        --bg-2-level: #eeeeee;
-        --bg-3-level: #888888;
-        --border: rgba(0,0,0, 0.25);
+        --bg-2-level: #f6f5f4;
+        --bg-3-level: #deddda;
+        --border: rgba(#000000, 0.25);
 }
 
 .dark {
-        --accent-100: #181c1c;
-        --accent-300: #505F5E;
-        --accent-500: #60C9C2;
-        --accent-700: #BFE6E3;
-        --accent-900: #E8F7F6;
+        --accent-100: #77767b;
+        --accent-300: #9a9996;
+        --accent-500: #c0bfbc;
+        --accent-700: #deddda;
+        --accent-900: #f6f5f4;
         --fg-color: #ffffff;
-        --bg-1-level: #333333;
-        --bg-2-level: #555555;
-        --bg-3-level: #888888;
-        --border: rgba(0,0,0, 0.25);
+        --bg-1-level: #000000;
+        --bg-2-level: #241f31;
+        --bg-3-level: #3d3846;
+        --border: rgba(#ffffff, 0.25);
         
         .favs img {
                 filter: invert(1);
