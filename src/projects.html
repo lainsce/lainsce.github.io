@@ -33,25 +33,17 @@
   <style>
     .prj-grid-container {
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      grid-template-rows: repeat(6, 1fr);
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      grid-template-rows: repeat(3, minmax(0, 1fr));
       grid-gap: 1rem 3rem;
-      grid-template-areas: "prj-fig prj-info" "prj-info2 prj-fig2" "prj-fig3 prj-info3" "prj-info4 prj-fig4" "prj-fig5 prj-info5" "prj-info6 prj-fig6" "prj-fig7 prj-info7"
+      grid-template-areas: "prj-fig prj-info" "prj-info2 prj-fig2" "prj-fig3 prj-info3"
     }
     .prj-fig { grid-area: prj-fig; }
     .prj-fig2 { grid-area: prj-fig2; }
     .prj-fig3 { grid-area: prj-fig3; }
-    .prj-fig4 { grid-area: prj-fig4; }
-    .prj-fig5 { grid-area: prj-fig5; }
-    .prj-fig6 { grid-area: prj-fig6; }
-    .prj-fig7 { grid-area: prj-fig7; }
     .prj-info { grid-area: prj-info; }
     .prj-info2 { grid-area: prj-info2; }
     .prj-info3 { grid-area: prj-info3; }
-    .prj-info4 { grid-area: prj-info4; }
-    .prj-info5 { grid-area: prj-info5; }
-    .prj-info6 { grid-area: prj-info6; }
-    .prj-info7 { grid-area: prj-info7; }
 
     .prj2-grid-container {
       display: grid;
@@ -149,7 +141,6 @@
       </div>
     </div>
     <p class="note">Note: $'s are pay what you want suggestions.</p>
-
     <h2>Discontinued Apps</h2>
     <p><span class="id-square" style="color:#D07070;">█</span> Palaura <span class="badge">18G13</span> <span class="badge">Deprecated</span></p>
     <p>Find any word definition with this handy simple dictionary.</p>
