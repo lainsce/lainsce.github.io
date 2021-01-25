@@ -8,11 +8,11 @@
         --accent-500: #60C9C2;
         --accent-700: #BFE6E3;
         --accent-900: #E8F7F6;
-        --fg-color: #f7f7f7;
-        --bg-1-level: #151515;
-        --bg-2-level: #333333;
+        --fg-color: #ffffff;
+        --bg-1-level: #333333;
+        --bg-2-level: #555555;
         --bg-3-level: #888888;
-        --border: rgba(255,255,255, 0.3);
+        --border: rgba(255,255,255, 0.25);
     }
 
     .favs img {
@@ -27,8 +27,8 @@
         --accent-500: #60C9C2;
         --accent-700: #505F5E;
         --accent-900: #181c1c;
-        --fg-color: #151515;
-        --bg-1-level: #f7f7f7;
+        --fg-color: #333333;
+        --bg-1-level: #ffffff;
         --bg-2-level: #eeeeee;
         --bg-3-level: #888888;
         --border: rgba(0,0,0, 0.25);
@@ -36,33 +36,33 @@
 }
 
 .light {
-    --accent-100: #181c1c;
-    --accent-300: #505F5E;
-    --accent-500: #60C9C2;
-    --accent-700: #BFE6E3;
-    --accent-900: #E8F7F6;
-    --fg-color: #f7f7f7;
-    --bg-1-level: #151515;
-    --bg-2-level: #333333;
-    --bg-3-level: #888888;
-    --border: rgba(255,255,255, 0.3);
+        --accent-100: #E8F7F6;
+        --accent-300: #BFE6E3;
+        --accent-500: #60C9C2;
+        --accent-700: #505F5E;
+        --accent-900: #181c1c;
+        --fg-color: #333333;
+        --bg-1-level: #ffffff;
+        --bg-2-level: #eeeeee;
+        --bg-3-level: #888888;
+        --border: rgba(0,0,0, 0.25);
     
-    .favs img {
-        filter: invert(1);
-    }
+        .favs img {
+                filter: invert(1);
+        }
 }
 
 .dark {
-    --accent-100: #E8F7F6;
-    --accent-300: #BFE6E3;
-    --accent-500: #60C9C2;
-    --accent-700: #505F5E;
-    --accent-900: #181c1c;
-    --fg-color: #151515;
-    --bg-1-level: #f7f7f7;
-    --bg-2-level: #eeeeee;
-    --bg-3-level: #888888;
-    --border: rgba(0,0,0, 0.25);
+        --accent-100: #181c1c;
+        --accent-300: #505F5E;
+        --accent-500: #60C9C2;
+        --accent-700: #BFE6E3;
+        --accent-900: #E8F7F6;
+        --fg-color: #ffffff;
+        --bg-1-level: #333333;
+        --bg-2-level: #555555;
+        --bg-3-level: #888888;
+        --border: rgba(0,0,0, 0.25);
 }
 
 @media (max-width: 800px) {
@@ -660,8 +660,8 @@ a:visited {
 
 .badge {
     padding: 0 1rem;
-    border-left: 1px dashed var(--bg-2-level);
-    margin-left: 1rem;
+    border-left: 1px dashed var(--bg-3-level);
+    margin-left: 0.5rem;
 }
 
 table {
