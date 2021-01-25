@@ -46,10 +46,6 @@
         --bg-2-level: #eeeeee;
         --bg-3-level: #888888;
         --border: rgba(0,0,0, 0.25);
-    
-        .favs img {
-                filter: invert(1);
-        }
 }
 
 .dark {
@@ -63,6 +59,10 @@
         --bg-2-level: #555555;
         --bg-3-level: #888888;
         --border: rgba(0,0,0, 0.25);
+        
+        .favs img {
+                filter: invert(1);
+        }
 }
 
 @media (max-width: 800px) {
