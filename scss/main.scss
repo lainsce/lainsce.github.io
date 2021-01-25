@@ -388,46 +388,34 @@ button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-
 
 body {
     height: 100%;
-    font-size: 13pt;
     font-weight: 400;
+    font-size: 13pt;
     margin: 0;
     font-family: 'Cantarell', sans-serif;
-    font-feature-settings: "liga" 0, "tnum";
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+    font-feature-settings: "liga" 1, "tnum";
     color: var(--fg-color);
     background: var(--bg-1-level);
     width: 100%;
 }
 
 body h1 {
+    font-weight: 300;
     font-size: 24pt;
-    font-weight: 700;
-    letter-spacing: -0.04em;
 }
 
 body h2 {
-    font-weight: 300;
-    font-size: 18pt;
-    letter-spacing: -0.05em;
+    font-weight: 800;
+    font-size: 15pt;
 }
 
 body h3 {
-    font-size: 14pt;
-    margin-top: 1em;
-    margin-bottom: 1em;
-    margin-left: 0;
-    margin-right: 0;
-    font-weight: bold;
+    font-weight: 700;
+    font-size: 13pt;
 }
 
 body h4 {
-    font-size: 9pt;
     font-weight: 700;
-    padding-bottom: 0.5em;
-    padding-top: 0.5em;
-    opacity: 0.8;
-    text-transform: uppercase;
+    font-size: 11pt;
 }
 
 ul {
@@ -436,7 +424,7 @@ ul {
 
 body q {
     font-family: "Roboto Slab", serif;
-    font-feature-settings: "liga" 0, "tnum";
+    font-feature-settings: "liga" 1, "tnum";
     font-size: 18pt;
     font-weight: 300;
     font-style: italic;
@@ -452,7 +440,7 @@ body p {
 }
 
 body code {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Source Code Pro', Courier, monospace;
     font-size: 13pt;
 }
 
@@ -479,7 +467,7 @@ body .body li:before {
 }
 
 body .note {
-    color: var(--bg-3-level);
+    color: var(--bg-2-level);
 }
 
 ::selection {
