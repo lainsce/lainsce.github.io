@@ -467,7 +467,8 @@ body .body li:before {
 }
 
 body .note {
-    color: var(--bg-2-level);
+    color: var(--fg-color);
+    opacity: 0.66;
 }
 
 ::selection {
