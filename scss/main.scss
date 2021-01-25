@@ -12,7 +12,7 @@
         --bg-1-level: #000000;
         --bg-2-level: #241f31;
         --bg-3-level: #3d3846;
-        --border: rgba(#ffffff, 0.25);
+        --border: rgba(255, 255, 255, 0.25);
     }
 
     .favs img {
@@ -31,7 +31,7 @@
         --bg-1-level: #ffffff;
         --bg-2-level: #f6f5f4;
         --bg-3-level: #deddda;
-        --border: rgba(#000000, 0.25);
+        --border: rgba(0, 0, 0, 0.25);
     }
 }
 
@@ -45,7 +45,7 @@
         --bg-1-level: #ffffff;
         --bg-2-level: #f6f5f4;
         --bg-3-level: #deddda;
-        --border: rgba(#000000, 0.25);
+        --border: rgba(0, 0, 0, 0.25);
 }
 
 .dark {
@@ -58,7 +58,7 @@
         --bg-1-level: #000000;
         --bg-2-level: #241f31;
         --bg-3-level: #3d3846;
-        --border: rgba(#ffffff, 0.25);
+        --border: rgba(255, 255, 255, 0.25);
         
         .favs img {
                 filter: invert(1);
