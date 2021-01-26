@@ -382,7 +382,7 @@ button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-
 }
 
 @font-face {
-    font-family: "myFirstFont";
+    font-family: "CantarellV";
     src: url("../fonts/Cantarell.otf");
 }
 
@@ -391,7 +391,7 @@ body {
     font-weight: 400;
     font-size: 13pt;
     margin: 0;
-    font-family: 'Cantarell', sans-serif;
+    font-family: 'CantarellV', 'Cantarell', sans-serif;
     font-feature-settings: "liga" 1, "tnum";
     color: var(--fg-color);
     background: var(--bg-1-level);
