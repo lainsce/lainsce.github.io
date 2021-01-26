@@ -9,6 +9,7 @@
         --accent-700: #deddda;
         --accent-900: #f6f5f4;
         --fg-color: #ffffff;
+        --bg-0-level: #000;
         --bg-1-level: #222;
         --bg-2-level: #333;
         --bg-3-level: #555;
@@ -28,9 +29,10 @@
         --accent-700: #9a9996;
         --accent-900: #77767b;
         --fg-color: #333333;
-        --bg-1-level: #ffffff;
-        --bg-2-level: #f6f5f4;
-        --bg-3-level: #deddda;
+        --bg-0-level: #ffffff;
+        --bg-1-level: #f6f5f4;
+        --bg-2-level: #deddda;
+        --bg-3-level: #c0bfbc;
         --border: rgba(0, 0, 0, 0.25);
     }
 }
@@ -42,9 +44,10 @@
         --accent-700: #9a9996;
         --accent-900: #77767b;
         --fg-color: #333333;
-        --bg-1-level: #ffffff;
-        --bg-2-level: #f6f5f4;
-        --bg-3-level: #deddda;
+        --bg-0-level: #ffffff;
+        --bg-1-level: #f6f5f4;
+        --bg-2-level: #deddda;
+        --bg-3-level: #c0bfbc;
         --border: rgba(0, 0, 0, 0.25);
 }
 
@@ -55,6 +58,7 @@
         --accent-700: #deddda;
         --accent-900: #f6f5f4;
         --fg-color: #ffffff;
+        --bg-0-level: #000;
         --bg-1-level: #222;
         --bg-2-level: #333;
         --bg-3-level: #555;
@@ -582,7 +586,7 @@ a:visited {
 .nav {
     display: grid;
     grid-area: nav;
-    background: var(--accent-100);
+    background: var(--bg-0-level);
     color: var(--fg-color);
     align-items: center;
 }
@@ -662,8 +666,10 @@ table thead th:first-child {
 
 .theme-toggle {
     color: var(--fg-color);
-    background-color: var(--accent-300);
-    border: 1px solid transparent;
+    background-color: var(--bg-1-level);
+    border: 1px solid var(--bg-2-level);
+    border-bottom: none;
+    border-right: none;
     border-radius: 50% 0 0 0;
     position: absolute;
     right: 0px;
