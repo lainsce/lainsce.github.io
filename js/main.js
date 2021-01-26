@@ -8,17 +8,6 @@ function arvelie (date = new Date()) {
     const d = `${(doty === 365 ? 1 : doty === 366 ? 2 : (doty % 14)) + 1}`.padStart(2, '0');
     return `${y}${m}${d}`;
 }
-function neralie (d = new Date(), e = new Date(d)) {
-    const ms = e - d.setHours(0, 0, 0, 0);
-    const val = (ms / 8640 / 10000).toFixed(6);
-    return `${val.substr(2, 3)}:${val.substr(5, 3)}`;
-}
-function arne(){
-    today = new Date();
-    document.getElementById('time').innerHTML = arvelie(today);
-    document.getElementById('date').innerHTML = neralie(today);
-}
-window.setInterval(arne, 1000 / 24); // Dat cinematic feel yo
 
 today = new Date();
 document.getElementById('year').innerHTML = arvelie(today);

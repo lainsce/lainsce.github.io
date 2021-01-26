@@ -107,13 +107,7 @@
         border-bottom: 1px solid var(--border);
         padding: 1rem 0;
         z-index: 999;
-        grid-template-areas: 'logo header clock footer';
-    }
-
-    .nvcl {
-        margin-left: 5px;
-        width: 95px;
-        max-width: 150px;
+        grid-template-areas: 'logo header footer';
     }
 
     .footer {
@@ -260,7 +254,7 @@
         border-right: 1px solid var(--border);
         grid-template-columns: 1fr;
         grid-template-rows: repeat(4, auto) max-content;
-        grid-template-areas: 'logo' 'header' 'clock' 'footer';
+        grid-template-areas: 'logo' 'header' 'footer';
     }
 
     .nav ul {
@@ -272,10 +266,6 @@
         padding-top: 0.5em;
         margin: 0;
         text-transform: uppercase;
-    }
-
-    .nvcl {
-        height: 50%;
     }
 
     .body {
@@ -624,16 +614,6 @@ a:visited {
                 inset -1px 0 0 0 rgba(255,255,255,0.07),
                 0 1px 3px rgba(0,0,0,0.12),
                 0 1px 2px rgba(0,0,0,0.24);
-}
-
-.nav .nvcl {
-    grid-area: clock;
-    border-radius: 8px;
-    text-align: center;
-    background: var(--accent-300);
-    color: var(--fg-color);
-    padding: 12px;
-    display: inline-grid;
 }
 
 .logo {
