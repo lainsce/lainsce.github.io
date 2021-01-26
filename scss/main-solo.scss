@@ -69,6 +69,23 @@
         }
 }
 
+@font-face {
+    font-family: "InterV";
+    src: url("../fonts/Inter.otf");
+}
+
+body {
+    height: 100%;
+    font-weight: 400;
+    font-size: 13pt;
+    margin: 0;
+    font-family: 'InterV', 'Inter', sans-serif;
+    font-feature-settings: "liga" 1, "tnum";
+    color: var(--fg-color);
+    background: var(--bg-1-level);
+    width: 100%;
+}
+
 .nav {
     background: var(--bg-0-level);
     color: var(--fg-color);
