@@ -144,7 +144,7 @@
     .header {
         background-color: var(--accent-100);
         z-index: 2;
-        border-radius: 8px;
+        border-radius: 5px;
         border: 1px solid var(--accent-300);
         height: 48px;
         width: 48px;
@@ -210,7 +210,7 @@
 
     .header .menu-btn:checked ~ .menu {
         max-height: max-content;
-        border-radius: 8px;
+        border-radius: 5px;
         border: 1px solid var(--accent-300);
         width: max-content;
     }
@@ -223,7 +223,7 @@
         grid-template-areas: 'nav' 'body';
     }
 
-    body p {
+    p {
         font-size: 14pt;
         line-height: 25px;
         margin: 1rem;
@@ -280,7 +280,7 @@
     }
 
     .palette-name {
-        border-radius: 8px;
+        border-radius: 5px;
         width: 75px;
         height: 75px;
         color: var(--fg-color);
@@ -321,7 +321,7 @@
         padding: 12px;
         margin-right: 5px;
         margin-bottom: 5px;
-        border-radius: 8px;
+        border-radius: 5px;
     }
 
     .header li:hover {
@@ -376,38 +376,38 @@ body {
     font-weight: 400;
     font-size: 13pt;
     margin: 0;
-    font-family: 'CantarellV', 'Cantarell', sans-serif;
+    font-family: 'CantarellV', sans-serif;
     font-feature-settings: "liga" 1, "tnum";
     color: var(--fg-color);
     background: var(--bg-1-level);
     width: 100%;
 }
 
-body h1 {
-    font-weight: 300;
-    font-size: 24pt;
+h1 {
+  font-weight: 300;
+  font-size: 24pt;
 }
 
-body h2 {
-    font-weight: 800;
-    font-size: 15pt;
+h2 {
+  font-weight: 800;
+  font-size: 18pt;
 }
 
-body h3 {
-    font-weight: 700;
-    font-size: 13pt;
+h3 {
+  font-weight: 700;
+  font-size: 14pt;
 }
 
-body h4 {
-    font-weight: 700;
-    font-size: 11pt;
+h4 {
+  font-weight: 700;
+  font-size: 13pt;
 }
 
 ul {
     list-style: none;
 }
 
-body q {
+q {
     font-family: "Roboto Slab", serif;
     font-feature-settings: "liga" 1, "tnum";
     font-size: 18pt;
@@ -416,44 +416,45 @@ body q {
     display: inline-block;
 }
 
-body q+h5 {
+q+h5 {
     display: inline-block;
 }
 
-body p {
+p {
     font-size: 13pt;
 }
 
-body code {
+code {
     font-family: 'Source Code Pro', Courier, monospace;
     font-size: 13pt;
 }
 
-body a.external {
+a.external {
     font-size: 1rem;
     color: #3584e4;
 }
 
-body a.external:before {
+a.external:before {
     content: "{";
 }
-body a.external:after {
+a.external:after {
     content: "}";
 }
 
-body hr {
+hr {
     width: 100%;
 }
 
-body .body li:before {
+.body li:before {
     content: "–";
     margin-right: 6px;
     padding: 6px;
 }
 
-body .note {
+.note {
     color: var(--fg-color);
-    opacity: 0.66;
+    opacity: 0.55;
+    text-shadow: none;
 }
 
 /***************
@@ -498,15 +499,21 @@ body .note {
 a {
     color: #3584e4;
     text-decoration: none;
-    font-weight: 700;
+    font-weight: 500;
 }
 
 a:visited {
     color: #1a5fb4;
 }
 
+a.here::before {
+    content: '/';
+    color: #3584e4;
+    font-weight: 800;
+}
+
 .toc-icon {
-    border-radius: 8px;
+    border-radius: 5px;
     background: var(--bg-1-level);
     color: var(--fg-color);
     border: 1px solid var(--border);
@@ -541,18 +548,19 @@ a:visited {
 }
 
 .card {
-    margin: 10px;
-    border-radius: 8px;
+    margin: 15px;
+    border-radius: 5px;
     max-width: 400px;
     box-shadow: inset 1px 0 0 0 rgba(255,255,255,0.07),inset -1px 0 0 0 rgba(255,255,255,0.07),0 1px 3px rgba(0,0,0,0.12),0 1px 2px rgba(0,0,0,0.24);
 }
 
 .app-card {
-    margin: 10px;
-    border-radius: 8px;
-    max-width: 250px;
+    margin: 15px;
+    border-radius: 5px;
+    max-width: 300px;
     height: 300px;
     border: 1px solid var(--border);
+    box-shadow: inset 1px 0 0 0 rgba(255,255,255,0.07),inset -1px 0 0 0 rgba(255,255,255,0.07),0 1px 3px rgba(0,0,0,0.12),0 1px 2px rgba(0,0,0,0.24);
     
     & h2 {
         text-align: center;
@@ -585,21 +593,70 @@ a:visited {
     }
     
     & a.button {
-        display: block;
-        text-align: center;
-        margin: 0 30px;
-        background: linear-gradient(to bottom, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.25));
-        color: var(--fg-color);
-        padding: 5px;
-        border-radius: 8px;
-        border: 1px solid var(--border);
+        position: relative;
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+        font-weight: 400;
+        align-items: center;
+        border: 1px solid;
+        border-radius: 5px;
+        transition: all 150ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        height: 28px;
+        min-height: 28px;
+        min-width: 16px;
+        max-width: 200px;
+        padding: 4px 9px;
+        user-select: none;
+        color: #2e3436;
+        outline-color: rgba(53, 132, 228, 0.5);
+        border-color: #cdc7c2;
+        border-bottom-color: #bfb8b1;
+        background-color: #f6f5f4;
+        box-shadow: inset 0 1px white, 0 1px 2px rgba(0, 0, 0, 0.07);
+        
+        &::before {
+            content: ' ';
+            position: absolute;
+            pointer-events: none;
+            width: 100%;
+            height: 100%;
+            top: 0px;
+            left: 0px;
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.03), transparent);
+            transition: all 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
+        
+        &::after {
+            content: '';
+            position: absolute;
+            pointer-events: none;
+            z-index: 2;
+            display: inline-block;
+            border: 2px solid transparent;
+            border-radius: inherit;
+            transition: all 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            top: -4px;
+            left: -4px;
+            width: calc(100% - -4px);
+            height: calc(100% - -4px);
+        }
         
         &:hover {
-            background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1));    
+            color: #2e3436;
+            border-color: #cdc7c2;
+            border-bottom-color: #bfb8b1;
+            background-color: #f9f9f8;
+            box-shadow: inset 0 1px #f4f2f1, 0 1px 2px rgba(0, 0, 0, 0.07);
         }
         
         &:active {
-            background: rgba(0, 0, 0, 0.3);    
+            color: #2e3436;
+            border-color: #cdc7c2;
+            background-color: #d6d1cd;
+            box-shadow: inset 0 1px rgba(255, 255, 255, 0);
+            text-shadow: none;
+            transition-duration: 50ms;   
         }
     }
 }
@@ -618,7 +675,7 @@ a:visited {
 .toc {
     background: var(--bg-1-level);
     border: 1px solid var(--border);
-    border-radius: 8px;
+    border-radius: 5px;
     display: none;
     position: fixed;
     right: 18px;
@@ -655,7 +712,7 @@ a:visited {
 }
 
 .palette {
-    border-radius: 8px;
+    border-radius: 5px;
     color: #F7F7F7;
     text-align: center;
     vertical-align: middle;
