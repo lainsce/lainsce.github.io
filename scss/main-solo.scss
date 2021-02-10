@@ -74,6 +74,12 @@
     src: url("../fonts/Inter.otf");
 }
 
+a.here::before {
+    content: '/';
+    color: #60C9C2;
+    font-weight: 800;
+}
+
 body {
     height: 100%;
     font-weight: 400;
