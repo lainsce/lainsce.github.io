@@ -712,6 +712,30 @@ a.button {
     & img {
         margin-right: 6px;
     }
+    
+    &:hover.download {
+        color: #fff;
+        border-color: #2ec27e;
+        border-bottom-color: #26a269;
+        background-color: #33d17a;
+        box-shadow: inset 0 1px #8ff0a4, 0 1px 2px rgba(0, 0, 0, 0.07);
+    }
+    
+    &:hover.fedora {
+        color: #fff;
+        border-color: #436795;
+        border-bottom-color: #294172;
+        background-color: #3c6eb4;
+        box-shadow: inset 0 1px #a4c2f1, 0 1px 2px rgba(0, 0, 0, 0.07);
+    }
+    
+    &:hover.elementary {
+        color: #fff;
+        border-color: #337cac;
+        border-bottom-color: #337cac;
+        background-color: #48a3e1;
+        box-shadow: inset 0 1px rgba(255, 255, 255, 0.25), 0 1px 2px rgba(0, 0, 0, 0.07);
+    }
 }
 
 .toc-icon {
