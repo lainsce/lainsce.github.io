@@ -512,6 +512,74 @@ a.here::before {
     font-weight: 800;
 }
 
+a.button {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    font-weight: 400;
+    align-items: center;
+    border: 1px solid;
+    border-radius: 5px;
+    transition: all 150ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    height: 28px;
+    min-height: 28px;
+    min-width: 16px;
+    max-width: 200px;
+    padding: 4px 9px;
+    user-select: none;
+    color: #2e3436;
+    outline-color: rgba(53, 132, 228, 0.5);
+    border-color: #cdc7c2;
+    border-bottom-color: #bfb8b1;
+    background-color: #f6f5f4;
+    box-shadow: inset 0 1px white, 0 1px 2px rgba(0, 0, 0, 0.07);
+    
+    &::before {
+        content: ' ';
+        position: absolute;
+        pointer-events: none;
+        width: 100%;
+        height: 100%;
+        top: 0px;
+        left: 0px;
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.03), transparent);
+        transition: all 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+    
+    &::after {
+        content: '';
+        position: absolute;
+        pointer-events: none;
+        z-index: 2;
+        display: inline-block;
+        border: 2px solid transparent;
+        border-radius: inherit;
+        transition: all 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        top: -4px;
+        left: -4px;
+        width: calc(100% - -4px);
+        height: calc(100% - -4px);
+    }
+    
+    &:hover {
+        color: #2e3436;
+        border-color: #cdc7c2;
+        border-bottom-color: #bfb8b1;
+        background-color: #f9f9f8;
+        box-shadow: inset 0 1px #f4f2f1, 0 1px 2px rgba(0, 0, 0, 0.07);
+    }
+    
+    &:active {
+        color: #2e3436;
+        border-color: #cdc7c2;
+        background-color: #d6d1cd;
+        box-shadow: inset 0 1px rgba(255, 255, 255, 0);
+        text-shadow: none;
+        transition-duration: 50ms;   
+    }
+}
+
 .toc-icon {
     border-radius: 5px;
     background: var(--bg-1-level);
@@ -590,74 +658,6 @@ a.here::before {
     
     &.khronos {
         background: rgba(#9141ac, 0.24);
-    }
-    
-    & a.button {
-        position: relative;
-        display: flex;
-        justify-content: center;
-        margin: 0 auto;
-        font-weight: 400;
-        align-items: center;
-        border: 1px solid;
-        border-radius: 5px;
-        transition: all 150ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
-        height: 28px;
-        min-height: 28px;
-        min-width: 16px;
-        max-width: 200px;
-        padding: 4px 9px;
-        user-select: none;
-        color: #2e3436;
-        outline-color: rgba(53, 132, 228, 0.5);
-        border-color: #cdc7c2;
-        border-bottom-color: #bfb8b1;
-        background-color: #f6f5f4;
-        box-shadow: inset 0 1px white, 0 1px 2px rgba(0, 0, 0, 0.07);
-        
-        &::before {
-            content: ' ';
-            position: absolute;
-            pointer-events: none;
-            width: 100%;
-            height: 100%;
-            top: 0px;
-            left: 0px;
-            background: linear-gradient(to top, rgba(0, 0, 0, 0.03), transparent);
-            transition: all 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
-        }
-        
-        &::after {
-            content: '';
-            position: absolute;
-            pointer-events: none;
-            z-index: 2;
-            display: inline-block;
-            border: 2px solid transparent;
-            border-radius: inherit;
-            transition: all 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
-            top: -4px;
-            left: -4px;
-            width: calc(100% - -4px);
-            height: calc(100% - -4px);
-        }
-        
-        &:hover {
-            color: #2e3436;
-            border-color: #cdc7c2;
-            border-bottom-color: #bfb8b1;
-            background-color: #f9f9f8;
-            box-shadow: inset 0 1px #f4f2f1, 0 1px 2px rgba(0, 0, 0, 0.07);
-        }
-        
-        &:active {
-            color: #2e3436;
-            border-color: #cdc7c2;
-            background-color: #d6d1cd;
-            box-shadow: inset 0 1px rgba(255, 255, 255, 0);
-            text-shadow: none;
-            transition-duration: 50ms;   
-        }
     }
 }
 
