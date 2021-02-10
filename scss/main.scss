@@ -720,7 +720,7 @@ a.button {
         background-color: #33d17a;
         box-shadow: inset 0 1px #8ff0a4, 0 1px 2px rgba(0, 0, 0, 0.07);
         
-        & img {
+        img {
             filter: invert(1);
         }
     }
@@ -732,7 +732,7 @@ a.button {
         background-color: #3c6eb4;
         box-shadow: inset 0 1px #a4c2f1, 0 1px 2px rgba(0, 0, 0, 0.07);
         
-        & img {
+        img {
             filter: invert(1);
         }
     }
@@ -744,7 +744,7 @@ a.button {
         background-color: #48a3e1;
         box-shadow: inset 0 1px rgba(255, 255, 255, 0.25), 0 1px 2px rgba(0, 0, 0, 0.07);
         
-        & img {
+        img {
             filter: invert(1);
         }
     }
@@ -832,7 +832,10 @@ a.button {
     
     & a.button {
         display: flex;
+        justify-content: center;
+        align-items: center;
         margin: 0 auto;
+        max-width: 157px;
     }
 }
 
