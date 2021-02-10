@@ -577,6 +577,10 @@ a.button {
         text-shadow: none;
         transition-duration: 50ms;   
     }
+    
+    & img {
+        margin-right: 6px;
+    }
 }
 
 .toc-icon {
@@ -659,7 +663,7 @@ a.button {
         background: rgba(#9141ac, 0.24);
     }
     
-    a.button {
+    & a.button {
         display: flex;
         margin: 0 auto;
     }
