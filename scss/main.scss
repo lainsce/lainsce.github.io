@@ -549,6 +549,11 @@ a.button {
     margin-left: 0.5rem;
 }
 
+.circular {
+    padding: 6px;
+    border-radius: 9999px;
+}
+
 table {
     background-color: var(--bg-1-level);
     text-align: center;
