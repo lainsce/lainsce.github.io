@@ -15,6 +15,10 @@
         --bg-3-level: #555;
         --border: rgba(255, 255, 255, 0.25);
     }
+    
+    .favs img {
+        filter: invert(1);
+    }
 }
 
 @media (prefers-color-scheme: light) {
@@ -31,6 +35,39 @@
         --bg-3-level: #c0bfbc;
         --border: rgba(0, 0, 0, 0.25);
     }
+}
+
+
+.light {
+        --accent-100: #f6f5f4;
+        --accent-300: #deddda;
+        --accent-500: #c0bfbc;
+        --accent-700: #9a9996;
+        --accent-900: #77767b;
+        --fg-color: #333333;
+        --bg-0-level: #ffffff;
+        --bg-1-level: #f6f5f4;
+        --bg-2-level: #deddda;
+        --bg-3-level: #c0bfbc;
+        --border: rgba(0, 0, 0, 0.25);
+}
+
+.dark {
+        --accent-100: #77767b;
+        --accent-300: #9a9996;
+        --accent-500: #c0bfbc;
+        --accent-700: #deddda;
+        --accent-900: #f6f5f4;
+        --fg-color: #ffffff;
+        --bg-0-level: #000;
+        --bg-1-level: #222;
+        --bg-2-level: #333;
+        --bg-3-level: #555;
+        --border: rgba(255, 255, 255, 0.25);
+        
+        .favs img {
+                filter: invert(1);
+        }
 }
 
 * {
@@ -240,11 +277,78 @@ a:hover {
   }
 }
 
+.logo img {
+  border: 2px solid var(--bg-3-level);
+  display: inline-flex;
+  border-radius: 999px;
+  width: 64px;
+}
+
 .header {
   background: none;
   color: var(--fg-color);
   grid-column: 1 / span 7;
   vertical-align:middle;
+}
+
+.footer {
+  background: var(--bg-2-level);
+  color: var(--fg-color);
+  grid-column: 1 / span 7;
+  vertical-align:middle;
+}
+
+.favs * {
+    transform: scale(0.88);
+    display: inline-block;
+    float: right;
+    
+    & img {
+      width:0px;
+      height:0px;
+      
+      padding: 16px;
+    }
+}
+
+* {
+    transition: background .2s ease-in-out;
+}
+
+.theme-toggle {
+    color: var(--fg-color);
+    background-color: var(--bg-3-level);
+    border: 1px solid transparent;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.theme-toggle .icon {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    right: .7rem;
+    top: .7rem;
+}
+
+.theme-toggle #icon-moon {
+    display: block;
+}
+
+.theme-toggle #icon-sun {
+    display: none;
+}
+
+.dark .theme-toggle #icon-moon {
+    display: none;
+}
+
+.dark .theme-toggle #icon-sun {
+    display: block;
 }
 
 .section {
