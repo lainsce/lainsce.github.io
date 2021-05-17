@@ -3,11 +3,11 @@
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --accent-100: #77767b;
-        --accent-300: #9a9996;
-        --accent-500: #c0bfbc;
-        --accent-700: #deddda;
-        --accent-900: #f6f5f4;
+        --accent-100: #8ff0a4;
+        --accent-300: #57e389;
+        --accent-500: #33d17a;
+        --accent-700: #2ec27e;
+        --accent-900: #26a269;
         --fg-color: #ffffff;
         --bg-0-level: #000;
         --bg-1-level: #222;
@@ -23,11 +23,11 @@
 
 @media (prefers-color-scheme: light) {
     :root {
-        --accent-100: #f6f5f4;
-        --accent-300: #deddda;
-        --accent-500: #c0bfbc;
-        --accent-700: #9a9996;
-        --accent-900: #77767b;
+        --accent-100: #8ff0a4;
+        --accent-300: #57e389;
+        --accent-500: #33d17a;
+        --accent-700: #2ec27e;
+        --accent-900: #26a269;
         --fg-color: #333333;
         --bg-0-level: #ffffff;
         --bg-1-level: #f6f5f4;
@@ -39,11 +39,11 @@
 
 
 .light {
-        --accent-100: #f6f5f4;
-        --accent-300: #deddda;
-        --accent-500: #c0bfbc;
-        --accent-700: #9a9996;
-        --accent-900: #77767b;
+        --accent-100: #8ff0a4;
+        --accent-300: #57e389;
+        --accent-500: #33d17a;
+        --accent-700: #2ec27e;
+        --accent-900: #26a269;
         --fg-color: #333333;
         --bg-0-level: #ffffff;
         --bg-1-level: #f6f5f4;
@@ -53,11 +53,11 @@
 }
 
 .dark {
-        --accent-100: #77767b;
-        --accent-300: #9a9996;
-        --accent-500: #c0bfbc;
-        --accent-700: #deddda;
-        --accent-900: #f6f5f4;
+        --accent-100: #8ff0a4;
+        --accent-300: #57e389;
+        --accent-500: #33d17a;
+        --accent-700: #2ec27e;
+        --accent-900: #26a269;
         --fg-color: #ffffff;
         --bg-0-level: #000;
         --bg-1-level: #222;
@@ -189,24 +189,24 @@ select:-moz-focusring {
 }
 
 *::selection {
-  background-color: #3584e4;
-  color: #ffffff;
+  background-color: var(--accent-500);
+  color: var(--bg-0-level);
 }
 
 a {
-  color: #3584e4;
+  color: var(--accent-500);
   text-decoration: none;
   font-weight: 500;
   padding: 5px;
-  border: 1px solid #3584e4;
+  border: 1px solid var(--accent-500);
   border-radius: 8px;
 }
 
 a:hover {
-  color: white;
-  background: #3584e4;
+  color: var(--bg-0-level);
+  background: var(--accent-500);
   padding: 5px;
-  border: 1px solid #3584e4;
+  border: 1px solid var(--accent-500);
 }
 
 .wrapper {
@@ -312,7 +312,7 @@ a:hover {
 }
 
 * {
-    transition: background .2s ease-in-out;
+    transition: background .4s ease-in-out;
 }
 
 .theme-toggle {
