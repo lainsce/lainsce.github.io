@@ -3,11 +3,7 @@
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --accent-100: #8ff0a4;
-        --accent-300: #57e389;
-        --accent-500: #33d17a;
-        --accent-700: #2ec27e;
-        --accent-900: #26a269;
+        --accent-500: #62a0ea;
         --fg-color: #ffffff;
         --bg-0-level: #000;
         --bg-1-level: #222;
@@ -23,11 +19,7 @@
 
 @media (prefers-color-scheme: light) {
     :root {
-        --accent-100: #8ff0a4;
-        --accent-300: #57e389;
-        --accent-500: #33d17a;
-        --accent-700: #2ec27e;
-        --accent-900: #26a269;
+        --accent-500: #3584e4;
         --fg-color: #333333;
         --bg-0-level: #ffffff;
         --bg-1-level: #f6f5f4;
@@ -39,11 +31,7 @@
 
 
 .light {
-        --accent-100: #8ff0a4;
-        --accent-300: #57e389;
-        --accent-500: #33d17a;
-        --accent-700: #2ec27e;
-        --accent-900: #26a269;
+        --accent-500: #3584e4;
         --fg-color: #333333;
         --bg-0-level: #ffffff;
         --bg-1-level: #f6f5f4;
@@ -53,11 +41,7 @@
 }
 
 .dark {
-        --accent-100: #8ff0a4;
-        --accent-300: #57e389;
-        --accent-500: #33d17a;
-        --accent-700: #2ec27e;
-        --accent-900: #26a269;
+        --accent-500: #62a0ea;
         --fg-color: #ffffff;
         --bg-0-level: #000;
         --bg-1-level: #222;
@@ -209,6 +193,12 @@ a:hover {
   border: 1px solid var(--accent-500);
 }
 
+.button {
+    transform: translate(var(--translateX),var(--translateY));
+    --translateX: 0;
+    --translateY: 0;
+}
+
 .wrapper {
   display: grid;
   grid-gap: 5px;
@@ -317,14 +307,17 @@ a:hover {
 
 .theme-toggle {
     color: var(--fg-color);
-    background-color: var(--bg-3-level);
-    border: 1px solid transparent;
+    border: 1px solid var(--bg-3-level);
     border-radius: 50%;
+    background: none;
     position: absolute;
     right: 20px;
     top: 20px;
     width: 2.5rem;
     height: 2.5rem;
+    transform: translate(var(--translateX),var(--translateY));
+    --translateX: 0;
+    --translateY: 0;
 }
 
 .theme-toggle .icon {
@@ -409,6 +402,34 @@ table thead th {
 
 table thead th:first-child {
     border-left: none;
+}
+
+* { cursor: none !important }
+
+.cursor {
+    border-radius: 100%;
+    background: rgba(#33d17a, 0.33);
+    transition-property: width, height, border-radius, transform;
+    transition-timing-function: ease-out;
+    transition-duration: 0.1s;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    border-radius: 100%;
+    position: absolute;
+    left: -1000px;
+    z-index: 99999;
+    width: 36px;
+    height: 36px;
+
+    &.cursor-text {
+      width: 5px;
+      border-radius: 2px;
+      background: var(--accent-500);
+    }
+    
+    &.is-locked {
+      transition-property: width, height, left, top, border-radius;
+    }
 }
 
 html {
