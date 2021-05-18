@@ -230,6 +230,7 @@ a:hover {
   color: var(--fg-color);
   padding: 20px;
   margin: 5px;
+  border-radius: 12px;
   
   & img {
     display: block;
@@ -242,32 +243,80 @@ a:hover {
     }
   }
   
+  &:not(.header):hover {
+      background: var(--bg-3-level);
+  }
+  
+  .dark &:not(.header):hover {
+      background: var(--bg-3-level);
+  }
+  
   &.notejot:hover {
       background: rgba(#f6d32d, 0.24);
+  }
+  
+  .dark &.notejot:hover {
+      background: rgba(#f9f06b, 0.5);
   }
   
   &.apostrophe:hover {
       background: rgba(#ff7800, 0.24);
   }
   
+  .dark &.apostrophe:hover {
+      background: rgba(#ffbe6f, 0.5);
+  }
+  
   &.khronos:hover {
       background: rgba(#9141ac, 0.24);
   }
   
+  .dark &.khronos:hover {
+      background: rgba(#dc8add, 0.5);
+  }
+  
   &.dot-matrix:hover {
-      background: rgba(#007DAC, 0.24);
+      background: rgba(#07DAC5, 0.24);
+  }
+  
+  .dark &.dot-matrix:hover {
+      background: rgba(#3AFDE8, 0.5);
   }
   
   &.emulsion:hover {
       background: rgba(#33d17a, 0.24);
   }
   
+  .dark &.emulsion:hover {
+      background: rgba(#8ff0a4, 0.5);
+  }
+  
   &.solo:hover {
       background: rgba(#5bd4b2, 0.24);
   }
   
+  .dark &.solo:hover {
+      background: rgba(#E8F7F6, 0.5);
+  }
+  
   &.conlang:hover {
       background: rgba(#986a44, 0.24);
+  }
+  
+  .dark &.conlang:hover {
+      background: rgba(#cbad88, 0.5);
+  }
+  
+  &.others {
+      background: var(--bg-1-level);
+  }
+  
+  .dark &.others {
+      background: var(--bg-1-level);
+      
+      & .symbolic {
+        filter: invert(1) contrast(50%);
+      }
   }
 }
 
