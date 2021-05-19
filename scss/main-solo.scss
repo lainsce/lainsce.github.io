@@ -152,7 +152,7 @@ body {
     height: 100%;
     font-weight: 400;
     font-size: 13pt;
-    width: 46pc;
+    width: min-content;
     margin: 0 auto;
     font-family: 'Inter', sans-serif;
     font-feature-settings: "liga" 1, "tnum";
@@ -401,8 +401,10 @@ a.button {
 
 .palcart {
     display: grid;
-    grid-template-columns: 10px 50px 100px 100px 100px 100px 100px 100px 100px 100px;
-    grid-template-rows: 1fr; 
+    grid-template-columns: 10px 60px 80px 80px 80px 80px 80px 80px 80px 80px;
+    grid-template-rows: 1fr;
+    max-width: min-content;
+    font-size: 10pt;
 }
 
 .palette {
@@ -418,6 +420,14 @@ a.button {
 
 .palette-dark {
     color: var(--fg-color);
+}
+
+.dark .palette {
+    color: var(--fg-level);
+}
+
+.dark .palette-dark {
+    color: var(--bg-1-level);
 }
 
 .body {
