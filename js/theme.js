@@ -50,6 +50,8 @@ setPreferredTheme();
 
 let mcursor = document.querySelector('.cursor');
 window.addEventListener('mousemove', mouse);
+window.addEventListener('scroll', scroll);
+window.addEventListener('touchstart', touchstart);
 
 let textCursorNodes = Array.from(document.querySelectorAll('h1, h2, h3, h4, h5, h6, p, td, th, dt, q'));
 textCursorNodes.forEach((el)=> bindTextCursorNodes(el));
@@ -60,12 +62,27 @@ btnNodes.forEach((el)=> this.bindBtnNodes(el));
 let isCursorLocked = false;
 let isTouchLocked = false;
 const DEFAULT_CURSOR_SIZE = 36;
+let currentPosition = { x: -9999, y: 0 };
 
-function mouse(e){
-  if (!this.isCursorLocked && !this.isTouchLocked) {
-    mcursor.style.top = e.pageY + 'px';
-    mcursor.style.left = e.pageX + 'px';
+function mouse({x, y}){
+  currentPosition = {x: x, y: y};
+
+  if (!isCursorLocked && !isTouchLocked) {
+    mcursor.style.top = currentPosition.y + window.pageYOffset + 'px';
+    mcursor.style.left = currentPosition.x + window.pageXOffset + 'px';
   }
+}
+
+function scroll(e){
+    if (!isCursorLocked && !isTouchLocked){
+        mcursor.style.top = currentPosition.y + window.pageYOffset + 'px';
+        mcursor.style.left = currentPosition.x + window.pageXOffset + 'px';
+    }
+}
+
+function touchstart(e){
+    mcursor.style.display = 'none';
+    isTouchLocked = true;
 }
 
 function bindTextCursorNodes(e){
