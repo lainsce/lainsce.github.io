@@ -240,8 +240,14 @@ a:hover {
       color: #df7;
       border: 1px solid #df7;
     }
+    
+    .light &.cash {
+      color: #ac4;
+      border: 1px solid #df7;
+    }
+    
     &.follow {
-      background: #cf0;
+      background: #ff3;
       color: #000;
       border: 1px solid #ff3;
       box-shadow: 0 1px 1px #ff3;
