@@ -418,13 +418,7 @@ a:hover {
       background: rgba(#cbad88, 0.5);
   }
   
-  &.others {
-      background: var(--bg-1-level);
-  }
-  
-  .dark &.others {
-      background: var(--bg-1-level);
-      
+  .dark &.others { 
       & .symbolic {
         filter: invert(1) contrast(50%);
       }
