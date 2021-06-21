@@ -210,15 +210,15 @@ a {
   text-decoration: none;
   font-weight: 500;
   padding: 5px;
-  border: 1px solid var(--border);
   border-radius: 4px;
-  box-shadow: 0 1px 1px var(--border);
   background: rgba(0, 0, 0, 0.88);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+    box-shadow: 0 1px 1px rgba(255, 255, 255, 0.25);
   
   .light & {
-    background-color: rgba(255, 255, 255, 0.18);
-    border: 1px solid rgba(255, 255, 255, 0.25);
-    box-shadow: 0 1px 1px rgba(255, 255, 255, 0.25);
+    background-color: rgba(255, 255, 255, 0.88);
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
   }
 }
 
@@ -341,16 +341,18 @@ a:hover {
 }
 
 .wrapper > * {
-  background-color: rgba(0, 0, 0, 0.18);
   color: var(--fg-color);
   padding: 20px;
   border-radius: 4px;
   backdrop-filter: blur(15px);
-  border: 1px solid var(--border);
+  background: rgba(0, 0, 0, 0.18);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  box-shadow: 0 1px 1px rgba(255, 255, 255, 0.25);
   
   .light & {
     background-color: rgba(255, 255, 255, 0.18);
-    border: 1px solid rgba(255, 255, 255, 0.25);
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
   }
   
   & img {
@@ -469,9 +471,7 @@ a:hover {
 
 .theme-toggle {
     color: var(--fg-color);
-    border: 1px solid var(--border);
     border-radius: 50%;
-    background: var(--bg-1-level);
     position: absolute;
     right: 20px;
     top: 20px;
@@ -480,6 +480,15 @@ a:hover {
     transform: translate(var(--translateX),var(--translateY));
     --translateX: 0;
     --translateY: 0;
+    background: rgba(0, 0, 0, 0.88);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    box-shadow: 0 1px 1px rgba(255, 255, 255, 0.25);
+  
+    .light & {
+      background-color: rgba(255, 255, 255, 0.18);
+      border: 1px solid rgba(0, 0, 0, 0.25);
+      box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
+    }
     
     &:hover {
       background: rgba(#CCC, 0.33);
@@ -517,15 +526,17 @@ a:hover {
 }
 
 .section {
-  background-color: rgba(0, 0, 0, 0.28);
   backdrop-filter: blur(15px);
   color: var(--fg-color);
   font-weight: 700;
-  border: 1px solid var(--border);
+  background: rgba(0, 0, 0, 0.28);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  box-shadow: 0 1px 1px rgba(255, 255, 255, 0.25);
   
   .light & {
-    background-color: rgba(255, 255, 255, 0.18);
-    border: 1px solid rgba(255, 255, 255, 0.25);
+    background-color: rgba(255, 255, 255, 0.28);
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
   }
 }
 
