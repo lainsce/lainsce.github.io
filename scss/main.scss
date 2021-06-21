@@ -226,16 +226,18 @@ a:hover {
 }
 
 .button {
-    transform: translate(var(--translateX),var(--translateY));
-    --translateX: 0;
-    --translateY: 0;
+    & * {
+      transform: translate(var(--translateX),var(--translateY));
+      --translateX: 0;
+      --translateY: 0;
+    }
     
     &:hover .download {
       background: #389;
     }
     
     &.cash {
-      background: #bd5;
+      background: none;
       color: #000;
       border: 1px solid #df7;
       box-shadow: 0 1px 1px #df7;
