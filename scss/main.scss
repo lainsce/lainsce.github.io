@@ -4,7 +4,7 @@
 @media (prefers-color-scheme: dark) {
     :root {
         --accent-500: #62a0ea;
-        --fg-color: #f6f5f4;
+        --fg-color: #fff;
         --bg-0-level: #000;
         --bg-1-level: #121217;
         --bg-2-level: #323237;
@@ -20,7 +20,7 @@
 @media (prefers-color-scheme: light) {
     :root {
         --accent-500: #3584e4;
-        --fg-color: #241f31;
+        --fg-color: #000;
         --bg-0-level: #ffffff;
         --bg-1-level: #f6f5f4;
         --bg-2-level: #deddda;
@@ -32,7 +32,7 @@
 
 .light {
         --accent-500: #3584e4;
-        --fg-color: #241f31;
+        --fg-color: #000;
         --bg-0-level: #ffffff;
         --bg-1-level: #f6f5f4;
         --bg-2-level: #deddda;
@@ -42,7 +42,7 @@
 
 .dark {
         --accent-500: #62a0ea;
-        --fg-color: #f6f5f4;
+        --fg-color: #fff;
         --bg-0-level: #000;
         --bg-1-level: #121217;
         --bg-2-level: #323237;
@@ -121,6 +121,10 @@ body {
   background-image: url(../images/grid.png);
   background-size: cover;
   padding: 3.3em 12px 3em;
+}
+
+.light body {
+  background-image: url(../images/gridl.png);
 }
 
 h1,
