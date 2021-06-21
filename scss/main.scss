@@ -216,10 +216,11 @@ a {
   border: 1px solid var(--border);
   border-radius: 4px;
   box-shadow: 0 1px 1px var(--border);
+  background: var(--bg-0-level);
 }
 
 a:hover {
-  color: var(--bg-0-level);
+  color: var(--bg-1-level);
   background: var(--accent-500);
   border: 1px solid var(--accent-500);
 }
