@@ -216,7 +216,7 @@ a {
   border: 1px solid var(--border);
   border-radius: 4px;
   box-shadow: 0 1px 1px var(--border);
-  background: var(--bg-0-level);
+  background: alpha(var(--bg-0-level), 0.88);
 }
 
 a:hover {
