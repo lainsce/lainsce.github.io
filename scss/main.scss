@@ -238,11 +238,13 @@ a:hover {
       background: #bd5;
       color: #000;
       border: 1px solid #df7;
+      box-shadow: 0 1px 1px #df7;
     }
     &.follow {
-      background: #0cf;
+      background: #cf0;
       color: #000;
-      border: 1px solid #3ff;
+      border: 1px solid #ff3;
+      box-shadow: 0 1px 1px #ff3;
     }
 }
 
