@@ -237,20 +237,20 @@ a:hover {
     
     &.cash {
       background: none;
-      color: #df7;
-      border: 1px solid #df7;
+      color: #fff;
+      border: 1px solid #389;
     }
     
     .light &.cash {
-      color: #ac4;
-      border: 1px solid #df7;
+      color: #000;
+      border: 1px solid #389;
     }
     
     &.follow {
-      background: #ff3;
+      background: #389;
       color: #000;
-      border: 1px solid #ff3;
-      box-shadow: 0 1px 1px #ff3;
+      border: 1px solid #389;
+      box-shadow: 0 1px 1px #389;
     }
 }
 
