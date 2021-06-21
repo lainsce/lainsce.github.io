@@ -336,11 +336,12 @@ a:hover {
 }
 
 .wrapper > * {
-  background-color: rgba(var(--bg-2-level), 0.88);
+  background-color: rgba(0, 0, 0, 0.18);
   color: var(--fg-color);
   padding: 20px;
   border-radius: 4px;
-  backdrop-filter: blur(5px);
+  backdrop-filter: blur(15px);
+  border: 1px solid var(--border);
   
   & img {
     display: block;
@@ -354,11 +355,11 @@ a:hover {
   }
   
   &:not(.header):not(.footer):not(.others):not(.border):hover {
-      background: var(--bg-3-level);
+      background-color: rgba(0, 0, 0, 0.38);
   }
   
   .dark &:not(.header):not(.footer):not(.others):not(.border):hover {
-      background: var(--bg-3-level);
+      background-color: rgba(0, 0, 0, 0.38);
   }
   
   &.notejot:hover {
@@ -512,10 +513,11 @@ a:hover {
 }
 
 .section {
-  background-color: rgba(var(--bg-3-level), 0.88);
-  backdrop-filter: blur(5px);
+  background-color: rgba(0, 0, 0, 0.28);
+  backdrop-filter: blur(15px);
   color: var(--fg-color);
   font-weight: 700;
+  border: 1px solid var(--border);
 }
 
 @supports (display: grid) {
