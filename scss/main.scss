@@ -213,7 +213,13 @@ a {
   border: 1px solid var(--border);
   border-radius: 4px;
   box-shadow: 0 1px 1px var(--border);
-  background: rgba(var(--bg-0-level), 0.88);
+  background: rgba(0, 0, 0, 0.88);
+  
+  .light & {
+    background-color: rgba(255, 255, 255, 0.18);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    box-shadow: 0 1px 1px rgba(255, 255, 255, 0.25);
+  }
 }
 
 a:hover {
@@ -341,6 +347,11 @@ a:hover {
   border-radius: 4px;
   backdrop-filter: blur(15px);
   border: 1px solid var(--border);
+  
+  .light & {
+    background-color: rgba(255, 255, 255, 0.18);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+  }
   
   & img {
     display: block;
@@ -511,6 +522,11 @@ a:hover {
   color: var(--fg-color);
   font-weight: 700;
   border: 1px solid var(--border);
+  
+  .light & {
+    background-color: rgba(255, 255, 255, 0.18);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+  }
 }
 
 @supports (display: grid) {
