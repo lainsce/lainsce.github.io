@@ -336,7 +336,7 @@ a:hover {
 }
 
 .wrapper > * {
-  background: var(--bg-2-level);
+  background: rgba(var(--bg-2-level), 0.88);
   color: var(--fg-color);
   padding: 20px;
   border-radius: 4px;
@@ -512,7 +512,8 @@ a:hover {
 }
 
 .section {
-  background: var(--bg-3-level);
+  background: rgba(var(--bg-3-level), 0.88);
+  backdrop-filter: blur(5px);
   color: var(--fg-color);
   font-weight: 700;
 }
