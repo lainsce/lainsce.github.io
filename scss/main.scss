@@ -232,13 +232,13 @@ a:hover {
     
     &:hover .download {
       background: #389;
+      box-shadow: 0 1px 1px #389;
     }
     
     &.cash {
       background: none;
-      color: #000;
+      color: #fff;
       border: 1px solid #df7;
-      box-shadow: 0 1px 1px #df7;
     }
     &.follow {
       background: #cf0;
