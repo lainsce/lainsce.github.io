@@ -133,31 +133,31 @@ body {
 h1,
 .title {
   font-weight: 300;
-  font-size: 23pt;
+  font-size: 24pt;
   margin: 0;
   padding: 0;
 }
 
 h2 {
   font-weight: 800;
-  font-size: 18pt;
+  font-size: 20pt;
   margin: 0;
   padding: 0;
 }
 
 h3 {
   font-weight: 700;
-  font-size: 14pt;
+  font-size: 18pt;
 }
 
 h4 {
   font-weight: 700;
-  font-size: 13pt;
+  font-size: 16pt;
 }
 
 h5 {
   font-weight: 700;
-  font-size: 11pt;
+  font-size: 13pt;
 }
 
 ul {
@@ -214,7 +214,8 @@ a {
   font-weight: 500;
   padding: 5px;
   border: 1px solid var(--border);
-  border-radius: 8px;
+  border-radius: 4px;
+  box-shadow: 0 1px 1px var(--border);
 }
 
 a:hover {
@@ -336,7 +337,7 @@ a:hover {
   background: var(--bg-2-level);
   color: var(--fg-color);
   padding: 20px;
-  border-radius: 12px;
+  border-radius: 4px;
   
   & img {
     display: block;
@@ -437,10 +438,13 @@ a:hover {
 }
 
 .footer {
-  background: var(--bg-1-level);
+  background: none;
   color: var(--fg-color);
   vertical-align: middle;
-  border-radius: 12px;
+  
+  & p {
+    width: fit-content;
+  }
 }
 
 .favs * {
@@ -449,8 +453,8 @@ a:hover {
     float: right;
     
     & img {
-      width:0px;
-      height:0px;
+      width: 0px;
+      height: 0px;
       padding: 16px;
     }
 }
@@ -508,10 +512,6 @@ a:hover {
   background: var(--bg-3-level);
   color: var(--fg-color);
   font-weight: 700;
-  
-  & img {
-    filter: brightness(0%);
-  }
 }
 
 @supports (display: grid) {
