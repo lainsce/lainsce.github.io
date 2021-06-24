@@ -211,13 +211,11 @@ a {
   font-weight: 500;
   padding: 5px;
   border-radius: 4px;
-  background: rgba(0, 0, 0, 0.88);
-  border: 1px solid rgba(255, 255, 255, 0.25);
-    box-shadow: 0 1px 1px rgba(255, 255, 255, 0.25);
+  background: rgba(0, 0, 0, 0.66);
+  box-shadow: 0 1px 1px rgba(255, 255, 255, 0.25);
   
   .light & {
-    background-color: rgba(255, 255, 255, 0.88);
-    border: 1px solid rgba(0, 0, 0, 0.25);
+    background-color: rgba(255, 255, 255, 0.66);
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
   }
 }
@@ -343,15 +341,13 @@ a:hover {
 .wrapper > * {
   color: var(--fg-color);
   padding: 20px;
-  border-radius: 4px;
+  border-radius: 8px;
   backdrop-filter: blur(15px);
   background: rgba(0, 0, 0, 0.18);
-  border: 1px solid rgba(255, 255, 255, 0.25);
   box-shadow: 0 1px 1px rgba(255, 255, 255, 0.25);
   
   .light & {
     background-color: rgba(255, 255, 255, 0.18);
-    border: 1px solid rgba(0, 0, 0, 0.25);
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
   }
   
@@ -481,12 +477,10 @@ a:hover {
     --translateX: 0;
     --translateY: 0;
     background: rgba(0, 0, 0, 0.88);
-    border: 1px solid rgba(255, 255, 255, 0.25);
     box-shadow: 0 1px 1px rgba(255, 255, 255, 0.25);
   
     .light & {
       background-color: rgba(255, 255, 255, 0.18);
-      border: 1px solid rgba(0, 0, 0, 0.25);
       box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
     }
     
@@ -530,12 +524,10 @@ a:hover {
   color: var(--fg-color);
   font-weight: 700;
   background: rgba(0, 0, 0, 0.28);
-  border: 1px solid rgba(255, 255, 255, 0.25);
   box-shadow: 0 1px 1px rgba(255, 255, 255, 0.25);
   
   .light & {
     background-color: rgba(255, 255, 255, 0.28);
-    border: 1px solid rgba(0, 0, 0, 0.25);
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
   }
 }
@@ -576,6 +568,7 @@ table thead th:first-child {
 .cursor {
     border-radius: 100%;
     background: rgba(#CCC, 0.33);
+    box-shadow: 0 1px 1px rgba(255, 255, 255, 0.25);
     transition-property: width, height, border-radius, transform;
     transition-timing-function: ease-out;
     transition-duration: 0.1s;
@@ -587,6 +580,11 @@ table thead th:first-child {
     z-index: 99999;
     width: 36px;
     height: 36px;
+    
+    .light .cursor {
+    	background: rgba(#333, 0.33);
+    	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
+    }
 
     &.cursor-text {
       width: 3px;
