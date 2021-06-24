@@ -360,7 +360,7 @@ a:hover {
   }
   
   &:not(.header):not(.footer):not(.others):not(.border):hover {
-      background-color: rgba(0, 0, 0, 0.38);
+      background-color: rgba(255, 255, 255, 0.38);
   }
   
   .dark &:not(.header):not(.footer):not(.others):not(.border):hover {
