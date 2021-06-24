@@ -212,18 +212,18 @@ a {
   padding: 5px;
   border-radius: 4px;
   background: rgba(0, 0, 0, 0.66);
-  box-shadow: 0 1px 1px rgba(255, 255, 255, 0.25);
+  box-shadow: 0 0 1px rgba(255, 255, 255, 0.25);
   
   .light & {
     background-color: rgba(255, 255, 255, 0.66);
-    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.25);
   }
 }
 
 a:hover {
   color: var(--bg-1-level);
   background: var(--accent-500);
-  border: 1px solid var(--accent-500);
+  box-shadow: 0 0 1px var(--accent-500);
 }
 
 .button {
@@ -233,20 +233,17 @@ a:hover {
     
     &:hover .download {
       background: #389;
-      border: 1px solid #389;
-      box-shadow: 0 1px 1px #389;
+      box-shadow: 0 0 1px #056;
     }
     
     &.cash {
       background: #389;
-      border: 1px solid #389;
-      box-shadow: 0 1px 1px #389;
+      box-shadow: 0 0 1px #056;
     }
     
     &.follow {
       background: #389;
-      border: 1px solid #389;
-      box-shadow: 0 1px 1px #389;
+      box-shadow: 0 0 1px #056;
     }
 }
 
@@ -344,11 +341,11 @@ a:hover {
   border-radius: 8px;
   backdrop-filter: blur(15px);
   background: rgba(0, 0, 0, 0.18);
-  box-shadow: 0 1px 1px rgba(255, 255, 255, 0.25);
+  box-shadow: 0 0 1px rgba(255, 255, 255, 0.25);
   
   .light & {
     background-color: rgba(255, 255, 255, 0.18);
-    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.25);
   }
   
   & img {
@@ -477,11 +474,11 @@ a:hover {
     --translateX: 0;
     --translateY: 0;
     background: rgba(0, 0, 0, 0.88);
-    box-shadow: 0 1px 1px rgba(255, 255, 255, 0.25);
+    box-shadow: 0 0 1px rgba(255, 255, 255, 0.25);
   
     .light & {
       background-color: rgba(255, 255, 255, 0.18);
-      box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
+      box-shadow: 0 0 1px rgba(0, 0, 0, 0.25);
     }
     
     &:hover {
@@ -493,6 +490,7 @@ a:hover {
     margin: 0;
     padding: 0;
     position: absolute;
+    border: 1px solid #00000000;
     right: .7rem;
     top: .7rem;
     transform: translate(var(--translateX),var(--translateY));
@@ -524,11 +522,11 @@ a:hover {
   color: var(--fg-color);
   font-weight: 700;
   background: rgba(0, 0, 0, 0.28);
-  box-shadow: 0 1px 1px rgba(255, 255, 255, 0.25);
+  box-shadow: 0 0 1px rgba(255, 255, 255, 0.25);
   
   .light & {
     background-color: rgba(255, 255, 255, 0.28);
-    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.25);
   }
 }
 
