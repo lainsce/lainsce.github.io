@@ -88,8 +88,13 @@ body {
     font-family: 'InterV', 'Inter', sans-serif;
     font-feature-settings: "liga" 1, "tnum";
     color: var(--fg-color);
-    background: var(--bg-1-level);
+    background: var(--bg-0-level);
+    background-image: none;
     width: 100%;
+}
+
+.light body {
+    background-image: none;
 }
 
 .nav {
