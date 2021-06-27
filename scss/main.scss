@@ -349,7 +349,6 @@ a:hover {
   & img {
     display: block;
     margin: 0 auto;
-    vertical-align: bottom;
     filter: drop-shadow(0 0 3px rgba(0,0,0,0.14));
     
     &.symbolic {
@@ -394,7 +393,6 @@ a:hover {
 
 .favs * {
     transform: scale(0.88);
-    display: inline-block;
     float: right;
     
     & img {
