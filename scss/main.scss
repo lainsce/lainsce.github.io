@@ -340,10 +340,14 @@ a:hover {
   backdrop-filter: blur(15px);
   background: rgba(0, 0, 0, 0.18);
   box-shadow: 0 1px 1px rgba(255, 255, 255, 0.25);
+  box-shadow: inset 0 0 2000px rgb(0 0 0 / 50%);
+  box-shadow: 0 0 1rem 0 rgba(255, 255, 255, 0.2);
   
   .light & {
     background-color: rgba(255, 255, 255, 0.18);
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
+    box-shadow: inset 0 0 2000px rgb(255 255 255 / 50%);
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);
   }
   
   & img {
@@ -414,12 +418,16 @@ a:hover {
     transform: translate(var(--translateX),var(--translateY));
     --translateX: 0;
     --translateY: 0;
-    background: rgba(0, 0, 0, 0.88);
+    background: rgba(0, 0, 0, 0.18);
     box-shadow: 0 1px 1px rgba(255, 255, 255, 0.25);
-  
+    box-shadow: inset 0 0 2000px rgb(0 0 0 / 50%);
+    box-shadow: 0 0 1rem 0 rgba(255, 255, 255, 0.2);
+    
     .light & {
       background-color: rgba(255, 255, 255, 0.18);
       box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
+      box-shadow: inset 0 0 2000px rgb(255 255 255 / 50%);
+      box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);
     }
     
     &:hover {
@@ -463,10 +471,14 @@ a:hover {
   font-weight: 700;
   background: rgba(0, 0, 0, 0.28);
   box-shadow: 0 1px 1px rgba(255, 255, 255, 0.25);
+  box-shadow: inset 0 0 2000px rgb(0 0 0 / 50%);
+  box-shadow: 0 0 1rem 0 rgba(255, 255, 255, 0.2);
   
   .light & {
     background-color: rgba(255, 255, 255, 0.28);
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
+    box-shadow: inset 0 0 2000px rgb(255 255 255 / 50%);
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);
   }
 }
 
@@ -505,7 +517,7 @@ table thead th:first-child {
 
 .cursor {
     border-radius: 100%;
-    background: rgba(#CCC, 0.33);
+    background: rgba(#CCC, 0.5);
     box-shadow: 0 1px 1px rgba(255, 255, 255, 0.25);
     transition-property: width, height, border-radius, transform;
     transition-timing-function: ease-out;
@@ -520,7 +532,7 @@ table thead th:first-child {
     height: 36px;
     
     .light .cursor {
-    	background: rgba(#333, 0.33);
+    	background: rgba(#333, 0.5);
     	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
     }
 
