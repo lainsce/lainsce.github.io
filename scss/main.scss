@@ -113,12 +113,12 @@ body {
   color: var(--fg-color);
   max-width: 1280px;
   margin: 0 auto;
-  background-image: linear-gradient( 135deg, #222 10%, #333 100%);
+  background-image: linear-gradient( 135deg, #282828 10%, #2f2f2f 100%);
   padding: 3.3em 12px 3em;
 }
 
 .light {
-  background-image: linear-gradient( 135deg, #DDD 10%, #CCC 100%);
+  background-image: linear-gradient( 135deg, #F8F8F8 10%, #FFF 100%);
 }
 
 body .solo {
@@ -210,11 +210,9 @@ a {
   padding: 5px;
   border-radius: 4px;
   background: rgba(0, 0, 0, 0.66);
-  box-shadow: 0 1px 1px rgba(255, 255, 255, 0.25);
   
   .light & {
     background-color: rgba(255, 255, 255, 0.66);
-    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
   }
 }
 
@@ -225,23 +223,16 @@ a:hover {
 }
 
 .button {
-    transform: translate(var(--translateX),var(--translateY));
-    --translateX: 0;
-    --translateY: 0;
-    
     &:hover .download {
       background: #389;
-      box-shadow: 0 1px 1px #056;
     }
     
     &.cash {
       background: #389;
-      box-shadow: 0 1px 1px #056;
     }
     
     &.follow {
       background: #389;
-      box-shadow: 0 1px 1px #056;
     }
 }
 
@@ -336,18 +327,12 @@ a:hover {
 .wrapper > * {
   color: var(--fg-color);
   padding: 20px;
-  border-radius: 8px;
-  backdrop-filter: blur(15px);
-  background: rgba(0, 0, 0, 0.18);
-  box-shadow: 0 1px 1px rgba(255, 255, 255, 0.25);
-  box-shadow: inset 0 0 2000px rgba(0, 0, 0, 50%);
-  box-shadow: 0 0 1rem 0 rgba(255, 255, 255, 0.2);
+  background: rgba(0, 0, 0, 1);
+  border: 3px solid rgba(255, 255, 255, 1);
   
   .light & {
-    background-color: rgba(255, 255, 255, 0.18);
-    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
-    box-shadow: inset 0 0 2000px rgba(255, 255, 255, 50%);
-    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);
+    background: rgba(255, 255, 255, 1);
+    border: 3px solid rgba(0, 0, 0, 1);
   }
   
   & img {
@@ -413,25 +398,16 @@ a:hover {
     right: 20px;
     top: 20px;
     width: 2.5rem;
-    border: 1px solid #00000000;
     height: 2.5rem;
     transform: translate(var(--translateX),var(--translateY));
     --translateX: 0;
     --translateY: 0;
-    background: rgba(0, 0, 0, 0.18);
-    box-shadow: 0 1px 1px rgba(255, 255, 255, 0.25);
-    box-shadow: inset 0 0 2000px rgba(0, 0, 0, 50%);
-    box-shadow: 0 0 1rem 0 rgba(255, 255, 255, 0.2);
+    background: rgba(0, 0, 0, 1);
+    border: 1px solid rgba(255, 255, 255, 1);
     
     .light & {
-      background-color: rgba(255, 255, 255, 0.18);
-      box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
-      box-shadow: inset 0 0 2000px rgba(255, 255, 255, 50%);
-      box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);
-    }
-    
-    &:hover {
-      background: rgba(#CCC, 0.33);
+      background: rgba(255, 255, 255, 1);
+      border: 1px solid rgba(0, 0, 0, 1);
     }
 }
 
@@ -441,20 +417,27 @@ a:hover {
     position: absolute;
     right: .7rem;
     top: .7rem;
-    transform: translate(var(--translateX),var(--translateY));
-    --translateX: 0;
-    --translateY: 0;
     transition: all .8s cubic-bezier(.23,1,.32,1);
 }
 
 .theme-toggle #icon-moon {
     display: block;
     color: #dc8add;
+    
+    &:hover {
+      background: rgba(#dc8add, 1);
+      color: var(--fg-color);
+    }
 }
 
 .theme-toggle #icon-sun {
     display: none;
     color: #ffbe6f;
+    
+    &:hover {
+      background: rgba(#ffbe6f, 1);
+      color: var(--fg-color);
+    }
 }
 
 .dark .theme-toggle #icon-moon {
@@ -469,16 +452,10 @@ a:hover {
   backdrop-filter: blur(15px);
   color: var(--fg-color);
   font-weight: 700;
-  background: rgba(0, 0, 0, 0.28);
-  box-shadow: 0 1px 1px rgba(255, 255, 255, 0.25);
-  box-shadow: inset 0 0 2000px rgba(0, 0, 0, 50%);
-  box-shadow: 0 0 1rem 0 rgba(255, 255, 255, 0.2);
+  background: rgba(#323538, 1);
   
   .light & {
-    background-color: rgba(255, 255, 255, 0.28);
-    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
-    box-shadow: inset 0 0 2000px rgba(255, 255, 255, 50%);
-    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);
+    background: rgba(#F2F5F8, 1);
   }
 }
 
@@ -492,6 +469,7 @@ table {
     background-color: var(--bg-1-level);
     text-align: center;
     border-collapse: collapse;
+    border: 1px solid var(--fg-color);
     max-width: max-content;
 }
 
