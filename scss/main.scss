@@ -208,14 +208,15 @@ a {
   padding: 5px;
   background: rgba(#F2F5F8, 1);
   border: 2px solid rgba(0, 0, 0, 1);
-}
 
-a:hover {
-  background: var(--accent);
+  &:hover {
+    background: var(--accent);
+  }
 }
 
 .button {
     padding: 8px 12px;
+    font-weight: 700;
     
     &:hover {
       background: var(--accent);
@@ -413,22 +414,6 @@ table thead th {
 
 table thead th:first-child {
     border-left: none;
-}
-
-.btn_text {
-    font-weight: 700;
-}
-
-.noisy {
-  height: 12px;
-  right: 0;
-  left: 0;
-  top: 0;
-  position: absolute;
-  pointer-events: none;
-  content: " ";
-  display: block;
-  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARYAAAAKAQMAAABL4ONYAAAABlBMVEUAAAAAAAClZ7nPAAAAAnRSTlMA32D/An0AAAC0SURBVBjTXcYxboRADEDR75ELK5VBOYBBHMSsiLR7Ky+aghLlxGln86qHtNYoFsPOpqqCDufhOM8I9xljzrgzI7aPO1vBZbtwn15i4n42ieGLLsDKGwulxcUhDU/7uO6Ouc7Zl+3S2Dxse9s+/PFyS6onCgQiYoX9ewKORE3+bKta0HbWGH/rYeyTN+9JVca5hi7Wh5cIhYITX7PZhEGQ8/DvzT3wY+0vqoKucf3YrzBcSLE/lKQuSiByDCcAAAAASUVORK5CYII=);  
 }
 
 html {
