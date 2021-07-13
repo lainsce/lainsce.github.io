@@ -208,10 +208,6 @@ a {
   &:hover {
     background: var(--accent);
     color: #FFF;
-    
-    & .favs img {
-      filter: invert(1);
-    }
   }
 }
 
@@ -240,6 +236,10 @@ a {
 
 .button + .button {
   margin-left: 5px;
+}
+
+*:hover .favs img {
+      filter: invert(1);
 }
 
 .wrapper {
