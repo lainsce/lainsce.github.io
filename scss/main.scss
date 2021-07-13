@@ -22,10 +22,6 @@
     	background: rgba(0, 0, 0, 1);
   	border: 3px solid rgba(255, 255, 255, 1);
   	
-  	&:not(.header):not(.footer):not(.others):not(.border):hover {
-        	background-color: rgba(0, 0, 0, 0.38);
-        }
-  	
   	& .symbolic {
 		filter: invert(1) contrast(50%);
 	}
@@ -223,15 +219,17 @@ a {
     }
 
     &:hover .download {
-      background: var(--accent);
+      background: #34fe01;
     }
     
     &.cash {
       background: #fe3401;
+      color: #FFF;
     }
     
     &.follow {
       background: #1f4fff;
+      color: #FFF;
     }
 }
 
@@ -339,27 +337,22 @@ a {
       filter: none;
     }
   }
+}
+
+.panel.notejot:hover {
+	background: #FFFF00;
+}
   
-  &:not(.header):not(.footer):not(.others):not(.border):hover {
-      background-color: rgba(255, 255, 255, 0.38);
-  }
-  
-  
-  &.notejot:hover {
-      background-color: #FFFF00;
-  }
-  
-  &.dot-matrix:hover {
-      background-color: #05DAC7;
-  }
-  
-  &.emulsion:hover {
-      background-color: #CCFF88;
-  }
-  
-  &.khronos:hover {
-      background-color: #FF88CC;
-  }
+.panel.dot-matrix:hover {
+	background: #05DAC7;
+}
+
+.panel.emulsion:hover {
+	background: #CCFF88;
+}
+
+.panel.khronos:hover {
+	background: #FF88CC;
 }
 
 .header {
