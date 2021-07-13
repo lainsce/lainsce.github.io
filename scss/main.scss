@@ -381,6 +381,7 @@ a {
   font-weight: 700;
   background: rgba(#F2F5F8, 1);
   box-shadow: inset 0px -8px 0px 0px #888;
+  box-shadow: 8px 8px 0 var(--border);
 }
 
 @supports (display: grid) {
