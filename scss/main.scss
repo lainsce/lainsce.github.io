@@ -207,6 +207,7 @@ a {
 
   &:hover {
     background: var(--accent);
+    color: #FFF;
   }
 }
 
@@ -404,7 +405,7 @@ a {
 }
 
 .panel.others:hover {
-	background: var(--accent);
+	background: #888;
 }
 
 .header {
