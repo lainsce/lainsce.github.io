@@ -3,7 +3,7 @@
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --accent: #62a0ea;
+        --accent: #62a;
         --fg-color: #fff;
         --bg-color: #000;
         --border: rgba(255, 255, 255, 1);
@@ -16,30 +16,11 @@
 
 @media (prefers-color-scheme: light) {
     :root {
-        --accent: #3584e4;
+        --accent: #358;
         --fg-color: #000;
         --bg-color: #ffffff;
         --border: rgba(0, 0, 0, 1);
     }
-}
-
-
-.light {
-        --accent: #3584e4;
-        --fg-color: #000;
-        --bg-color: #ffffff;
-        --border: rgba(0, 0, 0, 1);
-}
-
-.dark {
-        --accent: #62a0ea;
-        --fg-color: #fff;
-        --bg-color: #000;
-        --border: rgba(255, 255, 255, 1);
-        
-        .favs img {
-                filter: invert(1);
-        }
 }
 
 @media screen and (prefers-reduced-motion: reduce), (update: slow) {
@@ -431,7 +412,7 @@ a:hover {
     display: block;
     color: #dc8add;
     
-    &:hover {
+    &:hover #icon-moon {
       color: var(--fg-color);
     }
 }
@@ -440,7 +421,7 @@ a:hover {
     display: none;
     color: #ffbe6f;
     
-    &:hover {
+    &:hover #icon-sun {
       color: var(--fg-color);
     }
 }
