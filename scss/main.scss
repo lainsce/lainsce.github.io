@@ -208,6 +208,10 @@ a {
   &:hover {
     background: var(--accent);
     color: #FFF;
+    
+    & .favs img {
+      filter: invert(1);
+    }
   }
 }
 
@@ -217,10 +221,6 @@ a {
     
     &:hover {
       background: var(--accent);
-      
-      &.favs img {
-        filter: invert(1);
-      }
     }
 
     &:hover .download {
@@ -433,14 +433,7 @@ a {
 }
 
 .favs * {
-    transform: scale(0.88);
     float: right;
-    
-    & img {
-      width: 0px;
-      height: 0px;
-      padding: 16px;
-    }
 }
 
 .section {
