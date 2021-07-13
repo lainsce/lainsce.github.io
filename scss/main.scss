@@ -371,69 +371,6 @@ a:hover {
     }
 }
 
-.theme-toggle {
-    color: var(--fg-color);
-    border-radius: 0 0 0 50%;
-    position: absolute;
-    right: 0px;
-    top: 0px;
-    width: 2.5rem;
-    height: 2.5rem;
-    background: rgba(0, 0, 0, 1);
-    border: 1px solid #00000000;
-    border-bottom: 2px solid rgba(255, 255, 255, 1);
-    border-left: 2px solid rgba(255, 255, 255, 1);
-    
-    .light & {
-      background: rgba(255, 255, 255, 1);
-      border-bottom: 2px solid rgba(0, 0, 0, 1);
-      border-left: 2px solid rgba(0, 0, 0, 1);
-    }
-    
-    &:hover {
-      background: rgba(#ffbe6f, 1);
-    }
-    
-    .light &:hover {
-      background: rgba(#dc8add, 1);
-    }
-}
-
-.theme-toggle .icon {
-    margin: 0;
-    padding: 0;
-    position: absolute;
-    right: .7rem;
-    top: .7rem;
-    transition: all .8s cubic-bezier(.23,1,.32,1);
-}
-
-.theme-toggle #icon-moon {
-    display: block;
-    color: #dc8add;
-    
-    &:hover #icon-moon {
-      color: var(--fg-color);
-    }
-}
-
-.theme-toggle #icon-sun {
-    display: none;
-    color: #ffbe6f;
-    
-    &:hover #icon-sun {
-      color: var(--fg-color);
-    }
-}
-
-.dark .theme-toggle #icon-moon {
-    display: none;
-}
-
-.dark .theme-toggle #icon-sun {
-    display: block;
-}
-
 .section {
   color: var(--fg-color);
   font-weight: 700;
