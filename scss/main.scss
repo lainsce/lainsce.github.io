@@ -23,6 +23,13 @@
     }
 }
 
+:root {
+  --accent: #358;
+  --fg-color: #000;
+  --bg-color: #ffffff;
+  --border: rgba(0, 0, 0, 1);
+}
+
 @media screen and (prefers-reduced-motion: reduce), (update: slow) {
     * {
         animation-duration: 0.001ms !important;
