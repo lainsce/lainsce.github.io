@@ -217,6 +217,10 @@ a {
     
     &:hover {
       background: var(--accent);
+      
+      &.favs img {
+        filter: invert(1);
+      }
     }
 
     &:hover .download {
