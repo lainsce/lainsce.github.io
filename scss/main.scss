@@ -209,10 +209,10 @@ a {
   font-weight: 500;
   padding: 5px;
   border-radius: 4px;
-  background: rgba(0, 0, 0, 0.66);
+  background: rgba(#323538, 1);
   
   .light & {
-    background-color: rgba(255, 255, 255, 0.66);
+    background: rgba(#F2F5F8, 1);
   }
 }
 
@@ -223,6 +223,12 @@ a:hover {
 }
 
 .button {
+    background: rgba(#323538, 1);
+  
+    .light & {
+      background: rgba(#F2F5F8, 1);
+    }
+
     &:hover .download {
       background: #389;
     }
@@ -449,7 +455,6 @@ a:hover {
 }
 
 .section {
-  backdrop-filter: blur(15px);
   color: var(--fg-color);
   font-weight: 700;
   background: rgba(#323538, 1);
@@ -493,31 +498,8 @@ table thead th:first-child {
     border-left: none;
 }
 
-.btn > * {
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-}
-
-.btn_icon {
-    position: absolute;
-    text-align: center;
-    width: 12px;
-    left: 5px;
-    top: 6px;
-    line-height: 1rem;
-}
-.btn,
-.btn_icon {
-    display: inline-block;
-}
-.btn_icon {
-    transition: all .8s cubic-bezier(.23,1,.32,1);
-}
 .btn_text {
-    position: relative;
-    margin-left: 1em;
+    font-weight: 700;
 }
 
 html {
