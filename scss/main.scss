@@ -397,25 +397,20 @@ a:hover {
     top: 20px;
     width: 2.5rem;
     height: 2.5rem;
-    transform: translate(var(--translateX),var(--translateY));
-    --translateX: 0;
-    --translateY: 0;
     background: rgba(0, 0, 0, 1);
-    border: 1px solid rgba(255, 255, 255, 1);
+    border: 2px solid rgba(255, 255, 255, 1);
     
     .light & {
       background: rgba(255, 255, 255, 1);
-      border: 1px solid rgba(0, 0, 0, 1);
+      border: 2px solid rgba(0, 0, 0, 1);
     }
     
     &:hover {
       background: rgba(#ffbe6f, 1);
-      color: var(--fg-color);
     }
     
     .light &:hover {
       background: rgba(#dc8add, 1);
-      color: var(--fg-color);
     }
 }
 
@@ -431,11 +426,19 @@ a:hover {
 .theme-toggle #icon-moon {
     display: block;
     color: #dc8add;
+    
+    &:hover {
+      color: var(--fg-color);
+    }
 }
 
 .theme-toggle #icon-sun {
     display: none;
     color: #ffbe6f;
+    
+    &:hover {
+      color: var(--fg-color);
+    }
 }
 
 .dark .theme-toggle #icon-moon {
