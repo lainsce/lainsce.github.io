@@ -217,7 +217,6 @@ a {
 }
 
 a:hover {
-  color: var(--bg-1-level);
   background: var(--accent-500);
 }
 
@@ -228,17 +227,21 @@ a:hover {
     .light & {
       background: rgba(#F2F5F8, 1);
     }
+    
+    &:hover {
+      background: var(--accent-500);
+    }
 
     &:hover .download {
-      background: #389;
+      background: var(--accent-500);
     }
     
     &.cash {
-      background: #389;
+      background: #3B9;
     }
     
     &.follow {
-      background: #389;
+      background: #38B;
     }
 }
 
