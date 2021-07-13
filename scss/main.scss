@@ -3,7 +3,7 @@
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --accent: #d4d6d9;
+        --accent: #369;
         --fg-color: #fff;
         --bg-color: #000;
         --border: rgba(255, 255, 255, 1);
@@ -38,17 +38,17 @@
 
 @media (prefers-color-scheme: light) {
     :root {
-        --accent: #d4d6d9;
+        --accent: #00F;
         --fg-color: #000;
-        --bg-color: #ffffff;
+        --bg-color: #fff;
         --border: rgba(0, 0, 0, 1);
     }
 }
 
 :root {
-  --accent: #d4d6d9;
+  --accent: #00F;
   --fg-color: #000;
-  --bg-color: #ffffff;
+  --bg-color: #fff;
   --border: rgba(0, 0, 0, 1);
 }
 
@@ -228,7 +228,7 @@ a {
     }
     
     &.follow {
-      background: #0207ED;
+      background: #00F;
       color: #FFF;
     }
 }
