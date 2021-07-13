@@ -49,7 +49,6 @@ toggleBtn.addEventListener('click', toggleTheme);
 setPreferredTheme();
 
 let mcursor = document.querySelector('.cursor');
-window.addEventListener('mousemove', mouse);
 window.addEventListener('scroll', scroll);
 window.addEventListener('touchstart', touchstart);
 
@@ -122,21 +121,6 @@ function bindBtnNodes(el){
         mcursor.style.borderRadius = borderRadius + 'px';
         mcursor.style.left = rect.x + window.pageXOffset + rect.width/2 + 'px';
         mcursor.style.top = rect.y + window.pageYOffset + rect.height/2 + 'px';
-    });
-
-    el.addEventListener('mousemove', (event)=>{
-        if (isTouchLocked) return;
-
-        const halfHeight = rect.height / 2;
-        const topOffset = (event.y - rect.top - halfHeight) / halfHeight;
-        const halfWidth = rect.width / 2;
-        const leftOffset = (event.x - rect.left - halfWidth) / halfWidth;
-
-        mcursor.style.transform = `translate(calc(-50% + ${leftOffset}px), calc(-50% + ${topOffset}px))`;
-
-        if (el.matches('.panel, a:not(.fab)')){
-            el.style.transform = `translate(${leftOffset*6}px, ${topOffset*6}px)`;
-        }
     });
 
     el.addEventListener('mouseleave', (event)=>{
