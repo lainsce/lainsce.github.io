@@ -343,6 +343,23 @@ a {
   &:not(.header):not(.footer):not(.others):not(.border):hover {
       background-color: rgba(255, 255, 255, 0.38);
   }
+  
+  
+  &.notejot:hover {
+      background-color: #FFFF00;
+  }
+  
+  &.dot-matrix:hover {
+      background-color: #05DAC7;
+  }
+  
+  &.emulsion:hover {
+      background-color: #CCFF88;
+  }
+  
+  &.khronos:hover {
+      background-color: #FF88CC;
+  }
 }
 
 .header {
