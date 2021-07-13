@@ -6,7 +6,7 @@
         --accent: #62a0ea;
         --fg-color: #fff;
         --bg-color: #000;
-        --border: rgba(20, 20, 20, 0.25);
+        --border: rgba(255, 255, 255, 1);
     }
     
     .favs img {
@@ -19,7 +19,7 @@
         --accent: #3584e4;
         --fg-color: #000;
         --bg-color: #ffffff;
-        --border: rgba(20, 20, 20, 0.25);
+        --border: rgba(0, 0, 0, 1);
     }
 }
 
@@ -28,14 +28,14 @@
         --accent: #3584e4;
         --fg-color: #000;
         --bg-color: #ffffff;
-        --border: rgba(20, 20, 20, 0.25);
+        --border: rgba(0, 0, 0, 1);
 }
 
 .dark {
         --accent: #62a0ea;
         --fg-color: #fff;
         --bg-color: #000;
-        --border: rgba(20, 20, 20, 0.25);
+        --border: rgba(255, 255, 255, 1);
         
         .favs img {
                 filter: invert(1);
@@ -75,7 +75,7 @@
   background: none;
 }
 ::-webkit-scrollbar-thumb {
-  background: var(--bg-color);
+  background: var(--fg-color);
   border-radius: 999px;
 }
 ::-webkit-scrollbar-thumb:hover {
@@ -327,6 +327,7 @@ a:hover {
   padding: 20px;
   background: rgba(0, 0, 0, 1);
   border: 3px solid rgba(255, 255, 255, 1);
+  box-shadow: 8px 8px 0 var(--border);
   
   .light & {
     background: rgba(255, 255, 255, 1);
