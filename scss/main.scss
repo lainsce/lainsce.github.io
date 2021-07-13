@@ -419,11 +419,11 @@ table thead th:first-child {
     font-weight: 700;
 }
 
-.panel.noisy:before {
+.noisy {
   height: 12px;
   right: 0;
   left: 0;
-  bottom: 0;
+  top: 0;
   position: absolute;
   pointer-events: none;
   content: " ";
