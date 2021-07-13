@@ -219,11 +219,11 @@ a {
 a:hover {
   color: var(--bg-1-level);
   background: var(--accent-500);
-  box-shadow: 0 1px 1px var(--accent-500);
 }
 
 .button {
     background: rgba(#323538, 1);
+    padding: 8px 12px;
   
     .light & {
       background: rgba(#F2F5F8, 1);
