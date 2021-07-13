@@ -9,6 +9,32 @@
         --border: rgba(255, 255, 255, 1);
     }
     
+    body {
+    	background-image: linear-gradient( 135deg, #232323 0%, #000 100%);
+    }
+    
+    a {
+    	background: rgba(#323538, 1);
+  	border: 2px solid rgba(255, 255, 255, 1);
+    }
+    
+    .wrapper > * {
+    	background: rgba(0, 0, 0, 1);
+  	border: 3px solid rgba(255, 255, 255, 1);
+  	
+  	&:not(.header):not(.footer):not(.others):not(.border):hover {
+        	background-color: rgba(0, 0, 0, 0.38);
+        }
+  	
+  	& .symbolic {
+		filter: invert(1) contrast(50%);
+	}
+    }
+    
+    .section {
+    	background: rgba(#323538, 1);
+    }
+    
     .favs img {
         filter: invert(1);
     }
@@ -89,12 +115,8 @@ body {
   color: var(--fg-color);
   max-width: 1280px;
   margin: 0 auto;
-  background-image: linear-gradient( 135deg, #000 10%, #282828 100%);
+  background-image: linear-gradient( 135deg, #F8F8F8 0%, #FFF 100%);
   padding: 3.3em 12px 3em;
-}
-
-.light {
-  background-image: linear-gradient( 135deg, #F8F8F8 10%, #FFF 100%);
 }
 
 body .solo {
@@ -184,13 +206,8 @@ a {
   text-decoration: none;
   font-weight: 500;
   padding: 5px;
-  background: rgba(#323538, 1);
-  border: 2px solid rgba(255, 255, 255, 1);
-  
-  .light & {
-    background: rgba(#F2F5F8, 1);
-    border: 2px solid rgba(0, 0, 0, 1);
-  }
+  background: rgba(#F2F5F8, 1);
+  border: 2px solid rgba(0, 0, 0, 1);
 }
 
 a:hover {
@@ -198,12 +215,7 @@ a:hover {
 }
 
 .button {
-    background: rgba(#323538, 1);
     padding: 8px 12px;
-  
-    .light & {
-      background: rgba(#F2F5F8, 1);
-    }
     
     &:hover {
       background: var(--accent);
@@ -313,14 +325,9 @@ a:hover {
 .wrapper > * {
   color: var(--fg-color);
   padding: 20px;
-  background: rgba(0, 0, 0, 1);
-  border: 3px solid rgba(255, 255, 255, 1);
   box-shadow: 8px 8px 0 var(--border);
-  
-  .light & {
-    background: rgba(255, 255, 255, 1);
-    border: 3px solid rgba(0, 0, 0, 1);
-  }
+  background: rgba(255, 255, 255, 1);
+  border: 3px solid rgba(0, 0, 0, 1);
   
   & img {
     display: block;
@@ -334,16 +341,6 @@ a:hover {
   
   &:not(.header):not(.footer):not(.others):not(.border):hover {
       background-color: rgba(255, 255, 255, 0.38);
-  }
-  
-  .dark &:not(.header):not(.footer):not(.others):not(.border):hover {
-      background-color: rgba(0, 0, 0, 0.38);
-  }
-  
-  .dark &.others { 
-      & .symbolic {
-        filter: invert(1) contrast(50%);
-      }
   }
 }
 
@@ -381,11 +378,7 @@ a:hover {
 .section {
   color: var(--fg-color);
   font-weight: 700;
-  background: rgba(#323538, 1);
-  
-  .light & {
-    background: rgba(#F2F5F8, 1);
-  }
+  background: rgba(#F2F5F8, 1);
 }
 
 @supports (display: grid) {
