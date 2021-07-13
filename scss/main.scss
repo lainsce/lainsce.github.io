@@ -415,6 +415,16 @@ a:hover {
       background: rgba(255, 255, 255, 1);
       border: 1px solid rgba(0, 0, 0, 1);
     }
+    
+    &:hover {
+      background: rgba(#dc8add, 1);
+      color: var(--fg-color);
+    }
+    
+    .light &:hover {
+      background: rgba(#ffbe6f, 1);
+      color: var(--fg-color);
+    }
 }
 
 .theme-toggle .icon {
@@ -429,21 +439,11 @@ a:hover {
 .theme-toggle #icon-moon {
     display: block;
     color: #dc8add;
-    
-    &:hover {
-      background: rgba(#dc8add, 1);
-      color: var(--fg-color);
-    }
 }
 
 .theme-toggle #icon-sun {
     display: none;
     color: #ffbe6f;
-    
-    &:hover {
-      background: rgba(#ffbe6f, 1);
-      color: var(--fg-color);
-    }
 }
 
 .dark .theme-toggle #icon-moon {
