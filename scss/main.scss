@@ -391,10 +391,10 @@ a:hover {
 
 .theme-toggle {
     color: var(--fg-color);
-    border-radius: 50%;
+    border-radius: 0 0 0 50%;
     position: absolute;
-    right: 20px;
-    top: 20px;
+    right: 0px;
+    top: 0px;
     width: 2.5rem;
     height: 2.5rem;
     background: rgba(0, 0, 0, 1);
