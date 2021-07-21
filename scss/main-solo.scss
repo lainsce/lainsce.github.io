@@ -52,7 +52,7 @@
     }
 
 @font-face {
-    font-family: "InterV";
+    font-family: "Inter";
     src: url("../fonts/Inter.otf");
 }
 
@@ -67,7 +67,7 @@ body {
     font-weight: 400;
     font-size: 13pt;
     margin: 0;
-    font-family: 'InterV', 'Inter', sans-serif;
+    font-family: 'Inter', sans-serif;
     font-feature-settings: "liga" 1, "tnum";
     color: var(--fg-color);
     background: var(--bg-0-level);
@@ -182,7 +182,7 @@ ul {
 }
 
 q {
-    font-family: "Playfair", serif;
+    font-family: serif;
     font-feature-settings: "liga" 1, "tnum";
     font-size: 18pt;
     font-weight: 300;
@@ -205,7 +205,7 @@ p+h1 {
 }
 
 code {
-    font-family: 'Input', Courier, monospace;
+    font-family: monospace;
     font-size: 13pt;
     padding-left: 15px;
 }
@@ -267,32 +267,32 @@ a.button {
         background-color: #f9f9f8;
         box-shadow: inset 0 1px #f4f2f1, 0 1px 2px rgba(0, 0, 0, 0.07);
     }
-    
+
     &:active {
         color: #2e3436;
         border-color: #cdc7c2;
         background-color: #d6d1cd;
         box-shadow: inset 0 1px rgba(255, 255, 255, 0);
         text-shadow: none;
-        transition-duration: 50ms;   
+        transition-duration: 50ms;
     }
-    
+
     & img {
         margin-right: 6px;
         margin-left: 0;
     }
-    
+
     &:hover.download {
         color: #fff;
         border-color: #2ec27e;
         background-color: #33d17a;
         box-shadow: inset 0 1px #8ff0a4, 0 1px 2px rgba(0, 0, 0, 0.2);
-        
+
         img {
             filter: invert(1);
         }
     }
-    
+
     &.circular {
         padding: 8px 12px;
         border-radius: 9999px;
@@ -307,43 +307,43 @@ a.button {
     padding: 15px;
     border: 1px solid var(--border);
     box-shadow: inset 1px 0 0 0 rgba(255,255,255,0.07),inset -1px 0 0 0 rgba(255,255,255,0.07),0 1px 3px rgba(0,0,0,0.12),0 1px 2px rgba(0,0,0,0.24);
-    
+
     & h2 {
         text-align: center;
         color: var(--fg-color);
     }
-    
+
     & p {
         text-align: center;
         color: var(--fg-color);
     }
-    
+
     & img {
         display: block;
         margin: 0 auto;
         filter: drop-shadow(0 0 3px rgba(0,0,0,0.14));
     }
-    
+
     &.notejot {
         background: rgba(#f6d32d, 0.24);
     }
-    
+
     &.apostrophe {
         background: rgba(#ff7800, 0.24);
     }
-    
+
     &.khronos {
         background: rgba(#9141ac, 0.24);
     }
-    
+
     &.dot-matrix {
         background: rgba(#007DAC, 0.24);
     }
-    
+
     &.emulsion {
         background: rgba(#33d17a, 0.24);
     }
-    
+
     & a.button {
         display: flex;
         justify-content: center;
@@ -381,7 +381,7 @@ a.button {
     margin-bottom: 12px;
     border-radius: 9999px;
     box-shadow: inset 1px 0 0 0 rgba(255,255,255,0.07),inset -1px 0 0 0 rgba(255,255,255,0.07),0 1px 3px rgba(0,0,0,0.12),0 1px 2px rgba(0,0,0,0.24);
-    
+
 }
 
 .palcart {
