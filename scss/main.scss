@@ -49,6 +49,7 @@ body {
   font-family: sans-serif;
   font-feature-settings: "liga" 1, "tnum";
   color: var(--fg-color);
+  background: var(--bg-color);
   max-width: 1280px;
   margin: 0 auto;
   padding: 1em;
@@ -190,6 +191,10 @@ a {
     &.symbolic {
       filter: none;
     }
+  }
+	
+  &:hover {
+    border-radius: 12px;
   }
 }
 
@@ -474,13 +479,13 @@ table thead th:first-child {
 }
 
 .gh {
-  background: #333;
-  color: #FFF;
+  background: #cccccc;
+  color: #000;
 }
 
 .follow {
   background: #e1f1ff;
-  color: #FFF;
+  color: #000;
 }
 
 //
