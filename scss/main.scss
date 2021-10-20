@@ -51,8 +51,6 @@ body {
   color: var(--fg-color);
   max-width: 1280px;
   margin: 0 auto;
-  background: url(../images/noise.png);
-  background-repeat: cover;
   padding: 1em;
 }
 
@@ -124,7 +122,7 @@ code {
 
 hr {
     border: 1px solid #00000000;
-    border-top: 1px solid #2e3436;
+    border-top: 1px solid #222;
     margin: 5px auto;
     margin-left: 15px;
 }
@@ -134,7 +132,7 @@ a {
   text-decoration: none;
   font-weight: 500;
   padding: 5px;
-  background: rgba(#F2F5F8, 1);
+  background: rgba(#FAFAFA, 1);
   border: 1px solid rgba(0, 0, 0, 1);
 
   &:hover {
@@ -147,13 +145,14 @@ a {
     padding: 8px 12px;
     font-weight: 700;
     font-size: 12pt;
+    border-radius: 8px;
 
     &:hover {
       background: var(--accent);
     }
 
     &:hover .download {
-      background: #34fe01;
+      background: #c8efed;
     }
 }
 
@@ -180,9 +179,8 @@ a {
 .wrapper > * {
   color: var(--fg-color);
   padding: 20px;
-  box-shadow: 8px 8px 0 rgba(#000, .4);
   background: rgba(255, 255, 255, 1);
-  border: 1px solid rgba(0, 0, 0, 1);
+  border-radius: 12px;
 
   & img {
     display: block;
@@ -227,8 +225,7 @@ a {
 .section {
   color: var(--fg-color);
   font-weight: 700;
-  background: rgba(#F2F5F8, 1);
-  box-shadow: 8px 8px 0 rgba(#000, .4);
+  background: rgba(#F3F5F7, 1);
 }
 
 table {
@@ -267,24 +264,22 @@ table thead th:first-child {
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --accent: #369;
+        --accent: #4084F6;
         --fg-color: #fff;
         --bg-color: #000;
         --border: rgba(255, 255, 255, 1);
     }
 
     body {
-    	background-image: linear-gradient( 135deg, #222 0%, #000 100%);
+    	background-image: linear-gradient( 135deg, #444 0%, #222 100%);
     }
 
     a {
-    	background: rgba(#323538, 1);
-  	    border: 2px solid rgba(255, 255, 255, 1);
+    	background: rgba(#333, 1);
     }
 
     .wrapper > * {
     	background: rgba(0, 0, 0, 1);
-  	    border: 3px solid rgba(255, 255, 255, 1);
 
   	& .symbolic {
 		filter: invert(1) contrast(50%);
@@ -292,7 +287,7 @@ table thead th:first-child {
     }
 
     .section {
-    	background: rgba(#323538, 1);
+    	background: rgba(#333, 1);
     }
 
     .favs img {
@@ -302,17 +297,17 @@ table thead th:first-child {
 
 @media (prefers-color-scheme: light) {
     :root {
-        --accent: #00F;
-        --fg-color: #000;
-        --bg-color: #fff;
+        --accent: #4084F6;
+        --fg-color: #444;
+        --bg-color: #fafafa;
         --border: rgba(0, 0, 0, 1);
     }
 }
 
 :root {
-  --accent: #00F;
-  --fg-color: #000;
-  --bg-color: #fff;
+  --accent: #4084F6;
+  --fg-color: #444;
+  --bg-color: #fafafa;
   --border: rgba(0, 0, 0, 1);
 }
 
@@ -400,76 +395,76 @@ table thead th:first-child {
 // Coloring stuff
 
 .notejot:hover {
-	background: #FFFF00;
+	background: #ffdfb8;
 }
 
 .dot-matrix:hover {
-	background: #05DAC7;
+	background: #a8efdf;
 }
 
 .emulsion:hover {
-	background: #99FF55;
+	background: #c8efed;
 }
 
 .khronos:hover {
-	background: #FF55CC;
+	background: #f2e7f1;
 }
 
 .quilter:hover {
-	background: #4792DE;
+	background: #e1f1ff;
 }
 
 .coin:hover {
-	background: #9ABA55;
+	background: #c8efed;
 }
 
 .palaura:hover {
-	background: #D07070;
+	background: #fbeae7;
 }
 
 .yishu:hover {
-	background: #74C02E;
+	background: #c8efed;
 }
 
 .aesop:hover {
-	background: #aa9988;
+	background: #f2e7f1;
 }
 
 .beemy:hover {
-	background: #c6262e;
+	background: #fbeae7;
 }
 
 .niu:hover {
-	background: #222;
+	background: #444;
 	color: #FFF;
 }
 
 .timetable:hover {
-	background: #267ec6;
+	background: #e1f1ff;
 }
 
 .rakugaki:hover {
-	background: #90898e;
+	background: #f2e7f1;
 }
 
 .planitis:hover {
-	background: #ff976b;
+	background: #fbeae7;
 }
 
 .solo:hover {
-	background: #60c9c2;
+	background: #c8efed;
 }
 
 .conlang:hover {
-	background: #6787a4;
+	background: #f2e7f1;
 }
 
 .others:hover {
-	background: #888;
+	background: #cccccc;
 }
 
 .cash {
-  background: #0FF;
+  background: #c8efed;
   color: #000;
 }
 
@@ -484,7 +479,7 @@ table thead th:first-child {
 }
 
 .follow {
-  background: #00F;
+  background: #e1f1ff;
   color: #FFF;
 }
 
