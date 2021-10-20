@@ -134,7 +134,6 @@ a {
   font-weight: 500;
   padding: 5px;
   background: rgba(#FAFAFA, 1);
-  border: 1px solid rgba(0, 0, 0, 1);
 
   &:hover {
     background: var(--accent);
@@ -194,7 +193,7 @@ a {
   }
 	
   &:hover {
-    border-radius: 12px;
+    border-radius: 21px;
   }
 }
 
@@ -230,7 +229,7 @@ a {
 .section {
   color: var(--fg-color);
   font-weight: 700;
-  background: rgba(#F3F5F7, 1);
+  background: rgba(#FAFAFA, 1);
 }
 
 table {
@@ -304,7 +303,7 @@ table thead th:first-child {
     :root {
         --accent: #4084F6;
         --fg-color: #444;
-        --bg-color: #fafafa;
+        --bg-color: #F3F5F7;
         --border: rgba(0, 0, 0, 1);
     }
 }
@@ -312,7 +311,7 @@ table thead th:first-child {
 :root {
   --accent: #4084F6;
   --fg-color: #444;
-  --bg-color: #fafafa;
+  --bg-color: #F3F5F7;
   --border: rgba(0, 0, 0, 1);
 }
 
