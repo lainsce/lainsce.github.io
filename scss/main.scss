@@ -133,7 +133,7 @@ a {
   text-decoration: none;
   font-weight: 500;
   padding: 5px;
-  background: rgba(#FAFAFA, 1);
+  background: rgba(#EDEDED, 1);
 
   &:hover {
     background: var(--accent);
@@ -230,6 +230,10 @@ a {
   color: var(--fg-color);
   font-weight: 700;
   background: rgba(#FAFAFA, 1);
+  border-radius: 30px;
+  &:hover {
+    border-radius: 30px;
+  }
 }
 
 table {
