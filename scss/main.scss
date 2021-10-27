@@ -177,7 +177,7 @@ a {
 }
 
 .wrapper > * {
-  color: var(--fg-color);
+  color: alpha(var(--fg-color), 0.8);
   padding: 20px;
   background: rgba(255, 255, 255, 1);
   border-radius: 12px;
