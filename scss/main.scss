@@ -402,97 +402,112 @@ table thead th:first-child {
 
 // Coloring stuff
 
-.notejot:hover {
+.notejot {
+	color: #915000;
 	background: #ffdfb8;
 }
 
-.dot-matrix:hover {
-	background: #a8efdf;
+.dot-matrix {
+	color: #016C4F;
+	background: #bcfeed;
 }
 
-.emulsion:hover {
-	background: #c8efed;
+.emulsion {
+    color: #21706C;
+	background: #C8EFED;
 }
 
-.khronos:hover {
+.khronos {
+    color: #8D4D88;
 	background: #f2e7f1;
 }
 
-.colorway:hover {
+.colorway {
 	background: #c4a5f4;
 }
 
-.quilter:hover {
+.quilter {
+    color: #0063BA;
 	background: #e1f1ff;
 }
 
-.coin:hover {
+.coin {
+    color: #21706C;
 	background: #c8efed;
 }
 
-.palaura:hover {
-	background: #fbeae7;
+.palaura {
+	color: #985C50;
+	background: #fdf3ee;
 }
 
-.yishu:hover {
+.yishu {
+    color: #21706C;
 	background: #c8efed;
 }
 
-.aesop:hover {
+.aesop {
+    color: #8D4D88;
 	background: #f2e7f1;
 }
 
-.beemy:hover {
-	background: #fbeae7;
+.beemy {
+	color: #985C50;
+	background: #fdf3ee;
 }
 
-.niu:hover {
-	background: #444;
-	color: #FFF;
+.niu {
+	background: #EDEDED;
+    color: #5F6368;
 }
 
-.timetable:hover {
+.timetable {
+    color: #0063BA;
 	background: #e1f1ff;
 }
 
-.rakugaki:hover {
-	background: #f2e7f1;
+.rakugaki {
+    color: #985C50;
+	background: #fdf3ee;
 }
 
-.planitis:hover {
-	background: #fbeae7;
+.planitis {
+	color: #915000;
+	background: #ffdfb8;
 }
 
-.solo:hover {
+.solo {
+    color: #21706C;
 	background: #c8efed;
 }
 
-.conlang:hover {
-	background: #f2e7f1;
+.conlang {
+    color: #985C50;
+	background: #fdf3ee;
 }
 
-.others:hover {
+.others {
 	background: #cccccc;
 }
 
 .cash {
   background: #c8efed;
-  color: #000;
+  color: #21706C;
 }
 
 .merv {
-  background: #75DEC2;
-  color: #000;
+  background: #bcfeed;
+  color: #016C4F;
 }
 
 .gh {
-  background: #cccccc;
-  color: #000;
+  background: #EDEDED;
+  color: #5F6368;
 }
 
 .follow {
   background: #e1f1ff;
-  color: #000;
+  color: #0078E1;
 }
 
 //
