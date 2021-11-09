@@ -74,6 +74,10 @@ body {
     background-image: none;
     width: 100%;
 
+    & .solo {
+        background: var(--bg-0-level);
+    }
+    
     & .solo:hover {
         background: none;
     }
