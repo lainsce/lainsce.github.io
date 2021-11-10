@@ -7,7 +7,7 @@
    fill="none"
    version="1.1"
    id="svg18"
-   sodipodi:docname="source_icons_system-restart.svg"
+   sodipodi:docname="grab.svg"
    inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
@@ -25,7 +25,7 @@
      inkscape:pagecheckerboard="0"
      showgrid="true"
      inkscape:zoom="33.416667"
-     inkscape:cx="12.014963"
+     inkscape:cx="12.044888"
      inkscape:cy="12"
      inkscape:window-width="2560"
      inkscape:window-height="1011"
@@ -43,12 +43,26 @@
      stroke-linecap="round"
      stroke-linejoin="round"
      id="path2"
-     style="stroke-width:2.12132" />
+     style="stroke-width:2.12132;stroke:#241f31" />
+  <path
+     d="m 8,22 h 8"
+     stroke="currentColor"
+     stroke-linecap="round"
+     stroke-linejoin="round"
+     id="path2-3"
+     style="stroke:#241f31;stroke-width:2.12132" />
+  <path
+     d="m 8,2 h 8"
+     stroke="currentColor"
+     stroke-linecap="round"
+     stroke-linejoin="round"
+     id="path2-3-6"
+     style="stroke:#241f31;stroke-width:2.12132" />
   <path
      d="m 12,14 v 8"
      stroke="currentColor"
      stroke-linecap="round"
      stroke-linejoin="round"
      id="path4"
-     style="stroke-width:2.12132" />
+     style="stroke-width:2.12132;stroke:#241f31" />
 </svg>
