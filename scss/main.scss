@@ -55,10 +55,6 @@ body {
   padding: 1em;
 }
 
-body .solo {
-  background-image: none;
-}
-
 h1,
 .title {
   font-weight: 300;
@@ -160,10 +156,6 @@ a {
   margin-left: 5px;
 }
 
-.fab:hover .favs img {
-      filter: invert(1);
-}
-
 .wrapper {
   display: grid;
   grid-gap: 25px;
@@ -215,15 +207,6 @@ a {
   & p {
     width: fit-content;
   }
-}
-
-.favs * {
-    float: right;
-    transform: scale(0.9);
-
-    &:hover {
-        color: var(--bg-color);
-    }
 }
 
 .section {
