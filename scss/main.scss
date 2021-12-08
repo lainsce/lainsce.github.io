@@ -34,7 +34,7 @@ a {
 .container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 300px 300px 300px 50px;
+  grid-template-rows: 300px 400px 400px 50px;
   gap: 0px 0px;
   width: 100vw;
   height: 100vh;
@@ -49,9 +49,10 @@ a {
 .container > * {
   padding: 20px;
   text-align: center;
+  place-items: center;
 }
 
-.header { grid-area: header; text-align: left; }
+.header { grid-area: header; text-align: left; justify-content: left; align-items: left; }
 
 .notejot { grid-area: notejot; }
 
@@ -81,6 +82,7 @@ a {
   grid-template-rows: repeat(3, 1fr) 50px;
   gap: 0px 0px;
   grid-auto-flow: row dense;
+  transition: box-shadow 0.56s ease-in-out;
   width: 100vw;
   height: 100vh;
   grid-template-areas:
@@ -123,23 +125,69 @@ a {
 
 .notejot {
 	background: #f6d32d;
+	text-shadow: 0 0 12px #ffffff;
+	padding:100px 10px;
+	background: linear-gradient(0deg, #f6d32daa, #f6d32daa, #f6d32d), url("../images/notejot.png") top/100% 50% no-repeat;
+	background-size: cover;
+	overflow: hidden;
+	
+	& .button {
+	    text-shadow: none;
+	}
 }
 
 .dot-matrix {
 	background: rgb(117, 222, 194);
+	text-shadow: 0 0 12px #ffffff;
+	padding:100px 10px;
+	background: linear-gradient(0deg, rgba(117, 222, 194, 0.75), rgba(117, 222, 194, 0.75), rgba(117, 222, 194, 1)), url("../images/dotmatrix.png") 50% 50% no-repeat;
+	background-size: cover;
+	overflow: hidden;
+	
+	& .button {
+	    text-shadow: none;
+	}
 }
 
 .emulsion {
 	background: #33d17a;
+	text-shadow: 0 0 12px #000000;
+	color: #fff;
+	padding:100px 10px;
+	background: linear-gradient(0deg, #33d17aaa, #33d17aaa, #33d17a), url("../images/emulsion.png") top/100% auto no-repeat;
+	background-size: cover;
+	overflow: hidden;
+	
+	& .button {
+	    text-shadow: none;
+	}
 }
 
 .khronos {
 	background: #9141ac;
+	text-shadow: 0 0 12px #000000;
 	color: #fff;
+	padding:100px 10px;
+	background: linear-gradient(0deg, #9141acaa, #9141acaa, #9141ac), url("../images/khronos.png") top/100% auto no-repeat;
+	background-size: cover;
+	overflow: hidden;
+	
+	& .button {
+	    text-shadow: none;
+	}
 }
 
 .colorway {
 	background: rgb(196, 165, 244);
+	text-shadow: 0 0 12px #ffffff;
+	padding:100px 10px;
+	background: linear-gradient(0deg, rgba(196, 165, 244, 0.75), rgba(196, 165, 244, 0.75), rgba(196, 165, 244, 1)), url("../images/colorway.png") top/100% auto no-repeat;
+	background-size: cover;
+	overflow: hidden;
+	
+	& .button {
+	    text-shadow: none;
+	}
 }
 
 .quilter {
