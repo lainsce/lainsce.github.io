@@ -124,7 +124,8 @@ a {
 
 .notejot {
 	background: #f6d32d;
-	text-shadow: 0 0 12px #ffffff;
+	text-shadow: 0 0 12px #000000;
+	color: #fff;
 	padding:100px 10px;
 	background: linear-gradient(0deg, #f6d32daa, #f6d32daa, #f6d32d), url("../images/notejot.png") top/100% 50% no-repeat;
 	background-size: cover;
@@ -137,7 +138,8 @@ a {
 
 .dot-matrix {
 	background: rgb(117, 222, 194);
-	text-shadow: 0 0 12px #ffffff;
+	text-shadow: 0 0 12px #000000;
+	color: #fff;
 	padding:100px 10px;
 	background: linear-gradient(0deg, rgba(117, 222, 194, 0.75), rgba(117, 222, 194, 0.75), rgba(117, 222, 194, 1)), url("../images/dotmatrix.png") 50% 50% no-repeat;
 	background-size: cover;
@@ -178,7 +180,8 @@ a {
 
 .colorway {
 	background: rgb(196, 165, 244);
-	text-shadow: 0 0 12px #ffffff;
+	text-shadow: 0 0 12px #000000;
+	color: #fff;
 	padding:100px 10px;
 	background: linear-gradient(0deg, rgba(196, 165, 244, 0.75), rgba(196, 165, 244, 0.75), rgba(196, 165, 244, 1)), url("../images/colorway.png") top/100% auto no-repeat;
 	background-size: cover;
