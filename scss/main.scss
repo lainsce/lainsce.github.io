@@ -3,12 +3,11 @@
 
 html {
   overflow-x: hidden;
-}
-body {
   font-feature-settings: "liga" 1, "tnum";
   color: #333333;
   background: #FAFAFA;
   margin: 0;
+  font-family: "Iosevka", monospace;
 }
 
 a {
