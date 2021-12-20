@@ -51,6 +51,10 @@ a {
   place-items: center;
 }
 
+.container p {
+  font-size: 1.66rem;
+}
+
 .header { grid-area: header; text-align: left; justify-content: left; align-items: left; }
 
 .notejot { grid-area: notejot; }
@@ -94,6 +98,10 @@ a {
 .container-projects > * {
   padding: 20px;
   text-align: center;
+}
+
+.container-projects p {
+  font-size: 1.66rem;
 }
 
 .header-project { grid-area: header-project; text-align: left; }
