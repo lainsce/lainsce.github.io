@@ -46,7 +46,7 @@ a {
 }
 
 .container > * {
-  padding: 20px;
+  padding: 100px 20px;
   text-align: center;
   place-items: center;
 }
@@ -96,7 +96,7 @@ a {
 }
 
 .container-projects > * {
-  padding: 20px;
+  padding: 100px 20px;
   text-align: center;
 }
 
@@ -134,7 +134,6 @@ a {
 	background: #f6d32d;
 	text-shadow: 0 0 12px #000000;
 	color: #fff;
-	padding:100px 10px;
 	background: linear-gradient(0deg, #f6d32daa, #f6d32daa, #f6d32d), url("../images/notejot.png") top/100% 50% no-repeat;
 	background-size: cover;
 	overflow: hidden;
@@ -148,7 +147,6 @@ a {
 	background: rgb(117, 222, 194);
 	text-shadow: 0 0 12px #000000;
 	color: #fff;
-	padding:100px 10px;
 	background: linear-gradient(0deg, rgba(117, 222, 194, 0.75), rgba(117, 222, 194, 0.75), rgba(117, 222, 194, 1)), url("../images/dotmatrix.png") 50% 50% no-repeat;
 	background-size: cover;
 	overflow: hidden;
@@ -162,7 +160,6 @@ a {
 	background: #33d17a;
 	text-shadow: 0 0 12px #000000;
 	color: #fff;
-	padding:100px 10px;
 	background: linear-gradient(0deg, #33d17aaa, #33d17aaa, #33d17a), url("../images/emulsion.png") top/100% auto no-repeat;
 	background-size: cover;
 	overflow: hidden;
@@ -176,7 +173,6 @@ a {
 	background: #9141ac;
 	text-shadow: 0 0 12px #000000;
 	color: #fff;
-	padding:100px 10px;
 	background: linear-gradient(0deg, #9141acaa, #9141acaa, #9141ac), url("../images/khronos.png") top/100% auto no-repeat;
 	background-size: cover;
 	overflow: hidden;
@@ -190,7 +186,6 @@ a {
 	background: rgb(196, 165, 244);
 	text-shadow: 0 0 12px #000000;
 	color: #fff;
-	padding:100px 10px;
 	background: linear-gradient(0deg, rgba(196, 165, 244, 0.75), rgba(196, 165, 244, 0.75), rgba(196, 165, 244, 1)), url("../images/colorway.png") top/100% auto no-repeat;
 	background-size: cover;
 	overflow: hidden;
