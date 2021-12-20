@@ -2,324 +2,370 @@
 ---
 
 html,body {
-  overflow-x: hidden;
-  font-feature-settings: "liga" 1, "tnum";
-  color: #333333;
-  background: #FAFAFA;
-  margin: 0;
-  font-family: "Iosevka", monospace;
+    overflow-x: hidden;
+    font-feature-settings: "liga" 1, "tnum";
+    color: #333333;
+    background: #FAFAFA;
+    margin: 0;
+    font-family: "Iosevka", monospace
 }
 
 a {
-  color: #333333;
-  text-decoration: none;
-  padding: 5px 20px;
-  border-radius: 9999px;
-  background: #ececec;
+    color: #333333;
+    text-decoration: none;
+    padding: 5px 20px;
+    border-radius: 9999px;
+    background: #ececec
+}
 
-  &:hover {
+a:hover {
     background: #e0e0e0;
-    color: #000;
-  }
+    color: #000
 }
 
 .id-square {
     font-size: 1.8rem;
-    font-weight: 900;
+    font-weight: 900
 }
 
-.btn + .btn { margin-left: 10px; }
+.btn+.btn {
+    margin-left: 10px
+}
 
 .badge {
-  padding: 8px;
-  border: 1px solid #888;
-  border-radius: 8px;
-  display: inline-block;
+    padding: 8px;
+    border: 1px solid #888;
+    border-radius: 8px;
+    display: inline-block
 }
 
-.badge + .badge { margin-left: 12px; }
+.badge+.badge {
+    margin-left: 12px
+}
 
 .container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 40vh 50vh 50vh 6vh;
-  gap: 0px 0px;
-  width: 100vw;
-  height: 100vh;
-  grid-auto-flow: row dense;
-  grid-template-areas:
-    "header header header"
-    "notejot emulsion dot-matrix"
-    "khronos colorway others"
-    "footer footer footer";
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 95vh 50vh 50vh 6vh;
+    gap: 0px 0px;
+    width: 100vw;
+    height: 100vh;
+    grid-auto-flow: row dense;
+    grid-template-areas: "header header header" "notejot emulsion dot-matrix" "khronos colorway others" "footer footer footer";
 }
 
-.container > * {
-  padding: 100px 50px;
-  text-align: center;
-  place-items: center;
+.container>* {
+    padding: 100px 50px;
+    text-align: center;
+    place-items: center
 }
 
 .container p {
-  font-size: 1.66rem;
+    font-size: 1.66rem
 }
 
-.header { grid-area: header; text-align: left; justify-content: left; align-items: left; padding: 20px; }
-
-.notejot { grid-area: notejot; }
-
-.emulsion { grid-area: emulsion; }
-
-.dot-matrix { grid-area: dot-matrix; }
-
-.khronos { grid-area: khronos; }
-
-.colorway { grid-area: colorway; }
-
-.others { grid-area: others; }
-
-.footer { grid-area: footer; text-align: center; color: #CCC; background: #333; padding: 20px; }
-
-.others > a {
-    background: #e0e0e0;
-    
-    &:hover {
-      background: #dedede;
-    }
+.header {
+    grid-area: header;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 25vh;
 }
-
-.container-projects {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: 30vh 50vh 50vh 6vh;
-  gap: 0px 0px;
-  grid-auto-flow: row dense;
-  transition: box-shadow 0.56s ease-in-out;
-  width: 100vw;
-  height: 100vh;
-  grid-template-areas:
-    "header-project header-project header-project header-project header-project"
-    "quilter coin palaura yishu beemy"
-    "timetable aesop niu rakugaki planitis"
-    "footer-project footer-project footer-project footer-project footer-project";
-}
-
-.container-projects > * {
-  padding: 100px 50px;
-  text-align: center;
-}
-
-.container-projects p {
-  font-size: 1.66rem;
-}
-
-.header-project { grid-area: header-project; text-align: left; padding: 20px; }
-
-.quilter { grid-area: quilter; }
-
-.coin { grid-area: coin; }
-
-.palaura { grid-area: palaura; }
-
-.yishu { grid-area: yishu; }
-
-.beemy { grid-area: beemy; }
-
-.timetable { grid-area: timetable; }
-
-.aesop { grid-area: aesop; }
-
-.niu { grid-area: niu; }
-
-.rakugaki { grid-area: rakugaki; }
-
-.planitis { grid-area: planitis; }
-
-.footer-project { grid-area: footer-project; text-align: center; color: #CCC; background: #333; padding: 20px; }
-
-// Coloring stuff
 
 .notejot {
-	background: #f6d32d;
-	text-shadow: 0 0 12px #000000;
-	color: #fff;
-	background: linear-gradient(0deg, #f6d32daa, #f6d32daa, #f6d32d), url("../images/notejot.png") top/100% 50% no-repeat;
-	background-size: cover;
-	overflow: hidden;
-	
-	& .button {
-	    text-shadow: none;
-	}
-}
-
-.dot-matrix {
-	background: rgb(117, 222, 194);
-	text-shadow: 0 0 12px #000000;
-	color: #fff;
-	background: linear-gradient(0deg, rgba(117, 222, 194, 0.75), rgba(117, 222, 194, 0.75), rgba(117, 222, 194, 1)), url("../images/dotmatrix.png") 50% 50% no-repeat;
-	background-size: cover;
-	overflow: hidden;
-	
-	& .button {
-	    text-shadow: none;
-	}
+    grid-area: notejot
 }
 
 .emulsion {
-	background: #33d17a;
-	text-shadow: 0 0 12px #000000;
-	color: #fff;
-	background: linear-gradient(0deg, #33d17aaa, #33d17aaa, #33d17a), url("../images/emulsion.png") top/100% auto no-repeat;
-	background-size: cover;
-	overflow: hidden;
-	
-	& .button {
-	    text-shadow: none;
-	}
+    grid-area: emulsion
+}
+
+.dot-matrix {
+    grid-area: dot-matrix
 }
 
 .khronos {
-	background: #9141ac;
-	text-shadow: 0 0 12px #000000;
-	color: #fff;
-	background: linear-gradient(0deg, #9141acaa, #9141acaa, #9141ac), url("../images/khronos.png") top/100% auto no-repeat;
-	background-size: cover;
-	overflow: hidden;
-	
-	& .button {
-	    text-shadow: none;
-	}
+    grid-area: khronos
 }
 
 .colorway {
-	background: rgb(196, 165, 244);
-	text-shadow: 0 0 12px #000000;
-	color: #fff;
-	background: linear-gradient(0deg, rgba(196, 165, 244, 0.75), rgba(196, 165, 244, 0.75), rgba(196, 165, 244, 1)), url("../images/colorway.png") top/100% auto no-repeat;
-	background-size: cover;
-	overflow: hidden;
-	
-	& .button {
-	    text-shadow: none;
-	}
-}
-
-.quilter {
-	background: #b8d2e2;
-}
-
-.coin {
-	background: #badbad;
-}
-
-.palaura {
-	background: #ddbdbd;
-}
-
-.yishu {
-	background: #dee8bc;
-}
-
-.aesop {
-	background: #ccbbaa;
-}
-
-.beemy {
-	background: #c6262e;
-	color: #fff;
-}
-
-.niu {
-	background: #222222;
-	color: #75dec2;
-}
-
-.timetable {
-	background: #267ec6;
-	color: #fff;
-}
-
-.rakugaki {
-	background: #90898e;
-	color: #fff;
-}
-
-.planitis {
-	background: #FF976B;
-}
-
-.solo {
-	background: #d5f4a5;
-}
-
-.conlang {
-	background: #f4a5ad;
+    grid-area: colorway
 }
 
 .others {
-	background: #F0F0F0;
+    grid-area: others
+}
+
+.footer {
+    grid-area: footer;
+    text-align: center;
+    color: #CCC;
+    background: #333;
+    padding: 20px
+}
+
+.others>a {
+    background: #e0e0e0
+}
+
+.others>a:hover {
+    background: #dedede
+}
+
+.container-projects {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 30vh 50vh 50vh 6vh;
+    gap: 0px 0px;
+    grid-auto-flow: row dense;
+    transition: box-shadow 0.56s ease-in-out;
+    width: 100vw;
+    height: 100vh;
+    grid-template-areas: "header-project header-project header-project header-project header-project" "quilter coin palaura yishu beemy" "timetable aesop niu rakugaki planitis" "footer-project footer-project footer-project footer-project footer-project"
+}
+
+.container-projects>* {
+    padding: 100px 50px;
+    text-align: center
+}
+
+.container-projects p {
+    font-size: 1.66rem
+}
+
+.header-project {
+    grid-area: header-project;
+    text-align: left;
+    padding: 20px
+}
+
+.quilter {
+    grid-area: quilter
+}
+
+.coin {
+    grid-area: coin
+}
+
+.palaura {
+    grid-area: palaura
+}
+
+.yishu {
+    grid-area: yishu
+}
+
+.beemy {
+    grid-area: beemy
+}
+
+.timetable {
+    grid-area: timetable
+}
+
+.aesop {
+    grid-area: aesop
+}
+
+.niu {
+    grid-area: niu
+}
+
+.rakugaki {
+    grid-area: rakugaki
+}
+
+.planitis {
+    grid-area: planitis
+}
+
+.footer-project {
+    grid-area: footer-project;
+    text-align: center;
+    color: #CCC;
+    background: #333;
+    padding: 20px
+}
+
+
+// Coloring
+.notejot {
+    background: #f6d32d;
+    text-shadow: 0 0 12px #000000;
+    color: #fff;
+    background: linear-gradient(0deg, #f6d32daa, #f6d32daa, #f6d32d),url("../images/notejot.png") top/100% 50% no-repeat;
+    background-size: cover;
+    overflow: hidden
+}
+
+.notejot .button {
+    text-shadow: none
+}
+
+.dot-matrix {
+    background: #75dec2;
+    text-shadow: 0 0 12px #000000;
+    color: #fff;
+    background: linear-gradient(0deg, rgba(117,222,194,0.75), rgba(117,222,194,0.75), #75dec2),url("../images/dotmatrix.png") 50% 50% no-repeat;
+    background-size: cover;
+    overflow: hidden
+}
+
+.dot-matrix .button {
+    text-shadow: none
+}
+
+.emulsion {
+    background: #33d17a;
+    text-shadow: 0 0 12px #000000;
+    color: #fff;
+    background: linear-gradient(0deg, #33d17aaa, #33d17aaa, #33d17a),url("../images/emulsion.png") top/100% auto no-repeat;
+    background-size: cover;
+    overflow: hidden
+}
+
+.emulsion .button {
+    text-shadow: none
+}
+
+.khronos {
+    background: #9141ac;
+    text-shadow: 0 0 12px #000000;
+    color: #fff;
+    background: linear-gradient(0deg, #9141acaa, #9141acaa, #9141ac),url("../images/khronos.png") top/100% auto no-repeat;
+    background-size: cover;
+    overflow: hidden
+}
+
+.khronos .button {
+    text-shadow: none
+}
+
+.colorway {
+    background: #c4a5f4;
+    text-shadow: 0 0 12px #000000;
+    color: #fff;
+    background: linear-gradient(0deg, rgba(196,165,244,0.75), rgba(196,165,244,0.75), #c4a5f4),url("../images/colorway.png") top/100% auto no-repeat;
+    background-size: cover;
+    overflow: hidden
+}
+
+.colorway .button {
+    text-shadow: none
+}
+
+.quilter {
+    background: #b8d2e2
+}
+
+.coin {
+    background: #badbad
+}
+
+.palaura {
+    background: #ddbdbd
+}
+
+.yishu {
+    background: #dee8bc
+}
+
+.aesop {
+    background: #ccbbaa
+}
+
+.beemy {
+    background: #c6262e;
+    color: #fff
+}
+
+.niu {
+    background: #222222;
+    color: #75dec2
+}
+
+.timetable {
+    background: #267ec6;
+    color: #fff
+}
+
+.rakugaki {
+    background: #90898e;
+    color: #fff
+}
+
+.planitis {
+    background: #FF976B
+}
+
+.solo {
+    background: #d5f4a5
+}
+
+.conlang {
+    background: #f4a5ad
+}
+
+.others {
+    background: #F0F0F0
 }
 
 .cash {
-  background: #FF5F5F;
-  color: #eee;
+    background: #FF5F5F;
+    color: #eee
 }
 
 .merv {
-  background: #75dec2;
+    background: #75dec2
 }
 
 .gh {
-  background: #333;
-  color: #eee;
+    background: #333;
+    color: #eee
 }
 
 .follow {
-  background: #2F89D9;
-  color: #eee;
+    background: #2F89D9;
+    color: #eee
 }
 
-// Media queries
-
+// Media Queries
 @media screen and (prefers-reduced-motion: reduce), (update: slow) {
     * {
         animation-duration: 0.001ms !important;
         animation-iteration-count: 1 !important;
-        transition-duration: 0.001ms !important;
+        transition-duration: 0.001ms !important
     }
 }
 
 @media (max-width: 425px) {
-  .container {
-    display: grid;
-    width: 100vw;
-    grid-template-columns: 100vw;
-    grid-template-rows: 300px 300px 300px 300px 300px 300px 300px 50px;
-    grid-template-areas:
-    "header"
-    "notejot"
-    "emulsion"
-    "dot-matrix"
-    "khronos"
-    "colorway"
-    "others"
-    "footer";
-  }
-  
-  .btn + .btn { margin-left: 5px }
-  .btn { padding: 5px 10px; }
+    .container {
+        display:grid;
+        width: 100vw;
+        grid-template-columns: 100vw;
+        grid-template-rows: 300px 300px 300px 300px 300px 300px 300px 50px;
+        grid-template-areas: "header" "notejot" "emulsion" "dot-matrix" "khronos" "colorway" "others" "footer"
+    }
+
+    .btn+.btn {
+        margin-left: 5px
+    }
+
+    .btn {
+        padding: 5px 10px
+    }
 }
 
 @media (min-width: 426px) and (max-width: 768px) {
-  .container {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(163px, auto));
-  }
+    .container {
+        display:grid;
+        grid-template-columns: repeat(3, minmax(163px, auto))
+    }
 }
 
 //
-
 html {
     visibility: visible;
-    opacity: 1;
+    opacity: 1
 }
