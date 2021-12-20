@@ -55,7 +55,7 @@ a {
   font-size: 1.66rem;
 }
 
-.header { grid-area: header; text-align: left; justify-content: left; align-items: left; }
+.header { grid-area: header; text-align: left; justify-content: left; align-items: left; padding: 20px; }
 
 .notejot { grid-area: notejot; }
 
@@ -69,7 +69,7 @@ a {
 
 .others { grid-area: others; }
 
-.footer { grid-area: footer; text-align: center; color: #CCC; background: #333; }
+.footer { grid-area: footer; text-align: center; color: #CCC; background: #333; padding: 20px; }
 
 .others > a {
     background: #e0e0e0;
@@ -104,7 +104,7 @@ a {
   font-size: 1.66rem;
 }
 
-.header-project { grid-area: header-project; text-align: left; }
+.header-project { grid-area: header-project; text-align: left; padding: 20px; }
 
 .quilter { grid-area: quilter; }
 
@@ -126,7 +126,7 @@ a {
 
 .planitis { grid-area: planitis; }
 
-.footer-project { grid-area: footer-project; text-align: center; color: #CCC; background: #333; }
+.footer-project { grid-area: footer-project; text-align: center; color: #CCC; background: #333; padding: 20px; }
 
 // Coloring stuff
 
