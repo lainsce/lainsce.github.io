@@ -69,8 +69,10 @@ a:hover {
     text-align: center;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    margin: 25vh;
+    height: 95vh;
+    width: 100vw;
+    margin: 0 auto;
+    background: linear-gradient(0deg, #f0f0f0aa, #f0f0f0aa, #f0f0f0),url("../images/d.png") 0% 100% no-repeat;
 }
 
 .notejot {
@@ -137,7 +139,9 @@ a:hover {
 .header-project {
     grid-area: header-project;
     text-align: left;
-    padding: 20px
+    padding: 20px;
+    height: 30vh;
+    width: 100vw;
 }
 
 .quilter {
