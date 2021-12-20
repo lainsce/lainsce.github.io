@@ -1,7 +1,7 @@
 ---
 ---
 
-html {
+html,body {
   overflow-x: hidden;
   font-feature-settings: "liga" 1, "tnum";
   color: #333333;
@@ -300,11 +300,4 @@ a {
     display: grid;
     grid-template-columns: repeat(3, minmax(163px, auto));
   }
-}
-
-//
-
-html {
-    visibility: visible;
-    opacity: 1;
 }
