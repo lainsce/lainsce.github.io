@@ -3,15 +3,15 @@
 
 html,body {
     overflow-x: hidden;
-    font-feature-settings: "liga" 1, "tnum";
-    color: #333333;
-    background: #FAFAFA;
+    font-feature-settings: "liga" 1,"tnum";
+    color: #333;
+    background: #fafafa;
     margin: 0;
-    font-family: "Iosevka", monospace
+    font-family: iosevka,monospace
 }
 
 a {
-    color: #333333;
+    color: #333;
     text-decoration: none;
     padding: 5px 20px;
     border-radius: 9999px;
@@ -45,13 +45,13 @@ a:hover {
 
 .container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3,1fr);
     grid-template-rows: 95vh 50vh 50vh 6vh;
-    gap: 0px 0px;
+    gap: 0 0;
     width: 100vw;
     height: 100vh;
     grid-auto-flow: row dense;
-    grid-template-areas: "header header header" "notejot emulsion dot-matrix" "khronos colorway others" "footer footer footer";
+    grid-template-areas: "header header header" "notejot emulsion dot-matrix" "khronos colorway others" "footer footer footer"
 }
 
 .container>* {
@@ -70,9 +70,11 @@ a:hover {
     justify-content: center;
     align-items: center;
     height: 95vh;
+    vertical-align: text-top;
     width: 100vw;
     margin: 0 auto;
-    background: linear-gradient(0deg, #eeeeeeaa, #eeeeeeaa, #eeeeee),url("../images/d.png") 0% 100% no-repeat;
+    background: linear-gradient(0deg,#f0f0f0aa,#f0f0f0aa,#f0f0f0),url(../images/d.png) 0% 0% no-repeat;
+    padding: 25vh 0;
 }
 
 .notejot {
@@ -102,7 +104,7 @@ a:hover {
 .footer {
     grid-area: footer;
     text-align: center;
-    color: #CCC;
+    color: #ccc;
     background: #333;
     padding: 20px
 }
@@ -117,11 +119,11 @@ a:hover {
 
 .container-projects {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(5,1fr);
     grid-template-rows: 30vh 50vh 50vh 6vh;
-    gap: 0px 0px;
+    gap: 0 0;
     grid-auto-flow: row dense;
-    transition: box-shadow 0.56s ease-in-out;
+    transition: box-shadow .56s ease-in-out;
     width: 100vw;
     height: 100vh;
     grid-template-areas: "header-project header-project header-project header-project header-project" "quilter coin palaura yishu beemy" "timetable aesop niu rakugaki planitis" "footer-project footer-project footer-project footer-project footer-project"
@@ -141,7 +143,7 @@ a:hover {
     text-align: left;
     padding: 20px;
     height: 30vh;
-    width: 100vw;
+    width: 100vw
 }
 
 .quilter {
@@ -187,18 +189,16 @@ a:hover {
 .footer-project {
     grid-area: footer-project;
     text-align: center;
-    color: #CCC;
+    color: #ccc;
     background: #333;
     padding: 20px
 }
 
-
-// Coloring
 .notejot {
     background: #f6d32d;
-    text-shadow: 0 0 12px #000000;
+    text-shadow: 0 0 12px #000;
     color: #fff;
-    background: linear-gradient(0deg, #f6d32daa, #f6d32daa, #f6d32d),url("../images/notejot.png") top/100% 50% no-repeat;
+    background: linear-gradient(0deg,#f6d32daa,#f6d32daa,#f6d32d),url("../images/notejot.png") top/100% 50% no-repeat;
     background-size: cover;
     overflow: hidden
 }
@@ -209,9 +209,9 @@ a:hover {
 
 .dot-matrix {
     background: #75dec2;
-    text-shadow: 0 0 12px #000000;
+    text-shadow: 0 0 12px #000;
     color: #fff;
-    background: linear-gradient(0deg, rgba(117,222,194,0.75), rgba(117,222,194,0.75), #75dec2),url("../images/dotmatrix.png") 50% 50% no-repeat;
+    background: linear-gradient(0deg,rgba(117,222,194,0.75),rgba(117,222,194,0.75),#75dec2),url("../images/dotmatrix.png") 50% 50% no-repeat;
     background-size: cover;
     overflow: hidden
 }
@@ -222,9 +222,9 @@ a:hover {
 
 .emulsion {
     background: #33d17a;
-    text-shadow: 0 0 12px #000000;
+    text-shadow: 0 0 12px #000;
     color: #fff;
-    background: linear-gradient(0deg, #33d17aaa, #33d17aaa, #33d17a),url("../images/emulsion.png") top/100% auto no-repeat;
+    background: linear-gradient(0deg,#33d17aaa,#33d17aaa,#33d17a),url("../images/emulsion.png") top/100% auto no-repeat;
     background-size: cover;
     overflow: hidden
 }
@@ -235,9 +235,9 @@ a:hover {
 
 .khronos {
     background: #9141ac;
-    text-shadow: 0 0 12px #000000;
+    text-shadow: 0 0 12px #000;
     color: #fff;
-    background: linear-gradient(0deg, #9141acaa, #9141acaa, #9141ac),url("../images/khronos.png") top/100% auto no-repeat;
+    background: linear-gradient(0deg,#9141acaa,#9141acaa,#9141ac),url("../images/khronos.png") top/100% auto no-repeat;
     background-size: cover;
     overflow: hidden
 }
@@ -248,9 +248,9 @@ a:hover {
 
 .colorway {
     background: #c4a5f4;
-    text-shadow: 0 0 12px #000000;
+    text-shadow: 0 0 12px #000;
     color: #fff;
-    background: linear-gradient(0deg, rgba(196,165,244,0.75), rgba(196,165,244,0.75), #c4a5f4),url("../images/colorway.png") top/100% auto no-repeat;
+    background: linear-gradient(0deg,rgba(196,165,244,0.75),rgba(196,165,244,0.75),#c4a5f4),url("../images/colorway.png") top/100% auto no-repeat;
     background-size: cover;
     overflow: hidden
 }
@@ -276,7 +276,7 @@ a:hover {
 }
 
 .aesop {
-    background: #ccbbaa
+    background: #cba
 }
 
 .beemy {
@@ -285,7 +285,7 @@ a:hover {
 }
 
 .niu {
-    background: #222222;
+    background: #222;
     color: #75dec2
 }
 
@@ -300,7 +300,7 @@ a:hover {
 }
 
 .planitis {
-    background: #FF976B
+    background: #ff976b
 }
 
 .solo {
@@ -312,11 +312,11 @@ a:hover {
 }
 
 .others {
-    background: #F0F0F0
+    background: #f0f0f0
 }
 
 .cash {
-    background: #FF5F5F;
+    background: #ff5f5f;
     color: #eee
 }
 
@@ -330,20 +330,19 @@ a:hover {
 }
 
 .follow {
-    background: #2F89D9;
+    background: #2f89d9;
     color: #eee
 }
 
-// Media Queries
-@media screen and (prefers-reduced-motion: reduce), (update: slow) {
+@media screen and (prefers-reduced-motion:reduce),(update:slow) {
     * {
-        animation-duration: 0.001ms !important;
-        animation-iteration-count: 1 !important;
-        transition-duration: 0.001ms !important
+        animation-duration: .001ms!important;
+        animation-iteration-count: 1!important;
+        transition-duration: .001ms!important
     }
 }
 
-@media (max-width: 425px) {
+@media(max-width: 425px) {
     .container {
         display:grid;
         width: 100vw;
@@ -361,14 +360,13 @@ a:hover {
     }
 }
 
-@media (min-width: 426px) and (max-width: 768px) {
+@media(min-width: 426px) and (max-width:768px) {
     .container {
         display:grid;
-        grid-template-columns: repeat(3, minmax(163px, auto))
+        grid-template-columns: repeat(3,minmax(163px,auto))
     }
 }
 
-//
 html {
     visibility: visible;
     opacity: 1
