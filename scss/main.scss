@@ -79,7 +79,7 @@ a {
 .container-projects {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: repeat(3, 1fr) 50px;
+  grid-template-rows: 30vh 50vh 50vh 6vh;
   gap: 0px 0px;
   grid-auto-flow: row dense;
   transition: box-shadow 0.56s ease-in-out;
