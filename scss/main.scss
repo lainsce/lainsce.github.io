@@ -46,7 +46,7 @@ a:hover {
 .container {
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    grid-template-rows: 95vh 50vh 50vh 6vh;
+    grid-template-rows: 95vh 47vh 47vh 6vh;
     gap: 0 0;
     width: 100vw;
     height: 100vh;
@@ -120,7 +120,7 @@ a:hover {
 .container-projects {
     display: grid;
     grid-template-columns: repeat(5,1fr);
-    grid-template-rows: 30vh 50vh 50vh 6vh;
+    grid-template-rows: 30vh 47vh 47vh 6vh;
     gap: 0 0;
     grid-auto-flow: row dense;
     transition: box-shadow .56s ease-in-out;
