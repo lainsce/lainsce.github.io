@@ -1,13 +1,18 @@
 ---
 ---
 
+@font-face {
+  font-family: Monowipe;
+  src: url(../fonts/Monowipe.ttf);
+}
+
 html,body {
     overflow-x: hidden;
     font-feature-settings: "liga" 1,"tnum";
     color: #333;
     background: #fafafa;
     margin: 0;
-    font-family: iosevka,monospace
+    font-family: "Monowipe",monospace
 }
 
 a {
