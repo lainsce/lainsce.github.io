@@ -2,8 +2,12 @@
 ---
 
 @font-face {
-  font-family: Monowipe;
-  src: url(../fonts/Monowipe.ttf);
+  font-family: "Monowipe";
+  src: url('../fonts/Monowipe.ttf') format('embedded-opentype'), /* Internet Explorer */
+       url('../fonts/Monowipe.ttf') format('woff2'),             /* Super Modern Browsers */
+       url('../fonts/Monowipe.ttf') format('woff'),              /* Pretty Modern Browsers */
+       url('../fonts/Monowipe.ttf') format('truetype'),          /* Safari, Android, iOS */
+       url('../fonts/Monowipe.ttf') format('svg');               /* Legacy iOS */
 }
 
 html,body {
