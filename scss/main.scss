@@ -87,23 +87,28 @@ a:hover {
 }
 
 .notejot {
-    grid-area: notejot
+    grid-area: notejot;
+    background: #f0f0f0
 }
 
 .emulsion {
-    grid-area: emulsion
+    grid-area: emulsion;
+    background: #f0f0f0
 }
 
 .dot-matrix {
-    grid-area: dot-matrix
+    grid-area: dot-matrix;
+    background: #f0f0f0
 }
 
 .khronos {
-    grid-area: khronos
+    grid-area: khronos;
+    background: #f0f0f0
 }
 
 .colorway {
-    grid-area: colorway
+    grid-area: colorway;
+    background: #f0f0f0
 }
 
 .others {
@@ -203,7 +208,7 @@ a:hover {
     padding: 20px
 }
 
-.notejot {
+.notejot:hover {
     background: #f6d32d;
     text-shadow: 0 0 12px #000;
     color: #fff;
@@ -212,11 +217,11 @@ a:hover {
     overflow: hidden
 }
 
-.notejot .button {
+.notejot:hover .button {
     text-shadow: none
 }
 
-.dot-matrix {
+.dot-matrix:hover {
     background: #75dec2;
     text-shadow: 0 0 12px #000;
     color: #fff;
@@ -225,11 +230,11 @@ a:hover {
     overflow: hidden
 }
 
-.dot-matrix .button {
+.dot-matrix:hover .button {
     text-shadow: none
 }
 
-.emulsion {
+.emulsion:hover {
     background: #33d17a;
     text-shadow: 0 0 12px #000;
     color: #fff;
@@ -238,11 +243,11 @@ a:hover {
     overflow: hidden
 }
 
-.emulsion .button {
+.emulsion:hover .button {
     text-shadow: none
 }
 
-.khronos {
+.khronos:hover {
     background: #9141ac;
     text-shadow: 0 0 12px #000;
     color: #fff;
@@ -251,11 +256,11 @@ a:hover {
     overflow: hidden
 }
 
-.khronos .button {
+.khronos:hover .button {
     text-shadow: none
 }
 
-.colorway {
+.colorway:hover {
     background: #c4a5f4;
     text-shadow: 0 0 12px #000;
     color: #fff;
@@ -264,7 +269,7 @@ a:hover {
     overflow: hidden
 }
 
-.colorway .button {
+.colorway:hover .button {
     text-shadow: none
 }
 
