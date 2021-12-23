@@ -19,6 +19,10 @@ html,body {
     font-family: "Monowipe",monospace
 }
 
+h1 {
+    font-size: 4.2rem;
+}
+
 a {
     color: #333;
     text-decoration: none;
@@ -377,6 +381,10 @@ a:hover {
 
     .btn {
         padding: 5px 10px
+    }
+  
+    h1 {
+        font-size: 1.6rem;
     }
 }
 
