@@ -66,7 +66,8 @@ a:hover {
 .container>* {
     padding: 100px 50px;
     text-align: center;
-    place-items: center
+    place-items: center;
+    border: 1px solid #00000088;
 }
 
 .container p {
@@ -84,6 +85,7 @@ a:hover {
     margin: 0 auto;
     background: linear-gradient(0deg,#f0f0f0aa,#f0f0f0aa,#f0f0f0),url(../images/d.png) 0% 0% no-repeat;
     padding: 25vh 0;
+    border: none;
 }
 
 .notejot {
@@ -120,7 +122,8 @@ a:hover {
     text-align: center;
     color: #ccc;
     background: #333;
-    padding: 20px
+    padding: 20px;
+    border: none;
 }
 
 .others>a {
