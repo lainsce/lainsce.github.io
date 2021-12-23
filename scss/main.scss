@@ -24,11 +24,11 @@ a {
     text-decoration: none;
     padding: 5px 20px;
     border-radius: 9999px;
-    background: #ececec
+    background: #e0e0e0;
 }
 
 a:hover {
-    background: #e0e0e0;
+    background: #d0d0d0;
     color: #000
 }
 
@@ -67,7 +67,7 @@ a:hover {
     padding: 100px 50px;
     text-align: center;
     place-items: center;
-    border: 1px solid #00000088;
+    border: 1px solid #00000033;
 }
 
 .container p {
@@ -148,7 +148,8 @@ a:hover {
 
 .container-projects>* {
     padding: 100px 50px;
-    text-align: center
+    text-align: center;
+    border: 1px solid #00000033;
 }
 
 .container-projects p {
@@ -160,7 +161,8 @@ a:hover {
     text-align: left;
     padding: 20px;
     height: 30vh;
-    width: 100vw
+    width: 100vw;
+    border: none;
 }
 
 .quilter {
@@ -208,7 +210,8 @@ a:hover {
     text-align: center;
     color: #ccc;
     background: #333;
-    padding: 20px
+    padding: 20px;
+  border: none;
 }
 
 .notejot:hover {
@@ -276,47 +279,47 @@ a:hover {
     text-shadow: none
 }
 
-.quilter {
+.quilter:hover {
     background: #b8d2e2
 }
 
-.coin {
+.coin:hover {
     background: #badbad
 }
 
-.palaura {
+.palaura:hover {
     background: #ddbdbd
 }
 
-.yishu {
+.yishu:hover {
     background: #dee8bc
 }
 
-.aesop {
+.aesop:hover {
     background: #cba
 }
 
-.beemy {
+.beemy:hover {
     background: #c6262e;
     color: #fff
 }
 
-.niu {
+.niu:hover {
     background: #222;
     color: #75dec2
 }
 
-.timetable {
+.timetable:hover {
     background: #267ec6;
     color: #fff
 }
 
-.rakugaki {
+.rakugaki:hover {
     background: #90898e;
     color: #fff
 }
 
-.planitis {
+.planitis:hover {
     background: #ff976b
 }
 
