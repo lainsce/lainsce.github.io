@@ -25,7 +25,7 @@
         --bg-2-level: #ddd;
         --bg-3-level: #ccc;
         --bg-m1-level: #333;
-        --border: rgba(20, 20, 20, 0.25);
+        --border: rgba(20, 20, 20, 0.5);
     }
 }
 
@@ -50,7 +50,7 @@
     --bg-2-level: #333;
     --bg-3-level: #555;
     --bg-m1-level: #333;
-    --border: rgba(250, 250, 250, 0.25);
+    --border: rgba(250, 250, 250, 0.5);
 }
 
 @media screen and (prefers-reduced-motion: reduce), (update: slow) {
@@ -203,13 +203,18 @@ a:hover {
 .container-projects {
     display: grid;
     grid-template-columns: repeat(3, 33vw);
-    grid-template-rows: 30vh 30vh 30vh 30vh 6vh;
+    grid-template-rows: 30vh 30vh 30vh 30vh 30vh 6vh;
     gap: 0 0;
     grid-auto-flow: row dense;
     transition: box-shadow .56s ease-in-out;
     width: 100vw;
     height: 100vh;
-    grid-template-areas: "header-project header-project header-project" "quilter coin palaura" "yishu beemy timetable" "aesop niu rakugaki" "planitis planitis planitis" "footer-project footer-project footer-project"
+    grid-template-areas: "header-project header-project header-project"
+                         "quilter coin palaura"
+                         "yishu beemy timetable"
+                         "aesop niu rakugaki"
+                         "planitis planitis planitis"
+                         "footer-project footer-project footer-project"
 }
 
 .container-projects>* {
@@ -387,18 +392,6 @@ a:hover {
 
 .planitis:hover {
     background: #ff976b
-}
-
-.solo {
-    background: #d5f4a5
-}
-
-.conlang {
-    background: #f4a5ad
-}
-
-.others {
-    background: #f0f0f0
 }
 
 .cash {
