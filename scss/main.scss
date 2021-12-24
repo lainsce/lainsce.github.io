@@ -432,6 +432,55 @@ a:hover {
     }
 }
 
+.theme-toggle {
+    color: var(--fg-color);
+    border: 1px solid var(--border);
+    border-radius: 50%;
+    background: none;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 2.5rem;
+    height: 2.5rem;
+    transform: translate(var(--translateX),var(--translateY));
+    --translateX: 0;
+    --translateY: 0;
+    
+    &:hover {
+      background: rgba(#CCC, 0.33);
+    }
+}
+
+.theme-toggle .icon {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    right: .7rem;
+    top: .7rem;
+    transform: translate(var(--translateX),var(--translateY));
+    --translateX: 0;
+    --translateY: 0;
+    transition: all .8s cubic-bezier(.23,1,.32,1);
+}
+
+.theme-toggle #icon-moon {
+    display: block;
+    color: #dc8add;
+}
+
+.theme-toggle #icon-sun {
+    display: none;
+    color: #ffbe6f;
+}
+
+.dark .theme-toggle #icon-moon {
+    display: none;
+}
+
+.dark .theme-toggle #icon-sun {
+    display: block;
+}
+
 html {
     visibility: visible;
     opacity: 1
