@@ -1,6 +1,42 @@
 ---
 ---
 
+.light {
+        --accent-500: #3584e4;
+        --fg-color: #333;
+        --fg-m1-level: #fff;
+        --bg-0-level: #fff;
+        --bg-1-level: #eee;
+        --bg-2-level: #ddd;
+        --bg-3-level: #ccc;
+        --bg-m1-level: #333;
+        --border: rgba(20, 20, 20, 0.25);
+}
+
+.dark {
+        --accent-500: #62a0ea;
+        --fg-color: #fff;
+        --fg-m1-level: #fff;
+        --bg-0-level: #111;
+        --bg-1-level: #222;
+        --bg-2-level: #333;
+        --bg-3-level: #555;
+        --bg-m1-level: #333;
+        --border: rgba(250, 250, 250, 0.25);
+        
+        .favs img {
+                filter: invert(1);
+        }
+}
+
+@media screen and (prefers-reduced-motion: reduce), (update: slow) {
+    * {
+        animation-duration: 0.001ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.001ms !important;
+    }
+}
+
 @font-face {
   font-family: "Monowipe";
   src: url('../fonts/Monowipe.ttf') format('embedded-opentype'), /* Internet Explorer */
@@ -13,8 +49,8 @@
 html,body {
     overflow-x: hidden;
     font-feature-settings: "liga" 1,"tnum";
-    color: #333;
-    background: #fafafa;
+    color: var(--fg-color);
+    background: var(--bg-0-level);
     margin: 0;
     font-family: "Monowipe",monospace
 }
@@ -25,16 +61,16 @@ h1 {
 }
 
 a {
-    color: #333;
+    color: var(--fg-color);
     text-decoration: none;
     padding: 8px 20px;
     border-radius: 9999px;
-    background: #e0e0e0;
+    background: var(--bg-1-level);
 }
 
 a:hover {
-    background: #d0d0d0;
-    color: #000
+    background: var(--bg-2-level);
+    color: var(--fg-color);
 }
 
 .id-square {
@@ -48,7 +84,7 @@ a:hover {
 
 .badge {
     padding: 8px 20px;
-    border: 1px solid #888;
+    border: var(--border);
     border-radius: 8px;
     display: inline-block
 }
@@ -72,7 +108,7 @@ a:hover {
     padding: 100px 50px;
     text-align: center;
     place-items: center;
-    border: 1px solid #00000033;
+    border: var(--border);
 }
 
 .container p {
@@ -95,27 +131,27 @@ a:hover {
 
 .notejot {
     grid-area: notejot;
-    background: #f0f0f0
+    background: var(--bg-1-level);
 }
 
 .emulsion {
     grid-area: emulsion;
-    background: #f0f0f0
+    background: var(--bg-1-level);
 }
 
 .dot-matrix {
     grid-area: dot-matrix;
-    background: #f0f0f0
+    background: var(--bg-1-level);
 }
 
 .khronos {
     grid-area: khronos;
-    background: #f0f0f0
+    background: var(--bg-1-level);
 }
 
 .colorway {
     grid-area: colorway;
-    background: #f0f0f0
+    background: var(--bg-1-level);
 }
 
 .others {
@@ -125,18 +161,18 @@ a:hover {
 .footer {
     grid-area: footer;
     text-align: center;
-    color: #ccc;
-    background: #333;
+    color: var(--fg-m1-color);
+    background:  var(--bg-m1-color);
     padding: 20px;
     border: none;
 }
 
 .others>a {
-    background: #e0e0e0
+    background:  var(--bg-2-color);
 }
 
 .others>a:hover {
-    background: #dedede
+    background:  var(--bg-3-color);
 }
 
 .container-projects {
@@ -154,7 +190,7 @@ a:hover {
 .container-projects>* {
     padding: 100px 50px;
     text-align: center;
-    border: 1px solid #00000033;
+    border:  var(--border);
 }
 
 .container-projects p {
@@ -213,8 +249,8 @@ a:hover {
 .footer-project {
     grid-area: footer-project;
     text-align: center;
-    color: #ccc;
-    background: #333;
+    color: var(--fg-m1-color);
+    background: var(--bg-m1-color);
     padding: 20px;
   border: none;
 }
