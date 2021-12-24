@@ -1,32 +1,64 @@
 ---
 ---
 
-.light {
-        --accent-500: #3584e4;
-        --fg-color: #333;
-        --fg-m1-level: #fff;
-        --bg-0-level: #fff;
-        --bg-1-level: #eee;
-        --bg-2-level: #ddd;
-        --bg-3-level: #ccc;
-        --bg-m1-level: #333;
-        --border: rgba(20, 20, 20, 0.25);
-}
-
-.dark {
+@media (prefers-color-scheme: dark) {
+    :root {
         --accent-500: #62a0ea;
         --fg-color: #fff;
-        --fg-m1-level: #fff;
+        --fg-m1-color: #fff;
         --bg-0-level: #111;
         --bg-1-level: #222;
         --bg-2-level: #333;
         --bg-3-level: #555;
         --bg-m1-level: #333;
         --border: rgba(250, 250, 250, 0.25);
+    }
+    
+    .header {
+        filter: invert(1);
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+        --accent-500: #3584e4;
+        --fg-color: #333;
+        --fg-m1-color: #fff;
+        --bg-0-level: #fff;
+        --bg-1-level: #eee;
+        --bg-2-level: #ddd;
+        --bg-3-level: #ccc;
+        --bg-m1-level: #333;
+        --border: rgba(20, 20, 20, 0.25);
+    }
+}
+
+.light {
+    --accent-500: #3584e4;
+    --fg-color: #333;
+    --fg-m1-color: #fff;
+    --bg-0-level: #fff;
+    --bg-1-level: #eee;
+    --bg-2-level: #ddd;
+    --bg-3-level: #ccc;
+    --bg-m1-level: #333;
+    --border: rgba(20, 20, 20, 0.25);
+}
+
+.dark {
+    --accent-500: #62a0ea;
+    --fg-color: #fff;
+    --fg-m1-color: #fff;
+    --bg-0-level: #111;
+    --bg-1-level: #222;
+    --bg-2-level: #333;
+    --bg-3-level: #555;
+    --bg-m1-level: #333;
+    --border: rgba(250, 250, 250, 0.25);
         
-        .favs img {
-                filter: invert(1);
-        }
+    .header {
+        filter: invert(1);
+    }
 }
 
 @media screen and (prefers-reduced-motion: reduce), (update: slow) {
@@ -155,24 +187,25 @@ a:hover {
 }
 
 .others {
-    grid-area: others
+    grid-area: others;
+    background: var(--bg-1-level);
 }
 
 .footer {
     grid-area: footer;
     text-align: center;
     color: var(--fg-m1-color);
-    background:  var(--bg-m1-color);
+    background:  var(--bg-m1-level);
     padding: 20px;
     border: none;
 }
 
 .others>a {
-    background:  var(--bg-2-color);
+    background:  var(--bg-2-level);
 }
 
 .others>a:hover {
-    background:  var(--bg-3-color);
+    background:  var(--bg-3-level);
 }
 
 .container-projects {
@@ -250,7 +283,7 @@ a:hover {
     grid-area: footer-project;
     text-align: center;
     color: var(--fg-m1-color);
-    background: var(--bg-m1-color);
+    background: var(--bg-m1-level);
     padding: 20px;
   border: none;
 }
