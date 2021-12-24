@@ -153,6 +153,10 @@ a:hover {
     border: none;
 }
 
+.dark .header {
+    background: linear-gradient(0deg,#111111aa,#111111aa,#111111),url(../images/l.png) 0% 0% no-repeat;
+}
+
 .notejot {
     grid-area: notejot;
     background: var(--bg-1-level);
