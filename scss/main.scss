@@ -141,14 +141,14 @@ a:hover {
 
 .container-projects {
     display: grid;
-    grid-template-columns: repeat(5, 20vw);
-    grid-template-rows: 30vh 31vh 31vh 31vh 6vh;
+    grid-template-columns: repeat(3, 33vw);
+    grid-template-rows: 30vh 30vh 30vh 30vh 6vh;
     gap: 0 0;
     grid-auto-flow: row dense;
     transition: box-shadow .56s ease-in-out;
     width: 100vw;
     height: 100vh;
-    grid-template-areas: "header-project header-project header-project header-project" "quilter coin palaura yishu" "beemy timetable aesop niu" "rakugaki planitis" "footer-project footer-project footer-project footer-project"
+    grid-template-areas: "header-project header-project header-project" "quilter coin palaura" "yishu beemy timetable" "aesop niu rakugaki" "planitis planitis planitis" "footer-project footer-project footer-project"
 }
 
 .container-projects>* {
