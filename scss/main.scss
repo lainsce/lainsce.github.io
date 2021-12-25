@@ -72,7 +72,7 @@
 
 html,body {
     overflow-x: hidden;
-    font-feature-settings: "liga" 1,"tnum";
+    font-feature-settings: 'kern' 1,'onum' 0,'liga' 0,'tnum' 1;
     color: var(--fg-color);
     background: var(--bg-0-level);
     margin: 0;
