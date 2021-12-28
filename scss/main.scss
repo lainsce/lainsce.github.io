@@ -11,7 +11,7 @@
         --bg-2-level: #444;
         --bg-3-level: #666;
         --bg-m1-level: #000;
-        --border: 1px solid rgba(255, 255, 255, 0.05);
+        --border: 1px solid rgba(255, 255, 255, 1);
     }
 }
 
@@ -25,7 +25,7 @@
         --bg-2-level: #ddd;
         --bg-3-level: #ccc;
         --bg-m1-level: #000;
-        --border: 1px solid rgba(0, 0, 0, 0.05);
+        --border: 1px solid rgba(0, 0, 0, 1);
     }
 }
 
@@ -38,7 +38,7 @@
     --bg-2-level: #ddd;
     --bg-3-level: #ccc;
     --bg-m1-level: #333;
-    --border: 1px solid rgba(0, 0, 0, 0.05);
+    --border: 1px solid rgba(0, 0, 0, 1);
 }
 
 .dark {
@@ -50,7 +50,7 @@
     --bg-2-level: #444;
     --bg-3-level: #666;
     --bg-m1-level: #000;
-    --border: 1px solid rgba(255, 255, 255, 0.05);
+    --border: 1px solid rgba(255, 255, 255, 1);
 }
 
 @media screen and (prefers-reduced-motion: reduce), (update: slow) {
@@ -91,7 +91,7 @@ h5 {font-size: 1.333rem;}
 small, .text_small {font-size: 0.75rem;}
 
 a {
-    color: var(--fg-color);
+    color: var(--accent-500);
     text-decoration: none;
     padding: 8px 20px;
     border: var(--border);
@@ -100,6 +100,7 @@ a {
 a:hover {
     background: var(--bg-1-level);
     border: var(--border);
+    color: var(--fg-color);
 }
 
 .id-square {
