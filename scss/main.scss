@@ -6,51 +6,51 @@
         --accent-500: #62a0ea;
         --fg-color: #fff;
         --fg-m1-color: #fff;
-        --bg-0-level: #111;
+        --bg-0-level: #000;
         --bg-1-level: #222;
-        --bg-2-level: #333;
-        --bg-3-level: #555;
-        --bg-m1-level: #333;
-        --border: 1px solid rgba(250, 250, 250, 0.05);
+        --bg-2-level: #444;
+        --bg-3-level: #666;
+        --bg-m1-level: #000;
+        --border: 1px solid rgba(255, 255, 255, 0.05);
     }
 }
 
 @media (prefers-color-scheme: light) {
     :root {
         --accent-500: #3584e4;
-        --fg-color: #333;
+        --fg-color: #000;
         --fg-m1-color: #fff;
         --bg-0-level: #fff;
         --bg-1-level: #eee;
         --bg-2-level: #ddd;
         --bg-3-level: #ccc;
-        --bg-m1-level: #333;
-        --border: 1px solid rgba(20, 20, 20, 0.05);
+        --bg-m1-level: #000;
+        --border: 1px solid rgba(0, 0, 0, 0.05);
     }
 }
 
 .light {
     --accent-500: #3584e4;
-    --fg-color: #333;
+    --fg-color: #000;
     --fg-m1-color: #fff;
     --bg-0-level: #fff;
     --bg-1-level: #eee;
     --bg-2-level: #ddd;
     --bg-3-level: #ccc;
     --bg-m1-level: #333;
-    --border: 1px solid rgba(20, 20, 20, 0.05);
+    --border: 1px solid rgba(0, 0, 0, 0.05);
 }
 
 .dark {
     --accent-500: #62a0ea;
     --fg-color: #fff;
     --fg-m1-color: #fff;
-    --bg-0-level: #111;
+    --bg-0-level: #000;
     --bg-1-level: #222;
-    --bg-2-level: #333;
-    --bg-3-level: #555;
-    --bg-m1-level: #333;
-    --border: 1px solid rgba(250, 250, 250, 0.05);
+    --bg-2-level: #444;
+    --bg-3-level: #666;
+    --bg-m1-level: #000;
+    --border: 1px solid rgba(255, 255, 255, 0.05);
 }
 
 @media screen and (prefers-reduced-motion: reduce), (update: slow) {
@@ -67,7 +67,7 @@ html,body {
     color: var(--fg-color);
     background: var(--bg-0-level);
     margin: 0;
-    font-family: Helvetica, Arial, sans-serif; 
+    font-family: sans-serif; 
 }
 
 h1, h2, h3, h4, h5 {
@@ -94,13 +94,12 @@ a {
     color: var(--fg-color);
     text-decoration: none;
     padding: 8px 20px;
-    border-radius: 9999px;
-    background: var(--bg-2-level);
+    border: var(--border);
 }
 
 a:hover {
-    background: var(--bg-3-level);
-    color: var(--fg-color);
+    background: var(--bg-1-level);
+    border: var(--border);
 }
 
 .id-square {
@@ -242,43 +241,53 @@ a:hover {
 }
 
 .quilter {
-    grid-area: quilter
+    grid-area: quilter;
+    background: var(--bg-1-level);
 }
 
 .coin {
-    grid-area: coin
+    grid-area: coin;
+    background: var(--bg-1-level);
 }
 
 .palaura {
-    grid-area: palaura
+    grid-area: palaura;
+    background: var(--bg-1-level);
 }
 
 .yishu {
-    grid-area: yishu
+    grid-area: yishu;
+    background: var(--bg-1-level);
 }
 
 .beemy {
-    grid-area: beemy
+    grid-area: beemy;
+    background: var(--bg-1-level);
 }
 
 .timetable {
-    grid-area: timetable
+    grid-area: timetable;
+    background: var(--bg-1-level);
 }
 
 .aesop {
-    grid-area: aesop
+    grid-area: aesop;
+    background: var(--bg-1-level);
 }
 
 .niu {
-    grid-area: niu
+    grid-area: niu;
+    background: var(--bg-1-level);
 }
 
 .rakugaki {
-    grid-area: rakugaki
+    grid-area: rakugaki;
+    background: var(--bg-1-level);
 }
 
 .planitis {
-    grid-area: planitis
+    grid-area: planitis;
+    background: var(--bg-1-level);
 }
 
 .footer-project {
@@ -287,7 +296,7 @@ a:hover {
     color: var(--fg-m1-color);
     background: var(--bg-m1-level);
     padding: 20px;
-  border: none;
+    border: none;
 }
 
 .notejot:hover {
@@ -395,21 +404,21 @@ a:hover {
     background: #ff976b
 }
 
-.cash {
+.cash:hover {
     background: #ff5f5f;
     color: #eee
 }
 
-.merv {
+.merv:hover {
     background: #75dec2
 }
 
-.gh {
+.gh:hover {
     background: #333;
     color: #eee
 }
 
-.follow {
+.follow:hover {
     background: #2f89d9;
     color: #eee
 }
