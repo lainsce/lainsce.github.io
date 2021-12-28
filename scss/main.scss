@@ -306,149 +306,63 @@ a:hover {
 }
 
 .notejot:hover {
-    background: #f6d32d;
-    color: #000;
+    background: #ffff00;
 }
-
-.notejot:hover .button {
-    color: #fff;
-}
-
 .dot-matrix:hover {
-    background: #75dec2;
-    color: #000;
+    background: #0088ff;
 }
-
-.dot-matrix:hover .button {
-    color: #fff;
-}
-
 .emulsion:hover {
-    background: #33d17a;
-    color: #000;
+    background: #00ff88;
 }
-
-.emulsion:hover .button {
-    color: #fff;
-}
-
 .khronos:hover {
-    background: #9141ac;
-    color: #000;
+    background: #8800ff;
 }
-
-.khronos:hover .button {
-    color: #fff;
-}
-
 .colorway:hover {
-    background: #c4a5f4;
-    color: #000;
-}
-
-.colorway:hover .button {
-    color: #fff;
+    background: #dd88ff;
 }
 
 .quilter:hover {
-    background: #b8d2e2;
-    color: #000;
+    background: #ddddff;
 }
-
-.quilter:hover .button {
-    color: #fff;
-}
-
 .coin:hover {
-    background: #badbad;
-    color: #000;
+    background: #ddffdd;
 }
-.coin:hover .button {
-    color: #fff;
-}
-
 .palaura:hover {
-    background: #ddbdbd;
-    color: #000;
+    background: #ffdddd;
 }
-.palaura:hover .button {
-    color: #fff;
-}
-
 .yishu:hover {
-    background: #dee8bc;
-    color: #000;
+    background: #88ff88;
 }
-.yishu:hover .button {
-    color: #fff;
-}
-
 .aesop:hover {
-    background: #cba;
-    color: #000;
+    background: #ff8800;
 }
-.aesop:hover .button {
-    color: #fff;
-}
-
 .beemy:hover {
-    background: #c6262e;
-    color: #fff
+    background: #ff0000;
 }
-.beemy:hover .button {
-    color: #fff;
-}
-
 .niu:hover {
-    background: #222;
-    color: #75dec2
+    background: #222222;
 }
-.niu:hover .button {
-    color: #fff;
-}
-
 .timetable:hover {
-    background: #267ec6;
-    color: #fff
+    background: #0088ff;
 }
-.timetable:hover .button {
-    color: #fff;
-}
-
 .rakugaki:hover {
-    background: #90898e;
-    color: #fff
+    background: #888888;
 }
-.rakugaki:hover .button {
-    color: #fff;
-}
-
 .planitis:hover {
-    background: #ff976b;
-    color: #000;
-}
-.planitis:hover .button {
-    color: #fff;
+    background: #ff8800;
 }
 
 .cash:hover {
-    background: #ff5f5f;
-    color: #fff
+    background: #ff8800;
 }
-
 .merv:hover {
-    background: #75dec2;
-    color: #000;
+    background: #00ffff;
 }
-
 .gh:hover {
-    background: #333;
-    color: #fff
+    background: #333333;
 }
-
 .follow:hover {
-    background: #2f89d9;
-    color: #000
+    background: #0000ff;
 }
 
 @media screen and (prefers-reduced-motion:reduce),(update:slow) {
