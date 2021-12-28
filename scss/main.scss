@@ -377,6 +377,9 @@ a:hover {
 .follow:hover {
     background: #0000ff;
 }
+.download:hover {
+    color: var(--bg-0-level);
+}
 
 @media screen and (prefers-reduced-motion:reduce),(update:slow) {
     * {
