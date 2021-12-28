@@ -132,6 +132,7 @@ a:hover {
 
 .container {
     display: grid;
+    overflow-x: hidden;
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: 95vh 47vh 47vh 6vh;
     gap: 0 0;
@@ -214,6 +215,7 @@ a:hover {
 
 .container-projects {
     display: grid;
+    overflow-x: hidden;
     grid-template-columns: repeat(3, 33vw);
     grid-template-rows: 30vh 30vh 30vh 30vh 30vh 6vh;
     gap: 0 0;
