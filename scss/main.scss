@@ -3,7 +3,7 @@
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --accent-500: #62a0ea;
+        --accent-500: #0091F3;
         --fg-color: #fff;
         --fg-m1-color: #fff;
         --bg-0-level: #000;
@@ -17,7 +17,7 @@
 
 @media (prefers-color-scheme: light) {
     :root {
-        --accent-500: #3584e4;
+        --accent-500: #000FBB;
         --fg-color: #000;
         --fg-m1-color: #fff;
         --bg-0-level: #fff;
@@ -30,7 +30,7 @@
 }
 
 .light {
-    --accent-500: #3584e4;
+    --accent-500: #000FBB;
     --fg-color: #000;
     --fg-m1-color: #fff;
     --bg-0-level: #fff;
@@ -42,7 +42,7 @@
 }
 
 .dark {
-    --accent-500: #62a0ea;
+    --accent-500: #0091F3;
     --fg-color: #fff;
     --fg-m1-color: #fff;
     --bg-0-level: #000;
