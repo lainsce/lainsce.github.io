@@ -61,22 +61,13 @@
     }
 }
 
-@font-face {
-  font-family: "Monowipe";
-  src: url('../fonts/Monowipe.ttf') format('embedded-opentype'), /* Internet Explorer */
-       url('../fonts/Monowipe.ttf') format('woff2'),             /* Super Modern Browsers */
-       url('../fonts/Monowipe.ttf') format('woff'),              /* Pretty Modern Browsers */
-       url('../fonts/Monowipe.ttf') format('truetype'),          /* Safari, Android, iOS */
-       url('../fonts/Monowipe.ttf') format('svg');               /* Legacy iOS */
-}
-
 html,body {
     overflow-x: hidden;
     font-feature-settings: 'kern' 1,'onum' 0,'liga' 0,'tnum' 1;
     color: var(--fg-color);
     background: var(--bg-0-level);
     margin: 0;
-    font-family: "Monowipe",monospace
+    font-family: Helvetica, Arial, sans-serif; 
 }
 
 h1, h2, h3, h4, h5 {
@@ -166,13 +157,13 @@ a:hover {
     vertical-align: text-top;
     width: 100vw;
     margin: 0 auto;
-    background: linear-gradient(0deg,#f0f0f0aa,#f0f0f0aa,#f0f0f0),url(../images/d.png) 100% 0% no-repeat;
+    background: var(--bg-0-level);
     padding: 25vh 0;
     border: none;
 }
 
 .dark .header {
-    background: linear-gradient(0deg,#111111aa,#111111aa,#111111),url(../images/l.png) 100% 0% no-repeat;
+    background: var(--bg-0-level);
 }
 
 .notejot {
@@ -303,7 +294,7 @@ a:hover {
     background: #f6d32d;
     text-shadow: 0 0 12px #000;
     color: #fff;
-    background: linear-gradient(0deg,#f6d32daa,#f6d32daa,#f6d32d),url("../images/notejot.png") top/100% 50% no-repeat;
+    background: #f6d32d;
     background-size: cover;
     overflow: hidden
 }
@@ -316,8 +307,7 @@ a:hover {
     background: #75dec2;
     text-shadow: 0 0 12px #000;
     color: #fff;
-    background: linear-gradient(0deg,rgba(117,222,194,0.75),rgba(117,222,194,0.75),#75dec2),url("../images/dotmatrix.png") 50% 50% no-repeat;
-    background-size: cover;
+    background: #75dec2;
     overflow: hidden
 }
 
@@ -329,8 +319,7 @@ a:hover {
     background: #33d17a;
     text-shadow: 0 0 12px #000;
     color: #fff;
-    background: linear-gradient(0deg,#33d17aaa,#33d17aaa,#33d17a),url("../images/emulsion.png") top/100% auto no-repeat;
-    background-size: cover;
+    background: #33d17a;
     overflow: hidden
 }
 
@@ -342,8 +331,7 @@ a:hover {
     background: #9141ac;
     text-shadow: 0 0 12px #000;
     color: #fff;
-    background: linear-gradient(0deg,#9141acaa,#9141acaa,#9141ac),url("../images/khronos.png") top/100% auto no-repeat;
-    background-size: cover;
+    background: #9141ac;
     overflow: hidden
 }
 
@@ -355,8 +343,7 @@ a:hover {
     background: #c4a5f4;
     text-shadow: 0 0 12px #000;
     color: #fff;
-    background: linear-gradient(0deg,rgba(196,165,244,0.75),rgba(196,165,244,0.75),#c4a5f4),url("../images/colorway.png") top/100% auto no-repeat;
-    background-size: cover;
+    background: #c4a5f4;
     overflow: hidden
 }
 
