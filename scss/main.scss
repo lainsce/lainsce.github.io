@@ -53,6 +53,20 @@
     }
 }
 
+body::-webkit-scrollbar {
+  width: 15px;               /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--bg-0-level);        /* color of the tracking area */
+  border: var(--border);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--fg-color);    /* color of the scroll thumb */
+  border: 5px solid var(--bg-0-level);  /* creates padding around scroll thumb */
+}
+
 html,body {
     overflow-x: hidden;
     font-feature-settings: 'kern' 1,'onum' 0,'liga' 0,'tnum' 1;
@@ -108,7 +122,6 @@ a:hover {
 .badge {
     padding: 8px 20px;
     border: var(--border);
-    border-radius: 8px;
     display: inline-block
 }
 
@@ -416,20 +429,16 @@ a:hover {
 
 .theme-toggle {
     color: var(--fg-color);
-    border: 1px solid var(--border);
-    border-radius: 50%;
+    border: var(--border);
     background: none;
     position: absolute;
     right: 20px;
     top: 20px;
     width: 2.5rem;
     height: 2.5rem;
-    transform: translate(var(--translateX),var(--translateY));
-    --translateX: 0;
-    --translateY: 0;
     
     &:hover {
-      background: rgba(#CCC, 0.33);
+      background: #CCC;
     }
 }
 
@@ -439,20 +448,17 @@ a:hover {
     position: absolute;
     right: .7rem;
     top: .7rem;
-    transform: translate(var(--translateX),var(--translateY));
-    --translateX: 0;
-    --translateY: 0;
     transition: all .8s cubic-bezier(.23,1,.32,1);
 }
 
 .theme-toggle #icon-moon {
     display: block;
-    color: #dc8add;
+    color: #0088ff;
 }
 
 .theme-toggle #icon-sun {
     display: none;
-    color: #ffbe6f;
+    color: #ff8800;
 }
 
 .dark .theme-toggle #icon-moon {
