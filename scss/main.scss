@@ -108,7 +108,7 @@ a {
 a:hover {
     background: var(--accent-500);
     border: var(--border);
-    color: var(--bg-0-color);
+    color: var(--bg-0-level);
 }
 
 .frame {
@@ -330,6 +330,14 @@ a:hover {
     background: #dd88ff;
 }
 
+.dark .notejot:hover,
+.dark .dot-matrix:hover,
+.dark .emulsion:hover,
+.dark .khronos:hover,
+.dark .colorway:hover {
+    filter: brightness(50%);
+}
+
 .quilter:hover {
     background: #ddddff;
 }
@@ -359,6 +367,19 @@ a:hover {
 }
 .planitis:hover {
     background: #ff8800;
+}
+
+.dark .quilter:hover,
+.dark .coin:hover,
+.dark .palaura:hover,
+.dark .yishu:hover,
+.dark .aesop:hover,
+.dark .beemy:hover,
+.dark .niu:hover,
+.dark .timetable:hover,
+.dark .rakugaki:hover,
+.dark .planitis:hover {
+    filter: brightness(50%);
 }
 
 .cash:hover {
