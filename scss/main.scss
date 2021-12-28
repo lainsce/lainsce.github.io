@@ -74,6 +74,7 @@ html,body {
     background: var(--bg-0-level);
     margin: 0;
     font-family: sans-serif; 
+    border-top: var(--border);
 }
 
 h1, h2, h3, h4, h5 {
@@ -166,7 +167,6 @@ a:hover {
     background: var(--bg-0-level);
     padding: 25vh 0;
     border: none;
-    border-top: var(--border);
     border-left: var(--border);
     border-right: var(--border);
 }
@@ -251,7 +251,6 @@ a:hover {
     height: 30vh;
     width: 100vw;
     border: none;
-    border-top: var(--border);
     border-left: var(--border);
     border-right: var(--border);
 }
