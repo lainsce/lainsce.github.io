@@ -54,17 +54,17 @@
 }
 
 body::-webkit-scrollbar {
-  width: 15px;               /* width of the entire scrollbar */
+  width: 18px;               /* width of the entire scrollbar */
 }
 
 body::-webkit-scrollbar-track {
-  background: var(--bg-0-level);        /* color of the tracking area */
-  border: var(--border);
+  background: gray;
+  border-left: none;
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: var(--fg-color);    /* color of the scroll thumb */
-  border: var(--border);  /* creates padding around scroll thumb */
+  background-color: black;
+  border: gray;
 }
 
 html,body {
@@ -111,6 +111,18 @@ a:hover {
     color: var(--bg-0-color);
 }
 
+.frame {
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width:100%;
+    height:100%;
+    border: var(--border);
+    box-sizing: border-box;
+    pointer-events: none;
+}
+
 .id-square {
     font-size: 1.8rem;
     font-weight: 900
@@ -136,10 +148,6 @@ a:hover {
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: 95vh 47vh 47vh 6vh;
     gap: 0 0;
-    width: 100vw;
-    height: 100vh;
-    border: var(--border);
-    transition: background .56s ease-in-out;
     grid-auto-flow: row dense;
     grid-template-areas: "header header header"
                          "notejot emulsion dot-matrix"
@@ -152,6 +160,7 @@ a:hover {
     text-align: center;
     place-items: center;
     border: var(--border);
+    transition: background .56s ease-in-out;
 }
 
 .container p {
@@ -220,10 +229,6 @@ a:hover {
     grid-template-rows: 30vh 30vh 30vh 30vh 30vh 6vh;
     gap: 0 0;
     grid-auto-flow: row dense;
-    transition: background .56s ease-in-out;
-    width: 100vw;
-    height: 100vh;
-    border: var(--border);
     grid-template-areas: "header-project header-project header-project"
                          "quilter coin palaura"
                          "yishu beemy timetable"
@@ -236,6 +241,7 @@ a:hover {
     padding: 100px 50px;
     text-align: center;
     border:  var(--border);
+    transition: background .56s ease-in-out;
 }
 
 .container-projects p {
@@ -423,15 +429,15 @@ a:hover {
 .theme-toggle {
     color: var(--fg-color);
     border: var(--border);
-    background: none;
-    position: absolute;
-    right: 14px;
+    background: var(--bg-1-level);
+    position: fixed;
+    right: 0px;
     top: 0px;
     width: 2.5rem;
     height: 2.5rem;
     
     &:hover {
-      background: #CCC;
+      background: var(--bg-2-level);
     }
 }
 
