@@ -302,11 +302,7 @@ a:hover {
 
 .notejot:hover {
     background: #f6d32d;
-    text-shadow: 0 0 12px #000;
-    color: #fff;
-    background: #f6d32d;
-    background-size: cover;
-    overflow: hidden
+    color: #000;
 }
 
 .notejot:hover .button {
@@ -315,10 +311,7 @@ a:hover {
 
 .dot-matrix:hover {
     background: #75dec2;
-    text-shadow: 0 0 12px #000;
-    color: #fff;
-    background: #75dec2;
-    overflow: hidden
+    color: #000;
 }
 
 .dot-matrix:hover .button {
@@ -327,10 +320,7 @@ a:hover {
 
 .emulsion:hover {
     background: #33d17a;
-    text-shadow: 0 0 12px #000;
-    color: #fff;
-    background: #33d17a;
-    overflow: hidden
+    color: #000;
 }
 
 .emulsion:hover .button {
@@ -339,10 +329,7 @@ a:hover {
 
 .khronos:hover {
     background: #9141ac;
-    text-shadow: 0 0 12px #000;
-    color: #fff;
-    background: #9141ac;
-    overflow: hidden
+    color: #000;
 }
 
 .khronos:hover .button {
@@ -351,10 +338,7 @@ a:hover {
 
 .colorway:hover {
     background: #c4a5f4;
-    text-shadow: 0 0 12px #000;
-    color: #fff;
-    background: #c4a5f4;
-    overflow: hidden
+    color: #000;
 }
 
 .colorway:hover .button {
@@ -362,23 +346,28 @@ a:hover {
 }
 
 .quilter:hover {
-    background: #b8d2e2
+    background: #b8d2e2;
+    color: #000;
 }
 
 .coin:hover {
-    background: #badbad
+    background: #badbad;
+    color: #000;
 }
 
 .palaura:hover {
-    background: #ddbdbd
+    background: #ddbdbd;
+    color: #000;
 }
 
 .yishu:hover {
-    background: #dee8bc
+    background: #dee8bc;
+    color: #000;
 }
 
 .aesop:hover {
-    background: #cba
+    background: #cba;
+    color: #000;
 }
 
 .beemy:hover {
@@ -402,26 +391,28 @@ a:hover {
 }
 
 .planitis:hover {
-    background: #ff976b
+    background: #ff976b;
+    color: #000;
 }
 
 .cash:hover {
     background: #ff5f5f;
-    color: #eee
+    color: #fff
 }
 
 .merv:hover {
-    background: #75dec2
+    background: #75dec2;
+    color: #000;
 }
 
 .gh:hover {
     background: #333;
-    color: #eee
+    color: #fff
 }
 
 .follow:hover {
     background: #2f89d9;
-    color: #eee
+    color: #000
 }
 
 @media screen and (prefers-reduced-motion:reduce),(update:slow) {
