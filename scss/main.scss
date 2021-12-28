@@ -95,10 +95,11 @@ a {
     text-decoration: none;
     padding: 8px 20px;
     border: var(--border);
+    background: var(--bg-0-level);
 }
 
 a:hover {
-    background: var(--bg-1-level);
+    background: var(--bg-0-level);
     border: var(--border);
     color: var(--fg-color);
 }
