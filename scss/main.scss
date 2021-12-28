@@ -307,7 +307,8 @@ a:hover {
 }
 
 .notejot:hover .button {
-    text-shadow: none
+    text-shadow: none,
+    color: #fff;
 }
 
 .dot-matrix:hover {
@@ -316,7 +317,8 @@ a:hover {
 }
 
 .dot-matrix:hover .button {
-    text-shadow: none
+    text-shadow: none,
+    color: #fff;
 }
 
 .emulsion:hover {
@@ -325,7 +327,8 @@ a:hover {
 }
 
 .emulsion:hover .button {
-    text-shadow: none
+    text-shadow: none,
+    color: #fff;
 }
 
 .khronos:hover {
@@ -334,7 +337,8 @@ a:hover {
 }
 
 .khronos:hover .button {
-    text-shadow: none
+    text-shadow: none,
+    color: #fff;
 }
 
 .colorway:hover {
@@ -343,7 +347,8 @@ a:hover {
 }
 
 .colorway:hover .button {
-    text-shadow: none
+    text-shadow: none,
+    color: #fff;
 }
 
 .quilter:hover {
@@ -351,49 +356,90 @@ a:hover {
     color: #000;
 }
 
+.quilter:hover .button {
+    text-shadow: none,
+    color: #fff;
+}
+
 .coin:hover {
     background: #badbad;
     color: #000;
+}
+.coin:hover .button {
+    text-shadow: none,
+    color: #fff;
 }
 
 .palaura:hover {
     background: #ddbdbd;
     color: #000;
 }
+.palaura:hover .button {
+    text-shadow: none,
+    color: #fff;
+}
 
 .yishu:hover {
     background: #dee8bc;
     color: #000;
+}
+.yishu:hover .button {
+    text-shadow: none,
+    color: #fff;
 }
 
 .aesop:hover {
     background: #cba;
     color: #000;
 }
+.aesop:hover .button {
+    text-shadow: none,
+    color: #fff;
+}
 
 .beemy:hover {
     background: #c6262e;
     color: #fff
+}
+.beemy:hover .button {
+    text-shadow: none,
+    color: #fff;
 }
 
 .niu:hover {
     background: #222;
     color: #75dec2
 }
+.niu:hover .button {
+    text-shadow: none,
+    color: #fff;
+}
 
 .timetable:hover {
     background: #267ec6;
     color: #fff
+}
+.timetable:hover .button {
+    text-shadow: none,
+    color: #fff;
 }
 
 .rakugaki:hover {
     background: #90898e;
     color: #fff
 }
+.rakugaki:hover .button {
+    text-shadow: none,
+    color: #fff;
+}
 
 .planitis:hover {
     background: #ff976b;
     color: #000;
+}
+.planitis:hover .button {
+    text-shadow: none,
+    color: #fff;
 }
 
 .cash:hover {
