@@ -5,12 +5,10 @@
     :root {
         --accent-500: #0091F3;
         --fg-color: #fff;
-        --fg-m1-color: #fff;
         --bg-0-level: #000;
         --bg-1-level: #222;
         --bg-2-level: #444;
         --bg-3-level: #666;
-        --bg-m1-level: #000;
         --border: 1px solid rgba(255, 255, 255, 1);
     }
 }
@@ -19,12 +17,10 @@
     :root {
         --accent-500: #000FBB;
         --fg-color: #000;
-        --fg-m1-color: #fff;
         --bg-0-level: #fff;
         --bg-1-level: #eee;
         --bg-2-level: #ddd;
         --bg-3-level: #ccc;
-        --bg-m1-level: #000;
         --border: 1px solid rgba(0, 0, 0, 1);
     }
 }
@@ -32,24 +28,20 @@
 .light {
     --accent-500: #000FBB;
     --fg-color: #000;
-    --fg-m1-color: #fff;
     --bg-0-level: #fff;
     --bg-1-level: #eee;
     --bg-2-level: #ddd;
     --bg-3-level: #ccc;
-    --bg-m1-level: #333;
     --border: 1px solid rgba(0, 0, 0, 1);
 }
 
 .dark {
     --accent-500: #0091F3;
     --fg-color: #fff;
-    --fg-m1-color: #fff;
     --bg-0-level: #000;
     --bg-1-level: #222;
     --bg-2-level: #444;
     --bg-3-level: #666;
-    --bg-m1-level: #000;
     --border: 1px solid rgba(255, 255, 255, 1);
 }
 
@@ -161,6 +153,9 @@ a:hover {
     background: var(--bg-0-level);
     padding: 25vh 0;
     border: none;
+    border-top: var(--border);
+    border-left: var(--border);
+    border-right: var(--border);
 }
 
 .dark .header {
@@ -200,10 +195,13 @@ a:hover {
 .footer {
     grid-area: footer;
     text-align: center;
-    color: var(--fg-m1-color);
-    background:  var(--bg-m1-level);
+    color: var(--fg-color);
+    background:  var(--bg-0-level);
     padding: 20px;
     border: none;
+    border-bottom: var(--border);
+    border-left: var(--border);
+    border-right: var(--border);
 }
 
 .container-projects {
@@ -240,6 +238,9 @@ a:hover {
     height: 30vh;
     width: 100vw;
     border: none;
+    border-top: var(--border);
+    border-left: var(--border);
+    border-right: var(--border);
 }
 
 .quilter {
@@ -295,10 +296,13 @@ a:hover {
 .footer-project {
     grid-area: footer-project;
     text-align: center;
-    color: var(--fg-m1-color);
-    background: var(--bg-m1-level);
+    color: var(--fg-color);
+    background: var(--bg-0-level);
     padding: 20px;
     border: none;
+    border-bottom: var(--border);
+    border-left: var(--border);
+    border-right: var(--border);
 }
 
 .notejot:hover {
