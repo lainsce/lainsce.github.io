@@ -64,7 +64,7 @@ body::-webkit-scrollbar-track {
 
 body::-webkit-scrollbar-thumb {
   background-color: var(--fg-color);    /* color of the scroll thumb */
-  border: 5px solid var(--bg-0-level);  /* creates padding around scroll thumb */
+  border: var(--border);  /* creates padding around scroll thumb */
 }
 
 html,body {
