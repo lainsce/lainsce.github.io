@@ -73,8 +73,8 @@ html,body {
     color: var(--fg-color);
     background: var(--bg-0-level);
     margin: 0;
-    font-family: sans-serif; 
-    border-top: var(--border);
+    font-family: sans-serif;
+    border: var(--border);
 }
 
 h1, h2, h3, h4, h5 {
@@ -167,8 +167,6 @@ a:hover {
     background: var(--bg-0-level);
     padding: 25vh 0;
     border: none;
-    border-left: var(--border);
-    border-right: var(--border);
 }
 
 .dark .header {
@@ -212,9 +210,6 @@ a:hover {
     background:  var(--bg-0-level);
     padding: 20px;
     border: none;
-    border-bottom: var(--border);
-    border-left: var(--border);
-    border-right: var(--border);
 }
 
 .container-projects {
@@ -251,8 +246,6 @@ a:hover {
     height: 30vh;
     width: 100vw;
     border: none;
-    border-left: var(--border);
-    border-right: var(--border);
 }
 
 .quilter {
@@ -312,9 +305,6 @@ a:hover {
     background: var(--bg-0-level);
     padding: 20px;
     border: none;
-    border-bottom: var(--border);
-    border-left: var(--border);
-    border-right: var(--border);
 }
 
 .notejot:hover {
