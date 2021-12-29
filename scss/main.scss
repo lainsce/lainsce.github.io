@@ -71,11 +71,11 @@ body {
     cursor: url('../images/cursor.svg'), auto;	
 }
 
-a {
+a,button {
     cursor: url('../images/hand.svg'), auto;	
 }
 
-p,h1,h2,h3,h4,h5,h6,code,pre {
+p,h1,h2,h3,h4,h5,h6,code,pre,span {
     cursor: url('../images/text.svg'), auto;	
 }
 
@@ -96,7 +96,7 @@ h1, h2, h3, h4, h5 {
 
 h1 {
     font-size: 4.2rem;
-    margin-top: 0;
+    margin-top: 10px;
 }
 h2 {font-size: 3.157rem;}
 
@@ -181,6 +181,8 @@ a:hover {
     grid-area: header;
     background: var(--bg-0-level);
     padding: 200px 50px;
+    background-image:  linear-gradient(#eee 1px, transparent 1px), linear-gradient(to right, #eee 1px, #ffffff 1px);
+    background-size: 16px 16px;
 }
 
 .dark .header {
@@ -256,6 +258,8 @@ a:hover {
     padding: 20px;
     height: 30vh;
     width: 100vw;
+    background-image:  linear-gradient(#eee 1px, transparent 1px), linear-gradient(to right, #eee 1px, #ffffff 1px);
+    background-size: 16px 16px;
 }
 
 .quilter {
