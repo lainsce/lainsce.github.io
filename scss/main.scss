@@ -108,6 +108,10 @@ h5 {font-size: 1.333rem;}
 
 small, .text_small {font-size: 0.75rem;}
 
+.att {
+    text-decoration: var(--accent-500) wavy underline;
+}
+
 a {
     color: var(--accent-500);
     text-decoration: none;
