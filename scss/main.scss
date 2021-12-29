@@ -67,6 +67,18 @@ body::-webkit-scrollbar-thumb {
   border: gray;
 }
 
+body {
+    cursor: url('../images/cursor.svg'), auto;	
+}
+
+a {
+    cursor: url('../images/hand.svg'), auto;	
+}
+
+p,h1,h2,h3,h4,h5,h6,code,pre {
+    cursor: url('../images/text.svg'), auto;	
+}
+
 html,body {
     overflow-x: hidden;
     font-feature-settings: 'kern' 1,'onum' 0,'liga' 0,'tnum' 1;
@@ -167,15 +179,8 @@ a:hover {
 
 .header {
     grid-area: header;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    height: 95vh;
-    vertical-align: text-top;
-    width: 100vw;
-    margin: 0 auto;
     background: var(--bg-0-level);
-    padding: 25vh 0;
+    padding: 200px 50px;
 }
 
 .dark .header {
