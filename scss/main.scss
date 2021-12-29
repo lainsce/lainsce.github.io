@@ -231,7 +231,7 @@ a:hover {
                          "quilter coin palaura"
                          "yishu beemy timetable"
                          "aesop niu rakugaki"
-                         "planitis planitis planitis"
+                         "planitis blank blank"
                          "footer-project footer-project footer-project"
 }
 
@@ -300,6 +300,11 @@ a:hover {
 
 .planitis {
     grid-area: planitis;
+    background: var(--bg-1-level);
+}
+
+.blank {
+    grid-area: blank;
     background: var(--bg-1-level);
 }
 
