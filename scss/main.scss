@@ -102,7 +102,6 @@ a {
     padding: 8px 20px;
     border: var(--border);
     background: var(--bg-0-level);
-    transition: background .56s ease-in-out;
 }
 
 a:hover {
@@ -160,7 +159,6 @@ a:hover {
     text-align: center;
     place-items: center;
     border: var(--border);
-    transition: background .56s ease-in-out;
 }
 
 .container p {
@@ -241,7 +239,6 @@ a:hover {
     padding: 100px 50px;
     text-align: center;
     border:  var(--border);
-    transition: background .56s ease-in-out;
 }
 
 .container-projects p {
@@ -335,7 +332,7 @@ a:hover {
 .dark .emulsion:hover,
 .dark .khronos:hover,
 .dark .colorway:hover {
-    filter: brightness(50%);
+    color: #000;
 }
 
 .quilter:hover {
@@ -379,7 +376,7 @@ a:hover {
 .dark .timetable:hover,
 .dark .rakugaki:hover,
 .dark .planitis:hover {
-    filter: brightness(50%);
+    color: #000;
 }
 
 .cash:hover {
