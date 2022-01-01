@@ -266,6 +266,10 @@ a:hover {
     background-size: 16px 16px;
 }
 
+.dark .header-project {
+    background: var(--bg-0-level);
+}
+
 .quilter {
     grid-area: quilter;
     background: var(--bg-1-level);
