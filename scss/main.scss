@@ -167,7 +167,7 @@ a:hover {
 }
 
 .dark .container>*:hover {
-    color: var(--bg-0-level)
+    color: var(--fg-color)
 }
 
 .container p {
@@ -184,7 +184,7 @@ a:hover {
 }
 
 .dark .header {
-    background: var(--bg-0-level)
+    background: var(--bg-1-level)
 }
 
 .notejot {
@@ -252,6 +252,10 @@ a:hover {
     border-radius: 21px
 }
 
+.dark .container-projects>*:hover {
+    color: var(--fg-color)
+}
+
 .container-projects p {
     font-size: 1rem
 }
@@ -266,7 +270,7 @@ a:hover {
 }
 
 .dark .header-project {
-    background: var(--bg-0-level)
+    background: var(--bg-1-level)
 }
 
 .quilter {
