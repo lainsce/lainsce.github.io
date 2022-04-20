@@ -4,32 +4,32 @@
 @media (prefers-color-scheme: dark) {
     :root {
         --accent-500: #0091F3;
-        --fg-color: #fff;
-        --bg-0-level: #000;
-        --bg-1-level: #111;
-        --bg-2-level: #222;
-        --bg-3-level: #333;
-        --border: 1px solid rgba(255, 255, 255, 1)
+        --fg-color: #fafafa;
+        --bg-0-level: #111;
+        --bg-1-level: #222;
+        --bg-2-level: #333;
+        --bg-3-level: #444;
+        --border: 1px solid rgba(255, 255, 255, 0.1)
     }
 }
 
 @media (prefers-color-scheme: light) {
     :root {
-        --accent-500: #000FBB;
-        --fg-color: #000;
-        --bg-0-level: #fff;
-        --bg-1-level: #eee;
+        --accent-500: #0088ff;
+        --fg-color: #222;
+        --bg-0-level: #fafafa;
+        --bg-1-level: #ebebeb;
         --bg-2-level: #ddd;
         --bg-3-level: #ccc;
-        --border: 1px solid rgba(0, 0, 0, 1)
+        --border: 1px solid rgba(0, 0, 0, 0.1)
     }
 }
 
 .light {
     --accent-500: #0088ff;
-    --fg-color: #222222;
-    --bg-0-level: #fff;
-    --bg-1-level: #eee;
+    --fg-color: #222;
+    --bg-0-level: #fafafa;
+    --bg-1-level: #ebebeb;
     --bg-2-level: #ddd;
     --bg-3-level: #ccc;
     --border: 1px solid #222222;
@@ -37,12 +37,12 @@
 
 .dark {
     --accent-500: #0091F3;
-    --fg-color: #fff;
-    --bg-0-level: #000;
-    --bg-1-level: #111;
-    --bg-2-level: #222;
-    --bg-3-level: #333;
-    --border: 1px solid rgba(255, 255, 255, 1)
+    --fg-color: #fafafa;
+    --bg-0-level: #111;
+    --bg-1-level: #222;
+    --bg-2-level: #333;
+    --bg-3-level: #444;
+    --border: 1px solid rgba(255, 255, 255, 0.1)
 }
 
 @media screen and (prefers-reduced-motion: reduce), (update: slow) {
@@ -141,7 +141,6 @@ a:hover {
     left: 0;
     width: 100%;
     height: 100%;
-    /* border:var(--border); */
     box-sizing: border-box;
     pointer-events: none
 }
@@ -250,23 +249,24 @@ a:hover {
 }
 
 .container-projects>* {
-    padding: 100px 50px;
+    padding: 100px 12px;
     text-align: center;
-    border: var(--border)
+    place-items: center;
+    margin: 18px;
+    border-radius: 21px;
 }
 
 .container-projects p {
-    font-size: 1.66rem
+    font-size: 1rem
 }
 
 .header-project {
     grid-area: header-project;
-    text-align: left;
-    padding: 20px;
-    height: 30vh;
-    width: 100vw;
-    background-image: linear-gradient(#eee 1px, transparent 1px),linear-gradient(to right, #eee 1px, #fff 1px);
-    background-size: 16px 16px
+    background: var(--bg-1-level);
+    padding: 200px 50px;
+    background-size: 16px 16px;
+    border-radius: 0;
+    margin: 0;
 }
 
 .dark .header-project {
@@ -337,23 +337,23 @@ a:hover {
 }
 
 .notejot:hover {
-    background: #ffff88
+    background: #816600
 }
 
 .dot-matrix:hover {
-    background: #88ddff
+    background: #00c09e
 }
 
 .emulsion:hover {
-    background: #88ff88
+    background: #007816
 }
 
 .khronos:hover {
-    background: #8888ff
+    background: #904db2
 }
 
 .colorway:hover {
-    background: #ff8888
+    background: #3742fa
 }
 
 .dark .notejot:hover,.dark .dot-matrix:hover,.dark .emulsion:hover,.dark .khronos:hover,.dark .colorway:hover {
@@ -402,29 +402,30 @@ a:hover {
 }
 
 .dark .quilter:hover,.dark .coin:hover,.dark .palaura:hover,.dark .yishu:hover,.dark .aesop:hover,.dark .beemy:hover,.dark .niu:hover,.dark .timetable:hover,.dark .rakugaki:hover,.dark .planitis:hover {
-    color: #000
+    color: #2f3542
 }
 
 .cash {
-    background: #00e640;
-    color: #333
+    background: #2ed573;
+    color: #2f3542
 }
 
 .cash:hover {
-    background: #93faa5
+    background: #7bed9f;
+    color: #2f3542
 }
 
 .merv:hover {
-    background: #00ffff;
-    color: #333
+    background: #75dec2;
+    color: #2f3542
 }
 
 .gh:hover {
-    background: #333333
+    background: #2f3542
 }
 
 .follow:hover {
-    background: #0000ff
+    background: #1e90ff
 }
 
 .download:hover {
@@ -511,12 +512,12 @@ a:hover {
 
 .theme-toggle #icon-moon {
     display: block;
-    color: #0088ff
+    color: #70a1ff
 }
 
 .theme-toggle #icon-sun {
     display: none;
-    color: #ff8800
+    color: #ffa502
 }
 
 .dark .theme-toggle #icon-moon {
