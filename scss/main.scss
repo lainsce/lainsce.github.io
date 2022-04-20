@@ -9,7 +9,7 @@
         --bg-1-level: #111;
         --bg-2-level: #222;
         --bg-3-level: #333;
-        --border: 1px solid rgba(255, 255, 255, 1);
+        --border: 1px solid rgba(255, 255, 255, 1)
     }
 }
 
@@ -21,18 +21,18 @@
         --bg-1-level: #eee;
         --bg-2-level: #ddd;
         --bg-3-level: #ccc;
-        --border: 1px solid rgba(0, 0, 0, 1);
+        --border: 1px solid rgba(0, 0, 0, 1)
     }
 }
 
 .light {
-    --accent-500: #000FBB;
-    --fg-color: #000;
+    --accent-500: #0088ff;
+    --fg-color: #222222;
     --bg-0-level: #fff;
     --bg-1-level: #eee;
     --bg-2-level: #ddd;
     --bg-3-level: #ccc;
-    --border: 1px solid rgba(0, 0, 0, 1);
+    --border: 1px solid #222222;
 }
 
 .dark {
@@ -42,41 +42,38 @@
     --bg-1-level: #111;
     --bg-2-level: #222;
     --bg-3-level: #333;
-    --border: 1px solid rgba(255, 255, 255, 1);
+    --border: 1px solid rgba(255, 255, 255, 1)
 }
 
 @media screen and (prefers-reduced-motion: reduce), (update: slow) {
     * {
         animation-duration: 0.001ms !important;
         animation-iteration-count: 1 !important;
-        transition-duration: 0.001ms !important;
+        transition-duration: 0.001ms !important
     }
 }
 
 body::-webkit-scrollbar {
-  width: 18px;               /* width of the entire scrollbar */
+    width: 18px
 }
 
 body::-webkit-scrollbar-track {
-  background: gray;
-  border-left: none;
+    background: gray;
+    border-left: none
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: black;
-  border: gray;
+    background-color: black;
+    border: gray
 }
 
 body {
-    cursor: url('../images/cursor.svg'), auto;	
 }
 
 a,button {
-    cursor: url('../images/hand.svg'), auto;	
 }
 
 p,h1,h2,h3,h4,h5,h6,code,pre,span {
-    cursor: url('../images/text.svg'), auto;	
 }
 
 html,body {
@@ -85,44 +82,55 @@ html,body {
     color: var(--fg-color);
     background: var(--bg-0-level);
     margin: 0;
-    font-family: sans-serif;
+    font-family: sans-serif
 }
 
-h1, h2, h3, h4, h5 {
-  margin: 3rem 0 1.38rem;
-  font-weight: 400;
-  line-height: 1.3;
+h1,h2,h3,h4,h5 {
+    margin: 3rem 0 1.38rem;
+    font-weight: 400;
+    line-height: 1.3
 }
 
 h1 {
-    font-size: 4.2rem;
-    margin-top: 10px;
+    font-size: 3rem;
+    margin-top: 10px
 }
-h2 {font-size: 3.157rem;}
 
-h3 {font-size: 2.369rem;}
+h2 {
+    font-size: 3.157rem
+}
 
-h4 {font-size: 1.777rem;}
+h3 {
+    font-size: 1.66rem;
+}
 
-h5 {font-size: 1.333rem;}
+h4 {
+    font-size: 1.777rem
+}
 
-small, .text_small {font-size: 0.75rem;}
+h5 {
+    font-size: 1rem;
+    margin: 1rem auto;
+}
+
+small,.text_small {
+    font-size: 0.75rem
+}
 
 .att {
-    text-decoration: var(--accent-500) wavy underline;
+    text-decoration: var(--accent-500) underline;
 }
 
 a {
-    color: var(--accent-500);
+    color: var(--fg-color);
     text-decoration: none;
     padding: 8px 20px;
-    border: var(--border);
-    background: var(--bg-0-level);
+    background: var(--bg-2-level);
+    border-radius: 12px;
 }
 
 a:hover {
     background: var(--accent-500);
-    border: var(--border);
     color: var(--bg-0-level);
 }
 
@@ -131,11 +139,11 @@ a:hover {
     position: fixed;
     top: 0;
     left: 0;
-    width:100%;
-    height:100%;
-    border: var(--border);
+    width: 100%;
+    height: 100%;
+    /* border:var(--border); */
     box-sizing: border-box;
-    pointer-events: none;
+    pointer-events: none
 }
 
 .id-square {
@@ -160,75 +168,75 @@ a:hover {
 .container {
     display: grid;
     overflow-x: hidden;
-    grid-template-columns: repeat(3,1fr);
+    overflow-y: hidden;
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 95vh 47vh 47vh 6vh;
     gap: 0 0;
     grid-auto-flow: row dense;
-    grid-template-areas: "header header header"
-                         "notejot emulsion dot-matrix"
-                         "khronos colorway others"
-                         "footer footer footer"
+    grid-template-areas: "header header header" "notejot emulsion dot-matrix" "khronos colorway others" "footer footer footer"
 }
 
 .container>* {
-    padding: 100px 50px;
+    padding: 100px 12px;
     text-align: center;
     place-items: center;
-    border: var(--border);
+    margin: 18px;
+    border-radius: 21px;
 }
 
 .container p {
-    font-size: 1.66rem
+    font-size: 1rem;
 }
 
 .header {
     grid-area: header;
-    background: var(--bg-0-level);
+    background: var(--bg-1-level);
     padding: 200px 50px;
-    background-image:  linear-gradient(#eee 1px, transparent 1px), linear-gradient(to right, #eee 1px, #ffffff 1px);
     background-size: 16px 16px;
+    border-radius: 0;
+    margin: 0;
 }
 
 .dark .header {
-    background: var(--bg-0-level);
+    background: var(--bg-0-level)
 }
 
 .notejot {
     grid-area: notejot;
-    background: var(--bg-1-level);
+    background: var(--bg-1-level)
 }
 
 .emulsion {
     grid-area: emulsion;
-    background: var(--bg-1-level);
+    background: var(--bg-1-level)
 }
 
 .dot-matrix {
     grid-area: dot-matrix;
-    background: var(--bg-1-level);
+    background: var(--bg-1-level)
 }
 
 .khronos {
     grid-area: khronos;
-    background: var(--bg-1-level);
+    background: var(--bg-1-level)
 }
 
 .colorway {
     grid-area: colorway;
-    background: var(--bg-1-level);
+    background: var(--bg-1-level)
 }
 
 .others {
     grid-area: others;
-    background: var(--bg-1-level);
+    background: var(--bg-1-level)
 }
 
 .footer {
     grid-area: footer;
     text-align: center;
     color: var(--fg-color);
-    background:  var(--bg-0-level);
-    padding: 20px;
+    background: var(--bg-0-level);
+    padding: 20px
 }
 
 .container-projects {
@@ -238,18 +246,13 @@ a:hover {
     grid-template-rows: 30vh 30vh 30vh 30vh 30vh 6vh;
     gap: 0 0;
     grid-auto-flow: row dense;
-    grid-template-areas: "header-project header-project header-project"
-                         "quilter coin palaura"
-                         "yishu beemy timetable"
-                         "aesop niu rakugaki"
-                         "planitis blank blank"
-                         "footer-project footer-project footer-project"
+    grid-template-areas: "header-project header-project header-project" "quilter coin palaura" "yishu beemy timetable" "aesop niu rakugaki" "planitis blank blank" "footer-project footer-project footer-project"
 }
 
 .container-projects>* {
     padding: 100px 50px;
     text-align: center;
-    border:  var(--border);
+    border: var(--border)
 }
 
 .container-projects p {
@@ -262,67 +265,67 @@ a:hover {
     padding: 20px;
     height: 30vh;
     width: 100vw;
-    background-image:  linear-gradient(#eee 1px, transparent 1px), linear-gradient(to right, #eee 1px, #ffffff 1px);
-    background-size: 16px 16px;
+    background-image: linear-gradient(#eee 1px, transparent 1px),linear-gradient(to right, #eee 1px, #fff 1px);
+    background-size: 16px 16px
 }
 
 .dark .header-project {
-    background: var(--bg-0-level);
+    background: var(--bg-0-level)
 }
 
 .quilter {
     grid-area: quilter;
-    background: var(--bg-1-level);
+    background: var(--bg-1-level)
 }
 
 .coin {
     grid-area: coin;
-    background: var(--bg-1-level);
+    background: var(--bg-1-level)
 }
 
 .palaura {
     grid-area: palaura;
-    background: var(--bg-1-level);
+    background: var(--bg-1-level)
 }
 
 .yishu {
     grid-area: yishu;
-    background: var(--bg-1-level);
+    background: var(--bg-1-level)
 }
 
 .beemy {
     grid-area: beemy;
-    background: var(--bg-1-level);
+    background: var(--bg-1-level)
 }
 
 .timetable {
     grid-area: timetable;
-    background: var(--bg-1-level);
+    background: var(--bg-1-level)
 }
 
 .aesop {
     grid-area: aesop;
-    background: var(--bg-1-level);
+    background: var(--bg-1-level)
 }
 
 .niu {
     grid-area: niu;
-    background: var(--bg-1-level);
+    background: var(--bg-1-level)
 }
 
 .rakugaki {
     grid-area: rakugaki;
-    background: var(--bg-1-level);
+    background: var(--bg-1-level)
 }
 
 .planitis {
     grid-area: planitis;
-    background: var(--bg-1-level);
+    background: var(--bg-1-level)
 }
 
 .blank {
     grid-area: blank;
-    background: var(--bg-1-level);
+    background: var(--bg-1-level)
 }
 
 .footer-project {
@@ -330,108 +333,113 @@ a:hover {
     text-align: center;
     color: var(--fg-color);
     background: var(--bg-0-level);
-    padding: 20px;
+    padding: 20px
 }
 
 .notejot:hover {
-    background: #ffff88;
-}
-.dot-matrix:hover {
-    background: #88ddff;
-}
-.emulsion:hover {
-    background: #88ff88;
-}
-.khronos:hover {
-    background: #8888ff;
-}
-.colorway:hover {
-    background: #ff8888;
+    background: #ffff88
 }
 
-.dark .notejot:hover,
-.dark .dot-matrix:hover,
-.dark .emulsion:hover,
-.dark .khronos:hover,
-.dark .colorway:hover {
-    color: #000;
+.dot-matrix:hover {
+    background: #88ddff
+}
+
+.emulsion:hover {
+    background: #88ff88
+}
+
+.khronos:hover {
+    background: #8888ff
+}
+
+.colorway:hover {
+    background: #ff8888
+}
+
+.dark .notejot:hover,.dark .dot-matrix:hover,.dark .emulsion:hover,.dark .khronos:hover,.dark .colorway:hover {
+    color: #000
 }
 
 .quilter:hover {
-    background: #ddddff;
-}
-.coin:hover {
-    background: #ddffdd;
-}
-.palaura:hover {
-    background: #ffdddd;
-}
-.yishu:hover {
-    background: #88ff88;
-}
-.aesop:hover {
-    background: #ffdd88;
-}
-.beemy:hover {
-    background: #ff8888;
-}
-.niu:hover {
-    background: #222222;
-    color: #75dec2;
-}
-.timetable:hover {
-    background: #0088ff;
-}
-.rakugaki:hover {
-    background: #888888;
-}
-.planitis:hover {
-    background: #ff8800;
+    background: #ddddff
 }
 
-.dark .quilter:hover,
-.dark .coin:hover,
-.dark .palaura:hover,
-.dark .yishu:hover,
-.dark .aesop:hover,
-.dark .beemy:hover,
-.dark .niu:hover,
-.dark .timetable:hover,
-.dark .rakugaki:hover,
-.dark .planitis:hover {
-    color: #000;
+.coin:hover {
+    background: #ddffdd
+}
+
+.palaura:hover {
+    background: #ffdddd
+}
+
+.yishu:hover {
+    background: #88ff88
+}
+
+.aesop:hover {
+    background: #ffdd88
+}
+
+.beemy:hover {
+    background: #ff8888
+}
+
+.niu:hover {
+    background: #222222;
+    color: #75dec2
+}
+
+.timetable:hover {
+    background: #0088ff
+}
+
+.rakugaki:hover {
+    background: #888888
+}
+
+.planitis:hover {
+    background: #ff8800
+}
+
+.dark .quilter:hover,.dark .coin:hover,.dark .palaura:hover,.dark .yishu:hover,.dark .aesop:hover,.dark .beemy:hover,.dark .niu:hover,.dark .timetable:hover,.dark .rakugaki:hover,.dark .planitis:hover {
+    color: #000
 }
 
 .cash {
     background: #00e640;
-    color: #333;
-}
-.cash:hover {
-    background: #93faa5;
-}
-.merv:hover {
-    background: #00ffff;
-    color: #333;
-}
-.gh:hover {
-    background: #333333;
-}
-.follow:hover {
-    background: #0000ff;
-}
-.download:hover {
-    color: var(--bg-0-level);
+    color: #333
 }
 
-@media screen and (prefers-reduced-motion:reduce),(update:slow) {
+.cash:hover {
+    background: #93faa5
+}
+
+.merv:hover {
+    background: #00ffff;
+    color: #333
+}
+
+.gh:hover {
+    background: #333333
+}
+
+.follow:hover {
+    background: #0000ff
+}
+
+.download:hover {
+    color: var(--bg-0-level)
+}
+
+@media screen and (prefers-reduced-motion: reduce), (update: slow) {
     * {
-        animation-duration: .001ms!important;
-        animation-iteration-count: 1!important;
-        transition-duration: .001ms!important
+        animation-duration: 0.001ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.001ms !important
     }
 }
 
-@media(max-width: 425px) {
+@media (max-width: 425px) {
     .container {
         display:grid;
         width: 100vw;
@@ -447,71 +455,76 @@ a:hover {
     .btn {
         padding: 5px 10px
     }
-  
+
     h1 {
-        font-size: 1.6rem;
+        font-size: 1.6rem
     }
+
     h2 {
-        font-size: 1.2rem;
+        font-size: 1.2rem
     }
+
     h3 {
-        font-size: 1rem;
+        font-size: 1rem
     }
+
     h4 {
-        font-size: 1rem;
+        font-size: 1rem
     }
+
     h5 {
-        font-size: 1rem;
+        font-size: 1rem
     }
 }
 
-@media(min-width: 426px) and (max-width:768px) {
+@media (min-width: 426px) and (max-width: 768px) {
     .container {
         display:grid;
-        grid-template-columns: repeat(3,minmax(163px,auto))
+        grid-template-columns: repeat(3, minmax(163px, auto))
     }
 }
 
 .theme-toggle {
     color: var(--fg-color);
-    border: var(--border);
-    background: var(--bg-1-level);
+    border: transparent;
+    background: var(--bg-2-level);
     position: fixed;
-    right: 0px;
-    top: 0px;
+    right: 18px;
+    top: 18px;
     width: 2.5rem;
     height: 2.5rem;
-    
-    &:hover {
-      background: var(--bg-2-level);
-    }
+    border-radius: 999px;
+}
+
+.theme-toggle:hover {
+    background: var(--bg-2-level)
 }
 
 .theme-toggle .icon {
     margin: 0;
     padding: 0;
     position: absolute;
-    right: .7rem;
-    top: .7rem;
-    transition: all .8s cubic-bezier(.23,1,.32,1);
+    right: 0.75rem;
+    top: .75rem;
+    transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1)
 }
 
 .theme-toggle #icon-moon {
     display: block;
-    color: #0088ff;
+    color: #0088ff
 }
 
 .theme-toggle #icon-sun {
     display: none;
-    color: #ff8800;
+    color: #ff8800
 }
 
 .dark .theme-toggle #icon-moon {
-    display: none;
+    display: none
 }
 
 .dark .theme-toggle #icon-sun {
-    display: block;
+    display: block
 }
 
 html {
