@@ -152,7 +152,7 @@ a:hover {
     overflow-x: hidden;
     overflow-y: hidden;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 95vh 11vh 47vh 47vh 6vh;
+    grid-template-rows: 95vh 11vh 38.5vh 38.5vh 6vh;
     gap: 0 0;
     grid-auto-flow: row dense;
     grid-template-areas: "header header header" "others others others" "notejot emulsion dot-matrix" "khronos colorway countdown" "footer footer footer"
@@ -230,7 +230,7 @@ a:hover {
     text-align: center;
     color: var(--fg-color);
     background: var(--bg-0-level);
-    padding: 20px
+    padding: 18px;
 }
 
 .container-projects {
