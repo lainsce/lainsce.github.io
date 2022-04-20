@@ -149,7 +149,7 @@ a:hover {
     grid-template-rows: 95vh 47vh 47vh 6vh;
     gap: 0 0;
     grid-auto-flow: row dense;
-    grid-template-areas: "header header header" "notejot emulsion dot-matrix" "khronos colorway others" "footer footer footer"
+    grid-template-areas: "header header header" "others other others" "notejot emulsion dot-matrix" "khronos colorway countdown" "footer footer footer"
 }
 
 .container>* {
@@ -158,6 +158,10 @@ a:hover {
     place-items: center;
     margin: 18px;
     border-radius: 21px
+}
+
+.dark .container>*:hover {
+    color: var(--bg-0-level)
 }
 
 .container p {
@@ -204,7 +208,9 @@ a:hover {
 
 .others {
     grid-area: others;
-    background: var(--bg-1-level)
+    background: var(--bg-0-level);
+    border-radius: 0;
+    margin: 0
 }
 
 .footer {
@@ -334,6 +340,10 @@ a:hover {
     background: linear-gradient(135deg, #FFF, mix(#FFF, #3742fa, 80%));
 }
 
+.countdown:hover {
+    background: linear-gradient(135deg, #FFF, mix(#FFF, #9a4600, 80%));
+}
+
 .dark .notejot:hover {
     background: linear-gradient(135deg, #111, mix(#111, #816600, 80%));
 }
@@ -352,6 +362,10 @@ a:hover {
 
 .dark .colorway:hover {
     background: linear-gradient(135deg, #111, mix(#111, #3742fa, 80%));
+}
+
+.dark .countdown:hover {
+    background: linear-gradient(135deg, #111, mix(#111, #9a4600, 80%));
 }
 
 .dark .notejot:hover,.dark .dot-matrix:hover,.dark .emulsion:hover,.dark .khronos:hover,.dark .colorway:hover {
