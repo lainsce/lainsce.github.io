@@ -315,23 +315,43 @@ a:hover {
 }
 
 .notejot:hover {
-    background: linear-gradient(135deg, var(--bg-0-level), mix(#FFF, #816600, 0.2));
+    background: linear-gradient(135deg, #FFF, mix(#FFF, #816600, 0.2));
 }
 
 .dot-matrix:hover {
-    background: linear-gradient(135deg, var(--bg-0-level), mix(#FFF, #75dec2, 0.2));
+    background: linear-gradient(135deg, #FFF, mix(#FFF, #75dec2, 0.2));
 }
 
 .emulsion:hover {
-    background: linear-gradient(135deg, var(--bg-0-level), mix(#FFF, #007816, 0.2));
+    background: linear-gradient(135deg, #FFF, mix(#FFF, #007816, 0.2));
 }
 
 .khronos:hover {
-    background: linear-gradient(135deg, var(--bg-0-level), mix(#FFF, #904db2, 0.2));
+    background: linear-gradient(135deg, #FFF, mix(#FFF, #904db2, 0.2));
 }
 
 .colorway:hover {
-    background: linear-gradient(135deg, var(--bg-0-level), mix(#FFF, #3742fa, 0.2));
+    background: linear-gradient(135deg, #FFF, mix(#FFF, #3742fa, 0.2));
+}
+
+.dark .notejot:hover {
+    background: linear-gradient(135deg, #111, mix(#111, #816600, 0.2));
+}
+
+.dark .dot-matrix:hover {
+    background: linear-gradient(135deg, #111, mix(#111, #75dec2, 0.2));
+}
+
+.dark .emulsion:hover {
+    background: linear-gradient(135deg, #111, mix(#111, #007816, 0.2));
+}
+
+.dark .khronos:hover {
+    background: linear-gradient(135deg, #111, mix(#111, #904db2, 0.2));
+}
+
+.dark .colorway:hover {
+    background: linear-gradient(135deg, #111, mix(#111, #3742fa, 0.2));
 }
 
 .dark .notejot:hover,.dark .dot-matrix:hover,.dark .emulsion:hover,.dark .khronos:hover,.dark .colorway:hover {
