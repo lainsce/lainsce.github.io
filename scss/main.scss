@@ -3,7 +3,7 @@
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --accent-500: #0091F3;
+        --accent-500: #1e90ff;
         --fg-color: #fafafa;
         --bg-0-level: #111;
         --bg-1-level: #222;
@@ -15,7 +15,7 @@
 
 @media (prefers-color-scheme: light) {
     :root {
-        --accent-500: #0088ff;
+        --accent-500: #70a1ff;
         --fg-color: #222;
         --bg-0-level: #fafafa;
         --bg-1-level: #ebebeb;
@@ -26,17 +26,17 @@
 }
 
 .light {
-    --accent-500: #0088ff;
+    --accent-500: #70a1ff;
     --fg-color: #222;
     --bg-0-level: #fafafa;
     --bg-1-level: #ebebeb;
     --bg-2-level: #ddd;
     --bg-3-level: #ccc;
-    --border: 1px solid #222222;
+    --border: 1px solid #222222
 }
 
 .dark {
-    --accent-500: #0091F3;
+    --accent-500: #1e90ff;
     --fg-color: #fafafa;
     --bg-0-level: #111;
     --bg-1-level: #222;
@@ -51,29 +51,6 @@
         animation-iteration-count: 1 !important;
         transition-duration: 0.001ms !important
     }
-}
-
-body::-webkit-scrollbar {
-    width: 18px
-}
-
-body::-webkit-scrollbar-track {
-    background: gray;
-    border-left: none
-}
-
-body::-webkit-scrollbar-thumb {
-    background-color: black;
-    border: gray
-}
-
-body {
-}
-
-a,button {
-}
-
-p,h1,h2,h3,h4,h5,h6,code,pre,span {
 }
 
 html,body {
@@ -101,7 +78,7 @@ h2 {
 }
 
 h3 {
-    font-size: 1.66rem;
+    font-size: 1.66rem
 }
 
 h4 {
@@ -110,7 +87,7 @@ h4 {
 
 h5 {
     font-size: 1rem;
-    margin: 1rem auto;
+    margin: 1rem auto
 }
 
 small,.text_small {
@@ -118,7 +95,7 @@ small,.text_small {
 }
 
 .att {
-    text-decoration: var(--accent-500) underline;
+    text-decoration: var(--accent-500) underline
 }
 
 a {
@@ -126,12 +103,12 @@ a {
     text-decoration: none;
     padding: 8px 20px;
     background: var(--bg-2-level);
-    border-radius: 12px;
+    border-radius: 12px
 }
 
 a:hover {
     background: var(--accent-500);
-    color: var(--bg-0-level);
+    color: var(--bg-0-level)
 }
 
 .frame {
@@ -180,11 +157,11 @@ a:hover {
     text-align: center;
     place-items: center;
     margin: 18px;
-    border-radius: 21px;
+    border-radius: 21px
 }
 
 .container p {
-    font-size: 1rem;
+    font-size: 1rem
 }
 
 .header {
@@ -193,7 +170,7 @@ a:hover {
     padding: 200px 50px;
     background-size: 16px 16px;
     border-radius: 0;
-    margin: 0;
+    margin: 0
 }
 
 .dark .header {
@@ -241,6 +218,7 @@ a:hover {
 .container-projects {
     display: grid;
     overflow-x: hidden;
+    overflow-y: hidden;
     grid-template-columns: repeat(3, 33vw);
     grid-template-rows: 30vh 30vh 30vh 30vh 30vh 6vh;
     gap: 0 0;
@@ -249,11 +227,11 @@ a:hover {
 }
 
 .container-projects>* {
-    padding: 100px 12px;
+    padding: 50px 12px;
     text-align: center;
     place-items: center;
     margin: 18px;
-    border-radius: 21px;
+    border-radius: 21px
 }
 
 .container-projects p {
@@ -263,10 +241,10 @@ a:hover {
 .header-project {
     grid-area: header-project;
     background: var(--bg-1-level);
-    padding: 200px 50px;
     background-size: 16px 16px;
     border-radius: 0;
     margin: 0;
+    text-align: left;
 }
 
 .dark .header-project {
@@ -361,27 +339,27 @@ a:hover {
 }
 
 .quilter:hover {
-    background: #ddddff
+    background: #ddf
 }
 
 .coin:hover {
-    background: #ddffdd
+    background: #dfd
 }
 
 .palaura:hover {
-    background: #ffdddd
+    background: #fdd
 }
 
 .yishu:hover {
-    background: #88ff88
+    background: #8f8
 }
 
 .aesop:hover {
-    background: #ffdd88
+    background: #fd8
 }
 
 .beemy:hover {
-    background: #ff8888
+    background: #f88
 }
 
 .niu:hover {
@@ -390,15 +368,15 @@ a:hover {
 }
 
 .timetable:hover {
-    background: #0088ff
+    background: #08f
 }
 
 .rakugaki:hover {
-    background: #888888
+    background: #888
 }
 
 .planitis:hover {
-    background: #ff8800
+    background: #f80
 }
 
 .dark .quilter:hover,.dark .coin:hover,.dark .palaura:hover,.dark .yishu:hover,.dark .aesop:hover,.dark .beemy:hover,.dark .niu:hover,.dark .timetable:hover,.dark .rakugaki:hover,.dark .planitis:hover {
@@ -494,7 +472,7 @@ a:hover {
     top: 18px;
     width: 2.5rem;
     height: 2.5rem;
-    border-radius: 999px;
+    border-radius: 999px
 }
 
 .theme-toggle:hover {
