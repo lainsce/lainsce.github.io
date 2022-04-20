@@ -315,68 +315,27 @@ a:hover {
 }
 
 .notejot:hover {
-    background: #816600
+    background: linear-gradient(135deg, var(--bg-0-level), mix(var(--bg-0-level), #816600, 0.2));
 }
 
 .dot-matrix:hover {
-    background: #00c09e
+    background: linear-gradient(135deg, var(--bg-0-level), mix(var(--bg-0-level), #75dec2, 0.2));
 }
 
 .emulsion:hover {
-    background: #007816
+    background: linear-gradient(135deg, var(--bg-0-level), mix(var(--bg-0-level), #007816, 0.2));
 }
 
 .khronos:hover {
-    background: #904db2
+    background: linear-gradient(135deg, var(--bg-0-level), mix(var(--bg-0-level), #904db2, 0.2));
 }
 
 .colorway:hover {
-    background: #3742fa
+    background: linear-gradient(135deg, var(--bg-0-level), mix(var(--bg-0-level), #3742fa, 0.2));
 }
 
 .dark .notejot:hover,.dark .dot-matrix:hover,.dark .emulsion:hover,.dark .khronos:hover,.dark .colorway:hover {
-    color: #000
-}
-
-.quilter:hover {
-    background: #ddf
-}
-
-.coin:hover {
-    background: #dfd
-}
-
-.palaura:hover {
-    background: #fdd
-}
-
-.yishu:hover {
-    background: #8f8
-}
-
-.aesop:hover {
-    background: #fd8
-}
-
-.beemy:hover {
-    background: #f88
-}
-
-.niu:hover {
-    background: #222222;
-    color: #75dec2
-}
-
-.timetable:hover {
-    background: #08f
-}
-
-.rakugaki:hover {
-    background: #888
-}
-
-.planitis:hover {
-    background: #f80
+    color: #2f3542
 }
 
 .dark .quilter:hover,.dark .coin:hover,.dark .palaura:hover,.dark .yishu:hover,.dark .aesop:hover,.dark .beemy:hover,.dark .niu:hover,.dark .timetable:hover,.dark .rakugaki:hover,.dark .planitis:hover {
