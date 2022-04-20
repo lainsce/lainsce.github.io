@@ -206,6 +206,11 @@ a:hover {
     background: var(--bg-1-level)
 }
 
+.countdown {
+    grid-area: countdown;
+    background: var(--bg-1-level)
+}
+
 .others {
     grid-area: others;
     background: var(--bg-0-level);
