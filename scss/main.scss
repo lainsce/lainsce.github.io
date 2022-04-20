@@ -146,10 +146,10 @@ a:hover {
     overflow-x: hidden;
     overflow-y: hidden;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 95vh 47vh 47vh 6vh;
+    grid-template-rows: 95vh 18.8vh 47vh 47vh 6vh;
     gap: 0 0;
     grid-auto-flow: row dense;
-    grid-template-areas: "header header header" "others other others" "notejot emulsion dot-matrix" "khronos colorway countdown" "footer footer footer"
+    grid-template-areas: "header header header" "others others others" "notejot emulsion dot-matrix" "khronos colorway countdown" "footer footer footer"
 }
 
 .container>* {
@@ -214,6 +214,7 @@ a:hover {
 .others {
     grid-area: others;
     background: var(--bg-0-level);
+    padding: 18px 18px;
     border-radius: 0;
     margin: 0
 }
