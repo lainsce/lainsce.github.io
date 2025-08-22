@@ -8,18 +8,26 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
   <link rel="shortcut icon" href="/favicons/favicon.ico">
-  <title>404 Page Not Found | Lains</title>
+  <title>404 Page Not Found | LNS</title>
 </head>
-<body class="light">
-  <main>
-    <div style="margin: 0 auto; padding: 30px; border-radius: 8px; width: 80ch;">
-      <img width="64" style="margin: 10px; float: right; border-radius: 9999px;" src="images/LNS_BW.png">
-      <h2>Oh no! Seems that you did a wrong turn!</h2>
-      <h3>It can be fixed though! <i>Whew...</i></h3>
-      <p>Click on the following link:</p>
-      <a href="/">Here</a>
+<body>
+    <div class="error-container">
+        <div class="error-panel">
+            <div class="avatar">■</div>
+            <div class="error-code">404</div>
+            <h1 class="error-title">Resource Not Found</h1>
+            <p class="error-message">
+                The requested resource could not be located on this server. 
+                The path may have been moved or removed from the system.
+            </p>
+            <div class="error-actions">
+                <a href="/" class="error-link primary">Return Home</a>
+                <a href="/apps" class="error-link">Browse Apps</a>
+                <a href="/contact" class="error-link">Contact</a>
+            </div>
+        </div>
     </div>
-  </main>
 </body>
 <link rel="stylesheet" href="../scss/main.css">
 </html>
+
