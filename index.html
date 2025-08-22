@@ -2,50 +2,128 @@
 ---
 
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="en">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <meta name="description" content="HOME // LNS" />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://lainsce.us/" />
-  <meta property="og:title" content="Lains" />
-  <meta property="og:description" content="HOME // LNS" />
-  <meta property="og:image" content="https://lainsce.us/images/LNS_BW.png" />
-  <link rel="shortcut icon" href="/favicons/favicon.ico">
-  <title>HOME // LNS</title>
-  <style>
-    body {
-      max-width: 1500px
-    }
-    #grid {
-      grid-template-columns: 1fr 1fr 1fr 1fr;
-      grid-template-rows: 1fr 1fr 1fr 1fr;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home — LNS</title>
+    <link rel="stylesheet" href="main.css">
 </head>
-<body class="hf p3 p5-l cn">
-  <header class="pv5">
-    <h1 class="mb3 f1 ac upc tk">LNS &ndash; Welcome to the next level</h1>
-    <h3 class="mb3 f3 ac tk">Heyo, I'm Lains! Raised by the 90's, I love minimalism.</h3>
-    <h5 class="mb3 f5 ac tk">I enjoy talking about design, coding and have an eye for perfection.</h5>
-    <h5 class="mb3 f5 ac tk">I live in the post-people world of today. WORK&copy; BUY&copy; CONSUME&copy; DIE.</h5>
-    <div class="mb3 ac">
-      <a class="bn" rel="me" href="https://merveilles.town/@lains"><span>Merveilles</span></a>
-      <a class="bn" rel="me" href="https://fosstodon.org/@lainsdev"><span>Mastodon</span></a>
-      <a class="bn" href="https://github.com/lainsce"><span>GitHub</span></a>
+<body>
+    <div class="container">
+        <nav class="top-nav">
+            <a href="index.html" class="nav-tab active">HOME</a>
+            <a href="https://github.com/lainsce" class="nav-tab">GITHUB</a>
+            <a href="https://www.patreon.com/lainsce" class="nav-tab support">SUPPORT</a>
+            <a href="https://fyralabs.com" class="nav-tab fyra">FYRA</a>
+        </nav>
+
+        <h1 class="main-title">LAINS</h1>
+
+        <section class="hero-layout">
+            <div class="hero-content">
+                <h2 class="hero-title">UI/UX Designer & App Developer</h2>
+                <p class="hero-subtitle">Linux application developer and designer pioneering <span class="tech-emphasis">modern UI experiences</span> with <span class="org-highlight">Fyra Labs</span></p>
+                
+                <p class="hero-description">
+                    Applications that solve everyday problems with intentional design. Functionality over complexity, embracing minimalism as a core principle. Currently working at <span class="org-highlight">Fyra Labs</span> developing <span class="tech-emphasis">next-generation UI frameworks</span> and open-source tools for <span class="tech-emphasis">the Linux ecosystem</span>.
+                </p>
+
+                <div class="hero-focus">Current Focus Areas:</div>
+                <div class="hero-focus"><span class="tech-emphasis">Libhelium Design & Applications</span></div>
+                <div class="hero-focus tech-faded">GNOME Desktop Integration</div>
+                <div class="hero-focus">Vala Programming Language</div>
+                <div class="hero-focus"><span class="support-highlight">Open Source Design & Development ■ Support on Patreon</span></div>
+            </div>
+        </section>
+
+        <section class="work-grid">
+            <article class="work-card">
+                <div class="work-preview">■</div>
+                <div class="work-info">
+                    <h3 class="work-title">Notejot</h3>
+                    <p class="work-type">Notes • <span class="tech-emphasis">Libhelium</span></p>
+                    <p class="work-description">A clean notes application that captures ideas and organizes thoughts without distractions.</p>
+                </div>
+            </article>
+            
+            <article class="work-card">
+                <div class="work-preview">■</div>
+                <div class="work-info">
+                    <h3 class="work-title">Khronos</h3>
+                    <p class="work-type">Time Tracking • <span class="tech-emphasis">Libhelium</span></p>
+                    <p class="work-description">Tracks project time with intelligent notifications for extended work sessions and seamless task logging.</p>
+                </div>
+            </article>
+            
+            <article class="work-card">
+                <div class="work-preview">■</div>
+                <div class="work-info">
+                    <h3 class="work-title">Colorway</h3>
+                    <p class="work-type">Design Tool • <span class="tech-emphasis">Libhelium</span></p>
+                    <p class="work-description">Generates scientifically-grounded color harmonies and pairings based on color theory principles.</p>
+                </div>
+            </article>
+            
+            <article class="work-card">
+                <div class="work-preview">■</div>
+                <div class="work-info">
+                    <h3 class="work-title">Countdown</h3>
+                    <p class="work-type">Event Tracking • <span class="tech-faded">Libadwaita</span></p>
+                    <p class="work-description">Monitors important dates with countdown and elapsed time tracking for deadlines and milestones.</p>
+                </div>
+            </article>
+
+            <article class="work-card">
+                <div class="work-preview">■</div>
+                <div class="work-info">
+                    <h3 class="work-title">Dot Matrix</h3>
+                    <p class="work-type">Creative Tool • <span class="tech-emphasis">Libhelium</span></p>
+                    <p class="work-description">Explores typography and character design through experimental glyph creation and font development.</p>
+                </div>
+            </article>
+
+            <article class="work-card">
+                <div class="work-preview">■</div>
+                <div class="work-info">
+                    <h3 class="work-title">Emulsion</h3>
+                    <p class="work-type">Palette Manager • <span class="tech-faded">Libadwaita</span></p>
+                    <p class="work-description">Organizes and refines color palettes with precision editing tools for complex color systems.</p>
+                </div>
+            </article>
+        </section>
+
+        <section class="philosophy-section">
+            <div class="philosophy-panel">
+                <h3 class="philosophy-title">Development Philosophy</h3>
+                <p class="philosophy-content">
+                    Software should feel like an extension of thought, not an obstacle to it. I'm interested in the emotional resonance between person and interface. Tools can understand and respond to human rhythms rather than forcing adaptation to rigid systems. Working with <span class="org-highlight">Fyra Labs</span>, I'm exploring <span class="tech-emphasis">interfaces that breathe with their users</span>, moving beyond <span class="tech-faded">traditional user-centric design</span> toward something more intimate and intuitive.
+                </p>
+            </div>
+        </section>
+
+        <section class="contact-layout">
+            <div class="contact-panel">
+                <h3 class="contact-title">Developer Information</h3>
+                
+                <div class="contact-method">
+                    GitHub: <a href="https://github.com/lainsce" class="contact-link">@lainsce</a>
+                </div>
+                <div class="contact-method">
+                    Website: <a href="https://lainsce.us" class="contact-link">lainsce.us</a>
+                </div>
+                <div class="contact-method">
+                    Support: <a href="https://www.patreon.com/lainsce" class="contact-link active-link">Patreon ■ Active</a>
+                </div>
+                <div class="contact-method">
+                    Organization: <a href="https://fyralabs.com" class="contact-link active-link">Fyra Labs</a>
+                </div>
+            </div>
+        </section>
     </div>
-  </header>
 
-  <div id="grid" class="mb5 g grg3 gcg3">
-    <div><p><span class="mb3 f5 ac tk">Notejot</span><br><br>Jot your ideas in a simple notes app.</p></div>
-    <div><p><span class="mb3 f5 ac tk">Khronos</span><br><br>Track each task's time and log 'em.</p></div>
-    <div><p><span class="mb3 f5 ac tk">Colorway</span><br><br>Generate color pairings scientifically.</p></div>
-    <div><p><span class="mb3 f5 ac tk">Countdown</span><br><br>Track events until they happen or since they happened.</p></div>
-  </div>
-
-  <footer class="pv5">
-    <p class="f6 ac">&copy; 2017&ndash;2024 LNS</p>
-  </footer>
-  <link rel="stylesheet" href="scss/main.css">
+    <div class="bottom-bar">
+        <div class="bottom-text">Active Development • 6+ Apps Published • 100K+ Downloads • Accepting Sponsors</div>
+    </div>
 </body>
 </html>
