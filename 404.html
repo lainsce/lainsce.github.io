@@ -1,34 +1,33 @@
----
----
-
-<!DOCTYPE html>
-<html lang="en-us">
+<!doctype html>
+<html lang="en">
 <head>
-  <style>html{visibility: hidden;opacity:0;}</style>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
-  <link rel="shortcut icon" href="/favicons/favicon.ico">
-  <title>404 Page Not Found | LNS</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#F2F2F2">
+    <link rel="shortcut icon" href="/favicons/favicon.ico">
+    <link rel="stylesheet" href="/scss/main.css">
+    <title>404 — Lainsce</title>
 </head>
-<body>
-    <div class="error-container">
-        <div class="error-panel">
-            <div class="avatar">■</div>
-            <div class="error-code">404</div>
-            <h1 class="error-title">Resource Not Found</h1>
-            <p class="error-message">
-                The requested resource could not be located on this server. 
-                The path may have been moved or removed from the system.
-            </p>
-            <div class="error-actions">
-                <a href="/" class="error-link primary">Return Home</a>
-                <a href="/apps" class="error-link">Browse Apps</a>
-                <a href="/contact" class="error-link">Contact</a>
+<body class="error-page">
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <main class="error-shell" id="main-content">
+        <header class="site-header">
+            <div class="brand" aria-label="Lainsce home">
+                <span class="brand-mark" aria-hidden="true"><img src="/images/LNS_BW.png" alt=""></span>
+                <span class="brand-name">lainsce</span>
             </div>
-        </div>
-    </div>
+            <span class="site-copyright">© 2026</span>
+        </header>
+
+        <section class="error-panel" aria-labelledby="error-title">
+            <p class="eyebrow"><span class="eyebrow-index">404</span> Lost in the workspace</p>
+            <h1 id="error-title">That page<br><em>isn't here.</em></h1>
+            <p>The address may have changed, or this little corner of the site has not been built yet.</p>
+            <div class="error-actions">
+                <a class="button button-primary" href="/">Return home <span aria-hidden="true">↗</span></a>
+                <a class="text-link" href="https://github.com/lainsce?tab=repositories" target="_blank" rel="noreferrer">Browse the repo <span aria-hidden="true">↗</span></a>
+            </div>
+        </section>
+    </main>
 </body>
-<link rel="stylesheet" href="scss/main.css">
 </html>
-
-
