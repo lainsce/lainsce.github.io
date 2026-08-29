@@ -9,6 +9,7 @@
     <meta property="og:description" content="Independent designer and developer building considered desktop software.">
     <meta property="og:type" content="website">
     <link rel="shortcut icon" href="/favicons/favicon.ico">
+    <script src="/scripts/theme.js"></script>
     <link rel="stylesheet" href="/scss/main.css">
     <title>Lainsce — interface design for everyday tools</title>
 </head>
@@ -21,7 +22,22 @@
                 <span class="brand-mark" aria-hidden="true"><img src="/images/LNS_BW.png" alt=""></span>
                 <span class="brand-name">lainsce</span>
             </a>
-            <span class="site-copyright">© 2026</span>
+            <div class="header-meta" role="group" aria-label="Display settings">
+                <button class="contrast-toggle" id="contrast-toggle" type="button" aria-pressed="false" aria-label="Enable high contrast mode">
+                    <span class="contrast-toggle-mark" aria-hidden="true">HC</span>
+                    <span class="contrast-toggle-label">High contrast</span>
+                </button>
+                <label class="theme-picker">
+                    <span class="sr-only">Color theme</span>
+                    <select id="theme-picker" name="theme">
+                        <option value="system">System</option>
+                        <option value="light">Light</option>
+                        <option value="dark">Dark</option>
+                    </select>
+                    <span class="theme-picker-chevron" aria-hidden="true"></span>
+                </label>
+                <span class="site-copyright">© 2026</span>
+            </div>
         </header>
 
         <main id="main-content">
