@@ -64,6 +64,19 @@
   --space-16: 64px;
   --space-20: 80px;
   --space-24: 96px;
+  /*
+   * Nuul typography roles. Rem units keep the same base scale while
+   * honoring browser text-size preferences and page zoom.
+   */
+  --type-big-display: 2.625rem;
+  --type-display: 2rem;
+  --type-view-title: 1.75rem;
+  --type-view-subtitle: 1.5rem;
+  --type-content-block-title: 1.125rem;
+  --type-content-block-subtitle: 1rem;
+  --type-body: 0.875rem;
+  --type-caption: 0.75rem;
+  --type-micro: 0.5625rem;
   --control-height: 38px;
   --field-height: 36px;
   --symbol-size: 22px;
@@ -243,7 +256,7 @@ body {
   background: var(--workspace);
   color: var(--ink);
   font-family: "Geist", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  font-size: 16px;
+  font-size: var(--type-body);
   line-height: 1.5;
   font-synthesis: weight;
   overflow-x: hidden;
@@ -289,7 +302,7 @@ img {
   background: var(--ink);
   color: var(--ink-inverse);
   font-family: "Geist Mono", monospace;
-  font-size: 11px;
+  font-size: var(--type-body);
   text-decoration: none;
   transform: translateY(-160%);
   transition: transform 180ms ease;
@@ -319,7 +332,7 @@ img {
 .site-copyright {
   color: var(--ink-faint);
   font-family: "Geist Mono", monospace;
-  font-size: 10px;
+  font-size: var(--type-micro);
   letter-spacing: 0.045em;
   white-space: nowrap;
 }
@@ -339,7 +352,8 @@ img {
   background: var(--surface);
   color: var(--ink-faint);
   font-family: "Geist Mono", monospace;
-  font-size: 10px;
+  font-size: var(--type-caption);
+  font-weight: 600;
   letter-spacing: 0.055em;
   line-height: 1;
   text-transform: uppercase;
@@ -376,8 +390,8 @@ img {
   height: 17px;
   place-items: center;
   border: 1px solid currentColor;
-  font-size: 8px;
-  font-weight: 700;
+  font-size: var(--type-micro);
+  font-weight: 400;
   letter-spacing: -0.05em;
 }
 
@@ -447,7 +461,7 @@ img {
   min-height: var(--control-height);
   padding-right: var(--space-3);
   color: var(--ink);
-  font-size: 16px;
+  font-size: var(--type-content-block-subtitle);
   font-weight: 600;
   letter-spacing: -0.015em;
   text-decoration: none;
@@ -482,7 +496,8 @@ img {
   border: 1px solid transparent;
   border-radius: var(--radius-control);
   font-family: "Geist Mono", monospace;
-  font-size: 11px;
+  font-size: var(--type-caption);
+  font-weight: 600;
   letter-spacing: 0.055em;
   line-height: 1;
   text-decoration: none;
@@ -557,7 +572,8 @@ img {
   margin: 0;
   color: var(--ink-faint);
   font-family: "Geist Mono", monospace;
-  font-size: 10px;
+  font-size: var(--type-caption);
+  font-weight: 600;
   letter-spacing: 0.1em;
   line-height: 1.3;
   text-transform: uppercase;
@@ -578,7 +594,8 @@ img {
   border: 1px solid var(--stroke-strong);
   border-radius: var(--radius-control);
   color: var(--ink);
-  font-size: 10px;
+  font-size: var(--type-micro);
+  font-weight: 400;
   letter-spacing: 0;
 }
 
@@ -603,8 +620,8 @@ h3 {
 .hero h1 {
   max-width: 840px;
   margin: var(--space-6) 0 var(--space-6);
-  font-size: clamp(3rem, 4.3vw, 4rem);
-  font-weight: 200;
+  font-size: var(--type-display);
+  font-weight: 400;
   letter-spacing: -0.045em;
   line-height: 0.88;
 }
@@ -635,7 +652,8 @@ h3 {
   max-width: 510px;
   margin-bottom: var(--space-8);
   color: var(--ink-subtle);
-  font-size: clamp(1.1rem, 2.2vw, 1.4rem);
+  font-size: var(--type-view-subtitle);
+  font-weight: 400;
   letter-spacing: -0.012em;
   line-height: 1.35;
   text-wrap: pretty;
@@ -673,7 +691,7 @@ h3 {
   display: inline-flex;
   align-items: center;
   color: var(--accent);
-  font-size: 22px;
+  font-size: var(--type-view-subtitle);
   line-height: 1;
 }
 
@@ -684,7 +702,7 @@ h3 {
   gap: 7px;
   color: var(--ink);
   font-family: "Geist Mono", monospace;
-  font-size: 11px;
+  font-size: var(--type-caption);
   letter-spacing: 0.04em;
   line-height: 1.4;
   text-decoration: none;
@@ -791,22 +809,23 @@ h3 {
 
 .journey-copy strong {
   color: var(--ink);
-  font-size: 13px;
-  font-weight: 500;
+  font-size: var(--type-body);
+  font-weight: 600;
   letter-spacing: -0.01em;
   line-height: 1.3;
 }
 
 .journey-copy span {
   color: var(--ink-subtle);
-  font-size: 12px;
+  font-size: var(--type-body);
   line-height: 1.4;
 }
 
 .journey-copy .journey-path {
   color: var(--ink);
   font-family: "Geist Mono", monospace;
-  font-size: 11px;
+  font-size: var(--type-caption);
+  font-weight: 600;
   letter-spacing: 0.035em;
   text-transform: uppercase;
 }
@@ -831,8 +850,8 @@ h3 {
 .section-heading h2 {
   max-width: 760px;
   margin: 0 0 var(--space-3);
-  font-size: 24px;
-  font-weight: 200;
+  font-size: var(--type-view-title);
+  font-weight: 300;
   letter-spacing: -0.025em;
   line-height: 1.1;
 }
@@ -841,7 +860,7 @@ h3 {
   max-width: 520px;
   margin-bottom: 0;
   color: var(--ink-subtle);
-  font-size: 16px;
+  font-size: var(--type-content-block-subtitle);
   line-height: 1.5;
 }
 
@@ -908,8 +927,8 @@ h3 {
 .project-topline h3 {
   margin: 0;
   color: var(--ink);
-  font-size: 18px;
-  font-weight: 500;
+  font-size: var(--type-content-block-title);
+  font-weight: 600;
   letter-spacing: -0.02em;
 }
 
@@ -925,7 +944,7 @@ h3 {
 
 .project-arrow {
   color: var(--ink-faint);
-  font-size: 18px;
+  font-size: var(--type-content-block-title);
   transition: color 180ms ease, transform 220ms var(--ease-spring);
 }
 
@@ -938,7 +957,8 @@ h3 {
   margin: 0;
   color: var(--ink-faint);
   font-family: "Geist Mono", monospace;
-  font-size: 10px;
+  font-size: var(--type-caption);
+  font-weight: 600;
   letter-spacing: 0.075em;
   text-transform: uppercase;
 }
@@ -952,7 +972,7 @@ h3 {
   max-width: 40ch;
   margin: var(--space-3) 0 0;
   color: var(--ink-subtle);
-  font-size: 14px;
+  font-size: var(--type-body);
   line-height: 1.55;
 }
 
@@ -968,8 +988,8 @@ h3 {
 
 .closing-note h2 {
   margin: var(--space-8) 0 var(--space-4);
-  font-size: 24px;
-  font-weight: 200;
+  font-size: var(--type-view-title);
+  font-weight: 300;
   letter-spacing: -0.025em;
   line-height: 1.1;
 }
@@ -978,7 +998,7 @@ h3 {
   max-width: 44ch;
   margin-bottom: 0;
   color: var(--ink-subtle);
-  font-size: 14px;
+  font-size: var(--type-body);
   line-height: 1.5;
 }
 
@@ -1083,8 +1103,8 @@ h3 {
 
 .error-panel h1 {
   margin: var(--space-8) 0 var(--space-6);
-  font-size: clamp(4rem, 10vw, 8.5rem);
-  font-weight: 200;
+  font-size: var(--type-display);
+  font-weight: 400;
   letter-spacing: -0.05em;
   line-height: 0.84;
 }
@@ -1112,7 +1132,7 @@ h3 {
   max-width: 42ch;
   margin-bottom: var(--space-8);
   color: var(--ink-subtle);
-  font-size: 16px;
+  font-size: var(--type-content-block-subtitle);
 }
 
 .error-actions {
@@ -1203,7 +1223,7 @@ button:focus-visible {
   .brand {
     gap: 8px;
     padding-right: 4px;
-    font-size: 14px;
+    font-size: var(--type-content-block-subtitle);
   }
   .header-meta {
     gap: 4px;
@@ -1245,14 +1265,14 @@ button:focus-visible {
   }
   .hero h1 {
     margin-top: var(--space-6);
-    font-size: clamp(2.75rem, 13vw, 4rem);
+    font-size: var(--type-display);
     letter-spacing: -0.04em;
   }
   .hero h1 em {
     white-space: normal;
   }
   .hero-lede {
-    font-size: 1.1rem;
+    font-size: var(--type-view-subtitle);
   }
   .hero-actions {
     align-items: flex-end;
@@ -1273,7 +1293,7 @@ button:focus-visible {
     padding-top: 0;
   }
   .section-heading h2 {
-    font-size: 24px;
+    font-size: var(--type-view-title);
   }
   .project-grid {
     gap: var(--space-4);
@@ -1294,7 +1314,7 @@ button:focus-visible {
   }
   .closing-note h2 {
     margin-top: var(--space-6);
-    font-size: 24px;
+    font-size: var(--type-view-title);
   }
   .support-actions {
     align-items: flex-start;
@@ -1310,7 +1330,7 @@ button:focus-visible {
     padding: var(--space-8) var(--space-6);
   }
   .error-panel h1 {
-    font-size: clamp(3.5rem, 17vw, 6.3rem);
+    font-size: var(--type-display);
   }
   .error-actions {
     align-items: flex-start;
