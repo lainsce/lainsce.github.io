@@ -43,6 +43,7 @@
   --accent: #2ACE42;
   --accent-soft: #B8F3BF;
   --notejot-accent: #F6D32D;
+  --colorway-accent: #CC1E00;
   --blue: #68B3F8;
   --blue-soft: #DDEFFF;
   --violet: #8F8ADE;
@@ -111,6 +112,7 @@
   --accent: #66E87A;
   --accent-soft: #285E33;
   --notejot-accent: #F4D75A;
+  --colorway-accent: #FF7E79;
   --blue: #7FC1F7;
   --blue-soft: #24445F;
   --violet: #AAA6F0;
@@ -149,6 +151,7 @@
     --accent: #66E87A;
     --accent-soft: #285E33;
     --notejot-accent: #F4D75A;
+    --colorway-accent: #FF7E79;
     --blue: #7FC1F7;
     --blue-soft: #24445F;
     --violet: #AAA6F0;
@@ -186,6 +189,7 @@
   --accent: #00FF00;
   --accent-soft: #00FF00;
   --notejot-accent: #00FF00;
+  --colorway-accent: #00FF00;
   --blue: #00FF00;
   --blue-soft: #00FF00;
   --violet: #00FF00;
@@ -899,6 +903,10 @@ h3 {
 
 .project-ephemeral {
   --project-accent: var(--coral);
+}
+
+.project-colorway {
+  --project-accent: var(--colorway-accent);
 }
 
 .project-card:hover {
