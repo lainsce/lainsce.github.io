@@ -25,6 +25,30 @@
     font-display: swap;
 }
 
+@font-face {
+    font-family: "Old Standard TT";
+    src: url("../fonts/OldStandardTT-Regular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Old Standard TT";
+    src: url("../fonts/OldStandardTT-Italic.ttf") format("truetype");
+    font-style: italic;
+    font-weight: 400;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Old Standard TT";
+    src: url("../fonts/OldStandardTT-Bold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+}
+
 :root {
     --workspace: #F2F2F2;
     --surface: #FDFDFD;
@@ -49,14 +73,14 @@
     --accent: #2ACE42;
     --accent-soft: #B8F3BF;
     --notejot-accent: #F6D32D;
-    --colorway-accent: #CC1E00;
-    --blue: #68B3F8;
+    --colorway-accent: #F68772;
+    --blue: #5BB1FE;
     --blue-soft: #DDEFFF;
-    --violet: #8F8ADE;
+    --violet: #A39DFF;
     --violet-soft: #E8E5FF;
-    --coral: #FC5085;
+    --coral: #F3829D;
     --coral-soft: #F6DDE2;
-    --ochre: #AC7721;
+    --ochre: #DE9C32;
     --ochre-soft: #F2E3C9;
     --mint: #45A886;
     --mint-soft: #D8F0E7;
@@ -84,6 +108,7 @@
     --type-body: 0.875rem;
     --type-caption: 0.75rem;
     --type-micro: 0.5625rem;
+    --font-view-title: "Old Standard TT", "Hiragino Mincho ProN", "Hiragino Mincho Pro", "Yu Mincho", serif;
     --control-height: 38px;
     --field-height: 36px;
     --symbol-size: 22px;
@@ -117,15 +142,15 @@
     --mark-surface: #000000;
     --accent: #66E87A;
     --accent-soft: #285E33;
-    --notejot-accent: #F4D75A;
-    --colorway-accent: #FF7E79;
-    --blue: #7FC1F7;
+    --notejot-accent: #FFE496;
+    --colorway-accent: #FFDDD6;
+    --blue: #D2E9FF;
     --blue-soft: #24445F;
-    --violet: #AAA6F0;
+    --violet: #E3E3FF;
     --violet-soft: #3A385E;
-    --coral: #FF9BBA;
+    --coral: #FFDBE2;
     --coral-soft: #57343B;
-    --ochre: #D9A84C;
+    --ochre: #FFE1B9;
     --ochre-soft: #4B3C24;
     --mint: #65C5A3;
     --mint-soft: #234B3D;
@@ -156,15 +181,15 @@
         --mark-surface: #000000;
         --accent: #66E87A;
         --accent-soft: #285E33;
-        --notejot-accent: #F4D75A;
-        --colorway-accent: #FF7E79;
-        --blue: #7FC1F7;
+        --notejot-accent: #FFE496;
+        --colorway-accent: #FFDDD6;
+        --blue: #D2E9FF;
         --blue-soft: #24445F;
-        --violet: #AAA6F0;
+        --violet: #E3E3FF;
         --violet-soft: #3A385E;
-        --coral: #FF9BBA;
+        --coral: #FFDBE2;
         --coral-soft: #57343B;
-        --ochre: #D9A84C;
+        --ochre: #FFE1B9;
         --ochre-soft: #4B3C24;
         --mint: #65C5A3;
         --mint-soft: #234B3D;
@@ -862,8 +887,9 @@ h3 {
 .section-heading h2 {
     max-width: 760px;
     margin: 0 0 var(--space-3);
+    font-family: var(--font-view-title);
     font-size: var(--type-view-title);
-    font-weight: 300;
+    font-weight: 400;
     letter-spacing: -0.025em;
     line-height: 1.1;
 }
@@ -1004,8 +1030,9 @@ h3 {
 
 .closing-note h2 {
     margin: var(--space-8) 0 var(--space-4);
+    font-family: var(--font-view-title);
     font-size: var(--type-view-title);
-    font-weight: 300;
+    font-weight: 400;
     letter-spacing: -0.025em;
     line-height: 1.1;
 }
