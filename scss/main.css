@@ -73,8 +73,6 @@
   --coral-soft: #F6DDE2;
   --ochre: #DE9C32;
   --ochre-soft: #F2E3C9;
-  --mint: #45A886;
-  --mint-soft: #D8F0E7;
   --space-1: 4px;
   --space-2: 8px;
   --space-3: 12px;
@@ -143,8 +141,6 @@
   --coral-soft: #57343B;
   --ochre: #D39224;
   --ochre-soft: #4B3C24;
-  --mint: #4EB08D;
-  --mint-soft: #234B3D;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -182,8 +178,6 @@
     --coral-soft: #57343B;
     --ochre: #D39224;
     --ochre-soft: #4B3C24;
-    --mint: #4EB08D;
-    --mint-soft: #234B3D;
   }
 }
 :root[data-contrast=high] {
@@ -220,8 +214,6 @@
   --coral-soft: #00FF00;
   --ochre: #00FF00;
   --ochre-soft: #00FF00;
-  --mint: #00FF00;
-  --mint-soft: #00FF00;
 }
 
 @media (prefers-color-scheme: dark) {
