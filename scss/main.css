@@ -13,10 +13,24 @@
   font-display: swap;
 }
 @font-face {
-  font-family: "Geist Mono";
-  src: url("../fonts/GeistMono-Regular.ttf") format("truetype");
+  font-family: "Lekton";
+  src: url("../fonts/Lekton-Regular.ttf") format("truetype");
   font-style: normal;
-  font-weight: 400 700;
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Lekton";
+  src: url("../fonts/Lekton-Bold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Lekton";
+  src: url("../fonts/Lekton-Italic.ttf") format("truetype");
+  font-style: italic;
+  font-weight: 400;
   font-display: swap;
 }
 @font-face {
@@ -64,14 +78,14 @@
   --accent: #2ACE42;
   --accent-soft: #B8F3BF;
   --notejot-accent: #F6D32D;
-  --colorway-accent: #C75B49;
-  --blue: #2480C9;
+  --colorway-accent: #EE806B;
+  --blue: #4EA5F1;
   --blue-soft: #DDEFFF;
-  --violet: #7870CE;
+  --violet: #9A94F5;
   --violet-soft: #E8E5FF;
-  --coral: #C45876;
+  --coral: #EC7C97;
   --coral-soft: #F6DDE2;
-  --ochre: #A97000;
+  --ochre: #D39224;
   --ochre-soft: #F2E3C9;
   --space-1: 4px;
   --space-2: 8px;
@@ -98,6 +112,7 @@
   --type-caption: 0.75rem;
   --type-micro: 0.5625rem;
   --font-view-title: "Old Standard TT", "Hiragino Mincho ProN", "Hiragino Mincho Pro", "Yu Mincho", serif;
+  --font-technical: "Lekton", monospace;
   --control-height: 38px;
   --field-height: 36px;
   --symbol-size: 22px;
@@ -319,7 +334,7 @@ img {
   border-radius: var(--radius-control);
   background: var(--ink);
   color: var(--ink-inverse);
-  font-family: "Geist Mono", monospace;
+  font-family: var(--font-technical);
   font-size: var(--type-body);
   text-decoration: none;
   transform: translateY(-160%);
@@ -349,7 +364,7 @@ img {
 
 .site-copyright {
   color: var(--ink-faint);
-  font-family: "Geist Mono", monospace;
+  font-family: var(--font-technical);
   font-size: var(--type-micro);
   letter-spacing: 0.045em;
   white-space: nowrap;
@@ -369,7 +384,7 @@ img {
   border-radius: var(--radius-control);
   background: var(--surface);
   color: var(--ink-faint);
-  font-family: "Geist Mono", monospace;
+  font-family: var(--font-technical);
   font-size: var(--type-caption);
   font-weight: 600;
   letter-spacing: 0.055em;
@@ -513,7 +528,7 @@ img {
   gap: var(--space-2);
   border: 1px solid transparent;
   border-radius: var(--radius-control);
-  font-family: "Geist Mono", monospace;
+  font-family: var(--font-technical);
   font-size: var(--type-caption);
   font-weight: 600;
   letter-spacing: 0.055em;
@@ -589,7 +604,7 @@ img {
 .mono-label {
   margin: 0;
   color: var(--ink-faint);
-  font-family: "Geist Mono", monospace;
+  font-family: var(--font-technical);
   font-size: var(--type-caption);
   font-weight: 600;
   letter-spacing: 0.1em;
@@ -720,7 +735,7 @@ h3 {
   align-items: center;
   gap: 7px;
   color: var(--ink);
-  font-family: "Geist Mono", monospace;
+  font-family: var(--font-technical);
   font-size: var(--type-caption);
   letter-spacing: 0.04em;
   line-height: 1.4;
@@ -842,7 +857,7 @@ h3 {
 
 .journey-copy .journey-path {
   color: var(--ink);
-  font-family: "Geist Mono", monospace;
+  font-family: var(--font-technical);
   font-size: var(--type-caption);
   font-weight: 600;
   letter-spacing: 0.035em;
@@ -980,7 +995,7 @@ h3 {
 .project-type {
   margin: 0;
   color: var(--ink-faint);
-  font-family: "Geist Mono", monospace;
+  font-family: var(--font-technical);
   font-size: var(--type-caption);
   font-weight: 600;
   letter-spacing: 0.075em;
