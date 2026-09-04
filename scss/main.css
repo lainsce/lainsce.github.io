@@ -69,6 +69,7 @@
   --ink-on-dark: rgba(255, 255, 255, 0.68);
   --stroke-quiet: rgba(0, 0, 0, 0.09);
   --stroke-strong: rgba(0, 0, 0, 0.12);
+  --control-off-bg: rgba(0, 0, 0, 0.12);
   --stroke-selected: rgba(0, 0, 0, 0.72);
   --stroke-on-dark: rgba(255, 255, 255, 0.18);
   --state-hover: rgba(0, 0, 0, 0.06);
@@ -138,6 +139,7 @@
   --ink-on-dark: rgba(255, 255, 255, 0.72);
   --stroke-quiet: rgba(255, 255, 255, 0.16);
   --stroke-strong: rgba(255, 255, 255, 0.25);
+  --control-off-bg: rgba(255, 255, 255, 0.16);
   --stroke-selected: rgba(255, 255, 255, 0.86);
   --stroke-on-dark: rgba(255, 255, 255, 0.22);
   --state-hover: rgba(255, 255, 255, 0.12);
@@ -175,6 +177,7 @@
     --ink-on-dark: rgba(255, 255, 255, 0.72);
     --stroke-quiet: rgba(255, 255, 255, 0.16);
     --stroke-strong: rgba(255, 255, 255, 0.25);
+    --control-off-bg: rgba(255, 255, 255, 0.16);
     --stroke-selected: rgba(255, 255, 255, 0.86);
     --stroke-on-dark: rgba(255, 255, 255, 0.22);
     --state-hover: rgba(255, 255, 255, 0.12);
@@ -211,6 +214,7 @@
   --ink-on-dark: #FFFFFF;
   --stroke-quiet: #000000;
   --stroke-strong: #000000;
+  --control-off-bg: rgba(0, 0, 0, 0.12);
   --stroke-selected: #00FF00;
   --stroke-on-dark: #FFFFFF;
   --state-hover: #00FF00;
@@ -248,6 +252,7 @@
     --ink-on-dark: #FFFFFF;
     --stroke-quiet: #FFFFFF;
     --stroke-strong: #FFFFFF;
+    --control-off-bg: rgba(255, 255, 255, 0.16);
     --stroke-selected: #00FF00;
     --stroke-on-dark: #FFFFFF;
   }
@@ -268,6 +273,7 @@
   --ink-on-dark: #FFFFFF;
   --stroke-quiet: #FFFFFF;
   --stroke-strong: #FFFFFF;
+  --control-off-bg: rgba(255, 255, 255, 0.16);
   --stroke-selected: #00FF00;
   --stroke-on-dark: #FFFFFF;
 }
@@ -379,7 +385,7 @@ img {
 
 .contrast-toggle,
 .theme-picker {
-  min-height: 32px;
+  min-height: var(--control-height);
   border: 1px solid var(--stroke-quiet);
   border-radius: var(--radius-control);
   background: var(--surface);
@@ -398,6 +404,7 @@ img {
   align-items: center;
   gap: 7px;
   padding: 0 10px;
+  background: var(--control-off-bg);
   cursor: pointer;
 }
 
@@ -441,7 +448,7 @@ img {
 }
 
 .theme-picker select {
-  min-height: 30px;
+  min-height: var(--field-height);
   padding: 0 28px 0 10px;
   border: 0;
   outline: 0;
@@ -1269,7 +1276,7 @@ button:focus-visible {
     gap: 4px;
   }
   .contrast-toggle {
-    width: 32px;
+    width: var(--control-height);
     padding: 0;
     justify-content: center;
   }
